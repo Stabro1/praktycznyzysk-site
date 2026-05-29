@@ -1,0 +1,106 @@
+{
+  "name": "Praktyczny Zysk",
+  "domain": "praktycznyzysk.pl",
+  "tagline": "Praktyczne rankingi, narzedzia i oferty, ktore pomagaja oszczedzac, zarabiac i wybierac madrzej.",
+  "disclosure": "Czesc linkow moze byc linkami afiliacyjnymi. Jesli kupisz przez taki link, serwis moze otrzymac prowizje bez dodatkowego kosztu dla Ciebie.",
+  "categories": [
+    {
+      "slug": "finanse",
+      "name": "Finanse osobiste",
+      "description": "Konta, karty, lokaty, cashback i narzedzia do kontroli budzetu.",
+      "angle": "Najpierw realna wartosc: oplaty, bonusy, warunki i latwosc uzycia."
+    },
+    {
+      "slug": "ai-narzedzia",
+      "name": "AI i narzedzia",
+      "description": "Aplikacje AI, automatyzacje, produktywnosc i narzedzia dla tworcow.",
+      "angle": "Nacisk na zastosowania, ktore zwracaja czas albo pomagaja zarobic."
+    },
+    {
+      "slug": "biznes",
+      "name": "Biznes online",
+      "description": "Hosting, domeny, sklepy, fakturowanie, mailing i sprzedaz cyfrowa.",
+      "angle": "Rozwiazania dla malych projektow, afiliacji i produktow cyfrowych."
+    },
+    {
+      "slug": "zdrowie",
+      "name": "Zdrowie i forma",
+      "description": "Suplementy, diagnostyka, sen, trening i produkty wspierajace codzienna energie.",
+      "angle": "Praktyczne wybory bez obiecywania cudow."
+    },
+    {
+      "slug": "dom",
+      "name": "Dom i codziennosc",
+      "description": "Smart home, oszczedzanie energii, AGD, subskrypcje i zakupy codzienne.",
+      "angle": "Produkty, ktore maja sens ekonomiczny, a nie tylko ladny opis."
+    },
+    {
+      "slug": "edukacja",
+      "name": "Edukacja i kursy",
+      "description": "Kursy, ksiazki, szkolenia i platformy do nauki umiejetnosci zarobkowych.",
+      "angle": "Priorytet: umiejetnosci, ktore mozna zastosowac w praktyce."
+    }
+  ],
+  "offers": [
+    {
+      "slug": "konto-z-premia",
+      "title": "Konto osobiste z premia",
+      "category": "finanse",
+      "badge": "Bonus",
+      "summary": "Oferta dla osob, ktore chca zgarnac premie za proste warunki aktywnosci.",
+      "pros": ["Mozliwa premia gotowkowa", "Dobre do testow cashbacku", "Latwe do opisania w rankingu"],
+      "cta": "Sprawdz warunki",
+      "url": "https://example.com/affiliate/konto-z-premia"
+    },
+    {
+      "slug": "narzedzie-ai-do-tresci",
+      "title": "Narzędzie AI do tworzenia tresci",
+      "category": "ai-narzedzia",
+      "badge": "Produktywnosc",
+      "summary": "Pomaga szybciej pisac szkice, opisy, posty i warianty reklam.",
+      "pros": ["Oszczedza czas", "Dobre dla tworcow i malych firm", "Nadaje sie do workflow afiliacyjnego"],
+      "cta": "Zobacz narzedzie",
+      "url": "https://example.com/affiliate/ai-content"
+    },
+    {
+      "slug": "hosting-dla-malej-strony",
+      "title": "Hosting lub platforma dla malej strony",
+      "category": "biznes",
+      "badge": "Start online",
+      "summary": "Opcje dla bloga, landing page, sklepu lub prostego serwisu afiliacyjnego.",
+      "pros": ["Szybki start", "Niski koszt", "Dobre pod SEO i testy nisz"],
+      "cta": "Porownaj opcje",
+      "url": "https://example.com/affiliate/hosting"
+    },
+    {
+      "slug": "pakiet-suplementow",
+      "title": "Pakiet suplementow na start",
+      "category": "zdrowie",
+      "badge": "Popularne",
+      "summary": "Lista produktow do dalszego porownania: cena, sklad, dawki i sens stosowania.",
+      "pros": ["Latwe porownania", "Duzy potencjal SEO", "Mozliwe linki do sklepow"],
+      "cta": "Sprawdz ranking",
+      "url": "https://example.com/affiliate/suplementy"
+    },
+    {
+      "slug": "smart-gniazdko",
+      "title": "Smart gniazdko z pomiarem energii",
+      "category": "dom",
+      "badge": "Oszczedzanie",
+      "summary": "Prosty produkt do tekstow o kosztach pradu i automatyzacji domu.",
+      "pros": ["Konkretny problem", "Dobry content poradnikowy", "Latwo mierzyc korzysc"],
+      "cta": "Zobacz produkt",
+      "url": "https://example.com/affiliate/smart-gniazdko"
+    },
+    {
+      "slug": "kurs-ai-automatyzacje",
+      "title": "Kurs AI i automatyzacji",
+      "category": "edukacja",
+      "badge": "Umiejetnosci",
+      "summary": "Temat pod ranking kursow, poradniki i sciezki nauki dla poczatkujacych.",
+      "pros": ["Wysoka wartosc koszyka", "Dobry temat evergreen", "Pasuje do monetyzacji contentu"],
+      "cta": "Zobacz kurs",
+      "url": "https://example.com/affiliate/kurs-ai"
+    }
+  ]
+}
