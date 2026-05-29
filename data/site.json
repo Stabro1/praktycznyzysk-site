@@ -230,6 +230,107 @@
           { "title": "Porownaj z wartoscia auta", "text": "Uzywane auto traci wartosc, a finansowanie moze zostac na dluzej niz sens auta." }
         ]
       }
+    ],
+    "/ubezpieczenia/oc-ac": [
+      {
+        "type": "steps",
+        "title": "Jak porownac OC/AC",
+        "description": "OC/AC ma byc osobnym lejkiem ubezpieczeniowym, a nie dodatkiem do Auto. Auto tylko dowozi uzytkownika po zakupie.",
+        "items": [
+          { "title": "Najpierw rozdziel OC i AC", "text": "OC jest obowiazkowe. AC chroni Twoje auto, ale jego sens zalezy od wartosci auta, ryzyka i ceny." },
+          { "title": "Porownaj zakres, nie tylko cene", "text": "Sprawdz wykluczenia, udzial wlasny, sposob naprawy, assistance i NNW." },
+          { "title": "Sprawdz date konca polisy", "text": "Najlepiej porownywac oferty przed koncem obecnej polisy albo zaraz po zakupie auta." },
+          { "title": "Przejdz do porownywarki", "text": "Jesli mamy partnera, kierujemy do porownania. Jesli nie, nie udajemy realnej wyceny." }
+        ]
+      },
+      {
+        "type": "warning",
+        "badge": "Uwaga",
+        "title": "Najtansze OC nie zawsze oznacza najlepsza decyzje",
+        "text": "Przy samym OC cena bywa kluczowa, ale przy pakiecie OC/AC trzeba sprawdzic zakres, wykluczenia, udzial wlasny i assistance."
+      },
+      {
+        "type": "cards",
+        "title": "Naturalne przejscia",
+        "items": [
+          { "title": "Kalkulator OC", "text": "Orientacyjnie sprawdza, co wplywa na skladke." },
+          { "title": "Porownywarka", "text": "Miejsce na lead lub przejscie do partnera." },
+          { "title": "Auto po zakupie", "text": "Auto kieruje tutaj po historii pojazdu i checkliscie zakupu." }
+        ]
+      }
+    ],
+    "/ubezpieczenia/oc": [
+      {
+        "type": "cards",
+        "title": "Co trzeba wiedziec o OC",
+        "items": [
+          { "title": "OC jest obowiazkowe", "text": "Brak polisy moze oznaczac kare i powazne koszty po szkodzie." },
+          { "title": "Zakres jest ustawowy", "text": "Dlatego przy OC cena jest wazna, ale obsluga i dodatki tez moga miec znaczenie." },
+          { "title": "Cena zalezy od profilu", "text": "Wiek kierowcy, historia szkod, lokalizacja, auto i przebieg ubezpieczenia wplywaja na skladke." }
+        ]
+      }
+    ],
+    "/ubezpieczenia/ac": [
+      {
+        "type": "checklist",
+        "title": "Co sprawdzic w AC",
+        "description": "AC nie jest obowiazkowe, wiec trzeba sprawdzic, czy zakres ma sens wzgledem ceny.",
+        "items": [
+          "sposob naprawy: serwis, kosztorys albo warsztat partnerski",
+          "udzial wlasny i amortyzacja czesci",
+          "kradziez, szkoda calkowita i wykluczenia",
+          "ochrona za granica",
+          "assistance i auto zastepcze"
+        ]
+      },
+      {
+        "type": "warning",
+        "title": "AC bez sprawdzenia wykluczen moze rozczarowac",
+        "text": "Najwiekszy blad to patrzenie tylko na cene pakietu. Przy AC liczy sie to, kiedy ubezpieczyciel rzeczywiscie zaplaci."
+      }
+    ],
+    "/ubezpieczenia/porownywarka": [
+      {
+        "type": "steps",
+        "title": "Jak ma dzialac porownywarka",
+        "description": "Na tym etapie nie udajemy wlasnej integracji, jesli jej nie ma. Pokazujemy jasny handoff do partnera.",
+        "items": [
+          { "title": "Zbierz dane auta", "text": "Marka, model, rok, pojemnosc, kod pocztowy, historia szkod i data konca polisy." },
+          { "title": "Pokaz disclosure", "text": "Uzytkownik musi wiedziec, ze oferta jest obslugiwana przez partnera." },
+          { "title": "Porownaj zakres", "text": "Cena to nie wszystko. Przy AC i assistance zakres decyduje o sensie oferty." },
+          { "title": "Przejdz do partnera", "text": "CTA ma prowadzic do porownania lub formularza, nie do pustej obietnicy." }
+        ]
+      }
+    ],
+    "/ubezpieczenia/ranking-oc": [
+      {
+        "type": "cards",
+        "title": "Model rankingu OC",
+        "description": "Ranking OC musi byc prosty, aktualizowany i uczciwy.",
+        "items": [
+          { "title": "Cena od / sprawdz cene", "text": "Nie pokazujemy fikcyjnych skladek bez danych uzytkownika." },
+          { "title": "Zakres i dodatki", "text": "Assistance, NNW, cashback i obsluga szkody jako elementy pomocnicze." },
+          { "title": "Data aktualizacji", "text": "Rankingi ofert musza miec date, zeby nie tracic zaufania." }
+        ]
+      },
+      {
+        "type": "warning",
+        "title": "Nie wolno udawac indywidualnej wyceny",
+        "text": "Bez integracji z ubezpieczycielem pokazujemy model porownania i kierujemy do partnera, a nie obiecujemy konkretnej skladki."
+      }
+    ],
+    "/ubezpieczenia/jak-obnizyc-skladke-oc": [
+      {
+        "type": "checklist",
+        "title": "Co moze obnizyc OC",
+        "items": [
+          "porownanie ofert przed koncem polisy",
+          "sprawdzenie zakresu dodatkow",
+          "bezszkodowa historia",
+          "wybor auta z tanszym profilem ubezpieczeniowym",
+          "rozsadna konfiguracja pakietu OC/AC"
+        ]
+      }
     ]
   },
   "sitemapSections": [
