@@ -59,6 +59,29 @@ function navLinks() {
   return data.primaryNav.map((item) => `<a href="${esc(item.url)}">${esc(item.label)}</a>`).join("");
 }
 
+function mobileMenu() {
+  return `<details class="mobile-menu">
+    <summary>Menu</summary>
+    <div class="mobile-menu-panel">
+      ${data.primaryNav
+        .map((item) => {
+          const slug = stripSlash(item.url);
+          const pillar = pillarBySlug.get(slug);
+          const quick = pillar?.priorityLinks?.slice(0, 3) || [];
+          return `<div class="mobile-menu-section">
+            <a class="mobile-menu-main" href="${esc(item.url)}">${esc(item.label)}</a>
+            ${quick.map((link) => `<a href="${esc(link.url)}">${esc(link.label)}</a>`).join("")}
+          </div>`;
+        })
+        .join("")}
+      <div class="mobile-menu-section">
+        <a class="mobile-menu-main" href="/poradniki">Poradniki</a>
+        <a href="/faq">FAQ</a>
+      </div>
+    </div>
+  </details>`;
+}
+
 function breadcrumbs(items = []) {
   if (!items.length) return "";
   return `<nav class="breadcrumbs" aria-label="Breadcrumbs"><a href="/">Start</a>${items
@@ -84,6 +107,7 @@ function layout({ url = "/", title, description, body, crumbs = [] }) {
       <a class="brand" href="/"><span class="mark">PZ</span><span>${esc(data.shortName)}</span></a>
       <div class="nav-links">${navLinks()}</div>
       <a class="nav-cta" href="/narzedzia">Narzedzia</a>
+      ${mobileMenu()}
     </nav>
   </header>
   ${breadcrumbs(crumbs)}
@@ -95,11 +119,13 @@ function layout({ url = "/", title, description, body, crumbs = [] }) {
         <p>${esc(data.disclosure)}</p>
       </div>
       <div class="footer-links">
+        ${data.primaryNav.map((item) => `<a href="${esc(item.url)}">${esc(item.label)}</a>`).join("")}
+      </div>
+      <div class="footer-links">
+        <a href="/poradniki">Poradniki</a>
         <a href="/faq">FAQ</a>
         <a href="/o-nas">O nas</a>
         <a href="/kontakt">Kontakt</a>
-        <a href="/polityka-prywatnosci">Polityka prywatnosci</a>
-        <a href="/regulamin">Regulamin</a>
       </div>
     </div>
   </footer>
@@ -124,6 +150,27 @@ function linkList(links) {
   return `<div class="quick-links">${links
     .map((link) => `<a href="${esc(link.url)}">${esc(link.label)}</a>`)
     .join("")}</div>`;
+}
+
+function sectionNav(pillar) {
+  if (!pillar?.priorityLinks?.length) return "";
+  return `<nav class="section-nav" aria-label="Menu sekcji">
+    <strong>${esc(pillar.name)}</strong>
+    <div>${pillar.priorityLinks.map((link) => `<a href="${esc(link.url)}">${esc(link.label)}</a>`).join("")}</div>
+  </nav>`;
+}
+
+function nextStepBlock({ title = "Co dalej?", description = "Wybierz najlogiczniejszy nastepny krok.", links = [] }) {
+  if (!links.length) return "";
+  return `<section class="next-steps">
+    <div class="section-head">
+      <h2>${esc(title)}</h2>
+      <p>${esc(description)}</p>
+    </div>
+    <div class="list-grid">${links
+      .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>${esc(link.note || "Przejdz do nastepnego kroku")}</span></a>`)
+      .join("")}</div>
+  </section>`;
 }
 
 function trustBlock() {
@@ -220,6 +267,7 @@ function pillarPage(pillar) {
           <aside class="hero-panel">${linkList(pillar.priorityLinks)}</aside>
         </div>
       </section>
+      ${sectionNav(pillar)}
       <section id="start">
         <div class="section-head">
           <h2>Zacznij od tego</h2>
@@ -243,11 +291,20 @@ function pillarPage(pillar) {
         </div>
         <div class="grid">${relatedTools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otworz" })).join("") || card({ name: "Narzedzia", description: "Zobacz wszystkie kalkulatory i checklisty.", url: "/narzedzia", cta: "Przejdz" })}</div>
       </section>
+      ${nextStepBlock({
+        title: "Najlepszy nastepny krok",
+        description: "Te przejscia lacza ruch, SEO i monetyzacje bez mieszania pionow.",
+        links: pillar.priorityLinks.map((link) => ({ ...link, note: "Najwazniejsza sciezka w tej sekcji" }))
+      })}
     </main>`
   });
 }
 
 function toolPage(tool) {
+  const related = [
+    { label: "Wroc do narzedzi", url: "/narzedzia", note: "Zobacz pozostale kalkulatory i checklisty" },
+    { label: "Przejdz do wyniku", url: tool.next, note: "Najblizszy krok po uzyciu narzedzia" }
+  ];
   return layout({
     url: `/narzedzia/${tool.slug}`,
     title: `${tool.name} | ${data.name}`,
@@ -281,6 +338,11 @@ function toolPage(tool) {
           </div>
         </div>
       </section>
+      ${nextStepBlock({
+        title: "Powiazane przejscia",
+        description: "Narzedzie nie powinno konczyc sesji. Wynik ma kierowac do decyzji.",
+        links: related
+      })}
     </main>`
   });
 }
@@ -291,6 +353,10 @@ function genericPage(page) {
   const relatedTools = data.tools
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
     .slice(0, 3);
+  const genericLinks = [
+    ...(pillar?.priorityLinks || []).slice(0, 3).map((link) => ({ ...link, note: "Wazny krok w tym pionie" })),
+    ...relatedTools.map((tool) => ({ label: tool.name, url: `/narzedzia/${tool.slug}`, note: tool.description }))
+  ].slice(0, 4);
   return layout({
     url: page.url,
     title: `${page.title} | ${data.name}`,
@@ -310,6 +376,7 @@ function genericPage(page) {
           </div>
         </div>
       </section>
+      ${sectionNav(pillar)}
       <section>
         <div class="section-head">
           <h2>Najwazniejsze zasady</h2>
@@ -327,15 +394,22 @@ function genericPage(page) {
           <p>Linki sa dobierane kontekstowo, zeby uzytkownik nie konczyl w slepej uliczce.</p>
         </div>
         <div class="list-grid">${
-          sectionLinks
+          genericLinks.length
+            ? genericLinks
+                .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>${esc(link.note)}</span></a>`)
+                .join("")
+            : sectionLinks
             .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Wazny krok w tym pionie</span></a>`)
-            .join("") ||
-          relatedTools
-            .map((tool) => `<a class="list-card" href="/narzedzia/${esc(tool.slug)}"><strong>${esc(tool.name)}</strong><span>${esc(tool.description)}</span></a>`)
             .join("") ||
           `<a class="list-card" href="/narzedzia"><strong>Narzedzia</strong><span>Kalkulatory i checklisty do dalszej decyzji.</span></a>`
         }</div>
       </section>
+      ${nextStepBlock({
+        links: [
+          { label: page.cta, url: page.ctaUrl, note: "Glowny nastepny krok tej strony" },
+          ...(pillar ? [{ label: `Wroc do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz cala sekcje" }] : [])
+        ]
+      })}
     </main>`
   });
 }
