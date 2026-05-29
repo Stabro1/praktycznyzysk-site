@@ -1,106 +1,115 @@
 {
-  "name": "Praktyczny Zysk",
+  "name": "PraktycznyZysk.pl",
+  "shortName": "Praktyczny Zysk",
   "domain": "praktycznyzysk.pl",
-  "tagline": "Praktyczne rankingi, narzedzia i oferty, ktore pomagaja oszczedzac, zarabiac i wybierac madrzej.",
-  "disclosure": "Czesc linkow moze byc linkami afiliacyjnymi. Jesli kupisz przez taki link, serwis moze otrzymac prowizje bez dodatkowego kosztu dla Ciebie.",
-  "categories": [
+  "tagline": "Praktyczne decyzje, ktore pomagaja oszczedzac, zarabiac i nie przeplacac.",
+  "description": "Finanse, ubezpieczenia, auto, praca i dom - prosto, konkretnie, bez lania wody.",
+  "disclosure": "Czesc linkow moze byc afiliacyjna. Nie jestesmy bankiem, ubezpieczycielem ani kancelaria. Pokazujemy informacje, narzedzia i linki do partnerow, a warunki zawsze sprawdzasz u dostawcy.",
+  "primaryNav": [
+    { "label": "Finanse", "url": "/finanse" },
+    { "label": "Ubezpieczenia", "url": "/ubezpieczenia" },
+    { "label": "Auto", "url": "/auto" },
+    { "label": "Praca", "url": "/praca" },
+    { "label": "Dom", "url": "/dom" },
+    { "label": "Narzedzia", "url": "/narzedzia" }
+  ],
+  "pillars": [
     {
       "slug": "finanse",
-      "name": "Finanse osobiste",
-      "description": "Konta, karty, lokaty, cashback i narzedzia do kontroli budzetu.",
-      "angle": "Najpierw realna wartosc: oplaty, bonusy, warunki i latwosc uzycia."
+      "name": "Finanse",
+      "label": "Konta, kredyty i koszty",
+      "description": "Kredyty gotowkowe, chwilowki, konta z premia, lokaty, karty, pozyczki dla firm i kalkulatory kosztow.",
+      "cta": "Przejdz do finansow",
+      "priorityLinks": [
+        { "label": "Kredyty gotowkowe", "url": "/finanse/kredyty-gotowkowe" },
+        { "label": "Chwilowki", "url": "/finanse/chwilowki" },
+        { "label": "Kredyt vs chwilowka", "url": "/finanse/kredyt-vs-chwilowka" },
+        { "label": "Kalkulator raty", "url": "/narzedzia/kalkulator-raty" }
+      ]
     },
     {
-      "slug": "ai-narzedzia",
-      "name": "AI i narzedzia",
-      "description": "Aplikacje AI, automatyzacje, produktywnosc i narzedzia dla tworcow.",
-      "angle": "Nacisk na zastosowania, ktore zwracaja czas albo pomagaja zarobic."
+      "slug": "ubezpieczenia",
+      "name": "Ubezpieczenia",
+      "label": "OC, AC i polisy",
+      "description": "OC, AC, OC/AC, assistance, NNW, kalkulator OC, porownywarka i rankingi polis.",
+      "cta": "Sprawdz ubezpieczenia",
+      "priorityLinks": [
+        { "label": "OC/AC", "url": "/ubezpieczenia/oc-ac" },
+        { "label": "Kalkulator OC", "url": "/narzedzia/kalkulator-oc" },
+        { "label": "Porownywarka", "url": "/ubezpieczenia/porownywarka" },
+        { "label": "Ranking OC", "url": "/ubezpieczenia/ranking-oc" }
+      ]
     },
     {
-      "slug": "biznes",
-      "name": "Biznes online",
-      "description": "Hosting, domeny, sklepy, fakturowanie, mailing i sprzedaz cyfrowa.",
-      "angle": "Rozwiazania dla malych projektow, afiliacji i produktow cyfrowych."
+      "slug": "auto",
+      "name": "Auto",
+      "label": "Sprawdzenie, zakup i koszty",
+      "description": "Historia pojazdu, VIN, zakup uzywanego auta, wycena, przeglady, warsztaty i checklisty.",
+      "cta": "Sprawdz auto",
+      "priorityLinks": [
+        { "label": "Historia pojazdu", "url": "/auto/historia-pojazdu" },
+        { "label": "VIN", "url": "/auto/vin" },
+        { "label": "Checklista zakupu", "url": "/narzedzia/checklista-zakup-auta" },
+        { "label": "Jak sprawdzic auto", "url": "/auto/jak-sprawdzic-auto" }
+      ]
     },
     {
-      "slug": "zdrowie",
-      "name": "Zdrowie i forma",
-      "description": "Suplementy, diagnostyka, sen, trening i produkty wspierajace codzienna energie.",
-      "angle": "Praktyczne wybory bez obiecywania cudow."
+      "slug": "praca",
+      "name": "Praca",
+      "label": "CV, rozmowa i zarobki",
+      "description": "CV, kreator CV, wzory CV, rozmowa kwalifikacyjna, zmiana pracy, prawa pracownika i kalkulatory.",
+      "cta": "Przejdz do pracy",
+      "priorityLinks": [
+        { "label": "Kreator CV", "url": "/praca/kreator-cv" },
+        { "label": "Wzory CV", "url": "/praca/wzory-cv" },
+        { "label": "Rozmowa kwalifikacyjna", "url": "/praca/rozmowa-kwalifikacyjna" },
+        { "label": "Kalkulator wynagrodzenia", "url": "/praca/kalkulator-wynagrodzenia" }
+      ]
     },
     {
       "slug": "dom",
-      "name": "Dom i codziennosc",
-      "description": "Smart home, oszczedzanie energii, AGD, subskrypcje i zakupy codzienne.",
-      "angle": "Produkty, ktore maja sens ekonomiczny, a nie tylko ladny opis."
-    },
-    {
-      "slug": "edukacja",
-      "name": "Edukacja i kursy",
-      "description": "Kursy, ksiazki, szkolenia i platformy do nauki umiejetnosci zarobkowych.",
-      "angle": "Priorytet: umiejetnosci, ktore mozna zastosowac w praktyce."
+      "name": "Dom",
+      "label": "Remont, energia i uslugi",
+      "description": "Remont, uslugi do domu, OZE, fotowoltaika, pompa ciepla, finansowanie i checklisty.",
+      "cta": "Przejdz do domu",
+      "priorityLinks": [
+        { "label": "Remont", "url": "/dom/remont" },
+        { "label": "Checklista remontu", "url": "/narzedzia/checklista-remont" },
+        { "label": "Fotowoltaika", "url": "/dom/fotowoltaika" },
+        { "label": "Finansowanie domu", "url": "/dom/finansowanie-domu" }
+      ]
     }
   ],
-  "offers": [
-    {
-      "slug": "konto-z-premia",
-      "title": "Konto osobiste z premia",
-      "category": "finanse",
-      "badge": "Bonus",
-      "summary": "Oferta dla osob, ktore chca zgarnac premie za proste warunki aktywnosci.",
-      "pros": ["Mozliwa premia gotowkowa", "Dobre do testow cashbacku", "Latwe do opisania w rankingu"],
-      "cta": "Sprawdz warunki",
-      "url": "https://example.com/affiliate/konto-z-premia"
-    },
-    {
-      "slug": "narzedzie-ai-do-tresci",
-      "title": "Narzędzie AI do tworzenia tresci",
-      "category": "ai-narzedzia",
-      "badge": "Produktywnosc",
-      "summary": "Pomaga szybciej pisac szkice, opisy, posty i warianty reklam.",
-      "pros": ["Oszczedza czas", "Dobre dla tworcow i malych firm", "Nadaje sie do workflow afiliacyjnego"],
-      "cta": "Zobacz narzedzie",
-      "url": "https://example.com/affiliate/ai-content"
-    },
-    {
-      "slug": "hosting-dla-malej-strony",
-      "title": "Hosting lub platforma dla malej strony",
-      "category": "biznes",
-      "badge": "Start online",
-      "summary": "Opcje dla bloga, landing page, sklepu lub prostego serwisu afiliacyjnego.",
-      "pros": ["Szybki start", "Niski koszt", "Dobre pod SEO i testy nisz"],
-      "cta": "Porownaj opcje",
-      "url": "https://example.com/affiliate/hosting"
-    },
-    {
-      "slug": "pakiet-suplementow",
-      "title": "Pakiet suplementow na start",
-      "category": "zdrowie",
-      "badge": "Popularne",
-      "summary": "Lista produktow do dalszego porownania: cena, sklad, dawki i sens stosowania.",
-      "pros": ["Latwe porownania", "Duzy potencjal SEO", "Mozliwe linki do sklepow"],
-      "cta": "Sprawdz ranking",
-      "url": "https://example.com/affiliate/suplementy"
-    },
-    {
-      "slug": "smart-gniazdko",
-      "title": "Smart gniazdko z pomiarem energii",
-      "category": "dom",
-      "badge": "Oszczedzanie",
-      "summary": "Prosty produkt do tekstow o kosztach pradu i automatyzacji domu.",
-      "pros": ["Konkretny problem", "Dobry content poradnikowy", "Latwo mierzyc korzysc"],
-      "cta": "Zobacz produkt",
-      "url": "https://example.com/affiliate/smart-gniazdko"
-    },
-    {
-      "slug": "kurs-ai-automatyzacje",
-      "title": "Kurs AI i automatyzacji",
-      "category": "edukacja",
-      "badge": "Umiejetnosci",
-      "summary": "Temat pod ranking kursow, poradniki i sciezki nauki dla poczatkujacych.",
-      "pros": ["Wysoka wartosc koszyka", "Dobry temat evergreen", "Pasuje do monetyzacji contentu"],
-      "cta": "Zobacz kurs",
-      "url": "https://example.com/affiliate/kurs-ai"
-    }
+  "popular": [
+    { "label": "Kredyty gotowkowe", "url": "/finanse/kredyty-gotowkowe", "note": "Rata, RRSO i calkowita kwota do splaty." },
+    { "label": "Chwilowki", "url": "/finanse/chwilowki", "note": "Osobny lejek z warunkami 0% i ostrzezeniami." },
+    { "label": "Konta z premia", "url": "/finanse/konta-z-premia", "note": "Premie, oplaty i warunki aktywnosci." },
+    { "label": "OC/AC", "url": "/ubezpieczenia/oc-ac", "note": "Cena, zakres, assistance i cashback." },
+    { "label": "Historia pojazdu", "url": "/auto/historia-pojazdu", "note": "Najpierw darmowe gov.pl, potem raport VIN jesli ma sens." },
+    { "label": "Kalkulator zdolnosci", "url": "/narzedzia/kalkulator-zdolnosci-kredytowej", "note": "Orientacyjny wynik i nastepny krok." },
+    { "label": "CV / kreator CV", "url": "/praca/kreator-cv", "note": "Szybsze przygotowanie dokumentow." },
+    { "label": "Finansowanie remontu", "url": "/dom/finansowanie-domu", "note": "Rata, koszt i kiedy uwazac." }
+  ],
+  "tools": [
+    { "slug": "kalkulator-zdolnosci-kredytowej", "name": "Kalkulator zdolnosci kredytowej", "description": "Orientacyjna rata, kwota finansowania i poziom ryzyka.", "next": "/finanse/kredyty-gotowkowe" },
+    { "slug": "kalkulator-raty", "name": "Kalkulator raty", "description": "Rata, calkowita kwota do splaty i koszt finansowania.", "next": "/finanse/kredyty-gotowkowe" },
+    { "slug": "kalkulator-rrso", "name": "Kalkulator RRSO", "description": "Szacunek RRSO i kosztu kredytu albo pozyczki.", "next": "/finanse/kredyt-vs-chwilowka" },
+    { "slug": "kalkulator-oc", "name": "Kalkulator OC", "description": "Orientacyjny zakres skladki i czynniki ceny.", "next": "/ubezpieczenia/oc-ac" },
+    { "slug": "budzet-domowy", "name": "Budzet domowy", "description": "Nadwyzka, deficyt i bezpieczny limit rat.", "next": "/narzedzia/kalkulator-zdolnosci-kredytowej" },
+    { "slug": "checklista-kredyt", "name": "Checklista kredyt", "description": "RRSO, rata, calkowity koszt, prowizje i warunki.", "next": "/finanse/ranking-kredytow-gotowkowych" },
+    { "slug": "checklista-chwilowka", "name": "Checklista chwilowka", "description": "0%, termin splaty, koszt po terminie i plan splaty.", "next": "/finanse/kredyt-vs-chwilowka" },
+    { "slug": "checklista-zakup-auta", "name": "Checklista zakup auta", "description": "VIN, historia pojazdu, ogledziny, OC/AC i finansowanie.", "next": "/auto/historia-pojazdu" },
+    { "slug": "checklista-rozmowa-kwalifikacyjna", "name": "Checklista rozmowa kwalifikacyjna", "description": "CV, odpowiedzi, pytania do pracodawcy i oczekiwania.", "next": "/praca/rozmowa-kwalifikacyjna" },
+    { "slug": "checklista-remont", "name": "Checklista remont", "description": "Zakres, budzet, rezerwa, wykonawca, umowa i finansowanie.", "next": "/dom/remont" }
+  ],
+  "pages": [
+    { "url": "/finanse/kredyty-gotowkowe", "type": "guide", "pillar": "finanse", "title": "Kredyty gotowkowe", "description": "Porownuj RRSO, rate, calkowita kwote do splaty i okres. Nie klikaj oferty bez kosztow.", "cta": "Policz rate", "ctaUrl": "/narzedzia/kalkulator-raty" },
+    { "url": "/finanse/chwilowki", "type": "guide", "pillar": "finanse", "title": "Chwilowki", "description": "Osobny lejek dla krotkich pozyczek. 0% zwykle dotyczy pierwszej pozyczki i terminowej splaty.", "cta": "Sprawdz checkliste", "ctaUrl": "/narzedzia/checklista-chwilowka" },
+    { "url": "/finanse/kredyt-vs-chwilowka", "type": "guide", "pillar": "finanse", "title": "Kredyt gotowkowy czy chwilowka?", "description": "Najpierw rozdziel intencje: dluzszy kredyt z rata czy krotka pozyczka z wysokim ryzykiem kosztow po terminie.", "cta": "Policz RRSO", "ctaUrl": "/narzedzia/kalkulator-rrso" },
+    { "url": "/ubezpieczenia/oc-ac", "type": "guide", "pillar": "ubezpieczenia", "title": "OC/AC", "description": "OC jest obowiazkowe, AC chroni Twoje auto. Porownuj cene, zakres, wykluczenia i assistance.", "cta": "Kalkulator OC", "ctaUrl": "/narzedzia/kalkulator-oc" },
+    { "url": "/auto/historia-pojazdu", "type": "guide", "pillar": "auto", "title": "Historia pojazdu", "description": "Zacznij od darmowego gov.pl. Potrzebujesz numeru rejestracyjnego, VIN i daty pierwszej rejestracji.", "cta": "Checklista zakupu", "ctaUrl": "/narzedzia/checklista-zakup-auta" },
+    { "url": "/auto/vin", "type": "guide", "pillar": "auto", "title": "VIN", "description": "VIN pomaga identyfikowac auto, ale sam VIN nie zastapi historii pojazdu, ogledzin i jazdy probnej.", "cta": "Sprawdz historie", "ctaUrl": "/auto/historia-pojazdu" },
+    { "url": "/praca/kreator-cv", "type": "guide", "pillar": "praca", "title": "Kreator CV", "description": "Kreator ma sens, gdy chcesz szybciej zlozyc czytelne CV. Darmowy wzor wystarczy przy prostych potrzebach.", "cta": "Rozmowa kwalifikacyjna", "ctaUrl": "/praca/rozmowa-kwalifikacyjna" },
+    { "url": "/dom/remont", "type": "guide", "pillar": "dom", "title": "Remont", "description": "Zanim zaczniesz remont, policz zakres, budzet, rezerwe i ryzyka z wykonawca.", "cta": "Checklista remontu", "ctaUrl": "/narzedzia/checklista-remont" }
   ]
 }

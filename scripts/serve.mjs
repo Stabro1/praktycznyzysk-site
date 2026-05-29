@@ -21,7 +21,10 @@ http
   .createServer((req, res) => {
     const url = new URL(req.url ?? "/", `http://localhost:${port}`);
     const pathname = url.pathname === "/" ? "/index.html" : url.pathname;
-    const file = path.join(root, pathname);
+    let file = path.join(root, pathname);
+    if (fs.existsSync(file) && fs.statSync(file).isDirectory()) {
+      file = path.join(file, "index.html");
+    }
     if (!file.startsWith(root) || !fs.existsSync(file)) {
       res.writeHead(404);
       res.end("Not found");
