@@ -102,6 +102,136 @@
     { "slug": "checklista-rozmowa-kwalifikacyjna", "name": "Checklista rozmowa kwalifikacyjna", "description": "CV, odpowiedzi, pytania do pracodawcy i oczekiwania.", "next": "/praca/rozmowa-kwalifikacyjna" },
     { "slug": "checklista-remont", "name": "Checklista remont", "description": "Zakres, budzet, rezerwa, wykonawca, umowa i finansowanie.", "next": "/dom/remont" }
   ],
+  "pageContent": {
+    "/auto/historia-pojazdu": [
+      {
+        "type": "steps",
+        "title": "Jak sprawdzic historie pojazdu",
+        "description": "To jest pierwszy krok przed zakupem auta. Zaczynamy od darmowego zrodla, a nie od platnego raportu.",
+        "items": [
+          { "title": "Zbierz trzy dane", "text": "Potrzebujesz numeru rejestracyjnego, numeru VIN i daty pierwszej rejestracji pojazdu." },
+          { "title": "Sprawdz gov.pl", "text": "Darmowa historia pojazdu na gov.pl powinna byc pierwszym miejscem sprawdzenia auta." },
+          { "title": "Porownaj z ogloszeniem", "text": "Sprawdz, czy dane z historii pasuja do opisu, przebiegu, rocznika i dokumentow." },
+          { "title": "Przejdz przez checkliste", "text": "Historia nie zastapi ogledzin, jazdy probnej i sprawdzenia dokumentow przed umowa." }
+        ]
+      },
+      {
+        "type": "warning",
+        "badge": "Wazne",
+        "title": "Raport VIN nie zastapi ogledzin",
+        "text": "Platny raport moze byc uzupelnieniem, ale nie powinien byc jedynym powodem zakupu auta. Trzeba sprawdzic dokumenty, stan techniczny, jazde probna i koszty po zakupie."
+      },
+      {
+        "type": "cards",
+        "title": "Co dalej po historii pojazdu",
+        "description": "Najlepszy flow pod uzytkownika i monetyzacje.",
+        "items": [
+          { "title": "Checklista zakupu", "text": "Przejdz przez VIN, dokumenty, ogledziny, jazde probna i umowe." },
+          { "title": "OC/AC po zakupie", "text": "Po decyzji o zakupie naturalny nastepny krok to sprawdzenie polisy." },
+          { "title": "Finansowanie auta", "text": "Jesli auto wymaga kredytu, najpierw policz rate i calkowity koszt." }
+        ]
+      }
+    ],
+    "/auto/historia-pojazdu-gov-pl": [
+      {
+        "type": "steps",
+        "title": "Darmowe sprawdzenie na gov.pl",
+        "description": "Ta strona ma jasno prowadzic do bezplatnego sprawdzenia, bez udawania, ze platny raport jest obowiazkowy.",
+        "items": [
+          { "title": "Wejdz w usluge Historia Pojazdu", "text": "Uzytkownik powinien zaczac od oficjalnego, darmowego zrodla." },
+          { "title": "Wpisz wymagane dane", "text": "Numer rejestracyjny, VIN oraz data pierwszej rejestracji sa konieczne do podstawowego sprawdzenia." },
+          { "title": "Zapisz rozbieznosci", "text": "Kazda niespojnosc z ogloszeniem jest powodem do dodatkowych pytan." },
+          { "title": "Pamietaj o profilu zaufanym", "text": "Czesc danych, zwlaszcza przy autach zagranicznych, moze wymagac logowania profilem zaufanym." }
+        ]
+      },
+      {
+        "type": "checklist",
+        "title": "Co sprawdzic w wyniku",
+        "items": [
+          "zgodnosc VIN i numeru rejestracyjnego",
+          "historia badan technicznych",
+          "przebieg i daty wpisow",
+          "status rejestracji i podstawowe dane pojazdu"
+        ]
+      }
+    ],
+    "/auto/vin": [
+      {
+        "type": "cards",
+        "title": "Do czego sluzy VIN",
+        "description": "VIN jest wazny, ale sam nie rozwiazuje decyzji zakupowej.",
+        "items": [
+          { "title": "Identyfikacja auta", "text": "VIN pozwala polaczyc ogloszenie, dokumenty i historie pojazdu." },
+          { "title": "Sprawdzenie danych", "text": "Pomaga wykryc niespojnosci w roczniku, wersji, kraju lub historii." },
+          { "title": "Punkt startowy", "text": "VIN powinien prowadzic do historii pojazdu, checklisty i ogledzin." }
+        ]
+      },
+      {
+        "type": "warning",
+        "title": "Sam VIN to za malo",
+        "text": "Nie kupuj auta tylko dlatego, ze numer VIN sie zgadza. Sprawdz dokumenty, historie, stan techniczny i koszty po zakupie."
+      }
+    ],
+    "/auto/jak-sprawdzic-auto": [
+      {
+        "type": "steps",
+        "title": "Kolejnosc sprawdzania auta",
+        "description": "Ta kolejnosc ma ograniczac ryzyko i naturalnie prowadzic do OC/AC oraz finansowania.",
+        "items": [
+          { "title": "Historia pojazdu", "text": "Najpierw darmowe gov.pl oraz podstawowe dane auta." },
+          { "title": "Dokumenty i sprzedawca", "text": "Sprawdz dowod, karte pojazdu jesli wystepuje, umowe i zgodnosc danych." },
+          { "title": "Ogledziny i jazda probna", "text": "Stan lakieru, silnik, skrzynia, hamulce, zawieszenie i zachowanie auta." },
+          { "title": "Koszty po zakupie", "text": "OC/AC, serwis startowy, opony, przeglad i ewentualna rata." }
+        ]
+      },
+      {
+        "type": "checklist",
+        "title": "Czerwone flagi",
+        "items": [
+          "sprzedawca unika podania VIN",
+          "dane w dokumentach nie pasuja do ogloszenia",
+          "presja na szybka zaliczke",
+          "brak zgody na sprawdzenie auta w warsztacie"
+        ]
+      }
+    ],
+    "/auto/checklista-zakup-auta-uzywanego": [
+      {
+        "type": "checklist",
+        "title": "Checklista przed zakupem",
+        "description": "Minimalny zestaw przed podpisaniem umowy.",
+        "items": [
+          "sprawdz numer rejestracyjny, VIN i date pierwszej rejestracji",
+          "sprawdz historie pojazdu na gov.pl",
+          "porownaj dane z ogloszeniem i dokumentami",
+          "obejrzyj auto w dziennym swietle",
+          "zrob jazde probna",
+          "sprawdz OC, koszty po zakupie i finansowanie",
+          "nie podpisuj umowy bez sprawdzenia sprzedawcy i danych auta"
+        ]
+      },
+      {
+        "type": "cards",
+        "title": "Nastepne kroki po checklist",
+        "items": [
+          { "title": "OC/AC", "text": "Jesli kupujesz auto, potrzebujesz decyzji o polisie." },
+          { "title": "Kredyt na auto", "text": "Jesli finansujesz zakup, rata musi pasowac do budzetu." },
+          { "title": "Koszty po zakupie", "text": "Serwis startowy i ubezpieczenie czesto sa pomijane w budzecie." }
+        ]
+      }
+    ],
+    "/auto/kredyt-na-auto": [
+      {
+        "type": "steps",
+        "title": "Zanim wezmiesz kredyt na auto",
+        "items": [
+          { "title": "Policz rate", "text": "Rata nie moze zjesc budzetu po doliczeniu OC, paliwa i serwisu." },
+          { "title": "Sprawdz calkowity koszt", "text": "Nie patrz tylko na miesieczna rate. Liczy sie calkowita kwota do splaty." },
+          { "title": "Porownaj z wartoscia auta", "text": "Uzywane auto traci wartosc, a finansowanie moze zostac na dluzej niz sens auta." }
+        ]
+      }
+    ]
+  },
   "sitemapSections": [
     {
       "label": "Finanse",

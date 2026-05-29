@@ -173,6 +173,54 @@ function nextStepBlock({ title = "Co dalej?", description = "Wybierz najlogiczni
   </section>`;
 }
 
+function renderContentBlocks(blocks = []) {
+  if (!blocks.length) return "";
+  return blocks
+    .map((block) => {
+      if (block.type === "steps") {
+        return `<section>
+          <div class="section-head">
+            <h2>${esc(block.title)}</h2>
+            <p>${esc(block.description || "")}</p>
+          </div>
+          <ol class="step-list">${(block.items || [])
+            .map((item) => `<li><strong>${esc(item.title)}</strong><span>${esc(item.text)}</span></li>`)
+            .join("")}</ol>
+        </section>`;
+      }
+      if (block.type === "checklist") {
+        return `<section>
+          <div class="section-head">
+            <h2>${esc(block.title)}</h2>
+            <p>${esc(block.description || "")}</p>
+          </div>
+          <div class="check-grid">${(block.items || [])
+            .map((item) => `<div><span class="check-mark">OK</span><strong>${esc(item)}</strong></div>`)
+            .join("")}</div>
+        </section>`;
+      }
+      if (block.type === "warning") {
+        return `<section class="warning-band">
+          <div>
+            <span class="badge">${esc(block.badge || "Uwaga")}</span>
+            <h2>${esc(block.title)}</h2>
+            <p>${esc(block.text)}</p>
+          </div>
+        </section>`;
+      }
+      return `<section>
+        <div class="section-head">
+          <h2>${esc(block.title)}</h2>
+          <p>${esc(block.description || "")}</p>
+        </div>
+        <div class="trust-grid">${(block.items || [])
+          .map((item) => `<div><strong>${esc(item.title)}</strong><span>${esc(item.text)}</span></div>`)
+          .join("")}</div>
+      </section>`;
+    })
+    .join("");
+}
+
 function trustBlock() {
   return `<section class="band">
     <div class="section-head">
@@ -349,6 +397,7 @@ function toolPage(tool) {
 
 function genericPage(page) {
   const pillar = pillarBySlug.get(page.pillar);
+  const contentBlocks = data.pageContent?.[page.url] || [];
   const sectionLinks = pillar?.priorityLinks || [];
   const relatedTools = data.tools
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
@@ -377,6 +426,7 @@ function genericPage(page) {
         </div>
       </section>
       ${sectionNav(pillar)}
+      ${renderContentBlocks(contentBlocks)}
       <section>
         <div class="section-head">
           <h2>Najwazniejsze zasady</h2>
