@@ -29,6 +29,32 @@ const writePage = (url, html) => {
 
 const pillarBySlug = new Map(data.pillars.map((pillar) => [pillar.slug, pillar]));
 
+function titleFromUrl(url) {
+  const last = stripSlash(url).split("/").pop() || "strona";
+  return last
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+const catalogPages = (data.sitemapSections || []).flatMap((section) =>
+  section.pages.map((page) => ({
+    type: section.type || "guide",
+    pillar: section.pillar,
+    cta: section.cta || "Sprawdz dalej",
+    ctaUrl: section.ctaUrl || (section.pillar ? `/${section.pillar}` : "/"),
+    description:
+      page.description ||
+      `Fundament strony w sekcji ${section.label}. Ta podstrona ma jasny cel, miejsce w architekturze i nastepny krok.`,
+    ...page,
+    title: page.title || page.label || titleFromUrl(page.url)
+  }))
+);
+
+const pageByUrl = new Map();
+for (const page of [...catalogPages, ...(data.pages || [])]) pageByUrl.set(page.url, page);
+const allPages = [...pageByUrl.values()].sort((a, b) => a.url.localeCompare(b.url));
+
 function navLinks() {
   return data.primaryNav.map((item) => `<a href="${esc(item.url)}">${esc(item.label)}</a>`).join("");
 }
@@ -175,7 +201,7 @@ function pillarPage(pillar) {
   const relatedTools = data.tools
     .filter((tool) => tool.next.includes(pillar.slug) || (pillar.slug === "auto" && tool.slug.includes("auta")) || (pillar.slug === "dom" && tool.slug.includes("remont")))
     .slice(0, 4);
-  const pages = data.pages.filter((page) => page.pillar === pillar.slug);
+  const pages = allPages.filter((page) => page.pillar === pillar.slug);
 
   return layout({
     url: `/${pillar.slug}`,
@@ -261,6 +287,10 @@ function toolPage(tool) {
 
 function genericPage(page) {
   const pillar = pillarBySlug.get(page.pillar);
+  const sectionLinks = pillar?.priorityLinks || [];
+  const relatedTools = data.tools
+    .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
+    .slice(0, 3);
   return layout({
     url: page.url,
     title: `${page.title} | ${data.name}`,
@@ -283,13 +313,28 @@ function genericPage(page) {
       <section>
         <div class="section-head">
           <h2>Najwazniejsze zasady</h2>
-          <p>Ta strona jest fundamentem pod pelna tresc w kolejnych sprintach.</p>
+          <p>Ta strona jest czescia pelnej mapy serwisu. Teraz ma fundament SEO, CTA i linkowanie; w kolejnych sprintach dostanie pelna tresc lub modul ofertowy.</p>
         </div>
         <div class="trust-grid">
           <div><strong>Najpierw zrozum</strong><span>Co wybierasz, jakie sa koszty i gdzie sa ograniczenia.</span></div>
           <div><strong>Sprawdz ryzyko</strong><span>Przy finansach, ubezpieczeniach, aucie i domu decyzje moga kosztowac realne pieniadze.</span></div>
           <div><strong>Przejdz dalej</strong><span>Uzyj narzedzia, checklisty, rankingu albo poradnika powiazanego z tematem.</span></div>
         </div>
+      </section>
+      <section>
+        <div class="section-head">
+          <h2>Powiazane tematy</h2>
+          <p>Linki sa dobierane kontekstowo, zeby uzytkownik nie konczyl w slepej uliczce.</p>
+        </div>
+        <div class="list-grid">${
+          sectionLinks
+            .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Wazny krok w tym pionie</span></a>`)
+            .join("") ||
+          relatedTools
+            .map((tool) => `<a class="list-card" href="/narzedzia/${esc(tool.slug)}"><strong>${esc(tool.name)}</strong><span>${esc(tool.description)}</span></a>`)
+            .join("") ||
+          `<a class="list-card" href="/narzedzia"><strong>Narzedzia</strong><span>Kalkulatory i checklisty do dalszej decyzji.</span></a>`
+        }</div>
       </section>
     </main>`
   });
@@ -332,7 +377,7 @@ writePage("/", homePage());
 for (const pillar of data.pillars) writePage(`/${pillar.slug}`, pillarPage(pillar));
 writePage("/narzedzia", toolsIndex());
 for (const tool of data.tools) writePage(`/narzedzia/${tool.slug}`, toolPage(tool));
-for (const page of data.pages) writePage(page.url, genericPage(page));
+for (const page of allPages) writePage(page.url, genericPage(page));
 
 writePage("/faq", simplePage("/faq", "FAQ", "Krotkie odpowiedzi na najwazniejsze pytania o serwis, afiliacje, narzedzia i decyzje."));
 writePage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmowac praktyczne decyzje i jasno oznacza, jak zarabia."));
@@ -345,7 +390,7 @@ const urls = [
   ...data.pillars.map((pillar) => `/${pillar.slug}`),
   "/narzedzia",
   ...data.tools.map((tool) => `/narzedzia/${tool.slug}`),
-  ...data.pages.map((page) => page.url),
+  ...allPages.map((page) => page.url),
   "/faq",
   "/o-nas",
   "/kontakt",
