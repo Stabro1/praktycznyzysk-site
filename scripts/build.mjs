@@ -151,12 +151,22 @@ function card(item, extra = "") {
 }
 
 function offerCard(offer) {
+  const meta = [
+    offer.reward ? { label: "Premia", value: offer.reward } : null,
+    offer.difficulty ? { label: "Trudnosc", value: offer.difficulty } : null,
+    offer.time ? { label: "Czas", value: offer.time } : null,
+    offer.deadline ? { label: "Do kiedy", value: offer.deadline } : null,
+    offer.audience ? { label: "Dla kogo", value: offer.audience } : null
+  ].filter(Boolean);
   return `<article class="offer-card">
     <div>
       <span class="badge">${esc(offer.category)}</span>
       <h3>${esc(offer.name)}</h3>
       <p>${esc(offer.summary)}</p>
     </div>
+    <div class="offer-meta">${meta
+      .map((item) => `<div><span>${esc(item.label)}</span><strong>${esc(item.value)}</strong></div>`)
+      .join("")}</div>
     <div class="disclosure-box">
       <strong>Oznaczenie</strong>
       <span>To miejsce pod przyszly link afiliacyjny. Warunki, prowizje i dostawca musza byc sprawdzone przed publikacja prawdziwego linku.</span>
@@ -168,7 +178,7 @@ function offerCard(offer) {
       })
       .join("")}</dl>
     <div class="offer-split">
-      <div><strong>Plusy</strong><ul>${(offer.pros || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
+      <div><strong>Warunki</strong><ul>${(offer.conditions || offer.pros || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
       <div><strong>Uwaga</strong><p>${esc(offer.warning)}</p></div>
     </div>
     <div class="update-stamp">Aktualizacja: ${esc(data.lastUpdated)}</div>

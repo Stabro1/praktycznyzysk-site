@@ -327,6 +327,34 @@ main section { padding: 48px 0; }
   margin: 0;
 }
 
+.offer-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.offer-meta div {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.offer-meta span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.offer-meta strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--brand-dark);
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 .disclosure-box,
 .affiliate-disclosure,
 .legal-list article {
@@ -667,6 +695,7 @@ input[type="checkbox"] {
   .cards-5,
   .grid,
   .offer-grid,
+  .offer-meta,
   .offer-params,
   .offer-split,
   .list-grid,
