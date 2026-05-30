@@ -18,6 +18,7 @@ const esc = (value = "") =>
     .replaceAll('"', "&quot;");
 
 const stripSlash = (url) => url.replace(/^\/|\/$/g, "");
+const previewBase = data.previewBase || "/podglad-stabro";
 const outFile = (url) => {
   const clean = stripSlash(url);
   return clean ? path.join(dist, clean, "index.html") : path.join(dist, "index.html");
@@ -27,6 +28,15 @@ const writePage = (url, html) => {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
 };
+const previewUrl = (url) => `${previewBase}${url === "/" ? "" : url}`;
+const previewHtml = (html) =>
+  html
+    .replaceAll(`href="/styles.css"`, `href="/styles.css"`)
+    .replaceAll(`src="/analytics.js"`, `src="/analytics.js"`)
+    .replaceAll(`href="/`, `href="${previewBase}/`)
+    .replaceAll(`href="${previewBase}/styles.css"`, `href="/styles.css"`)
+    .replaceAll(`src="${previewBase}/analytics.js"`, `src="/analytics.js"`);
+const writePreviewPage = (url, html) => writePage(previewUrl(url), previewHtml(html));
 
 const pillarBySlug = new Map(data.pillars.map((pillar) => [pillar.slug, pillar]));
 
@@ -767,6 +777,32 @@ function legalPage(url, title, description, sections) {
 
 if (data.privateMode) {
   writePage("/", privatePage());
+  writePreviewPage("/", homePage());
+  for (const pillar of data.pillars) writePreviewPage(`/${pillar.slug}`, pillarPage(pillar));
+  writePreviewPage("/narzedzia", toolsIndex());
+  for (const tool of data.tools) writePreviewPage(`/narzedzia/${tool.slug}`, toolPage(tool));
+  writePreviewPage("/oferty", offersIndex());
+  for (const offer of offers) writePreviewPage(`/go/${offer.slug}`, goPage(offer));
+  for (const page of allPages) writePreviewPage(page.url, genericPage(page));
+  writePreviewPage("/faq", simplePage("/faq", "FAQ", "Krotkie odpowiedzi na najwazniejsze pytania o serwis, afiliacje, narzedzia i decyzje."));
+  writePreviewPage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmowac praktyczne decyzje i jasno oznacza, jak zarabia."));
+  writePreviewPage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, wspolprace i partnerstwa afiliacyjne."));
+  writePreviewPage(
+    "/polityka-prywatnosci",
+    legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, klikniecia i przyszle przekierowania partnerskie.", [
+      { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta uzytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerow." },
+      { title: "Klikniecia i analityka", text: "Serwis przygotowuje lekkie zdarzenia klikniec CTA i ofert, zeby pozniej mierzyc skutecznosc stron. Nie zapisujemy wrazliwych danych finansowych w tych zdarzeniach." },
+      { title: "Partnerzy", text: "Po dodaniu prawdziwych linkow afiliacyjnych uzytkownik moze przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
+    ])
+  );
+  writePreviewPage(
+    "/regulamin",
+    legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu przed uruchomieniem prawdziwych ofert afiliacyjnych.", [
+      { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzedzia orientacyjne, checklisty i porownania. Serwis nie jest bankiem, ubezpieczycielem, doradca finansowym, prawna ani podatkowa." },
+      { title: "Oferty i linki", text: "Karty ofert moga zawierac linki afiliacyjne po ich podpieciu. Przed decyzja uzytkownik powinien sprawdzic aktualne warunki bezposrednio u partnera." },
+      { title: "Narzedzia", text: "Kalkulatory i checklisty maja charakter orientacyjny. Wynik nie jest decyzja kredytowa, wycena ubezpieczenia ani indywidualna porada." }
+    ])
+  );
   fs.writeFileSync(path.join(dist, "404.html"), privatePage());
   fs.writeFileSync(path.join(dist, "robots.txt"), "User-agent: *\nDisallow: /\n");
   fs.writeFileSync(
