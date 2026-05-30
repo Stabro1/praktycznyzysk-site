@@ -103,6 +103,153 @@
     { "slug": "checklista-remont", "name": "Checklista remont", "description": "Zakres, budzet, rezerwa, wykonawca, umowa i finansowanie.", "next": "/dom/remont" }
   ],
   "pageContent": {
+    "/finanse/kredyty-gotowkowe": [
+      {
+        "type": "steps",
+        "title": "Jak porownac kredyt gotowkowy",
+        "description": "Ten lejek ma prowadzic do swiadomego porownania kosztow, nie do losowego klikniecia w reklame.",
+        "items": [
+          { "title": "Ustal kwote i cel", "text": "Nie zaczynaj od maksymalnej dostepnej kwoty. Zacznij od realnej potrzeby i sprawdz, czy rata miesci sie w budzecie." },
+          { "title": "Porownaj RRSO i rate", "text": "RRSO pomaga porownywac koszt, ale uzytkownik musi widziec tez miesieczna rate i calkowita kwote do splaty." },
+          { "title": "Sprawdz prowizje i ubezpieczenia", "text": "Niska rata moze ukrywac dluzszy okres, prowizje, dodatkowe produkty albo drogie ubezpieczenie." },
+          { "title": "Dopiero potem kliknij partnera", "text": "CTA ma prowadzic do rankingu albo partnera, ale po pokazaniu kosztow i ostrzezen." }
+        ]
+      },
+      {
+        "type": "warning",
+        "badge": "Koszt",
+        "title": "Nie porownuj kredytu tylko po racie",
+        "text": "Niska rata moze oznaczac dluzszy okres i wyzszy koszt calkowity. Na stronie zawsze pokazujemy RRSO, rate, okres i calkowita kwote do splaty."
+      },
+      {
+        "type": "cards",
+        "title": "Najlepsze przejscia",
+        "items": [
+          { "title": "Kalkulator raty", "text": "Najpierw policz orientacyjna rate i koszt." },
+          { "title": "Ranking kredytow", "text": "Potem porownaj oferty wedlug kosztu i warunkow." },
+          { "title": "BIK i zdolnosc", "text": "Jesli wynik moze byc slaby, sprawdz BIK i budzet przed wnioskiem." }
+        ]
+      }
+    ],
+    "/finanse/chwilowki": [
+      {
+        "type": "warning",
+        "badge": "Ryzyko",
+        "title": "Chwilowki musza byc osobnym lejkiem",
+        "text": "Nie mieszamy chwilowek z kredytami gotowkowymi. Promocja 0% zwykle dotyczy pierwszej pozyczki i terminowej splaty, a koszt po terminie moze byc bardzo wysoki."
+      },
+      {
+        "type": "checklist",
+        "title": "Zanim klikniesz chwilowke",
+        "description": "Minimalna checklista, ktora chroni zaufanie i ogranicza spamowy charakter strony.",
+        "items": [
+          "sprawdz RRSO i calkowita kwote do splaty",
+          "sprawdz, czy 0% dotyczy tylko pierwszej pozyczki",
+          "sprawdz termin splaty i koszt po terminie",
+          "upewnij sie, ze masz konkretny plan splaty",
+          "nie bierz chwilowki na splate innej chwilowki"
+        ]
+      },
+      {
+        "type": "cards",
+        "title": "Kiedy chwilowka jest zlym pomyslem",
+        "items": [
+          { "title": "Brak pewnej splaty", "text": "Jesli nie wiesz, z czego splacisz calosc w terminie, ryzyko jest za wysokie." },
+          { "title": "Splacanie dlugow", "text": "Rolowanie zobowiazan zwykle pogarsza sytuacje." },
+          { "title": "Ukrywanie problemu", "text": "Jesli problemem jest budzet, najpierw trzeba policzyc wydatki i raty." }
+        ]
+      }
+    ],
+    "/finanse/kredyt-vs-chwilowka": [
+      {
+        "type": "cards",
+        "title": "Kredyt czy chwilowka",
+        "description": "Ta strona ma rozdzielac intencje i wysylac uzytkownika we wlasciwy lejek.",
+        "items": [
+          { "title": "Kredyt gotowkowy", "text": "Lepszy przy wiekszej kwocie, dluzszym okresie i potrzebie stalej raty." },
+          { "title": "Chwilowka", "text": "Tylko przy krotkim terminie, pelnej kontroli splaty i jasnym koszcie." },
+          { "title": "Brak decyzji", "text": "Jesli nie znasz raty, RRSO i kosztu po terminie, najpierw uzyj kalkulatora." }
+        ]
+      },
+      {
+        "type": "steps",
+        "title": "Jak podjac decyzje",
+        "items": [
+          { "title": "Policz rate albo termin splaty", "text": "Dopasuj produkt do przeplywu gotowki, nie do reklamy." },
+          { "title": "Sprawdz koszt calkowity", "text": "Porownuj pieniadze, ktore realnie oddasz, a nie tylko haslo promocyjne." },
+          { "title": "Odrzuc ryzykowny wariant", "text": "Jesli splata wymaga idealnego scenariusza, decyzja jest za droga." }
+        ]
+      }
+    ],
+    "/finanse/ranking-kredytow-gotowkowych": [
+      {
+        "type": "cards",
+        "title": "Model rankingu kredytow",
+        "description": "Ranking musi byc transparentny i latwy do aktualizacji.",
+        "items": [
+          { "title": "RRSO", "text": "Widoczne przy kazdej ofercie jako podstawowy wskaznik kosztu." },
+          { "title": "Rata i okres", "text": "Uzytkownik musi wiedziec, czy rata pasuje do budzetu." },
+          { "title": "Koszt calkowity", "text": "Pokazujemy calkowita kwote do splaty, prowizje i warunki." }
+        ]
+      },
+      {
+        "type": "warning",
+        "title": "Ranking nie jest decyzja kredytowa",
+        "text": "Bez integracji i danych klienta nie obiecujemy akceptacji ani konkretnej oferty. Ranking kieruje do partnera albo formularza po pokazaniu zasad porownania."
+      }
+    ],
+    "/finanse/ranking-chwilowek": [
+      {
+        "type": "warning",
+        "badge": "Widoczne ryzyko",
+        "title": "Ranking chwilowek bez ostrzezen bylby bledem",
+        "text": "Przy chwilowkach najwyzej pokazujemy koszt, termin, warunki 0% i konsekwencje opoznienia. To ma byc ranking decyzji, nie agresywna lista reklam."
+      },
+      {
+        "type": "checklist",
+        "title": "Kryteria rankingu chwilowek",
+        "items": [
+          "RRSO i calkowita kwota do splaty",
+          "czy promocja 0% dotyczy tylko nowych klientow",
+          "termin splaty",
+          "koszt po terminie",
+          "jasnosc regulaminu i przekierowania do partnera"
+        ]
+      }
+    ],
+    "/finanse/bik-big-krd-erif": [
+      {
+        "type": "cards",
+        "title": "Co oznaczaja bazy",
+        "description": "Proste wyjasnienie bez udawania porady prawnej ani decyzji bankowej.",
+        "items": [
+          { "title": "BIK", "text": "Historia kredytowa i informacje o zobowiazaniach, wazne przy bankach." },
+          { "title": "BIG / KRD / ERIF", "text": "Rejestry informacji gospodarczej, ktore moga pokazywac zaleglosci." },
+          { "title": "Przed wnioskiem", "text": "Jesli boisz sie odmowy, najpierw sprawdz raport i budzet." }
+        ]
+      },
+      {
+        "type": "steps",
+        "title": "Co zrobic przed finansowaniem",
+        "items": [
+          { "title": "Sprawdz raport", "text": "Zobacz, czy dane sa aktualne i czy nie ma blednych wpisow." },
+          { "title": "Policz obciazenia", "text": "Suma rat i stale koszty sa wazniejsze niz sama wysokosc dochodu." },
+          { "title": "Nie skladaj wielu wnioskow naraz", "text": "Chaos w zapytaniach moze pogorszyc sytuacje i utrudnic porownanie." }
+        ]
+      }
+    ],
+    "/finanse/rrso-co-to-jest": [
+      {
+        "type": "steps",
+        "title": "Jak rozumiec RRSO",
+        "description": "RRSO jest potrzebne, ale nie wystarcza samo w sobie.",
+        "items": [
+          { "title": "Porownuj podobne produkty", "text": "RRSO najlepiej dziala, gdy porownujesz podobna kwote i okres." },
+          { "title": "Sprawdz calkowity koszt", "text": "Zawsze patrz, ile realnie oddasz w zlotowkach." },
+          { "title": "Czytaj warunki promocji", "text": "0% i niska prowizja moga zalezec od terminowej splaty albo dodatkowych produktow." }
+        ]
+      }
+    ],
     "/auto/historia-pojazdu": [
       {
         "type": "steps",
