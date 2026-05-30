@@ -348,7 +348,98 @@ function pillarPage(pillar) {
   });
 }
 
+const toolModels = {
+  "kalkulator-zdolnosci-kredytowej": {
+    type: "calculator",
+    fields: ["Miesieczny dochod netto", "Stale raty i zobowiazania", "Koszty zycia", "Planowana rata"],
+    resultTitle: "Orientacyjna zdolnosc i margines bezpieczenstwa",
+    resultText: "Wynik powinien pokazac, czy budzet ma miejsce na nowa rate. To nie jest decyzja banku, tylko filtr przed rankingiem i wnioskiem.",
+    bullets: ["rata nie powinna zabierac calej nadwyzki", "sprawdz BIK przed wieloma wnioskami", "zostaw bufor na koszty stale"]
+  },
+  "kalkulator-raty": {
+    type: "calculator",
+    fields: ["Kwota kredytu", "Okres w miesiacach", "Oprocentowanie lub szacowany koszt", "Prowizja"],
+    resultTitle: "Rata, koszt i calkowita kwota do splaty",
+    resultText: "To narzedzie ma kierowac do porownania kredytow dopiero po zrozumieniu raty i kosztu calkowitego.",
+    bullets: ["porownuj RRSO i kwote do splaty", "nizsza rata moze oznaczac dluzszy okres", "sprawdz prowizje i ubezpieczenia"]
+  },
+  "kalkulator-rrso": {
+    type: "calculator",
+    fields: ["Kwota finansowania", "Kwota do oddania", "Okres splaty", "Dodatkowe koszty"],
+    resultTitle: "Szacunkowe RRSO i sygnal ryzyka",
+    resultText: "RRSO ma pomagac porownac oferty, ale przy bardzo krotkich pozyczkach wynik moze wygladac skrajnie wysoko.",
+    bullets: ["porownuj podobne kwoty i okresy", "0% wymaga spelnienia warunkow", "zawsze sprawdz koszt po terminie"]
+  },
+  "kalkulator-oc": {
+    type: "calculator",
+    fields: ["Wiek kierowcy", "Historia szkod", "Pojemnosc i rocznik auta", "Kod pocztowy"],
+    resultTitle: "Czynniki, ktore moga podniesc skladke",
+    resultText: "Bez integracji nie pokazujemy realnej skladki. Pokazujemy czynniki ceny i przejscie do porownania OC/AC.",
+    bullets: ["OC porownuj przed koncem polisy", "przy AC sprawdz zakres i wykluczenia", "po zakupie auta sprawdz ciaglosc OC"]
+  },
+  "budzet-domowy": {
+    type: "calculator",
+    fields: ["Dochody miesieczne", "Koszty stale", "Raty i abonamenty", "Planowana rezerwa"],
+    resultTitle: "Nadwyzka, deficyt i bezpieczny limit rat",
+    resultText: "Budzet ma pokazac, czy decyzja finansowa jest realna, zanim uzytkownik przejdzie do kredytu, chwilowki albo remontu.",
+    bullets: ["najpierw rezerwa, potem rata", "oddziel potrzeby od zachcianek", "nie finansuj deficytu chwilowka"]
+  },
+  "checklista-kredyt": {
+    type: "checklist",
+    fields: ["RRSO widoczne", "Rata pasuje do budzetu", "Koszt calkowity znany", "Warunki i prowizje sprawdzone"],
+    resultTitle: "Gotowosc do porownania ofert",
+    resultText: "Jesli ktorys punkt nie jest spelniony, uzytkownik powinien wrocic do kalkulatora raty albo RRSO.",
+    bullets: ["nie skladaj wielu wnioskow naraz", "sprawdz calkowita kwote do splaty", "czytaj warunki dodatkowych produktow"]
+  },
+  "checklista-chwilowka": {
+    type: "checklist",
+    fields: ["Znam termin splaty", "Znam koszt po terminie", "Mam pieniadze na splate", "Nie splacam innej chwilowki"],
+    resultTitle: "Czerwone flagi przed chwilowka",
+    resultText: "Ta checklista ma ograniczac ryzykowne klikniecia. Chwilowka bez pewnej splaty jest zlym produktem dla uzytkownika.",
+    bullets: ["0% zwykle dotyczy pierwszej pozyczki", "opoznienie moze mocno podniesc koszt", "nie roluj zobowiazan"]
+  },
+  "checklista-zakup-auta": {
+    type: "checklist",
+    fields: ["VIN i rejestracja", "Historia gov.pl", "Ogledziny i jazda probna", "OC/AC i koszty po zakupie"],
+    resultTitle: "Gotowosc do decyzji o aucie",
+    resultText: "Najpierw historia i stan auta, potem polisa i finansowanie. Raport VIN nie zastapi ogledzin.",
+    bullets: ["sprawdz dane z dokumentami", "nie plac zaliczki pod presja", "policz serwis startowy i OC"]
+  },
+  "checklista-rozmowa-kwalifikacyjna": {
+    type: "checklist",
+    fields: ["CV dopasowane", "Odpowiedzi przygotowane", "Pytania do firmy", "Oczekiwania finansowe"],
+    resultTitle: "Gotowosc do rozmowy",
+    resultText: "Uzytkownik ma wyjsc z narzedzia do rozmowy kwalifikacyjnej, kreatora CV albo negocjacji wynagrodzenia.",
+    bullets: ["przygotuj liczby i przyklady", "sprawdz firme przed rozmowa", "ustal minimalna akceptowalna stawke"]
+  },
+  "checklista-remont": {
+    type: "checklist",
+    fields: ["Zakres prac", "Budzet i rezerwa", "Wykonawca i umowa", "Harmonogram i odbior"],
+    resultTitle: "Gotowosc do startu remontu",
+    resultText: "Remont bez zakresu, rezerwy i umowy latwo ucieka z budzetu. Narzedzie prowadzi do planu i finansowania.",
+    bullets: ["zostaw rezerwe na niespodzianki", "porownaj minimum kilka wycen", "nie zaczynaj bez pisemnego zakresu"]
+  }
+};
+
+function renderToolInputs(model) {
+  return (model.fields || [])
+    .map((field, index) => {
+      const input = model.type === "checklist"
+        ? `<label class="check-row"><input type="checkbox"><span>${esc(field)}</span></label>`
+        : `<label>${esc(field)}</label><input value="" placeholder="${index === 0 ? "wpisz wartosc" : "uzupelnij"}">`;
+      return input;
+    })
+    .join("");
+}
+
 function toolPage(tool) {
+  const model = toolModels[tool.slug] || {
+    type: "calculator",
+    fields: ["Kwota / wartosc", "Okres / sytuacja"],
+    resultTitle: "Wynik bedzie punktem startowym",
+    resultText: "Na tym etapie pokazujemy bezpieczny model narzedzia: input, wynik, interpretacja, ostrzezenie i nastepny krok.",
+    bullets: ["uzyj wyniku jako punktu startowego", "sprawdz warunki przed kliknieciem", "przejdz do powiazanej strony"]
+  };
   const related = [
     { label: "Wroc do narzedzi", url: "/narzedzia", note: "Zobacz pozostale kalkulatory i checklisty" },
     { label: "Przejdz do wyniku", url: tool.next, note: "Najblizszy krok po uzyciu narzedzia" }
@@ -374,14 +465,15 @@ function toolPage(tool) {
       <section>
         <div class="tool-shell">
           <div class="fake-form">
-            <label>Kwota / wartosc</label><input value="" placeholder="np. 20000">
-            <label>Okres / sytuacja</label><input value="" placeholder="np. 36 miesiecy">
-            <button class="button" type="button">Pokaz wynik orientacyjny</button>
+            <span class="badge">${model.type === "checklist" ? "Checklista" : "Kalkulator"}</span>
+            ${renderToolInputs(model)}
+            <button class="button" type="button">${model.type === "checklist" ? "Sprawdz gotowosc" : "Pokaz wynik orientacyjny"}</button>
           </div>
           <div class="result-card">
             <span class="badge">Co dalej?</span>
-            <h2>Wynik bedzie punktem startowym</h2>
-            <p>Na tym etapie pokazujemy bezpieczny model narzedzia: input, wynik, interpretacja, ostrzezenie i nastepny krok. Nie udajemy decyzji bankowej, realnej skladki ani indywidualnej porady.</p>
+            <h2>${esc(model.resultTitle)}</h2>
+            <p>${esc(model.resultText)} Nie udajemy decyzji bankowej, realnej skladki ani indywidualnej porady.</p>
+            <ul class="tool-points">${model.bullets.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
             ${cta("Przejdz do nastepnego kroku", tool.next)}
           </div>
         </div>
