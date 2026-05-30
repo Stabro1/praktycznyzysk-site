@@ -1,0 +1,131 @@
+{
+  "updatedAt": "2026-05-30",
+  "purpose": "Private working watchlist for affiliate offer research. This file is not used by the public site generator.",
+  "sources": [
+    {
+      "name": "Monazo",
+      "url": "https://monazo.pl/",
+      "use": "UX benchmark, difficulty/time labels, active bank promotions"
+    },
+    {
+      "name": "Lowca Bonusow",
+      "url": "https://lowcabonusow.pl/",
+      "use": "Radar for fresh bank, telecom and service bonuses"
+    },
+    {
+      "name": "ZgarnijPremie",
+      "url": "https://zgarnijpremie.pl/",
+      "use": "Simple promotion descriptions and deadline patterns"
+    },
+    {
+      "name": "Bankobranie",
+      "url": "https://www.bankobranie.pl/",
+      "use": "Expert radar, promotion commentary, current bank bonus lists"
+    },
+    {
+      "name": "Moniaki",
+      "url": "https://moniaki.pl/",
+      "use": "Fast scan of current bank promotions"
+    },
+    {
+      "name": "Moneteo",
+      "url": "https://moneteo.com/",
+      "use": "SEO and category benchmark for financial products"
+    }
+  ],
+  "statuses": {
+    "candidate": "Seen on monitoring source, not verified enough for public page.",
+    "verify_rules": "Needs bank regulation or official partner/program confirmation.",
+    "ready_placeholder": "Safe to show as user-facing placeholder without final affiliate URL.",
+    "ready_affiliate": "Accepted by partner network and ready for destination URL.",
+    "rejected": "Not worth publishing or too risky."
+  },
+  "candidates": [
+    {
+      "id": "erste-business-4500",
+      "status": "ready_placeholder",
+      "publicOfferSlug": "erste-konto-firmowe-4500",
+      "bank": "Erste Bank Polska",
+      "category": "business-account",
+      "audience": "JDG",
+      "reward": "do 4500 zl",
+      "difficulty": "Sredni",
+      "time": "20 min start + 3 miesiace aktywnosci",
+      "deadline": "2026-09-30",
+      "conditions": [
+        "3 x 1500 zl",
+        "wplyw min. 5000 zl miesiecznie",
+        "ZUS min. 100 zl",
+        "5 platnosci karta/BLIK po min. 50 zl",
+        "zgody marketingowe"
+      ],
+      "publicPages": [
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/konta-firmowe",
+        "/finanse/ranking-kont-firmowych",
+        "/oferty"
+      ],
+      "affiliateNetworksToCheck": ["eBrokerPartner", "System Partnerski Bankier"],
+      "verificationSources": [
+        "https://monazo.pl/oferta/erste-bank-konto-firmowe-online/",
+        "https://www.bankobranie.pl/2026/05/erste-bank-do-4500-zl-za-konto-firmowe.html"
+      ],
+      "notes": "Already published as public placeholder. Do not add final affiliate destination until partner panel confirms campaign, allowed traffic and payout model."
+    },
+    {
+      "id": "ing-business-4400",
+      "status": "verify_rules",
+      "bank": "ING Bank Slaski",
+      "category": "business-account",
+      "audience": "JDG or small business",
+      "reward": "do 4400 zl",
+      "difficulty": "Do oceny",
+      "time": "Do oceny",
+      "deadline": "Do oceny",
+      "conditions": ["Do weryfikacji w regulaminie banku", "Do weryfikacji w panelu afiliacyjnym"],
+      "publicPages": ["/finanse/konta-firmowe-z-premia"],
+      "affiliateNetworksToCheck": ["eBrokerPartner", "ComperiaLead", "Money2Money", "System Partnerski Bankier"],
+      "verificationSources": ["https://lowcabonusow.pl/"],
+      "notes": "Strong candidate mentioned in monitoring. Needs rule verification before any public card."
+    },
+    {
+      "id": "erste-personal-800",
+      "status": "verify_rules",
+      "bank": "Erste Bank Polska",
+      "category": "personal-account",
+      "audience": "osoba prywatna",
+      "reward": "do 800 zl",
+      "difficulty": "Do oceny",
+      "time": "Do oceny",
+      "deadline": "Do oceny",
+      "conditions": ["Do weryfikacji w regulaminie banku", "Oddzielic od oferty firmowej 4500 zl"],
+      "publicPages": ["/finanse/konta-z-premia", "/finanse/ranking-kont-z-premia"],
+      "affiliateNetworksToCheck": ["eBrokerPartner", "System Partnerski Bankier"],
+      "verificationSources": [
+        "https://monazo.pl/oferta/erste-bank-konto-smart/",
+        "https://www.bankobranie.pl/2026/04/odbierz-do-800-z-za-konto-santander.html"
+      ],
+      "notes": "Potential personal-account offer. Must not be mixed with the JDG offer."
+    },
+    {
+      "id": "personal-account-700-1000-watch",
+      "status": "candidate",
+      "bank": "Multiple banks",
+      "category": "personal-account",
+      "audience": "osoba prywatna",
+      "reward": "600-1000 zl",
+      "difficulty": "Do oceny",
+      "time": "Do oceny",
+      "deadline": "Do oceny",
+      "conditions": ["Do zebrania z regulaminow", "Do sprawdzenia w panelach afiliacyjnych"],
+      "publicPages": ["/finanse/konta-z-premia", "/finanse/ranking-kont-z-premia"],
+      "affiliateNetworksToCheck": ["eBrokerPartner", "ComperiaLead", "Money2Money", "System Partnerski Bankier"],
+      "verificationSources": [
+        "https://www.bankobranie.pl/p/best-of-best.html",
+        "https://monazo.pl/",
+        "https://moneteo.com/"
+      ],
+      "notes": "Bucket for recurring social-friendly offers. Split into individual records after regulation and partner verification."
+    }
+  ]
+}
