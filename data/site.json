@@ -5,6 +5,7 @@
   "tagline": "Praktyczne decyzje, ktore pomagaja oszczedzac, zarabiac i nie przeplacac.",
   "description": "Finanse, ubezpieczenia, auto, praca i dom - prosto, konkretnie, bez lania wody.",
   "lastUpdated": "2026-05-30",
+  "privateMode": true,
   "disclosure": "Czesc linkow moze byc afiliacyjna. Nie jestesmy bankiem, ubezpieczycielem ani kancelaria. Pokazujemy informacje, narzedzia i linki do partnerow, a warunki zawsze sprawdzasz u dostawcy.",
   "primaryNav": [
     { "label": "Finanse", "url": "/finanse" },

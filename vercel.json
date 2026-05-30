@@ -3,10 +3,20 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"

@@ -137,6 +137,27 @@ function layout({ url = "/", title, description, body, crumbs = [], noindex = fa
 </html>`;
 }
 
+function privatePage() {
+  return layout({
+    url: "/",
+    title: `${data.name} | Strona w przygotowaniu`,
+    description: "Serwis jest tymczasowo prywatny do czasu uruchomienia finalnej wersji.",
+    noindex: true,
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Tryb prywatny</div>
+            <h1>PraktycznyZysk.pl jest w przygotowaniu.</h1>
+            <p class="lead">Dopracowujemy finalna wersje serwisu, oferty partnerskie, oznaczenia i linki. Publiczna wersja wroci po zakonczeniu konfiguracji.</p>
+            <div class="notice">Strona nie prezentuje teraz rankingow, ofert ani linkow afiliacyjnych.</div>
+          </div>
+        </div>
+      </section>
+    </main>`
+  });
+}
+
 function cta(label, url, secondary = false) {
   return `<a class="button${secondary ? " secondary" : ""}" href="${esc(url)}" data-track="cta" data-track-label="${esc(label)}">${esc(label)}</a>`;
 }
@@ -742,6 +763,18 @@ function legalPage(url, title, description, sections) {
       </section>
     </main>`
   });
+}
+
+if (data.privateMode) {
+  writePage("/", privatePage());
+  fs.writeFileSync(path.join(dist, "404.html"), privatePage());
+  fs.writeFileSync(path.join(dist, "robots.txt"), "User-agent: *\nDisallow: /\n");
+  fs.writeFileSync(
+    path.join(dist, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>\n`
+  );
+  console.log(`Built ${dist} in private mode`);
+  process.exit(0);
 }
 
 writePage("/", homePage());
