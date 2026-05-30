@@ -141,6 +141,18 @@
       "warning": "Premia ma sens tylko wtedy, gdy warunki aktywnosci sa realne do spelnienia."
     },
     {
+      "slug": "erste-konto-firmowe-4500",
+      "name": "Erste Konto Firmowe Online - premia do 4500 zl",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": ["/finanse/konta-firmowe", "/finanse/konta-z-premia", "/finanse/ranking-kont-firmowych"],
+      "summary": "Placeholder pod kampanie Erste dla JDG: promocja konta firmowego z premia do 4500 zl, po spelnieniu miesiecznych warunkow aktywnosci.",
+      "params": ["Premia: 3 x 1500 zl", "Okres przystapienia: 01.05-30.09.2026", "Dla kogo: JDG", "Wplyw: min. 5000 zl miesiecznie"],
+      "pros": ["bardzo mocny haczyk marketingowy", "wysoka premia dla aktywnej JDG", "pasuje do sociali o firmie i kosztach"],
+      "cons": ["nie jest to konto osobiste", "wymaga ZUS, wplywu i platnosci", "nagroda jest przychodem firmy"],
+      "warning": "Oferta dotyczy konta firmowego dla JDG. Nie prezentowac jej jako zwykle konto osobiste z premia."
+    },
+    {
       "slug": "oc-ac-demo",
       "name": "OC/AC - miejsce na porownywarke",
       "category": "insurance",
@@ -178,6 +190,47 @@
     }
   ],
   "pageContent": {
+    "/finanse/konta-firmowe": [
+      {
+        "type": "cards",
+        "title": "Konto firmowe z premia - osobny lejek",
+        "description": "Promocje kont firmowych maja inne warunki niz konta osobiste. Nie mieszamy tego z prostymi bonusami za konto prywatne.",
+        "items": [
+          { "title": "Dla JDG", "text": "Najmocniejsze promocje czesto sa dla osob prowadzacych jednoosobowa dzialalnosc gospodarcza." },
+          { "title": "Warunki aktywnosci", "text": "Zwykle trzeba utrzymac wplywy, przelewy do ZUS, platnosci karta lub BLIK i zgody marketingowe." },
+          { "title": "Podatek i ksiegowosc", "text": "Premia dla firmy moze byc przychodem z dzialalnosci, wiec trzeba uwzglednic rozliczenie." }
+        ]
+      },
+      {
+        "type": "steps",
+        "title": "Erste Konto Firmowe Online - jak czytac promocje do 4500 zl",
+        "description": "To mocny kandydat do pierwszej kampanii kont firmowych, ale tylko dla wlasciwej grupy: JDG.",
+        "items": [
+          { "title": "Sprawdz, czy to Ciebie dotyczy", "text": "Promocja jest dla osoby fizycznej prowadzacej jednoosobowa dzialalnosc gospodarcza, poza spolka cywilna." },
+          { "title": "Zweryfikuj wykluczenia", "text": "W ostatnich 12 miesiacach nie mozna miec/prowadzic konta firmowego w Erste/Santander." },
+          { "title": "Policz miesieczne warunki", "text": "Na miesiac premii wymagany jest zewnetrzny wplyw min. 5000 zl, przelew do ZUS min. 100 zl i 5 platnosci karta lub BLIK po min. 50 zl." },
+          { "title": "Pamietaj o podatku", "text": "Nagroda jest przychodem z dzialalnosci. Uzytkownik powinien uwzglednic to w rozliczeniu firmy." }
+        ]
+      },
+      {
+        "type": "warning",
+        "badge": "Wazne",
+        "title": "Nie sprzedawac tego jako zwyklego konta z premia",
+        "text": "Oferta do 4500 zl dotyczy konta firmowego i wymaga aktywnosci firmowej. Na stronie musi byc jasne: JDG, warunki miesieczne, ZUS, wplywy, platnosci i przychod podatkowy."
+      }
+    ],
+    "/finanse/konta-z-premia": [
+      {
+        "type": "cards",
+        "title": "Konto osobiste czy firmowe z premia",
+        "description": "Uzytkownik z sociali moze szukac prostego bonusu, ale osoby z JDG moga miec osobne, wyzsze promocje.",
+        "items": [
+          { "title": "Konto osobiste", "text": "Dla premii prywatnych sprawdzamy kwote bonusu, oplaty, wymagane transakcje i zgody." },
+          { "title": "Konto firmowe", "text": "Dla JDG pokazujemy osobny lejek: konto firmowe, ZUS, wplywy, platnosci i rozliczenie nagrody." },
+          { "title": "Erste do 4500 zl", "text": "To kandydat na osobna oferte firmowa, a nie element rankingu zwyklych kont osobistych." }
+        ]
+      }
+    ],
     "/finanse/kredyty-gotowkowe": [
       {
         "type": "steps",
