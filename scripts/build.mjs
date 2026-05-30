@@ -8,6 +8,7 @@ const data = JSON.parse(fs.readFileSync(path.join(root, "data", "site.json"), "u
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 fs.copyFileSync(path.join(root, "src", "styles.css"), path.join(dist, "styles.css"));
+fs.copyFileSync(path.join(root, "src", "analytics.js"), path.join(dist, "analytics.js"));
 
 const esc = (value = "") =>
   String(value)
@@ -102,6 +103,7 @@ function layout({ url = "/", title, description, body, crumbs = [], noindex = fa
   ${noindex ? '<meta name="robots" content="noindex,follow">' : ""}
   <link rel="canonical" href="${esc(canonical)}">
   <link rel="stylesheet" href="/styles.css">
+  <script defer src="/analytics.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -136,7 +138,7 @@ function layout({ url = "/", title, description, body, crumbs = [], noindex = fa
 }
 
 function cta(label, url, secondary = false) {
-  return `<a class="button${secondary ? " secondary" : ""}" href="${esc(url)}">${esc(label)}</a>`;
+  return `<a class="button${secondary ? " secondary" : ""}" href="${esc(url)}" data-track="cta" data-track-label="${esc(label)}">${esc(label)}</a>`;
 }
 
 function card(item, extra = "") {
@@ -155,6 +157,10 @@ function offerCard(offer) {
       <h3>${esc(offer.name)}</h3>
       <p>${esc(offer.summary)}</p>
     </div>
+    <div class="disclosure-box">
+      <strong>Oznaczenie</strong>
+      <span>To miejsce pod przyszly link afiliacyjny. Warunki, prowizje i dostawca musza byc sprawdzone przed publikacja prawdziwego linku.</span>
+    </div>
     <dl class="offer-params">${(offer.params || [])
       .map((param) => {
         const [key, ...rest] = String(param).split(":");
@@ -165,6 +171,7 @@ function offerCard(offer) {
       <div><strong>Plusy</strong><ul>${(offer.pros || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
       <div><strong>Uwaga</strong><p>${esc(offer.warning)}</p></div>
     </div>
+    <div class="update-stamp">Aktualizacja: ${esc(data.lastUpdated)}</div>
     ${cta("Zobacz miejsce na link", `/go/${offer.slug}`)}
   </article>`;
 }
@@ -258,6 +265,17 @@ function trustBlock() {
       <div><strong>Darmowe najpierw</strong><span>Jesli istnieje sensowne darmowe zrodlo, pokazujemy je przed platnym.</span></div>
       <div><strong>Ryzyko widoczne</strong><span>Przy drogich decyzjach pokazujemy koszty, warunki i kiedy uwazac.</span></div>
       <div><strong>Jasne CTA</strong><span>Kazda strona ma prowadzic do jednego logicznego nastepnego kroku.</span></div>
+    </div>
+  </section>`;
+}
+
+function affiliateDisclosureBlock() {
+  return `<section class="affiliate-disclosure">
+    <div>
+      <span class="badge">Disclosure</span>
+      <h2>Jak zarabia serwis</h2>
+      <p>${esc(data.disclosure)}</p>
+      <p>Jesli dodamy prawdziwy link partnera, klikniecie moze oznaczac prowizje dla serwisu. Nie zmienia to ceny po stronie uzytkownika, ale wymaga sprawdzenia aktualnych warunkow u dostawcy.</p>
     </div>
   </section>`;
 }
@@ -558,6 +576,7 @@ function genericPage(page) {
       </section>`
           : ""
       }
+      ${pageOffers.length ? affiliateDisclosureBlock() : ""}
       <section>
         <div class="section-head">
           <h2>Najwazniejsze zasady</h2>
@@ -686,6 +705,35 @@ function simplePage(url, title, description) {
   });
 }
 
+function legalPage(url, title, description, sections) {
+  return layout({
+    url,
+    title: `${title} | ${data.name}`,
+    description,
+    crumbs: [{ label: title, url }],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Strona prawna</div>
+            <h1>${esc(title)}</h1>
+            <p class="lead">${esc(description)}</p>
+            <div class="update-stamp">Aktualizacja: ${esc(data.lastUpdated)}</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="legal-list">${sections
+          .map((section) => `<article>
+            <h2>${esc(section.title)}</h2>
+            <p>${esc(section.text)}</p>
+          </article>`)
+          .join("")}</div>
+      </section>
+    </main>`
+  });
+}
+
 writePage("/", homePage());
 for (const pillar of data.pillars) writePage(`/${pillar.slug}`, pillarPage(pillar));
 writePage("/narzedzia", toolsIndex());
@@ -697,8 +745,22 @@ for (const page of allPages) writePage(page.url, genericPage(page));
 writePage("/faq", simplePage("/faq", "FAQ", "Krotkie odpowiedzi na najwazniejsze pytania o serwis, afiliacje, narzedzia i decyzje."));
 writePage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmowac praktyczne decyzje i jasno oznacza, jak zarabia."));
 writePage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, wspolprace i partnerstwa afiliacyjne."));
-writePage("/polityka-prywatnosci", simplePage("/polityka-prywatnosci", "Polityka prywatnosci", "Strona prawna do uzupelnienia przed formularzami leadowymi."));
-writePage("/regulamin", simplePage("/regulamin", "Regulamin", "Zasady korzystania z serwisu do uzupelnienia przed pelnym uruchomieniem."));
+writePage(
+  "/polityka-prywatnosci",
+  legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, klikniecia i przyszle przekierowania partnerskie.", [
+    { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta uzytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerow." },
+    { title: "Klikniecia i analityka", text: "Serwis przygotowuje lekkie zdarzenia klikniec CTA i ofert, zeby pozniej mierzyc skutecznosc stron. Nie zapisujemy wrazliwych danych finansowych w tych zdarzeniach." },
+    { title: "Partnerzy", text: "Po dodaniu prawdziwych linkow afiliacyjnych uzytkownik moze przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
+  ])
+);
+writePage(
+  "/regulamin",
+  legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu przed uruchomieniem prawdziwych ofert afiliacyjnych.", [
+    { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzedzia orientacyjne, checklisty i porownania. Serwis nie jest bankiem, ubezpieczycielem, doradca finansowym, prawna ani podatkowa." },
+    { title: "Oferty i linki", text: "Karty ofert moga zawierac linki afiliacyjne po ich podpieciu. Przed decyzja uzytkownik powinien sprawdzic aktualne warunki bezposrednio u partnera." },
+    { title: "Narzedzia", text: "Kalkulatory i checklisty maja charakter orientacyjny. Wynik nie jest decyzja kredytowa, wycena ubezpieczenia ani indywidualna porada." }
+  ])
+);
 
 const urls = [
   "/",
