@@ -54,6 +54,7 @@ const catalogPages = (data.sitemapSections || []).flatMap((section) =>
 const pageByUrl = new Map();
 for (const page of [...catalogPages, ...(data.pages || [])]) pageByUrl.set(page.url, page);
 const allPages = [...pageByUrl.values()].sort((a, b) => a.url.localeCompare(b.url));
+const offers = data.offers || [];
 
 function navLinks() {
   return data.primaryNav.map((item) => `<a href="${esc(item.url)}">${esc(item.label)}</a>`).join("");
@@ -89,7 +90,7 @@ function breadcrumbs(items = []) {
     .join("")}</nav>`;
 }
 
-function layout({ url = "/", title, description, body, crumbs = [] }) {
+function layout({ url = "/", title, description, body, crumbs = [], noindex = false }) {
   const canonical = `https://${data.domain}${url === "/" ? "/" : url}`;
   return `<!doctype html>
 <html lang="pl">
@@ -98,6 +99,7 @@ function layout({ url = "/", title, description, body, crumbs = [] }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  ${noindex ? '<meta name="robots" content="noindex,follow">' : ""}
   <link rel="canonical" href="${esc(canonical)}">
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -144,6 +146,31 @@ function card(item, extra = "") {
     <p>${esc(item.description || item.note || "")}</p>
     ${item.url ? cta(item.cta || "Sprawdz", item.url, true) : ""}
   </article>`;
+}
+
+function offerCard(offer) {
+  return `<article class="offer-card">
+    <div>
+      <span class="badge">${esc(offer.category)}</span>
+      <h3>${esc(offer.name)}</h3>
+      <p>${esc(offer.summary)}</p>
+    </div>
+    <dl class="offer-params">${(offer.params || [])
+      .map((param) => {
+        const [key, ...rest] = String(param).split(":");
+        return `<div><dt>${esc(key)}</dt><dd>${esc(rest.join(":").trim() || "do uzupelnienia")}</dd></div>`;
+      })
+      .join("")}</dl>
+    <div class="offer-split">
+      <div><strong>Plusy</strong><ul>${(offer.pros || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
+      <div><strong>Uwaga</strong><p>${esc(offer.warning)}</p></div>
+    </div>
+    ${cta("Zobacz miejsce na link", `/go/${offer.slug}`)}
+  </article>`;
+}
+
+function relatedOffersFor(page) {
+  return offers.filter((offer) => offer.pages?.includes(page.url)).slice(0, 3);
 }
 
 function linkList(links) {
@@ -490,6 +517,7 @@ function toolPage(tool) {
 function genericPage(page) {
   const pillar = pillarBySlug.get(page.pillar);
   const contentBlocks = data.pageContent?.[page.url] || [];
+  const pageOffers = relatedOffersFor(page);
   const sectionLinks = pillar?.priorityLinks || [];
   const relatedTools = data.tools
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
@@ -519,6 +547,17 @@ function genericPage(page) {
       </section>
       ${sectionNav(pillar)}
       ${renderContentBlocks(contentBlocks)}
+      ${
+        pageOffers.length
+          ? `<section>
+        <div class="section-head">
+          <h2>Przygotowane miejsca na oferty</h2>
+          <p>To sa struktury pod afiliacje bez prawdziwych linkow partnerow. Najpierw pokazujemy koszt, warunki, ostrzezenie i dopiero potem przejscie.</p>
+        </div>
+        <div class="offer-grid">${pageOffers.map((offer) => offerCard(offer)).join("")}</div>
+      </section>`
+          : ""
+      }
       <section>
         <div class="section-head">
           <h2>Najwazniejsze zasady</h2>
@@ -552,6 +591,64 @@ function genericPage(page) {
           ...(pillar ? [{ label: `Wroc do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz cala sekcje" }] : [])
         ]
       })}
+    </main>`
+  });
+}
+
+function offersIndex() {
+  return layout({
+    url: "/oferty",
+    title: `System ofert | ${data.name}`,
+    description: "Roboczy katalog miejsc na oferty afiliacyjne bez prawdziwych linkow partnerow.",
+    crumbs: [{ label: "Oferty", url: "/oferty" }],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">System ofert</div>
+            <h1>Miejsca na oferty gotowe pod afiliacje.</h1>
+            <p class="lead">Te karty porzadkuja dane, ostrzezenia i CTA zanim dodamy prawdziwe linki partnerow.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="offer-grid">${offers.map((offer) => offerCard(offer)).join("")}</div>
+      </section>
+    </main>`
+  });
+}
+
+function goPage(offer) {
+  return layout({
+    url: `/go/${offer.slug}`,
+    title: `${offer.name} | ${data.name}`,
+    description: `Robocze przejscie afiliacyjne dla: ${offer.name}.`,
+    noindex: true,
+    crumbs: [
+      { label: "Oferty", url: "/oferty" },
+      { label: offer.name, url: `/go/${offer.slug}` }
+    ],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Placeholder afiliacyjny</div>
+            <h1>${esc(offer.name)}</h1>
+            <p class="lead">${esc(offer.summary)}</p>
+            <div class="hero-actions">${cta("Wroc do sekcji", `/${offer.pillar}`, true)}</div>
+          </div>
+        </div>
+      </section>
+      <section class="warning-band">
+        <div>
+          <span class="badge">Link niepodpiety</span>
+          <h2>Tu pozniej trafi prawdziwy link partnera</h2>
+          <p>Na tym etapie nie wysylamy uzytkownika do zewnetrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego.</p>
+        </div>
+      </section>
+      <section>
+        <div class="offer-grid">${offerCard(offer)}</div>
+      </section>
     </main>`
   });
 }
@@ -593,6 +690,8 @@ writePage("/", homePage());
 for (const pillar of data.pillars) writePage(`/${pillar.slug}`, pillarPage(pillar));
 writePage("/narzedzia", toolsIndex());
 for (const tool of data.tools) writePage(`/narzedzia/${tool.slug}`, toolPage(tool));
+writePage("/oferty", offersIndex());
+for (const offer of offers) writePage(`/go/${offer.slug}`, goPage(offer));
 for (const page of allPages) writePage(page.url, genericPage(page));
 
 writePage("/faq", simplePage("/faq", "FAQ", "Krotkie odpowiedzi na najwazniejsze pytania o serwis, afiliacje, narzedzia i decyzje."));
@@ -606,6 +705,7 @@ const urls = [
   ...data.pillars.map((pillar) => `/${pillar.slug}`),
   "/narzedzia",
   ...data.tools.map((tool) => `/narzedzia/${tool.slug}`),
+  "/oferty",
   ...allPages.map((page) => page.url),
   "/faq",
   "/o-nas",

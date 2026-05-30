@@ -248,6 +248,7 @@ p { line-height: 1.58; }
 
 .hero-panel,
 .card,
+.offer-card,
 .list-card,
 .band,
 .tool-shell,
@@ -308,6 +309,62 @@ main section { padding: 48px 0; }
 }
 
 .card .button { margin-top: auto; align-self: flex-start; }
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.offer-card {
+  padding: 18px;
+  display: grid;
+  gap: 16px;
+}
+
+.offer-card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.offer-params {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.offer-params div {
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.offer-params dt {
+  color: var(--brand-dark);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.offer-params dd {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.offer-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+}
+
+.offer-split ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.45;
+}
 
 .list-grid {
   display: grid;
@@ -562,6 +619,9 @@ input[type="checkbox"] {
 
   .cards-5,
   .grid,
+  .offer-grid,
+  .offer-params,
+  .offer-split,
   .list-grid,
   .check-grid,
   .trust-grid {

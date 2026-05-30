@@ -13,12 +13,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/go/:slug",
-      "destination": "/go/:slug.html",
-      "permanent": false
-    }
   ]
 }
