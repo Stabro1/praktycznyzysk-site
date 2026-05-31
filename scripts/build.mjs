@@ -745,7 +745,7 @@ function genericPage(page) {
         </div>
         <div class="trust-grid">
           <div><strong>Najpierw zrozum</strong><span>Co wybierasz, jakie są koszty i gdzie są ograniczenia.</span></div>
-          <div><strong>Sprawdź ryzyko</strong><span>Przy finansach, ubezpieczeniach, aucie i domu decyzje mogą kosztowac realne pieniądze.</span></div>
+          <div><strong>Sprawdź ryzyko</strong><span>Przy finansach, ubezpieczeniach, aucie i domu decyzje mogą kosztować realne pieniądze.</span></div>
           <div><strong>Przejdź dalej</strong><span>Użyj narzędzia, checklisty, rankingu albo poradnika powiązanego z tematem.</span></div>
         </div>
       </section>
@@ -787,7 +787,7 @@ function offersIndex() {
           <div>
             <div class="eyebrow">System ofert</div>
             <h1>Miejsca na oferty gotowe pod afiliacje.</h1>
-            <p class="lead">Te karty porzadkuja dane, ostrzeżeńia i CTA zanim dodamy prawdziwe linki partnerów.</p>
+            <p class="lead">Te karty porządkują dane, ostrzeżenia i CTA zanim dodamy prawdziwe linki partnerów.</p>
           </div>
         </div>
       </section>
@@ -823,7 +823,7 @@ function goPage(offer) {
         <div>
           <span class="badge">Link niepodpiety</span>
           <h2>Tu później trafi prawdziwy link partnera</h2>
-          <p>Na tym etapie nie wysylamy użytkownika do zewnetrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego.</p>
+          <p>Na tym etapie nie wysyłamy użytkownika do zewnętrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego.</p>
         </div>
       </section>
       <section>
@@ -844,7 +844,7 @@ function toolsIndex() {
         <div class="hero-inner single">
           <div>
             <div class="eyebrow">Kalkulatory i checklisty</div>
-            <h1>Policz, sprawdz i przejdź do następnego kroku.</h1>
+            <h1>Policz, sprawdź i przejdź do następnego kroku.</h1>
             <p class="lead">Każde narzędzie ma mieć prosty input, wynik, interpretację i jasne "Co dalej?".</p>
           </div>
         </div>
@@ -905,14 +905,14 @@ if (data.privateMode) {
   for (const offer of offers) writePreviewPage(`/go/${offer.slug}`, goPage(offer));
   for (const page of allPages) writePreviewPage(page.url, genericPage(page));
   writePreviewPage("/faq", simplePage("/faq", "FAQ", "Krótkie odpowiedzi na najważniejsze pytania o serwis, afiliacje, narzędzia i decyzje."));
-  writePreviewPage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmowac praktyczne decyzje i jasno oznacza, jak zarabia."));
-  writePreviewPage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, wspolprace i partnerstwa afiliacyjne."));
+  writePreviewPage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmować praktyczne decyzje i jasno oznacza, jak zarabia."));
+  writePreviewPage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, współpracę i partnerstwa afiliacyjne."));
   writePreviewPage(
     "/polityka-prywatnosci",
-    legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, kliknięcia i przyszle przekierowania partnerskie.", [
-      { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerów." },
+    legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przyszłe przekierowania partnerskie.", [
+      { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnętrzne integracje będą dodawane dopiero po wyborze partnerów." },
       { title: "Kliknięcia i analityka", text: "Serwis przygotowuje lekkie zdarzenia kliknięć CTA i ofert, żeby później mierzyć skuteczność stron. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
-      { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
+      { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejść do zewnętrznego dostawcy. Warunki prywatności po przejściu określa ten dostawca." }
     ])
   );
   writePreviewPage(
@@ -942,14 +942,14 @@ for (const offer of offers) writePage(`/go/${offer.slug}`, goPage(offer));
 for (const page of allPages) writePage(page.url, genericPage(page));
 
 writePage("/faq", simplePage("/faq", "FAQ", "Krótkie odpowiedzi na najważniejsze pytania o serwis, afiliacje, narzędzia i decyzje."));
-writePage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmowac praktyczne decyzje i jasno oznacza, jak zarabia."));
-writePage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, wspolprace i partnerstwa afiliacyjne."));
+writePage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmować praktyczne decyzje i jasno oznacza, jak zarabia."));
+writePage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, współpracę i partnerstwa afiliacyjne."));
 writePage(
   "/polityka-prywatnosci",
-  legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, kliknięcia i przyszle przekierowania partnerskie.", [
-    { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerów." },
+  legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przyszłe przekierowania partnerskie.", [
+    { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnętrzne integracje będą dodawane dopiero po wyborze partnerów." },
     { title: "Kliknięcia i analityka", text: "Serwis przygotowuje lekkie zdarzenia kliknięć CTA i ofert, żeby później mierzyć skuteczność stron. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
-    { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
+    { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejść do zewnętrznego dostawcy. Warunki prywatności po przejściu określa ten dostawca." }
   ])
 );
 writePage(

@@ -331,7 +331,7 @@
         "Koszt po terminie: wymagany"
       ],
       "pros": [
-        "oddzielony lejek chwilowek",
+        "oddzielony lejek chwilówek",
         "mocne ostrzeżenie ryzyka",
         "gotowe pod checklistę"
       ],
@@ -708,17 +708,17 @@
         "type": "warning",
         "badge": "Ryzyko",
         "title": "Chwilówki muszą być osobnym lejkiem",
-        "text": "Nie mieszamy chwilowek z kredytami gotówkowymi. Promocja 0% zwykle dotyczy pierwszej pożyczki i terminowej spłaty, a koszt po terminie może być bardzo wysoki."
+        "text": "Nie mieszamy chwilówek z kredytami gotówkowymi. Promocja 0% zwykle dotyczy pierwszej pożyczki i terminowej spłaty, a koszt po terminie może być bardzo wysoki."
       },
       {
         "type": "checklist",
-        "title": "Zanim klikniesz chwilowke",
+        "title": "Zanim klikniesz chwilówkę",
         "description": "Minimalna checklista, która chroni zaufanie i ogranicza spamowy charakter strony.",
         "items": [
           "sprawdź RRSO i całkowitą kwotę do spłaty",
           "sprawdź, czy 0% dotyczy tylko pierwszej pożyczki",
           "sprawdź termin spłaty i koszt po terminie",
-          "upewnij się, ze masz konkretny plan spłaty",
+          "upewnij się, że masz konkretny plan spłaty",
           "nie bierz chwilówki na spłatę innej chwilówki"
         ]
       },
@@ -810,12 +810,12 @@
       {
         "type": "warning",
         "badge": "Widoczne ryzyko",
-        "title": "Ranking chwilowek bez ostrzeżeń bylby bledem",
+        "title": "Ranking chwilówek bez ostrzeżeń byłby błędem",
         "text": "Przy chwilówkach najwyżej pokazujemy koszt, termin, warunki 0% i konsekwencje opóźnienia. To ma być ranking decyzji, nie agresywna lista reklam."
       },
       {
         "type": "checklist",
-        "title": "Kryteria rankingu chwilowek",
+        "title": "Kryteria rankingu chwilówek",
         "items": [
           "RRSO i całkowita kwota do spłaty",
           "czy promocja 0% dotyczy tylko nowych klientow",
@@ -939,7 +939,7 @@
       {
         "type": "steps",
         "title": "Darmowe sprawdzenie na gov.pl",
-        "description": "Ta strona ma jasno prowadzić do bezpłatnego sprawdzenia, bez udawania, ze płatny raport jest obowiązkowy.",
+        "description": "Ta strona ma jasno prowadzić do bezpłatnego sprawdzenia, bez udawania, że płatny raport jest obowiązkowy.",
         "items": [
           {
             "title": "Wejdź w usługę Historia Pojazdu",
@@ -993,7 +993,7 @@
       {
         "type": "warning",
         "title": "Sam VIN to za malo",
-        "text": "Nie kupuj auta tylko dlatego, ze numer VIN się zgadza. Sprawdź dokumenty, historię, stan techniczny i koszty po zakupie."
+        "text": "Nie kupuj auta tylko dlatego, że numer VIN się zgadza. Sprawdź dokumenty, historię, stan techniczny i koszty po zakupie."
       }
     ],
     "/auto/jak-sprawdzic-auto": [
@@ -1101,7 +1101,7 @@
           },
           {
             "title": "Sprawdź datę końca polisy",
-            "text": "Najlepiej porównywać oferty przed koncem obecnej polisy albo zaraz po zakupie auta."
+            "text": "Najlepiej porównywać oferty przed końcem obecnej polisy albo zaraz po zakupie auta."
           },
           {
             "title": "Przejdź do porównywarki",
@@ -1133,7 +1133,7 @@
           },
           {
             "title": "Auto po zakupie",
-            "text": "Auto kieruje tutaj po historii pojazdu i checkliscie zakupu.",
+            "text": "Auto kieruje tutaj po historii pojazdu i checkliście zakupu.",
             "url": "/auto/historia-pojazdu",
             "cta": "Sprawdź auto"
           }
@@ -1147,7 +1147,7 @@
         "items": [
           {
             "title": "OC jest obowiązkowe",
-            "text": "Brak polisy może oznaczać kare i poważne koszty po szkódzie."
+            "text": "Brak polisy może oznaczać karę i poważne koszty po szkodzie."
           },
           {
             "title": "Zakres jest ustawowy",
@@ -1235,7 +1235,7 @@
         "type": "checklist",
         "title": "Co może obniżyć OC",
         "items": [
-          "porównanie ofert przed koncem polisy",
+          "porównanie ofert przed końcem polisy",
           "sprawdzenie zakresu dodatków",
           "bezszkódowa historia",
           "wybor auta z tanszym profilem ubezpieczeniowym",
@@ -1351,7 +1351,7 @@
         },
         {
           "url": "/finanse/ranking-chwilowek",
-          "title": "Ranking chwilowek",
+          "title": "Ranking chwilówek",
           "type": "ranking",
           "description": "Chwilówki z widocznym RRSO, terminem spłaty, kosztem i ostrzeżeniem ryzyka."
         },
@@ -1500,7 +1500,7 @@
         {
           "url": "/ubezpieczenia/cashback-za-ubezpieczenie",
           "title": "Cashback za ubezpieczenie",
-          "description": "Bonusy i cashback jako dodatęk, nie zamiennik sprawdzenia zakresu."
+          "description": "Bonusy i cashback jako dodatek, nie zamiennik sprawdzenia zakresu."
         }
       ]
     },
@@ -1539,7 +1539,7 @@
         {
           "url": "/auto/czy-auto-bylo-po-wypadku",
           "title": "Czy auto bylo po wypadku",
-          "description": "Co sprawdzić w historii, ogłoszeniu, lakierze, dokumentach i serwisię."
+          "description": "Co sprawdzić w historii, ogłoszeniu, lakierze, dokumentach i serwisie."
         },
         {
           "url": "/auto/co-sprawdzic-przed-zakupem-auta",
