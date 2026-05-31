@@ -52,11 +52,11 @@ const catalogPages = (data.sitemapSections || []).flatMap((section) =>
   section.pages.map((page) => ({
     type: section.type || "guide",
     pillar: section.pillar,
-    cta: section.cta || "Sprawdz dalej",
+    cta: section.cta || "Sprawdź dalej",
     ctaUrl: section.ctaUrl || (section.pillar ? `/${section.pillar}` : "/"),
     description:
       page.description ||
-      `Fundament strony w sekcji ${section.label}. Ta podstrona ma jasny cel, miejsce w architekturze i nastepny krok.`,
+      `Fundament strony w sekcji ${section.label}. Ta podstrona ma jasny cel, miejsce w architekturze i następny krok.`,
     ...page,
     title: page.title || page.label || titleFromUrl(page.url)
   }))
@@ -66,6 +66,21 @@ const pageByUrl = new Map();
 for (const page of [...catalogPages, ...(data.pages || [])]) pageByUrl.set(page.url, page);
 const allPages = [...pageByUrl.values()].sort((a, b) => a.url.localeCompare(b.url));
 const offers = data.offers || [];
+const normalizeLabel = (value = "") =>
+  String(value)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .replace(/ł/g, "l")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+const toolByTitle = new Map(data.tools.map((tool) => [normalizeLabel(tool.name), `/narzedzia/${tool.slug}`]));
+const pageByTitle = new Map(allPages.map((page) => [normalizeLabel(page.title), page.url]));
+
+function cardUrl(item = {}) {
+  const label = normalizeLabel(item.title || item.label || item.name);
+  return item.url || toolByTitle.get(label) || pageByTitle.get(label) || "";
+}
 
 function navLinks() {
   return data.primaryNav.map((item) => `<a href="${esc(item.url)}">${esc(item.label)}</a>`).join("");
@@ -117,10 +132,10 @@ function layout({ url = "/", title, description, body, crumbs = [], noindex = fa
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav" aria-label="Glowne">
+    <nav class="nav" aria-label="Główne">
       <a class="brand" href="/"><span class="mark">PZ</span><span>${esc(data.shortName)}</span></a>
       <div class="nav-links">${navLinks()}</div>
-      <a class="nav-cta" href="/narzedzia">Narzedzia</a>
+      <a class="nav-cta" href="/narzedzia">Narzędzia</a>
       ${mobileMenu()}
     </nav>
   </header>
@@ -159,8 +174,8 @@ function privatePage() {
           <div>
             <div class="eyebrow">Tryb prywatny</div>
             <h1>PraktycznyZysk.pl jest w przygotowaniu.</h1>
-            <p class="lead">Dopracowujemy finalna wersje serwisu, oferty partnerskie, oznaczenia i linki. Publiczna wersja wroci po zakonczeniu konfiguracji.</p>
-            <div class="notice">Strona nie prezentuje teraz rankingow, ofert ani linkow afiliacyjnych.</div>
+            <p class="lead">Dopracowujemy finalną wersję serwisu, oferty partnerskie, oznaczenia i linki. Publiczna wersja wróci po zakończeniu konfiguracji.</p>
+            <div class="notice">Strona nie prezentuje teraz rankingów, ofert ani linków afiliacyjnych.</div>
           </div>
         </div>
       </section>
@@ -177,14 +192,14 @@ function card(item, extra = "") {
     ${extra}
     <h3>${esc(item.name || item.label || item.title)}</h3>
     <p>${esc(item.description || item.note || "")}</p>
-    ${item.url ? cta(item.cta || "Sprawdz", item.url, true) : ""}
+    ${item.url ? cta(item.cta || "Sprawdź", item.url, true) : ""}
   </article>`;
 }
 
 function offerCard(offer) {
   const meta = [
     offer.reward ? { label: "Premia", value: offer.reward } : null,
-    offer.difficulty ? { label: "Trudnosc", value: offer.difficulty } : null,
+    offer.difficulty ? { label: "Trudność", value: offer.difficulty } : null,
     offer.time ? { label: "Czas", value: offer.time } : null,
     offer.deadline ? { label: "Do kiedy", value: offer.deadline } : null,
     offer.audience ? { label: "Dla kogo", value: offer.audience } : null
@@ -200,12 +215,12 @@ function offerCard(offer) {
       .join("")}</div>
     <div class="disclosure-box">
       <strong>Oznaczenie</strong>
-      <span>To miejsce pod przyszly link afiliacyjny. Warunki, prowizje i dostawca musza byc sprawdzone przed publikacja prawdziwego linku.</span>
+      <span>To miejsce pod przyszły link afiliacyjny. Warunki, prowizje i dostawca muszą być sprawdzone przed publikacją prawdziwego linku.</span>
     </div>
     <dl class="offer-params">${(offer.params || [])
       .map((param) => {
         const [key, ...rest] = String(param).split(":");
-        return `<div><dt>${esc(key)}</dt><dd>${esc(rest.join(":").trim() || "do uzupelnienia")}</dd></div>`;
+        return `<div><dt>${esc(key)}</dt><dd>${esc(rest.join(":").trim() || "do uzupełnienia")}</dd></div>`;
       })
       .join("")}</dl>
     <div class="offer-split">
@@ -235,7 +250,7 @@ function sectionNav(pillar) {
   </nav>`;
 }
 
-function nextStepBlock({ title = "Co dalej?", description = "Wybierz najlogiczniejszy nastepny krok.", links = [] }) {
+function nextStepBlock({ title = "Co dalej?", description = "Wybierz najlogiczniejszy następny krok.", links = [] }) {
   if (!links.length) return "";
   return `<section class="next-steps">
     <div class="section-head">
@@ -243,7 +258,7 @@ function nextStepBlock({ title = "Co dalej?", description = "Wybierz najlogiczni
       <p>${esc(description)}</p>
     </div>
     <div class="list-grid">${links
-      .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>${esc(link.note || "Przejdz do nastepnego kroku")}</span></a>`)
+      .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>${esc(link.note || "Przejdź do następnego kroku")}</span></a>`)
       .join("")}</div>
   </section>`;
 }
@@ -289,7 +304,11 @@ function renderContentBlocks(blocks = []) {
           <p>${esc(block.description || "")}</p>
         </div>
         <div class="trust-grid">${(block.items || [])
-          .map((item) => `<div><strong>${esc(item.title)}</strong><span>${esc(item.text)}</span></div>`)
+          .map((item) => {
+            const url = cardUrl(item);
+            const content = `<strong>${esc(item.title)}</strong><span>${esc(item.text)}</span>${url ? `<em>${esc(item.cta || "Przejdź dalej")}</em>` : ""}`;
+            return url ? `<a class="trust-card" href="${esc(url)}">${content}</a>` : `<div>${content}</div>`;
+          })
           .join("")}</div>
       </section>`;
     })
@@ -300,12 +319,12 @@ function trustBlock() {
   return `<section class="band">
     <div class="section-head">
       <h2>Jak trzymamy zaufanie</h2>
-      <p>Pokazujemy darmowe opcje, oznaczamy afiliacje i nie udajemy indywidualnej porady finansowej, prawnej ani ubezpieczeniowej.</p>
+      <p>Pokazujemy darmowe opcje, oznaczamy afiliację i nie udajemy indywidualnej porady finansowej, prawnej ani ubezpieczeniowej.</p>
     </div>
     <div class="trust-grid">
-      <div><strong>Darmowe najpierw</strong><span>Jesli istnieje sensowne darmowe zrodlo, pokazujemy je przed platnym.</span></div>
-      <div><strong>Ryzyko widoczne</strong><span>Przy drogich decyzjach pokazujemy koszty, warunki i kiedy uwazac.</span></div>
-      <div><strong>Jasne CTA</strong><span>Kazda strona ma prowadzic do jednego logicznego nastepnego kroku.</span></div>
+      <div><strong>Darmowe najpierw</strong><span>Jeśli istnieje sensowne darmowe źródło, pokazujemy je przed płatnym.</span></div>
+      <div><strong>Ryzyko widoczne</strong><span>Przy drogich decyzjach pokazujemy koszty, warunki i kiedy uważać.</span></div>
+      <div><strong>Jasne CTA</strong><span>Każda strona ma prowadzić do jednego logicznego następnego kroku.</span></div>
     </div>
   </section>`;
 }
@@ -316,7 +335,7 @@ function affiliateDisclosureBlock() {
       <span class="badge">Disclosure</span>
       <h2>Jak zarabia serwis</h2>
       <p>${esc(data.disclosure)}</p>
-      <p>Jesli dodamy prawdziwy link partnera, klikniecie moze oznaczac prowizje dla serwisu. Nie zmienia to ceny po stronie uzytkownika, ale wymaga sprawdzenia aktualnych warunkow u dostawcy.</p>
+      <p>Jeśli dodamy prawdziwy link partnera, kliknięcie może oznaczać prowizję dla serwisu. Nie zmienia to ceny po stronie użytkownika, ale wymaga sprawdzenia aktualnych warunków u dostawcy.</p>
     </div>
   </section>`;
 }
@@ -326,7 +345,7 @@ function homePage() {
   const popular = data.popular
     .map((item) => `<a class="list-card" href="${esc(item.url)}"><strong>${esc(item.label)}</strong><span>${esc(item.note)}</span></a>`)
     .join("");
-  const tools = data.tools.slice(0, 6).map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otworz" })).join("");
+  const tools = data.tools.slice(0, 6).map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("");
 
   return layout({
     title: `${data.name} - ${data.tagline}`,
@@ -336,16 +355,16 @@ function homePage() {
         <div class="hero-inner">
           <div>
             <div class="eyebrow">PraktycznyZysk.pl</div>
-            <h1>Praktyczne decyzje, ktore pomagaja nie przeplacac.</h1>
+            <h1>Praktyczne decyzje, które pomagają nie przepłacać.</h1>
             <p class="lead">${esc(data.description)}</p>
             <div class="hero-actions">
               ${cta("Wybierz temat", "#piony")}
-              ${cta("Najczesciej wybierane", "#najczesciej", true)}
+              ${cta("Najczęściej wybierane", "#najczęściej", true)}
             </div>
           </div>
           <aside class="hero-panel">
             <strong>Model serwisu</strong>
-            <p>Homepage jest hubem marki. Sprzedaz i decyzje dzieja sie na landingach pionow i glebszych stronach z sociali.</p>
+            <p>Homepage jest hubem marki. Sprzedaż i decyzje dzieją się na landingach pionów i głębszych stronach z sociali.</p>
           </aside>
         </div>
       </section>
@@ -353,23 +372,23 @@ function homePage() {
       <section id="piony">
         <div class="section-head">
           <h2>Wybierz obszar</h2>
-          <p>Piec wejsc odpowiada pieciu kanalowym kategoriom social: finanse, ubezpieczenia, auto, praca i dom.</p>
+          <p>Pięć wejść odpowiada pięciu kanałowym kategoriom social: finanse, ubezpieczenia, auto, praca i dom.</p>
         </div>
         <div class="grid cards-5">${pillars}</div>
       </section>
 
-      <section id="najczesciej">
+      <section id="najczęściej">
         <div class="section-head">
-          <h2>Najczesciej wybierane</h2>
-          <p>Szybkie wejscia do tematow, ktore najlepiej lacza ruch, zaufanie i monetyzacje.</p>
+          <h2>Najczęściej wybierane</h2>
+          <p>Szybkie wejścia do tematów, które najlepiej łączą ruch, zaufanie i monetyzację.</p>
         </div>
         <div class="list-grid">${popular}</div>
       </section>
 
       <section>
         <div class="section-head">
-          <h2>Narzedzia</h2>
-          <p>Kazde narzedzie ma dac wynik, interpretacje i sekcje "Co dalej?".</p>
+          <h2>Narzędzia</h2>
+          <p>Każde narzędzie ma dać wynik, interpretację i sekcję "Co dalej?".</p>
         </div>
         <div class="grid">${tools}</div>
       </section>
@@ -396,7 +415,7 @@ function pillarPage(pillar) {
             <div class="eyebrow">${esc(pillar.label)}</div>
             <h1>${esc(pillar.name)}</h1>
             <p class="lead">${esc(pillar.description)}</p>
-            <div class="hero-actions">${cta(pillar.cta, `/${pillar.slug}#start`)}${cta("Narzedzia", "/narzedzia", true)}</div>
+            <div class="hero-actions">${cta(pillar.cta, `/${pillar.slug}#start`)}${cta("Narzędzia", "/narzedzia", true)}</div>
           </div>
           <aside class="hero-panel">${linkList(pillar.priorityLinks)}</aside>
         </div>
@@ -405,30 +424,30 @@ function pillarPage(pillar) {
       <section id="start">
         <div class="section-head">
           <h2>Zacznij od tego</h2>
-          <p>Najwazniejsze sciezki w tym pionie. Na mobile maja byc czytelne bez szukania w menu.</p>
+          <p>Najważniejsze ścieżki w tym pionie. Na mobile mają być czytelne bez szukania w menu.</p>
         </div>
         <div class="list-grid">${pillar.priorityLinks
-          .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Przejdz do nastepnego kroku</span></a>`)
+          .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Przejdź do następnego kroku</span></a>`)
           .join("")}</div>
       </section>
       <section>
         <div class="section-head">
           <h2>Podstrony pionu</h2>
-          <p>Fundament pod kolejne sprinty: poradniki, rankingi, narzedzia i oferty.</p>
+          <p>Fundament pod kolejne sprinty: poradniki, rankingi, narzędzia i oferty.</p>
         </div>
         <div class="grid">${pages.map((page) => card({ ...page, name: page.title, url: page.url, cta: page.cta })).join("")}</div>
       </section>
       <section>
         <div class="section-head">
-          <h2>Powiazane narzedzia</h2>
-          <p>Narzedzia prowadza do wyniku i kolejnego kroku, nie sa ozdoba SEO.</p>
+          <h2>Powiązane narzędzia</h2>
+          <p>Narzędzia prowadzą do wyniku i kolejnego kroku, nie są ozdobą SEO.</p>
         </div>
-        <div class="grid">${relatedTools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otworz" })).join("") || card({ name: "Narzedzia", description: "Zobacz wszystkie kalkulatory i checklisty.", url: "/narzedzia", cta: "Przejdz" })}</div>
+        <div class="grid">${relatedTools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("") || card({ name: "Narzędzia", description: "Zobacz wszystkie kalkulatory i checklisty.", url: "/narzedzia", cta: "Przejdź" })}</div>
       </section>
       ${nextStepBlock({
-        title: "Najlepszy nastepny krok",
-        description: "Te przejscia lacza ruch, SEO i monetyzacje bez mieszania pionow.",
-        links: pillar.priorityLinks.map((link) => ({ ...link, note: "Najwazniejsza sciezka w tej sekcji" }))
+        title: "Najlepszy następny krok",
+        description: "Te przejścia łączą ruch, SEO i monetyzację bez mieszania pionów.",
+        links: pillar.priorityLinks.map((link) => ({ ...link, note: "Najważniejsza ścieżka w tej sekcji" }))
       })}
     </main>`
   });
@@ -437,73 +456,73 @@ function pillarPage(pillar) {
 const toolModels = {
   "kalkulator-zdolnosci-kredytowej": {
     type: "calculator",
-    fields: ["Miesieczny dochod netto", "Stale raty i zobowiazania", "Koszty zycia", "Planowana rata"],
-    resultTitle: "Orientacyjna zdolnosc i margines bezpieczenstwa",
-    resultText: "Wynik powinien pokazac, czy budzet ma miejsce na nowa rate. To nie jest decyzja banku, tylko filtr przed rankingiem i wnioskiem.",
-    bullets: ["rata nie powinna zabierac calej nadwyzki", "sprawdz BIK przed wieloma wnioskami", "zostaw bufor na koszty stale"]
+    fields: ["Miesięczny dochód netto", "Stałe raty i zobowiązania", "Koszty życia", "Planowana rata"],
+    resultTitle: "Orientacyjna zdolność i margines bezpieczeństwa",
+    resultText: "Wynik powinien pokazać, czy budżet ma miejsce na nową ratę. To nie jest decyzja banku, tylko filtr przed rankingiem i wnioskiem.",
+    bullets: ["rata nie powinna zabierać całej nadwyżki", "sprawdź BIK przed wieloma wnioskami", "zostaw bufor na koszty stałe"]
   },
   "kalkulator-raty": {
     type: "calculator",
-    fields: ["Kwota kredytu", "Okres w miesiacach", "Oprocentowanie lub szacowany koszt", "Prowizja"],
-    resultTitle: "Rata, koszt i calkowita kwota do splaty",
-    resultText: "To narzedzie ma kierowac do porownania kredytow dopiero po zrozumieniu raty i kosztu calkowitego.",
-    bullets: ["porownuj RRSO i kwote do splaty", "nizsza rata moze oznaczac dluzszy okres", "sprawdz prowizje i ubezpieczenia"]
+    fields: ["Kwota kredytu", "Okres w miesiącach", "Oprocentowanie lub szacowany koszt", "Prowizja"],
+    resultTitle: "Rata, koszt i całkowita kwota do spłaty",
+    resultText: "To narzędzie ma kierować do porównania kredytów dopiero po zrozumieniu raty i kosztu całkowitego.",
+    bullets: ["porównuj RRSO i kwotę do spłaty", "niższa rata może oznaczać dłuższy okres", "sprawdź prowizję i ubezpieczenia"]
   },
   "kalkulator-rrso": {
     type: "calculator",
-    fields: ["Kwota finansowania", "Kwota do oddania", "Okres splaty", "Dodatkowe koszty"],
-    resultTitle: "Szacunkowe RRSO i sygnal ryzyka",
-    resultText: "RRSO ma pomagac porownac oferty, ale przy bardzo krotkich pozyczkach wynik moze wygladac skrajnie wysoko.",
-    bullets: ["porownuj podobne kwoty i okresy", "0% wymaga spelnienia warunkow", "zawsze sprawdz koszt po terminie"]
+    fields: ["Kwota finansowania", "Kwota do oddania", "Okres spłaty", "Dodatkowe koszty"],
+    resultTitle: "Szacunkowe RRSO i sygnał ryzyka",
+    resultText: "RRSO ma pomagać porównać oferty, ale przy bardzo krótkich pożyczkach wynik może wyglądać skrajnie wysoko.",
+    bullets: ["porównuj podobne kwoty i okresy", "0% wymaga spełnienia warunków", "zawsze sprawdź koszt po terminie"]
   },
   "kalkulator-oc": {
     type: "calculator",
-    fields: ["Wiek kierowcy", "Historia szkod", "Pojemnosc i rocznik auta", "Kod pocztowy"],
-    resultTitle: "Czynniki, ktore moga podniesc skladke",
-    resultText: "Bez integracji nie pokazujemy realnej skladki. Pokazujemy czynniki ceny i przejscie do porownania OC/AC.",
-    bullets: ["OC porownuj przed koncem polisy", "przy AC sprawdz zakres i wykluczenia", "po zakupie auta sprawdz ciaglosc OC"]
+    fields: ["Wiek kierowcy", "Historia szkód", "Pojemność i rocznik auta", "Kod pocztowy"],
+    resultTitle: "Czynniki, które mogą podnieść składkę",
+    resultText: "Bez integracji nie pokazujemy realnej składki. Pokazujemy czynniki ceny i przejście do porównania OC/AC.",
+    bullets: ["OC porównuj przed końcem polisy", "przy AC sprawdź zakres i wykluczenia", "po zakupie auta sprawdź ciągłość OC"]
   },
   "budzet-domowy": {
     type: "calculator",
-    fields: ["Dochody miesieczne", "Koszty stale", "Raty i abonamenty", "Planowana rezerwa"],
-    resultTitle: "Nadwyzka, deficyt i bezpieczny limit rat",
-    resultText: "Budzet ma pokazac, czy decyzja finansowa jest realna, zanim uzytkownik przejdzie do kredytu, chwilowki albo remontu.",
-    bullets: ["najpierw rezerwa, potem rata", "oddziel potrzeby od zachcianek", "nie finansuj deficytu chwilowka"]
+    fields: ["Dochody miesięczne", "Koszty stałe", "Raty i abonamenty", "Planowana rezerwa"],
+    resultTitle: "Nadwyżka, deficyt i bezpieczny limit rat",
+    resultText: "Budżet ma pokazać, czy decyzja finansowa jest realna, zanim użytkownik przejdzie do kredytu, chwilówki albo remontu.",
+    bullets: ["najpierw rezerwa, potem rata", "oddziel potrzeby od zachcianek", "nie finansuj deficytu chwilówką"]
   },
   "checklista-kredyt": {
     type: "checklist",
-    fields: ["RRSO widoczne", "Rata pasuje do budzetu", "Koszt calkowity znany", "Warunki i prowizje sprawdzone"],
-    resultTitle: "Gotowosc do porownania ofert",
-    resultText: "Jesli ktorys punkt nie jest spelniony, uzytkownik powinien wrocic do kalkulatora raty albo RRSO.",
-    bullets: ["nie skladaj wielu wnioskow naraz", "sprawdz calkowita kwote do splaty", "czytaj warunki dodatkowych produktow"]
+    fields: ["RRSO widoczne", "Rata pasuje do budżetu", "Koszt całkowity znany", "Warunki i prowizje sprawdzone"],
+    resultTitle: "Gotowość do porównania ofert",
+    resultText: "Jeśli któryś punkt nie jest spełniony, użytkownik powinien wrócić do kalkulatora raty albo RRSO.",
+    bullets: ["nie składaj wielu wniosków naraz", "sprawdź całkowitą kwotę do spłaty", "czytaj warunki dodatkowych produktów"]
   },
   "checklista-chwilowka": {
     type: "checklist",
-    fields: ["Znam termin splaty", "Znam koszt po terminie", "Mam pieniadze na splate", "Nie splacam innej chwilowki"],
-    resultTitle: "Czerwone flagi przed chwilowka",
-    resultText: "Ta checklista ma ograniczac ryzykowne klikniecia. Chwilowka bez pewnej splaty jest zlym produktem dla uzytkownika.",
-    bullets: ["0% zwykle dotyczy pierwszej pozyczki", "opoznienie moze mocno podniesc koszt", "nie roluj zobowiazan"]
+    fields: ["Znam termin spłaty", "Znam koszt po terminie", "Mam pieniądze na spłatę", "Nie spłacam innej chwilówki"],
+    resultTitle: "Czerwone flagi przed chwilówką",
+    resultText: "Ta checklista ma ograniczać ryzykowne kliknięcia. Chwilówka bez pewnej spłaty jest złym produktem dla użytkownika.",
+    bullets: ["0% zwykle dotyczy pierwszej pożyczki", "opóźnienie może mocno podnieść koszt", "nie roluj zobowiązań"]
   },
   "checklista-zakup-auta": {
     type: "checklist",
-    fields: ["VIN i rejestracja", "Historia gov.pl", "Ogledziny i jazda probna", "OC/AC i koszty po zakupie"],
-    resultTitle: "Gotowosc do decyzji o aucie",
-    resultText: "Najpierw historia i stan auta, potem polisa i finansowanie. Raport VIN nie zastapi ogledzin.",
-    bullets: ["sprawdz dane z dokumentami", "nie plac zaliczki pod presja", "policz serwis startowy i OC"]
+    fields: ["VIN i rejestracja", "Historia gov.pl", "Oględziny i jazda próbna", "OC/AC i koszty po zakupie"],
+    resultTitle: "Gotowość do decyzji o aucie",
+    resultText: "Najpierw historia i stan auta, potem polisa i finansowanie. Raport VIN nie zastąpi oględzin.",
+    bullets: ["sprawdź dane z dokumentami", "nie płać zaliczki pod presją", "policz serwis startowy i OC"]
   },
   "checklista-rozmowa-kwalifikacyjna": {
     type: "checklist",
     fields: ["CV dopasowane", "Odpowiedzi przygotowane", "Pytania do firmy", "Oczekiwania finansowe"],
-    resultTitle: "Gotowosc do rozmowy",
-    resultText: "Uzytkownik ma wyjsc z narzedzia do rozmowy kwalifikacyjnej, kreatora CV albo negocjacji wynagrodzenia.",
-    bullets: ["przygotuj liczby i przyklady", "sprawdz firme przed rozmowa", "ustal minimalna akceptowalna stawke"]
+    resultTitle: "Gotowość do rozmowy",
+    resultText: "Użytkownik ma wyjść z narzędzia do rozmowy kwalifikacyjnej, kreatora CV albo negocjacji wynagrodzenia.",
+    bullets: ["przygotuj liczby i przykłady", "sprawdź firmę przed rozmową", "ustal minimalną akceptowalną stawkę"]
   },
   "checklista-remont": {
     type: "checklist",
-    fields: ["Zakres prac", "Budzet i rezerwa", "Wykonawca i umowa", "Harmonogram i odbior"],
-    resultTitle: "Gotowosc do startu remontu",
-    resultText: "Remont bez zakresu, rezerwy i umowy latwo ucieka z budzetu. Narzedzie prowadzi do planu i finansowania.",
-    bullets: ["zostaw rezerwe na niespodzianki", "porownaj minimum kilka wycen", "nie zaczynaj bez pisemnego zakresu"]
+    fields: ["Zakres prac", "Budżet i rezerwa", "Wykonawca i umowa", "Harmonogram i odbiór"],
+    resultTitle: "Gotowość do startu remontu",
+    resultText: "Remont bez zakresu, rezerwy i umowy łatwo ucieka z budżetu. Narzędzie prowadzi do planu i finansowania.",
+    bullets: ["zostaw rezerwę na niespodzianki", "porównaj minimum kilka wycen", "nie zaczynaj bez pisemnego zakresu"]
   }
 };
 
@@ -511,64 +530,165 @@ function renderToolInputs(model) {
   return (model.fields || [])
     .map((field, index) => {
       const input = model.type === "checklist"
-        ? `<label class="check-row"><input type="checkbox"><span>${esc(field)}</span></label>`
-        : `<label>${esc(field)}</label><input value="" placeholder="${index === 0 ? "wpisz wartosc" : "uzupelnij"}">`;
+        ? `<label class="check-row"><input type="checkbox" data-tool-input="${index}"><span>${esc(field)}</span></label>`
+        : `<label>${esc(field)}</label><input inputmode="decimal" value="" data-tool-input="${index}" placeholder="${index === 0 ? "wpisz wartość" : "uzupełnij"}">`;
       return input;
     })
     .join("");
 }
 
+function toolCalculatorScript(slug, type) {
+  const safeSlug = JSON.stringify(slug);
+  const safeType = JSON.stringify(type);
+  return `<script>
+  (function () {
+    const slug = ${safeSlug};
+    const type = ${safeType};
+    const shell = document.querySelector("[data-tool-shell]");
+    if (!shell) return;
+    const output = shell.querySelector("[data-tool-output]");
+    const button = shell.querySelector("[data-tool-action]");
+    const inputs = Array.from(shell.querySelectorAll("[data-tool-input]"));
+    const money = new Intl.NumberFormat("pl-PL", { style: "currency", currency: "PLN", maximumFractionDigits: 0 });
+    const percent = new Intl.NumberFormat("pl-PL", { maximumFractionDigits: 2 });
+    const numberValue = (input) => {
+      const raw = String(input.value || "").replace(/\\s/g, "").replace(",", ".");
+      const value = Number(raw);
+      return Number.isFinite(value) ? value : 0;
+    };
+    const values = () => inputs.map((input) => input.type === "checkbox" ? input.checked : numberValue(input));
+    const show = (title, lines) => {
+      output.innerHTML = "<strong>" + title + "</strong><ul>" + lines.map((line) => "<li>" + line + "</li>").join("") + "</ul>";
+    };
+    const calculate = () => {
+      if (type === "checklist") {
+        const checked = values().filter(Boolean).length;
+        const total = inputs.length || 1;
+        const ratio = checked / total;
+        const title = ratio === 1 ? "Wygląda na komplet" : ratio >= 0.75 ? "Prawie gotowe" : "Brakuje ważnych punktów";
+        show(title, [
+          "Zaznaczone punkty: " + checked + " z " + total + ".",
+          ratio === 1 ? "Możesz przejść do następnego kroku." : "Uzupełnij brakujące punkty przed decyzją.",
+          "To checklista kontrolna, nie indywidualna porada."
+        ]);
+        return;
+      }
+      const v = values();
+      if (slug === "kalkulator-raty") {
+        const amount = v[0], months = Math.max(1, v[1]), annualRate = Math.max(0, v[2]) / 100, commission = Math.max(0, v[3]);
+        const principal = amount + commission;
+        const monthlyRate = annualRate / 12;
+        const installment = monthlyRate ? principal * monthlyRate / (1 - Math.pow(1 + monthlyRate, -months)) : principal / months;
+        const total = installment * months;
+        show("Orientacyjna rata", [
+          "Rata miesięczna: " + money.format(installment) + ".",
+          "Całkowita kwota do spłaty: " + money.format(total) + ".",
+          "Szacowany koszt finansowania: " + money.format(Math.max(0, total - amount)) + "."
+        ]);
+      } else if (slug === "kalkulator-rrso") {
+        const amount = Math.max(1, v[0]), repay = Math.max(0, v[1]), months = Math.max(1, v[2]), extra = Math.max(0, v[3]);
+        const total = repay + extra;
+        const cost = Math.max(0, total - amount);
+        const annualized = ((total / amount) - 1) * (12 / months) * 100;
+        show("Szacunkowy koszt", [
+          "Łączny koszt: " + money.format(cost) + ".",
+          "Kwota do oddania z dodatkowymi kosztami: " + money.format(total) + ".",
+          "Prosty roczny wskaźnik kosztu: około " + percent.format(Math.max(0, annualized)) + "%."
+        ]);
+      } else if (slug === "kalkulator-zdolnosci-kredytowej") {
+        const income = v[0], debts = v[1], costs = v[2], planned = v[3];
+        const surplus = income - debts - costs;
+        const safeInstallment = Math.max(0, surplus * 0.45);
+        const margin = surplus - planned;
+        show("Orientacyjny bufor", [
+          "Nadwyżka po kosztach i ratach: " + money.format(surplus) + ".",
+          "Ostrożny limit nowej raty: " + money.format(safeInstallment) + ".",
+          margin >= 0 ? "Po planowanej racie zostaje: " + money.format(margin) + "." : "Planowana rata przekracza budżet o: " + money.format(Math.abs(margin)) + "."
+        ]);
+      } else if (slug === "budzet-domowy") {
+        const income = v[0], costs = v[1], debts = v[2], reserve = v[3];
+        const balance = income - costs - debts - reserve;
+        show("Budżet miesięczny", [
+          "Wynik po kosztach, ratach i rezerwie: " + money.format(balance) + ".",
+          "Bezpieczna dodatkowa rata nie powinna zjadać całej tej kwoty.",
+          balance < 0 ? "Budżet jest pod kreską, najpierw ogranicz koszty lub raty." : "Zostaje bufor, ale zostaw miejsce na koszty nieregularne."
+        ]);
+      } else if (slug === "kalkulator-oc") {
+        const age = v[0], claims = v[1], engine = v[2], year = v[3];
+        const points = (age && age < 26 ? 2 : 0) + claims * 2 + (engine > 2000 ? 1 : 0) + (year && year < 2010 ? 1 : 0);
+        const level = points >= 4 ? "wysokie ryzyko ceny" : points >= 2 ? "średnie ryzyko ceny" : "niższe ryzyko ceny";
+        show("Czynniki składki OC", [
+          "Profil wskazuje: " + level + ".",
+          "Najmocniej wpływają: szkody, wiek kierowcy, pojemność i historia auta.",
+          "To nie jest realna oferta OC. Do ceny potrzebna jest integracja z partnerem lub formularz ubezpieczyciela."
+        ]);
+      } else {
+        show("Wynik orientacyjny", [
+          "Narzędzie zebrało dane i pokazuje kierunek decyzji.",
+          "Ten moduł wymaga jeszcze osobnego wzoru lub integracji, żeby liczyć pełny wynik."
+        ]);
+      }
+    };
+    button?.addEventListener("click", calculate);
+    inputs.forEach((input) => input.addEventListener(input.type === "checkbox" ? "change" : "input", calculate));
+    calculate();
+  })();
+  </script>`;
+}
+
 function toolPage(tool) {
   const model = toolModels[tool.slug] || {
     type: "calculator",
-    fields: ["Kwota / wartosc", "Okres / sytuacja"],
-    resultTitle: "Wynik bedzie punktem startowym",
-    resultText: "Na tym etapie pokazujemy bezpieczny model narzedzia: input, wynik, interpretacja, ostrzezenie i nastepny krok.",
-    bullets: ["uzyj wyniku jako punktu startowego", "sprawdz warunki przed kliknieciem", "przejdz do powiazanej strony"]
+    fields: ["Kwota / wartość", "Okres / sytuacja"],
+    resultTitle: "Wynik będzie punktem startowym",
+    resultText: "Na tym etapie pokazujemy bezpieczny model narzędzia: input, wynik, interpretacja, ostrzeżenie i następny krok.",
+    bullets: ["użyj wyniku jako punktu startowego", "sprawdź warunki przed kliknięciem", "przejdź do powiązanej strony"]
   };
   const related = [
-    { label: "Wroc do narzedzi", url: "/narzedzia", note: "Zobacz pozostale kalkulatory i checklisty" },
-    { label: "Przejdz do wyniku", url: tool.next, note: "Najblizszy krok po uzyciu narzedzia" }
+    { label: "Wróć do narzędzi", url: "/narzedzia", note: "Zobacz pozostałe kalkulatory i checklisty" },
+    { label: "Przejdź do wyniku", url: tool.next, note: "Najbliższy krok po użyciu narzędzia" }
   ];
   return layout({
     url: `/narzedzia/${tool.slug}`,
     title: `${tool.name} | ${data.name}`,
     description: tool.description,
     crumbs: [
-      { label: "Narzedzia", url: "/narzedzia" },
+      { label: "Narzędzia", url: "/narzedzia" },
       { label: tool.name, url: `/narzedzia/${tool.slug}` }
     ],
     body: `<main>
       <section class="hero compact">
         <div class="hero-inner single">
           <div>
-            <div class="eyebrow">Narzedzie</div>
+            <div class="eyebrow">Narzędzie</div>
             <h1>${esc(tool.name)}</h1>
             <p class="lead">${esc(tool.description)}</p>
           </div>
         </div>
       </section>
       <section>
-        <div class="tool-shell">
+        <div class="tool-shell" data-tool-shell>
           <div class="fake-form">
             <span class="badge">${model.type === "checklist" ? "Checklista" : "Kalkulator"}</span>
             ${renderToolInputs(model)}
-            <button class="button" type="button">${model.type === "checklist" ? "Sprawdz gotowosc" : "Pokaz wynik orientacyjny"}</button>
+            <button class="button" type="button" data-tool-action>${model.type === "checklist" ? "Sprawdź gotowość" : "Pokaż wynik orientacyjny"}</button>
           </div>
           <div class="result-card">
             <span class="badge">Co dalej?</span>
             <h2>${esc(model.resultTitle)}</h2>
-            <p>${esc(model.resultText)} Nie udajemy decyzji bankowej, realnej skladki ani indywidualnej porady.</p>
+            <p>${esc(model.resultText)} Nie udajemy decyzji bankowej, realnej składki ani indywidualnej porady.</p>
+            <div class="calculated-result" data-tool-output></div>
             <ul class="tool-points">${model.bullets.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
-            ${cta("Przejdz do nastepnego kroku", tool.next)}
+            ${cta("Przejdź do następnego kroku", tool.next)}
           </div>
         </div>
       </section>
       ${nextStepBlock({
-        title: "Powiazane przejscia",
-        description: "Narzedzie nie powinno konczyc sesji. Wynik ma kierowac do decyzji.",
+        title: "Powiązane przejścia",
+        description: "Narzędzie nie powinno kończyć sesji. Wynik ma kierować do decyzji.",
         links: related
       })}
+      ${toolCalculatorScript(tool.slug, model.type)}
     </main>`
   });
 }
@@ -582,7 +702,7 @@ function genericPage(page) {
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
     .slice(0, 3);
   const genericLinks = [
-    ...(pillar?.priorityLinks || []).slice(0, 3).map((link) => ({ ...link, note: "Wazny krok w tym pionie" })),
+    ...(pillar?.priorityLinks || []).slice(0, 3).map((link) => ({ ...link, note: "Ważny krok w tym pionie" })),
     ...relatedTools.map((tool) => ({ label: tool.name, url: `/narzedzia/${tool.slug}`, note: tool.description }))
   ].slice(0, 4);
   return layout({
@@ -611,7 +731,7 @@ function genericPage(page) {
           ? `<section>
         <div class="section-head">
           <h2>Przygotowane miejsca na oferty</h2>
-          <p>To sa struktury pod afiliacje bez prawdziwych linkow partnerow. Najpierw pokazujemy koszt, warunki, ostrzezenie i dopiero potem przejscie.</p>
+          <p>To są struktury pod afiliacje bez prawdziwych linków partnerów. Najpierw pokazujemy koszt, warunki, ostrzeżenie i dopiero potem przejście.</p>
         </div>
         <div class="offer-grid">${pageOffers.map((offer) => offerCard(offer)).join("")}</div>
       </section>`
@@ -620,19 +740,19 @@ function genericPage(page) {
       ${pageOffers.length ? affiliateDisclosureBlock() : ""}
       <section>
         <div class="section-head">
-          <h2>Najwazniejsze zasady</h2>
-          <p>Ta strona jest czescia pelnej mapy serwisu. Teraz ma fundament SEO, CTA i linkowanie; w kolejnych sprintach dostanie pelna tresc lub modul ofertowy.</p>
+          <h2>Najważniejsze zasady</h2>
+          <p>Ta strona jest częścią pełnej mapy serwisu. Teraz ma fundament SEO, CTA i linkówanie; w kolejnych sprintach dostanie pełną treść lub moduł ofertowy.</p>
         </div>
         <div class="trust-grid">
-          <div><strong>Najpierw zrozum</strong><span>Co wybierasz, jakie sa koszty i gdzie sa ograniczenia.</span></div>
-          <div><strong>Sprawdz ryzyko</strong><span>Przy finansach, ubezpieczeniach, aucie i domu decyzje moga kosztowac realne pieniadze.</span></div>
-          <div><strong>Przejdz dalej</strong><span>Uzyj narzedzia, checklisty, rankingu albo poradnika powiazanego z tematem.</span></div>
+          <div><strong>Najpierw zrozum</strong><span>Co wybierasz, jakie są koszty i gdzie są ograniczenia.</span></div>
+          <div><strong>Sprawdź ryzyko</strong><span>Przy finansach, ubezpieczeniach, aucie i domu decyzje mogą kosztowac realne pieniądze.</span></div>
+          <div><strong>Przejdź dalej</strong><span>Użyj narzędzia, checklisty, rankingu albo poradnika powiązanego z tematem.</span></div>
         </div>
       </section>
       <section>
         <div class="section-head">
-          <h2>Powiazane tematy</h2>
-          <p>Linki sa dobierane kontekstowo, zeby uzytkownik nie konczyl w slepej uliczce.</p>
+          <h2>Powiązane tematy</h2>
+          <p>Linki są dobierane kontekstowo, żeby użytkownik nie kończył w ślepej uliczce.</p>
         </div>
         <div class="list-grid">${
           genericLinks.length
@@ -640,15 +760,15 @@ function genericPage(page) {
                 .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>${esc(link.note)}</span></a>`)
                 .join("")
             : sectionLinks
-            .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Wazny krok w tym pionie</span></a>`)
+            .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Ważny krok w tym pionie</span></a>`)
             .join("") ||
-          `<a class="list-card" href="/narzedzia"><strong>Narzedzia</strong><span>Kalkulatory i checklisty do dalszej decyzji.</span></a>`
+          `<a class="list-card" href="/narzedzia"><strong>Narzędzia</strong><span>Kalkulatory i checklisty do dalszej decyzji.</span></a>`
         }</div>
       </section>
       ${nextStepBlock({
         links: [
-          { label: page.cta, url: page.ctaUrl, note: "Glowny nastepny krok tej strony" },
-          ...(pillar ? [{ label: `Wroc do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz cala sekcje" }] : [])
+          { label: page.cta, url: page.ctaUrl, note: "Główny następny krok tej strony" },
+          ...(pillar ? [{ label: `Wróć do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz całą sekcję" }] : [])
         ]
       })}
     </main>`
@@ -659,7 +779,7 @@ function offersIndex() {
   return layout({
     url: "/oferty",
     title: `System ofert | ${data.name}`,
-    description: "Roboczy katalog miejsc na oferty afiliacyjne bez prawdziwych linkow partnerow.",
+    description: "Roboczy katalog miejsc na oferty afiliacyjne bez prawdziwych linków partnerów.",
     crumbs: [{ label: "Oferty", url: "/oferty" }],
     body: `<main>
       <section class="hero compact">
@@ -667,7 +787,7 @@ function offersIndex() {
           <div>
             <div class="eyebrow">System ofert</div>
             <h1>Miejsca na oferty gotowe pod afiliacje.</h1>
-            <p class="lead">Te karty porzadkuja dane, ostrzezenia i CTA zanim dodamy prawdziwe linki partnerow.</p>
+            <p class="lead">Te karty porzadkuja dane, ostrzeżeńia i CTA zanim dodamy prawdziwe linki partnerów.</p>
           </div>
         </div>
       </section>
@@ -682,7 +802,7 @@ function goPage(offer) {
   return layout({
     url: `/go/${offer.slug}`,
     title: `${offer.name} | ${data.name}`,
-    description: `Robocze przejscie afiliacyjne dla: ${offer.name}.`,
+    description: `Robocze przejście afiliacyjne dla: ${offer.name}.`,
     noindex: true,
     crumbs: [
       { label: "Oferty", url: "/oferty" },
@@ -695,15 +815,15 @@ function goPage(offer) {
             <div class="eyebrow">Placeholder afiliacyjny</div>
             <h1>${esc(offer.name)}</h1>
             <p class="lead">${esc(offer.summary)}</p>
-            <div class="hero-actions">${cta("Wroc do sekcji", `/${offer.pillar}`, true)}</div>
+            <div class="hero-actions">${cta("Wróć do sekcji", `/${offer.pillar}`, true)}</div>
           </div>
         </div>
       </section>
       <section class="warning-band">
         <div>
           <span class="badge">Link niepodpiety</span>
-          <h2>Tu pozniej trafi prawdziwy link partnera</h2>
-          <p>Na tym etapie nie wysylamy uzytkownika do zewnetrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego.</p>
+          <h2>Tu później trafi prawdziwy link partnera</h2>
+          <p>Na tym etapie nie wysylamy użytkownika do zewnetrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego.</p>
         </div>
       </section>
       <section>
@@ -716,21 +836,21 @@ function goPage(offer) {
 function toolsIndex() {
   return layout({
     url: "/narzedzia",
-    title: `Narzedzia | ${data.name}`,
-    description: "Kalkulatory i checklisty do finansow, ubezpieczen, auta, pracy i domu.",
-    crumbs: [{ label: "Narzedzia", url: "/narzedzia" }],
+    title: `Narzędzia | ${data.name}`,
+    description: "Kalkulatory i checklisty do finansów, ubezpieczeń, auta, pracy i domu.",
+    crumbs: [{ label: "Narzędzia", url: "/narzedzia" }],
     body: `<main>
       <section class="hero compact">
         <div class="hero-inner single">
           <div>
             <div class="eyebrow">Kalkulatory i checklisty</div>
-            <h1>Policz, sprawdz i przejdz do nastepnego kroku.</h1>
-            <p class="lead">Kazde narzedzie ma miec prosty input, wynik, interpretacje i jasne "Co dalej?".</p>
+            <h1>Policz, sprawdz i przejdź do następnego kroku.</h1>
+            <p class="lead">Każde narzędzie ma mieć prosty input, wynik, interpretację i jasne "Co dalej?".</p>
           </div>
         </div>
       </section>
       <section>
-        <div class="grid">${data.tools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otworz" })).join("")}</div>
+        <div class="grid">${data.tools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("")}</div>
       </section>
     </main>`
   });
@@ -784,23 +904,23 @@ if (data.privateMode) {
   writePreviewPage("/oferty", offersIndex());
   for (const offer of offers) writePreviewPage(`/go/${offer.slug}`, goPage(offer));
   for (const page of allPages) writePreviewPage(page.url, genericPage(page));
-  writePreviewPage("/faq", simplePage("/faq", "FAQ", "Krotkie odpowiedzi na najwazniejsze pytania o serwis, afiliacje, narzedzia i decyzje."));
+  writePreviewPage("/faq", simplePage("/faq", "FAQ", "Krótkie odpowiedzi na najważniejsze pytania o serwis, afiliacje, narzędzia i decyzje."));
   writePreviewPage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmowac praktyczne decyzje i jasno oznacza, jak zarabia."));
   writePreviewPage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, wspolprace i partnerstwa afiliacyjne."));
   writePreviewPage(
     "/polityka-prywatnosci",
-    legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, klikniecia i przyszle przekierowania partnerskie.", [
-      { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta uzytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerow." },
-      { title: "Klikniecia i analityka", text: "Serwis przygotowuje lekkie zdarzenia klikniec CTA i ofert, zeby pozniej mierzyc skutecznosc stron. Nie zapisujemy wrazliwych danych finansowych w tych zdarzeniach." },
-      { title: "Partnerzy", text: "Po dodaniu prawdziwych linkow afiliacyjnych uzytkownik moze przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
+    legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, kliknięcia i przyszle przekierowania partnerskie.", [
+      { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerów." },
+      { title: "Kliknięcia i analityka", text: "Serwis przygotowuje lekkie zdarzenia kliknięć CTA i ofert, żeby później mierzyć skuteczność stron. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
+      { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
     ])
   );
   writePreviewPage(
     "/regulamin",
     legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu przed uruchomieniem prawdziwych ofert afiliacyjnych.", [
-      { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzedzia orientacyjne, checklisty i porownania. Serwis nie jest bankiem, ubezpieczycielem, doradca finansowym, prawna ani podatkowa." },
-      { title: "Oferty i linki", text: "Karty ofert moga zawierac linki afiliacyjne po ich podpieciu. Przed decyzja uzytkownik powinien sprawdzic aktualne warunki bezposrednio u partnera." },
-      { title: "Narzedzia", text: "Kalkulatory i checklisty maja charakter orientacyjny. Wynik nie jest decyzja kredytowa, wycena ubezpieczenia ani indywidualna porada." }
+      { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
+      { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne po ich podpięciu. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
+      { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
     ])
   );
   fs.writeFileSync(path.join(dist, "404.html"), privatePage());
@@ -821,23 +941,23 @@ writePage("/oferty", offersIndex());
 for (const offer of offers) writePage(`/go/${offer.slug}`, goPage(offer));
 for (const page of allPages) writePage(page.url, genericPage(page));
 
-writePage("/faq", simplePage("/faq", "FAQ", "Krotkie odpowiedzi na najwazniejsze pytania o serwis, afiliacje, narzedzia i decyzje."));
+writePage("/faq", simplePage("/faq", "FAQ", "Krótkie odpowiedzi na najważniejsze pytania o serwis, afiliacje, narzędzia i decyzje."));
 writePage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmowac praktyczne decyzje i jasno oznacza, jak zarabia."));
 writePage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, wspolprace i partnerstwa afiliacyjne."));
 writePage(
   "/polityka-prywatnosci",
-  legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, klikniecia i przyszle przekierowania partnerskie.", [
-    { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta uzytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerow." },
-    { title: "Klikniecia i analityka", text: "Serwis przygotowuje lekkie zdarzenia klikniec CTA i ofert, zeby pozniej mierzyc skutecznosc stron. Nie zapisujemy wrazliwych danych finansowych w tych zdarzeniach." },
-    { title: "Partnerzy", text: "Po dodaniu prawdziwych linkow afiliacyjnych uzytkownik moze przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
+  legalPage("/polityka-prywatnosci", "Polityka prywatnosci", "Jak traktujemy dane, kliknięcia i przyszle przekierowania partnerskie.", [
+    { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnetrzne integracje beda dodawane dopiero po wyborze partnerów." },
+    { title: "Kliknięcia i analityka", text: "Serwis przygotowuje lekkie zdarzenia kliknięć CTA i ofert, żeby później mierzyć skuteczność stron. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
+    { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejsc do zewnetrznego dostawcy. Warunki prywatnosci po przejsciu okresla ten dostawca." }
   ])
 );
 writePage(
   "/regulamin",
   legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu przed uruchomieniem prawdziwych ofert afiliacyjnych.", [
-    { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzedzia orientacyjne, checklisty i porownania. Serwis nie jest bankiem, ubezpieczycielem, doradca finansowym, prawna ani podatkowa." },
-    { title: "Oferty i linki", text: "Karty ofert moga zawierac linki afiliacyjne po ich podpieciu. Przed decyzja uzytkownik powinien sprawdzic aktualne warunki bezposrednio u partnera." },
-    { title: "Narzedzia", text: "Kalkulatory i checklisty maja charakter orientacyjny. Wynik nie jest decyzja kredytowa, wycena ubezpieczenia ani indywidualna porada." }
+    { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
+    { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne po ich podpięciu. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
+    { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
   ])
 );
 

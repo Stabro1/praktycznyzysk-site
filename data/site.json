@@ -2,58 +2,112 @@
   "name": "PraktycznyZysk.pl",
   "shortName": "Praktyczny Zysk",
   "domain": "praktycznyzysk.pl",
-  "tagline": "Praktyczne decyzje, ktore pomagaja oszczedzac, zarabiac i nie przeplacac.",
+  "tagline": "Praktyczne decyzje, które pomagają oszczędzać, zarabiać i nie przepłacać.",
   "description": "Finanse, ubezpieczenia, auto, praca i dom - prosto, konkretnie, bez lania wody.",
   "lastUpdated": "2026-05-30",
   "privateMode": true,
   "previewBase": "/podglad-stabro",
-  "disclosure": "Czesc linkow moze byc afiliacyjna. Nie jestesmy bankiem, ubezpieczycielem ani kancelaria. Pokazujemy informacje, narzedzia i linki do partnerow, a warunki zawsze sprawdzasz u dostawcy.",
+  "disclosure": "Część linków może być afiliacyjna. Nie jesteśmy bankiem, ubezpieczycielem ani kancelarią. Pokażujemy informacje, narzędzia i linki do partnerów, a warunki zawsze sprawdzasz u dostawcy.",
   "primaryNav": [
-    { "label": "Finanse", "url": "/finanse" },
-    { "label": "Ubezpieczenia", "url": "/ubezpieczenia" },
-    { "label": "Auto", "url": "/auto" },
-    { "label": "Praca", "url": "/praca" },
-    { "label": "Dom", "url": "/dom" },
-    { "label": "Narzedzia", "url": "/narzedzia" }
+    {
+      "label": "Finanse",
+      "url": "/finanse"
+    },
+    {
+      "label": "Ubezpieczenia",
+      "url": "/ubezpieczenia"
+    },
+    {
+      "label": "Auto",
+      "url": "/auto"
+    },
+    {
+      "label": "Praca",
+      "url": "/praca"
+    },
+    {
+      "label": "Dom",
+      "url": "/dom"
+    },
+    {
+      "label": "Narzędzia",
+      "url": "/narzedzia"
+    }
   ],
   "pillars": [
     {
       "slug": "finanse",
       "name": "Finanse",
       "label": "Konta, kredyty i koszty",
-      "description": "Kredyty gotowkowe, chwilowki, konta z premia, lokaty, karty, pozyczki dla firm i kalkulatory kosztow.",
-      "cta": "Przejdz do finansow",
+      "description": "Kredyty gotówkowe, chwilówki, konta z premią, lokaty, karty, pożyczki dla firm i kalkulatory kosztów.",
+      "cta": "Przejdź do finansów",
       "priorityLinks": [
-        { "label": "Kredyty gotowkowe", "url": "/finanse/kredyty-gotowkowe" },
-        { "label": "Chwilowki", "url": "/finanse/chwilowki" },
-        { "label": "Kredyt vs chwilowka", "url": "/finanse/kredyt-vs-chwilowka" },
-        { "label": "Kalkulator raty", "url": "/narzedzia/kalkulator-raty" }
+        {
+          "label": "Kredyty gotówkowe",
+          "url": "/finanse/kredyty-gotowkowe"
+        },
+        {
+          "label": "Chwilówki",
+          "url": "/finanse/chwilowki"
+        },
+        {
+          "label": "Kredyt vs chwilówka",
+          "url": "/finanse/kredyt-vs-chwilowka"
+        },
+        {
+          "label": "Kalkulator raty",
+          "url": "/narzedzia/kalkulator-raty"
+        }
       ]
     },
     {
       "slug": "ubezpieczenia",
       "name": "Ubezpieczenia",
       "label": "OC, AC i polisy",
-      "description": "OC, AC, OC/AC, assistance, NNW, kalkulator OC, porownywarka i rankingi polis.",
-      "cta": "Sprawdz ubezpieczenia",
+      "description": "OC, AC, OC/AC, assistance, NNW, kalkulator OC, porównywarka i rankingi polis.",
+      "cta": "Sprawdź ubezpieczenia",
       "priorityLinks": [
-        { "label": "OC/AC", "url": "/ubezpieczenia/oc-ac" },
-        { "label": "Kalkulator OC", "url": "/narzedzia/kalkulator-oc" },
-        { "label": "Porownywarka", "url": "/ubezpieczenia/porownywarka" },
-        { "label": "Ranking OC", "url": "/ubezpieczenia/ranking-oc" }
+        {
+          "label": "OC/AC",
+          "url": "/ubezpieczenia/oc-ac"
+        },
+        {
+          "label": "Kalkulator OC",
+          "url": "/narzedzia/kalkulator-oc"
+        },
+        {
+          "label": "Porównywarka",
+          "url": "/ubezpieczenia/porownywarka"
+        },
+        {
+          "label": "Ranking OC",
+          "url": "/ubezpieczenia/ranking-oc"
+        }
       ]
     },
     {
       "slug": "auto",
       "name": "Auto",
       "label": "Sprawdzenie, zakup i koszty",
-      "description": "Historia pojazdu, VIN, zakup uzywanego auta, wycena, przeglady, warsztaty i checklisty.",
-      "cta": "Sprawdz auto",
+      "description": "Historia pojazdu, VIN, zakup używanego auta, wycena, przeglądy, warsztaty i checklisty.",
+      "cta": "Sprawdź auto",
       "priorityLinks": [
-        { "label": "Historia pojazdu", "url": "/auto/historia-pojazdu" },
-        { "label": "VIN", "url": "/auto/vin" },
-        { "label": "Checklista zakupu", "url": "/narzedzia/checklista-zakup-auta" },
-        { "label": "Jak sprawdzic auto", "url": "/auto/jak-sprawdzic-auto" }
+        {
+          "label": "Historia pojazdu",
+          "url": "/auto/historia-pojazdu"
+        },
+        {
+          "label": "VIN",
+          "url": "/auto/vin"
+        },
+        {
+          "label": "Checklista zakupu",
+          "url": "/narzedzia/checklista-zakup-auta"
+        },
+        {
+          "label": "Jak sprawdzić auto",
+          "url": "/auto/jak-sprawdzic-auto"
+        }
       ]
     },
     {
@@ -61,217 +115,492 @@
       "name": "Praca",
       "label": "CV, rozmowa i zarobki",
       "description": "CV, kreator CV, wzory CV, rozmowa kwalifikacyjna, zmiana pracy, prawa pracownika i kalkulatory.",
-      "cta": "Przejdz do pracy",
+      "cta": "Przejdź do pracy",
       "priorityLinks": [
-        { "label": "Kreator CV", "url": "/praca/kreator-cv" },
-        { "label": "Wzory CV", "url": "/praca/wzory-cv" },
-        { "label": "Rozmowa kwalifikacyjna", "url": "/praca/rozmowa-kwalifikacyjna" },
-        { "label": "Kalkulator wynagrodzenia", "url": "/praca/kalkulator-wynagrodzenia" }
+        {
+          "label": "Kreator CV",
+          "url": "/praca/kreator-cv"
+        },
+        {
+          "label": "Wzory CV",
+          "url": "/praca/wzory-cv"
+        },
+        {
+          "label": "Rozmowa kwalifikacyjna",
+          "url": "/praca/rozmowa-kwalifikacyjna"
+        },
+        {
+          "label": "Kalkulator wynagrodzenia",
+          "url": "/praca/kalkulator-wynagrodzenia"
+        }
       ]
     },
     {
       "slug": "dom",
       "name": "Dom",
-      "label": "Remont, energia i uslugi",
-      "description": "Remont, uslugi do domu, OZE, fotowoltaika, pompa ciepla, finansowanie i checklisty.",
-      "cta": "Przejdz do domu",
+      "label": "Remont, energia i usługi",
+      "description": "Remont, usługi do domu, OZE, fotowoltaika, pompa ciepła, finansowanie i checklisty.",
+      "cta": "Przejdź do domu",
       "priorityLinks": [
-        { "label": "Remont", "url": "/dom/remont" },
-        { "label": "Checklista remontu", "url": "/narzedzia/checklista-remont" },
-        { "label": "Fotowoltaika", "url": "/dom/fotowoltaika" },
-        { "label": "Finansowanie domu", "url": "/dom/finansowanie-domu" }
+        {
+          "label": "Remont",
+          "url": "/dom/remont"
+        },
+        {
+          "label": "Checklista remontu",
+          "url": "/narzedzia/checklista-remont"
+        },
+        {
+          "label": "Fotowoltaika",
+          "url": "/dom/fotowoltaika"
+        },
+        {
+          "label": "Finansowanie domu",
+          "url": "/dom/finansowanie-domu"
+        }
       ]
     }
   ],
   "popular": [
-    { "label": "Kredyty gotowkowe", "url": "/finanse/kredyty-gotowkowe", "note": "Rata, RRSO i calkowita kwota do splaty." },
-    { "label": "Chwilowki", "url": "/finanse/chwilowki", "note": "Osobny lejek z warunkami 0% i ostrzezeniami." },
-    { "label": "Konta z premia", "url": "/finanse/konta-z-premia", "note": "Premie, oplaty i warunki aktywnosci." },
-    { "label": "OC/AC", "url": "/ubezpieczenia/oc-ac", "note": "Cena, zakres, assistance i cashback." },
-    { "label": "Historia pojazdu", "url": "/auto/historia-pojazdu", "note": "Najpierw darmowe gov.pl, potem raport VIN jesli ma sens." },
-    { "label": "Kalkulator zdolnosci", "url": "/narzedzia/kalkulator-zdolnosci-kredytowej", "note": "Orientacyjny wynik i nastepny krok." },
-    { "label": "CV / kreator CV", "url": "/praca/kreator-cv", "note": "Szybsze przygotowanie dokumentow." },
-    { "label": "Finansowanie remontu", "url": "/dom/finansowanie-domu", "note": "Rata, koszt i kiedy uwazac." }
+    {
+      "label": "Kredyty gotówkowe",
+      "url": "/finanse/kredyty-gotowkowe",
+      "note": "Rata, RRSO i całkowita kwota do spłaty."
+    },
+    {
+      "label": "Chwilówki",
+      "url": "/finanse/chwilowki",
+      "note": "Osobny lejek z warunkami 0% i ostrzeżeniami."
+    },
+    {
+      "label": "Konta z premią",
+      "url": "/finanse/konta-z-premia",
+      "note": "Premie, opłaty i warunki aktywności."
+    },
+    {
+      "label": "OC/AC",
+      "url": "/ubezpieczenia/oc-ac",
+      "note": "Cena, zakres, assistance i cashback."
+    },
+    {
+      "label": "Historia pojazdu",
+      "url": "/auto/historia-pojazdu",
+      "note": "Najpierw darmowe gov.pl, potem raport VIN jeśli ma sens."
+    },
+    {
+      "label": "Kalkulator zdolności",
+      "url": "/narzedzia/kalkulator-zdolnosci-kredytowej",
+      "note": "Orientacyjny wynik i następny krok."
+    },
+    {
+      "label": "CV / kreator CV",
+      "url": "/praca/kreator-cv",
+      "note": "Szybsze przygotowanie dokumentów."
+    },
+    {
+      "label": "Finansowanie remontu",
+      "url": "/dom/finansowanie-domu",
+      "note": "Rata, koszt i kiedy uważać."
+    }
   ],
   "tools": [
-    { "slug": "kalkulator-zdolnosci-kredytowej", "name": "Kalkulator zdolnosci kredytowej", "description": "Orientacyjna rata, kwota finansowania i poziom ryzyka.", "next": "/finanse/kredyty-gotowkowe" },
-    { "slug": "kalkulator-raty", "name": "Kalkulator raty", "description": "Rata, calkowita kwota do splaty i koszt finansowania.", "next": "/finanse/kredyty-gotowkowe" },
-    { "slug": "kalkulator-rrso", "name": "Kalkulator RRSO", "description": "Szacunek RRSO i kosztu kredytu albo pozyczki.", "next": "/finanse/kredyt-vs-chwilowka" },
-    { "slug": "kalkulator-oc", "name": "Kalkulator OC", "description": "Orientacyjny zakres skladki i czynniki ceny.", "next": "/ubezpieczenia/oc-ac" },
-    { "slug": "budzet-domowy", "name": "Budzet domowy", "description": "Nadwyzka, deficyt i bezpieczny limit rat.", "next": "/narzedzia/kalkulator-zdolnosci-kredytowej" },
-    { "slug": "checklista-kredyt", "name": "Checklista kredyt", "description": "RRSO, rata, calkowity koszt, prowizje i warunki.", "next": "/finanse/ranking-kredytow-gotowkowych" },
-    { "slug": "checklista-chwilowka", "name": "Checklista chwilowka", "description": "0%, termin splaty, koszt po terminie i plan splaty.", "next": "/finanse/kredyt-vs-chwilowka" },
-    { "slug": "checklista-zakup-auta", "name": "Checklista zakup auta", "description": "VIN, historia pojazdu, ogledziny, OC/AC i finansowanie.", "next": "/auto/historia-pojazdu" },
-    { "slug": "checklista-rozmowa-kwalifikacyjna", "name": "Checklista rozmowa kwalifikacyjna", "description": "CV, odpowiedzi, pytania do pracodawcy i oczekiwania.", "next": "/praca/rozmowa-kwalifikacyjna" },
-    { "slug": "checklista-remont", "name": "Checklista remont", "description": "Zakres, budzet, rezerwa, wykonawca, umowa i finansowanie.", "next": "/dom/remont" }
+    {
+      "slug": "kalkulator-zdolnosci-kredytowej",
+      "name": "Kalkulator zdolności kredytowej",
+      "description": "Orientacyjna rata, kwota finansowania i poziom ryzyka.",
+      "next": "/finanse/kredyty-gotowkowe"
+    },
+    {
+      "slug": "kalkulator-raty",
+      "name": "Kalkulator raty",
+      "description": "Rata, całkowita kwota do spłaty i koszt finansowania.",
+      "next": "/finanse/kredyty-gotowkowe"
+    },
+    {
+      "slug": "kalkulator-rrso",
+      "name": "Kalkulator RRSO",
+      "description": "Szacunek RRSO i kosztu kredytu albo pożyczki.",
+      "next": "/finanse/kredyt-vs-chwilowka"
+    },
+    {
+      "slug": "kalkulator-oc",
+      "name": "Kalkulator OC",
+      "description": "Orientacyjny zakres składki i czynniki ceny.",
+      "next": "/ubezpieczenia/oc-ac"
+    },
+    {
+      "slug": "budzet-domowy",
+      "name": "Budżet domowy",
+      "description": "Nadwyżka, deficyt i bezpieczny limit rat.",
+      "next": "/narzedzia/kalkulator-zdolnosci-kredytowej"
+    },
+    {
+      "slug": "checklista-kredyt",
+      "name": "Checklista kredyt",
+      "description": "RRSO, rata, całkowity koszt, prowizje i warunki.",
+      "next": "/finanse/ranking-kredytow-gotowkowych"
+    },
+    {
+      "slug": "checklista-chwilowka",
+      "name": "Checklista chwilówka",
+      "description": "0%, termin spłaty, koszt po terminie i plan spłaty.",
+      "next": "/finanse/kredyt-vs-chwilowka"
+    },
+    {
+      "slug": "checklista-zakup-auta",
+      "name": "Checklista zakup auta",
+      "description": "VIN, historia pojazdu, oględziny, OC/AC i finansowanie.",
+      "next": "/auto/historia-pojazdu"
+    },
+    {
+      "slug": "checklista-rozmowa-kwalifikacyjna",
+      "name": "Checklista rozmowa kwalifikacyjna",
+      "description": "CV, odpowiedzi, pytania do pracodawcy i oczekiwania.",
+      "next": "/praca/rozmowa-kwalifikacyjna"
+    },
+    {
+      "slug": "checklista-remont",
+      "name": "Checklista remont",
+      "description": "Zakres, budżet, rezerwa, wykonawca, umowa i finansowanie.",
+      "next": "/dom/remont"
+    }
   ],
   "offers": [
     {
       "slug": "kredyt-gotowkowy-demo",
-      "name": "Kredyt gotowkowy - miejsce na partnera",
+      "name": "Kredyt gotówkowy - miejsce na partnera",
       "category": "credit",
       "pillar": "finanse",
-      "pages": ["/finanse/kredyty-gotowkowe", "/finanse/ranking-kredytow-gotowkowych"],
-      "reward": "do uzupelnienia",
-      "difficulty": "Sredni",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "do uzupełnienia",
+      "difficulty": "Średni",
       "time": "15-30 min",
-      "deadline": "do uzupelnienia",
-      "audience": "osoba szukajaca finansowania",
-      "conditions": ["RRSO i koszt calkowity", "zdolnosc kredytowa", "akceptacja banku"],
-      "summary": "Placeholder pod oferte kredytu gotowkowego z widocznym RRSO, rata, okresem i calkowita kwota do splaty.",
-      "params": ["RRSO: do uzupelnienia", "Rata: zalezy od kwoty i okresu", "Okres: do uzupelnienia", "Koszt calkowity: do uzupelnienia"],
-      "pros": ["jasne miejsce na koszt", "pasuje do kalkulatora raty", "gotowe pod ranking"],
-      "cons": ["brak realnej oferty bez partnera", "wymaga aktualizacji warunkow"],
-      "warning": "To nie jest oferta kredytowa ani decyzja banku. Link partnera zostanie dodany pozniej."
+      "deadline": "do uzupełnienia",
+      "audience": "osoba szukająca finansowania",
+      "conditions": [
+        "RRSO i koszt całkowity",
+        "zdolność kredytowa",
+        "akceptacja banku"
+      ],
+      "summary": "Placeholder pod ofertę kredytu gotówkowego z widocznym RRSO, rata, okresem i całkowita kwota do spłaty.",
+      "params": [
+        "RRSO: do uzupełnienia",
+        "Rata: zależy od kwoty i okresu",
+        "Okres: do uzupełnienia",
+        "Koszt całkowity: do uzupełnienia"
+      ],
+      "pros": [
+        "jasne miejsce na koszt",
+        "pasuje do kalkulatora raty",
+        "gotowe pod ranking"
+      ],
+      "cons": [
+        "brak realnej oferty bez partnera",
+        "wymaga aktualizacji warunków"
+      ],
+      "warning": "To nie jest oferta kredytowa ani decyzja banku. Link partnera zostanie dodany później."
     },
     {
       "slug": "chwilowka-demo",
-      "name": "Chwilowka - miejsce na partnera",
+      "name": "Chwilówka - miejsce na partnera",
       "category": "payday",
       "pillar": "finanse",
-      "pages": ["/finanse/chwilowki", "/finanse/ranking-chwilowek", "/finanse/kredyt-vs-chwilowka"],
-      "reward": "do uzupelnienia",
+      "pages": [
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
+      ],
+      "reward": "do uzupełnienia",
       "difficulty": "Ryzykowny",
       "time": "10-20 min",
-      "deadline": "do uzupelnienia",
-      "audience": "tylko osoba z pewna splata",
-      "conditions": ["terminowa splata", "koszt po terminie", "brak rolowania dlugu"],
-      "summary": "Placeholder pod krotka pozyczke z terminem splaty, kosztem po terminie i warunkami promocji 0%.",
-      "params": ["RRSO: do uzupelnienia", "Termin: do uzupelnienia", "0%: tylko jesli partner potwierdzi", "Koszt po terminie: wymagany"],
-      "pros": ["oddzielony lejek chwilowek", "mocne ostrzezenie ryzyka", "gotowe pod checkliste"],
-      "cons": ["wysokie ryzyko przy opoznieniu", "nie dla rolowania dlugow"],
-      "warning": "Chwilowka bez pewnej splaty jest ryzykowna. Nie bierz jej na splate innej chwilowki."
+      "deadline": "do uzupełnienia",
+      "audience": "tylko osoba z pewną spłatą",
+      "conditions": [
+        "terminowa spłata",
+        "koszt po terminie",
+        "brak rolowania długu"
+      ],
+      "summary": "Placeholder pod krótka pożyczkę z terminem spłaty, kosztem po terminie i warunkami promocji 0%.",
+      "params": [
+        "RRSO: do uzupełnienia",
+        "Termin: do uzupełnienia",
+        "0%: tylko jeśli partner potwierdzi",
+        "Koszt po terminie: wymagany"
+      ],
+      "pros": [
+        "oddzielony lejek chwilowek",
+        "mocne ostrzeżenie ryzyka",
+        "gotowe pod checklistę"
+      ],
+      "cons": [
+        "wysokie ryzyko przy opóźnieniu",
+        "nie dla rolowania długów"
+      ],
+      "warning": "Chwilówka bez pewnej spłaty jest ryzykowna. Nie bierz jej na spłatę innej chwilówki."
     },
     {
       "slug": "konto-z-premia-demo",
-      "name": "Konto z premia - miejsce na partnera",
+      "name": "Konto z premią - miejsce na partnera",
       "category": "account",
       "pillar": "finanse",
-      "pages": ["/finanse/konta-z-premia", "/finanse/ranking-kont-z-premia"],
-      "reward": "do uzupelnienia",
-      "difficulty": "Latwy",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "do uzupełnienia",
+      "difficulty": "Łatwy",
       "time": "10-20 min",
-      "deadline": "do uzupelnienia",
+      "deadline": "do uzupełnienia",
       "audience": "osoba prywatna",
-      "conditions": ["otwarcie konta", "platnosci karta lub BLIK", "zgody i aktywnosc"],
-      "summary": "Placeholder pod konto osobiste z premia, oplatami i warunkami aktywnosci.",
-      "params": ["Premia: do uzupelnienia", "Oplata za konto: do uzupelnienia", "Warunki aktywnosci: wymagane"],
-      "pros": ["dobry produkt pod social", "niskie ryzyko decyzji", "latwe warunki do pokazania"],
-      "cons": ["premie maja terminy", "warunki trzeba aktualizowac"],
-      "warning": "Premia ma sens tylko wtedy, gdy warunki aktywnosci sa realne do spelnienia."
+      "conditions": [
+        "otwarcie konta",
+        "płatności kartą lub BLIK",
+        "zgody i aktywność"
+      ],
+      "summary": "Placeholder pod konto osobiste z premią, opłatami i warunkami aktywności.",
+      "params": [
+        "Premia: do uzupełnienia",
+        "Opłata za konto: do uzupełnienia",
+        "Warunki aktywności: wymagane"
+      ],
+      "pros": [
+        "dobry produkt pod social",
+        "niskie ryzyko decyzji",
+        "łatwe warunki do pokazania"
+      ],
+      "cons": [
+        "premie mają terminy",
+        "warunki trzeba aktualizowac"
+      ],
+      "warning": "Premia ma sens tylko wtedy, gdy warunki aktywności są realne do spełnienia."
     },
     {
       "slug": "erste-konto-firmowe-4500",
-      "name": "Erste Konto Firmowe Online - premia do 4500 zl",
+      "name": "Erste Konto Firmowe Online - premia do 4500 zł",
       "category": "business-account",
       "pillar": "finanse",
-      "pages": ["/finanse/konta-firmowe", "/finanse/konta-firmowe-z-premia", "/finanse/konta-z-premia", "/finanse/ranking-kont-firmowych"],
-      "reward": "do 4500 zl",
-      "difficulty": "Sredni",
-      "time": "20 min start + 3 miesiace aktywnosci",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "do 4500 zł",
+      "difficulty": "Średni",
+      "time": "20 min start + 3 miesiące aktywności",
       "deadline": "30.09.2026",
-      "audience": "JDG bez konta firmowego Erste/Santander w ostatnich 12 miesiacach",
-      "conditions": ["3 x 1500 zl", "wplyw min. 5000 zl miesiecznie", "ZUS min. 100 zl", "5 platnosci karta/BLIK po min. 50 zl", "zgody marketingowe"],
-      "summary": "Placeholder pod kampanie Erste dla JDG: promocja konta firmowego z premia do 4500 zl, po spelnieniu miesiecznych warunkow aktywnosci.",
-      "params": ["Premia: 3 x 1500 zl", "Okres przystapienia: 01.05-30.09.2026", "Dla kogo: JDG", "Wplyw: min. 5000 zl miesiecznie"],
-      "pros": ["bardzo mocny haczyk marketingowy", "wysoka premia dla aktywnej JDG", "pasuje do sociali o firmie i kosztach"],
-      "cons": ["nie jest to konto osobiste", "wymaga ZUS, wplywu i platnosci", "nagroda jest przychodem firmy"],
-      "warning": "Oferta dotyczy konta firmowego dla JDG. Nie prezentowac jej jako zwykle konto osobiste z premia."
+      "audience": "JDG bez konta firmowego Erste/Santander w ostatnich 12 miesiącach",
+      "conditions": [
+        "3 x 1500 zł",
+        "wpływ min. 5000 zł miesięcznie",
+        "ZUS min. 100 zł",
+        "5 płatności kartą/BLIK po min. 50 zł",
+        "zgody marketingowe"
+      ],
+      "summary": "Placeholder pod kampanie Erste dla JDG: promocja konta firmowego z premią do 4500 zł, po spełnieniu miesięcznych warunków aktywności.",
+      "params": [
+        "Premia: 3 x 1500 zł",
+        "Okres przystapienia: 01.05-30.09.2026",
+        "Dla kogo: JDG",
+        "Wplyw: min. 5000 zł miesięcznie"
+      ],
+      "pros": [
+        "bardzo mocny haczyk marketingowy",
+        "wysoka premią dla aktywnej JDG",
+        "pasuje do sociali o firmie i kosztach"
+      ],
+      "cons": [
+        "nie jest to konto osobiste",
+        "wymaga ZUS, wpływu i płatności",
+        "nagroda jest przychódem firmy"
+      ],
+      "warning": "Oferta dotyczy konta firmowego dla JDG. Nie prezentować jej jako zwykłe konto osobiste z premią."
     },
     {
       "slug": "oc-ac-demo",
-      "name": "OC/AC - miejsce na porownywarke",
+      "name": "OC/AC - miejsce na porównywarkę",
       "category": "insurance",
       "pillar": "ubezpieczenia",
-      "pages": ["/ubezpieczenia/oc-ac", "/ubezpieczenia/porownywarka", "/ubezpieczenia/ranking-oc"],
+      "pages": [
+        "/ubezpieczenia/oc-ac",
+        "/ubezpieczenia/porownywarka",
+        "/ubezpieczenia/ranking-oc"
+      ],
       "reward": "wycena u partnera",
-      "difficulty": "Sredni",
+      "difficulty": "Średni",
       "time": "5-10 min",
-      "deadline": "zalezy od konca polisy",
-      "audience": "wlasciciel auta",
-      "conditions": ["dane auta", "historia kierowcy", "zakres OC/AC"],
-      "summary": "Placeholder pod porownywarke OC/AC lub partnera ubezpieczeniowego z jasnym zakresem ochrony.",
-      "params": ["OC: obowiazkowe", "AC: zakres do porownania", "Assistance: do sprawdzenia", "Wycena: u partnera"],
-      "pros": ["naturalny lejek po zakupie auta", "wysoka intencja uzytkownika", "latwe przejscie z kalkulatora OC"],
-      "cons": ["bez integracji nie pokazujemy skladki", "AC wymaga czytania wykluczen"],
-      "warning": "Nie pokazujemy fikcyjnej skladki bez danych uzytkownika i integracji z partnerem."
+      "deadline": "zależy od końca polisy",
+      "audience": "właściciel auta",
+      "conditions": [
+        "dane auta",
+        "historia kierowcy",
+        "zakres OC/AC"
+      ],
+      "summary": "Placeholder pod porównywarkę OC/AC lub partnera ubezpieczeniowego z jasnym zakresem ochrony.",
+      "params": [
+        "OC: obowiązkowe",
+        "AC: zakres do porównania",
+        "Assistance: do sprawdzenia",
+        "Wycena: u partnera"
+      ],
+      "pros": [
+        "naturalny lejek po zakupie auta",
+        "wysoka intencja użytkownika",
+        "łatwe przejście z kalkulatora OC"
+      ],
+      "cons": [
+        "bez integracji nie pokazujemy składki",
+        "AC wymaga czytania wykluczeń"
+      ],
+      "warning": "Nie pokazujemy fikcyjnej składki bez danych użytkownika i integracji z partnerem."
     },
     {
       "slug": "kreator-cv-demo",
       "name": "Kreator CV - miejsce na partnera",
       "category": "work",
       "pillar": "praca",
-      "pages": ["/praca/kreator-cv", "/praca/wzory-cv", "/praca/cv"],
-      "reward": "do uzupelnienia",
-      "difficulty": "Latwy",
+      "pages": [
+        "/praca/kreator-cv",
+        "/praca/wzory-cv",
+        "/praca/cv"
+      ],
+      "reward": "do uzupełnienia",
+      "difficulty": "Łatwy",
       "time": "10-30 min",
       "deadline": "brak",
-      "audience": "osoba szukajaca pracy",
-      "conditions": ["wybor szablonu", "uzupelnienie danych", "eksport dokumentu"],
-      "summary": "Placeholder pod kreator CV, wzory dokumentow albo automatyczne narzedzie do aplikowania.",
-      "params": ["Cena: do uzupelnienia", "Szablony: do uzupelnienia", "Eksport PDF: wymagany"],
-      "pros": ["dobry produkt pod social", "szybka decyzja zakupowa", "pasuje do checklisty rozmowy"],
-      "cons": ["wymaga oceny jakosci szablonow", "nie kazdy potrzebuje platnego kreatora"],
-      "warning": "Kreator pomaga, ale nie zastapi dopasowania CV do konkretnej oferty pracy."
+      "audience": "osoba szukająca pracy",
+      "conditions": [
+        "wybor szablonu",
+        "uzupełnienie danych",
+        "eksport dokumentu"
+      ],
+      "summary": "Placeholder pod kreator CV, wzory dokumentów albo automatyczne narzędzie do aplikowania.",
+      "params": [
+        "Cena: do uzupełnienia",
+        "Szablony: do uzupełnienia",
+        "Eksport PDF: wymagany"
+      ],
+      "pros": [
+        "dobry produkt pod social",
+        "szybka decyzja zakupowa",
+        "pasuje do checklisty rozmowy"
+      ],
+      "cons": [
+        "wymaga oceny jakosci szablonow",
+        "nie każdy potrzebuje płatnego kreatora"
+      ],
+      "warning": "Kreator pomaga, ale nie zastąpi dopasowania CV do konkretnej oferty pracy."
     },
     {
       "slug": "fotowoltaika-demo",
       "name": "Fotowoltaika/OZE - miejsce na lead",
       "category": "home",
       "pillar": "dom",
-      "pages": ["/dom/fotowoltaika", "/dom/fotowoltaika-czy-warto", "/dom/oze"],
+      "pages": [
+        "/dom/fotowoltaika",
+        "/dom/fotowoltaika-czy-warto",
+        "/dom/oze"
+      ],
       "reward": "wycena/leadowanie",
       "difficulty": "Wysoki",
       "time": "kontakt i wycena",
-      "deadline": "zalezy od programu",
-      "audience": "wlasciciel domu lub firmy",
-      "conditions": ["zuzycie energii", "warunki montazu", "aktualne dofinansowania"],
-      "summary": "Placeholder pod lead OZE z kosztem, pytaniami do wykonawcy i ostrzezeniem przed zbyt szybka decyzja.",
-      "params": ["Koszt instalacji: do wyceny", "Zwrot: zalezy od zuzycia", "Dofinansowanie: do sprawdzenia"],
-      "pros": ["wysoka wartosc leada", "dobry temat poradnikowy", "pasuje do kalkulacji budzetu"],
-      "cons": ["duza decyzja finansowa", "wymaga aktualnych warunkow i wycen"],
-      "warning": "Nie obiecujemy zwrotu bez danych o zuzyciu, cenach energii, dachu i warunkach programu."
+      "deadline": "zależy od programu",
+      "audience": "właściciel domu lub firmy",
+      "conditions": [
+        "zużycie energii",
+        "warunki montazu",
+        "aktualne dofinansowania"
+      ],
+      "summary": "Placeholder pod lead OZE z kosztem, pytaniami do wykonawcy i ostrzeżeniem przed zbyt szybką decyzją.",
+      "params": [
+        "Koszt instalacji: do wyceny",
+        "Zwrot: zależy od zużycia",
+        "Dofinansowanie: do sprawdzenia"
+      ],
+      "pros": [
+        "wysoka wartość leada",
+        "dobry temat poradnikowy",
+        "pasuje do kalkulacji budżetu"
+      ],
+      "cons": [
+        "duża decyzja finansowa",
+        "wymaga aktualnych warunków i wycen"
+      ],
+      "warning": "Nie obiecujemy zwrotu bez danych o zużyciu, cenach energii, dachu i warunkach programu."
     }
   ],
   "pageContent": {
     "/finanse/konta-firmowe": [
       {
         "type": "cards",
-        "title": "Konto firmowe z premia - osobny lejek",
-        "description": "Promocje kont firmowych maja inne warunki niz konta osobiste. Nie mieszamy tego z prostymi bonusami za konto prywatne.",
+        "title": "Konto firmowe z premią - osobny lejek",
+        "description": "Promocje kont firmowych mają inne warunki niż konta osobiste. Nie mieszamy tego z prostymi bonusami za konto prywatne.",
         "items": [
-          { "title": "Dla JDG", "text": "Najmocniejsze promocje czesto sa dla osob prowadzacych jednoosobowa dzialalnosc gospodarcza." },
-          { "title": "Warunki aktywnosci", "text": "Zwykle trzeba utrzymac wplywy, przelewy do ZUS, platnosci karta lub BLIK i zgody marketingowe." },
-          { "title": "Podatek i ksiegowosc", "text": "Premia dla firmy moze byc przychodem z dzialalnosci, wiec trzeba uwzglednic rozliczenie." }
+          {
+            "title": "Dla JDG",
+            "text": "Najmocniejsze promocje często są dla osób prowadzących jednoosobową działalność gospodarczą."
+          },
+          {
+            "title": "Warunki aktywności",
+            "text": "Zwykle trzeba utrzymać wpływy, przelewy do ZUS, płatności kartą lub BLIK i zgody marketingowe."
+          },
+          {
+            "title": "Podatek i księgowość",
+            "text": "Premia dla firmy może być przychodem z działalności, więc trzeba uwzględnić rozliczenie."
+          }
         ]
       },
       {
         "type": "steps",
-        "title": "Erste Konto Firmowe Online - jak czytac promocje do 4500 zl",
+        "title": "Erste Konto Firmowe Online - jak czytac promocje do 4500 zł",
         "description": "To mocny kandydat do pierwszej kampanii kont firmowych, ale tylko dla wlasciwej grupy: JDG.",
         "items": [
-          { "title": "Sprawdz, czy to Ciebie dotyczy", "text": "Promocja jest dla osoby fizycznej prowadzacej jednoosobowa dzialalnosc gospodarcza, poza spolka cywilna." },
-          { "title": "Zweryfikuj wykluczenia", "text": "W ostatnich 12 miesiacach nie mozna miec/prowadzic konta firmowego w Erste/Santander." },
-          { "title": "Policz miesieczne warunki", "text": "Na miesiac premii wymagany jest zewnetrzny wplyw min. 5000 zl, przelew do ZUS min. 100 zl i 5 platnosci karta lub BLIK po min. 50 zl." },
-          { "title": "Pamietaj o podatku", "text": "Nagroda jest przychodem z dzialalnosci. Uzytkownik powinien uwzglednic to w rozliczeniu firmy." }
+          {
+            "title": "Sprawdź, czy to Ciebie dotyczy",
+            "text": "Promocja jest dla osoby fizycznej prowadzącej jednoosobową działalność gospodarczą, poza spółką cywilną."
+          },
+          {
+            "title": "Zweryfikuj wykluczenia",
+            "text": "W ostatnich 12 miesiącach nie można mieć/prowadzić konta firmowego w Erste/Santander."
+          },
+          {
+            "title": "Policz miesięczne warunki",
+            "text": "Na miesiąc premii wymagany jest zewnętrzny wpływ min. 5000 zł, przelew do ZUS min. 100 zł i 5 płatności kartą lub BLIK po min. 50 zł."
+          },
+          {
+            "title": "Pamiętaj o podatku",
+            "text": "Nagroda jest przychodem z działalności. Użytkownik powinien uwzględnić to w rozliczeniu firmy."
+          }
         ]
       },
       {
         "type": "warning",
         "badge": "Wazne",
-        "title": "Nie sprzedawac tego jako zwyklego konta z premia",
-        "text": "Oferta do 4500 zl dotyczy konta firmowego i wymaga aktywnosci firmowej. Na stronie musi byc jasne: JDG, warunki miesieczne, ZUS, wplywy, platnosci i przychod podatkowy."
+        "title": "Nie sprzedawac tego jako zwykłego konta z premią",
+        "text": "Oferta do 4500 zł dotyczy konta firmowego i wymaga aktywności firmowej. Na stronie musi być jasne: JDG, warunki miesięczne, ZUS, wpływy, płatności i przychód podatkowy."
       }
     ],
     "/finanse/konta-z-premia": [
       {
         "type": "cards",
-        "title": "Konto osobiste czy firmowe z premia",
-        "description": "Uzytkownik z sociali moze szukac prostego bonusu, ale osoby z JDG moga miec osobne, wyzsze promocje.",
+        "title": "Konto osobiste czy firmowe z premią",
+        "description": "Użytkownik z sociali może szukać prostego bonusu, ale osoby z JDG mogą mieć osobne, wyższe promocje.",
         "items": [
-          { "title": "Konto osobiste", "text": "Dla premii prywatnych sprawdzamy kwote bonusu, oplaty, wymagane transakcje i zgody." },
-          { "title": "Konto firmowe", "text": "Dla JDG pokazujemy osobny lejek: konto firmowe, ZUS, wplywy, platnosci i rozliczenie nagrody." },
-          { "title": "Erste do 4500 zl", "text": "To kandydat na osobna oferte firmowa, a nie element rankingu zwyklych kont osobistych." }
+          {
+            "title": "Konto osobiste",
+            "text": "Dla premii prywatnych sprawdzamy kwotę bonusu, opłaty, wymagane transakcje i zgody."
+          },
+          {
+            "title": "Konto firmowe",
+            "text": "Dla JDG pokazujemy osobny lejek: konto firmowe, ZUS, wpływy, płatności i rozliczenie nagrody."
+          },
+          {
+            "title": "Erste do 4500 zł",
+            "text": "To kandydat na osobna ofertę firmową, a nie element rankingu zwykłych kont osobistych."
+          }
         ]
       }
     ],
@@ -279,56 +608,98 @@
       {
         "type": "cards",
         "title": "Najmocniejsze premie dla JDG",
-        "description": "To osobny ranking dla przedsiebiorcow. Liczy sie nie tylko kwota premii, ale tez realnosc spelnienia warunkow.",
+        "description": "To osobny ranking dla przedsiębiorców. Liczy się nie tylko kwota premii, ale też realność spełnienia warunków.",
         "items": [
-          { "title": "Wartosc premii", "text": "Pokazujemy maksymalna wartosc, ale obok musi byc jasne, ile miesiecy i jakie warunki trzeba spelnic." },
-          { "title": "Trudnosc", "text": "Oferta firmowa moze wygladac mocno, ale wymaga wplywow, ZUS, platnosci i zgody na warunki banku." },
-          { "title": "Dla kogo", "text": "Nie kazda firma sie kwalifikuje. Najpierw sprawdzamy JDG, wykluczenia i historie relacji z bankiem." }
+          {
+            "title": "Wartość premii",
+            "text": "Pokażujemy maksymalna wartość, ale obok musi być jasne, ile miesięcy i jakie warunki trzeba spełnić."
+          },
+          {
+            "title": "Trudność",
+            "text": "Oferta firmową może wygladac mocno, ale wymaga wpływow, ZUS, płatności i zgody na warunki banku."
+          },
+          {
+            "title": "Dla kogo",
+            "text": "Nie każda firma się kwalifikuje. Najpierw sprawdzamy JDG, wykluczenia i historię relacji z bankiem."
+          }
         ]
       },
       {
         "type": "steps",
-        "title": "Jak oceniac konto firmowe z premia",
-        "description": "Ten landing ma byc lepszy od zwyklej listy promocji: ma filtrowac oferty po realnym zysku i ryzyku.",
+        "title": "Jak oceniac konto firmowe z premią",
+        "description": "Ten landing ma być lepszy od zwyklej listy promocji: ma filtrowac oferty po realnym zysku i ryzyku.",
         "items": [
-          { "title": "Sprawdz kwalifikacje", "text": "Czy oferta dotyczy JDG, spolki, nowej firmy albo obecnego klienta?" },
-          { "title": "Rozbij premie na miesiace", "text": "Przy Erste 4500 zl to 3 miesiace po 1500 zl, a nie jedna natychmiastowa wyplata." },
-          { "title": "Policz aktywnosc", "text": "Wplywy, ZUS, platnosci karta/BLIK i zgody marketingowe musza byc mozliwe do spelnienia w normalnym miesiacu firmy." },
-          { "title": "Uwzglednij podatek", "text": "Premia firmowa moze byc przychodem, wiec realny zysk trzeba pokazac ostroznie." }
+          {
+            "title": "Sprawdź kwalifikacje",
+            "text": "Czy oferta dotyczy JDG, spółki, nowej firmy albo obecnego klienta?"
+          },
+          {
+            "title": "Rozbij premie na miesiące",
+            "text": "Przy Erste 4500 zł to 3 miesiące po 1500 zł, a nie jedna natychmiastowa wyplata."
+          },
+          {
+            "title": "Policz aktywność",
+            "text": "Wpływy, ZUS, płatności kartą/BLIK i zgody marketingowe muszą być możliwe do spełnienia w normalnym miesiącu firmy."
+          },
+          {
+            "title": "Uwzględnij podatęk",
+            "text": "Premia firmową może być przychódem, więc realny zysk trzeba pokazac ostroznie."
+          }
         ]
       },
       {
         "type": "warning",
         "badge": "Ranking",
-        "title": "Pierwszy kandydat: Erste do 4500 zl",
+        "title": "Pierwszy kandydat: Erste do 4500 zł",
         "text": "Erste jest aktualnie mocnym kandydatem na pierwszy slot rankingu JDG, ale prawdziwy link dodamy dopiero po akceptacji kampanii w eBrokerPartner albo Bankier i sprawdzeniu zasad ruchu."
       }
     ],
     "/finanse/kredyty-gotowkowe": [
       {
         "type": "steps",
-        "title": "Jak porownac kredyt gotowkowy",
-        "description": "Ten lejek ma prowadzic do swiadomego porownania kosztow, nie do losowego klikniecia w reklame.",
+        "title": "Jak porównać kredyt gotówkowy",
+        "description": "Ten lejek ma prowadzić do świadomego porównania kosztów, nie do losowego kliknięcia w reklamę.",
         "items": [
-          { "title": "Ustal kwote i cel", "text": "Nie zaczynaj od maksymalnej dostepnej kwoty. Zacznij od realnej potrzeby i sprawdz, czy rata miesci sie w budzecie." },
-          { "title": "Porownaj RRSO i rate", "text": "RRSO pomaga porownywac koszt, ale uzytkownik musi widziec tez miesieczna rate i calkowita kwote do splaty." },
-          { "title": "Sprawdz prowizje i ubezpieczenia", "text": "Niska rata moze ukrywac dluzszy okres, prowizje, dodatkowe produkty albo drogie ubezpieczenie." },
-          { "title": "Dopiero potem kliknij partnera", "text": "CTA ma prowadzic do rankingu albo partnera, ale po pokazaniu kosztow i ostrzezen." }
+          {
+            "title": "Określ kwotę i cel kredytu",
+            "text": "Nie zaczynaj od maksymalnej dostępnej kwoty. Zacznij od realnej potrzeby i sprawdź, czy rata mieści się w budżecie."
+          },
+          {
+            "title": "Porównaj RRSO i ratę",
+            "text": "RRSO pomaga porównywać koszt, ale użytkownik musi widzieć też miesięczną ratę i całkowitą kwotę do spłaty."
+          },
+          {
+            "title": "Sprawdź prowizje i ubezpieczenia",
+            "text": "Niska rata może ukrywać dłuższy okres, prowizje, dodatkowe produkty albo drogie ubezpieczenie."
+          },
+          {
+            "title": "Dopiero potem kliknij partnera",
+            "text": "CTA ma prowadzić do rankingu albo partnera, ale po pokazaniu kosztów i ostrzeżeń."
+          }
         ]
       },
       {
         "type": "warning",
         "badge": "Koszt",
-        "title": "Nie porownuj kredytu tylko po racie",
-        "text": "Niska rata moze oznaczac dluzszy okres i wyzszy koszt calkowity. Na stronie zawsze pokazujemy RRSO, rate, okres i calkowita kwote do splaty."
+        "title": "Nie porównuj kredytu tylko po racie",
+        "text": "Niska rata może oznaczać dłuższy okres i wyższy koszt całkowity. Na stronie zawsze pokazujemy RRSO, ratę, okres i całkowitą kwotę do spłaty."
       },
       {
         "type": "cards",
-        "title": "Najlepsze przejscia",
+        "title": "Najlepsze przejścia",
         "items": [
-          { "title": "Kalkulator raty", "text": "Najpierw policz orientacyjna rate i koszt." },
-          { "title": "Ranking kredytow", "text": "Potem porownaj oferty wedlug kosztu i warunkow." },
-          { "title": "BIK i zdolnosc", "text": "Jesli wynik moze byc slaby, sprawdz BIK i budzet przed wnioskiem." }
+          {
+            "title": "Kalkulator raty",
+            "text": "Najpierw policz orientacyjna ratę i koszt."
+          },
+          {
+            "title": "Ranking kredytów",
+            "text": "Potem porównaj oferty według kosztu i warunków."
+          },
+          {
+            "title": "BIK i zdolność",
+            "text": "Jeśli wynik może być słaby, sprawdź BIK i budżet przed wnioskiem."
+          }
         ]
       }
     ],
@@ -336,83 +707,119 @@
       {
         "type": "warning",
         "badge": "Ryzyko",
-        "title": "Chwilowki musza byc osobnym lejkiem",
-        "text": "Nie mieszamy chwilowek z kredytami gotowkowymi. Promocja 0% zwykle dotyczy pierwszej pozyczki i terminowej splaty, a koszt po terminie moze byc bardzo wysoki."
+        "title": "Chwilówki muszą być osobnym lejkiem",
+        "text": "Nie mieszamy chwilowek z kredytami gotówkowymi. Promocja 0% zwykle dotyczy pierwszej pożyczki i terminowej spłaty, a koszt po terminie może być bardzo wysoki."
       },
       {
         "type": "checklist",
         "title": "Zanim klikniesz chwilowke",
-        "description": "Minimalna checklista, ktora chroni zaufanie i ogranicza spamowy charakter strony.",
+        "description": "Minimalna checklista, która chroni zaufanie i ogranicza spamowy charakter strony.",
         "items": [
-          "sprawdz RRSO i calkowita kwote do splaty",
-          "sprawdz, czy 0% dotyczy tylko pierwszej pozyczki",
-          "sprawdz termin splaty i koszt po terminie",
-          "upewnij sie, ze masz konkretny plan splaty",
-          "nie bierz chwilowki na splate innej chwilowki"
+          "sprawdź RRSO i całkowitą kwotę do spłaty",
+          "sprawdź, czy 0% dotyczy tylko pierwszej pożyczki",
+          "sprawdź termin spłaty i koszt po terminie",
+          "upewnij się, ze masz konkretny plan spłaty",
+          "nie bierz chwilówki na spłatę innej chwilówki"
         ]
       },
       {
         "type": "cards",
-        "title": "Kiedy chwilowka jest zlym pomyslem",
+        "title": "Kiedy chwilówka jest złym pomysłem",
         "items": [
-          { "title": "Brak pewnej splaty", "text": "Jesli nie wiesz, z czego splacisz calosc w terminie, ryzyko jest za wysokie." },
-          { "title": "Splacanie dlugow", "text": "Rolowanie zobowiazan zwykle pogarsza sytuacje." },
-          { "title": "Ukrywanie problemu", "text": "Jesli problemem jest budzet, najpierw trzeba policzyc wydatki i raty." }
+          {
+            "title": "Brak pewnej spłaty",
+            "text": "Jeśli nie wiesz, z czego spłacisz całość w terminie, ryzyko jest za wysokie."
+          },
+          {
+            "title": "Spłaćanie długów",
+            "text": "Rolowanie zobowiązań zwykle pogarsza sytuacje."
+          },
+          {
+            "title": "Ukrywanie problemu",
+            "text": "Jeśli problemem jest budżet, najpierw trzeba policzyć wydatki i raty."
+          }
         ]
       }
     ],
     "/finanse/kredyt-vs-chwilowka": [
       {
         "type": "cards",
-        "title": "Kredyt czy chwilowka",
-        "description": "Ta strona ma rozdzielac intencje i wysylac uzytkownika we wlasciwy lejek.",
+        "title": "Kredyt czy chwilówka",
+        "description": "Ta strona ma rozdzielać intencje i wysyłać użytkownika we właściwy lejek.",
         "items": [
-          { "title": "Kredyt gotowkowy", "text": "Lepszy przy wiekszej kwocie, dluzszym okresie i potrzebie stalej raty." },
-          { "title": "Chwilowka", "text": "Tylko przy krotkim terminie, pelnej kontroli splaty i jasnym koszcie." },
-          { "title": "Brak decyzji", "text": "Jesli nie znasz raty, RRSO i kosztu po terminie, najpierw uzyj kalkulatora." }
+          {
+            "title": "Kredyt gotówkowy",
+            "text": "Lepszy przy wiekszej kwocie, dłuższym okresię i potrzebie stalej raty."
+          },
+          {
+            "title": "Chwilówka",
+            "text": "Tylko przy krotkim terminie, pełnej kontroli spłaty i jasnym koszcie."
+          },
+          {
+            "title": "Brak decyzji",
+            "text": "Jeśli nie znasz raty, RRSO i kosztu po terminie, najpierw użyj kalkulatora."
+          }
         ]
       },
       {
         "type": "steps",
         "title": "Jak podjac decyzje",
         "items": [
-          { "title": "Policz rate albo termin splaty", "text": "Dopasuj produkt do przeplywu gotowki, nie do reklamy." },
-          { "title": "Sprawdz koszt calkowity", "text": "Porownuj pieniadze, ktore realnie oddasz, a nie tylko haslo promocyjne." },
-          { "title": "Odrzuc ryzykowny wariant", "text": "Jesli splata wymaga idealnego scenariusza, decyzja jest za droga." }
+          {
+            "title": "Policz ratę albo termin spłaty",
+            "text": "Dopasuj produkt do przeplywu gotowki, nie do reklamy."
+          },
+          {
+            "title": "Sprawdź koszt całkowity",
+            "text": "Porównuj pieniądze, które realnie oddasz, a nie tylko haslo promocyjne."
+          },
+          {
+            "title": "Odrzuc ryzykowny wariant",
+            "text": "Jeśli spłata wymaga idealnego scenariusza, decyzja jest za droga."
+          }
         ]
       }
     ],
     "/finanse/ranking-kredytow-gotowkowych": [
       {
         "type": "cards",
-        "title": "Model rankingu kredytow",
-        "description": "Ranking musi byc transparentny i latwy do aktualizacji.",
+        "title": "Model rankingu kredytów",
+        "description": "Ranking musi być transparentny i łatwy do aktualizacji.",
         "items": [
-          { "title": "RRSO", "text": "Widoczne przy kazdej ofercie jako podstawowy wskaznik kosztu." },
-          { "title": "Rata i okres", "text": "Uzytkownik musi wiedziec, czy rata pasuje do budzetu." },
-          { "title": "Koszt calkowity", "text": "Pokazujemy calkowita kwote do splaty, prowizje i warunki." }
+          {
+            "title": "RRSO",
+            "text": "Widoczne przy każdej ofercie jako podstawowy wskaźnik kosztu."
+          },
+          {
+            "title": "Rata i okres",
+            "text": "Użytkownik musi wiedzieć, czy rata pasuje do budżetu."
+          },
+          {
+            "title": "Koszt całkowity",
+            "text": "Pokażujemy całkowitą kwotę do spłaty, prowizje i warunki."
+          }
         ]
       },
       {
         "type": "warning",
-        "title": "Ranking nie jest decyzja kredytowa",
-        "text": "Bez integracji i danych klienta nie obiecujemy akceptacji ani konkretnej oferty. Ranking kieruje do partnera albo formularza po pokazaniu zasad porownania."
+        "title": "Ranking nie jest decyzją kredytową",
+        "text": "Bez integracji i danych klienta nie obiecujemy akceptacji ani konkretnej oferty. Ranking kieruje do partnera albo formularza po pokazaniu zasad porównania."
       }
     ],
     "/finanse/ranking-chwilowek": [
       {
         "type": "warning",
         "badge": "Widoczne ryzyko",
-        "title": "Ranking chwilowek bez ostrzezen bylby bledem",
-        "text": "Przy chwilowkach najwyzej pokazujemy koszt, termin, warunki 0% i konsekwencje opoznienia. To ma byc ranking decyzji, nie agresywna lista reklam."
+        "title": "Ranking chwilowek bez ostrzeżeń bylby bledem",
+        "text": "Przy chwilówkach najwyżej pokazujemy koszt, termin, warunki 0% i konsekwencje opóźnienia. To ma być ranking decyzji, nie agresywna lista reklam."
       },
       {
         "type": "checklist",
         "title": "Kryteria rankingu chwilowek",
         "items": [
-          "RRSO i calkowita kwota do splaty",
+          "RRSO i całkowita kwota do spłaty",
           "czy promocja 0% dotyczy tylko nowych klientow",
-          "termin splaty",
+          "termin spłaty",
           "koszt po terminie",
           "jasnosc regulaminu i przekierowania do partnera"
         ]
@@ -421,62 +828,110 @@
     "/finanse/bik-big-krd-erif": [
       {
         "type": "cards",
-        "title": "Co oznaczaja bazy",
-        "description": "Proste wyjasnienie bez udawania porady prawnej ani decyzji bankowej.",
+        "title": "Co oznaczają bazy",
+        "description": "Proste wyjaśnienie bez udawania porady prawnej ani decyzji bankowej.",
         "items": [
-          { "title": "BIK", "text": "Historia kredytowa i informacje o zobowiazaniach, wazne przy bankach." },
-          { "title": "BIG / KRD / ERIF", "text": "Rejestry informacji gospodarczej, ktore moga pokazywac zaleglosci." },
-          { "title": "Przed wnioskiem", "text": "Jesli boisz sie odmowy, najpierw sprawdz raport i budzet." }
+          {
+            "title": "BIK",
+            "text": "Historia kredytowa i informacje o zobowiązaniach, ważne przy bankach."
+          },
+          {
+            "title": "BIG / KRD / ERIF",
+            "text": "Rejestry informacji gospodarczej, które mogą pokazywać zaległości."
+          },
+          {
+            "title": "Przed wnioskiem",
+            "text": "Jeśli boisz się odmowy, najpierw sprawdź raport i budżet."
+          }
         ]
       },
       {
         "type": "steps",
-        "title": "Co zrobic przed finansowaniem",
+        "title": "Co zrobić przed finansowaniem",
         "items": [
-          { "title": "Sprawdz raport", "text": "Zobacz, czy dane sa aktualne i czy nie ma blednych wpisow." },
-          { "title": "Policz obciazenia", "text": "Suma rat i stale koszty sa wazniejsze niz sama wysokosc dochodu." },
-          { "title": "Nie skladaj wielu wnioskow naraz", "text": "Chaos w zapytaniach moze pogorszyc sytuacje i utrudnic porownanie." }
+          {
+            "title": "Sprawdź raport",
+            "text": "Zobacz, czy dane są aktualne i czy nie ma blednych wpisow."
+          },
+          {
+            "title": "Policz obciazenia",
+            "text": "Suma rat i stałe koszty są ważniejsze niż sama wysokość dochodu."
+          },
+          {
+            "title": "Nie skladaj wielu wnioskow naraz",
+            "text": "Chaos w zapytaniach może pogorszyc sytuacje i utrudnic porównanie."
+          }
         ]
       }
     ],
     "/finanse/rrso-co-to-jest": [
       {
         "type": "steps",
-        "title": "Jak rozumiec RRSO",
+        "title": "Jak rozumieć RRSO",
         "description": "RRSO jest potrzebne, ale nie wystarcza samo w sobie.",
         "items": [
-          { "title": "Porownuj podobne produkty", "text": "RRSO najlepiej dziala, gdy porownujesz podobna kwote i okres." },
-          { "title": "Sprawdz calkowity koszt", "text": "Zawsze patrz, ile realnie oddasz w zlotowkach." },
-          { "title": "Czytaj warunki promocji", "text": "0% i niska prowizja moga zalezec od terminowej splaty albo dodatkowych produktow." }
+          {
+            "title": "Porównuj podobne produkty",
+            "text": "RRSO najlepiej działa, gdy porównujesz podobną kwotę i okres."
+          },
+          {
+            "title": "Sprawdź całkowity koszt",
+            "text": "Zawsze patrz, ile realnie oddasz w złotowkach."
+          },
+          {
+            "title": "Czytaj warunki promocji",
+            "text": "0% i niska prowizja mogą zależeć od terminowej spłaty albo dodatkowych produktów."
+          }
         ]
       }
     ],
     "/auto/historia-pojazdu": [
       {
         "type": "steps",
-        "title": "Jak sprawdzic historie pojazdu",
-        "description": "To jest pierwszy krok przed zakupem auta. Zaczynamy od darmowego zrodla, a nie od platnego raportu.",
+        "title": "Jak sprawdzić historię pojazdu",
+        "description": "To jest pierwszy krok przed zakupem auta. Zaczynamy od darmowego źródła, a nie od płatnego raportu.",
         "items": [
-          { "title": "Zbierz trzy dane", "text": "Potrzebujesz numeru rejestracyjnego, numeru VIN i daty pierwszej rejestracji pojazdu." },
-          { "title": "Sprawdz gov.pl", "text": "Darmowa historia pojazdu na gov.pl powinna byc pierwszym miejscem sprawdzenia auta." },
-          { "title": "Porownaj z ogloszeniem", "text": "Sprawdz, czy dane z historii pasuja do opisu, przebiegu, rocznika i dokumentow." },
-          { "title": "Przejdz przez checkliste", "text": "Historia nie zastapi ogledzin, jazdy probnej i sprawdzenia dokumentow przed umowa." }
+          {
+            "title": "Zbierz trzy dane",
+            "text": "Potrzebujesz numeru rejestracyjnego, numeru VIN i daty pierwszej rejestracji pojazdu."
+          },
+          {
+            "title": "Sprawdź gov.pl",
+            "text": "Darmowa historia pojazdu na gov.pl powinna być pierwszym miejscem sprawdzenia auta."
+          },
+          {
+            "title": "Porównaj z ogłoszeniem",
+            "text": "Sprawdź, czy dane z historii pasują do opisu, przebiegu, rocznika i dokumentów."
+          },
+          {
+            "title": "Przejdź przez checklistę",
+            "text": "Historia nie zastąpi oględzin, jazdy próbnej i sprawdzenia dokumentów przed umową."
+          }
         ]
       },
       {
         "type": "warning",
         "badge": "Wazne",
-        "title": "Raport VIN nie zastapi ogledzin",
-        "text": "Platny raport moze byc uzupelnieniem, ale nie powinien byc jedynym powodem zakupu auta. Trzeba sprawdzic dokumenty, stan techniczny, jazde probna i koszty po zakupie."
+        "title": "Raport VIN nie zastąpi oględzin",
+        "text": "Płatny raport może być uzupełnieniem, ale nie powinien być jedynym powodem zakupu auta. Trzeba sprawdzić dokumenty, stan techniczny, jazdę próbną i koszty po zakupie."
       },
       {
         "type": "cards",
         "title": "Co dalej po historii pojazdu",
-        "description": "Najlepszy flow pod uzytkownika i monetyzacje.",
+        "description": "Najlepszy flow pod użytkownika i monetyzację.",
         "items": [
-          { "title": "Checklista zakupu", "text": "Przejdz przez VIN, dokumenty, ogledziny, jazde probna i umowe." },
-          { "title": "OC/AC po zakupie", "text": "Po decyzji o zakupie naturalny nastepny krok to sprawdzenie polisy." },
-          { "title": "Finansowanie auta", "text": "Jesli auto wymaga kredytu, najpierw policz rate i calkowity koszt." }
+          {
+            "title": "Checklista zakupu",
+            "text": "Przejdź przez VIN, dokumenty, oględziny, jazdę próbną i umowę."
+          },
+          {
+            "title": "OC/AC po zakupie",
+            "text": "Po decyzji o zakupie naturalny następny krok to sprawdzenie polisy."
+          },
+          {
+            "title": "Finansowanie auta",
+            "text": "Jeśli auto wymaga kredytu, najpierw policz ratę i całkowity koszt."
+          }
         ]
       }
     ],
@@ -484,19 +939,31 @@
       {
         "type": "steps",
         "title": "Darmowe sprawdzenie na gov.pl",
-        "description": "Ta strona ma jasno prowadzic do bezplatnego sprawdzenia, bez udawania, ze platny raport jest obowiazkowy.",
+        "description": "Ta strona ma jasno prowadzić do bezpłatnego sprawdzenia, bez udawania, ze płatny raport jest obowiązkowy.",
         "items": [
-          { "title": "Wejdz w usluge Historia Pojazdu", "text": "Uzytkownik powinien zaczac od oficjalnego, darmowego zrodla." },
-          { "title": "Wpisz wymagane dane", "text": "Numer rejestracyjny, VIN oraz data pierwszej rejestracji sa konieczne do podstawowego sprawdzenia." },
-          { "title": "Zapisz rozbieznosci", "text": "Kazda niespojnosc z ogloszeniem jest powodem do dodatkowych pytan." },
-          { "title": "Pamietaj o profilu zaufanym", "text": "Czesc danych, zwlaszcza przy autach zagranicznych, moze wymagac logowania profilem zaufanym." }
+          {
+            "title": "Wejdź w usługę Historia Pojazdu",
+            "text": "Użytkownik powinien zacząć od oficjalnego, darmowego źródła."
+          },
+          {
+            "title": "Wpisz wymagane dane",
+            "text": "Numer rejestracyjny, VIN oraz data pierwszej rejestracji są konieczne do podstawowego sprawdzenia."
+          },
+          {
+            "title": "Zapisz rozbieżności",
+            "text": "Każda niespójność z ogłoszeniem jest powodem do dodatkowych pytań."
+          },
+          {
+            "title": "Pamiętaj o profilu zaufanym",
+            "text": "Część danych, zwłaszcza przy autach zagranicznych, może wymagać logowania profilem zaufanym."
+          }
         ]
       },
       {
         "type": "checklist",
-        "title": "Co sprawdzic w wyniku",
+        "title": "Co sprawdzić w wyniku",
         "items": [
-          "zgodnosc VIN i numeru rejestracyjnego",
+          "zgodność VIN i numeru rejestracyjnego",
           "historia badan technicznych",
           "przebieg i daty wpisow",
           "status rejestracji i podstawowe dane pojazdu"
@@ -506,30 +973,51 @@
     "/auto/vin": [
       {
         "type": "cards",
-        "title": "Do czego sluzy VIN",
-        "description": "VIN jest wazny, ale sam nie rozwiazuje decyzji zakupowej.",
+        "title": "Do czego służy VIN",
+        "description": "VIN jest ważny, ale sam nie rozwiązuje decyzji zakupowej.",
         "items": [
-          { "title": "Identyfikacja auta", "text": "VIN pozwala polaczyc ogloszenie, dokumenty i historie pojazdu." },
-          { "title": "Sprawdzenie danych", "text": "Pomaga wykryc niespojnosci w roczniku, wersji, kraju lub historii." },
-          { "title": "Punkt startowy", "text": "VIN powinien prowadzic do historii pojazdu, checklisty i ogledzin." }
+          {
+            "title": "Identyfikacja auta",
+            "text": "VIN pozwala połączyć ogłoszenie, dokumenty i historię pojazdu."
+          },
+          {
+            "title": "Sprawdzenie danych",
+            "text": "Pomaga wykryc niespójności w roczniku, wersji, kraju lub historii."
+          },
+          {
+            "title": "Punkt startowy",
+            "text": "VIN powinien prowadzić do historii pojazdu, checklisty i oględzin."
+          }
         ]
       },
       {
         "type": "warning",
         "title": "Sam VIN to za malo",
-        "text": "Nie kupuj auta tylko dlatego, ze numer VIN sie zgadza. Sprawdz dokumenty, historie, stan techniczny i koszty po zakupie."
+        "text": "Nie kupuj auta tylko dlatego, ze numer VIN się zgadza. Sprawdź dokumenty, historię, stan techniczny i koszty po zakupie."
       }
     ],
     "/auto/jak-sprawdzic-auto": [
       {
         "type": "steps",
-        "title": "Kolejnosc sprawdzania auta",
-        "description": "Ta kolejnosc ma ograniczac ryzyko i naturalnie prowadzic do OC/AC oraz finansowania.",
+        "title": "Kolejność sprawdzania auta",
+        "description": "Ta kolejność ma ograniczac ryzyko i naturalnie prowadzić do OC/AC oraz finansowania.",
         "items": [
-          { "title": "Historia pojazdu", "text": "Najpierw darmowe gov.pl oraz podstawowe dane auta." },
-          { "title": "Dokumenty i sprzedawca", "text": "Sprawdz dowod, karte pojazdu jesli wystepuje, umowe i zgodnosc danych." },
-          { "title": "Ogledziny i jazda probna", "text": "Stan lakieru, silnik, skrzynia, hamulce, zawieszenie i zachowanie auta." },
-          { "title": "Koszty po zakupie", "text": "OC/AC, serwis startowy, opony, przeglad i ewentualna rata." }
+          {
+            "title": "Historia pojazdu",
+            "text": "Najpierw darmowe gov.pl oraz podstawowe dane auta."
+          },
+          {
+            "title": "Dokumenty i sprzedawca",
+            "text": "Sprawdź dowod, karte pojazdu jeśli wystepuje, umowę i zgodność danych."
+          },
+          {
+            "title": "Oględziny i jazda próbna",
+            "text": "Stan lakieru, silnik, skrzynia, hamulce, zawieszenie i zachowanie auta."
+          },
+          {
+            "title": "Koszty po zakupie",
+            "text": "OC/AC, serwis startowy, opony, przeglad i ewentualna rata."
+          }
         ]
       },
       {
@@ -537,8 +1025,8 @@
         "title": "Czerwone flagi",
         "items": [
           "sprzedawca unika podania VIN",
-          "dane w dokumentach nie pasuja do ogloszenia",
-          "presja na szybka zaliczke",
+          "dane w dokumentach nie pasują do ogłoszenia",
+          "presją na szybka zaliczke",
           "brak zgody na sprawdzenie auta w warsztacie"
         ]
       }
@@ -549,22 +1037,31 @@
         "title": "Checklista przed zakupem",
         "description": "Minimalny zestaw przed podpisaniem umowy.",
         "items": [
-          "sprawdz numer rejestracyjny, VIN i date pierwszej rejestracji",
-          "sprawdz historie pojazdu na gov.pl",
-          "porownaj dane z ogloszeniem i dokumentami",
+          "sprawdź numer rejestracyjny, VIN i datę pierwszej rejestracji",
+          "sprawdź historię pojazdu na gov.pl",
+          "porównaj dane z ogłoszeniem i dokumentami",
           "obejrzyj auto w dziennym swietle",
-          "zrob jazde probna",
-          "sprawdz OC, koszty po zakupie i finansowanie",
+          "zrob jazdę próbną",
+          "sprawdź OC, koszty po zakupie i finansowanie",
           "nie podpisuj umowy bez sprawdzenia sprzedawcy i danych auta"
         ]
       },
       {
         "type": "cards",
-        "title": "Nastepne kroki po checklist",
+        "title": "Następne kroki po checklist",
         "items": [
-          { "title": "OC/AC", "text": "Jesli kupujesz auto, potrzebujesz decyzji o polisie." },
-          { "title": "Kredyt na auto", "text": "Jesli finansujesz zakup, rata musi pasowac do budzetu." },
-          { "title": "Koszty po zakupie", "text": "Serwis startowy i ubezpieczenie czesto sa pomijane w budzecie." }
+          {
+            "title": "OC/AC",
+            "text": "Jeśli kupujesz auto, potrzebujesz decyzji o polisię."
+          },
+          {
+            "title": "Kredyt na auto",
+            "text": "Jeśli finansujesz zakup, rata musi pasować do budżetu."
+          },
+          {
+            "title": "Koszty po zakupie",
+            "text": "Serwis startowy i ubezpieczenie często są pomijane w budżecie."
+          }
         ]
       }
     ],
@@ -573,80 +1070,137 @@
         "type": "steps",
         "title": "Zanim wezmiesz kredyt na auto",
         "items": [
-          { "title": "Policz rate", "text": "Rata nie moze zjesc budzetu po doliczeniu OC, paliwa i serwisu." },
-          { "title": "Sprawdz calkowity koszt", "text": "Nie patrz tylko na miesieczna rate. Liczy sie calkowita kwota do splaty." },
-          { "title": "Porownaj z wartoscia auta", "text": "Uzywane auto traci wartosc, a finansowanie moze zostac na dluzej niz sens auta." }
+          {
+            "title": "Policz ratę",
+            "text": "Rata nie może zjesc budżetu po doliczeniu OC, paliwa i serwisu."
+          },
+          {
+            "title": "Sprawdź całkowity koszt",
+            "text": "Nie patrz tylko na miesięczną ratę. Liczy się całkowita kwota do spłaty."
+          },
+          {
+            "title": "Porównaj z wartością auta",
+            "text": "Uzywane auto traci wartość, a finansowanie może zostac na dluzej niz sens auta."
+          }
         ]
       }
     ],
     "/ubezpieczenia/oc-ac": [
       {
         "type": "steps",
-        "title": "Jak porownac OC/AC",
-        "description": "OC/AC ma byc osobnym lejkiem ubezpieczeniowym, a nie dodatkiem do Auto. Auto tylko dowozi uzytkownika po zakupie.",
+        "title": "Jak porównać OC/AC",
+        "description": "OC/AC ma być osobnym lejkiem ubezpieczeniowym, a nie dodatkiem do Auto. Auto tylko dowozi użytkownika po zakupie.",
         "items": [
-          { "title": "Najpierw rozdziel OC i AC", "text": "OC jest obowiazkowe. AC chroni Twoje auto, ale jego sens zalezy od wartosci auta, ryzyka i ceny." },
-          { "title": "Porownaj zakres, nie tylko cene", "text": "Sprawdz wykluczenia, udzial wlasny, sposob naprawy, assistance i NNW." },
-          { "title": "Sprawdz date konca polisy", "text": "Najlepiej porownywac oferty przed koncem obecnej polisy albo zaraz po zakupie auta." },
-          { "title": "Przejdz do porownywarki", "text": "Jesli mamy partnera, kierujemy do porownania. Jesli nie, nie udajemy realnej wyceny." }
+          {
+            "title": "Najpierw rozdziel OC i AC",
+            "text": "OC jest obowiązkowe. AC chroni Twoje auto, ale jego sens zależy od wartości auta, ryzyka i ceny."
+          },
+          {
+            "title": "Porównaj zakres, nie tylko cenę",
+            "text": "Sprawdź wykluczenia, udział własny, sposób naprawy, assistance i NNW."
+          },
+          {
+            "title": "Sprawdź datę końca polisy",
+            "text": "Najlepiej porównywać oferty przed koncem obecnej polisy albo zaraz po zakupie auta."
+          },
+          {
+            "title": "Przejdź do porównywarki",
+            "text": "Jeśli mamy partnera, kierujemy do porównania. Jeśli nie, nie udajemy realnej wyceny."
+          }
         ]
       },
       {
         "type": "warning",
         "badge": "Uwaga",
-        "title": "Najtansze OC nie zawsze oznacza najlepsza decyzje",
-        "text": "Przy samym OC cena bywa kluczowa, ale przy pakiecie OC/AC trzeba sprawdzic zakres, wykluczenia, udzial wlasny i assistance."
+        "title": "Najtańsze OC nie zawsze oznacza najlepszą decyzje",
+        "text": "Przy samym OC cena bywa kluczowa, ale przy pakiecie OC/AC trzeba sprawdzić zakres, wykluczenia, udział własny i assistance."
       },
       {
         "type": "cards",
-        "title": "Naturalne przejscia",
+        "title": "Naturalne przejścia",
         "items": [
-          { "title": "Kalkulator OC", "text": "Orientacyjnie sprawdza, co wplywa na skladke." },
-          { "title": "Porownywarka", "text": "Miejsce na lead lub przejscie do partnera." },
-          { "title": "Auto po zakupie", "text": "Auto kieruje tutaj po historii pojazdu i checkliscie zakupu." }
+          {
+            "title": "Kalkulator OC",
+            "text": "Orientacyjnie sprawdza, co wpływa na składkę.",
+            "url": "/narzedzia/kalkulator-oc",
+            "cta": "Otwórz kalkulator"
+          },
+          {
+            "title": "Porównywarka",
+            "text": "Miejsce na lead lub przejście do partnera.",
+            "url": "/ubezpieczenia/porownywarka",
+            "cta": "Przejdź do porównywarki"
+          },
+          {
+            "title": "Auto po zakupie",
+            "text": "Auto kieruje tutaj po historii pojazdu i checkliscie zakupu.",
+            "url": "/auto/historia-pojazdu",
+            "cta": "Sprawdź auto"
+          }
         ]
       }
     ],
     "/ubezpieczenia/oc": [
       {
         "type": "cards",
-        "title": "Co trzeba wiedziec o OC",
+        "title": "Co trzeba wiedzieć o OC",
         "items": [
-          { "title": "OC jest obowiazkowe", "text": "Brak polisy moze oznaczac kare i powazne koszty po szkodzie." },
-          { "title": "Zakres jest ustawowy", "text": "Dlatego przy OC cena jest wazna, ale obsluga i dodatki tez moga miec znaczenie." },
-          { "title": "Cena zalezy od profilu", "text": "Wiek kierowcy, historia szkod, lokalizacja, auto i przebieg ubezpieczenia wplywaja na skladke." }
+          {
+            "title": "OC jest obowiązkowe",
+            "text": "Brak polisy może oznaczać kare i poważne koszty po szkódzie."
+          },
+          {
+            "title": "Zakres jest ustawowy",
+            "text": "Dlatego przy OC cena jest ważna, ale obsługa i dodatki też mogą mieć znaczenie."
+          },
+          {
+            "title": "Cena zależy od profilu",
+            "text": "Wiek kierowcy, historia szkód, lokalizacja, auto i przebieg ubezpieczenia wpływają na składkę."
+          }
         ]
       }
     ],
     "/ubezpieczenia/ac": [
       {
         "type": "checklist",
-        "title": "Co sprawdzic w AC",
-        "description": "AC nie jest obowiazkowe, wiec trzeba sprawdzic, czy zakres ma sens wzgledem ceny.",
+        "title": "Co sprawdzić w AC",
+        "description": "AC nie jest obowiązkowe, więc trzeba sprawdzić, czy zakres ma sens względem ceny.",
         "items": [
-          "sposob naprawy: serwis, kosztorys albo warsztat partnerski",
-          "udzial wlasny i amortyzacja czesci",
-          "kradziez, szkoda calkowita i wykluczenia",
-          "ochrona za granica",
-          "assistance i auto zastepcze"
+          "sposób naprawy: serwis, kosztorys albo warsztat partnerski",
+          "udział własny i amortyzacja części",
+          "kradzież, szkoda całkowita i wykluczenia",
+          "ochrona za granicą",
+          "assistance i auto zastępcze"
         ]
       },
       {
         "type": "warning",
-        "title": "AC bez sprawdzenia wykluczen moze rozczarowac",
-        "text": "Najwiekszy blad to patrzenie tylko na cene pakietu. Przy AC liczy sie to, kiedy ubezpieczyciel rzeczywiscie zaplaci."
+        "title": "AC bez sprawdzenia wykluczeń może rozczarować",
+        "text": "Największy błąd to patrzenie tylko na cenę pakietu. Przy AC liczy się to, kiedy ubezpieczyciel rzeczywiście zapłaci."
       }
     ],
     "/ubezpieczenia/porownywarka": [
       {
         "type": "steps",
-        "title": "Jak ma dzialac porownywarka",
-        "description": "Na tym etapie nie udajemy wlasnej integracji, jesli jej nie ma. Pokazujemy jasny handoff do partnera.",
+        "title": "Jak ma działać porównywarka",
+        "description": "Na tym etapie nie udajemy wlasnej integracji, jeśli jej nie ma. Pokażujemy jasny handoff do partnera.",
         "items": [
-          { "title": "Zbierz dane auta", "text": "Marka, model, rok, pojemnosc, kod pocztowy, historia szkod i data konca polisy." },
-          { "title": "Pokaz disclosure", "text": "Uzytkownik musi wiedziec, ze oferta jest obslugiwana przez partnera." },
-          { "title": "Porownaj zakres", "text": "Cena to nie wszystko. Przy AC i assistance zakres decyduje o sensie oferty." },
-          { "title": "Przejdz do partnera", "text": "CTA ma prowadzic do porownania lub formularza, nie do pustej obietnicy." }
+          {
+            "title": "Zbierz dane auta",
+            "text": "Marka, model, rok, pojemność, kod pocztowy, historia szkód i data końca polisy."
+          },
+          {
+            "title": "Pokaż disclosure",
+            "text": "Użytkownik musi wiedzieć, że oferta jest obsługiwana przez partnera."
+          },
+          {
+            "title": "Porównaj zakres",
+            "text": "Cena to nie wszystko. Przy AC i assistance zakres decyduje o sensie oferty."
+          },
+          {
+            "title": "Przejdź do partnera",
+            "text": "CTA ma prowadzić do porównania lub formularza, nie do pustej obietnicy."
+          }
         ]
       }
     ],
@@ -654,27 +1208,36 @@
       {
         "type": "cards",
         "title": "Model rankingu OC",
-        "description": "Ranking OC musi byc prosty, aktualizowany i uczciwy.",
+        "description": "Ranking OC musi być prosty, aktualizowany i uczciwy.",
         "items": [
-          { "title": "Cena od / sprawdz cene", "text": "Nie pokazujemy fikcyjnych skladek bez danych uzytkownika." },
-          { "title": "Zakres i dodatki", "text": "Assistance, NNW, cashback i obsluga szkody jako elementy pomocnicze." },
-          { "title": "Data aktualizacji", "text": "Rankingi ofert musza miec date, zeby nie tracic zaufania." }
+          {
+            "title": "Cena od / sprawdź cenę",
+            "text": "Nie pokazujemy fikcyjnych składek bez danych użytkownika."
+          },
+          {
+            "title": "Zakres i dodatki",
+            "text": "Assistance, NNW, cashback i obsługa szkody jako elementy pomocnicze."
+          },
+          {
+            "title": "Data aktualizacji",
+            "text": "Rankingi ofert muszą mieć datę, żeby nie tracić zaufania."
+          }
         ]
       },
       {
         "type": "warning",
-        "title": "Nie wolno udawac indywidualnej wyceny",
-        "text": "Bez integracji z ubezpieczycielem pokazujemy model porownania i kierujemy do partnera, a nie obiecujemy konkretnej skladki."
+        "title": "Nie wolno udawać indywidualnej wyceny",
+        "text": "Bez integracji z ubezpieczycielem pokazujemy model porównania i kierujemy do partnera, a nie obiecujemy konkretnej składki."
       }
     ],
     "/ubezpieczenia/jak-obnizyc-skladke-oc": [
       {
         "type": "checklist",
-        "title": "Co moze obnizyc OC",
+        "title": "Co może obniżyć OC",
         "items": [
-          "porownanie ofert przed koncem polisy",
-          "sprawdzenie zakresu dodatkow",
-          "bezszkodowa historia",
+          "porównanie ofert przed koncem polisy",
+          "sprawdzenie zakresu dodatków",
+          "bezszkódowa historia",
           "wybor auta z tanszym profilem ubezpieczeniowym",
           "rozsadna konfiguracja pakietu OC/AC"
         ]
@@ -686,92 +1249,371 @@
       "label": "Finanse",
       "pillar": "finanse",
       "type": "guide",
-      "cta": "Przejdz do finansow",
+      "cta": "Przejdź do finansów",
       "ctaUrl": "/finanse",
       "pages": [
-        { "url": "/finanse/konta-z-premia", "title": "Konta z premia", "description": "Premie, oplaty, warunki aktywnosci i kiedy konto faktycznie sie oplaca." },
-        { "url": "/finanse/konta-firmowe", "title": "Konta firmowe", "description": "Konta dla firm, oplaty, przelewy, terminale i premie dla przedsiebiorcow." },
-        { "url": "/finanse/konta-firmowe-z-premia", "title": "Konta firmowe z premia", "type": "ranking", "description": "Ranking najmocniejszych premii dla JDG z warunkami, trudnoscia i terminem." },
-        { "url": "/finanse/lokaty", "title": "Lokaty", "description": "Oprocentowanie, okres, kapitalizacja, podatki i alternatywy dla lokat." },
-        { "url": "/finanse/karty", "title": "Karty", "description": "Karty kredytowe i debetowe: oplaty, limity, cashback i kiedy uwazac." },
-        { "url": "/finanse/chwilowki", "title": "Chwilowki", "description": "Krotkie pozyczki, promocje 0%, termin splaty i realne ryzyko kosztow po terminie." },
-        { "url": "/finanse/kredyty-gotowkowe", "title": "Kredyty gotowkowe", "description": "RRSO, rata, calkowita kwota do splaty, okres i koszty dodatkowe." },
-        { "url": "/finanse/pozyczki-dla-firm", "title": "Pozyczki dla firm", "description": "Finansowanie firmowe, koszty, zabezpieczenia, okres i dokumenty." },
-        { "url": "/finanse/fintech", "title": "Fintech", "description": "Nowe uslugi finansowe, aplikacje, konta, platnosci i ryzyka regulaminowe." },
-        { "url": "/finanse/kredyty-na-auto", "title": "Kredyty na auto", "description": "Finansowanie zakupu auta, rata, calkowity koszt i porownanie z leasingiem." },
-        { "url": "/finanse/kredyt-vs-chwilowka", "title": "Kredyt vs chwilowka", "description": "Kiedy wybrac kredyt gotowkowy, a kiedy chwilowka jest zbyt ryzykowna." },
-        { "url": "/finanse/bik-big-krd-erif", "title": "BIK BIG KRD ERIF", "description": "Proste wyjasnienie baz, raportow, wpisow i wplywu na finansowanie." },
-        { "url": "/finanse/rankingi", "title": "Rankingi finansowe", "description": "Rankingi kredytow, chwilowek, kont, lokat, kart i pozyczek firmowych.", "type": "ranking" },
-        { "url": "/finanse/faq", "title": "FAQ Finanse", "description": "Krotkie odpowiedzi o kredytach, chwilowkach, RRSO, BIK i kontach.", "type": "faq" },
-        { "url": "/finanse/ranking-kont-z-premia", "title": "Ranking kont z premia", "type": "ranking", "description": "Porownanie premii, oplat, warunkow aktywnosci i dat promocji." },
-        { "url": "/finanse/ranking-kont-firmowych", "title": "Ranking kont firmowych", "type": "ranking", "description": "Konta firmowe wedlug kosztow, funkcji, premii i wygody dla firmy." },
-        { "url": "/finanse/ranking-lokat", "title": "Ranking lokat", "type": "ranking", "description": "Lokaty wedlug oprocentowania, okresu, limitow i warunkow promocji." },
-        { "url": "/finanse/ranking-kart", "title": "Ranking kart", "type": "ranking", "description": "Karty wedlug oplat, benefitow, limitow, cashbacku i warunkow." },
-        { "url": "/finanse/ranking-chwilowek", "title": "Ranking chwilowek", "type": "ranking", "description": "Chwilowki z widocznym RRSO, terminem splaty, kosztem i ostrzezeniem ryzyka." },
-        { "url": "/finanse/ranking-kredytow-gotowkowych", "title": "Ranking kredytow gotowkowych", "type": "ranking", "description": "Kredyty gotowkowe z RRSO, rata, calkowitym kosztem i warunkami." },
-        { "url": "/finanse/ranking-pozyczek-dla-firm", "title": "Ranking pozyczek dla firm", "type": "ranking", "description": "Finansowanie firmowe z kosztami, warunkami i ryzykiem." },
-        { "url": "/finanse/jak-sprawdzic-bik", "title": "Jak sprawdzic BIK", "description": "Jak sprawdzic raport, co oznaczaja wpisy i kiedy warto to zrobic." },
-        { "url": "/finanse/jak-poprawic-zdolnosc-kredytowa", "title": "Jak poprawic zdolnosc kredytowa", "description": "Praktyczne kroki przed kredytem: raty, koszty, dochod, historia i budzet." },
-        { "url": "/finanse/rrso-co-to-jest", "title": "RRSO co to jest", "description": "Proste wyjasnienie RRSO, ograniczen wskaznika i roli w porownywaniu ofert." }
+        {
+          "url": "/finanse/konta-z-premia",
+          "title": "Konta z premią",
+          "description": "Premie, opłaty, warunki aktywności i kiedy konto faktycznie się opłaća."
+        },
+        {
+          "url": "/finanse/konta-firmowe",
+          "title": "Konta firmowe",
+          "description": "Konta dla firm, opłaty, przelewy, terminale i premie dla przedsiębiorców."
+        },
+        {
+          "url": "/finanse/konta-firmowe-z-premia",
+          "title": "Konta firmowe z premią",
+          "type": "ranking",
+          "description": "Ranking najmocniejszych premii dla JDG z warunkami, trudnośćia i terminem."
+        },
+        {
+          "url": "/finanse/lokaty",
+          "title": "Lokaty",
+          "description": "Oprocentowanie, okres, kapitalizacja, podatki i alternatywy dla lokat."
+        },
+        {
+          "url": "/finanse/karty",
+          "title": "Karty",
+          "description": "Karty kredytowe i debetowe: opłaty, limity, cashback i kiedy uważać."
+        },
+        {
+          "url": "/finanse/chwilowki",
+          "title": "Chwilówki",
+          "description": "Krótkie pożyczki, promocje 0%, termin spłaty i realne ryzyko kosztów po terminie."
+        },
+        {
+          "url": "/finanse/kredyty-gotowkowe",
+          "title": "Kredyty gotówkowe",
+          "description": "RRSO, rata, całkowita kwota do spłaty, okres i koszty dodatkowe."
+        },
+        {
+          "url": "/finanse/pozyczki-dla-firm",
+          "title": "Pożyczki dla firm",
+          "description": "Finansowanie firmowe, koszty, zabezpieczenia, okres i dokumenty."
+        },
+        {
+          "url": "/finanse/fintech",
+          "title": "Fintech",
+          "description": "Nowe usługi finansowe, aplikacje, konta, płatności i ryzyka regulaminowe."
+        },
+        {
+          "url": "/finanse/kredyty-na-auto",
+          "title": "Kredyty na auto",
+          "description": "Finansowanie zakupu auta, rata, całkowity koszt i porównanie z leasingiem."
+        },
+        {
+          "url": "/finanse/kredyt-vs-chwilowka",
+          "title": "Kredyt vs chwilówka",
+          "description": "Kiedy wybrać kredyt gotówkowy, a kiedy chwilówka jest zbyt ryzykowna."
+        },
+        {
+          "url": "/finanse/bik-big-krd-erif",
+          "title": "BIK BIG KRD ERIF",
+          "description": "Proste wyjaśnienie baz, raportow, wpisow i wpływu na finansowanie."
+        },
+        {
+          "url": "/finanse/rankingi",
+          "title": "Rankingi finansowe",
+          "description": "Rankingi kredytów, chwilówek, kont, lokat, kart i pożyczek firmowych.",
+          "type": "ranking"
+        },
+        {
+          "url": "/finanse/faq",
+          "title": "FAQ Finanse",
+          "description": "Krótkie odpowiedzi o kredytach, chwilówkach, RRSO, BIK i kontach.",
+          "type": "faq"
+        },
+        {
+          "url": "/finanse/ranking-kont-z-premia",
+          "title": "Ranking kont z premią",
+          "type": "ranking",
+          "description": "Porównanie premii, opłat, warunków aktywności i dat promocji."
+        },
+        {
+          "url": "/finanse/ranking-kont-firmowych",
+          "title": "Ranking kont firmowych",
+          "type": "ranking",
+          "description": "Konta firmowe według kosztów, funkcji, premii i wygody dla firmy."
+        },
+        {
+          "url": "/finanse/ranking-lokat",
+          "title": "Ranking lokat",
+          "type": "ranking",
+          "description": "Lokaty według oprocentowania, okresu, limitow i warunków promocji."
+        },
+        {
+          "url": "/finanse/ranking-kart",
+          "title": "Ranking kart",
+          "type": "ranking",
+          "description": "Karty według opłat, benefitow, limitow, cashbacku i warunków."
+        },
+        {
+          "url": "/finanse/ranking-chwilowek",
+          "title": "Ranking chwilowek",
+          "type": "ranking",
+          "description": "Chwilówki z widocznym RRSO, terminem spłaty, kosztem i ostrzeżeniem ryzyka."
+        },
+        {
+          "url": "/finanse/ranking-kredytow-gotowkowych",
+          "title": "Ranking kredytów gotówkowych",
+          "type": "ranking",
+          "description": "Kredyty gotówkowe z RRSO, rata, całkowitym kosztem i warunkami."
+        },
+        {
+          "url": "/finanse/ranking-pozyczek-dla-firm",
+          "title": "Ranking pożyczek dla firm",
+          "type": "ranking",
+          "description": "Finansowanie firmowe z kosztami, warunkami i ryzykiem."
+        },
+        {
+          "url": "/finanse/jak-sprawdzic-bik",
+          "title": "Jak sprawdzić BIK",
+          "description": "Jak sprawdzić raport, co oznaczają wpisy i kiedy warto to zrobić."
+        },
+        {
+          "url": "/finanse/jak-poprawic-zdolnosc-kredytowa",
+          "title": "Jak poprawić zdolność kredytową",
+          "description": "Praktyczne kroki przed kredytem: raty, koszty, dochód, historia i budżet."
+        },
+        {
+          "url": "/finanse/rrso-co-to-jest",
+          "title": "RRSO co to jest",
+          "description": "Proste wyjaśnienie RRSO, ograniczeń wskaźnika i roli w porównywaniu ofert."
+        }
       ]
     },
     {
       "label": "Ubezpieczenia",
       "pillar": "ubezpieczenia",
       "type": "guide",
-      "cta": "Porownaj OC/AC",
+      "cta": "Porównaj OC/AC",
       "ctaUrl": "/ubezpieczenia/oc-ac",
       "pages": [
-        { "url": "/ubezpieczenia/oc", "title": "OC", "description": "Obowiazkowe ubezpieczenie OC, zakres, kara za brak i kiedy porownac oferty." },
-        { "url": "/ubezpieczenia/ac", "title": "AC", "description": "Autocasco, zakres ochrony, wylaczenia i kiedy warto doplacic." },
-        { "url": "/ubezpieczenia/oc-ac", "title": "OC/AC", "description": "Pakiet OC i AC: cena, zakres, assistance, wykluczenia i porownanie." },
-        { "url": "/ubezpieczenia/assistance", "title": "Assistance", "description": "Pomoc na drodze, limity holowania, zakres za granica i warunki." },
-        { "url": "/ubezpieczenia/nnw", "title": "NNW", "description": "Ubezpieczenie nastepstw nieszczesliwych wypadkow i realny zakres ochrony." },
-        { "url": "/ubezpieczenia/porownywarka", "title": "Porownywarka ubezpieczen", "type": "comparison", "description": "Porownanie ofert partnerow z jasnym disclosure i przekazaniem do dostawcy." },
-        { "url": "/ubezpieczenia/rankingi", "title": "Rankingi ubezpieczen", "type": "ranking", "description": "Rankingi OC, AC i pakietow z zakresem, cena i wylaczeniami." },
-        { "url": "/ubezpieczenia/poradniki", "title": "Poradniki ubezpieczeniowe", "description": "Jak wybrac polise, obnizyc skladke i nie pomylic OC z AC." },
-        { "url": "/ubezpieczenia/faq", "title": "FAQ Ubezpieczenia", "type": "faq", "description": "Krotkie odpowiedzi o OC, AC, assistance, NNW i porownywarkach." },
-        { "url": "/ubezpieczenia/ranking-oc", "title": "Ranking OC", "type": "ranking", "description": "OC wedlug ceny, zakresu obslugi, bonusow i warunkow." },
-        { "url": "/ubezpieczenia/ranking-ac", "title": "Ranking AC", "type": "ranking", "description": "AC wedlug zakresu, udzialu wlasnego, wylaczen i ceny." },
-        { "url": "/ubezpieczenia/ranking-oc-ac", "title": "Ranking OC/AC", "type": "ranking", "description": "Pakiety OC/AC z zakresem, cena, assistance i warunkami." },
-        { "url": "/ubezpieczenia/najtansze-oc", "title": "Najtansze OC", "description": "Kiedy cena wystarczy, a kiedy warto patrzec tez na obsluge i dodatki." },
-        { "url": "/ubezpieczenia/oc-czym-jest", "title": "OC czym jest", "description": "Proste wyjasnienie OC i roznicy miedzy obowiazkiem a ochrona auta." },
-        { "url": "/ubezpieczenia/ac-czy-warto", "title": "AC czy warto", "description": "Kiedy AC ma sens, kiedy jest za drogie i jak sprawdzic wylaczenia." },
-        { "url": "/ubezpieczenia/oc-ac-czy-warto", "title": "OC/AC czy warto", "description": "Kiedy pakiet OC/AC daje oszczednosc, a kiedy lepiej rozdzielic zakres." },
-        { "url": "/ubezpieczenia/assistance-czy-warto", "title": "Assistance czy warto", "description": "Dla kogo assistance ma sens i jakie limity sprawdzic przed zakupem." },
-        { "url": "/ubezpieczenia/nnw-co-obejmuje", "title": "NNW co obejmuje", "description": "Zakres NNW, wyplaty, limity i kiedy produkt ma sens." },
-        { "url": "/ubezpieczenia/jak-porownac-ubezpieczenie", "title": "Jak porownac ubezpieczenie", "description": "Cena, zakres, wykluczenia, assistance i obsluga szkody." },
-        { "url": "/ubezpieczenia/jak-obnizyc-skladke-oc", "title": "Jak obnizyc skladke OC", "description": "Czynniki ceny OC i praktyczne sposoby obnizenia skladki." },
-        { "url": "/ubezpieczenia/cashback-za-ubezpieczenie", "title": "Cashback za ubezpieczenie", "description": "Bonusy i cashback jako dodatek, nie zamiennik sprawdzenia zakresu." }
+        {
+          "url": "/ubezpieczenia/oc",
+          "title": "OC",
+          "description": "Obowiazkowe ubezpieczenie OC, zakres, kara za brak i kiedy porównać oferty."
+        },
+        {
+          "url": "/ubezpieczenia/ac",
+          "title": "AC",
+          "description": "Autocasco, zakres ochrony, wyłączenia i kiedy warto dopłaćic."
+        },
+        {
+          "url": "/ubezpieczenia/oc-ac",
+          "title": "OC/AC",
+          "description": "Pakiet OC i AC: cena, zakres, assistance, wykluczenia i porównanie."
+        },
+        {
+          "url": "/ubezpieczenia/assistance",
+          "title": "Assistance",
+          "description": "Pomoc na drodze, limity holowania, zakres za granicą i warunki."
+        },
+        {
+          "url": "/ubezpieczenia/nnw",
+          "title": "NNW",
+          "description": "Ubezpieczenie następstw nieszczęśliwych wypadków i realny zakres ochrony."
+        },
+        {
+          "url": "/ubezpieczenia/porownywarka",
+          "title": "Porównywarka ubezpieczen",
+          "type": "comparison",
+          "description": "Porównanie ofert partnerów z jasnym disclosure i przekazaniem do dostawcy."
+        },
+        {
+          "url": "/ubezpieczenia/rankingi",
+          "title": "Rankingi ubezpieczen",
+          "type": "ranking",
+          "description": "Rankingi OC, AC i pakietow z zakresem, cena i wyłączeniami."
+        },
+        {
+          "url": "/ubezpieczenia/poradniki",
+          "title": "Poradniki ubezpieczeniowe",
+          "description": "Jak wybrać polisę, obniżyć składkę i nie pomylić OC z AC."
+        },
+        {
+          "url": "/ubezpieczenia/faq",
+          "title": "FAQ Ubezpieczenia",
+          "type": "faq",
+          "description": "Krótkie odpowiedzi o OC, AC, assistance, NNW i porównywarkach."
+        },
+        {
+          "url": "/ubezpieczenia/ranking-oc",
+          "title": "Ranking OC",
+          "type": "ranking",
+          "description": "OC według ceny, zakresu obslugi, bonusow i warunków."
+        },
+        {
+          "url": "/ubezpieczenia/ranking-ac",
+          "title": "Ranking AC",
+          "type": "ranking",
+          "description": "AC według zakresu, udziału wlasnego, wylaczen i ceny."
+        },
+        {
+          "url": "/ubezpieczenia/ranking-oc-ac",
+          "title": "Ranking OC/AC",
+          "type": "ranking",
+          "description": "Pakiety OC/AC z zakresem, cena, assistance i warunkami."
+        },
+        {
+          "url": "/ubezpieczenia/najtansze-oc",
+          "title": "Najtańsze OC",
+          "description": "Kiedy cena wystarczy, a kiedy warto patrzec też na obsluge i dodatki."
+        },
+        {
+          "url": "/ubezpieczenia/oc-czym-jest",
+          "title": "OC czym jest",
+          "description": "Proste wyjaśnienie OC i roznicy miedzy obowiązkiem a ochrona auta."
+        },
+        {
+          "url": "/ubezpieczenia/ac-czy-warto",
+          "title": "AC czy warto",
+          "description": "Kiedy AC ma sens, kiedy jest za drogie i jak sprawdzić wyłączenia."
+        },
+        {
+          "url": "/ubezpieczenia/oc-ac-czy-warto",
+          "title": "OC/AC czy warto",
+          "description": "Kiedy pakiet OC/AC daje oszczędność, a kiedy lepiej rozdzielic zakres."
+        },
+        {
+          "url": "/ubezpieczenia/assistance-czy-warto",
+          "title": "Assistance czy warto",
+          "description": "Dla kogo assistance ma sens i jakie limity sprawdzić przed zakupem."
+        },
+        {
+          "url": "/ubezpieczenia/nnw-co-obejmuje",
+          "title": "NNW co obejmuje",
+          "description": "Zakres NNW, wyplaty, limity i kiedy produkt ma sens."
+        },
+        {
+          "url": "/ubezpieczenia/jak-porownac-ubezpieczenie",
+          "title": "Jak porównać ubezpieczenie",
+          "description": "Cena, zakres, wykluczenia, assistance i obsługa szkody."
+        },
+        {
+          "url": "/ubezpieczenia/jak-obnizyc-skladke-oc",
+          "title": "Jak obniżyć składkę OC",
+          "description": "Czynniki ceny OC i praktyczne sposóby obniżenia składki."
+        },
+        {
+          "url": "/ubezpieczenia/cashback-za-ubezpieczenie",
+          "title": "Cashback za ubezpieczenie",
+          "description": "Bonusy i cashback jako dodatęk, nie zamiennik sprawdzenia zakresu."
+        }
       ]
     },
     {
       "label": "Auto",
       "pillar": "auto",
       "type": "guide",
-      "cta": "Sprawdz historie pojazdu",
+      "cta": "Sprawdź historię pojazdu",
       "ctaUrl": "/auto/historia-pojazdu",
       "pages": [
-        { "url": "/auto/historia-pojazdu", "title": "Historia pojazdu", "description": "Darmowe gov.pl jako pierwszy krok: numer rejestracyjny, VIN i data pierwszej rejestracji." },
-        { "url": "/auto/historia-pojazdu-gov-pl", "title": "Historia pojazdu gov.pl", "description": "Jak skorzystac z darmowego sprawdzenia i kiedy potrzebny jest profil zaufany." },
-        { "url": "/auto/vin", "title": "VIN", "description": "VIN identyfikuje auto, ale nie zastapi historii, ogledzin i jazdy probnej." },
-        { "url": "/auto/raport-vin-czy-warto", "title": "Raport VIN czy warto", "description": "Kiedy platny raport VIN jest sensownym uzupelnieniem darmowych zrodel." },
-        { "url": "/auto/jak-sprawdzic-auto", "title": "Jak sprawdzic auto", "description": "Historia, VIN, stan techniczny, dokumenty, jazda probna i czerwone flagi." },
-        { "url": "/auto/czy-auto-bylo-po-wypadku", "title": "Czy auto bylo po wypadku", "description": "Co sprawdzic w historii, ogloszeniu, lakierze, dokumentach i serwisie." },
-        { "url": "/auto/co-sprawdzic-przed-zakupem-auta", "title": "Co sprawdzic przed zakupem auta", "description": "Lista dokumentow, danych, kosztow i ryzyk przed podpisaniem umowy." },
-        { "url": "/auto/jak-kupic-uzywane-auto", "title": "Jak kupic uzywane auto", "description": "Proces zakupu od ogloszenia do OC, finansowania i kosztow po zakupie." },
-        { "url": "/auto/checklista-zakup-auta-uzywanego", "title": "Checklista zakup auta uzywanego", "type": "checklist", "description": "VIN, historia, ogledziny, jazda probna, umowa, OC/AC i finansowanie." },
-        { "url": "/auto/checklista-jazda-probna", "title": "Checklista jazda probna", "type": "checklist", "description": "Co sprawdzic podczas jazdy probnej i po niej." },
-        { "url": "/auto/jak-sprzedac-auto", "title": "Jak sprzedac auto", "description": "Wycena, ogloszenie, dokumenty, bezpieczenstwo i przekazanie auta." },
-        { "url": "/auto/wycena-auta", "title": "Wycena auta", "description": "Jak ocenic wartosc auta i nie pomylic ceny ogloszeniowej z transakcyjna." },
-        { "url": "/auto/warsztaty", "title": "Warsztaty", "description": "Jak wybrac warsztat, o co zapytac i kiedy poprosic o kosztorys." },
-        { "url": "/auto/przeglady", "title": "Przeglady", "description": "Przeglad techniczny, serwis przed zakupem i koszty eksploatacji." },
-        { "url": "/auto/koszty-utrzymania-auta", "title": "Koszty utrzymania auta", "description": "OC, paliwo, serwis, opony, naprawy, utrata wartosci i finansowanie." },
-        { "url": "/auto/opony-i-serwis", "title": "Opony i serwis", "description": "Opony, wymiany sezonowe, serwis i koszty po zakupie." },
-        { "url": "/auto/ubezpieczenie-po-zakupie-auta", "title": "Ubezpieczenie po zakupie auta", "description": "Co z OC po zakupie auta i kiedy porownac nowa polise." },
-        { "url": "/auto/kredyt-na-auto", "title": "Kredyt na auto", "description": "Kiedy finansowanie auta ma sens i jak policzyc rate przed zakupem." },
-        { "url": "/auto/leasing-czy-kredyt", "title": "Leasing czy kredyt", "description": "Porownanie finansowania auta dla osoby prywatnej i firmy." },
-        { "url": "/auto/faq", "title": "FAQ Auto", "type": "faq", "description": "Krotkie odpowiedzi o historii pojazdu, VIN, zakupie, OC i kosztach." }
+        {
+          "url": "/auto/historia-pojazdu",
+          "title": "Historia pojazdu",
+          "description": "Darmowe gov.pl jako pierwszy krok: numer rejestracyjny, VIN i data pierwszej rejestracji."
+        },
+        {
+          "url": "/auto/historia-pojazdu-gov-pl",
+          "title": "Historia pojazdu gov.pl",
+          "description": "Jak skorzystać z darmowego sprawdzenia i kiedy potrzebny jest profil zaufany."
+        },
+        {
+          "url": "/auto/vin",
+          "title": "VIN",
+          "description": "VIN identyfikuje auto, ale nie zastąpi historii, oględzin i jazdy próbnej."
+        },
+        {
+          "url": "/auto/raport-vin-czy-warto",
+          "title": "Raport VIN czy warto",
+          "description": "Kiedy płatny raport VIN jest sensownym uzupełnieniem darmowych źródeł."
+        },
+        {
+          "url": "/auto/jak-sprawdzic-auto",
+          "title": "Jak sprawdzić auto",
+          "description": "Historia, VIN, stan techniczny, dokumenty, jazda próbna i czerwone flagi."
+        },
+        {
+          "url": "/auto/czy-auto-bylo-po-wypadku",
+          "title": "Czy auto bylo po wypadku",
+          "description": "Co sprawdzić w historii, ogłoszeniu, lakierze, dokumentach i serwisię."
+        },
+        {
+          "url": "/auto/co-sprawdzic-przed-zakupem-auta",
+          "title": "Co sprawdzić przed zakupem auta",
+          "description": "Lista dokumentów, danych, kosztów i ryzyk przed podpisaniem umowy."
+        },
+        {
+          "url": "/auto/jak-kupic-uzywane-auto",
+          "title": "Jak kupic używane auto",
+          "description": "Proces zakupu od ogłoszenia do OC, finansowania i kosztów po zakupie."
+        },
+        {
+          "url": "/auto/checklista-zakup-auta-uzywanego",
+          "title": "Checklista zakup auta używanego",
+          "type": "checklist",
+          "description": "VIN, historia, oględziny, jazda próbna, umowa, OC/AC i finansowanie."
+        },
+        {
+          "url": "/auto/checklista-jazda-probna",
+          "title": "Checklista jazda próbna",
+          "type": "checklist",
+          "description": "Co sprawdzić podczas jazdy próbnej i po niej."
+        },
+        {
+          "url": "/auto/jak-sprzedac-auto",
+          "title": "Jak sprzedac auto",
+          "description": "Wycena, ogłoszenie, dokumenty, bezpieczeństwo i przekazanie auta."
+        },
+        {
+          "url": "/auto/wycena-auta",
+          "title": "Wycena auta",
+          "description": "Jak ocenić wartość auta i nie pomylić ceny ogłoszeniowej z transakcyjną."
+        },
+        {
+          "url": "/auto/warsztaty",
+          "title": "Warsztaty",
+          "description": "Jak wybrać warsztat, o co zapytać i kiedy poprosić o kosztorys."
+        },
+        {
+          "url": "/auto/przeglady",
+          "title": "Przeglady",
+          "description": "Przeglad techniczny, serwis przed zakupem i koszty eksploatacji."
+        },
+        {
+          "url": "/auto/koszty-utrzymania-auta",
+          "title": "Koszty utrzymania auta",
+          "description": "OC, paliwo, serwis, opony, naprawy, utratę wartości i finansowanie."
+        },
+        {
+          "url": "/auto/opony-i-serwis",
+          "title": "Opony i serwis",
+          "description": "Opony, wymiany sezonowe, serwis i koszty po zakupie."
+        },
+        {
+          "url": "/auto/ubezpieczenie-po-zakupie-auta",
+          "title": "Ubezpieczenie po zakupie auta",
+          "description": "Co z OC po zakupie auta i kiedy porównać nowa polisę."
+        },
+        {
+          "url": "/auto/kredyt-na-auto",
+          "title": "Kredyt na auto",
+          "description": "Kiedy finansowanie auta ma sens i jak policzyć ratę przed zakupem."
+        },
+        {
+          "url": "/auto/leasing-czy-kredyt",
+          "title": "Leasing czy kredyt",
+          "description": "Porównanie finansowania auta dla osoby prywatnej i firmy."
+        },
+        {
+          "url": "/auto/faq",
+          "title": "FAQ Auto",
+          "type": "faq",
+          "description": "Krótkie odpowiedzi o historii pojazdu, VIN, zakupie, OC i kosztach."
+        }
       ]
     },
     {
@@ -781,36 +1623,165 @@
       "cta": "Przygotuj CV",
       "ctaUrl": "/praca/kreator-cv",
       "pages": [
-        { "url": "/praca/cv", "title": "CV", "description": "Jak zrobic czytelne CV i kiedy skorzystac z kreatora." },
-        { "url": "/praca/jak-napisac-cv", "title": "Jak napisac CV", "description": "Struktura, bledy, sekcje i dopasowanie CV do ogloszenia." },
-        { "url": "/praca/kreator-cv", "title": "Kreator CV", "description": "Kiedy kreator CV oszczedza czas, a kiedy wystarczy darmowy wzor." },
-        { "url": "/praca/wzory-cv", "title": "Wzory CV", "description": "Wzory dla studenta, specjalisty, zmiany branzy i CV po angielsku." },
-        { "url": "/praca/cv-bez-doswiadczenia", "title": "CV bez doswiadczenia", "description": "Jak pokazac umiejetnosci, projekty, praktyki i edukacje." },
-        { "url": "/praca/cv-po-angielsku", "title": "CV po angielsku", "description": "Struktura, slowa kluczowe i roznice wzgledem polskiego CV." },
-        { "url": "/praca/list-motywacyjny", "title": "List motywacyjny", "description": "Kiedy list ma sens i jak nie pisac ogolnikow." },
-        { "url": "/praca/rozmowa-kwalifikacyjna", "title": "Rozmowa kwalifikacyjna", "description": "Pytania, odpowiedzi, przygotowanie i co sprawdzic przed rozmowa." },
-        { "url": "/praca/pytania-na-rozmowie-kwalifikacyjnej", "title": "Pytania na rozmowie kwalifikacyjnej", "description": "Najczestsze pytania rekrutera i jak odpowiadac konkretnie." },
-        { "url": "/praca/jak-odpowiadac-na-pytania-rekrutera", "title": "Jak odpowiadac na pytania rekrutera", "description": "Schematy odpowiedzi, przyklady i bledy." },
-        { "url": "/praca/checklista-rozmowa-o-prace", "title": "Checklista rozmowa o prace", "type": "checklist", "description": "CV, pytania, odpowiedzi, oczekiwania i pytania do pracodawcy." },
-        { "url": "/praca/jak-negocjowac-wynagrodzenie", "title": "Jak negocjowac wynagrodzenie", "description": "Argumenty, widelki, moment rozmowy i alternatywy." },
-        { "url": "/praca/zmiana-pracy", "title": "Zmiana pracy", "description": "Plan zmiany pracy, ryzyka, CV, rozmowy i finanse." },
-        { "url": "/praca/jak-znalezc-lepsza-prace", "title": "Jak znalezc lepsza prace", "description": "Strategia aplikowania, profil, rozmowy i negocjacje." },
-        { "url": "/praca/praca-zdalna", "title": "Praca zdalna", "description": "Gdzie szukac pracy zdalnej i jak sprawdzic warunki." },
-        { "url": "/praca/przebranzowienie", "title": "Przebranzowienie", "description": "Jak ocenic sens zmiany branzy i zaplanowac pierwszy krok." },
-        { "url": "/praca/dodatkowy-dochod", "title": "Dodatkowy dochod", "description": "Pomysly, ryzyka, czas i podatki przy dodatkowym zarobku." },
-        { "url": "/praca/prawa-pracownika", "title": "Prawa pracownika", "description": "Podstawowe prawa, umowa, urlop, nadgodziny i kiedy sprawdzic przepisy." },
-        { "url": "/praca/umowa-o-prace", "title": "Umowa o prace", "description": "Co sprawdzic przed podpisaniem i jakie zapisy sa wazne." },
-        { "url": "/praca/b2b-vs-uop", "title": "B2B vs UoP", "description": "Koszty, ryzyko, podatki, urlop i stabilnosc." },
-        { "url": "/praca/urlop-wypowiedzenie-nadgodziny", "title": "Urlop wypowiedzenie nadgodziny", "description": "Podstawowe zasady i kiedy skonsultowac szczegoly." },
-        { "url": "/praca/co-sprawdzic-przed-podpisaniem-umowy", "title": "Co sprawdzic przed podpisaniem umowy", "description": "Wynagrodzenie, okres wypowiedzenia, obowiazki, zakazy i tryb pracy." },
-        { "url": "/praca/kalkulatory", "title": "Kalkulatory pracy", "type": "calculator", "description": "Wynagrodzenie, B2B vs UoP i netto-brutto." },
-        { "url": "/praca/kalkulator-wynagrodzenia", "title": "Kalkulator wynagrodzenia", "type": "calculator", "description": "Orientacyjne wynagrodzenie netto i koszty zatrudnienia." },
-        { "url": "/praca/kalkulator-b2b-uop", "title": "Kalkulator B2B UoP", "type": "calculator", "description": "Porownanie B2B i umowy o prace bez udawania porady podatkowej." },
-        { "url": "/praca/kalkulator-netto-brutto", "title": "Kalkulator netto brutto", "type": "calculator", "description": "Orientacyjne przeliczenie wynagrodzenia." },
-        { "url": "/praca/faq", "title": "FAQ Praca", "type": "faq", "description": "Krotkie odpowiedzi o CV, rozmowie, umowach i wynagrodzeniu." },
-        { "url": "/praca/checklisty", "title": "Checklisty Praca", "type": "checklist", "description": "Checklisty CV, rozmowy, zmiany pracy i umowy." },
-        { "url": "/praca/checklista-cv", "title": "Checklista CV", "type": "checklist", "description": "Co sprawdzic przed wyslaniem CV." },
-        { "url": "/praca/checklista-zmiana-pracy", "title": "Checklista zmiana pracy", "type": "checklist", "description": "Plan zmiany pracy bez chaosu i bez utraty kontroli." }
+        {
+          "url": "/praca/cv",
+          "title": "CV",
+          "description": "Jak zrobić czytelne CV i kiedy skorzystać z kreatora."
+        },
+        {
+          "url": "/praca/jak-napisac-cv",
+          "title": "Jak napisac CV",
+          "description": "Struktura, błędy, sekcje i dopasowanie CV do ogłoszenia."
+        },
+        {
+          "url": "/praca/kreator-cv",
+          "title": "Kreator CV",
+          "description": "Kiedy kreator CV oszczędza czas, a kiedy wystarczy darmowy wzór."
+        },
+        {
+          "url": "/praca/wzory-cv",
+          "title": "Wzory CV",
+          "description": "Wzory dla studenta, specjalisty, zmiany branzy i CV po angielsku."
+        },
+        {
+          "url": "/praca/cv-bez-doswiadczenia",
+          "title": "CV bez doświadczenia",
+          "description": "Jak pokazac umiejetnosci, projekty, praktyki i edukacje."
+        },
+        {
+          "url": "/praca/cv-po-angielsku",
+          "title": "CV po angielsku",
+          "description": "Struktura, slowa kluczowe i roznice względem polskiego CV."
+        },
+        {
+          "url": "/praca/list-motywacyjny",
+          "title": "List motywacyjny",
+          "description": "Kiedy list ma sens i jak nie pisac ogolnikow."
+        },
+        {
+          "url": "/praca/rozmowa-kwalifikacyjna",
+          "title": "Rozmowa kwalifikacyjna",
+          "description": "Pytania, odpowiedzi, przygotowanie i co sprawdzić przed rozmową."
+        },
+        {
+          "url": "/praca/pytania-na-rozmowie-kwalifikacyjnej",
+          "title": "Pytania na rozmowie kwalifikacyjnej",
+          "description": "Najczestsze pytania rekrutera i jak odpowiadac konkretnie."
+        },
+        {
+          "url": "/praca/jak-odpowiadac-na-pytania-rekrutera",
+          "title": "Jak odpowiadac na pytania rekrutera",
+          "description": "Schematy odpowiedzi, przykłady i błędy."
+        },
+        {
+          "url": "/praca/checklista-rozmowa-o-prace",
+          "title": "Checklista rozmowa o pracę",
+          "type": "checklist",
+          "description": "CV, pytania, odpowiedzi, oczekiwania i pytania do pracodawcy."
+        },
+        {
+          "url": "/praca/jak-negocjowac-wynagrodzenie",
+          "title": "Jak negocjowac wynagrodzenie",
+          "description": "Argumenty, widelki, moment rozmowy i alternatywy."
+        },
+        {
+          "url": "/praca/zmiana-pracy",
+          "title": "Zmiana pracy",
+          "description": "Plan zmiany pracy, ryzyka, CV, rozmowy i finanse."
+        },
+        {
+          "url": "/praca/jak-znalezc-lepsza-prace",
+          "title": "Jak znalezc lepsza prace",
+          "description": "Stratęgia aplikowania, profil, rozmowy i negocjacje."
+        },
+        {
+          "url": "/praca/praca-zdalna",
+          "title": "Praca zdalna",
+          "description": "Gdzie szukać pracy zdalnej i jak sprawdzić warunki."
+        },
+        {
+          "url": "/praca/przebranzowienie",
+          "title": "Przebranzowienie",
+          "description": "Jak ocenić sens zmiany branzy i zaplanowac pierwszy krok."
+        },
+        {
+          "url": "/praca/dodatkowy-dochod",
+          "title": "Dodatkowy dochód",
+          "description": "Pomysły, ryzyka, czas i podatki przy dodatkowym zarobku."
+        },
+        {
+          "url": "/praca/prawa-pracownika",
+          "title": "Prawa pracownika",
+          "description": "Podstawowe prawa, umowa, urlop, nadgodziny i kiedy sprawdzić przepisy."
+        },
+        {
+          "url": "/praca/umowa-o-prace",
+          "title": "Umowa o prace",
+          "description": "Co sprawdzić przed podpisaniem i jakie zapisy są ważne."
+        },
+        {
+          "url": "/praca/b2b-vs-uop",
+          "title": "B2B vs UoP",
+          "description": "Koszty, ryzyko, podatki, urlop i stabilność."
+        },
+        {
+          "url": "/praca/urlop-wypowiedzenie-nadgodziny",
+          "title": "Urlop wypowiedzenie nadgodziny",
+          "description": "Podstawowe zasady i kiedy skonsultowac szczegóły."
+        },
+        {
+          "url": "/praca/co-sprawdzic-przed-podpisaniem-umowy",
+          "title": "Co sprawdzić przed podpisaniem umowy",
+          "description": "Wynagrodzenie, okres wypowiedzenia, obowiązki, zakazy i tryb pracy."
+        },
+        {
+          "url": "/praca/kalkulatory",
+          "title": "Kalkulatory pracy",
+          "type": "calculator",
+          "description": "Wynagrodzenie, B2B vs UoP i netto-brutto."
+        },
+        {
+          "url": "/praca/kalkulator-wynagrodzenia",
+          "title": "Kalkulator wynagrodzenia",
+          "type": "calculator",
+          "description": "Orientacyjne wynagrodzenie netto i koszty zatrudnienia."
+        },
+        {
+          "url": "/praca/kalkulator-b2b-uop",
+          "title": "Kalkulator B2B UoP",
+          "type": "calculator",
+          "description": "Porównanie B2B i umowy o pracę bez udawania porady podatkowej."
+        },
+        {
+          "url": "/praca/kalkulator-netto-brutto",
+          "title": "Kalkulator netto brutto",
+          "type": "calculator",
+          "description": "Orientacyjne przeliczenie wynagrodzenia."
+        },
+        {
+          "url": "/praca/faq",
+          "title": "FAQ Praca",
+          "type": "faq",
+          "description": "Krótkie odpowiedzi o CV, rozmowie, umowach i wynagrodzeniu."
+        },
+        {
+          "url": "/praca/checklisty",
+          "title": "Checklisty Praca",
+          "type": "checklist",
+          "description": "Checklisty CV, rozmowy, zmiany pracy i umowy."
+        },
+        {
+          "url": "/praca/checklista-cv",
+          "title": "Checklista CV",
+          "type": "checklist",
+          "description": "Co sprawdzić przed wysłaniem CV."
+        },
+        {
+          "url": "/praca/checklista-zmiana-pracy",
+          "title": "Checklista zmiana pracy",
+          "type": "checklist",
+          "description": "Plan zmiany pracy bez chaosu i bez utraty kontroli."
+        }
       ]
     },
     {
@@ -820,34 +1791,149 @@
       "cta": "Zaplanuj remont",
       "ctaUrl": "/dom/remont",
       "pages": [
-        { "url": "/dom/remont", "title": "Remont", "description": "Zakres, budzet, rezerwa, wykonawcy i finansowanie." },
-        { "url": "/dom/checklista-remontu", "title": "Checklista remontu", "type": "checklist", "description": "Kroki remontu, kosztorys, umowa, harmonogram i ryzyka." },
-        { "url": "/dom/koszt-remontu-mieszkania", "title": "Koszt remontu mieszkania", "description": "Jak policzyc budzet remontu i rezerwe na niespodzianki." },
-        { "url": "/dom/jak-wybrac-ekipe-remontowa", "title": "Jak wybrac ekipe remontowa", "description": "Pytania do wykonawcy, wyceny, umowa i czerwone flagi." },
-        { "url": "/dom/remont-kuchni", "title": "Remont kuchni", "description": "Zakres, koszty, kolejnosc prac i decyzje przed zakupami." },
-        { "url": "/dom/remont-lazienki", "title": "Remont lazienki", "description": "Koszty, instalacje, wykonawcy i najczestsze bledy." },
-        { "url": "/dom/remont-generalny", "title": "Remont generalny", "description": "Plan generalnego remontu, budzet, harmonogram i finansowanie." },
-        { "url": "/dom/uslugi-do-domu", "title": "Uslugi do domu", "description": "Jak wybrac fachowca i porownac lokalne oferty." },
-        { "url": "/dom/ekipa-remontowa", "title": "Ekipa remontowa", "description": "Wybor ekipy, zakres, kosztorys, umowa i kontrola prac." },
-        { "url": "/dom/hydraulik", "title": "Hydraulik", "description": "Kiedy wzywac hydraulika i jak porownac wyceny." },
-        { "url": "/dom/elektryk", "title": "Elektryk", "description": "Instalacje, uprawnienia, koszt i bezpieczenstwo." },
-        { "url": "/dom/serwis-ogrzewania", "title": "Serwis ogrzewania", "description": "Przeglady, awarie, koszty i przygotowanie sezonowe." },
-        { "url": "/dom/sprzatanie", "title": "Sprzatanie", "description": "Uslugi sprzatania, zakres, cennik i jak porownac oferty." },
-        { "url": "/dom/oze", "title": "OZE", "description": "Odnawialne zrodla energii, koszty, dofinansowania i opacalnosc." },
-        { "url": "/dom/fotowoltaika", "title": "Fotowoltaika", "description": "Koszt instalacji, zwrot, dofinansowania i pytania do wykonawcy." },
-        { "url": "/dom/fotowoltaika-czy-warto", "title": "Fotowoltaika czy warto", "description": "Kiedy liczby sie spinaja, a kiedy instalacja moze sie nie oplacac." },
-        { "url": "/dom/pompa-ciepla", "title": "Pompa ciepla", "description": "Koszty, rodzaje pomp, budynek, rachunki i wykonawca." },
-        { "url": "/dom/pompa-ciepla-czy-warto", "title": "Pompa ciepla czy warto", "description": "Dla kogo pompa ciepla ma sens i kiedy ryzyko jest wysokie." },
-        { "url": "/dom/magazyn-energii", "title": "Magazyn energii", "description": "Kiedy magazyn energii ma sens przy fotowoltaice." },
-        { "url": "/dom/dofinansowanie-oze", "title": "Dofinansowanie OZE", "description": "Programy, warunki, dokumenty i ryzyko zmian regulaminow." },
-        { "url": "/dom/finansowanie-domu", "title": "Finansowanie domu", "description": "Kredyt, pozyczka, rata i kiedy finansowanie remontu albo OZE ma sens." },
-        { "url": "/dom/kredyt-na-remont", "title": "Kredyt na remont", "description": "Jak policzyc rate i calkowity koszt finansowania remontu." },
-        { "url": "/dom/pozyczka-na-remont", "title": "Pozyczka na remont", "description": "Kiedy pozyczka na remont jest sensowna, a kiedy lepiej poczekac." },
-        { "url": "/dom/finansowanie-fotowoltaiki", "title": "Finansowanie fotowoltaiki", "description": "Rata, zwrot, dofinansowanie i ryzyko zmiany cen energii." },
-        { "url": "/dom/finansowanie-pompy-ciepla", "title": "Finansowanie pompy ciepla", "description": "Kiedy rata moze miec sens przy modernizacji ogrzewania." },
-        { "url": "/dom/poradniki", "title": "Poradniki Dom", "description": "Remont, OZE, wykonawcy, koszty i finansowanie." },
-        { "url": "/dom/checklisty", "title": "Checklisty Dom", "type": "checklist", "description": "Checklisty remontu, wykonawcy, OZE i finansowania." },
-        { "url": "/dom/faq", "title": "FAQ Dom", "type": "faq", "description": "Krotkie odpowiedzi o remoncie, OZE, wykonawcach i kosztach." }
+        {
+          "url": "/dom/remont",
+          "title": "Remont",
+          "description": "Zakres, budżet, rezerwa, wykonawcy i finansowanie."
+        },
+        {
+          "url": "/dom/checklista-remontu",
+          "title": "Checklista remontu",
+          "type": "checklist",
+          "description": "Kroki remontu, kosztorys, umowa, harmonogram i ryzyka."
+        },
+        {
+          "url": "/dom/koszt-remontu-mieszkania",
+          "title": "Koszt remontu mieszkania",
+          "description": "Jak policzyć budżet remontu i rezerwę na niespodzianki."
+        },
+        {
+          "url": "/dom/jak-wybrac-ekipe-remontowa",
+          "title": "Jak wybrać ekipę remontową",
+          "description": "Pytania do wykonawcy, wyceny, umowa i czerwone flagi."
+        },
+        {
+          "url": "/dom/remont-kuchni",
+          "title": "Remont kuchni",
+          "description": "Zakres, koszty, kolejność prac i decyzje przed zakupami."
+        },
+        {
+          "url": "/dom/remont-lazienki",
+          "title": "Remont łazienki",
+          "description": "Koszty, instalacje, wykonawcy i najczęstsze błędy."
+        },
+        {
+          "url": "/dom/remont-generalny",
+          "title": "Remont generalny",
+          "description": "Plan generalnego remontu, budżet, harmonogram i finansowanie."
+        },
+        {
+          "url": "/dom/uslugi-do-domu",
+          "title": "Usługi do domu",
+          "description": "Jak wybrać fachowca i porównać lokalne oferty."
+        },
+        {
+          "url": "/dom/ekipa-remontowa",
+          "title": "Ekipa remontowa",
+          "description": "Wybór ekipy, zakres, kosztorys, umowa i kontrola prac."
+        },
+        {
+          "url": "/dom/hydraulik",
+          "title": "Hydraulik",
+          "description": "Kiedy wzywac hydraulika i jak porównać wyceny."
+        },
+        {
+          "url": "/dom/elektryk",
+          "title": "Elektryk",
+          "description": "Instalacje, uprawnienia, koszt i bezpieczeństwo."
+        },
+        {
+          "url": "/dom/serwis-ogrzewania",
+          "title": "Serwis ogrzewania",
+          "description": "Przeglady, awarie, koszty i przygotowanie sezonowe."
+        },
+        {
+          "url": "/dom/sprzatanie",
+          "title": "Sprzątanie",
+          "description": "Usługi sprzatania, zakres, cennik i jak porównać oferty."
+        },
+        {
+          "url": "/dom/oze",
+          "title": "OZE",
+          "description": "Odnawialne źródła energii, koszty, dofinansowania i opłacalność."
+        },
+        {
+          "url": "/dom/fotowoltaika",
+          "title": "Fotowoltaika",
+          "description": "Koszt instalacji, zwrot, dofinansowania i pytania do wykonawcy."
+        },
+        {
+          "url": "/dom/fotowoltaika-czy-warto",
+          "title": "Fotowoltaika czy warto",
+          "description": "Kiedy liczby się spinają, a kiedy instalacja może się nie opłacać."
+        },
+        {
+          "url": "/dom/pompa-ciepla",
+          "title": "Pompa ciepła",
+          "description": "Koszty, rodzaje pomp, budynek, rachunki i wykonawca."
+        },
+        {
+          "url": "/dom/pompa-ciepla-czy-warto",
+          "title": "Pompa ciepła czy warto",
+          "description": "Dla kogo pompa ciepła ma sens i kiedy ryzyko jest wysokie."
+        },
+        {
+          "url": "/dom/magazyn-energii",
+          "title": "Magazyn energii",
+          "description": "Kiedy magazyn energii ma sens przy fotowoltaice."
+        },
+        {
+          "url": "/dom/dofinansowanie-oze",
+          "title": "Dofinansowanie OZE",
+          "description": "Programy, warunki, dokumenty i ryzyko zmian regulaminów."
+        },
+        {
+          "url": "/dom/finansowanie-domu",
+          "title": "Finansowanie domu",
+          "description": "Kredyt, pożyczka, rata i kiedy finansowanie remontu albo OZE ma sens."
+        },
+        {
+          "url": "/dom/kredyt-na-remont",
+          "title": "Kredyt na remont",
+          "description": "Jak policzyć ratę i całkowity koszt finansowania remontu."
+        },
+        {
+          "url": "/dom/pozyczka-na-remont",
+          "title": "Pożyczka na remont",
+          "description": "Kiedy pożyczka na remont jest sensowna, a kiedy lepiej poczekac."
+        },
+        {
+          "url": "/dom/finansowanie-fotowoltaiki",
+          "title": "Finansowanie fotowoltaiki",
+          "description": "Rata, zwrot, dofinansowanie i ryzyko zmiany cen energii."
+        },
+        {
+          "url": "/dom/finansowanie-pompy-ciepla",
+          "title": "Finansowanie pompy ciepła",
+          "description": "Kiedy rata może mieć sens przy modernizacji ogrzewania."
+        },
+        {
+          "url": "/dom/poradniki",
+          "title": "Poradniki Dom",
+          "description": "Remont, OZE, wykonawcy, koszty i finansowanie."
+        },
+        {
+          "url": "/dom/checklisty",
+          "title": "Checklisty Dom",
+          "type": "checklist",
+          "description": "Checklisty remontu, wykonawcy, OZE i finansowania."
+        },
+        {
+          "url": "/dom/faq",
+          "title": "FAQ Dom",
+          "type": "faq",
+          "description": "Krótkie odpowiedzi o remoncie, OZE, wykonawcach i kosztach."
+        }
       ]
     },
     {
@@ -856,23 +1942,111 @@
       "cta": "Wybierz pion",
       "ctaUrl": "/",
       "pages": [
-        { "url": "/poradniki", "title": "Poradniki", "description": "Centrum poradnikow wedlug pionow: finanse, ubezpieczenia, auto, praca i dom." },
-        { "url": "/poradniki/finanse", "title": "Poradniki Finanse", "description": "Poradniki o kredytach, chwilowkach, kontach, RRSO i BIK." },
-        { "url": "/poradniki/ubezpieczenia", "title": "Poradniki Ubezpieczenia", "description": "Poradniki o OC, AC, assistance, NNW i porownywaniu polis." },
-        { "url": "/poradniki/auto", "title": "Poradniki Auto", "description": "Poradniki o historii pojazdu, VIN, zakupie auta i kosztach." },
-        { "url": "/poradniki/praca", "title": "Poradniki Praca", "description": "Poradniki o CV, rozmowie kwalifikacyjnej, umowach i zarobkach." },
-        { "url": "/poradniki/dom", "title": "Poradniki Dom", "description": "Poradniki o remoncie, OZE, wykonawcach i finansowaniu." }
+        {
+          "url": "/poradniki",
+          "title": "Poradniki",
+          "description": "Centrum poradnikow według pionów: finanse, ubezpieczenia, auto, praca i dom."
+        },
+        {
+          "url": "/poradniki/finanse",
+          "title": "Poradniki Finanse",
+          "description": "Poradniki o kredytach, chwilówkach, kontach, RRSO i BIK."
+        },
+        {
+          "url": "/poradniki/ubezpieczenia",
+          "title": "Poradniki Ubezpieczenia",
+          "description": "Poradniki o OC, AC, assistance, NNW i porównywaniu polis."
+        },
+        {
+          "url": "/poradniki/auto",
+          "title": "Poradniki Auto",
+          "description": "Poradniki o historii pojazdu, VIN, zakupie auta i kosztach."
+        },
+        {
+          "url": "/poradniki/praca",
+          "title": "Poradniki Praca",
+          "description": "Poradniki o CV, rozmowie kwalifikacyjnej, umowach i zarobkach."
+        },
+        {
+          "url": "/poradniki/dom",
+          "title": "Poradniki Dom",
+          "description": "Poradniki o remoncie, OZE, wykonawcach i finansowaniu."
+        }
       ]
     }
   ],
   "pages": [
-    { "url": "/finanse/kredyty-gotowkowe", "type": "guide", "pillar": "finanse", "title": "Kredyty gotowkowe", "description": "Porownuj RRSO, rate, calkowita kwote do splaty i okres. Nie klikaj oferty bez kosztow.", "cta": "Policz rate", "ctaUrl": "/narzedzia/kalkulator-raty" },
-    { "url": "/finanse/chwilowki", "type": "guide", "pillar": "finanse", "title": "Chwilowki", "description": "Osobny lejek dla krotkich pozyczek. 0% zwykle dotyczy pierwszej pozyczki i terminowej splaty.", "cta": "Sprawdz checkliste", "ctaUrl": "/narzedzia/checklista-chwilowka" },
-    { "url": "/finanse/kredyt-vs-chwilowka", "type": "guide", "pillar": "finanse", "title": "Kredyt gotowkowy czy chwilowka?", "description": "Najpierw rozdziel intencje: dluzszy kredyt z rata czy krotka pozyczka z wysokim ryzykiem kosztow po terminie.", "cta": "Policz RRSO", "ctaUrl": "/narzedzia/kalkulator-rrso" },
-    { "url": "/ubezpieczenia/oc-ac", "type": "guide", "pillar": "ubezpieczenia", "title": "OC/AC", "description": "OC jest obowiazkowe, AC chroni Twoje auto. Porownuj cene, zakres, wykluczenia i assistance.", "cta": "Kalkulator OC", "ctaUrl": "/narzedzia/kalkulator-oc" },
-    { "url": "/auto/historia-pojazdu", "type": "guide", "pillar": "auto", "title": "Historia pojazdu", "description": "Zacznij od darmowego gov.pl. Potrzebujesz numeru rejestracyjnego, VIN i daty pierwszej rejestracji.", "cta": "Checklista zakupu", "ctaUrl": "/narzedzia/checklista-zakup-auta" },
-    { "url": "/auto/vin", "type": "guide", "pillar": "auto", "title": "VIN", "description": "VIN pomaga identyfikowac auto, ale sam VIN nie zastapi historii pojazdu, ogledzin i jazdy probnej.", "cta": "Sprawdz historie", "ctaUrl": "/auto/historia-pojazdu" },
-    { "url": "/praca/kreator-cv", "type": "guide", "pillar": "praca", "title": "Kreator CV", "description": "Kreator ma sens, gdy chcesz szybciej zlozyc czytelne CV. Darmowy wzor wystarczy przy prostych potrzebach.", "cta": "Rozmowa kwalifikacyjna", "ctaUrl": "/praca/rozmowa-kwalifikacyjna" },
-    { "url": "/dom/remont", "type": "guide", "pillar": "dom", "title": "Remont", "description": "Zanim zaczniesz remont, policz zakres, budzet, rezerwe i ryzyka z wykonawca.", "cta": "Checklista remontu", "ctaUrl": "/narzedzia/checklista-remont" }
+    {
+      "url": "/finanse/kredyty-gotowkowe",
+      "type": "guide",
+      "pillar": "finanse",
+      "title": "Kredyty gotówkowe",
+      "description": "Porównuj RRSO, ratę, całkowitą kwotę do spłaty i okres. Nie klikaj oferty bez kosztów.",
+      "cta": "Policz ratę",
+      "ctaUrl": "/narzedzia/kalkulator-raty"
+    },
+    {
+      "url": "/finanse/chwilowki",
+      "type": "guide",
+      "pillar": "finanse",
+      "title": "Chwilówki",
+      "description": "Osobny lejek dla krótkich pożyczek. 0% zwykle dotyczy pierwszej pożyczki i terminowej spłaty.",
+      "cta": "Sprawdź checklistę",
+      "ctaUrl": "/narzedzia/checklista-chwilowka"
+    },
+    {
+      "url": "/finanse/kredyt-vs-chwilowka",
+      "type": "guide",
+      "pillar": "finanse",
+      "title": "Kredyt gotówkowy czy chwilówka?",
+      "description": "Najpierw rozdziel intencje: dłuższy kredyt z ratą czy krótka pożyczka z wysokim ryzykiem kosztów po terminie.",
+      "cta": "Policz RRSO",
+      "ctaUrl": "/narzedzia/kalkulator-rrso"
+    },
+    {
+      "url": "/ubezpieczenia/oc-ac",
+      "type": "guide",
+      "pillar": "ubezpieczenia",
+      "title": "OC/AC",
+      "description": "OC jest obowiązkowe, AC chroni Twoje auto. Porównuj cenę, zakres, wykluczenia i assistance.",
+      "cta": "Kalkulator OC",
+      "ctaUrl": "/narzedzia/kalkulator-oc"
+    },
+    {
+      "url": "/auto/historia-pojazdu",
+      "type": "guide",
+      "pillar": "auto",
+      "title": "Historia pojazdu",
+      "description": "Zacznij od darmowego gov.pl. Potrzebujesz numeru rejestracyjnego, VIN i daty pierwszej rejestracji.",
+      "cta": "Checklista zakupu",
+      "ctaUrl": "/narzedzia/checklista-zakup-auta"
+    },
+    {
+      "url": "/auto/vin",
+      "type": "guide",
+      "pillar": "auto",
+      "title": "VIN",
+      "description": "VIN pomaga identyfikować auto, ale sam VIN nie zastąpi historii pojazdu, oględzin i jazdy próbnej.",
+      "cta": "Sprawdź historię",
+      "ctaUrl": "/auto/historia-pojazdu"
+    },
+    {
+      "url": "/praca/kreator-cv",
+      "type": "guide",
+      "pillar": "praca",
+      "title": "Kreator CV",
+      "description": "Kreator ma sens, gdy chcesz szybciej złozyc czytelne CV. Darmowy wzór wystarczy przy prostych potrzebach.",
+      "cta": "Rozmowa kwalifikacyjna",
+      "ctaUrl": "/praca/rozmowa-kwalifikacyjna"
+    },
+    {
+      "url": "/dom/remont",
+      "type": "guide",
+      "pillar": "dom",
+      "title": "Remont",
+      "description": "Zanim zaczniesz remont, policz zakres, budżet, rezerwę i ryzyka z wykonawca.",
+      "cta": "Checklista remontu",
+      "ctaUrl": "/narzedzia/checklista-remont"
+    }
   ]
 }
