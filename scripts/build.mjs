@@ -560,6 +560,7 @@ function toolCalculatorScript(slug, type) {
     const show = (title, lines) => {
       output.innerHTML = "<strong>" + title + "</strong><ul>" + lines.map((line) => "<li>" + line + "</li>").join("") + "</ul>";
     };
+    const hasRequiredValues = () => inputs.every((input) => input.type === "checkbox" || String(input.value || "").trim() !== "");
     const calculate = () => {
       if (type === "checklist") {
         const checked = values().filter(Boolean).length;
@@ -570,6 +571,14 @@ function toolCalculatorScript(slug, type) {
           "Zaznaczone punkty: " + checked + " z " + total + ".",
           ratio === 1 ? "Możesz przejść do następnego kroku." : "Uzupełnij brakujące punkty przed decyzją.",
           "To checklista kontrolna, nie indywidualna porada."
+        ]);
+        return;
+      }
+      if (!hasRequiredValues()) {
+        show("Uzupełnij dane", [
+          "Wpisz wartości we wszystkich polach i dopiero wtedy pokaż wynik.",
+          "Puste pola nie są liczone jako 0 zł.",
+          "Wynik nadal ma charakter orientacyjny."
         ]);
         return;
       }
@@ -630,8 +639,6 @@ function toolCalculatorScript(slug, type) {
       }
     };
     button?.addEventListener("click", calculate);
-    inputs.forEach((input) => input.addEventListener(input.type === "checkbox" ? "change" : "input", calculate));
-    calculate();
   })();
   </script>`;
 }
