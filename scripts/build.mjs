@@ -748,7 +748,7 @@ function genericPage(page) {
       <section>
         <div class="section-head">
           <h2>Najważniejsze zasady</h2>
-          <p>Ta strona jest częścią pełnej mapy serwisu. Teraz ma fundament SEO, CTA i linkówanie; w kolejnych sprintach dostanie pełną treść lub moduł ofertowy.</p>
+          <p>Ta strona jest częścią pełnej mapy serwisu. Teraz ma fundament SEO, CTA i linkowanie; w kolejnych sprintach dostanie pełną treść lub moduł ofertowy.</p>
         </div>
         <div class="trust-grid">
           <div><strong>Najpierw zrozum</strong><span>Co wybierasz, jakie są koszty i gdzie są ograniczenia.</span></div>

@@ -1072,7 +1072,7 @@
         "items": [
           {
             "title": "Policz ratę",
-            "text": "Rata nie może zjesc budżetu po doliczeniu OC, paliwa i serwisu."
+            "text": "Rata nie może zjeść budżetu po doliczeniu OC, paliwa i serwisu."
           },
           {
             "title": "Sprawdź całkowity koszt",
@@ -1465,7 +1465,7 @@
         {
           "url": "/ubezpieczenia/oc-czym-jest",
           "title": "OC czym jest",
-          "description": "Proste wyjaśnienie OC i roznicy miedzy obowiązkiem a ochrona auta."
+          "description": "Proste wyjaśnienie OC i różnicy między obowiązkiem a ochroną auta."
         },
         {
           "url": "/ubezpieczenia/ac-czy-warto",
@@ -1538,7 +1538,7 @@
         },
         {
           "url": "/auto/czy-auto-bylo-po-wypadku",
-          "title": "Czy auto bylo po wypadku",
+          "title": "Czy auto było po wypadku",
           "description": "Co sprawdzić w historii, ogłoszeniu, lakierze, dokumentach i serwisie."
         },
         {
@@ -1548,7 +1548,7 @@
         },
         {
           "url": "/auto/jak-kupic-uzywane-auto",
-          "title": "Jak kupic używane auto",
+          "title": "Jak kupić używane auto",
           "description": "Proces zakupu od ogłoszenia do OC, finansowania i kosztów po zakupie."
         },
         {
@@ -2044,7 +2044,7 @@
       "type": "guide",
       "pillar": "dom",
       "title": "Remont",
-      "description": "Zanim zaczniesz remont, policz zakres, budżet, rezerwę i ryzyka z wykonawca.",
+      "description": "Zanim zaczniesz remont, policz zakres, budżet, rezerwę i ryzyka z wykonawcą.",
       "cta": "Checklista remontu",
       "ctaUrl": "/narzedzia/checklista-remont"
     }
