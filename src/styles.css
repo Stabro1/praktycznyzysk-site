@@ -206,6 +206,16 @@ main section,
 
 .hero.compact .hero-inner { min-height: 320px; }
 .hero-inner.single { grid-template-columns: 1fr; }
+.hero-inner.centered {
+  justify-items: center;
+  text-align: center;
+}
+
+.hero-inner.centered h1,
+.hero-inner.centered .lead {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .eyebrow {
   color: var(--accent);

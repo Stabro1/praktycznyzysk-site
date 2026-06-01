@@ -342,9 +342,6 @@ function affiliateDisclosureBlock() {
 
 function homePage() {
   const pillars = data.pillars.map((pillar) => card({ ...pillar, url: `/${pillar.slug}` })).join("");
-  const popular = data.popular
-    .map((item) => `<a class="list-card" href="${esc(item.url)}"><strong>${esc(item.label)}</strong><span>${esc(item.note)}</span></a>`)
-    .join("");
   const tools = data.tools.slice(0, 6).map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("");
 
   return layout({
@@ -352,37 +349,20 @@ function homePage() {
     description: data.description,
     body: `<main>
       <section class="hero">
-        <div class="hero-inner">
+        <div class="hero-inner single centered">
           <div>
             <div class="eyebrow">PraktycznyZysk.pl</div>
             <h1>Praktyczne decyzje, które pomagają nie przepłacać.</h1>
             <p class="lead">${esc(data.description)}</p>
-            <div class="hero-actions">
-              ${cta("Wybierz temat", "#piony")}
-              ${cta("Najczęściej wybierane", "#najczęściej", true)}
-            </div>
           </div>
-          <aside class="hero-panel">
-            <strong>Model serwisu</strong>
-            <p>Homepage jest hubem marki. Sprzedaż i decyzje dzieją się na landingach pionów i głębszych stronach z sociali.</p>
-          </aside>
         </div>
       </section>
 
       <section id="piony">
         <div class="section-head">
-          <h2>Wybierz obszar</h2>
-          <p>Pięć wejść odpowiada pięciu kanałowym kategoriom social: finanse, ubezpieczenia, auto, praca i dom.</p>
+          <h2>Sprawdź najważniejsze tematy</h2>
         </div>
         <div class="grid cards-5">${pillars}</div>
-      </section>
-
-      <section id="najczęściej">
-        <div class="section-head">
-          <h2>Najczęściej wybierane</h2>
-          <p>Szybkie wejścia do tematów, które najlepiej łączą ruch, zaufanie i monetyzację.</p>
-        </div>
-        <div class="list-grid">${popular}</div>
       </section>
 
       <section>
