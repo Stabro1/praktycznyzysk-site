@@ -213,10 +213,6 @@ function offerCard(offer) {
     <div class="offer-meta">${meta
       .map((item) => `<div><span>${esc(item.label)}</span><strong>${esc(item.value)}</strong></div>`)
       .join("")}</div>
-    <div class="disclosure-box">
-      <strong>Oznaczenie</strong>
-      <span>${offer.affiliateUrl ? "Link może być afiliacyjny. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." : "To miejsce pod przyszły link afiliacyjny. Warunki, prowizje i dostawca muszą być sprawdzone przed publikacją prawdziwego linku."}</span>
-    </div>
     <dl class="offer-params">${(offer.params || [])
       .map((param) => {
         const [key, ...rest] = String(param).split(":");
@@ -820,7 +816,7 @@ function goPage(offer) {
       </section>
       <section class="warning-band">
         <div>
-          <span class="badge">${hasDestination ? "Link afiliacyjny" : "Oferta niedostępna"}</span>
+          <span class="badge">${hasDestination ? "Oferta" : "Oferta niedostępna"}</span>
           <h2>${hasDestination ? "Przejście do partnera" : "Ta oferta nie jest teraz dostępna"}</h2>
           <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki, dostępność i decyzja po stronie banku, pożyczkodawcy, ubezpieczyciela albo operatora mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Ta oferta nie ma jeszcze aktywnego przejścia do partnera. Wróć do katalogu i wybierz inną dostępną propozycję."}</p>
           ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Wróć do ofert", "/oferty", true)}</div>` : ""}
