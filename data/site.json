@@ -170,7 +170,7 @@
     {
       "label": "Chwilówki",
       "url": "/finanse/chwilowki",
-      "note": "Osobny lejek z warunkami 0% i ostrzeżeniami."
+      "note": "Warunki 0%, termin spłaty i koszty po opóźnieniu."
     },
     {
       "label": "Konta z premią",
@@ -294,7 +294,7 @@
         "Rozliczenie: M2M 230/270 zł"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -333,7 +333,7 @@
         "Rozliczenie: eBroker 180 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -371,7 +371,7 @@
         "Rozliczenie: M2M 160 zł"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -409,7 +409,7 @@
         "Rozliczenie: eBroker 165 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -447,7 +447,7 @@
         "Rozliczenie: M2M 150 zł"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -485,7 +485,7 @@
         "Rozliczenie: M2M 80 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -524,7 +524,7 @@
         "Rozliczenie: M2M 620 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -563,7 +563,7 @@
         "Rozliczenie: eBroker 555 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -602,7 +602,7 @@
         "Rozliczenie: M2M 520 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -641,7 +641,7 @@
         "Rozliczenie: M2M 510 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -680,7 +680,7 @@
         "Rozliczenie: eBroker 450 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -710,7 +710,7 @@
       "audience": "firma poza działalnością rolniczą",
       "conditions": [
         "konto założone przez Call Center",
-        "lead musi być dodzwoniony",
+        "rozmowa telefoniczna musi zostać skutecznie przeprowadzona",
         "działalności rolnicze wykluczone",
         "bez promocji na blogach o promocjach bankowych"
       ],
@@ -720,7 +720,7 @@
         "Rozliczenie: M2M 375 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -759,7 +759,7 @@
         "Rozliczenie: eBroker 372 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -798,7 +798,7 @@
         "Rozliczenie: eBroker 250 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -835,10 +835,10 @@
       "params": [
         "Sieć: M2M",
         "Rozliczenie: M2M 4,5% CPS",
-        "Alternatywa/test: https://praktycznyzysk.ebrokerpartner.pl/short/5opy4"
+        "Dodatkowy wariant: https://praktycznyzysk.ebrokerpartner.pl/short/5opy4"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -876,7 +876,7 @@
         "Rozliczenie: eBroker 4,5% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -914,7 +914,7 @@
         "Rozliczenie: M2M 3,5% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -952,7 +952,7 @@
         "Rozliczenie: M2M 3,5% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -990,7 +990,7 @@
         "Rozliczenie: M2M 2,5% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1028,7 +1028,7 @@
         "Rozliczenie: M2M 2,5% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1066,7 +1066,7 @@
         "Rozliczenie: M2M 2,4% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1104,7 +1104,7 @@
         "Rozliczenie: M2M 2,4% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1142,7 +1142,7 @@
         "Rozliczenie: M2M 2,0% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1180,7 +1180,7 @@
         "Rozliczenie: M2M 2,0% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1218,10 +1218,10 @@
       "params": [
         "Sieć: eBroker",
         "Rozliczenie: eBroker 336 zł CPS",
-        "Alternatywa/test: https://tmlead.pl/redirect/880819_3145"
+        "Dodatkowy wariant: https://tmlead.pl/redirect/880819_3145"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1260,7 +1260,7 @@
         "Rozliczenie: M2M do 230 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1299,7 +1299,7 @@
         "Rozliczenie: M2M 180 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1338,7 +1338,7 @@
         "Rozliczenie: M2M 130 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1377,7 +1377,7 @@
         "Rozliczenie: M2M 130 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1416,7 +1416,7 @@
         "Rozliczenie: M2M 12% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1455,7 +1455,7 @@
         "Rozliczenie: eBroker 166 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1494,7 +1494,7 @@
         "Rozliczenie: eBroker 100 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1532,7 +1532,7 @@
         "Rozliczenie: M2M 160 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1570,7 +1570,7 @@
         "Rozliczenie: M2M 150 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1608,7 +1608,7 @@
         "Rozliczenie: M2M 135 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1646,7 +1646,7 @@
         "Rozliczenie: M2M 125 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1684,7 +1684,7 @@
         "Rozliczenie: M2M 125 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1722,7 +1722,7 @@
         "Rozliczenie: M2M do 185 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1762,7 +1762,7 @@
         "Rozliczenie: M2M 5,5% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1795,13 +1795,13 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Fallback/test dla lejka OC/AC obok głównego M2M Bezpieczny.",
+      "summary": "Dodatkowa możliwość sprawdzenia oferty OC/AC.",
       "params": [
         "Sieć: eBroker",
         "Rozliczenie: eBroker 50 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1840,7 +1840,7 @@
         "Rozliczenie: Rankomat 9 zł CPA"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1878,7 +1878,7 @@
         "Rozliczenie: M2M 190 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1916,7 +1916,7 @@
         "Rozliczenie: eBroker 180 zł CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1954,7 +1954,7 @@
         "Rozliczenie: eBroker 1,0% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -1992,7 +1992,7 @@
         "Rozliczenie: M2M 0,75% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -2000,7 +2000,7 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Prowizja liczona od udzielonego kredytu, ale użytkownik powinien patrzeć przede wszystkim na całkowity koszt finansowania."
+      "warning": "Przy kredycie hipotecznym patrz przede wszystkim na całkowity koszt finansowania, marżę, prowizję i warunki dodatkowe."
     },
     {
       "slug": "velobank-kredyt-hipoteczny-velodom",
@@ -2030,7 +2030,7 @@
         "Rozliczenie: M2M 0,75% CPS"
       ],
       "pros": [
-        "pasuje do potrzeb użytkownika",
+        "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
         "pasuje do porównania ofert"
       ],
@@ -2045,7 +2045,7 @@
     "/finanse/konta-firmowe": [
       {
         "type": "cards",
-        "title": "Konto firmowe z premią - osobny lejek",
+        "title": "Konto firmowe z premią",
         "description": "Promocje kont firmowych mają inne warunki niż konta osobiste. Nie mieszamy tego z prostymi bonusami za konto prywatne.",
         "items": [
           {
@@ -2104,7 +2104,7 @@
           },
           {
             "title": "Konto firmowe",
-            "text": "Dla JDG pokazujemy osobny lejek: konto firmowe, ZUS, wpływy, płatności i rozliczenie nagrody."
+            "text": "Dla JDG ważne są: konto firmowe, ZUS, wpływy, płatności i rozliczenie nagrody."
           },
           {
             "title": "Erste do 4500 zł",
@@ -2117,7 +2117,7 @@
       {
         "type": "cards",
         "title": "Najmocniejsze premie dla JDG",
-        "description": "To osobny ranking dla przedsiębiorców. Liczy się nie tylko kwota premii, ale też realność spełnienia warunków.",
+        "description": "W rankingu dla przedsiębiorców liczy się nie tylko kwota premii, ale też realność spełnienia warunków.",
         "items": [
           {
             "title": "Wartość premii",
@@ -2167,7 +2167,7 @@
       {
         "type": "steps",
         "title": "Jak porównać kredyt gotówkowy",
-        "description": "Ten lejek ma prowadzić do świadomego porównania kosztów, nie do losowego kliknięcia w reklamę.",
+        "description": "Najpierw porównaj koszty i warunki, dopiero potem przejdź do wybranej oferty.",
         "items": [
           {
             "title": "Określ kwotę i cel kredytu",
@@ -2175,7 +2175,7 @@
           },
           {
             "title": "Porównaj RRSO i ratę",
-            "text": "RRSO pomaga porównywać koszt, ale użytkownik musi widzieć też miesięczną ratę i całkowitą kwotę do spłaty."
+            "text": "RRSO pomaga porównywać koszt, ale sprawdź też miesięczną ratę i całkowitą kwotę do spłaty."
           },
           {
             "title": "Sprawdź prowizje i ubezpieczenia",
@@ -2216,13 +2216,13 @@
       {
         "type": "warning",
         "badge": "Ryzyko",
-        "title": "Chwilówki muszą być osobnym lejkiem",
-        "text": "Nie mieszamy chwilówek z kredytami gotówkowymi. Promocja 0% zwykle dotyczy pierwszej pożyczki i terminowej spłaty, a koszt po terminie może być bardzo wysoki."
+        "title": "Najpierw sprawdź koszt i termin spłaty",
+        "text": "Promocja 0% zwykle działa tylko przy spełnieniu warunków. Przed decyzją sprawdź RRSO, całkowitą kwotę do spłaty i opłaty za opóźnienie."
       },
       {
         "type": "checklist",
         "title": "Zanim klikniesz chwilówkę",
-        "description": "Minimalna checklista, która chroni zaufanie i ogranicza spamowy charakter strony.",
+        "description": "Krótka lista rzeczy, które warto sprawdzić przed złożeniem wniosku.",
         "items": [
           "sprawdź RRSO i całkowitą kwotę do spłaty",
           "sprawdź, czy 0% dotyczy tylko pierwszej pożyczki",
@@ -2240,8 +2240,8 @@
             "text": "Jeśli nie wiesz, z czego spłacisz całość w terminie, ryzyko jest za wysokie."
           },
           {
-            "title": "Spłaćanie długów",
-            "text": "Rolowanie zobowiązań zwykle pogarsza sytuacje."
+            "title": "Spłacanie długów",
+            "text": "Rolowanie zobowiązań zwykle pogarsza sytuację."
           },
           {
             "title": "Ukrywanie problemu",
@@ -2254,7 +2254,7 @@
       {
         "type": "cards",
         "title": "Kredyt czy chwilówka",
-        "description": "Ta strona ma rozdzielać intencje i wysyłać użytkownika we właściwy lejek.",
+        "description": "Porównaj różnice i wybierz rozwiązanie dopasowane do kwoty, okresu i możliwości spłaty.",
         "items": [
           {
             "title": "Kredyt gotówkowy",
@@ -2598,7 +2598,7 @@
       {
         "type": "steps",
         "title": "Jak porównać OC/AC",
-        "description": "OC/AC ma być osobnym lejkiem ubezpieczeniowym, a nie dodatkiem do Auto. Auto tylko dowozi użytkownika po zakupie.",
+        "description": "Przy OC liczy się cena i poprawność danych, a przy AC także zakres ochrony, wyłączenia i sposób naprawy.",
         "items": [
           {
             "title": "Najpierw rozdziel OC i AC",
@@ -2636,7 +2636,7 @@
           },
           {
             "title": "Porównywarka",
-            "text": "Miejsce na lead lub przejście do partnera.",
+            "text": "Porównaj dostępne możliwości i przejdź do dalszych szczegółów.",
             "url": "/ubezpieczenia/porownywarka",
             "cta": "Przejdź do porównywarki"
           },
@@ -2721,7 +2721,7 @@
         "items": [
           {
             "title": "Cena od / sprawdź cenę",
-            "text": "Nie pokazujemy fikcyjnych składek bez danych użytkownika."
+            "text": "Wysokość składki zależy od danych kierowcy, auta i zakresu ochrony."
           },
           {
             "title": "Zakres i dodatki",
@@ -3499,7 +3499,7 @@
       "type": "guide",
       "pillar": "finanse",
       "title": "Chwilówki",
-      "description": "Osobny lejek dla krótkich pożyczek. 0% zwykle dotyczy pierwszej pożyczki i terminowej spłaty.",
+      "description": "Krótkie pożyczki wymagają szczególnej ostrożności. 0% zwykle dotyczy pierwszej pożyczki i terminowej spłaty.",
       "cta": "Sprawdź checklistę",
       "ctaUrl": "/narzedzia/checklista-chwilowka"
     },

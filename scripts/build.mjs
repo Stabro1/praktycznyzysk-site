@@ -335,7 +335,7 @@ function affiliateDisclosureBlock() {
       <span class="badge">Disclosure</span>
       <h2>Jak zarabia serwis</h2>
       <p>${esc(data.disclosure)}</p>
-      <p>Jeśli dodamy prawdziwy link partnera, kliknięcie może oznaczać prowizję dla serwisu. Nie zmienia to ceny po stronie użytkownika, ale wymaga sprawdzenia aktualnych warunków u dostawcy.</p>
+      <p>Kliknięcie w link partnera może oznaczać prowizję dla serwisu. Nie zmienia to ceny po Twojej stronie, ale przed decyzją zawsze sprawdź aktualne warunki u dostawcy.</p>
     </div>
   </section>`;
 }
@@ -477,21 +477,21 @@ const toolModels = {
     type: "calculator",
     fields: ["Dochody miesięczne", "Koszty stałe", "Raty i abonamenty", "Planowana rezerwa"],
     resultTitle: "Nadwyżka, deficyt i bezpieczny limit rat",
-    resultText: "Budżet ma pokazać, czy decyzja finansowa jest realna, zanim użytkownik przejdzie do kredytu, chwilówki albo remontu.",
+    resultText: "Budżet pokazuje, czy decyzja finansowa jest realna przed kredytem, chwilówką albo remontem.",
     bullets: ["najpierw rezerwa, potem rata", "oddziel potrzeby od zachcianek", "nie finansuj deficytu chwilówką"]
   },
   "checklista-kredyt": {
     type: "checklist",
     fields: ["RRSO widoczne", "Rata pasuje do budżetu", "Koszt całkowity znany", "Warunki i prowizje sprawdzone"],
     resultTitle: "Gotowość do porównania ofert",
-    resultText: "Jeśli któryś punkt nie jest spełniony, użytkownik powinien wrócić do kalkulatora raty albo RRSO.",
+    resultText: "Jeśli któryś punkt nie jest spełniony, wróć do kalkulatora raty albo RRSO i sprawdź koszt jeszcze raz.",
     bullets: ["nie składaj wielu wniosków naraz", "sprawdź całkowitą kwotę do spłaty", "czytaj warunki dodatkowych produktów"]
   },
   "checklista-chwilowka": {
     type: "checklist",
     fields: ["Znam termin spłaty", "Znam koszt po terminie", "Mam pieniądze na spłatę", "Nie spłacam innej chwilówki"],
     resultTitle: "Czerwone flagi przed chwilówką",
-    resultText: "Ta checklista ma ograniczać ryzykowne kliknięcia. Chwilówka bez pewnej spłaty jest złym produktem dla użytkownika.",
+    resultText: "Jeśli nie masz pewnego planu spłaty w terminie, lepiej nie składać wniosku.",
     bullets: ["0% zwykle dotyczy pierwszej pożyczki", "opóźnienie może mocno podnieść koszt", "nie roluj zobowiązań"]
   },
   "checklista-zakup-auta": {
@@ -845,7 +845,7 @@ function toolsIndex() {
           <div>
             <div class="eyebrow">Kalkulatory i checklisty</div>
             <h1>Policz, sprawdź i przejdź do następnego kroku.</h1>
-            <p class="lead">Każde narzędzie ma mieć prosty input, wynik, interpretację i jasne "Co dalej?".</p>
+            <p class="lead">Kalkulatory i checklisty pomagają szybko sprawdzić koszty, warunki i następny krok.</p>
           </div>
         </div>
       </section>
@@ -1002,7 +1002,7 @@ if (data.privateMode) {
     "/regulamin",
     legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
       { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
-      { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
+      { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
       { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
     ])
   );
@@ -1039,7 +1039,7 @@ writePage(
   "/regulamin",
   legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
     { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
-    { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
+    { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
     { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
   ])
 );
