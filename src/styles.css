@@ -256,6 +256,10 @@ p { line-height: 1.58; }
   margin-top: 24px;
 }
 
+.hero-inner.centered .hero-actions {
+  justify-content: center;
+}
+
 .hero-panel,
 .card,
 .offer-card,

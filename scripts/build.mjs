@@ -324,7 +324,7 @@ function trustBlock() {
     <div class="trust-grid">
       <div><strong>Darmowe najpierw</strong><span>Jeśli istnieje sensowne darmowe źródło, pokazujemy je przed płatnym.</span></div>
       <div><strong>Ryzyko widoczne</strong><span>Przy drogich decyzjach pokazujemy koszty, warunki i kiedy uważać.</span></div>
-      <div><strong>Jasne CTA</strong><span>Każda strona ma prowadzić do jednego logicznego następnego kroku.</span></div>
+      <div><strong>Jasny następny krok</strong><span>Po przeczytaniu strony wiesz, co sprawdzić dalej i gdzie przejść.</span></div>
     </div>
   </section>`;
 }
@@ -342,6 +342,7 @@ function affiliateDisclosureBlock() {
 
 function homePage() {
   const pillars = data.pillars.map((pillar) => card({ ...pillar, url: `/${pillar.slug}` })).join("");
+  const popular = data.popular.map((item) => card(item)).join("");
   const tools = data.tools.slice(0, 6).map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("");
 
   return layout({
@@ -354,21 +355,31 @@ function homePage() {
             <div class="eyebrow">PraktycznyZysk.pl</div>
             <h1>Praktyczne decyzje, które pomagają nie przepłacać.</h1>
             <p class="lead">${esc(data.description)}</p>
+            <div class="hero-actions">${cta("Kategorie", "#piony")}${cta("Popularne tematy", "#popularne", true)}</div>
           </div>
         </div>
       </section>
 
       <section id="piony">
         <div class="section-head">
-          <h2>Sprawdź najważniejsze tematy</h2>
+          <h2>Wybierz kategorię</h2>
+          <p>Przejdź do tematu, który chcesz sprawdzić: finanse, ubezpieczenia, auto, praca albo dom.</p>
         </div>
         <div class="grid cards-5">${pillars}</div>
+      </section>
+
+      <section id="popularne">
+        <div class="section-head">
+          <h2>Popularne tematy</h2>
+          <p>Szybkie przejścia do spraw, które najczęściej warto policzyć albo porównać przed decyzją.</p>
+        </div>
+        <div class="list-grid">${popular}</div>
       </section>
 
       <section>
         <div class="section-head">
           <h2>Narzędzia</h2>
-          <p>Każde narzędzie ma dać wynik, interpretację i sekcję "Co dalej?".</p>
+          <p>Kalkulatory i checklisty pomagają sprawdzić koszty, ryzyko i następny krok.</p>
         </div>
         <div class="grid">${tools}</div>
       </section>
@@ -404,7 +415,7 @@ function pillarPage(pillar) {
       <section id="start">
         <div class="section-head">
           <h2>Zacznij od tego</h2>
-          <p>Najważniejsze ścieżki w tym pionie. Na mobile mają być czytelne bez szukania w menu.</p>
+          <p>Najważniejsze tematy w tej kategorii. Wybierz ten, który najlepiej pasuje do Twojej sytuacji.</p>
         </div>
         <div class="list-grid">${pillar.priorityLinks
           .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Przejdź do następnego kroku</span></a>`)
@@ -413,20 +424,20 @@ function pillarPage(pillar) {
       <section>
         <div class="section-head">
           <h2>Podstrony pionu</h2>
-          <p>Fundament pod kolejne sprinty: poradniki, rankingi, narzędzia i oferty.</p>
+          <p>Poradniki, rankingi, kalkulatory i checklisty powiązane z tą kategorią.</p>
         </div>
         <div class="grid">${pages.map((page) => card({ ...page, name: page.title, url: page.url, cta: page.cta })).join("")}</div>
       </section>
       <section>
         <div class="section-head">
           <h2>Powiązane narzędzia</h2>
-          <p>Narzędzia prowadzą do wyniku i kolejnego kroku, nie są ozdobą SEO.</p>
+          <p>Kalkulatory i checklisty pomagają policzyć koszt, porównać warunki albo przygotować się do decyzji.</p>
         </div>
         <div class="grid">${relatedTools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("") || card({ name: "Narzędzia", description: "Zobacz wszystkie kalkulatory i checklisty.", url: "/narzedzia", cta: "Przejdź" })}</div>
       </section>
       ${nextStepBlock({
         title: "Najlepszy następny krok",
-        description: "Te przejścia łączą ruch, SEO i monetyzację bez mieszania pionów.",
+        description: "Najczęściej wybierane przejścia w tej kategorii.",
         links: pillar.priorityLinks.map((link) => ({ ...link, note: "Najważniejsza ścieżka w tej sekcji" }))
       })}
     </main>`
@@ -717,8 +728,8 @@ function genericPage(page) {
         pageOffers.length
           ? `<section>
         <div class="section-head">
-          <h2>Przygotowane miejsca na oferty</h2>
-          <p>To są struktury pod afiliacje bez prawdziwych linków partnerów. Najpierw pokazujemy koszt, warunki, ostrzeżenie i dopiero potem przejście.</p>
+          <h2>Polecane oferty</h2>
+          <p>Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty.</p>
         </div>
         <div class="offer-grid">${pageOffers.map((offer) => offerCard(offer)).join("")}</div>
       </section>`
@@ -728,7 +739,7 @@ function genericPage(page) {
       <section>
         <div class="section-head">
           <h2>Najważniejsze zasady</h2>
-          <p>Ta strona jest częścią pełnej mapy serwisu. Teraz ma fundament SEO, CTA i linkowanie; w kolejnych sprintach dostanie pełną treść lub moduł ofertowy.</p>
+          <p>Zanim przejdziesz dalej, sprawdź koszt, warunki, ograniczenia i ryzyko decyzji.</p>
         </div>
         <div class="trust-grid">
           <div><strong>Najpierw zrozum</strong><span>Co wybierasz, jakie są koszty i gdzie są ograniczenia.</span></div>
@@ -739,7 +750,7 @@ function genericPage(page) {
       <section>
         <div class="section-head">
           <h2>Powiązane tematy</h2>
-          <p>Linki są dobierane kontekstowo, żeby użytkownik nie kończył w ślepej uliczce.</p>
+          <p>Sprawdź też tematy, które często pomagają podjąć lepszą decyzję.</p>
         </div>
         <div class="list-grid">${
           genericLinks.length
@@ -765,16 +776,16 @@ function genericPage(page) {
 function offersIndex() {
   return layout({
     url: "/oferty",
-    title: `System ofert | ${data.name}`,
-    description: "Roboczy katalog miejsc na oferty afiliacyjne bez prawdziwych linków partnerów.",
+    title: `Oferty | ${data.name}`,
+    description: "Katalog ofert finansowych i ubezpieczeniowych z oznaczeniem partnerów i podstawowymi warunkami.",
     crumbs: [{ label: "Oferty", url: "/oferty" }],
     body: `<main>
       <section class="hero compact">
         <div class="hero-inner single">
           <div>
-            <div class="eyebrow">System ofert</div>
-            <h1>Miejsca na oferty gotowe pod afiliacje.</h1>
-            <p class="lead">Te karty porządkują dane, ostrzeżenia i CTA zanim dodamy prawdziwe linki partnerów.</p>
+            <div class="eyebrow">Oferty</div>
+            <h1>Oferty, które możesz porównać.</h1>
+            <p class="lead">Sprawdź podstawowe warunki, ryzyka i przejście do partnera.</p>
           </div>
         </div>
       </section>
@@ -790,7 +801,7 @@ function goPage(offer) {
   return layout({
     url: `/go/${offer.slug}`,
     title: `${offer.name} | ${data.name}`,
-    description: `Robocze przejście afiliacyjne dla: ${offer.name}.`,
+    description: `Przejście do partnera dla: ${offer.name}.`,
     noindex: true,
     crumbs: [
       { label: "Oferty", url: "/oferty" },
@@ -800,7 +811,7 @@ function goPage(offer) {
       <section class="hero compact">
         <div class="hero-inner single">
           <div>
-            <div class="eyebrow">Placeholder afiliacyjny</div>
+            <div class="eyebrow">${hasDestination ? "Oferta partnera" : "Oferta w przygotowaniu"}</div>
             <h1>${esc(offer.name)}</h1>
             <p class="lead">${esc(offer.summary)}</p>
             <div class="hero-actions">${cta("Wróć do sekcji", `/${offer.pillar}`, true)}</div>
@@ -809,9 +820,9 @@ function goPage(offer) {
       </section>
       <section class="warning-band">
         <div>
-          <span class="badge">${hasDestination ? "Link afiliacyjny" : "Link niepodpiety"}</span>
-          <h2>${hasDestination ? "Przejście do partnera" : "Tu później trafi prawdziwy link partnera"}</h2>
-          <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki, dostępność i decyzja po stronie banku, pożyczkodawcy, ubezpieczyciela albo operatora mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Na tym etapie nie wysyłamy użytkownika do zewnętrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego."}</p>
+          <span class="badge">${hasDestination ? "Link afiliacyjny" : "Oferta niedostępna"}</span>
+          <h2>${hasDestination ? "Przejście do partnera" : "Ta oferta nie jest teraz dostępna"}</h2>
+          <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki, dostępność i decyzja po stronie banku, pożyczkodawcy, ubezpieczyciela albo operatora mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Ta oferta nie ma jeszcze aktywnego przejścia do partnera. Wróć do katalogu i wybierz inną dostępną propozycję."}</p>
           ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Wróć do ofert", "/oferty", true)}</div>` : ""}
         </div>
       </section>
@@ -855,6 +866,89 @@ function simplePage(url, title, description) {
   });
 }
 
+function faqPage() {
+  const questions = [
+    {
+      title: "Czym jest PraktycznyZysk.pl?",
+      text: "To serwis z praktycznymi poradnikami, kalkulatorami, checklistami i ofertami z obszaru finansów, ubezpieczeń, auta, pracy i domu."
+    },
+    {
+      title: "Czy linki na stronie są afiliacyjne?",
+      text: "Część linków może być afiliacyjna. Jeśli przejdziesz do partnera i skorzystasz z oferty, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie powinny być przez to wyższe."
+    },
+    {
+      title: "Czy korzystanie z serwisu kosztuje?",
+      text: "Nie. Treści, checklisty i kalkulatory dostępne na stronie są bezpłatne."
+    },
+    {
+      title: "Czy warunki ofert mogą się zmienić?",
+      text: "Tak. Premie, prowizje, RRSO, wymagania i dostępność oferty mogą zmienić się po stronie banku, pożyczkodawcy, ubezpieczyciela lub innego partnera. Przed decyzją zawsze sprawdź aktualne warunki u partnera."
+    },
+    {
+      title: "Czy kalkulatory pokazują decyzję banku albo ubezpieczyciela?",
+      text: "Nie. Kalkulatory mają charakter orientacyjny. Pomagają oszacować koszt, ratę, budżet lub ryzyko, ale nie są decyzją kredytową, wyceną ubezpieczenia ani indywidualną poradą."
+    },
+    {
+      title: "Na co uważać przy pożyczkach i chwilówkach?",
+      text: "Sprawdź RRSO, całkowitą kwotę do spłaty, termin, koszt opóźnienia i warunki promocji 0%. Nie bierz pożyczki tylko dlatego, że rata wygląda nisko."
+    },
+    {
+      title: "Jak zgłosić błąd w ofercie?",
+      text: "Napisz na kontakt@praktycznyzysk.pl i podaj nazwę oferty oraz link do strony, na której widzisz błąd."
+    }
+  ];
+  return layout({
+    url: "/faq",
+    title: `FAQ | ${data.name}`,
+    description: "Odpowiedzi na najczęstsze pytania o serwis, oferty, linki afiliacyjne, kalkulatory i bezpieczeństwo decyzji.",
+    crumbs: [{ label: "FAQ", url: "/faq" }],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">FAQ</div>
+            <h1>Najczęstsze pytania</h1>
+            <p class="lead">Krótko i konkretnie: jak działa serwis, na co uważać przy ofertach i gdzie zgłosić błąd.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="legal-list">${questions
+          .map((item) => `<article><h2>${esc(item.title)}</h2><p>${esc(item.text)}</p></article>`)
+          .join("")}</div>
+      </section>
+    </main>`
+  });
+}
+
+function contactPage() {
+  return layout({
+    url: "/kontakt",
+    title: `Kontakt | ${data.name}`,
+    description: "Kontakt w sprawie błędów, współpracy, ofert partnerskich i treści na PraktycznyZysk.pl.",
+    crumbs: [{ label: "Kontakt", url: "/kontakt" }],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Kontakt</div>
+            <h1>Napisz do PraktycznyZysk.pl</h1>
+            <p class="lead">W sprawie współpracy, korekty oferty, zgłoszenia błędu albo kontaktu redakcyjnego napisz na adres:</p>
+            <div class="hero-actions">${cta("kontakt@praktycznyzysk.pl", "mailto:kontakt@praktycznyzysk.pl")}</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="trust-grid">
+          <div><strong>Zgłoszenie błędu</strong><span>Podaj nazwę oferty, adres strony i krótki opis tego, co wymaga poprawy.</span></div>
+          <div><strong>Współpraca</strong><span>Napisz, jakiej kategorii dotyczy propozycja: finanse, ubezpieczenia, auto, praca albo dom.</span></div>
+          <div><strong>Warunki ofert</strong><span>Jeśli pytasz o konkretną ofertę, przed decyzją sprawdź także aktualne warunki bezpośrednio u partnera.</span></div>
+        </div>
+      </section>
+    </main>`
+  });
+}
+
 function legalPage(url, title, description, sections) {
   return layout({
     url,
@@ -893,22 +987,22 @@ if (data.privateMode) {
   writePreviewPage("/oferty", offersIndex());
   for (const offer of offers) writePreviewPage(`/go/${offer.slug}`, goPage(offer));
   for (const page of allPages) writePreviewPage(page.url, genericPage(page));
-  writePreviewPage("/faq", simplePage("/faq", "FAQ", "Krótkie odpowiedzi na najważniejsze pytania o serwis, afiliacje, narzędzia i decyzje."));
+  writePreviewPage("/faq", faqPage());
   writePreviewPage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmować praktyczne decyzje i jasno oznacza, jak zarabia."));
-  writePreviewPage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, współpracę i partnerstwa afiliacyjne."));
+  writePreviewPage("/kontakt", contactPage());
   writePreviewPage(
     "/polityka-prywatnosci",
-    legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przyszłe przekierowania partnerskie.", [
-      { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnętrzne integracje będą dodawane dopiero po wyborze partnerów." },
-      { title: "Kliknięcia i analityka", text: "Serwis przygotowuje lekkie zdarzenia kliknięć CTA i ofert, żeby później mierzyć skuteczność stron. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
-      { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejść do zewnętrznego dostawcy. Warunki prywatności po przejściu określa ten dostawca." }
+    legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przekierowania do partnerów.", [
+      { title: "Zakres danych", text: "Serwis nie wymaga zakładania konta. Jeśli przechodzisz do zewnętrznego partnera, dalsze przetwarzanie danych odbywa się według zasad tego partnera." },
+      { title: "Kliknięcia i analityka", text: "Możemy mierzyć anonimowe kliknięcia w linki i przyciski, żeby poprawiać układ strony. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
+      { title: "Partnerzy", text: "Po kliknięciu linku afiliacyjnego możesz trafić do banku, pożyczkodawcy, ubezpieczyciela albo innego partnera. Warunki prywatności po przejściu określa ten dostawca." }
     ])
   );
   writePreviewPage(
     "/regulamin",
-    legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu przed uruchomieniem prawdziwych ofert afiliacyjnych.", [
+    legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
       { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
-      { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne po ich podpięciu. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
+      { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
       { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
     ])
   );
@@ -930,22 +1024,22 @@ writePage("/oferty", offersIndex());
 for (const offer of offers) writePage(`/go/${offer.slug}`, goPage(offer));
 for (const page of allPages) writePage(page.url, genericPage(page));
 
-writePage("/faq", simplePage("/faq", "FAQ", "Krótkie odpowiedzi na najważniejsze pytania o serwis, afiliacje, narzędzia i decyzje."));
+writePage("/faq", faqPage());
 writePage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmować praktyczne decyzje i jasno oznacza, jak zarabia."));
-writePage("/kontakt", simplePage("/kontakt", "Kontakt", "Miejsce na kontakt, współpracę i partnerstwa afiliacyjne."));
+writePage("/kontakt", contactPage());
 writePage(
   "/polityka-prywatnosci",
-  legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przyszłe przekierowania partnerskie.", [
-    { title: "Zakres danych", text: "Na tym etapie serwis jest statyczny i nie wymaga konta użytkownika. Formularze leadowe i zewnętrzne integracje będą dodawane dopiero po wyborze partnerów." },
-    { title: "Kliknięcia i analityka", text: "Serwis przygotowuje lekkie zdarzenia kliknięć CTA i ofert, żeby później mierzyć skuteczność stron. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
-    { title: "Partnerzy", text: "Po dodaniu prawdziwych linków afiliacyjnych użytkownik może przejść do zewnętrznego dostawcy. Warunki prywatności po przejściu określa ten dostawca." }
+  legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przekierowania do partnerów.", [
+    { title: "Zakres danych", text: "Serwis nie wymaga zakładania konta. Jeśli przechodzisz do zewnętrznego partnera, dalsze przetwarzanie danych odbywa się według zasad tego partnera." },
+    { title: "Kliknięcia i analityka", text: "Możemy mierzyć anonimowe kliknięcia w linki i przyciski, żeby poprawiać układ strony. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
+    { title: "Partnerzy", text: "Po kliknięciu linku afiliacyjnego możesz trafić do banku, pożyczkodawcy, ubezpieczyciela albo innego partnera. Warunki prywatności po przejściu określa ten dostawca." }
   ])
 );
 writePage(
   "/regulamin",
-  legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu przed uruchomieniem prawdziwych ofert afiliacyjnych.", [
+  legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
     { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
-    { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne po ich podpięciu. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
+    { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją użytkownik powinien sprawdzić aktualne warunki bezpośrednio u partnera." },
     { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
   ])
 );

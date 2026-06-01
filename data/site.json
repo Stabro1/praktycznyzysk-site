@@ -288,16 +288,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "mBank - eKonto do usług z premią do 1000 zł i bonami Media Expert. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 1.",
+      "summary": "mBank - eKonto do usług z premią do 1000 zł i bonami Media Expert. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 230/270 zł",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 230/270 zł"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -328,16 +327,15 @@
         "1 transakcja mobilna kartą przez portfel",
         "nowy klient banku"
       ],
-      "summary": "Bank Millennium - Konto Millennium 360 z premią do 900 zł. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 2.",
+      "summary": "Bank Millennium - Konto Millennium 360 z premią do 900 zł. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 180 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 180 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -367,16 +365,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "BNP Paribas - Konto Otwarte na Ciebie. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 3.",
+      "summary": "BNP Paribas - Konto Otwarte na Ciebie. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 160 zł",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 160 zł"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -406,16 +403,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "VeloBank - VeloKonto. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 4.",
+      "summary": "VeloBank - VeloKonto. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 165 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 165 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -445,16 +441,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Nest Bank - Konto osobiste. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 5.",
+      "summary": "Nest Bank - Konto osobiste. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 150 zł",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 150 zł"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -484,16 +479,15 @@
         "karta do rachunku",
         "transakcje kartą na min. 120 zł w 60 dni"
       ],
-      "summary": "PKO BP - Konto za Zero / cashback 900-1200 zł. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 6.",
+      "summary": "PKO BP - Konto za Zero / cashback 900-1200 zł. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 80 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 80 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -524,16 +518,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Erste Bank Polska / Santander BP - Konto Firmowe Online. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 7.",
+      "summary": "Erste Bank Polska / Santander BP - Konto Firmowe Online. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 620 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 620 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -564,16 +557,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "VeloBank - VeloKonto Firma. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 8.",
+      "summary": "VeloBank - VeloKonto Firma. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 555 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 555 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -604,16 +596,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "BNP Paribas - oferta dla przedsiębiorców i spółek. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 9.",
+      "summary": "BNP Paribas - oferta dla przedsiębiorców i spółek. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 520 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 520 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -644,16 +635,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Bank Pekao SA - Konto firmowe / Konto Biznes z Żubrem. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 10.",
+      "summary": "Bank Pekao SA - Konto firmowe / Konto Biznes z Żubrem. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 510 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 510 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -684,16 +674,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Alior Bank - iKonto Biznes. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 11.",
+      "summary": "Alior Bank - iKonto Biznes. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 450 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 450 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -725,16 +714,15 @@
         "działalności rolnicze wykluczone",
         "bez promocji na blogach o promocjach bankowych"
       ],
-      "summary": "Credit Agricole - Konto Biznes z premią do 3260 zł. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 12.",
+      "summary": "Credit Agricole - Konto Biznes z premią do 3260 zł. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 375 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 375 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -768,13 +756,12 @@
       "summary": "Oferta dla osoby, która chce założyć działalność i przejść przez firmootwieracz mBanku.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 372 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 372 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -808,13 +795,12 @@
       "summary": "Osobna oferta dla przedsiębiorcy, który ma już firmę i chce otworzyć konto firmowe w mBanku.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 250 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 250 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -845,16 +831,16 @@
         "poprawne dane",
         "pozytywna decyzja i wypłata środków"
       ],
-      "summary": "Bank Pekao SA - Pożyczka Przekorzystna. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 14.",
+      "summary": "Bank Pekao SA - Pożyczka Przekorzystna. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
         "Rozliczenie: M2M 4,5% CPS",
-        "Fallback/test: https://praktycznyzysk.ebrokerpartner.pl/short/5opy4"
+        "Alternatywa/test: https://praktycznyzysk.ebrokerpartner.pl/short/5opy4"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -884,16 +870,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Bank Pekao SA - Konsolidacja. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 15.",
+      "summary": "Bank Pekao SA - Konsolidacja. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 4,5% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 4,5% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -923,16 +908,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Erste Bank Polska / Santander BP - Kredyt gotówkowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 16.",
+      "summary": "Erste Bank Polska / Santander BP - Kredyt gotówkowy. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 3,5% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 3,5% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -962,16 +946,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Erste Bank Polska / Santander BP - Kredyt konsolidacyjny. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 17.",
+      "summary": "Erste Bank Polska / Santander BP - Kredyt konsolidacyjny. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 3,5% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 3,5% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1001,16 +984,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "VeloBank - Kredyt Gotówkowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 18.",
+      "summary": "VeloBank - Kredyt Gotówkowy. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 2,5% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 2,5% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1040,16 +1022,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "PKO BP - Pożyczka gotówkowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 19.",
+      "summary": "PKO BP - Pożyczka gotówkowa. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 2,5% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 2,5% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1079,16 +1060,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "BNP Paribas - Pierwsza Pożyczka / kredyt gotówkowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 20.",
+      "summary": "BNP Paribas - Pierwsza Pożyczka / kredyt gotówkowy. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 2,4% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 2,4% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1118,16 +1098,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "BNP Paribas - kredyt konsolidacyjny. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 21.",
+      "summary": "BNP Paribas - kredyt konsolidacyjny. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 2,4% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 2,4% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1157,16 +1136,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Alior Bank - Pożyczka Internetowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 22.",
+      "summary": "Alior Bank - Pożyczka Internetowa. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 2,0% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 2,0% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1196,16 +1174,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Alior Bank - Konsolidacja Internetowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 23.",
+      "summary": "Alior Bank - Konsolidacja Internetowa. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 2,0% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 2,0% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1237,16 +1214,16 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Provident - Pożyczka Samoobsługowa Dla Ciebie. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 24.",
+      "summary": "Provident - Pożyczka Samoobsługowa Dla Ciebie. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
         "Rozliczenie: eBroker 336 zł CPS",
-        "Fallback/test: https://tmlead.pl/redirect/880819_3145"
+        "Alternatywa/test: https://tmlead.pl/redirect/880819_3145"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1277,16 +1254,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Wonga - chwilówka / pożyczka na raty. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 25.",
+      "summary": "Wonga - chwilówka / pożyczka na raty. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M do 230 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M do 230 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1317,16 +1293,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Wandoo - pożyczka pozabankowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 26.",
+      "summary": "Wandoo - pożyczka pozabankowa. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 180 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 180 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1357,16 +1332,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Smart Pożyczka - Pożyczka Online. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 27.",
+      "summary": "Smart Pożyczka - Pożyczka Online. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 130 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 130 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1397,16 +1371,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Pożyczkaplus - pożyczka pozabankowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 28.",
+      "summary": "Pożyczkaplus - pożyczka pozabankowa. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 130 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 130 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1437,16 +1410,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Vivigo - pożyczka do 5000 zł RRSO 0%. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 29.",
+      "summary": "Vivigo - pożyczka do 5000 zł RRSO 0%. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 12% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 12% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1477,16 +1449,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Pierwsza pożyczka od 100-3000 zł, kolejna do 8000 zł. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 30.",
+      "summary": "Pierwsza pożyczka od 100-3000 zł, kolejna do 8000 zł. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 166 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 166 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1517,16 +1488,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "200-3000 zł za DARMO. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 31.",
+      "summary": "200-3000 zł za DARMO. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 100 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 100 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1556,16 +1526,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Bank Millennium - Konto oszczędnościowe Profit. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 32.",
+      "summary": "Bank Millennium - Konto oszczędnościowe Profit. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 160 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 160 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1595,16 +1564,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Santander Consumer Bank - Rachunek oszczędnościowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 33.",
+      "summary": "Santander Consumer Bank - Rachunek oszczędnościowy. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 150 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 150 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1634,16 +1602,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "VeloBank - Elastyczne Konto Oszczędnościowe. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 34.",
+      "summary": "VeloBank - Elastyczne Konto Oszczędnościowe. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 135 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 135 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1673,16 +1640,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "VeloBank - Lokata na Nowe Środki. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 35.",
+      "summary": "VeloBank - Lokata na Nowe Środki. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 125 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 125 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1712,16 +1678,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "VeloBank - VeloLokata dla aktywnych. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 36.",
+      "summary": "VeloBank - VeloLokata dla aktywnych. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 125 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 125 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1751,16 +1716,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Santander Consumer Bank - Lokata na nowe środki. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 37.",
+      "summary": "Santander Consumer Bank - Lokata na nowe środki. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M do 185 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M do 185 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1792,16 +1756,15 @@
         "AC od 5%",
         "wniosek przez link partnera"
       ],
-      "summary": "Bezpieczny - Ubezpieczenie samochodu. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 38.",
+      "summary": "Bezpieczny - Ubezpieczenie samochodu. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 5,5% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 5,5% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1835,13 +1798,12 @@
       "summary": "Fallback/test dla lejka OC/AC obok głównego M2M Bezpieczny.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 50 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 50 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1872,16 +1834,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Alternatywa zaufaniowa do kalkulatora Rankomat. Nie jest główną monetyzacją OC.",
+      "summary": "Porównanie ubezpieczenia samochodowego w Rankomat. Może być dodatkową ścieżką sprawdzenia OC/AC obok głównej oferty.",
       "params": [
         "Sieć: Rankomat",
-        "Rozliczenie: Rankomat 9 zł CPA",
-        "Fallback/test: brak"
+        "Rozliczenie: Rankomat 9 zł CPA"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1911,16 +1872,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "BNP Paribas - Karta kredytowa w promocji. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 41.",
+      "summary": "BNP Paribas - Karta kredytowa w promocji. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 190 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 190 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1950,16 +1910,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Bank Pekao SA - Karta Kredytowa z Żubrem. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 42.",
+      "summary": "Bank Pekao SA - Karta Kredytowa z Żubrem. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 180 zł CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 180 zł CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1989,16 +1948,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Bank Pekao SA - Kredyt hipoteczny. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 43.",
+      "summary": "Bank Pekao SA - Kredyt hipoteczny. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: eBroker",
-        "Rozliczenie: eBroker 1,0% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: eBroker 1,0% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -2028,16 +1986,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Bank Millennium - Kredyt hipoteczny. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 44.",
+      "summary": "Bank Millennium - Kredyt hipoteczny. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 0,75% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 0,75% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -2067,16 +2024,15 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "VeloBank - Kredyt hipoteczny VeloDom. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 45.",
+      "summary": "VeloBank - Kredyt hipoteczny VeloDom. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "params": [
         "Sieć: M2M",
-        "Rozliczenie: M2M 0,75% CPS",
-        "Fallback/test: brak"
+        "Rozliczenie: M2M 0,75% CPS"
       ],
       "pros": [
-        "pasuje do intencji użytkownika",
-        "ma gotowy link afiliacyjny",
-        "można testować w rankingu"
+        "pasuje do potrzeb użytkownika",
+        "jasne przejście do partnera",
+        "pasuje do porównania ofert"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -2180,7 +2136,7 @@
       {
         "type": "steps",
         "title": "Jak oceniac konto firmowe z premią",
-        "description": "Ten landing ma być lepszy od zwyklej listy promocji: ma filtrowac oferty po realnym zysku i ryzyku.",
+        "description": "Warto porównać realny zysk, opłaty, wymagane aktywności i ryzyko niespełnienia warunków.",
         "items": [
           {
             "title": "Sprawdź kwalifikacje",
@@ -2227,7 +2183,7 @@
           },
           {
             "title": "Dopiero potem kliknij partnera",
-            "text": "CTA ma prowadzić do rankingu albo partnera, ale po pokazaniu kosztów i ostrzeżeń."
+            "text": "Przejście do oferty powinno pojawić się dopiero po sprawdzeniu kosztów i ostrzeżeń."
           }
         ]
       },
@@ -2471,7 +2427,7 @@
       {
         "type": "cards",
         "title": "Co dalej po historii pojazdu",
-        "description": "Najlepszy flow pod użytkownika i monetyzację.",
+        "description": "Najprostsza ścieżka od sprawdzenia warunków do przejścia do partnera.",
         "items": [
           {
             "title": "Checklista zakupu",
@@ -2752,7 +2708,7 @@
           },
           {
             "title": "Przejdź do partnera",
-            "text": "CTA ma prowadzić do porównania lub formularza, nie do pustej obietnicy."
+            "text": "Przycisk powinien prowadzić do porównania albo formularza, a nie do pustej obietnicy."
           }
         ]
       }
