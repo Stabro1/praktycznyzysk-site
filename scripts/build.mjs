@@ -116,7 +116,7 @@ function breadcrumbs(items = []) {
     .join("")}</nav>`;
 }
 
-function layout({ url = "/", title, description, body, crumbs = [], noindex = false }) {
+function layout({ url = "/", title, description, body, crumbs = [], noindex = false, footerDescription = data.disclosure }) {
   const canonical = `https://${data.domain}${url === "/" ? "/" : url}`;
   return `<!doctype html>
 <html lang="pl">
@@ -145,7 +145,7 @@ function layout({ url = "/", title, description, body, crumbs = [], noindex = fa
     <div class="footer-inner">
       <div>
         <strong>${esc(data.name)}</strong>
-        <p>${esc(data.disclosure)}</p>
+        <p>${esc(footerDescription)}</p>
       </div>
       <div class="footer-links">
         ${data.primaryNav.map((item) => `<a href="${esc(item.url)}">${esc(item.label)}</a>`).join("")}
@@ -862,6 +862,67 @@ function simplePage(url, title, description) {
   });
 }
 
+function aboutPage() {
+  const description =
+    "PraktycznyZysk.pl pomaga szybciej porównać ważne decyzje z obszaru finansów, ubezpieczeń, auta, pracy i domu.";
+  const benefits = [
+    {
+      title: "Mniej chaosu przed decyzją",
+      text: "Zbieramy w jednym miejscu najważniejsze pytania, koszty, warunki i ryzyka, żeby nie trzeba było skakać między dziesiątkami stron."
+    },
+    {
+      title: "Praktyczne porównanie",
+      text: "Pokazujemy, co naprawdę warto sprawdzić: RRSO, ratę, termin spłaty, zakres ochrony, wymagania promocji, koszty po zakupie albo następny krok w procesie."
+    },
+    {
+      title: "Kalkulatory i checklisty",
+      text: "Narzędzia pomagają szybko policzyć orientacyjny koszt, sprawdzić gotowość do decyzji i wyłapać czerwone flagi przed kliknięciem dalej."
+    },
+    {
+      title: "Prosty język",
+      text: "Unikamy lania wody. Strony mają prowadzić do konkretu: co sprawdzić, na co uważać i gdzie przejść, jeśli temat pasuje do Twojej sytuacji."
+    }
+  ];
+  return layout({
+    url: "/o-nas",
+    title: `O nas | ${data.name}`,
+    description,
+    crumbs: [{ label: "O nas", url: "/o-nas" }],
+    footerDescription: "Pomagamy szybciej przechodzić od pytania do konkretnej decyzji: sprawdź koszty, warunki, ryzyka i następny krok.",
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <h1>O nas</h1>
+            <p class="lead">${esc(description)}</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-head">
+          <h2>Co zyskujesz na stronie</h2>
+          <p>PraktycznyZysk.pl ma ułatwiać szybkie, rozsądne decyzje bez przekopywania się przez niepotrzebne treści.</p>
+        </div>
+        <div class="trust-grid">${benefits
+          .map((item) => `<div><strong>${esc(item.title)}</strong><span>${esc(item.text)}</span></div>`)
+          .join("")}</div>
+      </section>
+      <section>
+        <div class="section-head">
+          <h2>Jak pomagamy</h2>
+          <p>Każdy temat staramy się sprowadzić do prostego układu: najważniejsze informacje, ryzyka, narzędzie albo checklista i logiczny następny krok.</p>
+        </div>
+        <div class="list-grid">
+          <a class="list-card" href="/finanse"><strong>Finanse</strong><span>Konta, kredyty, lokaty i pożyczki opisane przez koszty, warunki i sens decyzji.</span></a>
+          <a class="list-card" href="/ubezpieczenia"><strong>Ubezpieczenia</strong><span>OC, AC i porównania zakresu ochrony bez skupiania się wyłącznie na cenie.</span></a>
+          <a class="list-card" href="/auto"><strong>Auto</strong><span>Historia pojazdu, VIN, zakup auta i koszty, które warto sprawdzić przed decyzją.</span></a>
+          <a class="list-card" href="/narzedzia"><strong>Narzędzia</strong><span>Kalkulatory i checklisty, które pomagają szybciej przejść od pytania do konkretu.</span></a>
+        </div>
+      </section>
+    </main>`
+  });
+}
+
 function faqPage() {
   const questions = [
     {
@@ -984,7 +1045,7 @@ if (data.privateMode) {
   for (const offer of offers) writePreviewPage(`/go/${offer.slug}`, goPage(offer));
   for (const page of allPages) writePreviewPage(page.url, genericPage(page));
   writePreviewPage("/faq", faqPage());
-  writePreviewPage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmować praktyczne decyzje i jasno oznacza, jak zarabia."));
+  writePreviewPage("/o-nas", aboutPage());
   writePreviewPage("/kontakt", contactPage());
   writePreviewPage(
     "/polityka-prywatnosci",
@@ -1021,7 +1082,7 @@ for (const offer of offers) writePage(`/go/${offer.slug}`, goPage(offer));
 for (const page of allPages) writePage(page.url, genericPage(page));
 
 writePage("/faq", faqPage());
-writePage("/o-nas", simplePage("/o-nas", "O nas", "PraktycznyZysk.pl pomaga podejmować praktyczne decyzje i jasno oznacza, jak zarabia."));
+writePage("/o-nas", aboutPage());
 writePage("/kontakt", contactPage());
 writePage(
   "/polityka-prywatnosci",
