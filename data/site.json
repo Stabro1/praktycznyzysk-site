@@ -4,10 +4,10 @@
   "domain": "praktycznyzysk.pl",
   "tagline": "Praktyczne decyzje, które pomagają oszczędzać, zarabiać i nie przepłacać.",
   "description": "Finanse, ubezpieczenia, auto, praca i dom - prosto, konkretnie, bez lania wody.",
-  "lastUpdated": "2026-05-30",
-  "privateMode": true,
+  "lastUpdated": "2026-06-01",
+  "privateMode": false,
   "previewBase": "/podglad-stabro",
-  "disclosure": "Część linków może być afiliacyjna. Nie jesteśmy bankiem, ubezpieczycielem ani kancelarią. Pokażujemy informacje, narzędzia i linki do partnerów, a warunki zawsze sprawdzasz u dostawcy.",
+  "disclosure": "Część linków jest afiliacyjna. Możemy otrzymać prowizję, jeśli przejdziesz do partnera i spełnisz warunki programu. Nie jesteśmy bankiem, pożyczkodawcą, ubezpieczycielem ani doradcą finansowym. Przed decyzją zawsze sprawdź aktualne warunki u dostawcy.",
   "primaryNav": [
     {
       "label": "Finanse",
@@ -267,45 +267,955 @@
   ],
   "offers": [
     {
-      "slug": "kredyt-gotowkowy-demo",
-      "name": "Kredyt gotówkowy - miejsce na partnera",
+      "slug": "mbank-ekonto-do-uslug-premia",
+      "name": "mBank - eKonto do usług z premią do 1000 zł i bonami Media Expert",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "do 1000 zł + 200 zł w bonach",
+      "payout": "M2M 230/270 zł",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3114",
+      "difficulty": "Łatwy",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba prywatna szukająca konta z premią",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "mBank - eKonto do usług z premią do 1000 zł i bonami Media Expert. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 1.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 230/270 zł",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "millennium-konto-360-premia-900",
+      "name": "Bank Millennium - Konto Millennium 360 z premią do 900 zł",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "do 900 zł",
+      "payout": "eBroker 180 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz8",
+      "difficulty": "Łatwy",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "konto z kartą",
+        "wpływ 500 zł dla 18-25 albo 1000 zł dla 26+",
+        "1 transakcja mobilna kartą przez portfel",
+        "nowy klient banku"
+      ],
+      "summary": "Bank Millennium - Konto Millennium 360 z premią do 900 zł. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 2.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 180 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "bnp-konto-otwarte-na-ciebie",
+      "name": "BNP Paribas - Konto Otwarte na Ciebie",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "premia konta osobistego",
+      "payout": "M2M 160 zł",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_383",
+      "difficulty": "Łatwy",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "BNP Paribas - Konto Otwarte na Ciebie. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 3.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 160 zł",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "velobank-velokonto",
+      "name": "VeloBank - VeloKonto",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "premia konta osobistego",
+      "payout": "eBroker 165 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opza",
+      "difficulty": "Łatwy",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "VeloBank - VeloKonto. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 4.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 165 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "nest-bank-konto-osobiste",
+      "name": "Nest Bank - Konto osobiste",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "konto osobiste",
+      "payout": "M2M 150 zł",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2353",
+      "difficulty": "Łatwy",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Nest Bank - Konto osobiste. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 5.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 150 zł",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "pko-konto-za-zero-allegro",
+      "name": "PKO BP - Konto za Zero / cashback 900-1200 zł",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "do 900-1200 zł cashbacku",
+      "payout": "M2M 80 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3123",
+      "difficulty": "Łatwy",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "założenie Konto za Zero",
+        "karta do rachunku",
+        "transakcje kartą na min. 120 zł w 60 dni"
+      ],
+      "summary": "PKO BP - Konto za Zero / cashback 900-1200 zł. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 6.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 80 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "erste-santander-konto-firmowe-online",
+      "name": "Erste Bank Polska / Santander BP - Konto Firmowe Online",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "konto firmowe / premia firmowa",
+      "payout": "M2M 620 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3085",
+      "difficulty": "Średni",
+      "time": "20 min + aktywność firmowa",
+      "deadline": "sprawdź u partnera",
+      "audience": "przedsiębiorca lub JDG",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Erste Bank Polska / Santander BP - Konto Firmowe Online. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 7.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 620 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "velobank-velokonto-firma",
+      "name": "VeloBank - VeloKonto Firma",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "konto firmowe",
+      "payout": "eBroker 555 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzc",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "firma lub JDG",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "VeloBank - VeloKonto Firma. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 8.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 555 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "bnp-oferta-dla-przedsiebiorcow-spolek",
+      "name": "BNP Paribas - oferta dla przedsiębiorców i spółek",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "konto/oferta firmowa",
+      "payout": "M2M 520 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3142",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "przedsiębiorca lub spółka",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "BNP Paribas - oferta dla przedsiębiorców i spółek. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 9.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 520 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "pekao-konto-biznes-z-zubrem",
+      "name": "Bank Pekao SA - Konto firmowe / Konto Biznes z Żubrem",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "konto firmowe",
+      "payout": "M2M 510 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_1929",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "firma lub JDG",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Bank Pekao SA - Konto firmowe / Konto Biznes z Żubrem. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 10.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 510 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "alior-ikonto-biznes",
+      "name": "Alior Bank - iKonto Biznes",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "konto firmowe",
+      "payout": "eBroker 450 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opze",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "firma lub JDG",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Alior Bank - iKonto Biznes. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 11.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 450 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "credit-agricole-konto-biznes-3260",
+      "name": "Credit Agricole - Konto Biznes z premią do 3260 zł",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "premia do 3260 zł",
+      "payout": "M2M 375 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2397",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "firma poza działalnością rolniczą",
+      "conditions": [
+        "konto założone przez Call Center",
+        "lead musi być dodzwoniony",
+        "działalności rolnicze wykluczone",
+        "bez promocji na blogach o promocjach bankowych"
+      ],
+      "summary": "Credit Agricole - Konto Biznes z premią do 3260 zł. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 12.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 375 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Promować ostrożnie jako konto firmowe Credit Agricole, nie jako zarabianie na promocjach bankowych."
+    },
+    {
+      "slug": "mbank-firmootwieracz",
+      "name": "mBank - firmootwieracz / mBiznes",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "otwarcie firmy przez mBank",
+      "payout": "eBroker 372 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzk",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba, która dopiero zakłada działalność",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Oferta dla osoby, która chce założyć działalność i przejść przez firmootwieracz mBanku.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 372 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "mbank-konto-firmowe-istniejaca-firma",
+      "name": "mBank - konto firmowe dla istniejącej firmy",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "konto firmowe mBank",
+      "payout": "eBroker 250 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzm",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba, która już ma firmę",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Osobna oferta dla przedsiębiorcy, który ma już firmę i chce otworzyć konto firmowe w mBanku.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 250 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "pekao-pozyczka-przekorzystna",
+      "name": "Bank Pekao SA - Pożyczka Przekorzystna",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "do uzupełnienia",
+      "reward": "pożyczka gotówkowa",
+      "payout": "M2M 4,5% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2053",
+      "fallbackUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opy4",
       "difficulty": "Średni",
-      "time": "15-30 min",
-      "deadline": "do uzupełnienia",
-      "audience": "osoba szukająca finansowania",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba szukająca kredytu gotówkowego",
       "conditions": [
-        "RRSO i koszt całkowity",
-        "zdolność kredytowa",
-        "akceptacja banku"
+        "wniosek przez link",
+        "poprawne dane",
+        "pozytywna decyzja i wypłata środków"
       ],
-      "summary": "Placeholder pod ofertę kredytu gotówkowego z widocznym RRSO, rata, okresem i całkowita kwota do spłaty.",
+      "summary": "Bank Pekao SA - Pożyczka Przekorzystna. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 14.",
       "params": [
-        "RRSO: do uzupełnienia",
-        "Rata: zależy od kwoty i okresu",
-        "Okres: do uzupełnienia",
-        "Koszt całkowity: do uzupełnienia"
+        "Sieć: M2M",
+        "Rozliczenie: M2M 4,5% CPS",
+        "Fallback/test: https://praktycznyzysk.ebrokerpartner.pl/short/5opy4"
       ],
       "pros": [
-        "jasne miejsce na koszt",
-        "pasuje do kalkulatora raty",
-        "gotowe pod ranking"
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
       ],
       "cons": [
-        "brak realnej oferty bez partnera",
-        "wymaga aktualizacji warunków"
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "To nie jest oferta kredytowa ani decyzja banku. Link partnera zostanie dodany później."
+      "warning": "Porównaj RRSO, całkowity koszt i ratę przed złożeniem wniosku."
     },
     {
-      "slug": "chwilowka-demo",
-      "name": "Chwilówka - miejsce na partnera",
+      "slug": "pekao-konsolidacja",
+      "name": "Bank Pekao SA - Konsolidacja",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "kredyt konsolidacyjny",
+      "payout": "eBroker 4,5% CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opy6",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba chcąca połączyć zobowiązania",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Bank Pekao SA - Konsolidacja. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 15.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 4,5% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Konsolidacja obniża ratę tylko wtedy, gdy całkowity koszt i okres są sensowne."
+    },
+    {
+      "slug": "erste-santander-kredyt-gotowkowy",
+      "name": "Erste Bank Polska / Santander BP - Kredyt gotówkowy",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "kredyt gotówkowy",
+      "payout": "M2M 3,5% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3102",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Erste Bank Polska / Santander BP - Kredyt gotówkowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 16.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 3,5% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "erste-santander-kredyt-konsolidacyjny",
+      "name": "Erste Bank Polska / Santander BP - Kredyt konsolidacyjny",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "kredyt konsolidacyjny",
+      "payout": "M2M 3,5% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3087",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Erste Bank Polska / Santander BP - Kredyt konsolidacyjny. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 17.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 3,5% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "velobank-kredyt-gotowkowy",
+      "name": "VeloBank - Kredyt Gotówkowy",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "kredyt gotówkowy",
+      "payout": "M2M 2,5% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2650",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "VeloBank - Kredyt Gotówkowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 18.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 2,5% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "pko-pozyczka-gotowkowa",
+      "name": "PKO BP - Pożyczka gotówkowa",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "pożyczka gotówkowa",
+      "payout": "M2M 2,5% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_680",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "PKO BP - Pożyczka gotówkowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 19.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 2,5% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "bnp-pierwsza-pozyczka",
+      "name": "BNP Paribas - Pierwsza Pożyczka / kredyt gotówkowy",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "pożyczka / kredyt gotówkowy",
+      "payout": "M2M 2,4% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2702",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "BNP Paribas - Pierwsza Pożyczka / kredyt gotówkowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 20.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 2,4% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "bnp-kredyt-konsolidacyjny",
+      "name": "BNP Paribas - kredyt konsolidacyjny",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "kredyt konsolidacyjny",
+      "payout": "M2M 2,4% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2047",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "BNP Paribas - kredyt konsolidacyjny. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 21.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 2,4% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "alior-pozyczka-internetowa",
+      "name": "Alior Bank - Pożyczka Internetowa",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "pożyczka internetowa",
+      "payout": "M2M 2,0% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2139",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Alior Bank - Pożyczka Internetowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 22.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 2,0% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "alior-konsolidacja-internetowa",
+      "name": "Alior Bank - Konsolidacja Internetowa",
+      "category": "credit",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/ranking-kredytow-gotowkowych"
+      ],
+      "reward": "konsolidacja internetowa",
+      "payout": "M2M 2,0% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2476",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Alior Bank - Konsolidacja Internetowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 23.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 2,0% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "provident-pozyczka-samoobslugowa",
+      "name": "Provident - Pożyczka Samoobsługowa Dla Ciebie",
       "category": "payday",
       "pillar": "finanse",
       "pages": [
@@ -313,115 +1223,554 @@
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "do uzupełnienia",
+      "reward": "pożyczka online",
+      "payout": "eBroker 336 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opya",
+      "fallbackUrl": "https://tmlead.pl/redirect/880819_3145",
       "difficulty": "Ryzykowny",
-      "time": "10-20 min",
-      "deadline": "do uzupełnienia",
-      "audience": "tylko osoba z pewną spłatą",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba, która ma pewny plan spłaty",
       "conditions": [
-        "terminowa spłata",
-        "koszt po terminie",
-        "brak rolowania długu"
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
       ],
-      "summary": "Placeholder pod krótka pożyczkę z terminem spłaty, kosztem po terminie i warunkami promocji 0%.",
+      "summary": "Provident - Pożyczka Samoobsługowa Dla Ciebie. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 24.",
       "params": [
-        "RRSO: do uzupełnienia",
-        "Termin: do uzupełnienia",
-        "0%: tylko jeśli partner potwierdzi",
-        "Koszt po terminie: wymagany"
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 336 zł CPS",
+        "Fallback/test: https://tmlead.pl/redirect/880819_3145"
       ],
       "pros": [
-        "oddzielony lejek chwilówek",
-        "mocne ostrzeżenie ryzyka",
-        "gotowe pod checklistę"
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
       ],
       "cons": [
-        "wysokie ryzyko przy opóźnieniu",
-        "nie dla rolowania długów"
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Chwilówka bez pewnej spłaty jest ryzykowna. Nie bierz jej na spłatę innej chwilówki."
+      "warning": "Nie bierz pożyczki na spłatę innej pożyczki. Sprawdź koszt po terminie i plan spłaty."
     },
     {
-      "slug": "konto-z-premia-demo",
-      "name": "Konto z premią - miejsce na partnera",
-      "category": "account",
+      "slug": "wonga-pozyczka-na-raty",
+      "name": "Wonga - chwilówka / pożyczka na raty",
+      "category": "payday",
       "pillar": "finanse",
       "pages": [
-        "/finanse/konta-z-premia",
-        "/finanse/ranking-kont-z-premia"
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "do uzupełnienia",
-      "difficulty": "Łatwy",
-      "time": "10-20 min",
-      "deadline": "do uzupełnienia",
-      "audience": "osoba prywatna",
+      "reward": "pożyczka online",
+      "payout": "M2M do 230 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2471",
+      "difficulty": "Ryzykowny",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "otwarcie konta",
-        "płatności kartą lub BLIK",
-        "zgody i aktywność"
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
       ],
-      "summary": "Placeholder pod konto osobiste z premią, opłatami i warunkami aktywności.",
+      "summary": "Wonga - chwilówka / pożyczka na raty. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 25.",
       "params": [
-        "Premia: do uzupełnienia",
-        "Opłata za konto: do uzupełnienia",
-        "Warunki aktywności: wymagane"
+        "Sieć: M2M",
+        "Rozliczenie: M2M do 230 zł CPS",
+        "Fallback/test: brak"
       ],
       "pros": [
-        "dobry produkt pod social",
-        "niskie ryzyko decyzji",
-        "łatwe warunki do pokazania"
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
       ],
       "cons": [
-        "premie mają terminy",
-        "warunki trzeba aktualizowac"
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Premia ma sens tylko wtedy, gdy warunki aktywności są realne do spełnienia."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
     },
     {
-      "slug": "erste-konto-firmowe-4500",
-      "name": "Erste Konto Firmowe Online - premia do 4500 zł",
-      "category": "business-account",
+      "slug": "wandoo-pozyczka-pozabankowa",
+      "name": "Wandoo - pożyczka pozabankowa",
+      "category": "payday",
       "pillar": "finanse",
       "pages": [
-        "/finanse/konta-firmowe",
-        "/finanse/konta-firmowe-z-premia",
-        "/finanse/konta-z-premia",
-        "/finanse/ranking-kont-firmowych"
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "do 4500 zł",
+      "reward": "pożyczka pozabankowa",
+      "payout": "M2M 180 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3001",
+      "difficulty": "Ryzykowny",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Wandoo - pożyczka pozabankowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 26.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 180 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "smart-pozyczka-online",
+      "name": "Smart Pożyczka - Pożyczka Online",
+      "category": "payday",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
+      ],
+      "reward": "pożyczka online",
+      "payout": "M2M 130 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_953",
+      "difficulty": "Ryzykowny",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Smart Pożyczka - Pożyczka Online. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 27.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 130 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "pozyczkaplus",
+      "name": "Pożyczkaplus - pożyczka pozabankowa",
+      "category": "payday",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
+      ],
+      "reward": "pożyczka pozabankowa",
+      "payout": "M2M 130 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_862",
+      "difficulty": "Ryzykowny",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Pożyczkaplus - pożyczka pozabankowa. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 28.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 130 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "vivigo-pozyczka-rrso-0",
+      "name": "Vivigo - pożyczka do 5000 zł RRSO 0%",
+      "category": "payday",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
+      ],
+      "reward": "pożyczka do 5000 zł",
+      "payout": "M2M 12% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2712",
+      "difficulty": "Ryzykowny",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Vivigo - pożyczka do 5000 zł RRSO 0%. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 29.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 12% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "RRSO 0% zwykle wymaga pierwszej pożyczki i terminowej spłaty. Sprawdź koszt po terminie."
+    },
+    {
+      "slug": "pierwsza-pozyczka-100-3000",
+      "name": "Pierwsza pożyczka od 100-3000 zł, kolejna do 8000 zł",
+      "category": "payday",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
+      ],
+      "reward": "pożyczka online",
+      "payout": "eBroker 166 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opyo",
+      "difficulty": "Ryzykowny",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Pierwsza pożyczka od 100-3000 zł, kolejna do 8000 zł. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 30.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 166 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "pozyczka-200-3000-za-darmo",
+      "name": "200-3000 zł za DARMO",
+      "category": "payday",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/chwilowki",
+        "/finanse/ranking-chwilowek",
+        "/finanse/kredyt-vs-chwilowka"
+      ],
+      "reward": "pożyczka 0 zł",
+      "payout": "eBroker 100 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opyq",
+      "difficulty": "Ryzykowny",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "200-3000 zł za DARMO. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 31.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 100 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Darmowa pożyczka jest darmowa tylko przy spełnieniu warunków i terminowej spłacie."
+    },
+    {
+      "slug": "millennium-konto-oszczednosciowe-profit",
+      "name": "Bank Millennium - Konto oszczędnościowe Profit",
+      "category": "savings",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/lokaty",
+        "/finanse/ranking-lokat"
+      ],
+      "reward": "konto oszczędnościowe",
+      "payout": "M2M 160 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2698",
       "difficulty": "Średni",
-      "time": "20 min start + 3 miesiące aktywności",
-      "deadline": "30.09.2026",
-      "audience": "JDG bez konta firmowego Erste/Santander w ostatnich 12 miesiącach",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba szukająca konta oszczędnościowego",
       "conditions": [
-        "3 x 1500 zł",
-        "wpływ min. 5000 zł miesięcznie",
-        "ZUS min. 100 zł",
-        "5 płatności kartą/BLIK po min. 50 zł",
-        "zgody marketingowe"
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
       ],
-      "summary": "Placeholder pod kampanie Erste dla JDG: promocja konta firmowego z premią do 4500 zł, po spełnieniu miesięcznych warunków aktywności.",
+      "summary": "Bank Millennium - Konto oszczędnościowe Profit. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 32.",
       "params": [
-        "Premia: 3 x 1500 zł",
-        "Okres przystapienia: 01.05-30.09.2026",
-        "Dla kogo: JDG",
-        "Wplyw: min. 5000 zł miesięcznie"
+        "Sieć: M2M",
+        "Rozliczenie: M2M 160 zł CPS",
+        "Fallback/test: brak"
       ],
       "pros": [
-        "bardzo mocny haczyk marketingowy",
-        "wysoka premią dla aktywnej JDG",
-        "pasuje do sociali o firmie i kosztach"
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
       ],
       "cons": [
-        "nie jest to konto osobiste",
-        "wymaga ZUS, wpływu i płatności",
-        "nagroda jest przychódem firmy"
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Oferta dotyczy konta firmowego dla JDG. Nie prezentować jej jako zwykłe konto osobiste z premią."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
     },
     {
-      "slug": "oc-ac-demo",
-      "name": "OC/AC - miejsce na porównywarkę",
+      "slug": "santander-consumer-rachunek-oszczednosciowy",
+      "name": "Santander Consumer Bank - Rachunek oszczędnościowy",
+      "category": "savings",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/lokaty",
+        "/finanse/ranking-lokat"
+      ],
+      "reward": "rachunek oszczędnościowy",
+      "payout": "M2M 150 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2159",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Santander Consumer Bank - Rachunek oszczędnościowy. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 33.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 150 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "velobank-elastyczne-konto-oszczednosciowe",
+      "name": "VeloBank - Elastyczne Konto Oszczędnościowe",
+      "category": "savings",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/lokaty",
+        "/finanse/ranking-lokat"
+      ],
+      "reward": "konto oszczędnościowe",
+      "payout": "M2M 135 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2655",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "VeloBank - Elastyczne Konto Oszczędnościowe. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 34.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 135 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "velobank-lokata-na-nowe-srodki",
+      "name": "VeloBank - Lokata na Nowe Środki",
+      "category": "savings",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/lokaty",
+        "/finanse/ranking-lokat"
+      ],
+      "reward": "lokata",
+      "payout": "M2M 125 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2656",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "VeloBank - Lokata na Nowe Środki. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 35.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 125 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "velobank-velolokata-dla-aktywnych",
+      "name": "VeloBank - VeloLokata dla aktywnych",
+      "category": "savings",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/lokaty",
+        "/finanse/ranking-lokat"
+      ],
+      "reward": "lokata",
+      "payout": "M2M 125 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2895",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "VeloBank - VeloLokata dla aktywnych. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 36.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 125 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "santander-consumer-lokata-nowe-srodki",
+      "name": "Santander Consumer Bank - Lokata na nowe środki",
+      "category": "savings",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/lokaty",
+        "/finanse/ranking-lokat"
+      ],
+      "reward": "lokata",
+      "payout": "M2M do 185 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2447",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Santander Consumer Bank - Lokata na nowe środki. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 37.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M do 185 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "bezpieczny-ubezpieczenie-samochodu",
+      "name": "Bezpieczny - Ubezpieczenie samochodu",
       "category": "insurance",
       "pillar": "ubezpieczenia",
       "pages": [
@@ -429,107 +1778,311 @@
         "/ubezpieczenia/porownywarka",
         "/ubezpieczenia/ranking-oc"
       ],
-      "reward": "wycena u partnera",
+      "reward": "wycena OC/AC",
+      "payout": "M2M 5,5% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2213",
       "difficulty": "Średni",
-      "time": "5-10 min",
-      "deadline": "zależy od końca polisy",
-      "audience": "właściciel auta",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "właściciel auta szukający OC/AC",
       "conditions": [
-        "dane auta",
-        "historia kierowcy",
-        "zakres OC/AC"
+        "OC: 5,5% CPS",
+        "Assistance/NNW od 11%",
+        "AC od 5%",
+        "wniosek przez link partnera"
       ],
-      "summary": "Placeholder pod porównywarkę OC/AC lub partnera ubezpieczeniowego z jasnym zakresem ochrony.",
+      "summary": "Bezpieczny - Ubezpieczenie samochodu. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 38.",
       "params": [
-        "OC: obowiązkowe",
-        "AC: zakres do porównania",
-        "Assistance: do sprawdzenia",
-        "Wycena: u partnera"
+        "Sieć: M2M",
+        "Rozliczenie: M2M 5,5% CPS",
+        "Fallback/test: brak"
       ],
       "pros": [
-        "naturalny lejek po zakupie auta",
-        "wysoka intencja użytkownika",
-        "łatwe przejście z kalkulatora OC"
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
       ],
       "cons": [
-        "bez integracji nie pokazujemy składki",
-        "AC wymaga czytania wykluczeń"
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Nie pokazujemy fikcyjnej składki bez danych użytkownika i integracji z partnerem."
+      "warning": "Zakres OC, AC, assistance i wyłączenia sprawdź u partnera przed zakupem polisy."
     },
     {
-      "slug": "kreator-cv-demo",
-      "name": "Kreator CV - miejsce na partnera",
-      "category": "work",
-      "pillar": "praca",
+      "slug": "ebroker-ubezpieczenie-oc-ac",
+      "name": "Ubezpieczenie OC / AC OC",
+      "category": "insurance",
+      "pillar": "ubezpieczenia",
       "pages": [
-        "/praca/kreator-cv",
-        "/praca/wzory-cv",
-        "/praca/cv"
+        "/ubezpieczenia/oc-ac",
+        "/ubezpieczenia/porownywarka",
+        "/ubezpieczenia/ranking-oc"
       ],
-      "reward": "do uzupełnienia",
-      "difficulty": "Łatwy",
-      "time": "10-30 min",
-      "deadline": "brak",
-      "audience": "osoba szukająca pracy",
+      "reward": "zakup ubezpieczenia",
+      "payout": "eBroker 50 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz0",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wybor szablonu",
-        "uzupełnienie danych",
-        "eksport dokumentu"
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
       ],
-      "summary": "Placeholder pod kreator CV, wzory dokumentów albo automatyczne narzędzie do aplikowania.",
+      "summary": "Fallback/test dla lejka OC/AC obok głównego M2M Bezpieczny.",
       "params": [
-        "Cena: do uzupełnienia",
-        "Szablony: do uzupełnienia",
-        "Eksport PDF: wymagany"
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 50 zł CPS",
+        "Fallback/test: brak"
       ],
       "pros": [
-        "dobry produkt pod social",
-        "szybka decyzja zakupowa",
-        "pasuje do checklisty rozmowy"
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
       ],
       "cons": [
-        "wymaga oceny jakosci szablonow",
-        "nie każdy potrzebuje płatnego kreatora"
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Kreator pomaga, ale nie zastąpi dopasowania CV do konkretnej oferty pracy."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
     },
     {
-      "slug": "fotowoltaika-demo",
-      "name": "Fotowoltaika/OZE - miejsce na lead",
-      "category": "home",
-      "pillar": "dom",
+      "slug": "rankomat-ubezpieczenie-samochodowe",
+      "name": "Rankomat - Ubezpieczenie samochodowe",
+      "category": "insurance",
+      "pillar": "ubezpieczenia",
       "pages": [
-        "/dom/fotowoltaika",
-        "/dom/fotowoltaika-czy-warto",
-        "/dom/oze"
+        "/ubezpieczenia/oc-ac",
+        "/ubezpieczenia/porownywarka",
+        "/ubezpieczenia/ranking-oc"
       ],
-      "reward": "wycena/leadowanie",
-      "difficulty": "Wysoki",
-      "time": "kontakt i wycena",
-      "deadline": "zależy od programu",
-      "audience": "właściciel domu lub firmy",
+      "reward": "porównywarka OC/AC",
+      "payout": "Rankomat 9 zł CPA",
+      "network": "Rankomat",
+      "affiliateUrl": "https://partner.rankomat.pl/tracking/click/3e22b3e174305fe1b4fca547cf5208b3",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "zużycie energii",
-        "warunki montazu",
-        "aktualne dofinansowania"
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
       ],
-      "summary": "Placeholder pod lead OZE z kosztem, pytaniami do wykonawcy i ostrzeżeniem przed zbyt szybką decyzją.",
+      "summary": "Alternatywa zaufaniowa do kalkulatora Rankomat. Nie jest główną monetyzacją OC.",
       "params": [
-        "Koszt instalacji: do wyceny",
-        "Zwrot: zależy od zużycia",
-        "Dofinansowanie: do sprawdzenia"
+        "Sieć: Rankomat",
+        "Rozliczenie: Rankomat 9 zł CPA",
+        "Fallback/test: brak"
       ],
       "pros": [
-        "wysoka wartość leada",
-        "dobry temat poradnikowy",
-        "pasuje do kalkulacji budżetu"
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
       ],
       "cons": [
-        "duża decyzja finansowa",
-        "wymaga aktualnych warunków i wycen"
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Nie obiecujemy zwrotu bez danych o zużyciu, cenach energii, dachu i warunkach programu."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "bnp-karta-kredytowa-promocja",
+      "name": "BNP Paribas - Karta kredytowa w promocji",
+      "category": "credit-card",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/karty",
+        "/finanse/ranking-kart"
+      ],
+      "reward": "karta kredytowa",
+      "payout": "M2M 190 zł CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2457",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "BNP Paribas - Karta kredytowa w promocji. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 41.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 190 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Karta kredytowa ma sens tylko przy spłacie w terminie. Sprawdź opłaty i warunki zwolnienia z opłaty."
+    },
+    {
+      "slug": "pekao-karta-kredytowa-z-zubrem",
+      "name": "Bank Pekao SA - Karta Kredytowa z Żubrem",
+      "category": "credit-card",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/karty",
+        "/finanse/ranking-kart"
+      ],
+      "reward": "karta kredytowa",
+      "payout": "eBroker 180 zł CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz2",
+      "difficulty": "Średni",
+      "time": "5-20 min",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba zainteresowana ofertą",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Bank Pekao SA - Karta Kredytowa z Żubrem. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 42.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 180 zł CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Sprawdź opłatę za kartę, okres bezodsetkowy i koszt zadłużenia po terminie."
+    },
+    {
+      "slug": "pekao-kredyt-hipoteczny",
+      "name": "Bank Pekao SA - Kredyt hipoteczny",
+      "category": "mortgage",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/rankingi"
+      ],
+      "reward": "kredyt hipoteczny",
+      "payout": "eBroker 1,0% CPS",
+      "network": "eBroker",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz4",
+      "difficulty": "Średni",
+      "time": "wniosek + analiza banku",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba szukająca kredytu hipotecznego",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Bank Pekao SA - Kredyt hipoteczny. Wybrana sieć: eBroker. Pozycja z finalnej listy afiliacyjnej: 43.",
+      "params": [
+        "Sieć: eBroker",
+        "Rozliczenie: eBroker 1,0% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Kredyt hipoteczny to duża decyzja. Porównaj RRSO, marżę, prowizję, ubezpieczenia i całkowity koszt."
+    },
+    {
+      "slug": "millennium-kredyt-hipoteczny",
+      "name": "Bank Millennium - Kredyt hipoteczny",
+      "category": "mortgage",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/rankingi"
+      ],
+      "reward": "kredyt hipoteczny",
+      "payout": "M2M 0,75% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_2374",
+      "difficulty": "Średni",
+      "time": "wniosek + analiza banku",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba szukająca kredytu hipotecznego",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "Bank Millennium - Kredyt hipoteczny. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 44.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 0,75% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Prowizja liczona od udzielonego kredytu, ale użytkownik powinien patrzeć przede wszystkim na całkowity koszt finansowania."
+    },
+    {
+      "slug": "velobank-kredyt-hipoteczny-velodom",
+      "name": "VeloBank - Kredyt hipoteczny VeloDom",
+      "category": "mortgage",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/rankingi"
+      ],
+      "reward": "kredyt hipoteczny",
+      "payout": "M2M 0,75% CPS",
+      "network": "M2M",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3042",
+      "difficulty": "Średni",
+      "time": "wniosek + analiza banku",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba szukająca kredytu hipotecznego",
+      "conditions": [
+        "wejście przez link partnera",
+        "poprawne dane we wniosku",
+        "spełnienie warunków programu"
+      ],
+      "summary": "VeloBank - Kredyt hipoteczny VeloDom. Wybrana sieć: M2M. Pozycja z finalnej listy afiliacyjnej: 45.",
+      "params": [
+        "Sieć: M2M",
+        "Rozliczenie: M2M 0,75% CPS",
+        "Fallback/test: brak"
+      ],
+      "pros": [
+        "pasuje do intencji użytkownika",
+        "ma gotowy link afiliacyjny",
+        "można testować w rankingu"
+      ],
+      "cons": [
+        "warunki mogą się zmienić",
+        "ostateczna decyzja zależy od partnera"
+      ],
+      "warning": "Sprawdź wymagany wkład własny, RRSO, marżę, prowizję, ubezpieczenia i warunki wcześniejszej spłaty."
     }
   ],
   "pageContent": {

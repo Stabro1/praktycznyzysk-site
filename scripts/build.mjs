@@ -215,7 +215,7 @@ function offerCard(offer) {
       .join("")}</div>
     <div class="disclosure-box">
       <strong>Oznaczenie</strong>
-      <span>To miejsce pod przyszły link afiliacyjny. Warunki, prowizje i dostawca muszą być sprawdzone przed publikacją prawdziwego linku.</span>
+      <span>${offer.affiliateUrl ? "Link może być afiliacyjny. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." : "To miejsce pod przyszły link afiliacyjny. Warunki, prowizje i dostawca muszą być sprawdzone przed publikacją prawdziwego linku."}</span>
     </div>
     <dl class="offer-params">${(offer.params || [])
       .map((param) => {
@@ -228,7 +228,7 @@ function offerCard(offer) {
       <div><strong>Uwaga</strong><p>${esc(offer.warning)}</p></div>
     </div>
     <div class="update-stamp">Aktualizacja: ${esc(data.lastUpdated)}</div>
-    ${cta("Zobacz miejsce na link", `/go/${offer.slug}`)}
+    ${cta(offer.affiliateUrl ? "Przejdź do oferty" : "Zobacz miejsce na link", `/go/${offer.slug}`)}
   </article>`;
 }
 
@@ -806,6 +806,7 @@ function offersIndex() {
 }
 
 function goPage(offer) {
+  const hasDestination = Boolean(offer.affiliateUrl);
   return layout({
     url: `/go/${offer.slug}`,
     title: `${offer.name} | ${data.name}`,
@@ -828,9 +829,10 @@ function goPage(offer) {
       </section>
       <section class="warning-band">
         <div>
-          <span class="badge">Link niepodpiety</span>
-          <h2>Tu później trafi prawdziwy link partnera</h2>
-          <p>Na tym etapie nie wysyłamy użytkownika do zewnętrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego.</p>
+          <span class="badge">${hasDestination ? "Link afiliacyjny" : "Link niepodpiety"}</span>
+          <h2>${hasDestination ? "Przejście do partnera" : "Tu później trafi prawdziwy link partnera"}</h2>
+          <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki, dostępność i decyzja po stronie banku, pożyczkodawcy, ubezpieczyciela albo operatora mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Na tym etapie nie wysyłamy użytkownika do zewnętrznej oferty. Strona jest gotowa pod tracking, UTM i finalny URL partnera, ale destination zostanie dodany dopiero po wyborze programu afiliacyjnego."}</p>
+          ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Wróć do ofert", "/oferty", true)}</div>` : ""}
         </div>
       </section>
       <section>
