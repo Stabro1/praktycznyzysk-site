@@ -2337,7 +2337,7 @@
           },
           {
             "title": "Przejdź do porównywarki",
-            "text": "Jeśli mamy partnera, kierujemy do porównania. Jeśli nie, nie udajemy realnej wyceny."
+            "text": "Po kliknięciu przechodzisz do partnera, gdzie możesz uzupełnić dane i sprawdzić aktualne propozycje OC/AC."
           }
         ]
       },
@@ -2414,26 +2414,31 @@
     "/ubezpieczenia/porownywarka": [
       {
         "type": "steps",
-        "title": "Jak ma działać porównywarka",
-        "description": "Na tym etapie nie udajemy wlasnej integracji, jeśli jej nie ma. Pokażujemy jasny handoff do partnera.",
+        "title": "Jak skorzystać z porównywarki ubezpieczeń",
+        "description": "Porównywarka ma pomóc szybko przejść do ofert OC/AC u partnera i sprawdzić cenę oraz zakres na podstawie danych auta i kierowcy.",
         "items": [
           {
-            "title": "Zbierz dane auta",
-            "text": "Marka, model, rok, pojemność, kod pocztowy, historia szkód i data końca polisy."
+            "title": "Przygotuj dane auta",
+            "text": "Marka, model, rok, pojemność, kod pocztowy, historia szkód i data końca obecnej polisy ułatwią wyliczenie składki."
           },
           {
-            "title": "Pokaż disclosure",
-            "text": "Przed przejściem dalej sprawdź, że oferta jest obsługiwana przez partnera."
+            "title": "Uzupełnij formularz u partnera",
+            "text": "Po kliknięciu przechodzisz do partnera, który obsługuje porównanie i pokazuje aktualne propozycje ubezpieczeń."
           },
           {
-            "title": "Porównaj zakres",
-            "text": "Cena to nie wszystko. Przy AC i assistance zakres decyduje o sensie oferty."
+            "title": "Porównaj cenę i zakres",
+            "text": "Przy OC ważna jest cena, ale przy AC i assistance sprawdź też wyłączenia, limity, udział własny i sposób naprawy."
           },
           {
-            "title": "Przejdź do partnera",
-            "text": "Przycisk powinien prowadzić do porównania albo formularza, a nie do pustej obietnicy."
+            "title": "Sprawdź warunki przed zakupem",
+            "text": "Przed opłaceniem polisy upewnij się, że dane są poprawne, zakres pasuje do auta, a cena jest aktualna."
           }
         ]
+      },
+      {
+        "type": "warning",
+        "title": "Cena to nie wszystko przy OC/AC",
+        "text": "Najtańsze OC może wystarczyć wielu kierowcom, ale przy pakietach z AC, assistance albo NNW warto sprawdzić zakres ochrony i limity świadczeń."
       }
     ],
     "/ubezpieczenia/ranking-oc": [
@@ -2692,6 +2697,126 @@
           "czy produkt pasuje do Twojej sytuacji"
         ]
       }
+    ],
+    "/praca/rozmowa-kwalifikacyjna": [
+      {
+        "type": "steps",
+        "title": "Jak przygotować się do rozmowy kwalifikacyjnej",
+        "description": "Ta strona ma pomóc przed realną rozmową: co sprawdzić, jak ułożyć odpowiedzi i o co zapytać pracodawcę.",
+        "items": [
+          {
+            "title": "Przeczytaj ogłoszenie jeszcze raz",
+            "text": "Wypisz wymagania, obowiązki i narzędzia. Przygotuj po jednym przykładzie z doświadczenia do najważniejszych punktów."
+          },
+          {
+            "title": "Przygotuj krótką opowieść o sobie",
+            "text": "W 60-90 sekundach powiedz, kim jesteś zawodowo, jakie masz doświadczenie i dlaczego ta rola ma sens."
+          },
+          {
+            "title": "Zbierz konkretne przykłady",
+            "text": "Przygotuj sytuacje o sukcesie, problemie, konflikcie, błędzie i pracy zespołowej. Odpowiadaj konkretnie, nie ogólnikami."
+          },
+          {
+            "title": "Sprawdź firmę i warunki",
+            "text": "Zobacz czym zajmuje się firma, jak wygląda stanowisko, model pracy, widełki, benefity i kolejne etapy rekrutacji."
+          }
+        ]
+      },
+      {
+        "type": "checklist",
+        "title": "Lista przed rozmową",
+        "description": "Szybka kontrola w dniu rozmowy.",
+        "items": [
+          "masz przygotowane 3-5 przykładów z doświadczenia",
+          "znasz najważniejsze wymagania z ogłoszenia",
+          "masz pytania o zakres obowiązków, zespół, wynagrodzenie i kolejne etapy",
+          "wiesz, jak dołączysz do rozmowy online albo gdzie masz przyjechać",
+          "CV, portfolio i notatki są pod ręką"
+        ]
+      }
+    ],
+    "/praca/pytania-na-rozmowie-kwalifikacyjnej": [
+      {
+        "type": "cards",
+        "title": "Najczęstsze pytania na rozmowie kwalifikacyjnej",
+        "description": "Nie chodzi o uczenie się odpowiedzi na pamięć. Przygotuj krótkie, prawdziwe przykłady.",
+        "items": [
+          {
+            "title": "Opowiedz coś o sobie",
+            "text": "Powiedz krótko o doświadczeniu, mocnych stronach i tym, dlaczego pasujesz do tej roli."
+          },
+          {
+            "title": "Dlaczego chcesz zmienić pracę?",
+            "text": "Skup się na rozwoju, zakresie obowiązków i dopasowaniu, bez atakowania poprzedniego pracodawcy."
+          },
+          {
+            "title": "Jakie są Twoje mocne strony?",
+            "text": "Wybierz 2-3 cechy i podeprzyj je konkretną sytuacją z pracy."
+          },
+          {
+            "title": "Jakie masz oczekiwania finansowe?",
+            "text": "Podaj przemyślany zakres i powiedz, od czego zależy finalna kwota, np. zakresu odpowiedzialności."
+          }
+        ]
+      },
+      {
+        "type": "steps",
+        "title": "Jak odpowiadać konkretnie",
+        "description": "Najprostszy schemat: sytuacja, działanie, efekt.",
+        "items": [
+          {
+            "title": "Sytuacja",
+            "text": "Krótko wyjaśnij kontekst: projekt, problem, zespół albo cel."
+          },
+          {
+            "title": "Działanie",
+            "text": "Powiedz, co konkretnie zrobiłeś lub zrobiłaś, a nie tylko co robił cały zespół."
+          },
+          {
+            "title": "Efekt",
+            "text": "Dodaj wynik: liczby, oszczędność czasu, poprawę procesu, dowieziony termin albo wniosek."
+          }
+        ]
+      }
+    ],
+    "/praca/jak-odpowiadac-na-pytania-rekrutera": [
+      {
+        "type": "steps",
+        "title": "Jak odpowiadać na pytania rekrutera",
+        "description": "Dobre odpowiedzi są krótkie, konkretne i oparte na faktach. Unikaj pustych haseł typu „jestem komunikatywny”.",
+        "items": [
+          {
+            "title": "Zacznij od sedna",
+            "text": "Najpierw odpowiedz wprost, potem dodaj przykład. Rekruter nie powinien czekać kilku minut na główną myśl."
+          },
+          {
+            "title": "Używaj przykładów",
+            "text": "Jedna konkretna sytuacja jest lepsza niż lista cech. Pokaż problem, działanie i efekt."
+          },
+          {
+            "title": "Nie ukrywaj trudnych tematów",
+            "text": "Przerwę w pracy, zmianę branży albo konflikt wyjaśnij spokojnie i rzeczowo."
+          },
+          {
+            "title": "Zakończ wnioskiem",
+            "text": "Powiedz, czego się nauczyłeś i jak to pomoże w nowej roli."
+          }
+        ]
+      }
+    ],
+    "/praca/checklista-rozmowa-o-prace": [
+      {
+        "type": "checklist",
+        "title": "Checklista przed rozmową o pracę",
+        "description": "Przejdź przez tę listę dzień wcześniej albo rano przed rozmową.",
+        "items": [
+          "przeczytaj ogłoszenie i zaznacz najważniejsze wymagania",
+          "przygotuj krótką autoprezentację",
+          "wypisz przykłady sukcesów, problemów i pracy zespołowej",
+          "sprawdź firmę, produkt, branżę i opinie o rekrutacji",
+          "przygotuj pytania o obowiązki, zespół, wynagrodzenie i kolejne etapy"
+        ]
+      }
     ]
   },
   "sitemapSections": [
@@ -2704,8 +2829,11 @@
       "pages": [
         {
           "url": "/finanse/konta-z-premia",
-          "title": "Konta z premią",
-          "description": "Premie, opłaty, warunki aktywności i kiedy konto faktycznie się opłaća."
+          "title": "Konta osobiste z premią",
+          "description": "Konta osobiste z premią: bonusy, opłaty, warunki aktywności i wejście przez link partnerski.",
+          "type": "ranking",
+          "cta": "Zobacz konta osobiste",
+          "ctaUrl": "/finanse/konta-z-premia"
         },
         {
           "url": "/finanse/konta-firmowe",
@@ -2716,7 +2844,9 @@
           "url": "/finanse/konta-firmowe-z-premia",
           "title": "Konta firmowe z premią",
           "type": "ranking",
-          "description": "Ranking najmocniejszych premii dla JDG z warunkami, trudnośćia i terminem."
+          "description": "Konta firmowe z premią dla JDG i firm: kwoty bonusów, warunki, opłaty i terminy promocji.",
+          "cta": "Zobacz konta firmowe",
+          "ctaUrl": "/finanse/konta-firmowe-z-premia"
         },
         {
           "url": "/finanse/lokaty",
@@ -2878,9 +3008,11 @@
         },
         {
           "url": "/ubezpieczenia/porownywarka",
-          "title": "Porównywarka ubezpieczen",
+          "title": "Porównywarka ubezpieczeń",
           "type": "comparison",
-          "description": "Porównanie ofert partnerów z jasnym disclosure i przekazaniem do dostawcy."
+          "description": "Porównanie OC/AC u partnera: cena, zakres, assistance, wyłączenia i przejście do formularza.",
+          "cta": "Porównaj OC/AC",
+          "ctaUrl": "/ubezpieczenia/porownywarka"
         },
         {
           "url": "/ubezpieczenia/rankingi",
@@ -3121,23 +3253,31 @@
         {
           "url": "/praca/rozmowa-kwalifikacyjna",
           "title": "Rozmowa kwalifikacyjna",
-          "description": "Pytania, odpowiedzi, przygotowanie i co sprawdzić przed rozmową."
+          "description": "Pytania, odpowiedzi, przygotowanie i co sprawdzić przed rozmową.",
+          "cta": "Czytaj poradnik",
+          "ctaUrl": "/praca/rozmowa-kwalifikacyjna"
         },
         {
           "url": "/praca/pytania-na-rozmowie-kwalifikacyjnej",
           "title": "Pytania na rozmowie kwalifikacyjnej",
-          "description": "Najczęstsze pytania rekrutera i jak odpowiadać konkretnie."
+          "description": "Najczęstsze pytania rekrutera i jak odpowiadać konkretnie.",
+          "cta": "Zobacz pytania",
+          "ctaUrl": "/praca/pytania-na-rozmowie-kwalifikacyjnej"
         },
         {
           "url": "/praca/jak-odpowiadac-na-pytania-rekrutera",
           "title": "Jak odpowiadać na pytania rekrutera",
-          "description": "Schematy odpowiedzi, przykłady i błędy."
+          "description": "Schematy odpowiedzi, przykłady i błędy.",
+          "cta": "Zobacz schemat",
+          "ctaUrl": "/praca/jak-odpowiadac-na-pytania-rekrutera"
         },
         {
           "url": "/praca/checklista-rozmowa-o-prace",
           "title": "Checklista rozmowa o pracę",
           "type": "checklist",
-          "description": "CV, pytania, odpowiedzi, oczekiwania i pytania do pracodawcy."
+          "description": "CV, pytania, odpowiedzi, oczekiwania i pytania do pracodawcy.",
+          "cta": "Sprawdź checklistę",
+          "ctaUrl": "/praca/checklista-rozmowa-o-prace"
         },
         {
           "url": "/praca/jak-negocjowac-wynagrodzenie",
