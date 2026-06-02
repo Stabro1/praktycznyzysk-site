@@ -233,6 +233,44 @@ function relatedOffersFor(page) {
   return offers.filter((offer) => offer.pages?.includes(page.url)).slice(0, 3);
 }
 
+const fallbackOfferPages = {
+  finanse: ["/finanse/kredyty-gotowkowe", "/finanse/konta-z-premia", "/finanse/chwilowki"],
+  ubezpieczenia: ["/ubezpieczenia/oc-ac"],
+  auto: ["/ubezpieczenia/oc-ac", "/finanse/kredyty-gotowkowe"],
+  praca: ["/finanse/konta-z-premia", "/finanse/konta-firmowe"],
+  dom: ["/finanse/kredyty-gotowkowe", "/finanse/rankingi", "/ubezpieczenia/oc-ac"]
+};
+
+function finalOffersFor({ page, pillarSlug, limit = 3 } = {}) {
+  const direct = page ? relatedOffersFor(page) : [];
+  if (direct.length) return direct.slice(0, limit);
+  const slug = pillarSlug || page?.pillar;
+  const targetPages = fallbackOfferPages[slug] || ["/oferty"];
+  const seen = new Set();
+  const result = [];
+  for (const targetPage of targetPages) {
+    for (const offer of offers) {
+      if (seen.has(offer.slug)) continue;
+      if (!offer.pages?.includes(targetPage)) continue;
+      seen.add(offer.slug);
+      result.push(offer);
+      if (result.length >= limit) return result;
+    }
+  }
+  return result;
+}
+
+function offerSection(offerList, { title = "Polecane oferty", description = "Na końcu tej ścieżki możesz porównać konkretne propozycje i przejść do partnera." } = {}) {
+  if (!offerList.length) return "";
+  return `<section>
+        <div class="section-head">
+          <h2>${esc(title)}</h2>
+          <p>${esc(description)}</p>
+        </div>
+        <div class="offer-grid">${offerList.map((offer) => offerCard(offer)).join("")}</div>
+      </section>`;
+}
+
 function linkList(links) {
   return `<div class="quick-links">${links
     .map((link) => `<a href="${esc(link.url)}">${esc(link.label)}</a>`)
@@ -329,8 +367,8 @@ function trustBlock() {
 function affiliateDisclosureBlock() {
   return `<section class="affiliate-disclosure">
     <div>
-      <span class="badge">Disclosure</span>
-      <h2>Jak zarabia serwis</h2>
+      <span class="badge">Informacja</span>
+      <h2>Przejście do partnera</h2>
       <p>${esc(data.disclosure)}</p>
       <p>Kliknięcie w link partnera może oznaczać prowizję dla serwisu. Nie zmienia to ceny po Twojej stronie, ale przed decyzją zawsze sprawdź aktualne warunki u dostawcy.</p>
     </div>
@@ -390,6 +428,7 @@ function pillarPage(pillar) {
     .filter((tool) => tool.next.includes(pillar.slug) || (pillar.slug === "auto" && tool.slug.includes("auta")) || (pillar.slug === "dom" && tool.slug.includes("remont")))
     .slice(0, 4);
   const pages = allPages.filter((page) => page.pillar === pillar.slug);
+  const finalOffers = finalOffersFor({ pillarSlug: pillar.slug });
 
   return layout({
     url: `/${pillar.slug}`,
@@ -432,10 +471,18 @@ function pillarPage(pillar) {
         </div>
         <div class="grid">${relatedTools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("") || card({ name: "Narzędzia", description: "Zobacz wszystkie kalkulatory i checklisty.", url: "/narzedzia", cta: "Przejdź" })}</div>
       </section>
+      ${offerSection(finalOffers, {
+        title: "Oferty na końcu ścieżki",
+        description: "Jeśli chcesz przejść od poradnika do działania, zacznij od tych propozycji."
+      })}
+      ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${nextStepBlock({
         title: "Najlepszy następny krok",
         description: "Najczęściej wybierane przejścia w tej kategorii.",
-        links: pillar.priorityLinks.map((link) => ({ ...link, note: "Najważniejsza ścieżka w tej sekcji" }))
+        links: [
+          ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
+          ...pillar.priorityLinks.map((link) => ({ ...link, note: "Przejdź do tematu" }))
+        ].slice(0, 4)
       })}
     </main>`
   });
@@ -558,7 +605,7 @@ function toolCalculatorScript(slug, type) {
         show(title, [
           "Zaznaczone punkty: " + checked + " z " + total + ".",
           ratio === 1 ? "Możesz przejść do następnego kroku." : "Uzupełnij brakujące punkty przed decyzją.",
-          "To checklista kontrolna, nie indywidualna porada."
+          "To szybka checklista do sprawdzenia najważniejszych punktów."
         ]);
         return;
       }
@@ -643,6 +690,8 @@ function toolPage(tool) {
     { label: "Wróć do narzędzi", url: "/narzedzia", note: "Zobacz pozostałe kalkulatory i checklisty" },
     { label: "Przejdź do wyniku", url: tool.next, note: "Najbliższy krok po użyciu narzędzia" }
   ];
+  const nextPage = pageByUrl.get(tool.next);
+  const finalOffers = finalOffersFor({ page: nextPage, pillarSlug: nextPage?.pillar });
   return layout({
     url: `/narzedzia/${tool.slug}`,
     title: `${tool.name} | ${data.name}`,
@@ -681,8 +730,16 @@ function toolPage(tool) {
       ${nextStepBlock({
         title: "Powiązane przejścia",
         description: "Po wyniku możesz przejść do poradnika, checklisty albo porównania ofert.",
-        links: related
+        links: [
+          ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
+          ...related
+        ].slice(0, 4)
       })}
+      ${offerSection(finalOffers, {
+        title: "Oferty po użyciu narzędzia",
+        description: "Po obliczeniu wyniku możesz przejść do konkretnych propozycji i sprawdzić warunki u partnera."
+      })}
+      ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${toolCalculatorScript(tool.slug, model.type)}
     </main>`
   });
@@ -692,6 +749,7 @@ function genericPage(page) {
   const pillar = pillarBySlug.get(page.pillar);
   const contentBlocks = data.pageContent?.[page.url] || [];
   const pageOffers = relatedOffersFor(page);
+  const finalOffers = finalOffersFor({ page, pillarSlug: page.pillar });
   const sectionLinks = pillar?.priorityLinks || [];
   const relatedTools = data.tools
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
@@ -721,18 +779,13 @@ function genericPage(page) {
       </section>
       ${sectionNav(pillar)}
       ${renderContentBlocks(contentBlocks)}
-      ${
-        pageOffers.length
-          ? `<section>
-        <div class="section-head">
-          <h2>Polecane oferty</h2>
-          <p>Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty.</p>
-        </div>
-        <div class="offer-grid">${pageOffers.map((offer) => offerCard(offer)).join("")}</div>
-      </section>`
-          : ""
-      }
-      ${pageOffers.length ? affiliateDisclosureBlock() : ""}
+      ${offerSection(finalOffers, {
+        title: pageOffers.length ? "Polecane oferty" : "Oferty na końcu ścieżki",
+        description: pageOffers.length
+          ? "Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty."
+          : "Ta strona prowadzi dalej do propozycji, które możesz porównać i sprawdzić u partnera."
+      })}
+      ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       <section>
         <div class="section-head">
           <h2>Najważniejsze zasady</h2>
@@ -762,9 +815,10 @@ function genericPage(page) {
       </section>
       ${nextStepBlock({
         links: [
+          ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
           { label: page.cta, url: page.ctaUrl, note: "Główny następny krok tej strony" },
           ...(pillar ? [{ label: `Wróć do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz całą sekcję" }] : [])
-        ]
+        ].slice(0, 4)
       })}
     </main>`
   });
@@ -944,7 +998,7 @@ function faqPage() {
     },
     {
       title: "Czy kalkulatory pokazują decyzję banku albo ubezpieczyciela?",
-      text: "Nie. Kalkulatory mają charakter orientacyjny. Pomagają oszacować koszt, ratę, budżet lub ryzyko, ale nie są decyzją kredytową, wyceną ubezpieczenia ani indywidualną poradą."
+      text: "Nie. Kalkulatory pomagają oszacować koszt, ratę, budżet lub ryzyko. Przed wyborem oferty sprawdź szczegóły bezpośrednio u partnera."
     },
     {
       title: "Na co uważać przy pożyczkach i chwilówkach?",
@@ -1059,9 +1113,9 @@ if (data.privateMode) {
   writePreviewPage(
     "/regulamin",
     legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
-      { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
+      { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne przejścia do partnerów." },
       { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
-      { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
+      { title: "Narzędzia", text: "Kalkulatory i checklisty pomagają uporządkować dane przed wyborem oferty. Wynik traktuj jako punkt startowy do sprawdzenia warunków u partnera." }
     ])
   );
   fs.writeFileSync(path.join(dist, "404.html"), privatePage());
@@ -1096,9 +1150,9 @@ writePage(
 writePage(
   "/regulamin",
   legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
-    { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia orientacyjne, checklisty i porównania. Serwis nie jest bankiem, ubezpieczycielem, doradcą finansowym, poradą prawną ani podatkową." },
+    { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne przejścia do partnerów." },
     { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
-    { title: "Narzędzia", text: "Kalkulatory i checklisty mają charakter orientacyjny. Wynik nie jest decyzją kredytową, wycena ubezpieczenia ani indywidualna porada." }
+    { title: "Narzędzia", text: "Kalkulatory i checklisty pomagają uporządkować dane przed wyborem oferty. Wynik traktuj jako punkt startowy do sprawdzenia warunków u partnera." }
   ])
 );
 

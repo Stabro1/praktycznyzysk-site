@@ -7,7 +7,7 @@
   "lastUpdated": "2026-06-01",
   "privateMode": false,
   "previewBase": "/podglad-stabro",
-  "disclosure": "Część linków jest afiliacyjna. Możemy otrzymać prowizję, jeśli przejdziesz do partnera i spełnisz warunki programu. Nie jesteśmy bankiem, pożyczkodawcą, ubezpieczycielem ani doradcą finansowym. Przed decyzją zawsze sprawdź aktualne warunki u dostawcy.",
+  "disclosure": "Część linków prowadzi do partnerów. Jeśli skorzystasz z oferty po takim przejściu, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie powinny być przez to wyższe.",
   "primaryNav": [
     {
       "label": "Finanse",
@@ -97,16 +97,16 @@
           "url": "/auto/historia-pojazdu"
         },
         {
-          "label": "VIN",
-          "url": "/auto/vin"
+          "label": "Jak sprawdzić auto",
+          "url": "/auto/jak-sprawdzic-auto"
+        },
+        {
+          "label": "OC/AC po zakupie auta",
+          "url": "/ubezpieczenia/oc-ac"
         },
         {
           "label": "Checklista zakupu",
           "url": "/narzedzia/checklista-zakup-auta"
-        },
-        {
-          "label": "Jak sprawdzić auto",
-          "url": "/auto/jak-sprawdzic-auto"
         }
       ]
     },
@@ -122,16 +122,16 @@
           "url": "/praca/kreator-cv"
         },
         {
-          "label": "Wzory CV",
-          "url": "/praca/wzory-cv"
-        },
-        {
           "label": "Rozmowa kwalifikacyjna",
           "url": "/praca/rozmowa-kwalifikacyjna"
         },
         {
-          "label": "Kalkulator wynagrodzenia",
-          "url": "/praca/kalkulator-wynagrodzenia"
+          "label": "Konta z premią",
+          "url": "/finanse/konta-z-premia"
+        },
+        {
+          "label": "Konta firmowe",
+          "url": "/finanse/konta-firmowe"
         }
       ]
     },
@@ -151,12 +151,12 @@
           "url": "/narzedzia/checklista-remont"
         },
         {
-          "label": "Fotowoltaika",
-          "url": "/dom/fotowoltaika"
+          "label": "Finansowanie remontu",
+          "url": "/finanse/kredyty-gotowkowe"
         },
         {
-          "label": "Finansowanie domu",
-          "url": "/dom/finansowanie-domu"
+          "label": "Ubezpieczenie auta i domu",
+          "url": "/ubezpieczenia/oc-ac"
         }
       ]
     }
@@ -232,7 +232,7 @@
       "slug": "budzet-domowy",
       "name": "Budżet domowy",
       "description": "Nadwyżka, deficyt i bezpieczny limit rat.",
-      "next": "/narzedzia/kalkulator-zdolnosci-kredytowej"
+      "next": "/finanse/kredyty-gotowkowe"
     },
     {
       "slug": "checklista-kredyt",
@@ -250,19 +250,19 @@
       "slug": "checklista-zakup-auta",
       "name": "Checklista zakup auta",
       "description": "VIN, historia pojazdu, oględziny, OC/AC i finansowanie.",
-      "next": "/auto/historia-pojazdu"
+      "next": "/ubezpieczenia/oc-ac"
     },
     {
       "slug": "checklista-rozmowa-kwalifikacyjna",
       "name": "Checklista rozmowa kwalifikacyjna",
       "description": "CV, odpowiedzi, pytania do pracodawcy i oczekiwania.",
-      "next": "/praca/rozmowa-kwalifikacyjna"
+      "next": "/finanse/konta-z-premia"
     },
     {
       "slug": "checklista-remont",
       "name": "Checklista remont",
       "description": "Zakres, budżet, rezerwa, wykonawca, umowa i finansowanie.",
-      "next": "/dom/remont"
+      "next": "/finanse/kredyty-gotowkowe"
     }
   ],
   "offers": [
