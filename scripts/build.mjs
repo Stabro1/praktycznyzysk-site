@@ -213,12 +213,6 @@ function offerCard(offer) {
     <div class="offer-meta">${meta
       .map((item) => `<div><span>${esc(item.label)}</span><strong>${esc(item.value)}</strong></div>`)
       .join("")}</div>
-    <dl class="offer-params">${(offer.params || [])
-      .map((param) => {
-        const [key, ...rest] = String(param).split(":");
-        return `<div><dt>${esc(key)}</dt><dd>${esc(rest.join(":").trim() || "do uzupełnienia")}</dd></div>`;
-      })
-      .join("")}</dl>
     <div class="offer-split">
       <div><strong>Warunki</strong><ul>${(offer.conditions || offer.pros || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
       <div><strong>Uwaga</strong><p>${esc(offer.warning)}</p></div>
@@ -314,11 +308,11 @@ function renderContentBlocks(blocks = []) {
 function trustBlock() {
   return `<section class="band">
     <div class="section-head">
-      <h2>Jak trzymamy zaufanie</h2>
-      <p>Pokazujemy darmowe opcje, oznaczamy afiliację i nie udajemy indywidualnej porady finansowej, prawnej ani ubezpieczeniowej.</p>
+      <h2>Jak pomagamy wybierać rozsądniej</h2>
+      <p>Porządkujemy najważniejsze informacje, koszty i ryzyka, żeby łatwiej przejść od pytania do konkretnej decyzji.</p>
     </div>
     <div class="trust-grid">
-      <div><strong>Darmowe najpierw</strong><span>Jeśli istnieje sensowne darmowe źródło, pokazujemy je przed płatnym.</span></div>
+      <div><strong>Najpierw konkret</strong><span>Pokazujemy najważniejsze warunki, koszty i ograniczenia bez zbędnego szukania.</span></div>
       <div><strong>Ryzyko widoczne</strong><span>Przy drogich decyzjach pokazujemy koszty, warunki i kiedy uważać.</span></div>
       <div><strong>Jasny następny krok</strong><span>Po przeczytaniu strony wiesz, co sprawdzić dalej i gdzie przejść.</span></div>
     </div>

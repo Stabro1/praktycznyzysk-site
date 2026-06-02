@@ -391,32 +391,6 @@ main section { padding: 48px 0; }
   line-height: 1.4;
 }
 
-.offer-params {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  margin: 0;
-}
-
-.offer-params div {
-  padding: 10px;
-  border-radius: 8px;
-  background: var(--soft);
-}
-
-.offer-params dt {
-  color: var(--brand-dark);
-  font-size: 12px;
-  font-weight: 900;
-}
-
-.offer-params dd {
-  margin: 3px 0 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.35;
-}
-
 .offer-split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -748,7 +722,6 @@ input[type="checkbox"] {
   .grid,
   .offer-grid,
   .offer-meta,
-  .offer-params,
   .offer-split,
   .list-grid,
   .check-grid,
