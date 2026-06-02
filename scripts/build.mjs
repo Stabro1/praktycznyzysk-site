@@ -260,7 +260,7 @@ function finalOffersFor({ page, pillarSlug, limit = 3 } = {}) {
   return result;
 }
 
-function offerSection(offerList, { title = "Polecane oferty", description = "Na końcu tej ścieżki możesz porównać konkretne propozycje i przejść do partnera." } = {}) {
+function offerSection(offerList, { title = "Sprawdź dostępne propozycje", description = "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji." } = {}) {
   if (!offerList.length) return "";
   return `<section>
         <div class="section-head">
@@ -472,8 +472,8 @@ function pillarPage(pillar) {
         <div class="grid">${relatedTools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("") || card({ name: "Narzędzia", description: "Zobacz wszystkie kalkulatory i checklisty.", url: "/narzedzia", cta: "Przejdź" })}</div>
       </section>
       ${offerSection(finalOffers, {
-        title: "Oferty na końcu ścieżki",
-        description: "Jeśli chcesz przejść od poradnika do działania, zacznij od tych propozycji."
+        title: "Sprawdź dostępne propozycje",
+        description: "Porównaj podstawowe warunki i wybierz ofertę, która najlepiej pasuje do Twojej sytuacji."
       })}
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${nextStepBlock({
@@ -736,8 +736,8 @@ function toolPage(tool) {
         ].slice(0, 4)
       })}
       ${offerSection(finalOffers, {
-        title: "Oferty po użyciu narzędzia",
-        description: "Po obliczeniu wyniku możesz przejść do konkretnych propozycji i sprawdzić warunki u partnera."
+        title: "Propozycje dopasowane do tematu",
+        description: "Po sprawdzeniu wyniku możesz porównać oferty i przejść do wybranej propozycji."
       })}
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${toolCalculatorScript(tool.slug, model.type)}
@@ -780,10 +780,10 @@ function genericPage(page) {
       ${sectionNav(pillar)}
       ${renderContentBlocks(contentBlocks)}
       ${offerSection(finalOffers, {
-        title: pageOffers.length ? "Polecane oferty" : "Oferty na końcu ścieżki",
+        title: pageOffers.length ? "Polecane oferty" : "Sprawdź dostępne propozycje",
         description: pageOffers.length
           ? "Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty."
-          : "Ta strona prowadzi dalej do propozycji, które możesz porównać i sprawdzić u partnera."
+          : "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji."
       })}
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       <section>
