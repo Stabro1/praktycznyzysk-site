@@ -275,7 +275,7 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "do 1000 zł + 200 zł w bonach",
+      "reward": "do 1000 zł premii + 200 zł w bonach Media Expert",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3114",
       "difficulty": "Łatwy",
       "time": "5-20 min",
@@ -307,7 +307,7 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "do 900 zł",
+      "reward": "do 900 zł premii za spełnienie warunków promocji",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz8",
       "difficulty": "Łatwy",
       "time": "5-20 min",
@@ -340,7 +340,7 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "premia konta osobistego",
+      "reward": "premia za otwarcie konta i spełnienie warunków promocji",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_383",
       "difficulty": "Łatwy",
       "time": "5-20 min",
@@ -372,7 +372,7 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "premia konta osobistego",
+      "reward": "premia za VeloKonto po spełnieniu warunków promocji",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opza",
       "difficulty": "Łatwy",
       "time": "5-20 min",
@@ -404,7 +404,7 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "konto osobiste",
+      "reward": "proste konto osobiste do codziennych płatności",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2353",
       "difficulty": "Łatwy",
       "time": "5-20 min",
@@ -436,7 +436,7 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "do 900-1200 zł cashbacku",
+      "reward": "do 900-1200 zł cashbacku za spełnienie warunków",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3123",
       "difficulty": "Łatwy",
       "time": "5-20 min",
@@ -469,7 +469,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto firmowe / premia firmowa",
+      "reward": "konto firmowe online z możliwą premią po spełnieniu warunków",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3085",
       "difficulty": "Średni",
       "time": "20 min + aktywność firmowa",
@@ -502,7 +502,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto firmowe",
+      "reward": "konto firmowe dla JDG lub firmy",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzc",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -535,7 +535,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto/oferta firmowa",
+      "reward": "oferta bankowa dla przedsiębiorców i spółek",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3142",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -568,7 +568,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto firmowe",
+      "reward": "konto firmowe / Konto Biznes z Żubrem",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_1929",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -601,7 +601,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto firmowe",
+      "reward": "iKonto Biznes dla firmy lub JDG",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opze",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -634,7 +634,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "premia do 3260 zł",
+      "reward": "premia do 3260 zł dla firmy po spełnieniu warunków",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2397",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -668,7 +668,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "otwarcie firmy przez mBank",
+      "reward": "otwarcie działalności i konta firmowego przez mBank",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzk",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -701,7 +701,7 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto firmowe mBank",
+      "reward": "konto firmowe mBank dla istniejącej firmy",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzm",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -733,7 +733,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "pożyczka gotówkowa",
+      "reward": "finansowanie gotówkowe - sprawdź ratę, RRSO i całkowity koszt",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2053",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -765,7 +765,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "kredyt konsolidacyjny",
+      "reward": "połączenie kilku zobowiązań w jeden kredyt konsolidacyjny",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opy6",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -797,7 +797,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "kredyt gotówkowy",
+      "reward": "kredyt gotówkowy - sprawdź ratę i koszt u partnera",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3102",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -829,7 +829,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "kredyt konsolidacyjny",
+      "reward": "kredyt konsolidacyjny do połączenia zobowiązań",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3087",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -861,7 +861,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "kredyt gotówkowy",
+      "reward": "kredyt gotówkowy - sprawdź dostępne warunki",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2650",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -893,7 +893,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "pożyczka gotówkowa",
+      "reward": "pożyczka gotówkowa - sprawdź ratę i koszt",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_680",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -925,7 +925,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "pożyczka / kredyt gotówkowy",
+      "reward": "pierwsza pożyczka / kredyt gotówkowy - sprawdź warunki",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2702",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -957,7 +957,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "kredyt konsolidacyjny",
+      "reward": "kredyt konsolidacyjny - jedna rata zamiast kilku zobowiązań",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2047",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -989,7 +989,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "pożyczka internetowa",
+      "reward": "pożyczka internetowa - wniosek online",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2139",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1021,7 +1021,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "konsolidacja internetowa",
+      "reward": "konsolidacja internetowa - sprawdź ratę i koszt",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2476",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1047,14 +1047,14 @@
     {
       "slug": "provident-pozyczka-samoobslugowa",
       "name": "Provident - Pożyczka Samoobsługowa Dla Ciebie",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka online",
+      "reward": "pożyczka samoobsługowa - sprawdź kwotę, ratę i koszt",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opya",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1080,14 +1080,14 @@
     {
       "slug": "wonga-pozyczka-na-raty",
       "name": "Wonga - chwilówka / pożyczka na raty",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka online",
+      "reward": "pożyczka na raty - sprawdź kwotę i termin spłaty",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2471",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1113,14 +1113,14 @@
     {
       "slug": "wandoo-pozyczka-pozabankowa",
       "name": "Wandoo - pożyczka pozabankowa",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka pozabankowa",
+      "reward": "pożyczka pozabankowa - sprawdź koszt i termin spłaty",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3001",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1146,14 +1146,14 @@
     {
       "slug": "smart-pozyczka-online",
       "name": "Smart Pożyczka - Pożyczka Online",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka online",
+      "reward": "pożyczka online - sprawdź koszt przed wnioskiem",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_953",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1179,14 +1179,14 @@
     {
       "slug": "pozyczkaplus",
       "name": "Pożyczkaplus - pożyczka pozabankowa",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka pozabankowa",
+      "reward": "pożyczka pozabankowa - sprawdź całkowitą kwotę do spłaty",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_862",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1212,14 +1212,14 @@
     {
       "slug": "vivigo-pozyczka-rrso-0",
       "name": "Vivigo - pożyczka do 5000 zł RRSO 0%",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka do 5000 zł",
+      "reward": "pierwsza pożyczka do 5000 zł z RRSO 0% po spełnieniu warunków",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2712",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1245,14 +1245,14 @@
     {
       "slug": "pierwsza-pozyczka-100-3000",
       "name": "Pierwsza pożyczka od 100-3000 zł, kolejna do 8000 zł",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka online",
+      "reward": "pierwsza pożyczka 100-3000 zł, kolejna do 8000 zł",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opyo",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1278,14 +1278,14 @@
     {
       "slug": "pozyczka-200-3000-za-darmo",
       "name": "200-3000 zł za DARMO",
-      "category": "payday",
+      "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "pożyczka 0 zł",
+      "reward": "pożyczka 200-3000 zł za 0 zł po spełnieniu warunków",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opyq",
       "difficulty": "Ryzykowny",
       "time": "5-20 min",
@@ -1317,7 +1317,7 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "konto oszczędnościowe",
+      "reward": "konto oszczędnościowe Profit - sprawdź aktualne oprocentowanie",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2698",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1349,7 +1349,7 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "rachunek oszczędnościowy",
+      "reward": "rachunek oszczędnościowy - sprawdź aktualne oprocentowanie",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2159",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1381,7 +1381,7 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "konto oszczędnościowe",
+      "reward": "elastyczne konto oszczędnościowe - sprawdź oprocentowanie",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2655",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1413,7 +1413,7 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "lokata",
+      "reward": "lokata na nowe środki - sprawdź aktualną stawkę",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2656",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1445,7 +1445,7 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "lokata",
+      "reward": "VeloLokata dla aktywnych - sprawdź warunki oprocentowania",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2895",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1477,7 +1477,7 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "lokata",
+      "reward": "lokata na nowe środki - sprawdź aktualne oprocentowanie",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2447",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1510,7 +1510,7 @@
         "/ubezpieczenia/porownywarka",
         "/ubezpieczenia/ranking-oc"
       ],
-      "reward": "wycena OC/AC",
+      "reward": "porównanie i zakup OC/AC samochodu",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2213",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1544,7 +1544,7 @@
         "/ubezpieczenia/porownywarka",
         "/ubezpieczenia/ranking-oc"
       ],
-      "reward": "zakup ubezpieczenia",
+      "reward": "ubezpieczenie OC/AC - sprawdź zakres i cenę",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz0",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1577,7 +1577,7 @@
         "/ubezpieczenia/porownywarka",
         "/ubezpieczenia/ranking-oc"
       ],
-      "reward": "porównywarka OC/AC",
+      "reward": "porównanie ofert OC/AC w Rankomat",
       "affiliateUrl": "https://partner.rankomat.pl/tracking/click/3e22b3e174305fe1b4fca547cf5208b3",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1609,7 +1609,7 @@
         "/finanse/karty",
         "/finanse/ranking-kart"
       ],
-      "reward": "karta kredytowa",
+      "reward": "karta kredytowa w promocji - sprawdź bonus i opłaty",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2457",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1641,7 +1641,7 @@
         "/finanse/karty",
         "/finanse/ranking-kart"
       ],
-      "reward": "karta kredytowa",
+      "reward": "Karta Kredytowa z Żubrem - sprawdź promocję i opłaty",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz2",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -1673,7 +1673,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/rankingi"
       ],
-      "reward": "kredyt hipoteczny",
+      "reward": "kredyt hipoteczny - sprawdź marżę, RRSO i koszt",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz4",
       "difficulty": "Średni",
       "time": "wniosek + analiza banku",
@@ -1705,7 +1705,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/rankingi"
       ],
-      "reward": "kredyt hipoteczny",
+      "reward": "kredyt hipoteczny - sprawdź ratę i całkowity koszt",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2374",
       "difficulty": "Średni",
       "time": "wniosek + analiza banku",
@@ -1737,7 +1737,7 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/rankingi"
       ],
-      "reward": "kredyt hipoteczny",
+      "reward": "kredyt hipoteczny VeloDom - sprawdź warunki finansowania",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3042",
       "difficulty": "Średni",
       "time": "wniosek + analiza banku",

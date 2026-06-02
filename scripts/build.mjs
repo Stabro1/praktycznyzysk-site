@@ -46,6 +46,17 @@ const typeLabels = {
   calculator: "Kalkulator",
   faq: "FAQ"
 };
+const categoryLabels = {
+  account: "Konto osobiste",
+  "business-account": "Konto firmowe",
+  credit: "Kredyt lub pożyczka",
+  payday: "Chwilówka / pożyczka online",
+  "short-loan": "Chwilówka / pożyczka online",
+  savings: "Oszczędzanie",
+  insurance: "Ubezpieczenie",
+  "credit-card": "Karta kredytowa",
+  mortgage: "Kredyt hipoteczny"
+};
 
 function titleFromUrl(url) {
   const last = stripSlash(url).split("/").pop() || "strona";
@@ -205,7 +216,7 @@ function card(item, extra = "") {
 
 function offerCard(offer) {
   const meta = [
-    offer.reward ? { label: "Premia", value: offer.reward } : null,
+    offer.reward ? { label: "Korzyść", value: offer.reward } : null,
     offer.difficulty ? { label: "Trudność", value: offer.difficulty } : null,
     offer.time ? { label: "Czas", value: offer.time } : null,
     offer.deadline ? { label: "Do kiedy", value: offer.deadline } : null,
@@ -213,7 +224,7 @@ function offerCard(offer) {
   ].filter(Boolean);
   return `<article class="offer-card">
     <div>
-      <span class="badge">${esc(offer.category)}</span>
+      <span class="badge">${esc(categoryLabels[offer.category] || offer.category)}</span>
       <h3>${esc(offer.name)}</h3>
       <p>${esc(offer.summary)}</p>
       ${offer.reward ? `<p class="offer-benefit"><strong>Możesz zyskać:</strong> ${esc(offer.reward)}</p>` : ""}
@@ -233,8 +244,7 @@ function offerCard(offer) {
 function offerBenefitList(offer) {
   const items = [
     offer.reward ? `Możesz zyskać: ${offer.reward}.` : "",
-    offer.audience ? `Dla kogo: ${offer.audience}.` : "",
-    ...(offer.pros || []).slice(0, 2)
+    offer.audience ? `Dla kogo: ${offer.audience}.` : ""
   ].filter(Boolean);
   return items.length ? `<ul class="tool-points">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
 }
