@@ -2059,38 +2059,39 @@
     "/finanse/bik-big-krd-erif": [
       {
         "type": "cards",
-        "title": "Co oznaczają bazy",
-        "description": "Proste wyjaśnienie bez udawania porady prawnej ani decyzji bankowej.",
+        "title": "BIK, BIG, KRD i ERIF - czym się różnią",
+        "description": "Te nazwy dotyczą baz i rejestrów, które mogą mieć znaczenie przy kredycie, pożyczce, abonamencie albo umowie z płatnością odroczoną.",
         "items": [
           {
             "title": "BIK",
-            "text": "Historia kredytowa i informacje o zobowiązaniach, ważne przy bankach."
+            "text": "Biuro Informacji Kredytowej pokazuje historię kredytową, aktywne zobowiązania i informacje o spłatach."
           },
           {
             "title": "BIG / KRD / ERIF",
-            "text": "Rejestry informacji gospodarczej, które mogą pokazywać zaległości."
+            "text": "Rejestry informacji gospodarczej mogą zawierać dane o zaległościach wobec firm, instytucji lub innych wierzycieli."
           },
           {
-            "title": "Przed wnioskiem",
-            "text": "Jeśli boisz się odmowy, najpierw sprawdź raport i budżet."
+            "title": "Dlaczego to ważne",
+            "text": "Negatywne wpisy mogą utrudnić finansowanie, a błędne dane warto wyjaśnić przed złożeniem wniosku."
           }
         ]
       },
       {
         "type": "steps",
         "title": "Co zrobić przed finansowaniem",
+        "description": "Zanim złożysz wniosek, sprawdź podstawowe dane i uporządkuj sytuację.",
         "items": [
           {
             "title": "Sprawdź raport",
-            "text": "Zobacz, czy dane są aktualne i czy nie ma blednych wpisow."
+            "text": "Zobacz, czy dane są aktualne i czy nie ma błędnych wpisów."
           },
           {
-            "title": "Policz obciazenia",
+            "title": "Policz obciążenia",
             "text": "Suma rat i stałe koszty są ważniejsze niż sama wysokość dochodu."
           },
           {
-            "title": "Nie skladaj wielu wnioskow naraz",
-            "text": "Chaos w zapytaniach może pogorszyc sytuacje i utrudnic porównanie."
+            "title": "Nie składaj wielu wniosków naraz",
+            "text": "Zbyt wiele zapytań w krótkim czasie może utrudnić porównanie i pogorszyć ocenę sytuacji."
           }
         ]
       }
@@ -2195,8 +2196,8 @@
         "title": "Co sprawdzić w wyniku",
         "items": [
           "zgodność VIN i numeru rejestracyjnego",
-          "historia badan technicznych",
-          "przebieg i daty wpisow",
+          "historia badań technicznych",
+          "przebieg i daty wpisów",
           "status rejestracji i podstawowe dane pojazdu"
         ]
       }
@@ -2533,6 +2534,164 @@
           "Plik jest zapisany jako PDF z prostą nazwą, np. imie-nazwisko-cv.pdf"
         ]
       }
+    ],
+    "/finanse/fintech": [
+      {
+        "type": "cards",
+        "title": "Co sprawdzić przy usługach fintech",
+        "description": "Aplikacja finansowa może być wygodna, ale przed rejestracją warto sprawdzić koszty, regulamin i bezpieczeństwo środków.",
+        "items": [
+          {
+            "title": "Opłaty i limity",
+            "text": "Sprawdź opłaty za konto, kartę, przelewy, przewalutowanie, wypłaty z bankomatu i limity darmowych operacji."
+          },
+          {
+            "title": "Kto świadczy usługę",
+            "text": "Zobacz, czy za usługą stoi bank, instytucja płatnicza, pośrednik albo partner technologiczny."
+          },
+          {
+            "title": "Dostęp do pieniędzy",
+            "text": "Sprawdź, jak wypłacisz środki, co dzieje się przy blokadzie konta i jak działa obsługa reklamacji."
+          }
+        ]
+      },
+      {
+        "type": "steps",
+        "title": "Jak ocenić aplikację finansową",
+        "description": "Nie zaczynaj od reklamy. Najpierw sprawdź warunki, potem dopiero bonus albo promocję.",
+        "items": [
+          {
+            "title": "Przeczytaj tabelę opłat",
+            "text": "Najważniejsze są koszty, które pojawią się po okresie promocyjnym albo po przekroczeniu limitów."
+          },
+          {
+            "title": "Porównaj z bankiem",
+            "text": "Jeśli fintech ma zastąpić konto lub kartę, sprawdź, czy daje podobny poziom wygody i bezpieczeństwa."
+          },
+          {
+            "title": "Nie trzymaj wszystkiego w jednym miejscu",
+            "text": "Przy nowych usługach finansowych rozsądnie jest zaczynać od mniejszych kwot i sprawdzić działanie w praktyce."
+          }
+        ]
+      }
+    ],
+    "/finanse/jak-sprawdzic-bik": [
+      {
+        "type": "steps",
+        "title": "Jak sprawdzić BIK przed kredytem",
+        "description": "Raport BIK pomaga zobaczyć historię kredytową, aktywne zobowiązania i ewentualne zaległości przed złożeniem wniosku.",
+        "items": [
+          {
+            "title": "Wejdź na oficjalną stronę BIK",
+            "text": "Załóż konto albo zaloguj się, potwierdź tożsamość i wybierz raport zgodnie z aktualną ofertą BIK."
+          },
+          {
+            "title": "Sprawdź aktywne zobowiązania",
+            "text": "Zobacz kredyty, pożyczki, limity, karty i informacje o terminowości spłat."
+          },
+          {
+            "title": "Zwróć uwagę na zaległości",
+            "text": "Jeśli widzisz opóźnienia albo błędne dane, wyjaśnij je przed składaniem kolejnych wniosków."
+          },
+          {
+            "title": "Porównaj raport z budżetem",
+            "text": "Sam raport nie daje decyzji kredytowej. Połącz go z oceną dochodu, rat i stałych kosztów."
+          }
+        ]
+      },
+      {
+        "type": "checklist",
+        "title": "Co sprawdzić w raporcie",
+        "description": "Te punkty są najważniejsze przed kredytem lub pożyczką.",
+        "items": [
+          "czy dane osobowe i zobowiązania są aktualne",
+          "czy nie ma zaległości lub błędnych wpisów",
+          "ile wynoszą aktywne raty i limity",
+          "czy ostatnio było dużo zapytań kredytowych",
+          "czy warto poczekać ze złożeniem kolejnego wniosku"
+        ]
+      }
+    ],
+    "/finanse/jak-poprawic-zdolnosc-kredytowa": [
+      {
+        "type": "steps",
+        "title": "Jak poprawić zdolność kredytową",
+        "description": "Zdolność kredytowa zależy od dochodu, kosztów, rat, historii spłat i stabilności sytuacji. Nie wszystko da się poprawić od razu, ale część rzeczy można przygotować przed wnioskiem.",
+        "items": [
+          {
+            "title": "Policz stałe koszty",
+            "text": "Sprawdź, ile pieniędzy zostaje po czynszu, rachunkach, ratach, paliwie, jedzeniu i innych regularnych wydatkach."
+          },
+          {
+            "title": "Zmniejsz obciążenia",
+            "text": "Jeśli możesz, spłać drobne zobowiązania, ogranicz limity na kartach albo zamknij nieużywane produkty kredytowe."
+          },
+          {
+            "title": "Uporządkuj historię spłat",
+            "text": "Terminowe spłaty są ważniejsze niż szybkie składanie kolejnych wniosków. Opóźnienia najpierw wyjaśnij."
+          },
+          {
+            "title": "Dobierz realistyczną kwotę",
+            "text": "Niższa rata, dłuższy okres lub większy wkład własny mogą poprawić szansę na pozytywną decyzję."
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title": "Co może pomóc przed wnioskiem",
+        "description": "To są praktyczne działania, które warto sprawdzić przed rozmową z bankiem lub partnerem.",
+        "items": [
+          {
+            "title": "Stabilny dochód",
+            "text": "Stałe wpływy i udokumentowane źródło dochodu ułatwiają ocenę wniosku."
+          },
+          {
+            "title": "Mniej rat",
+            "text": "Mniejsza liczba aktywnych zobowiązań poprawia miesięczny budżet."
+          },
+          {
+            "title": "Historia bez opóźnień",
+            "text": "Terminowe spłaty zwiększają wiarygodność przy kolejnych decyzjach."
+          }
+        ]
+      }
+    ],
+    "/finanse/faq": [
+      {
+        "type": "cards",
+        "title": "FAQ Finanse",
+        "description": "Krótkie odpowiedzi na najczęstsze pytania o kredyty, pożyczki, RRSO, BIK i konta.",
+        "items": [
+          {
+            "title": "Czy RRSO wystarczy do porównania?",
+            "text": "Nie zawsze. RRSO pomaga, ale sprawdź też całkowitą kwotę do spłaty, ratę, okres i warunki promocji."
+          },
+          {
+            "title": "Czy chwilówka 0% jest zawsze darmowa?",
+            "text": "Tylko jeśli spełnisz warunki promocji i spłacisz ją terminowo. Po terminie koszt może być wysoki."
+          },
+          {
+            "title": "Kiedy sprawdzić BIK?",
+            "text": "Przed większym kredytem, po odmowie finansowania albo gdy podejrzewasz błędne wpisy."
+          },
+          {
+            "title": "Czy premia za konto jest automatyczna?",
+            "text": "Zwykle nie. Trzeba spełnić warunki, np. wejść przez link partnerski, otworzyć konto i wykonać aktywności."
+          }
+        ]
+      },
+      {
+        "type": "checklist",
+        "title": "Przed wyborem oferty finansowej",
+        "description": "Minimum do sprawdzenia przed przejściem do partnera.",
+        "items": [
+          "jaki jest całkowity koszt albo realna wartość premii",
+          "czy spełnisz warunki aktywności",
+          "czy oferta wymaga wejścia przez link partnerski",
+          "czy regulamin i opłaty są aktualne",
+          "czy produkt pasuje do Twojej sytuacji"
+        ]
+      }
     ]
   },
   "sitemapSections": [
@@ -2587,7 +2746,9 @@
         {
           "url": "/finanse/fintech",
           "title": "Fintech",
-          "description": "Nowe usługi finansowe, aplikacje, konta, płatności i ryzyka regulaminowe."
+          "description": "Nowe usługi finansowe, aplikacje, konta, płatności i ryzyka regulaminowe.",
+          "cta": "Czytaj o fintech",
+          "ctaUrl": "/finanse/fintech"
         },
         {
           "url": "/finanse/kredyty-na-auto",
@@ -2602,7 +2763,9 @@
         {
           "url": "/finanse/bik-big-krd-erif",
           "title": "BIK BIG KRD ERIF",
-          "description": "Proste wyjaśnienie baz, raportow, wpisow i wpływu na finansowanie."
+          "description": "Proste wyjaśnienie baz, raportów, wpisów i wpływu na finansowanie.",
+          "cta": "Sprawdź BIK",
+          "ctaUrl": "/finanse/jak-sprawdzic-bik"
         },
         {
           "url": "/finanse/rankingi",
@@ -2614,7 +2777,9 @@
           "url": "/finanse/faq",
           "title": "FAQ Finanse",
           "description": "Krótkie odpowiedzi o kredytach, chwilówkach, RRSO, BIK i kontach.",
-          "type": "faq"
+          "type": "faq",
+          "cta": "Zobacz FAQ",
+          "ctaUrl": "/finanse/faq"
         },
         {
           "url": "/finanse/ranking-kont-z-premia",
@@ -2632,13 +2797,13 @@
           "url": "/finanse/ranking-lokat",
           "title": "Ranking lokat",
           "type": "ranking",
-          "description": "Lokaty według oprocentowania, okresu, limitow i warunków promocji."
+          "description": "Lokaty według oprocentowania, okresu, limitów i warunków promocji."
         },
         {
           "url": "/finanse/ranking-kart",
           "title": "Ranking kart",
           "type": "ranking",
-          "description": "Karty według opłat, benefitow, limitow, cashbacku i warunków."
+          "description": "Karty według opłat, benefitów, limitów, cashbacku i warunków."
         },
         {
           "url": "/finanse/ranking-chwilowek",
@@ -2661,12 +2826,16 @@
         {
           "url": "/finanse/jak-sprawdzic-bik",
           "title": "Jak sprawdzić BIK",
-          "description": "Jak sprawdzić raport, co oznaczają wpisy i kiedy warto to zrobić."
+          "description": "Jak sprawdzić raport, co oznaczają wpisy i kiedy warto to zrobić.",
+          "cta": "Sprawdź checklistę",
+          "ctaUrl": "/finanse/jak-sprawdzic-bik"
         },
         {
           "url": "/finanse/jak-poprawic-zdolnosc-kredytowa",
           "title": "Jak poprawić zdolność kredytową",
-          "description": "Praktyczne kroki przed kredytem: raty, koszty, dochód, historia i budżet."
+          "description": "Praktyczne kroki przed kredytem: raty, koszty, dochód, historia i budżet.",
+          "cta": "Zobacz kroki",
+          "ctaUrl": "/finanse/jak-poprawic-zdolnosc-kredytowa"
         },
         {
           "url": "/finanse/rrso-co-to-jest",

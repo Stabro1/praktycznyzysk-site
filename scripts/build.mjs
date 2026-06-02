@@ -213,6 +213,14 @@ function card(item, extra = "") {
   </article>`;
 }
 
+function pageCardCta(page) {
+  if (page.type === "faq") return "Zobacz FAQ";
+  if (page.type === "ranking") return "Zobacz ranking";
+  if (page.type === "checklist") return "Sprawdź checklistę";
+  if (page.type === "calculator") return "Otwórz kalkulator";
+  return "Czytaj poradnik";
+}
+
 function offerCard(offer) {
   const meta = [
     offer.reward ? { label: "Korzyść", value: offer.reward } : null,
@@ -487,7 +495,7 @@ function pillarPage(pillar) {
           <h2>Podstrony</h2>
           <p>Poradniki, rankingi, kalkulatory i checklisty powiązane z tą kategorią.</p>
         </div>
-        <div class="grid">${pages.map((page) => card({ ...page, name: page.title, url: page.url, cta: page.cta })).join("")}</div>
+        <div class="grid">${pages.map((page) => card({ ...page, name: page.title, url: page.url, cta: pageCardCta(page) })).join("")}</div>
       </section>
       <section>
         <div class="section-head">
