@@ -496,7 +496,7 @@ function pillarPage(pillar) {
         title: "Sprawdź dostępne propozycje",
         description: "Porównaj podstawowe warunki i wybierz ofertę, która najlepiej pasuje do Twojej sytuacji.",
         moreUrl: offersUrlFor(pillar.slug),
-        moreLabel: `Zobacz więcej ofert: ${pillar.name}`
+        moreLabel: offerGroupLabel(pillar.slug).more
       })}
       ${nextStepBlock({
         title: "Polecane dalej",
@@ -597,6 +597,48 @@ function renderToolInputs(model) {
 
 function offersUrlFor(slug) {
   return slug ? `/oferty/${slug}` : "/oferty";
+}
+
+const offerGroupLabels = {
+  finanse: {
+    short: "Oferty finansowe",
+    more: "Zobacz więcej ofert finansowych",
+    title: "Oferty finansowe",
+    lead: "Zobacz konta, premie, kredyty, pożyczki, lokaty i inne propozycje finansowe."
+  },
+  ubezpieczenia: {
+    short: "Ubezpieczenia",
+    more: "Zobacz więcej ubezpieczeń",
+    title: "Ubezpieczenia",
+    lead: "Zobacz propozycje ubezpieczeń i porównywarek, które możesz sprawdzić u partnera."
+  },
+  auto: {
+    short: "Propozycje dla kierowców",
+    more: "Zobacz więcej propozycji dla kierowców",
+    title: "Propozycje dla kierowców",
+    lead: "Zobacz ubezpieczenia, finansowanie i inne propozycje powiązane z autem."
+  },
+  praca: {
+    short: "Konta i premie finansowe",
+    more: "Zobacz konta i premie finansowe",
+    title: "Konta i premie finansowe",
+    lead: "Zobacz konta osobiste, konta firmowe i premie, które mogą pasować do tematu pracy lub działalności."
+  },
+  dom: {
+    short: "Finansowanie domu i remontu",
+    more: "Zobacz finansowanie i ubezpieczenia",
+    title: "Finansowanie i ubezpieczenia domu",
+    lead: "Zobacz kredyty, finansowanie i ubezpieczenia powiązane z domem lub remontem."
+  }
+};
+
+function offerGroupLabel(slug) {
+  return offerGroupLabels[slug] || {
+    short: "Propozycje",
+    more: "Zobacz więcej propozycji",
+    title: "Propozycje",
+    lead: "Zobacz pełną listę propozycji i przejdź do wybranej oferty."
+  };
 }
 
 function toolCalculatorScript(slug, type) {
@@ -766,7 +808,7 @@ function toolPage(tool) {
         title: "Propozycje dopasowane do tematu",
         description: "Po sprawdzeniu wyniku możesz porównać oferty i przejść do wybranej propozycji.",
         moreUrl: offersUrlFor(nextPage?.pillar),
-        moreLabel: "Zobacz więcej podobnych ofert"
+        moreLabel: offerGroupLabel(nextPage?.pillar).more
       })}
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${toolCalculatorScript(tool.slug, model.type)}
@@ -814,7 +856,7 @@ function genericPage(page) {
           ? "Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty."
           : "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji.",
         moreUrl: offersUrlFor(page.pillar),
-        moreLabel: "Zobacz więcej ofert w tej kategorii"
+        moreLabel: offerGroupLabel(page.pillar).more
       })}
       <section>
         <div class="section-head">
@@ -857,9 +899,9 @@ function genericPage(page) {
 
 function offersIndex() {
   const categoryLinks = data.pillars.map((pillar) => ({
-    label: pillar.name,
+    label: offerGroupLabel(pillar.slug).short,
     url: offersUrlFor(pillar.slug),
-    note: "Zobacz oferty z tej kategorii"
+    note: offerGroupLabel(pillar.slug).lead
   }));
   return layout({
     url: "/oferty",
@@ -885,25 +927,26 @@ function offersIndex() {
 }
 
 function offersPillarIndex(pillar) {
+  const groupLabel = offerGroupLabel(pillar.slug);
   const pillarOffers = offers.filter((offer) => {
     if (offer.pillar === pillar.slug) return true;
     return finalOffersFor({ pillarSlug: pillar.slug, limit: 50 }).some((item) => item.slug === offer.slug);
   });
   return layout({
     url: offersUrlFor(pillar.slug),
-    title: `Oferty: ${pillar.name} | ${data.name}`,
-    description: `Pełna lista ofert powiązanych z kategorią ${pillar.name}.`,
+    title: `${groupLabel.title} | ${data.name}`,
+    description: groupLabel.lead,
     crumbs: [
       { label: "Oferty", url: "/oferty" },
-      { label: pillar.name, url: offersUrlFor(pillar.slug) }
+      { label: groupLabel.short, url: offersUrlFor(pillar.slug) }
     ],
     body: `<main>
       <section class="hero compact">
         <div class="hero-inner single">
           <div>
             <div class="eyebrow">Oferty</div>
-            <h1>Oferty: ${esc(pillar.name)}</h1>
-            <p class="lead">Zobacz pełną listę propozycji z tej kategorii i przejdź do wybranej oferty.</p>
+            <h1>${esc(groupLabel.title)}</h1>
+            <p class="lead">${esc(groupLabel.lead)}</p>
           </div>
         </div>
       </section>
