@@ -272,7 +272,7 @@ const fallbackOfferPages = {
   finanse: ["/finanse/kredyty-gotowkowe", "/finanse/konta-z-premia", "/finanse/chwilowki"],
   ubezpieczenia: ["/ubezpieczenia/oc-ac"],
   auto: ["/ubezpieczenia/oc-ac", "/finanse/kredyty-gotowkowe"],
-  praca: ["/finanse/konta-z-premia", "/finanse/konta-firmowe"],
+  praca: ["/finanse/konta-z-premia", "/finanse/konta-firmowe-z-premia"],
   dom: ["/finanse/kredyty-gotowkowe", "/finanse/rankingi", "/ubezpieczenia/oc-ac"]
 };
 
