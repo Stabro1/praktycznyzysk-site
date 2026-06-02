@@ -7,7 +7,7 @@
   "lastUpdated": "2026-06-01",
   "privateMode": false,
   "previewBase": "/podglad-stabro",
-  "disclosure": "Część linków prowadzi do partnerów. Jeśli skorzystasz z oferty po takim linku, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie będą przez to wyższe.",
+  "disclosure": "Część linków prowadzi do partnerów. Jeśli skorzystasz z oferty, wchodząc przez taki link, serwis może otrzymać prowizję, a Ty możesz otrzymać dodatkową korzyść, np. premię, bonus albo preferencyjne warunki. Dla Ciebie cena lub warunki po stronie partnera nie będą przez to wyższe.",
   "primaryNav": [
     {
       "label": "Finanse",
@@ -2471,6 +2471,66 @@
           "bezszkódowa historia",
           "wybor auta z tanszym profilem ubezpieczeniowym",
           "rozsadna konfiguracja pakietu OC/AC"
+        ]
+      }
+    ],
+    "/praca/kreator-cv": [
+      {
+        "type": "steps",
+        "title": "Jak przygotować CV krok po kroku",
+        "description": "Zacznij od konkretów, które rekruter może szybko sprawdzić. CV ma pokazać dopasowanie do stanowiska, a nie opowiadać całej historii zawodowej.",
+        "items": [
+          {
+            "title": "Dopasuj CV do ogłoszenia",
+            "text": "Wypisz wymagania z oferty pracy i pokaż w CV te doświadczenia, umiejętności oraz projekty, które faktycznie pasują do stanowiska."
+          },
+          {
+            "title": "Zacznij od mocnego podsumowania",
+            "text": "W 2-3 zdaniach napisz, kim jesteś zawodowo, w czym masz doświadczenie i jaki problem możesz rozwiązać dla pracodawcy."
+          },
+          {
+            "title": "Opisuj efekty, nie same obowiązki",
+            "text": "Zamiast samego zakresu zadań dodaj liczby, wyniki, skalę pracy, narzędzia i konkretne przykłady odpowiedzialności."
+          },
+          {
+            "title": "Usuń wszystko, co nie pomaga",
+            "text": "Nie dodawaj zbyt długich opisów, przypadkowych kursów, ogólnych cech i informacji, które nie wspierają aplikacji na dane stanowisko."
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "title": "Co powinno znaleźć się w CV",
+        "description": "Te elementy zwykle wystarczą, żeby dokument był czytelny i konkretny.",
+        "items": [
+          {
+            "title": "Dane kontaktowe",
+            "text": "Imię, nazwisko, telefon, e-mail, miejscowość i link do profilu lub portfolio, jeśli ma znaczenie."
+          },
+          {
+            "title": "Podsumowanie zawodowe",
+            "text": "Krótki opis doświadczenia, specjalizacji i tego, co wnosisz do firmy."
+          },
+          {
+            "title": "Doświadczenie",
+            "text": "Stanowisko, firma, daty, najważniejsze zadania i konkretne efekty pracy."
+          },
+          {
+            "title": "Umiejętności",
+            "text": "Narzędzia, technologie, języki, certyfikaty i kompetencje ważne dla tej rekrutacji."
+          }
+        ]
+      },
+      {
+        "type": "checklist",
+        "title": "Szybka kontrola przed wysłaniem",
+        "description": "Przejdź przez tę listę przed kliknięciem „wyślij”.",
+        "items": [
+          "CV ma maksymalnie 1-2 strony i najważniejsze informacje są widoczne od razu",
+          "Podsumowanie pasuje do konkretnej oferty pracy",
+          "Doświadczenie pokazuje efekty, liczby albo zakres odpowiedzialności",
+          "Nie ma literówek, starych danych kontaktowych ani przypadkowych sekcji",
+          "Plik jest zapisany jako PDF z prostą nazwą, np. imie-nazwisko-cv.pdf"
         ]
       }
     ]

@@ -134,7 +134,7 @@ function breadcrumbs(items = []) {
     .join("")}</nav>`;
 }
 
-function layout({ url = "/", title, description, body, crumbs = [], noindex = false, footerDescription = data.disclosure }) {
+function layout({ url = "/", title, description, body, crumbs = [], noindex = false }) {
   const canonical = `https://${data.domain}${url === "/" ? "/" : url}`;
   return `<!doctype html>
 <html lang="pl">
@@ -163,7 +163,6 @@ function layout({ url = "/", title, description, body, crumbs = [], noindex = fa
     <div class="footer-inner">
       <div>
         <strong>${esc(data.name)}</strong>
-        <p>${esc(footerDescription)}</p>
       </div>
       <div class="footer-links">
         ${data.primaryNav.map((item) => `<a href="${esc(item.url)}">${esc(item.label)}</a>`).join("")}
@@ -1060,7 +1059,6 @@ function aboutPage() {
     title: `O nas | ${data.name}`,
     description,
     crumbs: [{ label: "O nas", url: "/o-nas" }],
-    footerDescription: "Pomagamy szybciej przechodzić od pytania do konkretnej decyzji: sprawdź koszty, warunki, ryzyka i następny krok.",
     body: `<main>
       <section class="hero compact">
         <div class="hero-inner single">
@@ -1103,7 +1101,7 @@ function faqPage() {
     },
     {
       title: "Czy linki na stronie są afiliacyjne?",
-      text: "Część linków może być afiliacyjna. Jeśli przejdziesz do partnera i skorzystasz z oferty, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie będą przez to wyższe."
+      text: data.disclosure
     },
     {
       title: "Czy korzystanie z serwisu kosztuje?",
