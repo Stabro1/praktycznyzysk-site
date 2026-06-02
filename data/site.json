@@ -298,7 +298,8 @@
         "premia wymaga aktywacji konta i wykonania transakcji",
         "warunki planów i opłaty mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, opłaty planu, limity przewalutowania i warunki wypłaty premii u partnera."
+      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, opłaty planu, limity przewalutowania i warunki wypłaty premii u partnera.",
+      "placementPriority": 90
     },
     {
       "slug": "mbank-ekonto-do-uslug-premia",
@@ -328,7 +329,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "placementPriority": 96
     },
     {
       "slug": "millennium-konto-360-premia-900",
@@ -360,7 +362,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "placementPriority": 88
     },
     {
       "slug": "bnp-konto-otwarte-na-ciebie",
@@ -390,7 +393,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "placementPriority": 60
     },
     {
       "slug": "velobank-velokonto",
@@ -420,7 +424,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "placementPriority": 65
     },
     {
       "slug": "nest-bank-konto-osobiste",
@@ -481,7 +486,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "placementPriority": 84
     },
     {
       "slug": "revolut-business-500",
@@ -516,7 +522,8 @@
         "premia wymaga spełnienia warunków aktywacji",
         "warunki i dostępne plany mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, dostępne plany, opłaty i warunki wypłaty premii u partnera."
+      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, dostępne plany, opłaty i warunki wypłaty premii u partnera.",
+      "placementPriority": 95
     },
     {
       "slug": "erste-santander-konto-firmowe-online",
@@ -555,7 +562,8 @@
         "do 4500 zł premii po spełnieniu warunków promocji",
         "konto firmowe dla działalności gospodarczej",
         "warunki aktywności do sprawdzenia przed przejściem do partnera"
-      ]
+      ],
+      "placementPriority": 98
     },
     {
       "slug": "credit-agricole-konto-biznes-3260",
@@ -588,7 +596,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Premia do 3260 zł zależy od spełnienia warunków promocji. Przed decyzją sprawdź regulamin, opłaty i wymagane aktywności u partnera."
+      "warning": "Premia do 3260 zł zależy od spełnienia warunków promocji. Przed decyzją sprawdź regulamin, opłaty i wymagane aktywności u partnera.",
+      "placementPriority": 90
     },
     {
       "slug": "velobank-velokonto-firma",
@@ -619,7 +628,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź opłaty za konto, kartę, przelewy oraz aktualne warunki prowadzenia rachunku u partnera."
+      "warning": "Przed decyzją sprawdź opłaty za konto, kartę, przelewy oraz aktualne warunki prowadzenia rachunku u partnera.",
+      "placementPriority": 45
     },
     {
       "slug": "bnp-oferta-dla-przedsiebiorcow-spolek",
@@ -805,7 +815,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Porównaj RRSO, całkowity koszt i ratę przed złożeniem wniosku."
+      "warning": "Porównaj RRSO, całkowity koszt i ratę przed złożeniem wniosku.",
+      "placementPriority": 80
     },
     {
       "slug": "pekao-konsolidacja",
@@ -1261,7 +1272,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "RRSO 0% zwykle wymaga pierwszej pożyczki i terminowej spłaty. Sprawdź koszt po terminie."
+      "warning": "RRSO 0% zwykle wymaga pierwszej pożyczki i terminowej spłaty. Sprawdź koszt po terminie.",
+      "placementPriority": 88
     },
     {
       "slug": "pierwsza-pozyczka-100-3000",
@@ -1292,7 +1304,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "placementPriority": 78
     },
     {
       "slug": "pozyczka-200-3000-za-darmo",
@@ -1323,7 +1336,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Darmowa pożyczka jest darmowa tylko przy spełnieniu warunków i terminowej spłacie."
+      "warning": "Darmowa pożyczka jest darmowa tylko przy spełnieniu warunków i terminowej spłacie.",
+      "placementPriority": 82
     },
     {
       "slug": "millennium-konto-oszczednosciowe-profit",
@@ -1536,7 +1550,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Zakres OC, AC, assistance i wyłączenia sprawdź u partnera przed zakupem polisy."
+      "warning": "Zakres OC, AC, assistance i wyłączenia sprawdź u partnera przed zakupem polisy.",
+      "placementPriority": 86
     },
     {
       "slug": "ebroker-ubezpieczenie-oc-ac",
@@ -1598,7 +1613,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "placementPriority": 84
     },
     {
       "slug": "bnp-karta-kredytowa-promocja",
@@ -1688,7 +1704,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Kredyt hipoteczny to duża decyzja. Porównaj RRSO, marżę, prowizję, ubezpieczenia i całkowity koszt."
+      "warning": "Kredyt hipoteczny to duża decyzja. Porównaj RRSO, marżę, prowizję, ubezpieczenia i całkowity koszt.",
+      "placementPriority": 80
     },
     {
       "slug": "millennium-kredyt-hipoteczny",
@@ -1718,7 +1735,8 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przy kredycie hipotecznym patrz przede wszystkim na całkowity koszt finansowania, marżę, prowizję i warunki dodatkowe."
+      "warning": "Przy kredycie hipotecznym patrz przede wszystkim na całkowity koszt finansowania, marżę, prowizję i warunki dodatkowe.",
+      "placementPriority": 78
     },
     {
       "slug": "velobank-kredyt-hipoteczny-velodom",

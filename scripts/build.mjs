@@ -249,8 +249,16 @@ function offerBenefitList(offer) {
   return items.length ? `<ul class="tool-points">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
 }
 
+function offerPlacementScore(offer) {
+  return Number(offer.placementPriority || 0);
+}
+
+function sortOffersForPlacement(offerList) {
+  return [...offerList].sort((a, b) => offerPlacementScore(b) - offerPlacementScore(a));
+}
+
 function relatedOffersFor(page) {
-  return offers.filter((offer) => offer.pages?.includes(page.url)).slice(0, 3);
+  return sortOffersForPlacement(offers.filter((offer) => offer.pages?.includes(page.url))).slice(0, 3);
 }
 
 const fallbackOfferPages = {
@@ -269,9 +277,8 @@ function finalOffersFor({ page, pillarSlug, limit = 3 } = {}) {
   const seen = new Set();
   const result = [];
   for (const targetPage of targetPages) {
-    for (const offer of offers) {
+    for (const offer of sortOffersForPlacement(offers.filter((item) => item.pages?.includes(targetPage)))) {
       if (seen.has(offer.slug)) continue;
-      if (!offer.pages?.includes(targetPage)) continue;
       seen.add(offer.slug);
       result.push(offer);
       if (result.length >= limit) return result;
