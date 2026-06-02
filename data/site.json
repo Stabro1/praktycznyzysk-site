@@ -1994,15 +1994,15 @@
       },
       {
         "type": "steps",
-        "title": "Jak podjac decyzje",
+        "title": "Jak podjąć decyzję",
         "items": [
           {
             "title": "Policz ratę albo termin spłaty",
-            "text": "Dopasuj produkt do przeplywu gotowki, nie do reklamy."
+            "text": "Dopasuj produkt do przepływu gotówki, nie do reklamy."
           },
           {
             "title": "Sprawdź koszt całkowity",
-            "text": "Porównuj pieniądze, które realnie oddasz, a nie tylko haslo promocyjne."
+            "text": "Porównuj pieniądze, które realnie oddasz, a nie tylko hasło promocyjne."
           },
           {
             "title": "Wybierz łatwy do spłaty wariant",
@@ -2451,14 +2451,14 @@
           },
           {
             "title": "Data aktualizacji",
-            "text": "Rankingi ofert muszą mieć datę, żeby nie tracić zaufania."
+            "text": "Sprawdź datę aktualizacji, bo zakres ochrony i ceny mogą się zmieniać."
           }
         ]
       },
       {
         "type": "warning",
-        "title": "Nie wolno udawać indywidualnej wyceny",
-        "text": "Bez integracji z ubezpieczycielem pokazujemy model porównania i kierujemy do partnera, a nie obiecujemy konkretnej składki."
+        "title": "Sprawdź składkę u partnera",
+        "text": "Wysokość składki zależy od danych kierowcy, auta i zakresu ochrony. Ostateczną cenę zobaczysz po przejściu do partnera."
       }
     ],
     "/ubezpieczenia/jak-obnizyc-skladke-oc": [
@@ -2469,8 +2469,8 @@
           "porównanie ofert przed końcem polisy",
           "sprawdzenie zakresu dodatków",
           "bezszkódowa historia",
-          "wybor auta z tanszym profilem ubezpieczeniowym",
-          "rozsadna konfiguracja pakietu OC/AC"
+          "wybór auta z tańszym profilem ubezpieczeniowym",
+          "rozsądna konfiguracja pakietu OC/AC"
         ]
       }
     ],
@@ -2932,12 +2932,12 @@
         {
           "url": "/praca/wzory-cv",
           "title": "Wzory CV",
-          "description": "Wzory dla studenta, specjalisty, zmiany branzy i CV po angielsku."
+          "description": "Wzory dla studenta, specjalisty, zmiany branży i CV po angielsku."
         },
         {
           "url": "/praca/cv-bez-doswiadczenia",
           "title": "CV bez doświadczenia",
-          "description": "Jak pokazac umiejetnosci, projekty, praktyki i edukacje."
+          "description": "Jak pokazać umiejętności, projekty, praktyki i edukację."
         },
         {
           "url": "/praca/cv-po-angielsku",
@@ -2957,11 +2957,11 @@
         {
           "url": "/praca/pytania-na-rozmowie-kwalifikacyjnej",
           "title": "Pytania na rozmowie kwalifikacyjnej",
-          "description": "Najczestsze pytania rekrutera i jak odpowiadac konkretnie."
+          "description": "Najczęstsze pytania rekrutera i jak odpowiadać konkretnie."
         },
         {
           "url": "/praca/jak-odpowiadac-na-pytania-rekrutera",
-          "title": "Jak odpowiadac na pytania rekrutera",
+          "title": "Jak odpowiadać na pytania rekrutera",
           "description": "Schematy odpowiedzi, przykłady i błędy."
         },
         {
@@ -2993,7 +2993,7 @@
         {
           "url": "/praca/przebranzowienie",
           "title": "Przebranzowienie",
-          "description": "Jak ocenić sens zmiany branzy i zaplanowac pierwszy krok."
+          "description": "Jak ocenić sens zmiany branży i zaplanować pierwszy krok."
         },
         {
           "url": "/praca/dodatkowy-dochod",
