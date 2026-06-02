@@ -267,6 +267,39 @@
   ],
   "offers": [
     {
+      "slug": "revolut-konto-osobiste-100",
+      "name": "Revolut - konto osobiste z premią 100 zł",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "100 zł premii za otwarcie konta Revolut i spełnienie warunków",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oq1o",
+      "difficulty": "Łatwy",
+      "time": "5-20 min + aktywacja konta",
+      "deadline": "sprawdź u partnera",
+      "audience": "nowy klient, który chce konto z dostępem do wielu walut i płatności w aplikacji",
+      "conditions": [
+        "otwarcie konta Revolut w jednym z dostępnych planów",
+        "zasilenie konta dowolną kwotą",
+        "wykonanie minimum trzech transakcji, np. przelewu, wypłaty lub wymiany waluty",
+        "oferta dla nowych klientów Revolut"
+      ],
+      "summary": "Revolut - konto osobiste z premią 100 zł. Sprawdź konto z dostępem do wielu walut, płatności w aplikacji i niskich kosztów przewalutowania.",
+      "pros": [
+        "100 zł premii po spełnieniu warunków",
+        "dostęp do wielu walut w jednej aplikacji",
+        "niskie koszty przewalutowania zależnie od planu i warunków"
+      ],
+      "cons": [
+        "premia wymaga aktywacji konta i wykonania transakcji",
+        "warunki planów i opłaty mogą się zmienić"
+      ],
+      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, opłaty planu, limity przewalutowania i warunki wypłaty premii u partnera."
+    },
+    {
       "slug": "mbank-ekonto-do-uslug-premia",
       "name": "mBank - eKonto do usług z premią do 1000 zł i bonami Media Expert",
       "category": "account",
@@ -458,6 +491,40 @@
         "ostateczna decyzja zależy od partnera"
       ],
       "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    },
+    {
+      "slug": "revolut-business-500",
+      "name": "Revolut Business - 500 zł na start dla firmy",
+      "category": "business-account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-firmowe",
+        "/finanse/konta-firmowe-z-premia",
+        "/finanse/ranking-kont-firmowych"
+      ],
+      "reward": "500 zł premii za otwarcie konta Revolut Business i spełnienie warunków",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oq1m",
+      "difficulty": "Średni",
+      "time": "5-20 min + aktywacja konta",
+      "deadline": "sprawdź u partnera",
+      "audience": "nowy klient firmowy, który chce prowadzić konto i wydatki firmy w jednej aplikacji",
+      "conditions": [
+        "otwarcie konta Revolut Business w jednym z dostępnych planów",
+        "zasilenie konta dowolną kwotą",
+        "wykonanie minimum jednej transakcji, np. przelewu, wypłaty lub wymiany waluty",
+        "oferta dla nowych klientów firmowych Revolut Business"
+      ],
+      "summary": "Revolut Business - 500 zł na start dla firmy. Sprawdź konto firmowe z wieloma walutami, kartami i narzędziami do zarządzania wydatkami.",
+      "pros": [
+        "500 zł premii po spełnieniu warunków",
+        "konta wielowalutowe dla firmy",
+        "karty fizyczne i wirtualne oraz narzędzia do kontroli wydatków"
+      ],
+      "cons": [
+        "premia wymaga spełnienia warunków aktywacji",
+        "warunki i dostępne plany mogą się zmienić"
+      ],
+      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, dostępne plany, opłaty i warunki wypłaty premii u partnera."
     },
     {
       "slug": "erste-santander-konto-firmowe-online",
@@ -1517,10 +1584,10 @@
       "deadline": "sprawdź u partnera",
       "audience": "właściciel auta szukający OC/AC",
       "conditions": [
-        "OC: 5,5% CPS",
-        "Assistance/NNW od 11%",
-        "AC od 5%",
-        "wniosek przez link partnera"
+        "wybór zakresu ubezpieczenia OC, AC lub assistance",
+        "uzupełnienie danych pojazdu i właściciela",
+        "porównanie ceny, zakresu ochrony i wyłączeń",
+        "zakup polisy po sprawdzeniu warunków u partnera"
       ],
       "summary": "Bezpieczny - Ubezpieczenie samochodu. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
       "pros": [
@@ -1878,9 +1945,9 @@
       },
       {
         "type": "warning",
-        "badge": "Ranking",
-        "title": "Pierwszy kandydat: Erste do 4500 zł",
-        "text": "Erste jest aktualnie mocnym kandydatem na pierwszy slot rankingu JDG, ale prawdziwy link dodamy dopiero po akceptacji kampanii w eBrokerPartner albo Bankier i sprawdzeniu zasad ruchu."
+        "badge": "Porównanie",
+        "title": "Porównaj kilka kont firmowych",
+        "text": "Przed wyborem konta firmowego sprawdź wysokość premii, miesięczne warunki, opłaty, wymagane wpływy i zasady wypłaty nagrody."
       }
     ],
     "/finanse/kredyty-gotowkowe": [
