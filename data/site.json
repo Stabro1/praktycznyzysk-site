@@ -1928,7 +1928,7 @@
           },
           {
             "title": "Policz aktywność",
-            "text": "Wpływy, ZUS, płatności kartą/BLIK i zgody marketingowe muszą być możliwe do spełnienia w normalnym miesiącu firmy."
+            "text": "Sprawdź, czy wpływy, ZUS, płatności kartą/BLIK i zgody marketingowe da się realnie wykonać w normalnym miesiącu firmy."
           },
           {
             "title": "Uwzględnij rozliczenie",
@@ -1963,7 +1963,7 @@
           },
           {
             "title": "Dopiero potem kliknij partnera",
-            "text": "Przejście do oferty powinno pojawić się dopiero po sprawdzeniu kosztów i ostrzeżeń."
+            "text": "Najpierw sprawdź koszty, RRSO, ratę i najważniejsze ostrzeżenia, a dopiero potem przejdź do oferty."
           }
         ]
       },
@@ -2073,7 +2073,7 @@
       {
         "type": "cards",
         "title": "Model rankingu kredytów",
-        "description": "Ranking musi być transparentny i łatwy do aktualizacji.",
+        "description": "Porównuj kredyty po kosztach, racie, RRSO, okresie spłaty i warunkach dodatkowych.",
         "items": [
           {
             "title": "RRSO",
@@ -2187,7 +2187,7 @@
           },
           {
             "title": "Sprawdź gov.pl",
-            "text": "Darmowa historia pojazdu na gov.pl powinna być pierwszym miejscem sprawdzenia auta."
+            "text": "Zacznij od darmowej historii pojazdu na gov.pl, zanim zapłacisz za dodatkowy raport."
           },
           {
             "title": "Porównaj z ogłoszeniem",
@@ -2203,7 +2203,7 @@
         "type": "warning",
         "badge": "Przed zakupem",
         "title": "Raport VIN nie zastąpi oględzin",
-        "text": "Płatny raport może być uzupełnieniem, ale nie powinien być jedynym powodem zakupu auta. Trzeba sprawdzić dokumenty, stan techniczny, jazdę próbną i koszty po zakupie."
+        "text": "Płatny raport może być uzupełnieniem, ale nie zastąpi dokumentów, oceny stanu technicznego, jazdy próbnej i policzenia kosztów po zakupie."
       },
       {
         "type": "cards",
@@ -2276,7 +2276,7 @@
           },
           {
             "title": "Punkt startowy",
-            "text": "VIN powinien prowadzić do historii pojazdu, checklisty i oględzin."
+            "text": "Po sprawdzeniu VIN przejdź jeszcze przez historię pojazdu, checklistę zakupu i oględziny auta."
           }
         ]
       },
@@ -2503,7 +2503,7 @@
       {
         "type": "cards",
         "title": "Model rankingu OC",
-        "description": "Ranking OC musi być prosty, aktualizowany i uczciwy.",
+        "description": "Porównuj OC po cenie, zakresie dodatków, obsłudze szkody i aktualnych warunkach ubezpieczyciela.",
         "items": [
           {
             "title": "Cena od / sprawdź cenę",

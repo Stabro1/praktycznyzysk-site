@@ -528,8 +528,8 @@ const toolModels = {
     type: "calculator",
     fields: ["Miesięczny dochód netto", "Stałe raty i zobowiązania", "Koszty życia", "Planowana rata"],
     resultTitle: "Orientacyjna zdolność i margines bezpieczeństwa",
-    resultText: "Wynik powinien pokazać, czy budżet ma miejsce na nową ratę. To nie jest decyzja banku, tylko filtr przed rankingiem i wnioskiem.",
-    bullets: ["rata nie powinna zabierać całej nadwyżki", "sprawdź BIK przed wieloma wnioskami", "zostaw bufor na koszty stałe"]
+    resultText: "Wynik pokazuje, czy w budżecie jest miejsce na nową ratę. To nie jest decyzja banku, tylko punkt startowy przed rankingiem i wnioskiem.",
+    bullets: ["rata nie może zabierać całej nadwyżki", "sprawdź BIK przed wieloma wnioskami", "zostaw bufor na koszty stałe"]
   },
   "kalkulator-raty": {
     type: "calculator",
@@ -735,7 +735,7 @@ function toolCalculatorScript(slug, type) {
         const balance = income - costs - debts - reserve;
         show("Budżet miesięczny", [
           "Wynik po kosztach, ratach i rezerwie: " + money.format(balance) + ".",
-          "Bezpieczna dodatkowa rata nie powinna zjadać całej tej kwoty.",
+        "Bezpieczna dodatkowa rata nie może zjadać całej tej kwoty.",
           balance < 0 ? "Budżet jest pod kreską, najpierw ogranicz koszty lub raty." : "Zostaje bufor, ale zostaw miejsce na koszty nieregularne."
         ]);
       } else if (slug === "kalkulator-oc") {
@@ -764,7 +764,7 @@ function toolPage(tool) {
     type: "calculator",
     fields: ["Kwota / wartość", "Okres / sytuacja"],
     resultTitle: "Wynik będzie punktem startowym",
-    resultText: "Na tym etapie pokazujemy bezpieczny model narzędzia: input, wynik, interpretacja, ostrzeżenie i następny krok.",
+    resultText: "Wynik potraktuj jako punkt startowy: sprawdź interpretację, ostrzeżenia i następny krok przed decyzją.",
     bullets: ["użyj wyniku jako punktu startowego", "sprawdź warunki przed kliknięciem", "przejdź do powiązanej strony"]
   };
   const related = [
