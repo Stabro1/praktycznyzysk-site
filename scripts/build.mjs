@@ -572,7 +572,7 @@ const toolModels = {
     type: "checklist",
     fields: ["CV dopasowane", "Odpowiedzi przygotowane", "Pytania do firmy", "Oczekiwania finansowe"],
     resultTitle: "Gotowość do rozmowy",
-    resultText: "Użytkownik ma wyjść z narzędzia do rozmowy kwalifikacyjnej, kreatora CV albo negocjacji wynagrodzenia.",
+    resultText: "Po sprawdzeniu listy możesz przejść do kreatora CV, przygotowania rozmowy albo negocjacji wynagrodzenia.",
     bullets: ["przygotuj liczby i przykłady", "sprawdź firmę przed rozmową", "ustal minimalną akceptowalną stawkę"]
   },
   "checklista-remont": {
@@ -959,10 +959,11 @@ function offersPillarIndex(pillar) {
 
 function goPage(offer) {
   const hasDestination = Boolean(offer.affiliateUrl);
+  const offerLead = offer.summary || `${offer.name}. ${offer.reward ? `Możesz zyskać: ${offer.reward}.` : "Sprawdź najważniejsze warunki oferty."}`;
   return layout({
     url: `/go/${offer.slug}`,
     title: `${offer.name} | ${data.name}`,
-    description: `${offer.name}. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.`,
+    description: offerLead,
     noindex: true,
     crumbs: [
       { label: "Oferty", url: "/oferty" },
@@ -974,7 +975,7 @@ function goPage(offer) {
           <div>
             <div class="eyebrow">${hasDestination ? "Oferta partnera" : "Oferta w przygotowaniu"}</div>
             <h1>${esc(offer.name)}</h1>
-            <p class="lead">${esc(offer.name)}. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.</p>
+            <p class="lead">${esc(offerLead)}</p>
             ${offerBenefitList(offer)}
             <div class="hero-actions">${cta("Wróć do sekcji", `/${offer.pillar}`, true)}</div>
           </div>
