@@ -1766,69 +1766,69 @@
       {
         "type": "cards",
         "title": "Konto firmowe z premią",
-        "description": "Promocje kont firmowych mają inne warunki niż konta osobiste. Nie mieszamy tego z prostymi bonusami za konto prywatne.",
+        "description": "Premie dla firm mają inne warunki niż bonusy za konto osobiste. Przed przejściem do oferty sprawdź, czy pasuje do Twojej działalności.",
         "items": [
           {
-            "title": "Dla JDG",
-            "text": "Najmocniejsze promocje często są dla osób prowadzących jednoosobową działalność gospodarczą."
+            "title": "Dla JDG i firm",
+            "text": "Najpierw sprawdź, czy promocja dotyczy jednoosobowej działalności, spółki albo nowej firmy."
           },
           {
             "title": "Warunki aktywności",
-            "text": "Zwykle trzeba utrzymać wpływy, przelewy do ZUS, płatności kartą lub BLIK i zgody marketingowe."
+            "text": "Porównaj wymagane wpływy, przelewy do ZUS, płatności kartą lub BLIK oraz zgody wymagane w promocji."
           },
           {
-            "title": "Podatek i księgowość",
-            "text": "Premia dla firmy może być przychodem z działalności, więc trzeba uwzględnić rozliczenie."
+            "title": "Rozliczenie premii",
+            "text": "Premia firmowa może wymagać rozliczenia w działalności, dlatego warto sprawdzić regulamin i skonsultować sposób rozliczenia."
           }
         ]
       },
       {
         "type": "steps",
-        "title": "Erste Konto Firmowe Online - jak czytac promocje do 4500 zł",
-        "description": "To mocny kandydat do pierwszej kampanii kont firmowych, ale tylko dla wlasciwej grupy: JDG.",
+        "title": "Jak sprawdzić konto firmowe z premią",
+        "description": "Przejdź przez najważniejsze warunki, zanim złożysz wniosek u partnera.",
         "items": [
           {
-            "title": "Sprawdź, czy to Ciebie dotyczy",
-            "text": "Promocja jest dla osoby fizycznej prowadzącej jednoosobową działalność gospodarczą, poza spółką cywilną."
+            "title": "Sprawdź, czy oferta jest dla Ciebie",
+            "text": "Zweryfikuj, czy promocja obejmuje Twoją formę działalności i czy nie wyklucza obecnych lub wcześniejszych klientów banku."
           },
           {
-            "title": "Zweryfikuj wykluczenia",
-            "text": "W ostatnich 12 miesiącach nie można mieć/prowadzić konta firmowego w Erste/Santander."
+            "title": "Policz miesięczne wymagania",
+            "text": "Sprawdź minimalne wpływy, wymagane przelewy, płatności oraz liczbę miesięcy potrzebnych do zdobycia premii."
           },
           {
-            "title": "Policz miesięczne warunki",
-            "text": "Na miesiąc premii wymagany jest zewnętrzny wpływ min. 5000 zł, przelew do ZUS min. 100 zł i 5 płatności kartą lub BLIK po min. 50 zł."
+            "title": "Porównaj realny zysk",
+            "text": "Uwzględnij opłaty za konto, kartę, przelewy i ewentualne rozliczenie nagrody w firmie."
           },
           {
-            "title": "Pamiętaj o podatku",
-            "text": "Nagroda jest przychodem z działalności. Użytkownik powinien uwzględnić to w rozliczeniu firmy."
+            "title": "Przeczytaj regulamin promocji",
+            "text": "Przed decyzją sprawdź aktualny regulamin, terminy wypłaty premii i warunki po stronie banku."
           }
         ]
       },
       {
         "type": "warning",
-        "badge": "Wazne",
-        "title": "Nie sprzedawac tego jako zwykłego konta z premią",
-        "text": "Oferta do 4500 zł dotyczy konta firmowego i wymaga aktywności firmowej. Na stronie musi być jasne: JDG, warunki miesięczne, ZUS, wpływy, płatności i przychód podatkowy."
+        "badge": "Ważne",
+        "title": "To oferta firmowa",
+        "text": "Konto firmowe z premią ma inne warunki niż konto osobiste. Sprawdź, czy spełnisz wymagania dotyczące działalności, wpływów, płatności i rozliczenia premii."
       }
     ],
     "/finanse/konta-z-premia": [
       {
         "type": "cards",
         "title": "Konto osobiste czy firmowe z premią",
-        "description": "Użytkownik z sociali może szukać prostego bonusu, ale osoby z JDG mogą mieć osobne, wyższe promocje.",
+        "description": "Konta osobiste i firmowe mają różne warunki promocji. Wybierz typ oferty zgodny z Twoją sytuacją.",
         "items": [
           {
             "title": "Konto osobiste",
-            "text": "Dla premii prywatnych sprawdzamy kwotę bonusu, opłaty, wymagane transakcje i zgody."
+            "text": "Przy koncie prywatnym sprawdź kwotę premii, opłaty, wymagane transakcje i zgody."
           },
           {
             "title": "Konto firmowe",
-            "text": "Dla JDG ważne są: konto firmowe, ZUS, wpływy, płatności i rozliczenie nagrody."
+            "text": "Przy koncie firmowym sprawdź, czy oferta dotyczy Twojej działalności oraz jakie są wymagane wpływy i płatności."
           },
           {
-            "title": "Erste do 4500 zł",
-            "text": "To kandydat na osobna ofertę firmową, a nie element rankingu zwykłych kont osobistych."
+            "title": "Nie mieszaj warunków",
+            "text": "Premia firmowa nie zawsze działa tak samo jak bonus za konto osobiste, dlatego warto porównać je osobno."
           }
         ]
       }
@@ -1836,27 +1836,27 @@
     "/finanse/konta-firmowe-z-premia": [
       {
         "type": "cards",
-        "title": "Najmocniejsze premie dla JDG",
-        "description": "W rankingu dla przedsiębiorców liczy się nie tylko kwota premii, ale też realność spełnienia warunków.",
+        "title": "Premie dla firm i JDG",
+        "description": "Przy kontach firmowych liczy się nie tylko kwota premii, ale też realność spełnienia warunków.",
         "items": [
           {
             "title": "Wartość premii",
-            "text": "Pokażujemy maksymalna wartość, ale obok musi być jasne, ile miesięcy i jakie warunki trzeba spełnić."
+            "text": "Sprawdź maksymalną kwotę premii, liczbę miesięcy promocji i warunki wypłaty."
           },
           {
-            "title": "Trudność",
-            "text": "Oferta firmową może wygladac mocno, ale wymaga wpływow, ZUS, płatności i zgody na warunki banku."
+            "title": "Wymagana aktywność",
+            "text": "Porównaj wpływy, przelewy do ZUS, płatności kartą lub BLIK oraz inne warunki banku."
           },
           {
             "title": "Dla kogo",
-            "text": "Nie każda firma się kwalifikuje. Najpierw sprawdzamy JDG, wykluczenia i historię relacji z bankiem."
+            "text": "Sprawdź, czy oferta obejmuje JDG, spółki, nowe firmy albo obecnych klientów banku."
           }
         ]
       },
       {
         "type": "steps",
-        "title": "Jak oceniac konto firmowe z premią",
-        "description": "Warto porównać realny zysk, opłaty, wymagane aktywności i ryzyko niespełnienia warunków.",
+        "title": "Jak oceniać konto firmowe z premią",
+        "description": "Porównaj realny zysk, opłaty, wymagane aktywności i ryzyko niespełnienia warunków.",
         "items": [
           {
             "title": "Sprawdź kwalifikacje",
@@ -1864,15 +1864,15 @@
           },
           {
             "title": "Rozbij premie na miesiące",
-            "text": "Przy Erste 4500 zł to 3 miesiące po 1500 zł, a nie jedna natychmiastowa wyplata."
+            "text": "Sprawdź, czy premia jest wypłacana jednorazowo, czy w częściach po spełnieniu warunków w kolejnych miesiącach."
           },
           {
             "title": "Policz aktywność",
             "text": "Wpływy, ZUS, płatności kartą/BLIK i zgody marketingowe muszą być możliwe do spełnienia w normalnym miesiącu firmy."
           },
           {
-            "title": "Uwzględnij podatęk",
-            "text": "Premia firmową może być przychódem, więc realny zysk trzeba pokazac ostroznie."
+            "title": "Uwzględnij rozliczenie",
+            "text": "Premia firmowa może wymagać rozliczenia, więc sprawdź zasady w regulaminie i w księgowości."
           }
         ]
       },
@@ -2140,7 +2140,7 @@
       },
       {
         "type": "warning",
-        "badge": "Wazne",
+        "badge": "Ważne",
         "title": "Raport VIN nie zastąpi oględzin",
         "text": "Płatny raport może być uzupełnieniem, ale nie powinien być jedynym powodem zakupu auta. Trzeba sprawdzić dokumenty, stan techniczny, jazdę próbną i koszty po zakupie."
       },
@@ -2172,7 +2172,7 @@
         "items": [
           {
             "title": "Wejdź w usługę Historia Pojazdu",
-            "text": "Użytkownik powinien zacząć od oficjalnego, darmowego źródła."
+            "text": "Zacznij od oficjalnego, darmowego źródła i zapisz najważniejsze informacje z raportu."
           },
           {
             "title": "Wpisz wymagane dane",
