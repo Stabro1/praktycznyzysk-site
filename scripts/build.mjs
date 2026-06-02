@@ -42,6 +42,7 @@ const pillarBySlug = new Map(data.pillars.map((pillar) => [pillar.slug, pillar])
 const typeLabels = {
   guide: "Poradnik",
   ranking: "Ranking",
+  comparison: "Porównanie",
   checklist: "Checklista",
   calculator: "Kalkulator",
   faq: "FAQ"
@@ -304,6 +305,25 @@ function offerSection(offerList, { title = "Sprawdź dostępne propozycje", desc
         <div class="offer-grid">${offerList.map((offer) => offerCard(offer)).join("")}</div>
         <div class="section-actions">${cta(moreLabel, moreUrl, true)}</div>
       </section>`;
+}
+
+function offerCopyForPage(page, hasDirectOffers) {
+  if (hasDirectOffers) {
+    return {
+      title: "Polecane oferty",
+      description: "Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty."
+    };
+  }
+  if (page?.pillar === "praca") {
+    return {
+      title: "Dodatkowe propozycje finansowe",
+      description: "Po poradniku możesz sprawdzić oferty kont i premii, które mogą przydać się przy zmianie pracy, nowym dochodzie albo działalności."
+    };
+  }
+  return {
+    title: "Sprawdź dostępne propozycje",
+    description: "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji."
+  };
 }
 
 function linkList(links) {
@@ -833,6 +853,7 @@ function genericPage(page) {
   const contentBlocks = data.pageContent?.[page.url] || [];
   const pageOffers = relatedOffersFor(page);
   const finalOffers = finalOffersFor({ page, pillarSlug: page.pillar });
+  const offersCopy = offerCopyForPage(page, pageOffers.length > 0);
   const sectionLinks = pillar?.priorityLinks || [];
   const relatedTools = data.tools
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
@@ -863,10 +884,8 @@ function genericPage(page) {
       ${sectionNav(pillar)}
       ${renderContentBlocks(contentBlocks)}
       ${offerSection(finalOffers, {
-        title: pageOffers.length ? "Polecane oferty" : "Sprawdź dostępne propozycje",
-        description: pageOffers.length
-          ? "Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty."
-          : "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji.",
+        title: offersCopy.title,
+        description: offersCopy.description,
         moreUrl: offersUrlFor(page.pillar),
         moreLabel: offerGroupLabel(page.pillar).more
       })}
