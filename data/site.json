@@ -280,8 +280,9 @@
       "difficulty": "Łatwy",
       "time": "5-20 min + aktywacja konta",
       "deadline": "sprawdź u partnera",
-      "audience": "nowy klient, który chce konto z dostępem do wielu walut i płatności w aplikacji",
+      "audience": "osoba, która chce konto z dostępem do wielu walut i płatności w aplikacji",
       "conditions": [
+        "wejście przez link partnerski",
         "otwarcie konta Revolut w jednym z dostępnych planów",
         "zasilenie konta dowolną kwotą",
         "wykonanie minimum trzech transakcji, np. przelewu, wypłaty lub wymiany waluty",
@@ -315,7 +316,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba prywatna szukająca konta z premią",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -347,6 +348,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
+        "wejście przez link partnerski",
         "konto z kartą",
         "wpływ 500 zł dla 18-25 albo 1000 zł dla 26+",
         "1 transakcja mobilna kartą przez portfel",
@@ -380,7 +382,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -412,7 +414,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -444,7 +446,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -476,6 +478,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
+        "wejście przez link partnerski",
         "założenie Konto za Zero",
         "karta do rachunku",
         "transakcje kartą na min. 120 zł w 60 dni"
@@ -507,8 +510,9 @@
       "difficulty": "Średni",
       "time": "5-20 min + aktywacja konta",
       "deadline": "sprawdź u partnera",
-      "audience": "nowy klient firmowy, który chce prowadzić konto i wydatki firmy w jednej aplikacji",
+      "audience": "firma lub JDG, która chce prowadzić konto i wydatki firmy w jednej aplikacji",
       "conditions": [
+        "wejście przez link partnerski",
         "otwarcie konta Revolut Business w jednym z dostępnych planów",
         "zasilenie konta dowolną kwotą",
         "wykonanie minimum jednej transakcji, np. przelewu, wypłaty lub wymiany waluty",
@@ -536,18 +540,21 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto firmowe online z możliwą premią po spełnieniu warunków",
+      "reward": "do 4500 zł premii za otwarcie konta firmowego i spełnienie warunków",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3085",
       "difficulty": "Średni",
       "time": "20 min + aktywność firmowa",
       "deadline": "sprawdź u partnera",
-      "audience": "przedsiębiorca lub JDG",
+      "audience": "firma lub JDG, która chce konto firmowe z premią",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
+        "otwarcie konta firmowego w promocji",
+        "spełnienie miesięcznych warunków aktywności, np. wpływy, przelew do ZUS i płatności",
+        "sprawdzenie aktualnego regulaminu promocji u partnera",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Erste Bank Polska / Santander BP - Konto Firmowe Online. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.",
+      "summary": "Erste Bank Polska / Santander BP - Konto Firmowe Online. Możesz zyskać do 4500 zł premii po otwarciu konta firmowego i spełnieniu warunków promocji.",
       "pros": [
         "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
@@ -557,7 +564,12 @@
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Premia do 4500 zł zależy od spełnienia warunków promocji. Przed decyzją sprawdź aktualny regulamin, terminy i wymagane aktywności u partnera.",
+      "highlights": [
+        "do 4500 zł premii po spełnieniu warunków promocji",
+        "konto firmowe dla działalności gospodarczej",
+        "warunki aktywności do sprawdzenia przed przejściem do partnera"
+      ]
     },
     {
       "slug": "velobank-velokonto-firma",
@@ -576,7 +588,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "firma lub JDG",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -609,7 +621,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "przedsiębiorca lub spółka",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -642,7 +654,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "firma lub JDG",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -675,7 +687,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "firma lub JDG",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -708,6 +720,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "firma poza działalnością rolniczą",
       "conditions": [
+        "wejście przez link partnerski",
         "konto założone przez Call Center",
         "rozmowa telefoniczna musi zostać skutecznie przeprowadzona",
         "działalności rolnicze wykluczone",
@@ -742,7 +755,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba, która dopiero zakłada działalność",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -775,7 +788,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba, która już ma firmę",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -807,6 +820,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca kredytu gotówkowego",
       "conditions": [
+        "wejście przez link partnerski",
         "wniosek przez link",
         "poprawne dane",
         "pozytywna decyzja i wypłata środków"
@@ -839,7 +853,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba chcąca połączyć zobowiązania",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -871,7 +885,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -903,7 +917,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -935,7 +949,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -967,7 +981,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -999,7 +1013,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1031,7 +1045,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1063,7 +1077,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1095,7 +1109,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1128,7 +1142,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba, która ma pewny plan spłaty",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1161,7 +1175,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1194,7 +1208,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1227,7 +1241,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1260,7 +1274,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1293,7 +1307,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1326,7 +1340,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1359,7 +1373,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1391,7 +1405,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca konta oszczędnościowego",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1423,7 +1437,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1455,7 +1469,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1487,7 +1501,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1519,7 +1533,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1551,7 +1565,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1584,6 +1598,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "właściciel auta szukający OC/AC",
       "conditions": [
+        "wejście przez link partnerski",
         "wybór zakresu ubezpieczenia OC, AC lub assistance",
         "uzupełnienie danych pojazdu i właściciela",
         "porównanie ceny, zakresu ochrony i wyłączeń",
@@ -1618,7 +1633,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1651,7 +1666,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1683,7 +1698,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1715,7 +1730,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba zainteresowana ofertą",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1747,7 +1762,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca kredytu hipotecznego",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1779,7 +1794,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca kredytu hipotecznego",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1811,7 +1826,7 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca kredytu hipotecznego",
       "conditions": [
-        "wejście przez link partnera",
+        "wejście przez link partnerski",
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
@@ -1871,12 +1886,6 @@
             "text": "Przed decyzją sprawdź aktualny regulamin, terminy wypłaty premii i warunki po stronie banku."
           }
         ]
-      },
-      {
-        "type": "warning",
-        "badge": "Ważne",
-        "title": "To oferta firmowa",
-        "text": "Konto firmowe z premią ma inne warunki niż konto osobiste. Sprawdź, czy spełnisz wymagania dotyczące działalności, wpływów, płatności i rozliczenia premii."
       }
     ],
     "/finanse/konta-z-premia": [
@@ -2207,7 +2216,7 @@
       },
       {
         "type": "warning",
-        "badge": "Ważne",
+        "badge": "Przed zakupem",
         "title": "Raport VIN nie zastąpi oględzin",
         "text": "Płatny raport może być uzupełnieniem, ale nie powinien być jedynym powodem zakupu auta. Trzeba sprawdzić dokumenty, stan techniczny, jazdę próbną i koszty po zakupie."
       },
