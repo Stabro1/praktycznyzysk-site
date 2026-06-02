@@ -1588,7 +1588,7 @@
         "poprawne dane we wniosku",
         "spełnienie warunków programu"
       ],
-      "summary": "Porównanie ubezpieczenia samochodowego w Rankomat. Może być dodatkową ścieżką sprawdzenia OC/AC obok głównej oferty.",
+      "summary": "Porównanie ubezpieczenia samochodowego w Rankomat. Może być dodatkowym sposobem sprawdzenia OC/AC obok głównej propozycji.",
       "pros": [
         "pasuje do Twoich potrzeb",
         "jasne przejście do partnera",
@@ -1915,7 +1915,7 @@
       },
       {
         "type": "cards",
-        "title": "Najlepsze przejścia",
+        "title": "Najlepsze propozycje",
         "items": [
           {
             "title": "Kalkulator raty",
@@ -2147,7 +2147,7 @@
       {
         "type": "cards",
         "title": "Co dalej po historii pojazdu",
-        "description": "Najprostsza ścieżka od sprawdzenia warunków do przejścia do partnera.",
+        "description": "Najprostszy sposób, żeby sprawdzić warunki i przejść do wybranej propozycji.",
         "items": [
           {
             "title": "Checklista zakupu",
@@ -2346,7 +2346,7 @@
       },
       {
         "type": "cards",
-        "title": "Naturalne przejścia",
+        "title": "Polecane dalej",
         "items": [
           {
             "title": "Kalkulator OC",

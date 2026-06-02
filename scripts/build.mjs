@@ -63,7 +63,7 @@ const catalogPages = (data.sitemapSections || []).flatMap((section) =>
     ctaUrl: section.ctaUrl || (section.pillar ? `/${section.pillar}` : "/"),
     description:
       page.description ||
-      `Fundament strony w sekcji ${section.label}. Ta podstrona ma jasny cel, miejsce w architekturze i następny krok.`,
+      `Praktyczny przewodnik w sekcji ${section.label}: najważniejsze informacje, ryzyka i dalsze kroki.`,
     ...page,
     title: page.title || page.label || titleFromUrl(page.url)
   }))
@@ -406,7 +406,7 @@ function homePage() {
       <section id="popularne">
         <div class="section-head">
           <h2>Popularne tematy</h2>
-          <p>Szybkie przejścia do spraw, które najczęściej warto policzyć albo porównać przed decyzją.</p>
+          <p>Najczęściej wybierane tematy, które warto policzyć albo porównać przed decyzją.</p>
         </div>
         <div class="list-grid">${popular}</div>
       </section>
@@ -459,7 +459,7 @@ function pillarPage(pillar) {
       </section>
       <section>
         <div class="section-head">
-          <h2>Podstrony pionu</h2>
+          <h2>Podstrony</h2>
           <p>Poradniki, rankingi, kalkulatory i checklisty powiązane z tą kategorią.</p>
         </div>
         <div class="grid">${pages.map((page) => card({ ...page, name: page.title, url: page.url, cta: page.cta })).join("")}</div>
@@ -477,8 +477,8 @@ function pillarPage(pillar) {
       })}
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${nextStepBlock({
-        title: "Najlepszy następny krok",
-        description: "Najczęściej wybierane przejścia w tej kategorii.",
+        title: "Polecane dalej",
+        description: "Najczęściej wybierane tematy i propozycje w tej kategorii.",
         links: [
           ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
           ...pillar.priorityLinks.map((link) => ({ ...link, note: "Przejdź do tematu" }))
@@ -688,7 +688,7 @@ function toolPage(tool) {
   };
   const related = [
     { label: "Wróć do narzędzi", url: "/narzedzia", note: "Zobacz pozostałe kalkulatory i checklisty" },
-    { label: "Przejdź do wyniku", url: tool.next, note: "Najbliższy krok po użyciu narzędzia" }
+    { label: "Zobacz powiązany temat", url: tool.next, note: "Temat dobrany do wyniku" }
   ];
   const nextPage = pageByUrl.get(tool.next);
   const finalOffers = finalOffersFor({ page: nextPage, pillarSlug: nextPage?.pillar });
@@ -728,7 +728,7 @@ function toolPage(tool) {
         </div>
       </section>
       ${nextStepBlock({
-        title: "Powiązane przejścia",
+        title: "Powiązane",
         description: "Po wyniku możesz przejść do poradnika, checklisty albo porównania ofert.",
         links: [
           ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
@@ -816,7 +816,7 @@ function genericPage(page) {
       ${nextStepBlock({
         links: [
           ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
-          { label: page.cta, url: page.ctaUrl, note: "Główny następny krok tej strony" },
+          { label: page.cta, url: page.ctaUrl, note: "Zobacz powiązany temat" },
           ...(pillar ? [{ label: `Wróć do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz całą sekcję" }] : [])
         ].slice(0, 4)
       })}
@@ -873,7 +873,7 @@ function goPage(offer) {
         <div>
           <span class="badge">${hasDestination ? "Oferta" : "Oferta niedostępna"}</span>
           <h2>${hasDestination ? "Przejście do partnera" : "Ta oferta nie jest teraz dostępna"}</h2>
-          <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki, dostępność i decyzja po stronie banku, pożyczkodawcy, ubezpieczyciela albo operatora mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Ta oferta nie ma jeszcze aktywnego przejścia do partnera. Wróć do katalogu i wybierz inną dostępną propozycję."}</p>
+          <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki i dostępność oferty mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Ta oferta nie jest teraz dostępna. Wróć do katalogu i wybierz inną propozycję."}</p>
           ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Wróć do ofert", "/oferty", true)}</div>` : ""}
         </div>
       </section>
@@ -1113,7 +1113,7 @@ if (data.privateMode) {
   writePreviewPage(
     "/regulamin",
     legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
-      { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne przejścia do partnerów." },
+      { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne propozycje." },
       { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
       { title: "Narzędzia", text: "Kalkulatory i checklisty pomagają uporządkować dane przed wyborem oferty. Wynik traktuj jako punkt startowy do sprawdzenia warunków u partnera." }
     ])
@@ -1150,7 +1150,7 @@ writePage(
 writePage(
   "/regulamin",
   legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
-    { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne przejścia do partnerów." },
+    { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne propozycje." },
     { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
     { title: "Narzędzia", text: "Kalkulatory i checklisty pomagają uporządkować dane przed wyborem oferty. Wynik traktuj jako punkt startowy do sprawdzenia warunków u partnera." }
   ])
