@@ -7,7 +7,7 @@
   "lastUpdated": "2026-06-01",
   "privateMode": false,
   "previewBase": "/podglad-stabro",
-  "disclosure": "Część linków prowadzi do partnerów. Jeśli skorzystasz z oferty po takim przejściu, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie powinny być przez to wyższe.",
+  "disclosure": "Część linków prowadzi do partnerów. Jeśli skorzystasz z oferty po takim linku, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie będą przez to wyższe.",
   "primaryNav": [
     {
       "label": "Finanse",
@@ -114,11 +114,11 @@
       "slug": "praca",
       "name": "Praca",
       "label": "CV, rozmowa i zarobki",
-      "description": "CV, kreator CV, wzory CV, rozmowa kwalifikacyjna, zmiana pracy, prawa pracownika i kalkulatory.",
+      "description": "CV, CV krok po kroku, wzory CV, rozmowa kwalifikacyjna, zmiana pracy, prawa pracownika i kalkulatory.",
       "cta": "Przejdź do pracy",
       "priorityLinks": [
         {
-          "label": "Kreator CV",
+          "label": "CV krok po kroku",
           "url": "/praca/kreator-cv"
         },
         {
@@ -193,7 +193,7 @@
       "note": "Orientacyjny wynik i następny krok."
     },
     {
-      "label": "CV / kreator CV",
+      "label": "CV krok po kroku",
       "url": "/praca/kreator-cv",
       "note": "Szybsze przygotowanie dokumentów."
     },
@@ -346,7 +346,7 @@
       "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
         "wejście przez link partnerski",
         "konto z kartą",
@@ -379,7 +379,7 @@
       "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -410,7 +410,7 @@
       "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -441,7 +441,7 @@
       "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -471,7 +471,7 @@
       "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
         "wejście przez link partnerski",
         "założenie Konto za Zero",
@@ -862,7 +862,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -892,7 +892,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -922,7 +922,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -952,7 +952,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -982,7 +982,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1012,7 +1012,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1042,7 +1042,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1072,7 +1072,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1100,7 +1100,7 @@
       ],
       "reward": "pożyczka samoobsługowa - sprawdź kwotę, ratę i koszt",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opya",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
       "audience": "osoba, która ma pewny plan spłaty",
@@ -1131,10 +1131,10 @@
       ],
       "reward": "pożyczka na raty - sprawdź kwotę i termin spłaty",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2471",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca szybkiej pożyczki online",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1162,10 +1162,10 @@
       ],
       "reward": "pożyczka pozabankowa - sprawdź koszt i termin spłaty",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3001",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca szybkiej pożyczki online",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1193,10 +1193,10 @@
       ],
       "reward": "pożyczka online - sprawdź koszt przed wnioskiem",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_953",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca szybkiej pożyczki online",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1224,10 +1224,10 @@
       ],
       "reward": "pożyczka pozabankowa - sprawdź całkowitą kwotę do spłaty",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_862",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca szybkiej pożyczki online",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1255,10 +1255,10 @@
       ],
       "reward": "pierwsza pożyczka do 5000 zł z RRSO 0% po spełnieniu warunków",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2712",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca szybkiej pożyczki online",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1287,10 +1287,10 @@
       ],
       "reward": "pierwsza pożyczka 100-3000 zł, kolejna do 8000 zł",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opyo",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca szybkiej pożyczki online",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1319,10 +1319,10 @@
       ],
       "reward": "pożyczka 200-3000 zł za 0 zł po spełnieniu warunków",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opyq",
-      "difficulty": "Ryzykowny",
+      "difficulty": "Łatwy",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca szybkiej pożyczki online",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1383,7 +1383,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1413,7 +1413,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1443,7 +1443,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1473,7 +1473,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1503,7 +1503,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1568,7 +1568,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "kierowca szukający OC, AC lub porównania ubezpieczenia",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1599,7 +1599,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "kierowca szukający OC, AC lub porównania ubezpieczenia",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1630,7 +1630,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca karty kredytowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -1660,7 +1660,7 @@
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba zainteresowana ofertą",
+      "audience": "osoba szukająca karty kredytowej",
       "conditions": [
         "wejście przez link partnerski",
         "poprawne dane we wniosku",
@@ -2005,7 +2005,7 @@
             "text": "Porównuj pieniądze, które realnie oddasz, a nie tylko haslo promocyjne."
           },
           {
-            "title": "Odrzuc ryzykowny wariant",
+            "title": "Wybierz łatwy do spłaty wariant",
             "text": "Jeśli spłata wymaga idealnego scenariusza, decyzja jest za droga."
           }
         ]
@@ -2857,7 +2857,7 @@
         {
           "url": "/praca/cv",
           "title": "CV",
-          "description": "Jak zrobić czytelne CV i kiedy skorzystać z kreatora."
+          "description": "Jak zrobić czytelne CV i kiedy skorzystać z poradnika."
         },
         {
           "url": "/praca/jak-napisac-cv",
@@ -2866,8 +2866,8 @@
         },
         {
           "url": "/praca/kreator-cv",
-          "title": "Kreator CV",
-          "description": "Kiedy kreator CV oszczędza czas, a kiedy wystarczy darmowy wzór."
+          "title": "CV krok po kroku",
+          "description": "Kiedy CV krok po kroku oszczędza czas, a kiedy wystarczy darmowy wzór."
         },
         {
           "url": "/praca/wzory-cv",
@@ -3265,10 +3265,10 @@
       "url": "/praca/kreator-cv",
       "type": "guide",
       "pillar": "praca",
-      "title": "Kreator CV",
-      "description": "Kreator ma sens, gdy chcesz szybciej złozyc czytelne CV. Darmowy wzór wystarczy przy prostych potrzebach.",
-      "cta": "Rozmowa kwalifikacyjna",
-      "ctaUrl": "/praca/rozmowa-kwalifikacyjna"
+      "title": "CV krok po kroku",
+      "description": "Poradnik, jak szybciej złożyć czytelne CV. Przy prostych potrzebach wystarczy darmowy wzór i dopasowanie treści do ogłoszenia.",
+      "cta": "Pytania na rozmowie",
+      "ctaUrl": "/praca/pytania-na-rozmowie-kwalifikacyjnej"
     },
     {
       "url": "/dom/remont",

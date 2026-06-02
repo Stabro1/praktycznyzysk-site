@@ -396,9 +396,7 @@ function affiliateDisclosureBlock() {
   return `<section class="affiliate-disclosure">
     <div>
       <span class="badge">Informacja</span>
-      <h2>Przejście do partnera</h2>
       <p>${esc(data.disclosure)}</p>
-      <p>Kliknięcie w link partnera może oznaczać prowizję dla serwisu. Nie zmienia to ceny po Twojej stronie, ale przed decyzją zawsze sprawdź aktualne warunki u dostawcy.</p>
     </div>
   </section>`;
 }
@@ -579,7 +577,7 @@ const toolModels = {
     type: "checklist",
     fields: ["CV dopasowane", "Odpowiedzi przygotowane", "Pytania do firmy", "Oczekiwania finansowe"],
     resultTitle: "Gotowość do rozmowy",
-    resultText: "Po sprawdzeniu listy możesz przejść do kreatora CV, przygotowania rozmowy albo negocjacji wynagrodzenia.",
+    resultText: "Po sprawdzeniu listy możesz przejść do poradnika CV, przygotowania rozmowy albo negocjacji wynagrodzenia.",
     bullets: ["przygotuj liczby i przykłady", "sprawdź firmę przed rozmową", "ustal minimalną akceptowalną stawkę"]
   },
   "checklista-remont": {
@@ -1105,7 +1103,7 @@ function faqPage() {
     },
     {
       title: "Czy linki na stronie są afiliacyjne?",
-      text: "Część linków może być afiliacyjna. Jeśli przejdziesz do partnera i skorzystasz z oferty, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie powinny być przez to wyższe."
+      text: "Część linków może być afiliacyjna. Jeśli przejdziesz do partnera i skorzystasz z oferty, serwis może otrzymać prowizję. Dla Ciebie cena lub warunki po stronie partnera nie będą przez to wyższe."
     },
     {
       title: "Czy korzystanie z serwisu kosztuje?",
@@ -1301,3 +1299,4 @@ fs.writeFileSync(
 );
 
 console.log(`Built ${dist} with ${urls.length} URLs`);
+
