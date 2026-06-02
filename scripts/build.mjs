@@ -216,6 +216,7 @@ function offerCard(offer) {
       <span class="badge">${esc(offer.category)}</span>
       <h3>${esc(offer.name)}</h3>
       <p>${esc(offer.summary)}</p>
+      ${offer.reward ? `<p class="offer-benefit"><strong>Możesz zyskać:</strong> ${esc(offer.reward)}</p>` : ""}
     </div>
     <div class="offer-meta">${meta
       .map((item) => `<div><span>${esc(item.label)}</span><strong>${esc(item.value)}</strong></div>`)
@@ -227,6 +228,15 @@ function offerCard(offer) {
     <div class="update-stamp">Aktualizacja: ${esc(data.lastUpdated)}</div>
     ${cta(offer.affiliateUrl ? "Przejdź do oferty" : "Zobacz miejsce na link", `/go/${offer.slug}`)}
   </article>`;
+}
+
+function offerBenefitList(offer) {
+  const items = [
+    offer.reward ? `Możesz zyskać: ${offer.reward}.` : "",
+    offer.audience ? `Dla kogo: ${offer.audience}.` : "",
+    ...(offer.pros || []).slice(0, 2)
+  ].filter(Boolean);
+  return items.length ? `<ul class="tool-points">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
 }
 
 function relatedOffersFor(page) {
@@ -260,7 +270,7 @@ function finalOffersFor({ page, pillarSlug, limit = 3 } = {}) {
   return result;
 }
 
-function offerSection(offerList, { title = "Sprawdź dostępne propozycje", description = "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji." } = {}) {
+function offerSection(offerList, { title = "Sprawdź dostępne propozycje", description = "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji.", moreUrl = "/oferty", moreLabel = "Zobacz więcej ofert" } = {}) {
   if (!offerList.length) return "";
   return `<section>
         <div class="section-head">
@@ -268,6 +278,7 @@ function offerSection(offerList, { title = "Sprawdź dostępne propozycje", desc
           <p>${esc(description)}</p>
         </div>
         <div class="offer-grid">${offerList.map((offer) => offerCard(offer)).join("")}</div>
+        <div class="section-actions">${cta(moreLabel, moreUrl, true)}</div>
       </section>`;
 }
 
@@ -473,9 +484,10 @@ function pillarPage(pillar) {
       </section>
       ${offerSection(finalOffers, {
         title: "Sprawdź dostępne propozycje",
-        description: "Porównaj podstawowe warunki i wybierz ofertę, która najlepiej pasuje do Twojej sytuacji."
+        description: "Porównaj podstawowe warunki i wybierz ofertę, która najlepiej pasuje do Twojej sytuacji.",
+        moreUrl: offersUrlFor(pillar.slug),
+        moreLabel: `Zobacz więcej ofert: ${pillar.name}`
       })}
-      ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${nextStepBlock({
         title: "Polecane dalej",
         description: "Najczęściej wybierane tematy i propozycje w tej kategorii.",
@@ -484,6 +496,7 @@ function pillarPage(pillar) {
           ...pillar.priorityLinks.map((link) => ({ ...link, note: "Przejdź do tematu" }))
         ].slice(0, 4)
       })}
+      ${finalOffers.length ? affiliateDisclosureBlock() : ""}
     </main>`
   });
 }
@@ -570,6 +583,10 @@ function renderToolInputs(model) {
       return input;
     })
     .join("");
+}
+
+function offersUrlFor(slug) {
+  return slug ? `/oferty/${slug}` : "/oferty";
 }
 
 function toolCalculatorScript(slug, type) {
@@ -737,7 +754,9 @@ function toolPage(tool) {
       })}
       ${offerSection(finalOffers, {
         title: "Propozycje dopasowane do tematu",
-        description: "Po sprawdzeniu wyniku możesz porównać oferty i przejść do wybranej propozycji."
+        description: "Po sprawdzeniu wyniku możesz porównać oferty i przejść do wybranej propozycji.",
+        moreUrl: offersUrlFor(nextPage?.pillar),
+        moreLabel: "Zobacz więcej podobnych ofert"
       })}
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${toolCalculatorScript(tool.slug, model.type)}
@@ -783,9 +802,10 @@ function genericPage(page) {
         title: pageOffers.length ? "Polecane oferty" : "Sprawdź dostępne propozycje",
         description: pageOffers.length
           ? "Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty."
-          : "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji."
+          : "Porównaj podstawowe warunki i przejdź do wybranej oferty, jeśli pasuje do Twojej sytuacji.",
+        moreUrl: offersUrlFor(page.pillar),
+        moreLabel: "Zobacz więcej ofert w tej kategorii"
       })}
-      ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       <section>
         <div class="section-head">
           <h2>Najważniejsze zasady</h2>
@@ -820,11 +840,17 @@ function genericPage(page) {
           ...(pillar ? [{ label: `Wróć do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz całą sekcję" }] : [])
         ].slice(0, 4)
       })}
+      ${finalOffers.length ? affiliateDisclosureBlock() : ""}
     </main>`
   });
 }
 
 function offersIndex() {
+  const categoryLinks = data.pillars.map((pillar) => ({
+    label: pillar.name,
+    url: offersUrlFor(pillar.slug),
+    note: "Zobacz oferty z tej kategorii"
+  }));
   return layout({
     url: "/oferty",
     title: `Oferty | ${data.name}`,
@@ -836,12 +862,43 @@ function offersIndex() {
           <div>
             <div class="eyebrow">Oferty</div>
             <h1>Oferty, które możesz porównać.</h1>
-            <p class="lead">Sprawdź podstawowe warunki, ryzyka i przejście do partnera.</p>
+            <p class="lead">Sprawdź podstawowe warunki, możliwe korzyści i wybierz propozycję dopasowaną do Twojej sytuacji.</p>
+          </div>
+        </div>
+      </section>
+      ${nextStepBlock({ title: "Kategorie ofert", description: "Wybierz kategorię, żeby zobaczyć pełną listę dostępnych propozycji.", links: categoryLinks })}
+      <section>
+        <div class="offer-grid">${offers.map((offer) => offerCard(offer)).join("")}</div>
+      </section>
+    </main>`
+  });
+}
+
+function offersPillarIndex(pillar) {
+  const pillarOffers = offers.filter((offer) => {
+    if (offer.pillar === pillar.slug) return true;
+    return finalOffersFor({ pillarSlug: pillar.slug, limit: 50 }).some((item) => item.slug === offer.slug);
+  });
+  return layout({
+    url: offersUrlFor(pillar.slug),
+    title: `Oferty: ${pillar.name} | ${data.name}`,
+    description: `Pełna lista ofert powiązanych z kategorią ${pillar.name}.`,
+    crumbs: [
+      { label: "Oferty", url: "/oferty" },
+      { label: pillar.name, url: offersUrlFor(pillar.slug) }
+    ],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Oferty</div>
+            <h1>Oferty: ${esc(pillar.name)}</h1>
+            <p class="lead">Zobacz pełną listę propozycji z tej kategorii i przejdź do wybranej oferty.</p>
           </div>
         </div>
       </section>
       <section>
-        <div class="offer-grid">${offers.map((offer) => offerCard(offer)).join("")}</div>
+        <div class="offer-grid">${pillarOffers.map((offer) => offerCard(offer)).join("")}</div>
       </section>
     </main>`
   });
@@ -852,7 +909,7 @@ function goPage(offer) {
   return layout({
     url: `/go/${offer.slug}`,
     title: `${offer.name} | ${data.name}`,
-    description: `Przejście do partnera dla: ${offer.name}.`,
+    description: `${offer.name}. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.`,
     noindex: true,
     crumbs: [
       { label: "Oferty", url: "/oferty" },
@@ -864,7 +921,8 @@ function goPage(offer) {
           <div>
             <div class="eyebrow">${hasDestination ? "Oferta partnera" : "Oferta w przygotowaniu"}</div>
             <h1>${esc(offer.name)}</h1>
-            <p class="lead">${esc(offer.summary)}</p>
+            <p class="lead">${esc(offer.name)}. Sprawdź podstawowe warunki i przejdź do partnera, jeśli oferta pasuje do Twojej sytuacji.</p>
+            ${offerBenefitList(offer)}
             <div class="hero-actions">${cta("Wróć do sekcji", `/${offer.pillar}`, true)}</div>
           </div>
         </div>
@@ -872,7 +930,7 @@ function goPage(offer) {
       <section class="warning-band">
         <div>
           <span class="badge">${hasDestination ? "Oferta" : "Oferta niedostępna"}</span>
-          <h2>${hasDestination ? "Przejście do partnera" : "Ta oferta nie jest teraz dostępna"}</h2>
+          <h2>${hasDestination ? "Sprawdź ofertę u partnera" : "Ta oferta nie jest teraz dostępna"}</h2>
           <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki i dostępność oferty mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Ta oferta nie jest teraz dostępna. Wróć do katalogu i wybierz inną propozycję."}</p>
           ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Wróć do ofert", "/oferty", true)}</div>` : ""}
         </div>
@@ -1097,6 +1155,7 @@ if (data.privateMode) {
   writePreviewPage("/narzedzia", toolsIndex());
   for (const tool of data.tools) writePreviewPage(`/narzedzia/${tool.slug}`, toolPage(tool));
   writePreviewPage("/oferty", offersIndex());
+  for (const pillar of data.pillars) writePreviewPage(offersUrlFor(pillar.slug), offersPillarIndex(pillar));
   for (const offer of offers) writePreviewPage(`/go/${offer.slug}`, goPage(offer));
   for (const page of allPages) writePreviewPage(page.url, genericPage(page));
   writePreviewPage("/faq", faqPage());
@@ -1133,6 +1192,7 @@ for (const pillar of data.pillars) writePage(`/${pillar.slug}`, pillarPage(pilla
 writePage("/narzedzia", toolsIndex());
 for (const tool of data.tools) writePage(`/narzedzia/${tool.slug}`, toolPage(tool));
 writePage("/oferty", offersIndex());
+for (const pillar of data.pillars) writePage(offersUrlFor(pillar.slug), offersPillarIndex(pillar));
 for (const offer of offers) writePage(`/go/${offer.slug}`, goPage(offer));
 for (const page of allPages) writePage(page.url, genericPage(page));
 
@@ -1162,6 +1222,7 @@ const urls = [
   "/narzedzia",
   ...data.tools.map((tool) => `/narzedzia/${tool.slug}`),
   "/oferty",
+  ...data.pillars.map((pillar) => offersUrlFor(pillar.slug)),
   ...allPages.map((page) => page.url),
   "/faq",
   "/o-nas",
