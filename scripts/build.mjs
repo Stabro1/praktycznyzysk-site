@@ -112,7 +112,7 @@ function mobileMenu() {
         .map((item) => {
           const slug = stripSlash(item.url);
           const pillar = pillarBySlug.get(slug);
-          const quick = pillar?.priorityLinks?.slice(0, 3) || [];
+          const quick = pillar?.priorityLinks || [];
           return `<div class="mobile-menu-section">
             <a class="mobile-menu-main" href="${esc(item.url)}">${esc(item.label)}</a>
             ${quick.map((link) => `<a href="${esc(link.url)}">${esc(link.label)}</a>`).join("")}
@@ -265,7 +265,7 @@ function sortOffersForPlacement(offerList) {
 }
 
 function relatedOffersFor(page) {
-  return sortOffersForPlacement(offers.filter((offer) => offer.pages?.includes(page.url))).slice(0, 3);
+  return sortOffersForPlacement(offers.filter((offer) => offer.pages?.includes(page.url))).slice(0, 4);
 }
 
 const fallbackOfferPages = {
@@ -276,7 +276,7 @@ const fallbackOfferPages = {
   dom: ["/finanse/kredyty-gotowkowe", "/finanse/rankingi", "/ubezpieczenia/oc-ac"]
 };
 
-function finalOffersFor({ page, pillarSlug, limit = 3 } = {}) {
+function finalOffersFor({ page, pillarSlug, limit = 4 } = {}) {
   const direct = page ? relatedOffersFor(page) : [];
   if (direct.length) return direct.slice(0, limit);
   const slug = pillarSlug || page?.pillar;

@@ -43,6 +43,14 @@
       "cta": "Przejdź do finansów",
       "priorityLinks": [
         {
+          "label": "Konta osobiste z premią",
+          "url": "/finanse/konta-z-premia"
+        },
+        {
+          "label": "Konta firmowe z premią",
+          "url": "/finanse/konta-firmowe-z-premia"
+        },
+        {
           "label": "Kredyty gotówkowe",
           "url": "/finanse/kredyty-gotowkowe"
         },
@@ -364,6 +372,43 @@
       ],
       "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
       "placementPriority": 88
+    },
+    {
+      "slug": "alior-konto-z-bonusem",
+      "name": "Alior Bank - Konto z Bonusem",
+      "category": "account",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/konta-z-premia",
+        "/finanse/ranking-kont-z-premia"
+      ],
+      "reward": "nagrody o wartości nawet do 1300 zł, w tym 200 zł premii na start, bonus do 800 zł i obrączka płatnicza o wartości 500 zł",
+      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oq4w",
+      "difficulty": "Łatwy",
+      "time": "5-20 min + aktywne korzystanie z konta",
+      "deadline": "sprawdź u partnera",
+      "audience": "osoba prywatna szukająca konta osobistego z wysoką premią i prostym startem",
+      "conditions": [
+        "wejście przez link partnerski",
+        "otwarcie Konta z Bonusem w promocji",
+        "spełnienie warunków aktywności wskazanych w regulaminie",
+        "sprawdzenie aktualnych zasad premii, bonusu i obrączki płatniczej u partnera"
+      ],
+      "summary": "Alior Bank - Konto z Bonusem. Możesz zyskać nagrody o wartości nawet do 1300 zł, w tym 200 zł premii na start, bonus do 800 zł za aktywne korzystanie z konta oraz obrączkę płatniczą o wartości 500 zł.",
+      "pros": [
+        "nagrody o wartości nawet do 1300 zł",
+        "200 zł ekstra premii na start",
+        "bonus do 800 zł za aktywne korzystanie z konta",
+        "obrączka płatnicza o wartości 500 zł",
+        "0 zł za prowadzenie konta bez warunków",
+        "oprocentowanie do 5% w skali roku z Kontem Oszczędnościowym na Start"
+      ],
+      "cons": [
+        "premia i bonus wymagają spełnienia warunków promocji",
+        "wartość i dostępność nagród trzeba potwierdzić w aktualnym regulaminie"
+      ],
+      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, warunki aktywności, opłaty oraz zasady przyznania premii, bonusu i obrączki płatniczej u partnera.",
+      "placementPriority": 86
     },
     {
       "slug": "bnp-konto-otwarte-na-ciebie",
@@ -726,7 +771,7 @@
     },
     {
       "slug": "mbank-firmootwieracz",
-      "name": "mBank - firmootwieracz / mBiznes",
+      "name": "mBank - firmootwieracz",
       "category": "business-account",
       "pillar": "finanse",
       "pages": [
@@ -734,26 +779,39 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "otwarcie działalności i konta firmowego w jednym procesie",
+      "reward": "nawet 500 zł premii oraz konto firmowe za 0 zł na stałe po założeniu firmy z mBankiem",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzk",
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba, która dopiero zakłada działalność",
+      "audience": "osoba, która chce założyć działalność i konto firmowe w jednym procesie",
       "conditions": [
         "wejście przez link partnerski",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+        "założenie firmy i konta firmowego przez firmootwieracz mBanku",
+        "spełnienie warunków promocji premii do 500 zł",
+        "sprawdzenie aktualnego regulaminu, opłat i zakresu usług u partnera"
       ],
-      "summary": "Oferta dla osoby, która chce założyć działalność i przejść przez firmootwieracz mBanku.",
+      "summary": "mBank - firmootwieracz. Załóż firmę i zyskaj konto za 0 zł na stałe, faktury do KSeF z mBankiem oraz nawet 500 zł premii po spełnieniu warunków.",
       "pros": [
-        "otwarcie działalności i konta firmowego w jednym procesie"
+        "nawet 500 zł premii po spełnieniu warunków",
+        "0 zł za prowadzenie konta firmowego bezterminowo",
+        "0 zł za pakiet 20 internetowych przelewów krajowych w PLN miesięcznie",
+        "0 zł za pakiet 20 internetowych przelewów w EUR do wybranych krajów europejskich miesięcznie",
+        "0 zł za pierwszą kartę debetową wybraną we wniosku promocyjnym",
+        "0 zł na 2 lata za mOrganizer finansów w wersji Optymalnej"
       ],
       "cons": [
-        "warunki mogą się zmienić",
-        "ostateczna decyzja zależy od partnera"
+        "oferta jest głównie dla osoby zakładającej działalność",
+        "premia i bezpłatne elementy wymagają sprawdzenia aktualnych warunków promocji"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "Przed decyzją sprawdź aktualny regulamin firmootwieracza, warunki premii do 500 zł, opłaty po promocji i zakres usług dodatkowych u partnera.",
+      "highlights": [
+        "nawet 500 zł premii",
+        "0 zł za prowadzenie konta firmowego bezterminowo",
+        "pakiety przelewów krajowych i europejskich w cenie 0 zł",
+        "0 zł na 2 lata za mOrganizer finansów w wersji Optymalnej"
+      ],
+      "placementPriority": 86
     },
     {
       "slug": "mbank-konto-firmowe-istniejaca-firma",
