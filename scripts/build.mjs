@@ -39,6 +39,13 @@ const previewHtml = (html) =>
 const writePreviewPage = (url, html) => writePage(previewUrl(url), previewHtml(html));
 
 const pillarBySlug = new Map(data.pillars.map((pillar) => [pillar.slug, pillar]));
+const typeLabels = {
+  guide: "Poradnik",
+  ranking: "Ranking",
+  checklist: "Checklista",
+  calculator: "Kalkulator",
+  faq: "FAQ"
+};
 
 function titleFromUrl(url) {
   const last = stripSlash(url).split("/").pop() || "strona";
@@ -664,7 +671,7 @@ function toolPage(tool) {
           <div class="result-card">
             <span class="badge">Co dalej?</span>
             <h2>${esc(model.resultTitle)}</h2>
-            <p>${esc(model.resultText)} Nie udajemy decyzji bankowej, realnej składki ani indywidualnej porady.</p>
+            <p>${esc(model.resultText)} Potraktuj wynik jako punkt wyjścia i sprawdź szczegóły przed decyzją.</p>
             <div class="calculated-result" data-tool-output></div>
             <ul class="tool-points">${model.bullets.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
             ${cta("Przejdź do następnego kroku", tool.next)}
@@ -673,7 +680,7 @@ function toolPage(tool) {
       </section>
       ${nextStepBlock({
         title: "Powiązane przejścia",
-        description: "Narzędzie nie powinno kończyć sesji. Wynik ma kierować do decyzji.",
+        description: "Po wyniku możesz przejść do poradnika, checklisty albo porównania ofert.",
         links: related
       })}
       ${toolCalculatorScript(tool.slug, model.type)}
@@ -690,7 +697,7 @@ function genericPage(page) {
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
     .slice(0, 3);
   const genericLinks = [
-    ...(pillar?.priorityLinks || []).slice(0, 3).map((link) => ({ ...link, note: "Ważny krok w tym pionie" })),
+    ...(pillar?.priorityLinks || []).slice(0, 3).map((link) => ({ ...link, note: "Dobry następny krok w tym temacie" })),
     ...relatedTools.map((tool) => ({ label: tool.name, url: `/narzedzia/${tool.slug}`, note: tool.description }))
   ].slice(0, 4);
   return layout({
@@ -705,7 +712,7 @@ function genericPage(page) {
       <section class="hero compact">
         <div class="hero-inner single">
           <div>
-            <div class="eyebrow">${esc(page.type)}</div>
+            <div class="eyebrow">${esc(typeLabels[page.type] || page.type)}</div>
             <h1>${esc(page.title)}</h1>
             <p class="lead">${esc(page.description)}</p>
             <div class="hero-actions">${cta(page.cta, page.ctaUrl)}</div>
@@ -748,7 +755,7 @@ function genericPage(page) {
                 .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>${esc(link.note)}</span></a>`)
                 .join("")
             : sectionLinks
-            .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Ważny krok w tym pionie</span></a>`)
+            .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>Dobry następny krok w tym temacie</span></a>`)
             .join("") ||
           `<a class="list-card" href="/narzedzia"><strong>Narzędzia</strong><span>Kalkulatory i checklisty do dalszej decyzji.</span></a>`
         }</div>
