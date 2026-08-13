@@ -428,6 +428,16 @@ function externalLinkAttrs(url, sponsored = false) {
 }
 
 function draftPromoPage(page) {
+  const remainingOffers = offers
+    .filter((offer) => offer.pillar === "pozostale" || offer.category === "other")
+    .map((offer) => ({
+      categoryName: "Pozostałe",
+      programName: offer.name,
+      voucherName: offer.name,
+      voucherText: offer.summary || offer.reward || "Sprawdź aktualne warunki oferty.",
+      voucherTrackingUrl: offer.affiliateUrl || ""
+    }));
+  const remainingOffersJson = JSON.stringify(remainingOffers).replace(/</g, "\\u003c");
   return layout({
     url: page.url,
     title: page.title,
@@ -466,10 +476,11 @@ function draftPromoPage(page) {
           const filters = document.getElementById("promo-filters");
           let offers = [];
           const esc = (v) => String(v ?? "").replace(/[&<>\"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\\\"":"&quot;","'":"&#39;"}[c]));
+          const manualOffers = ${remainingOffersJson};
           const category = (o) => { const s = [o.categoryName, o.programName, o.voucherName].join(" ").toLowerCase(); if (/finan|bank|kredyt|pożycz|konto|ubezpiec/.test(s)) return "finanse"; if (/dom|budow|mebl|remont|narzęd/.test(s)) return "dom"; if (/zakup|sklep|moda|elektr|sport|zdrow|suplement|kosmet/.test(s)) return "zakupy"; return "inne"; };
           const render = (selected = "all") => { const rows = offers.filter(o => selected === "all" || category(o) === selected); list.innerHTML = rows.length ? rows.map(o => '<article class="card"><span class="eyebrow">' + esc(o.categoryName || "Promocja") + '</span><h3>' + esc(o.voucherName || o.programName || "Oferta partnerska") + '</h3><p>' + esc(o.voucherText || "Sprawdź warunki i aktualny termin oferty.") + '</p>' + (o.voucherCode ? '<p><strong>Kod: ' + esc(o.voucherCode) + '</strong></p>' : "") + (o.voucherTrackingUrl ? '<a class="button" href="' + esc(o.voucherTrackingUrl) + '" target="_blank" rel="nofollow noopener">Sprawdź promocję</a>' : "") + '</article>').join("") : '<p class="notice">Brak aktywnych promocji w tej kategorii.</p>'; };
           filters.addEventListener("click", e => { const b = e.target.closest("[data-category]"); if (b) render(b.dataset.category); });
-          fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = Array.isArray(data) ? data : []; render(); }).catch(() => { list.innerHTML = '<p class="notice">Promocje są chwilowo niedostępne.</p>'; });
+          fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = manualOffers.concat(Array.isArray(data) ? data : []); render(); }).catch(() => { offers = manualOffers; render(); });
         })();
       </script>
     </main>`
