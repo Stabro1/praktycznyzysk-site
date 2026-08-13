@@ -207,8 +207,8 @@ const draftPromoPages = [
     title: "Konkursy i promocje, które warto sprawdzić | PraktycznyZysk.pl",
     h1: "Konkursy i promocje, które warto sprawdzić",
     description: "Aktualne konkursy, rabaty, kody promocyjne, bonusy i okazje ograniczone czasowo. Przed skorzystaniem sprawdź zasady, termin i regulamin.",
-    category: "Wersja robocza",
-    note: "Ta sekcja jest przygotowana technicznie, ale pozostaje poza sitemapą i menu do czasu dodania realnych konkursów, promocji i regulaminów.",
+    category: "Promocje",
+    note: "Sprawdź aktualne promocje, rabaty i bonusy w interesującej Cię kategorii.",
     checklist: [
       "Nazwa organizatora i źródło promocji.",
       "Data rozpoczęcia i zakończenia.",
@@ -459,22 +459,6 @@ function draftPromoPage(page) {
           <button class="button secondary" data-category="inne">Inne</button>
         </div>
         <div class="grid cards-2" id="promo-list"><p class="notice">Ładowanie promocji…</p></div>
-      </section>
-      <section class="section">
-        <div class="section-heading">
-          <span>Przed publikacją</span>
-          <h2>Co musi trafić na tę stronę</h2>
-          <p>Strona ma być użyta dopiero wtedy, gdy będą konkretne, sprawdzone oferty z aktualnymi warunkami.</p>
-        </div>
-        <div class="grid cards-2">
-          ${page.checklist
-            .map(
-              (item) => `<article class="info-card">
-                <strong>${esc(item)}</strong>
-              </article>`
-            )
-            .join("")}
-        </div>
       </section>
       <script>
         (() => {
