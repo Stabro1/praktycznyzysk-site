@@ -985,8 +985,8 @@ function pillarPage(pillar) {
       </section>
       <section>
         <div class="section-head">
-          <h2>Podstrony</h2>
-          <p>Poradniki, rankingi, kalkulatory i checklisty powiązane z tą kategorią.</p>
+          <h2>Warto zobaczyć</h2>
+          <p>Najważniejsze poradniki i materiały związane z finansami.</p>
         </div>
         <div class="grid">${pages.map((page) => card({ ...page, name: page.title, url: page.url, cta: pageCardCta(page) })).join("")}</div>
       </section>
