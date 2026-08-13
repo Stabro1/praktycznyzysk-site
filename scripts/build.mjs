@@ -436,7 +436,7 @@ function draftPromoPage(page) {
     crumbs: [{ label: page.h1, url: page.url }],
     body: `<main>
       <section class="hero compact">
-        <div class="hero-inner single">
+        <div class="hero-inner single centered">
           <div>
             <div class="eyebrow">${esc(page.category)}</div>
             <h1>${esc(page.h1)}</h1>
