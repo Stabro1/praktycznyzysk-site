@@ -204,11 +204,11 @@ const seoLandingPages = [
 const draftPromoPages = [
   {
     url: "/konkursy-i-promocje",
-    title: "Konkursy i promocje, które warto sprawdzić | PraktycznyZysk.pl",
-    h1: "Konkursy i promocje, które warto sprawdzić",
-    description: "Aktualne konkursy, rabaty, kody promocyjne, bonusy i okazje ograniczone czasowo. Przed skorzystaniem sprawdź zasady, termin i regulamin.",
+    title: "Promocje kody rabatowe kupony zniżki | PraktycznyZysk.pl",
+    h1: "Promocje kody rabatowe kupony zniżki",
+    description: "Sprawdź aktualne promocje, kody rabatowe, kupony, zniżki i bonusy w najważniejszych kategoriach.",
     category: "Promocje",
-    note: "Sprawdź aktualne promocje, rabaty i bonusy w interesującej Cię kategorii.",
+    note: "Wybierz interesującą Cię kategorię i znajdź ofertę dopasowaną do swoich potrzeb.",
     checklist: [
       "Nazwa organizatora i źródło promocji.",
       "Data rozpoczęcia i zakończenia.",
