@@ -455,11 +455,11 @@ function draftPromoPage(page) {
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section promo-offers-section">
         <div class="section-heading">
           <span>Oferty partnerskie</span>
           <h2>Promocje według kategorii</h2>
-          <p>Wybierz kategorię. Lista jest pobierana z aktualnego feedu partnera i pokazuje tylko dostępne oferty.</p>
+          <p>Wybierz kategorię.</p>
         </div>
         <div class="filter-row" id="promo-filters" aria-label="Kategorie promocji">
           <button class="button secondary" data-category="all">Wszystkie</button>
