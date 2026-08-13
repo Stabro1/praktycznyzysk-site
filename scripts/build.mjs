@@ -9,6 +9,7 @@ fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 fs.copyFileSync(path.join(root, "src", "styles.css"), path.join(dist, "styles.css"));
 fs.copyFileSync(path.join(root, "src", "analytics.js"), path.join(dist, "analytics.js"));
+fs.copyFileSync(path.join(root, "src", "assets", "logo.jpg"), path.join(dist, "logo.jpg"));
 
 const esc = (value = "") =>
   String(value)
@@ -16,8 +17,13 @@ const esc = (value = "") =>
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+const jsonLd = (value) =>
+  `<script type="application/ld+json">${JSON.stringify(value).replaceAll("<", "\\u003c")}</script>`;
+const gaId = "G-XDC02MGC7M";
+const indexNowKey = "b4b7f35b8ec64d33877b49d2b9c1b5af";
 
 const stripSlash = (url) => url.replace(/^\/|\/$/g, "");
+const absoluteUrl = (url = "/") => `https://${data.domain}${url === "/" ? "/" : url}`;
 const previewBase = data.previewBase || "/podglad-stabro";
 const outFile = (url) => {
   const clean = stripSlash(url);
@@ -56,7 +62,11 @@ const categoryLabels = {
   savings: "Oszczędzanie",
   insurance: "Ubezpieczenie",
   "credit-card": "Karta kredytowa",
-  mortgage: "Kredyt hipoteczny"
+  mortgage: "Kredyt hipoteczny",
+  "business-loan": "Kredyt firmowy",
+  "car-loan": "Kredyt samochodowy",
+  crypto: "Giełda kryptowalut",
+  other: "Pozostałe"
 };
 
 function titleFromUrl(url) {
@@ -85,6 +95,8 @@ const pageByUrl = new Map();
 for (const page of [...catalogPages, ...(data.pages || [])]) pageByUrl.set(page.url, page);
 const allPages = [...pageByUrl.values()].sort((a, b) => a.url.localeCompare(b.url));
 const offers = data.offers || [];
+const blogArticles = data.blogArticles || [];
+const focusedOfferPages = allPages.filter((page) => offers.some((offer) => offer.pages?.includes(page.url)));
 const normalizeLabel = (value = "") =>
   String(value)
     .toLowerCase()
@@ -95,6 +107,117 @@ const normalizeLabel = (value = "") =>
     .trim();
 const toolByTitle = new Map(data.tools.map((tool) => [normalizeLabel(tool.name), `/narzedzia/${tool.slug}`]));
 const pageByTitle = new Map(allPages.map((page) => [normalizeLabel(page.title), page.url]));
+const seoOverrides = {
+  "/finanse/konta-z-premia": {
+    title: "Konta z premią 2026 - ranking promocji bankowych | PraktycznyZysk.pl",
+    description: "Konta osobiste z premią, bonusy za założenie konta i aktualne promocje bankowe. Sprawdź korzyści, warunki i aktualne promocje."
+  },
+  "/finanse/ranking-kont-z-premia": {
+    title: "Ranking kont z premią 2026 - najlepsze promocje bankowe | PraktycznyZysk.pl",
+    description: "Ranking kont z premią: premie za konto, warunki aktywności, opłaty i najważniejsze korzyści dla klienta."
+  },
+  "/finanse/konta-firmowe-z-premia": {
+    title: "Konto firmowe z premią 2026 - ranking kont firmowych | PraktycznyZysk.pl",
+    description: "Konta firmowe z premią dla JDG i firm. Porównaj bonusy, opłaty i warunki aktywności."
+  },
+  "/finanse/ranking-kont-firmowych": {
+    title: "Ranking kont firmowych 2026 - konta firmowe z premią | PraktycznyZysk.pl",
+    description: "Ranking kont firmowych z premiami, moneybackiem i opłatami. Sprawdź najważniejsze korzyści i warunki promocji."
+  },
+  "/finanse/chwilowki": {
+    title: "Chwilówki online 2026 - pierwsza pożyczka za darmo | PraktycznyZysk.pl",
+    description: "Chwilówki online, pierwsza pożyczka za darmo i pożyczki na dowód. Sprawdź RRSO, koszty, terminy spłaty i ryzyka."
+  },
+  "/finanse/ranking-chwilowek": {
+    title: "Ranking chwilówek 2026 - pożyczki online i RRSO 0% | PraktycznyZysk.pl",
+    description: "Ranking chwilówek online: darmowe pierwsze pożyczki, pożyczki na dowód, terminy spłaty, koszty i ostrzeżenia."
+  },
+  "/finanse/kredyty-gotowkowe": {
+    title: "Kredyt gotówkowy ranking 2026 - kredyty online | PraktycznyZysk.pl",
+    description: "Kredyty gotówkowe online, rankingi i kalkulatory. Sprawdź ratę, RRSO, całkowity koszt i warunki oferty."
+  },
+  "/finanse/ranking-kredytow-gotowkowych": {
+    title: "Ranking kredytów gotówkowych 2026 - kredyt online | PraktycznyZysk.pl",
+    description: "Ranking kredytów gotówkowych: RRSO, rata, kwota do spłaty, prowizje i najważniejsze warunki przed wnioskiem."
+  },
+  "/ubezpieczenia/oc-ac": {
+    title: "OC AC 2026 - porównywarka, kalkulator i tanie OC | PraktycznyZysk.pl",
+    description: "OC i AC samochodu: porównywarka, kalkulator OC, najtańsze OC, zakres ochrony i koszty po zakupie auta."
+  },
+  "/ubezpieczenia/ranking-oc": {
+    title: "Najtańsze OC 2026 - ranking i kalkulator OC | PraktycznyZysk.pl",
+    description: "Najtańsze OC, ranking OC i czynniki wpływające na składkę. Sprawdź, jak porównać polisę i nie przepłacić."
+  },
+  "/auto/historia-pojazdu": {
+    title: "Historia pojazdu 2026 - sprawdzenie VIN i auta przed zakupem | PraktycznyZysk.pl",
+    description: "Historia pojazdu, sprawdzenie VIN, raport VIN i checklista przed zakupem auta używanego. Sprawdź auto zanim zapłacisz."
+  },
+  "/auto/vin": {
+    title: "Sprawdzenie VIN 2026 - raport VIN i historia auta | PraktycznyZysk.pl",
+    description: "Sprawdzenie VIN, raport VIN, historia pojazdu i sygnały ostrzegawcze przed zakupem auta używanego."
+  }
+};
+
+const seoLandingPages = [
+  {
+    url: "/finanse/konta-z-premia-czerwiec-2026",
+    title: "Konta z premią czerwiec 2026 - aktualne promocje bankowe",
+    description: "Aktualne konta z premią w czerwcu 2026: premie za konto osobiste, warunki aktywności i opłaty.",
+    h1: "Konta z premią - czerwiec 2026",
+    lead: "Najważniejsze promocje kont osobistych z premią. Zanim złożysz wniosek, sprawdź warunki aktywności, opłaty i termin wypłaty bonusu.",
+    pageUrl: "/finanse/konta-z-premia",
+    pillar: "finanse",
+    keywords: ["konto z premią", "konta z premią ranking", "promocje bankowe", "konto osobiste z premią"]
+  },
+  {
+    url: "/finanse/ranking-chwilowek-czerwiec-2026",
+    title: "Ranking chwilówek czerwiec 2026 - pożyczki online i RRSO 0%",
+    description: "Ranking chwilówek w czerwcu 2026: pierwsza pożyczka za darmo, pożyczki online, koszty, RRSO i terminy spłaty.",
+    h1: "Ranking chwilówek - czerwiec 2026",
+    lead: "Porównaj chwilówki i pożyczki online, ale najpierw sprawdź RRSO, całkowity koszt i konsekwencje opóźnienia w spłacie.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["ranking chwilówek", "pierwsza pożyczka za darmo", "chwilówki online", "pożyczka online na dowód"]
+  },
+  {
+    url: "/ubezpieczenia/najtansze-oc-2026",
+    title: "Najtańsze OC 2026 - kalkulator OC i porównanie polis",
+    description: "Najtańsze OC w 2026 roku: jak porównać składkę, od czego zależy cena OC i kiedy sprawdzić OC/AC po zakupie auta.",
+    h1: "Najtańsze OC 2026",
+    lead: "OC ma taki sam obowiązkowy zakres, ale cena może mocno się różnić. Porównaj składkę, dodatki i warunki przed zakupem polisy.",
+    pageUrl: "/ubezpieczenia/oc-ac",
+    pillar: "ubezpieczenia",
+    keywords: ["najtańsze OC", "kalkulator OC", "porównywarka OC", "tanie OC 2026"]
+  },
+  {
+    url: "/auto/sprawdzenie-vin-historia-pojazdu-2026",
+    title: "Sprawdzenie VIN i historia pojazdu 2026 - jak sprawdzić auto",
+    description: "Sprawdzenie VIN, historia pojazdu i raport VIN przed zakupem auta. Zobacz, co sprawdzić przed podpisaniem umowy.",
+    h1: "Sprawdzenie VIN i historia pojazdu",
+    lead: "Najpierw sprawdź historię pojazdu i VIN, potem polisę, koszty po zakupie i finansowanie. To tańsze niż naprawianie złej decyzji.",
+    pageUrl: "/auto/historia-pojazdu",
+    pillar: "auto",
+    keywords: ["historia pojazdu", "sprawdzenie VIN", "raport VIN", "jak sprawdzić auto przed kupnem"]
+  }
+];
+
+const draftPromoPages = [
+  {
+    url: "/konkursy-i-promocje",
+    title: "Konkursy i promocje, które warto sprawdzić | PraktycznyZysk.pl",
+    h1: "Konkursy i promocje, które warto sprawdzić",
+    description: "Aktualne konkursy, rabaty, kody promocyjne, bonusy i okazje ograniczone czasowo. Przed skorzystaniem sprawdź zasady, termin i regulamin.",
+    category: "Wersja robocza",
+    note: "Ta sekcja jest przygotowana technicznie, ale pozostaje poza sitemapą i menu do czasu dodania realnych konkursów, promocji i regulaminów.",
+    checklist: [
+      "Nazwa organizatora i źródło promocji.",
+      "Data rozpoczęcia i zakończenia.",
+      "Link do regulaminu lub pełnych warunków.",
+      "Najważniejsze ograniczenia, wykluczenia i wymagane działania.",
+      "Informacja, czy nagroda, rabat albo bonus wymaga zakupu lub rejestracji."
+    ]
+  }
+];
 
 function cardUrl(item = {}) {
   const label = normalizeLabel(item.title || item.label || item.name);
@@ -128,6 +251,18 @@ function mobileMenu() {
   </details>`;
 }
 
+function socialLinks() {
+  if (!data.socialLinks?.length) return "";
+  return `<div class="social-links">
+    ${data.socialLinks
+      .map(
+        (item) =>
+          `<a class="social-link ${esc(item.className || "")}" href="${esc(item.url)}" target="_blank" rel="noopener" aria-label="${esc(item.label)}" title="${esc(item.label)}">${esc(item.icon || item.label)}</a>`
+      )
+      .join("")}
+  </div>`;
+}
+
 function breadcrumbs(items = []) {
   if (!items.length) return "";
   return `<nav class="breadcrumbs" aria-label="Breadcrumbs"><a href="/">Start</a>${items
@@ -135,26 +270,109 @@ function breadcrumbs(items = []) {
     .join("")}</nav>`;
 }
 
-function layout({ url = "/", title, description, body, crumbs = [], noindex = false }) {
-  const canonical = `https://${data.domain}${url === "/" ? "/" : url}`;
+function breadcrumbSchema(url = "/", crumbs = []) {
+  const items = [{ label: "Start", url: "/" }, ...crumbs];
+  if (url !== "/" && !items.some((item) => item.url === url)) items.push({ label: titleFromUrl(url), url });
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.label,
+      item: absoluteUrl(item.url)
+    }))
+  };
+}
+
+function baseSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: data.name,
+    url: absoluteUrl("/"),
+    logo: absoluteUrl("/logo.jpg"),
+    sameAs: data.sameAs || []
+  };
+}
+
+function webSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: data.name,
+    url: absoluteUrl("/"),
+    inLanguage: "pl-PL",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${absoluteUrl("/")}?q={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    }
+  };
+}
+
+function analyticsHead() {
+  return `<script>
+    (function(){
+      var id='${gaId}';
+      var params=new URLSearchParams(window.location.search);
+      if(params.get('owner')==='1'||params.get('no-track')==='1') localStorage.setItem('pz_analytics_disabled','1');
+      if(params.get('owner')==='0'||params.get('track')==='1') localStorage.removeItem('pz_analytics_disabled');
+      window['ga-disable-'+id]=localStorage.getItem('pz_analytics_disabled')==='1';
+    })();
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${gaId}');
+  </script>`;
+}
+
+function layout({ url = "/", title, description, body, crumbs = [], noindex = false, schema = [] }) {
+  const canonical = absoluteUrl(url);
+  const image = absoluteUrl("/logo.jpg");
+  const metaDescription =
+    (description || "").length >= 110
+      ? description
+      : `${description || data.description} Sprawdź najważniejsze warunki, koszty, ryzyka i praktyczne kroki przed decyzją.`;
+  const cleanDescription = metaDescription.length > 168 ? `${metaDescription.slice(0, 165).trim()}...` : metaDescription;
+  const schemaBlocks = [baseSchema(), webSiteSchema(), ...(crumbs.length ? [breadcrumbSchema(url, crumbs)] : []), ...schema];
   return `<!doctype html>
 <html lang="pl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
-  <meta name="description" content="${esc(description)}">
-  ${noindex ? '<meta name="robots" content="noindex,follow">' : ""}
+  <meta name="description" content="${esc(cleanDescription)}">
+  <meta name="robots" content="${noindex ? "noindex,follow" : "index,follow,max-image-preview:large"}">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="${esc(data.name)}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(cleanDescription)}">
+  <meta property="og:url" content="${esc(canonical)}">
+  <meta property="og:image" content="${esc(image)}">
+  <meta property="og:image:alt" content="${esc(data.name)}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(cleanDescription)}">
+  <meta name="twitter:image" content="${esc(image)}">
   <link rel="canonical" href="${esc(canonical)}">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="icon" href="/logo.jpg" type="image/jpeg">
   <link rel="stylesheet" href="/styles.css">
+  ${analyticsHead()}
+  ${schemaBlocks.map(jsonLd).join("\n  ")}
   <script defer src="/analytics.js"></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Główne">
-      <a class="brand" href="/"><span class="mark">PZ</span><span>${esc(data.shortName)}</span></a>
+      <a class="brand" href="/"><img class="brand-logo" src="/logo.jpg" alt="" width="42" height="42"><span>${esc(data.shortName)}</span></a>
       <div class="nav-links">${navLinks()}</div>
-      <a class="nav-cta" href="/narzedzia">Narzędzia</a>
       ${mobileMenu()}
     </nav>
   </header>
@@ -174,6 +392,8 @@ function layout({ url = "/", title, description, body, crumbs = [], noindex = fa
         <a href="/o-nas">O nas</a>
         <a href="/kontakt">Kontakt</a>
       </div>
+      ${socialLinks()}
+      ${data.legalDisclaimer ? `<p class="legal-disclaimer">${esc(data.legalDisclaimer)}</p>` : ""}
     </div>
   </footer>
 </body>
@@ -201,8 +421,79 @@ function privatePage() {
   });
 }
 
+function externalLinkAttrs(url, sponsored = false) {
+  const isExternal = /^https?:\/\//i.test(url || "");
+  if (!isExternal) return "";
+  return ` target="_blank" rel="${sponsored ? "nofollow sponsored noopener" : "noopener"}"`;
+}
+
+function draftPromoPage(page) {
+  return layout({
+    url: page.url,
+    title: page.title,
+    description: page.description,
+    noindex: true,
+    crumbs: [{ label: page.h1, url: page.url }],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">${esc(page.category)}</div>
+            <h1>${esc(page.h1)}</h1>
+            <p class="lead">${esc(page.description)}</p>
+            <div class="notice">${esc(page.note)}</div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <span>Oferty partnerskie</span>
+          <h2>Promocje według kategorii</h2>
+          <p>Wybierz kategorię. Lista jest pobierana z aktualnego feedu partnera i pokazuje tylko dostępne oferty.</p>
+        </div>
+        <div class="filter-row" id="promo-filters" aria-label="Kategorie promocji">
+          <button class="button secondary" data-category="all">Wszystkie</button>
+          <button class="button secondary" data-category="finanse">Finanse</button>
+          <button class="button secondary" data-category="zakupy">Zakupy</button>
+          <button class="button secondary" data-category="dom">Dom i budowa</button>
+          <button class="button secondary" data-category="inne">Inne</button>
+        </div>
+        <div class="grid cards-2" id="promo-list"><p class="notice">Ładowanie promocji…</p></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <span>Przed publikacją</span>
+          <h2>Co musi trafić na tę stronę</h2>
+          <p>Strona ma być użyta dopiero wtedy, gdy będą konkretne, sprawdzone oferty z aktualnymi warunkami.</p>
+        </div>
+        <div class="grid cards-2">
+          ${page.checklist
+            .map(
+              (item) => `<article class="info-card">
+                <strong>${esc(item)}</strong>
+              </article>`
+            )
+            .join("")}
+        </div>
+      </section>
+      <script>
+        (() => {
+          const list = document.getElementById("promo-list");
+          const filters = document.getElementById("promo-filters");
+          let offers = [];
+          const esc = (v) => String(v ?? "").replace(/[&<>\"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\\\"":"&quot;","'":"&#39;"}[c]));
+          const category = (o) => { const s = [o.categoryName, o.programName, o.voucherName].join(" ").toLowerCase(); if (/finan|bank|kredyt|pożycz|konto|ubezpiec/.test(s)) return "finanse"; if (/dom|budow|mebl|remont|narzęd/.test(s)) return "dom"; if (/zakup|sklep|moda|elektr|sport|zdrow|suplement|kosmet/.test(s)) return "zakupy"; return "inne"; };
+          const render = (selected = "all") => { const rows = offers.filter(o => selected === "all" || category(o) === selected); list.innerHTML = rows.length ? rows.map(o => `<article class="card"><span class="eyebrow">${esc(o.categoryName || "Promocja")}</span><h3>${esc(o.voucherName || o.programName || "Oferta partnerska")}</h3><p>${esc(o.voucherText || "Sprawdź warunki i aktualny termin oferty.")}</p>${o.voucherCode ? `<p><strong>Kod: ${esc(o.voucherCode)}</strong></p>` : ""}${o.voucherTrackingUrl ? `<a class="button" href="${esc(o.voucherTrackingUrl)}" target="_blank" rel="nofollow noopener">Sprawdź promocję</a>` : ""}</article>`).join("") : `<p class="notice">Brak aktywnych promocji w tej kategorii.</p>`; };
+          filters.addEventListener("click", e => { const b = e.target.closest("[data-category]"); if (b) render(b.dataset.category); });
+          fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = Array.isArray(data) ? data : []; render(); }).catch(() => { list.innerHTML = `<p class="notice">Promocje są chwilowo niedostępne.</p>`; });
+        })();
+      </script>
+    </main>`
+  });
+}
+
 function cta(label, url, secondary = false) {
-  return `<a class="button${secondary ? " secondary" : ""}" href="${esc(url)}" data-track="cta" data-track-label="${esc(label)}">${esc(label)}</a>`;
+  return `<a class="button${secondary ? " secondary" : ""}" href="${esc(url)}"${externalLinkAttrs(url, true)} data-track="cta" data-track-label="${esc(label)}">${esc(label)}</a>`;
 }
 
 function card(item, extra = "") {
@@ -223,9 +514,22 @@ function pageCardCta(page) {
 }
 
 function offerCard(offer) {
+  const highlights = (offer.pros && offer.pros.length ? offer.pros : offer.reward ? [offer.reward] : [])
+    .filter(Boolean)
+    .slice(0, 5);
+  const partnerCondition = (offer.conditions || []).find((item) =>
+    normalizeLabel(item).includes("aby skorzystac z promocji rozpocznij wniosek przyciskiem na tej stronie")
+  );
+  const processNote =
+    "Nie przerywaj procesu: po kliknięciu przejdź całą rejestrację od razu. Nie zamykaj karty, nie odświeżaj strony i nie przechodź do innych zakładek.";
   const meta = [
     offer.reward ? { label: "Korzyść", value: offer.reward } : null,
-    offer.difficulty ? { label: "Trudność", value: offer.difficulty } : null,
+    offer.difficulty
+      ? {
+          label: "Trudność",
+          value: offer.difficulty
+        }
+      : null,
     offer.time ? { label: "Czas", value: offer.time } : null,
     offer.deadline ? { label: "Do kiedy", value: offer.deadline } : null,
     offer.audience ? { label: "Dla kogo", value: offer.audience } : null
@@ -241,11 +545,13 @@ function offerCard(offer) {
       .map((item) => `<div><span>${esc(item.label)}</span><strong>${esc(item.value)}</strong></div>`)
       .join("")}</div>
     <div class="offer-split">
-      <div><strong>Warunki</strong><ul>${(offer.conditions || offer.pros || []).map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
+      <div><strong>Najważniejsze korzyści</strong><ul>${highlights.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
       <div><strong>Uwaga</strong><p>${esc(offer.warning)}</p></div>
     </div>
+    ${partnerCondition ? `<p class="partner-condition">Aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie.</p>` : ""}
+    <p class="partner-condition">${esc(processNote)}</p>
     <div class="update-stamp">Aktualizacja: ${esc(data.lastUpdated)}</div>
-    ${cta(offer.affiliateUrl ? "Przejdź do oferty" : "Zobacz miejsce na link", `/go/${offer.slug}`)}
+    ${cta(offer.affiliateUrl ? "Przejdź do oferty" : "Zobacz miejsce na link", offer.affiliateUrl || `/go/${offer.slug}`)}
   </article>`;
 }
 
@@ -257,6 +563,31 @@ function offerBenefitList(offer) {
   return items.length ? `<ul class="tool-points">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
 }
 
+function offerInstructionBlock(offer) {
+  if (!offer.instructions?.steps?.length && !offer.instructions?.notes?.length && !offer.instructions?.benefits?.length) return "";
+  return `<section>
+    <div class="section-head">
+      <h2>${esc(offer.instructions?.title || "Jak odebrać premię krok po kroku")}</h2>
+      <p>${esc(offer.instructions?.lead || "Przejdź przez proces od razu po kliknięciu przycisku, żeby promocja została poprawnie przypisana.")}</p>
+    </div>
+    ${offer.instructions?.steps?.length ? `<ol class="step-list">${offer.instructions.steps.map((step) => `<li><strong>${esc(step.title || step)}</strong>${step.text ? `<span>${esc(step.text)}</span>` : ""}</li>`).join("")}</ol>` : ""}
+    ${offer.instructions?.benefits?.length ? `<div class="section-head compact-head"><h2>Co dostajesz</h2><p>Najważniejsze korzyści tej konkretnej oferty.</p></div><div class="check-grid">${offer.instructions.benefits.map((item) => `<div><span class="check-mark">OK</span><strong>${esc(item)}</strong></div>`).join("")}</div>` : ""}
+    ${offer.instructions?.notes?.length ? `<div class="disclosure-box offer-notes"><strong>Pełna transparentność</strong>${offer.instructions.notes.map((note) => `<span>${esc(note)}</span>`).join("")}</div>` : ""}
+  </section>`;
+}
+
+function offerPartnerRulesBlock(offer) {
+  const slugs = new Set(["mbank-firmootwieracz"]);
+  if (!slugs.has(offer.slug)) return "";
+  return `<section class="cross-sell-section">
+    <div class="disclosure-box offer-notes">
+      <strong>Ważne, żeby premia została naliczona</strong>
+      <span>Aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie.</span>
+      <span>Nie przerywaj procesu: po kliknięciu przejdź całą rejestrację od razu. Nie zamykaj karty, nie odświeżaj strony i nie przechodź do innych zakładek.</span>
+    </div>
+  </section>`;
+}
+
 function offerPlacementScore(offer) {
   return Number(offer.placementPriority || 0);
 }
@@ -265,15 +596,30 @@ function sortOffersForPlacement(offerList) {
   return [...offerList].sort((a, b) => offerPlacementScore(b) - offerPlacementScore(a));
 }
 
+const homeTopOfferSlugs = [
+  "mbank-ekonto-do-uslug-premia",
+  "pekao-konto-przekorzystne-osobiste",
+  "erste-santander-konto-smart-700",
+  "alior-konto-z-bonusem"
+];
+
+function sortHomeTopOffers(offerList) {
+  const pinned = homeTopOfferSlugs
+    .map((slug) => offerList.find((offer) => offer.slug === slug))
+    .filter(Boolean);
+  const pinnedSlugs = new Set(pinned.map((offer) => offer.slug));
+  const rest = sortOffersForPlacement(offerList.filter((offer) => !pinnedSlugs.has(offer.slug)));
+  return [...pinned, ...rest];
+}
+
 function relatedOffersFor(page) {
   return sortOffersForPlacement(offers.filter((offer) => offer.pages?.includes(page.url))).slice(0, 4);
 }
 
 const fallbackOfferPages = {
-  finanse: ["/finanse/kredyty-gotowkowe", "/finanse/konta-z-premia", "/finanse/chwilowki"],
+  finanse: ["/finanse/konta-z-premia", "/finanse/konta-firmowe-z-premia", "/finanse/kredyty-gotowkowe", "/finanse/chwilowki"],
   ubezpieczenia: ["/ubezpieczenia/oc-ac"],
-  auto: ["/ubezpieczenia/oc-ac", "/finanse/kredyty-gotowkowe"],
-  praca: ["/finanse/konta-z-premia", "/finanse/konta-firmowe-z-premia"],
+  auto: ["/auto/kredyt-na-auto", "/auto/leasing-czy-kredyt", "/ubezpieczenia/oc-ac", "/finanse/kredyty-gotowkowe"],
   dom: ["/finanse/kredyty-gotowkowe", "/finanse/rankingi", "/ubezpieczenia/oc-ac"]
 };
 
@@ -282,6 +628,12 @@ function finalOffersFor({ page, pillarSlug, limit = 4 } = {}) {
   if (direct.length) return direct.slice(0, limit);
   const slug = pillarSlug || page?.pillar;
   const targetPages = fallbackOfferPages[slug] || ["/oferty"];
+  if (slug === "finanse") {
+    return targetPages
+      .map((targetPage) => sortOffersForPlacement(offers.filter((item) => item.pages?.includes(targetPage)))[0])
+      .filter(Boolean)
+      .slice(0, limit);
+  }
   const seen = new Set();
   const result = [];
   for (const targetPage of targetPages) {
@@ -300,10 +652,33 @@ function offerSection(offerList, { title = "Sprawdź dostępne propozycje", desc
   return `<section>
         <div class="section-head">
           <h2>${esc(title)}</h2>
-          <p>${esc(description)}</p>
+          ${description ? `<p>${esc(description)}</p>` : ""}
         </div>
         <div class="offer-grid">${offerList.map((offer) => offerCard(offer)).join("")}</div>
         <div class="section-actions">${cta(moreLabel, moreUrl, true)}</div>
+      </section>`;
+}
+
+function topOfferSection(offerList, options = {}) {
+  return offerSection((offerList || []).slice(0, 6), {
+    title: "Najlepsze propozycje na start",
+    description: "",
+    ...options
+  });
+}
+
+function quickDecisionBlock(offerList) {
+  if (!offerList.length) return "";
+  return `<section class="compact-section">
+        <div class="section-head">
+          <h2>Jak wybrać w 30 sekund</h2>
+          <p>Skup się na konkretnej korzyści, warunkach otrzymania bonusu i koszcie po zakończeniu promocji.</p>
+        </div>
+        <div class="trust-grid">
+          <div><strong>1. Dopasuj typ oferty</strong><span>Wybierz konto, kredyt, pożyczkę, ubezpieczenie albo narzędzie zgodne z Twoją sytuacją.</span></div>
+          <div><strong>2. Sprawdź warunki</strong><span>Zobacz kwotę premii, wymagane zgody, transakcje, opłaty i termin promocji.</span></div>
+          <div><strong>3. Przejdź do partnera</strong><span>Kliknij ofertę dopiero wtedy, gdy warunki są jasne i pasują do tego, czego szukasz.</span></div>
+        </div>
       </section>`;
 }
 
@@ -312,12 +687,6 @@ function offerCopyForPage(page, hasDirectOffers) {
     return {
       title: "Polecane oferty",
       description: "Przed przejściem do partnera sprawdź podstawowe warunki, koszt, ryzyko i aktualność oferty."
-    };
-  }
-  if (page?.pillar === "praca") {
-    return {
-      title: "Dodatkowe propozycje finansowe",
-      description: "Po poradniku możesz sprawdzić oferty kont i premii, które mogą przydać się przy zmianie pracy, nowym dochodzie albo działalności."
     };
   }
   return {
@@ -348,15 +717,50 @@ function nextStepBlock({ title = "Co dalej?", description = "Wybierz najlogiczni
       <p>${esc(description)}</p>
     </div>
     <div class="list-grid">${links
-      .map((link) => `<a class="list-card" href="${esc(link.url)}"><strong>${esc(link.label)}</strong><span>${esc(link.note || "Przejdź do następnego kroku")}</span></a>`)
+      .map((link) => `<a class="list-card" href="${esc(link.url)}"${externalLinkAttrs(link.url, true)}><strong>${esc(link.label)}</strong><span>${esc(link.note || "Przejdź do następnego kroku")}</span></a>`)
       .join("")}</div>
   </section>`;
+}
+
+const exchangeTableLinks = {
+  OKX: "https://my.okx.com/pl/join/6029283",
+  Kraken: "https://invite.kraken.com/JDNW/yfqo4yyp",
+  "Bybit EU": "https://www.bybit.com/invite?ref=ME1EG&medium=referral&utm_campaign=evergreen",
+  Coinbase: "https://coinbase.com/join/T7NNAZP?src=android-link"
+};
+
+function tableCell(row, column, index) {
+  const value = String(row[column] || "");
+  if (index !== 0) return esc(value);
+  const exchangeName = Object.keys(exchangeTableLinks).find((name) => value.startsWith(name));
+  if (!exchangeName) return esc(value);
+  return `<a href="${esc(exchangeTableLinks[exchangeName])}" target="_blank" rel="nofollow sponsored noopener">${esc(exchangeName)}</a>${esc(value.slice(exchangeName.length))}`;
 }
 
 function renderContentBlocks(blocks = []) {
   if (!blocks.length) return "";
   return blocks
     .map((block) => {
+      if (block.type === "comparison-table") {
+        return `<section>
+          <div class="section-head">
+            <h2>${esc(block.title)}</h2>
+            <p>${esc(block.description || "")}</p>
+          </div>
+          <div class="table-scroll">
+            <table class="comparison-table">
+              <thead>
+                <tr>${(block.columns || []).map((column) => `<th>${esc(column)}</th>`).join("")}</tr>
+              </thead>
+              <tbody>
+                ${(block.rows || [])
+                  .map((row) => `<tr>${(block.columns || []).map((column, index) => `<td>${tableCell(row, column, index)}</td>`).join("")}</tr>`)
+                  .join("")}
+              </tbody>
+            </table>
+          </div>
+        </section>`;
+      }
       if (block.type === "steps") {
         return `<section>
           <div class="section-head">
@@ -428,10 +832,69 @@ function affiliateDisclosureBlock() {
   </section>`;
 }
 
+function pageSchema(page, pillar) {
+  const blocks = data.pageContent?.[page.url] || [];
+  const faq = blocks.find((block) => /faq|pytania/i.test(block.title || "") && block.items?.length);
+  const hasFaqItems = Boolean(faq?.items?.length);
+  const type = page.type === "faq" && hasFaqItems ? "FAQPage" : page.type === "checklist" ? "HowTo" : "Article";
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": type,
+    headline: page.title,
+    description: page.description,
+    url: absoluteUrl(page.url),
+    inLanguage: "pl-PL",
+    dateModified: data.lastUpdated,
+    publisher: { "@type": "Organization", name: data.name, url: absoluteUrl("/") }
+  };
+  if (pillar) schema.articleSection = pillar.name;
+  const checklist = blocks.find((block) => block.type === "checklist");
+  if (type === "HowTo" && checklist?.items?.length) {
+    schema.step = checklist.items.map((item, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      text: item
+    }));
+  }
+  if (hasFaqItems) {
+    schema["@type"] = "FAQPage";
+    schema.mainEntity = (faq?.items || blocks.flatMap((block) => block.items || [])).slice(0, 8).map((item) => ({
+      "@type": "Question",
+      name: item.title || item,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.text || page.description
+      }
+    }));
+  }
+  return schema;
+}
+
+function offerSchema(offer) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: offer.name,
+    description: offer.summary || offer.reward || offer.warning,
+    category: categoryLabels[offer.category] || offer.category,
+    url: absoluteUrl(`/go/${offer.slug}`),
+    brand: offer.name.split(" - ")[0],
+    offers: {
+      "@type": "Offer",
+      url: absoluteUrl(`/go/${offer.slug}`),
+      availability: offer.affiliateUrl ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      price: "0",
+      priceCurrency: "PLN"
+    }
+  };
+}
+
 function homePage() {
   const pillars = data.pillars.map((pillar) => card({ ...pillar, url: `/${pillar.slug}` })).join("");
   const popular = data.popular.map((item) => card(item)).join("");
+  const seoLinks = seoLandingPages.map((page) => card({ name: page.h1, description: page.description, url: page.url, cta: "Sprawdź" })).join("");
   const tools = data.tools.slice(0, 6).map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("");
+  const topOffers = sortHomeTopOffers(offers).slice(0, 6);
 
   return layout({
     title: `${data.name} - ${data.tagline}`,
@@ -441,17 +904,25 @@ function homePage() {
         <div class="hero-inner single centered">
           <div>
             <div class="eyebrow">PraktycznyZysk.pl</div>
-            <h1>Praktyczne decyzje, które pomagają nie przepłacać.</h1>
+            <h1>Sprawdź, gdzie możesz zyskać i czego nie przeoczyć.</h1>
             <p class="lead">${esc(data.description)}</p>
             <div class="hero-actions">${cta("Kategorie", "#piony")}${cta("Popularne tematy", "#popularne", true)}</div>
           </div>
         </div>
       </section>
 
+      ${topOfferSection(topOffers, {
+        title: "Oferty, od których warto zacząć",
+        description: "",
+        moreUrl: "/oferty",
+        moreLabel: "Zobacz wszystkie oferty"
+      })}
+      ${quickDecisionBlock(topOffers)}
+
       <section id="piony">
         <div class="section-head">
           <h2>Wybierz kategorię</h2>
-          <p>Przejdź do tematu, który chcesz sprawdzić: finanse, ubezpieczenia, auto, praca albo dom.</p>
+          <p>Przejdź do tematu, który chcesz sprawdzić: finanse, ubezpieczenia, auto albo dom.</p>
         </div>
         <div class="grid cards-5">${pillars}</div>
       </section>
@@ -462,6 +933,14 @@ function homePage() {
           <p>Najczęściej wybierane tematy, które warto policzyć albo porównać przed decyzją.</p>
         </div>
         <div class="list-grid">${popular}</div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Aktualne rankingi i poradniki</h2>
+          <p>Strony przygotowane pod najważniejsze wyszukiwania: premie bankowe, chwilówki, OC i sprawdzenie auta.</p>
+        </div>
+        <div class="grid">${seoLinks}</div>
       </section>
 
       <section>
@@ -482,6 +961,10 @@ function pillarPage(pillar) {
     .slice(0, 4);
   const pages = allPages.filter((page) => page.pillar === pillar.slug);
   const finalOffers = finalOffersFor({ pillarSlug: pillar.slug });
+  const pillarSeoLinks = seoLandingPages
+    .filter((page) => page.pillar === pillar.slug)
+    .map((page) => `<a class="list-card" href="${esc(page.url)}"><strong>${esc(page.h1)}</strong><span>${esc(page.description)}</span></a>`)
+    .join("");
 
   return layout({
     url: `/${pillar.slug}`,
@@ -500,6 +983,12 @@ function pillarPage(pillar) {
           <aside class="hero-panel">${linkList(pillar.priorityLinks)}</aside>
         </div>
       </section>
+      ${topOfferSection(finalOffers, {
+        description: "",
+        moreUrl: offersUrlFor(pillar.slug),
+        moreLabel: offerGroupLabel(pillar.slug).more
+      })}
+      ${quickDecisionBlock(finalOffers)}
       ${sectionNav(pillar)}
       <section id="start">
         <div class="section-head">
@@ -524,17 +1013,12 @@ function pillarPage(pillar) {
         </div>
         <div class="grid">${relatedTools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("") || card({ name: "Narzędzia", description: "Zobacz wszystkie kalkulatory i checklisty.", url: "/narzedzia", cta: "Przejdź" })}</div>
       </section>
-      ${offerSection(finalOffers, {
-        title: "Sprawdź dostępne propozycje",
-        description: "Porównaj podstawowe warunki i wybierz ofertę, która najlepiej pasuje do Twojej sytuacji.",
-        moreUrl: offersUrlFor(pillar.slug),
-        moreLabel: offerGroupLabel(pillar.slug).more
-      })}
       ${nextStepBlock({
         title: "Polecane dalej",
         description: "Najczęściej wybierane tematy i propozycje w tej kategorii.",
         links: [
-          ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
+          ...(pillar.slug === "finanse" ? [{ label: "Pozostałe", url: "/pozostale", note: "Telekomunikacja, zakupy i podróże" }] : []),
+          ...finalOffers.map((offer) => ({ label: offer.name, url: offer.affiliateUrl || `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
           ...pillar.priorityLinks.map((link) => ({ ...link, note: "Przejdź do tematu" }))
         ].slice(0, 4)
       })}
@@ -631,6 +1115,36 @@ function offersUrlFor(slug) {
   return slug ? `/oferty/${slug}` : "/oferty";
 }
 
+function offersPageUrlFor(page) {
+  return page?.url ? `/oferty${page.url}` : offersUrlFor(page?.pillar);
+}
+
+function seoMeta(page, fallbackTitle, fallbackDescription) {
+  const override = seoOverrides[page.url] || {};
+  const description = override.description || fallbackDescription || page.description || "";
+  const expandedDescription =
+    description.length >= 110
+      ? description
+      : `${description} Sprawdź najważniejsze warunki, koszty, ryzyka i praktyczne kroki przed decyzją.`;
+  return {
+    title: override.title || fallbackTitle,
+    description: expandedDescription.length > 168 ? `${expandedDescription.slice(0, 165).trim()}...` : expandedDescription
+  };
+}
+
+function offersForPageFirst(page, pillarSlug) {
+  const direct = sortOffersForPlacement(offers.filter((offer) => offer.pages?.includes(page.url)));
+  const seen = new Set(direct.map((offer) => offer.slug));
+  const rest = sortOffersForPlacement(
+    offers.filter((offer) => {
+      if (seen.has(offer.slug)) return false;
+      if (offer.pillar === pillarSlug) return true;
+      return false;
+    })
+  );
+  return [...direct, ...rest];
+}
+
 const offerGroupLabels = {
   finanse: {
     short: "Oferty finansowe",
@@ -650,17 +1164,17 @@ const offerGroupLabels = {
     title: "Propozycje dla kierowców",
     lead: "Zobacz ubezpieczenia, finansowanie i inne propozycje powiązane z autem."
   },
-  praca: {
-    short: "Konta i premie finansowe",
-    more: "Zobacz konta i premie finansowe",
-    title: "Konta i premie finansowe",
-    lead: "Zobacz konta osobiste, konta firmowe i premie, które mogą pasować do tematu pracy lub działalności."
-  },
   dom: {
     short: "Finansowanie domu i remontu",
     more: "Zobacz finansowanie i ubezpieczenia",
     title: "Finansowanie i ubezpieczenia domu",
     lead: "Zobacz kredyty, finansowanie i ubezpieczenia powiązane z domem lub remontem."
+  },
+  pozostale: {
+    short: "Pozostałe",
+    more: "Zobacz oferty",
+    title: "Pozostałe",
+    lead: "Telekomunikacja, zakupy, podróże i inne propozycje z jasno opisaną korzyścią dla klienta."
   }
 };
 
@@ -811,6 +1325,13 @@ function toolPage(tool) {
           </div>
         </div>
       </section>
+      ${topOfferSection(finalOffers, {
+        title: "Propozycje dopasowane do tematu",
+        description: "",
+        moreUrl: offersUrlFor(nextPage?.pillar),
+        moreLabel: offerGroupLabel(nextPage?.pillar).more
+      })}
+      ${quickDecisionBlock(finalOffers)}
       <section>
         <div class="tool-shell" data-tool-shell>
           <div class="fake-form">
@@ -832,15 +1353,9 @@ function toolPage(tool) {
         title: "Powiązane",
         description: "Po wyniku możesz przejść do poradnika, checklisty albo porównania ofert.",
         links: [
-          ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
+          ...finalOffers.map((offer) => ({ label: offer.name, url: offer.affiliateUrl || `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
           ...related
         ].slice(0, 4)
-      })}
-      ${offerSection(finalOffers, {
-        title: "Propozycje dopasowane do tematu",
-        description: "Po sprawdzeniu wyniku możesz porównać oferty i przejść do wybranej propozycji.",
-        moreUrl: offersUrlFor(nextPage?.pillar),
-        moreLabel: offerGroupLabel(nextPage?.pillar).more
       })}
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
       ${toolCalculatorScript(tool.slug, model.type)}
@@ -850,6 +1365,7 @@ function toolPage(tool) {
 
 function genericPage(page) {
   const pillar = pillarBySlug.get(page.pillar);
+  const meta = seoMeta(page, `${page.title} | ${data.name}`, page.description);
   const contentBlocks = data.pageContent?.[page.url] || [];
   const pageOffers = relatedOffersFor(page);
   const finalOffers = finalOffersFor({ page, pillarSlug: page.pillar });
@@ -864,8 +1380,9 @@ function genericPage(page) {
   ].slice(0, 4);
   return layout({
     url: page.url,
-    title: `${page.title} | ${data.name}`,
-    description: page.description,
+    title: meta.title,
+    description: meta.description,
+    schema: [pageSchema(page, pillar)],
     crumbs: [
       { label: pillar?.name ?? "Serwis", url: pillar ? `/${pillar.slug}` : "/" },
       { label: page.title, url: page.url }
@@ -876,19 +1393,20 @@ function genericPage(page) {
           <div>
             <div class="eyebrow">${esc(typeLabels[page.type] || page.type)}</div>
             <h1>${esc(page.title)}</h1>
-            <p class="lead">${esc(page.description)}</p>
+            <p class="lead">${esc(meta.description)}</p>
             <div class="hero-actions">${cta(page.cta, page.ctaUrl)}</div>
           </div>
         </div>
       </section>
-      ${sectionNav(pillar)}
-      ${renderContentBlocks(contentBlocks)}
-      ${offerSection(finalOffers, {
+      ${topOfferSection(finalOffers, {
         title: offersCopy.title,
-        description: offersCopy.description,
-        moreUrl: offersUrlFor(page.pillar),
+        description: "",
+        moreUrl: pageOffers.length ? offersPageUrlFor(page) : offersUrlFor(page.pillar),
         moreLabel: offerGroupLabel(page.pillar).more
       })}
+      ${quickDecisionBlock(finalOffers)}
+      ${sectionNav(pillar)}
+      ${renderContentBlocks(contentBlocks)}
       <section>
         <div class="section-head">
           <h2>Najważniejsze zasady</h2>
@@ -918,7 +1436,7 @@ function genericPage(page) {
       </section>
       ${nextStepBlock({
         links: [
-          ...finalOffers.map((offer) => ({ label: offer.name, url: `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
+          ...finalOffers.map((offer) => ({ label: offer.name, url: offer.affiliateUrl || `/go/${offer.slug}`, note: "Przejdź do konkretnej oferty" })),
           { label: page.cta, url: page.ctaUrl, note: "Zobacz powiązany temat" },
           ...(pillar ? [{ label: `Wróć do ${pillar.name}`, url: `/${pillar.slug}`, note: "Zobacz całą sekcję" }] : [])
         ].slice(0, 4)
@@ -926,6 +1444,127 @@ function genericPage(page) {
       ${finalOffers.length ? affiliateDisclosureBlock() : ""}
     </main>`
   });
+}
+
+function renderArticleContent(article) {
+  return (article.sections || [])
+    .map((section) => {
+      const intro = section.text ? `<p>${esc(section.text)}</p>` : "";
+      const list = section.items?.length ? `<ul class="tool-points">${section.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
+      return `<h2>${esc(section.heading)}</h2>${intro}${list}`;
+    })
+    .join("");
+}
+
+function blogIndex() {
+  const featured = blogArticles
+    .map(
+      (article) => `<article class="card">
+        <div class="update-stamp">Aktualizacja: ${esc(article.updated || data.lastUpdated)}</div>
+        <h3>${esc(article.h1 || article.title)}</h3>
+        <p>${esc(article.description)}</p>
+        ${cta("Czytaj artykuł", article.url, true)}
+      </article>`
+    )
+    .join("");
+  return layout({
+    url: "/blog",
+    title: `Blog | ${data.name}`,
+    description: "Poradniki o kontach z premią, promocjach bankowych, warunkach wpływu, płatnościach kartą i podatkach od bonusów.",
+    crumbs: [{ label: "Blog", url: "/blog" }],
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        name: `Blog ${data.name}`,
+        url: absoluteUrl("/blog")
+      }
+    ],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Blog</div>
+            <h1>Blog o promocjach bankowych i praktycznych decyzjach finansowych</h1>
+            <p class="lead">Krótkie poradniki pomagające sprawdzić warunki, regulaminy, opłaty i terminy zanim klikniesz w ofertę.</p>
+            <div class="hero-actions">${cta("Konta z premią", "/finanse/konta-z-premia")}${cta("Wszystkie oferty", "/oferty/finanse", true)}</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-head">
+          <h2>Promocje bankowe</h2>
+          <p>Promocje kont osobistych i firmowych potrafią dać realny bonus, ale decydują szczegóły regulaminu: kto może skorzystać, jakie aktywności trzeba wykonać i kiedy bank wypłaca premię.</p>
+        </div>
+        <div class="grid">${featured}</div>
+      </section>
+      ${affiliateDisclosureBlock()}
+    </main>`
+  });
+}
+
+function blogArticlePage(article) {
+  const categoryLabel = article.ctaUrl?.includes("konta-firmowe")
+    ? "Konta firmowe z premią"
+    : article.ctaUrl?.includes("kredyty-gotowkowe")
+      ? "Kredyty gotówkowe"
+      : article.ctaUrl?.includes("chwilowki")
+        ? "Chwilówki"
+        : "Konta z premią";
+  const riskNotice = article.ctaUrl?.includes("kredyty-gotowkowe")
+    ? "Przed podpisaniem umowy sprawdź formularz informacyjny, RRSO, ratę i całkowitą kwotę do zapłaty."
+    : article.ctaUrl?.includes("chwilowki")
+      ? "Przed podpisaniem umowy sprawdź RRSO, całkowitą kwotę do zapłaty, termin spłaty i koszty opóźnienia. Pożyczaj tylko wtedy, gdy masz realny plan terminowej spłaty."
+    : "Warunki promocji bankowych, opłaty, stawki, terminy i definicje aktywności mogą się zmieniać. Decydujący jest zawsze aktualny regulamin konkretnej promocji oraz tabela opłat banku.";
+  const related = blogArticles
+    .filter((item) => item.url !== article.url)
+    .slice(0, 4)
+    .map((item) => ({ label: item.h1 || item.title, url: item.url, note: item.description }));
+  return layout({
+    url: article.url,
+    title: `${article.title} | ${data.name}`,
+    description: article.description,
+    crumbs: [
+      { label: "Blog", url: "/blog" },
+      { label: article.h1 || article.title, url: article.url }
+    ],
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: article.h1 || article.title,
+        description: article.description,
+        dateModified: article.updated || data.lastUpdated,
+        author: { "@type": "Organization", name: data.name },
+        publisher: { "@type": "Organization", name: data.name, logo: { "@type": "ImageObject", url: absoluteUrl("/logo.jpg") } },
+        mainEntityOfPage: absoluteUrl(article.url)
+      }
+    ],
+    body: `<main>
+      <article class="article-page">
+        <header class="article-hero">
+          <div class="eyebrow">${esc(categoryLabel)}</div>
+          <h1>${esc(article.h1 || article.title)}</h1>
+          <p class="lead">${esc(article.description)}</p>
+          <div class="update-stamp">Aktualizacja: ${esc(article.updated || data.lastUpdated)}</div>
+          <div class="notice">${esc(riskNotice)}</div>
+        </header>
+        <div class="article-content">
+          ${article.intro.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
+          ${renderArticleContent(article)}
+          <h2>Podsumowanie</h2>
+          <p>${esc(article.summary)}</p>
+          <div class="hero-actions">${cta(article.ctaLabel || "Zobacz aktualne konta z premią", article.ctaUrl || "/finanse/konta-z-premia")}</div>
+        </div>
+      </article>
+      ${nextStepBlock({ title: "Powiązane poradniki", description: "Sprawdź kolejne elementy promocji zanim złożysz wniosek.", links: related })}
+      ${affiliateDisclosureBlock()}
+    </main>`
+  });
+}
+
+function blogArticleUrls() {
+  return blogArticles.map((article) => article.url);
 }
 
 function offersIndex() {
@@ -937,7 +1576,7 @@ function offersIndex() {
   return layout({
     url: "/oferty",
     title: `Oferty | ${data.name}`,
-    description: "Katalog ofert finansowych i ubezpieczeniowych z oznaczeniem partnerów i podstawowymi warunkami.",
+    description: "Katalog ofert finansowych i ubezpieczeniowych z najważniejszymi warunkami.",
     crumbs: [{ label: "Oferty", url: "/oferty" }],
     body: `<main>
       <section class="hero compact">
@@ -953,6 +1592,58 @@ function offersIndex() {
       <section>
         <div class="offer-grid">${offers.map((offer) => offerCard(offer)).join("")}</div>
       </section>
+    </main>`
+  });
+}
+
+function seoLandingPage(landing) {
+  const basePage = pageByUrl.get(landing.pageUrl) || { url: landing.pageUrl, title: landing.h1, pillar: landing.pillar };
+  const pillar = pillarBySlug.get(landing.pillar);
+  const pageOffers = relatedOffersFor(basePage);
+  const finalOffers = finalOffersFor({ page: basePage, pillarSlug: landing.pillar, limit: 8 });
+  const links = [
+    { label: basePage.title || landing.h1, url: landing.pageUrl, note: "Główny poradnik i ranking w tym temacie" },
+    { label: `Oferty: ${basePage.title || landing.h1}`, url: offersPageUrlFor(basePage), note: "Karty ofert i najważniejsze warunki" },
+    ...(pillar?.priorityLinks || []).slice(0, 3).map((link) => ({ ...link, note: "Powiązany money hub" }))
+  ];
+  return layout({
+    url: landing.url,
+    title: `${landing.title} | ${data.name}`,
+    description: landing.description,
+    crumbs: [
+      { label: pillar?.name || "Serwis", url: pillar ? `/${pillar.slug}` : "/" },
+      { label: landing.h1, url: landing.url }
+    ],
+    schema: [breadcrumbSchema(landing.url, [{ label: pillar?.name || "Serwis", url: pillar ? `/${pillar.slug}` : "/" }])],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">SEO / aktualizacja ${esc(data.lastUpdated)}</div>
+            <h1>${esc(landing.h1)}</h1>
+            <p class="lead">${esc(landing.lead)}</p>
+            <div class="hero-actions">${cta("Sprawdź oferty", offersPageUrlFor(basePage))}${cta("Czytaj główny poradnik", landing.pageUrl, true)}</div>
+          </div>
+        </div>
+      </section>
+      ${topOfferSection(finalOffers, {
+        title: "Oferty powiązane z tym tematem",
+        description: "",
+        moreUrl: offersPageUrlFor(basePage),
+        moreLabel: "Zobacz pełną listę ofert"
+      })}
+      ${quickDecisionBlock(finalOffers)}
+      <section>
+        <div class="section-head">
+          <h2>Najważniejsze frazy i intencje</h2>
+          <p>Ta strona jest przygotowana pod zapytania, które zwykle mają intencję porównania, wyboru oferty albo sprawdzenia warunków.</p>
+        </div>
+        <div class="list-grid">${landing.keywords
+          .map((keyword) => `<div class="list-card"><strong>${esc(keyword)}</strong><span>Porównaj korzyści, koszty i warunki przed przejściem do partnera.</span></div>`)
+          .join("")}</div>
+      </section>
+      ${nextStepBlock({ title: "Powiązane strony", description: "Wewnętrzne linkowanie wzmacnia główne huby SEO i prowadzi użytkownika do decyzji.", links })}
+      ${affiliateDisclosureBlock()}
     </main>`
   });
 }
@@ -988,14 +1679,52 @@ function offersPillarIndex(pillar) {
   });
 }
 
+function offersFocusedPage(page) {
+  const pillar = pillarBySlug.get(page.pillar);
+  const groupLabel = offerGroupLabel(page.pillar);
+  const orderedOffers = offersForPageFirst(page, page.pillar);
+  const directCount = orderedOffers.filter((offer) => offer.pages?.includes(page.url)).length;
+  return layout({
+    url: offersPageUrlFor(page),
+    title: `${page.title} - oferty | ${data.name}`,
+    description: `Oferty powiązane z kategorią ${page.title}. Porównaj korzyści, warunki i dostępne promocje z sekcji ${pillar?.name || "oferty"}.`,
+    crumbs: [
+      { label: "Oferty", url: "/oferty" },
+      { label: groupLabel.short, url: offersUrlFor(page.pillar) },
+      { label: page.title, url: offersPageUrlFor(page) }
+    ],
+    body: `<main>
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Oferty</div>
+            <h1>${esc(page.title)} - oferty</h1>
+            <p class="lead">Porównaj propozycje z tej kategorii i wybierz ofertę dopasowaną do swojej sytuacji.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-head">
+          <h2>${esc(page.title)}</h2>
+          <p>${directCount ? "Te propozycje są najlepiej dopasowane do tej kategorii." : "Zobacz najbliższe propozycje z tej sekcji."}</p>
+        </div>
+        <div class="offer-grid">${orderedOffers.map((offer) => offerCard(offer)).join("")}</div>
+      </section>
+    </main>`
+  });
+}
+
 function goPage(offer) {
   const hasDestination = Boolean(offer.affiliateUrl);
   const offerLead = offer.summary || `${offer.name}. ${offer.reward ? `Możesz zyskać: ${offer.reward}.` : "Sprawdź najważniejsze warunki oferty."}`;
+  const primaryPage = (offer.pages || []).map((url) => pageByUrl.get(url)).find(Boolean);
+  const similarOffersUrl = primaryPage ? offersPageUrlFor(primaryPage) : offersUrlFor(offer.pillar);
   return layout({
     url: `/go/${offer.slug}`,
     title: `${offer.name} | ${data.name}`,
     description: offerLead,
     noindex: true,
+    schema: [offerSchema(offer)],
     crumbs: [
       { label: "Oferty", url: "/oferty" },
       { label: offer.name, url: `/go/${offer.slug}` }
@@ -1008,20 +1737,23 @@ function goPage(offer) {
             <h1>${esc(offer.name)}</h1>
             <p class="lead">${esc(offerLead)}</p>
             ${offerBenefitList(offer)}
-            <div class="hero-actions">${cta("Wróć do sekcji", `/${offer.pillar}`, true)}</div>
+            <div class="hero-actions">${hasDestination ? cta("Przejdź do oferty", offer.affiliateUrl) : ""}${cta("Podobne oferty", similarOffersUrl, true)}</div>
           </div>
         </div>
       </section>
+      ${offerInstructionBlock(offer)}
+      ${offerPartnerRulesBlock(offer)}
       <section class="warning-band">
         <div>
           <span class="badge">${hasDestination ? "Oferta" : "Oferta niedostępna"}</span>
           <h2>${hasDestination ? "Sprawdź ofertę u partnera" : "Ta oferta nie jest teraz dostępna"}</h2>
           <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki i dostępność oferty mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Ta oferta nie jest teraz dostępna. Wróć do katalogu i wybierz inną propozycję."}</p>
-          ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Wróć do ofert", "/oferty", true)}</div>` : ""}
+          ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Zobacz podobne oferty", similarOffersUrl, true)}</div>` : ""}
         </div>
       </section>
       <section>
         <div class="offer-grid">${offerCard(offer)}</div>
+        <div class="section-actions">${cta("Zobacz inne podobne oferty", similarOffersUrl, true)}</div>
       </section>
     </main>`
   });
@@ -1195,7 +1927,7 @@ function contactPage() {
       <section>
         <div class="trust-grid">
           <div><strong>Zgłoszenie błędu</strong><span>Podaj nazwę oferty, adres strony i krótki opis tego, co wymaga poprawy.</span></div>
-          <div><strong>Współpraca</strong><span>Napisz, jakiej kategorii dotyczy propozycja: finanse, ubezpieczenia, auto, praca albo dom.</span></div>
+          <div><strong>Współpraca</strong><span>Napisz, jakiej kategorii dotyczy propozycja: finanse, ubezpieczenia, auto albo dom.</span></div>
           <div><strong>Warunki ofert</strong><span>Jeśli pytasz o konkretną ofertę, przed decyzją sprawdź także aktualne warunki bezpośrednio u partnera.</span></div>
         </div>
       </section>
@@ -1240,14 +1972,18 @@ if (data.privateMode) {
   for (const tool of data.tools) writePreviewPage(`/narzedzia/${tool.slug}`, toolPage(tool));
   writePreviewPage("/oferty", offersIndex());
   for (const pillar of data.pillars) writePreviewPage(offersUrlFor(pillar.slug), offersPillarIndex(pillar));
+  for (const page of focusedOfferPages) writePreviewPage(offersPageUrlFor(page), offersFocusedPage(page));
   for (const offer of offers) writePreviewPage(`/go/${offer.slug}`, goPage(offer));
   for (const page of allPages) writePreviewPage(page.url, genericPage(page));
+  for (const landing of seoLandingPages) writePreviewPage(landing.url, seoLandingPage(landing));
+  writePreviewPage("/blog", blogIndex());
+  for (const article of blogArticles) writePreviewPage(article.url, blogArticlePage(article));
   writePreviewPage("/faq", faqPage());
   writePreviewPage("/o-nas", aboutPage());
   writePreviewPage("/kontakt", contactPage());
   writePreviewPage(
     "/polityka-prywatnosci",
-    legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przekierowania do partnerów.", [
+    legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przekierowania do zewnętrznych ofert.", [
       { title: "Zakres danych", text: "Serwis nie wymaga zakładania konta. Jeśli przechodzisz do zewnętrznego partnera, dalsze przetwarzanie danych odbywa się według zasad tego partnera." },
       { title: "Kliknięcia i analityka", text: "Możemy mierzyć anonimowe kliknięcia w linki i przyciski, żeby poprawiać układ strony. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
       { title: "Partnerzy", text: "Po kliknięciu linku afiliacyjnego możesz trafić do banku, pożyczkodawcy, ubezpieczyciela albo innego partnera. Warunki prywatności po przejściu określa ten dostawca." }
@@ -1255,7 +1991,7 @@ if (data.privateMode) {
   );
   writePreviewPage(
     "/regulamin",
-    legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
+    legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert i kalkulatorów.", [
       { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne propozycje." },
       { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
       { title: "Narzędzia", text: "Kalkulatory i checklisty pomagają uporządkować dane przed wyborem oferty. Wynik traktuj jako punkt startowy do sprawdzenia warunków u partnera." }
@@ -1277,15 +2013,20 @@ writePage("/narzedzia", toolsIndex());
 for (const tool of data.tools) writePage(`/narzedzia/${tool.slug}`, toolPage(tool));
 writePage("/oferty", offersIndex());
 for (const pillar of data.pillars) writePage(offersUrlFor(pillar.slug), offersPillarIndex(pillar));
+for (const page of focusedOfferPages) writePage(offersPageUrlFor(page), offersFocusedPage(page));
 for (const offer of offers) writePage(`/go/${offer.slug}`, goPage(offer));
 for (const page of allPages) writePage(page.url, genericPage(page));
+for (const landing of seoLandingPages) writePage(landing.url, seoLandingPage(landing));
+writePage("/blog", blogIndex());
+for (const article of blogArticles) writePage(article.url, blogArticlePage(article));
+for (const page of draftPromoPages) writePage(page.url, draftPromoPage(page));
 
 writePage("/faq", faqPage());
 writePage("/o-nas", aboutPage());
 writePage("/kontakt", contactPage());
 writePage(
   "/polityka-prywatnosci",
-  legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przekierowania do partnerów.", [
+  legalPage("/polityka-prywatnosci", "Polityka prywatności", "Jak traktujemy dane, kliknięcia i przekierowania do zewnętrznych ofert.", [
     { title: "Zakres danych", text: "Serwis nie wymaga zakładania konta. Jeśli przechodzisz do zewnętrznego partnera, dalsze przetwarzanie danych odbywa się według zasad tego partnera." },
     { title: "Kliknięcia i analityka", text: "Możemy mierzyć anonimowe kliknięcia w linki i przyciski, żeby poprawiać układ strony. Nie zapisujemy wrażliwych danych finansowych w tych zdarzeniach." },
     { title: "Partnerzy", text: "Po kliknięciu linku afiliacyjnego możesz trafić do banku, pożyczkodawcy, ubezpieczyciela albo innego partnera. Warunki prywatności po przejściu określa ten dostawca." }
@@ -1293,7 +2034,7 @@ writePage(
 );
 writePage(
   "/regulamin",
-  legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert, kalkulatorów i linków partnerskich.", [
+  legalPage("/regulamin", "Regulamin", "Zasady korzystania z serwisu, ofert i kalkulatorów.", [
     { title: "Charakter serwisu", text: "PraktycznyZysk.pl publikuje informacje, narzędzia, checklisty i porównania, które pomagają szybciej sprawdzić koszty, warunki i dostępne propozycje." },
     { title: "Oferty i linki", text: "Karty ofert mogą zawierać linki afiliacyjne. Przed decyzją sprawdź aktualne warunki bezpośrednio u partnera." },
     { title: "Narzędzia", text: "Kalkulatory i checklisty pomagają uporządkować dane przed wyborem oferty. Wynik traktuj jako punkt startowy do sprawdzenia warunków u partnera." }
@@ -1307,7 +2048,11 @@ const urls = [
   ...data.tools.map((tool) => `/narzedzia/${tool.slug}`),
   "/oferty",
   ...data.pillars.map((pillar) => offersUrlFor(pillar.slug)),
+  ...focusedOfferPages.map((page) => offersPageUrlFor(page)),
   ...allPages.map((page) => page.url),
+  ...seoLandingPages.map((landing) => landing.url),
+  "/blog",
+  ...blogArticleUrls(),
   "/faq",
   "/o-nas",
   "/kontakt",
@@ -1315,13 +2060,41 @@ const urls = [
   "/regulamin"
 ];
 
+function uniqueUrls(urlList) {
+  return [...new Set(urlList)].sort((a, b) => a.localeCompare(b));
+}
+
+function sitemapPriority(url) {
+  if (url === "/") return "1.0";
+  if (data.pillars.some((pillar) => `/${pillar.slug}` === url)) return "0.9";
+  if (url.startsWith("/oferty") || url.startsWith("/narzedzia")) return "0.8";
+  if (url.includes("ranking") || url.includes("konta-z-premia") || url.includes("kredyty") || url.includes("oc")) return "0.8";
+  return "0.6";
+}
+
+function sitemapChangefreq(url) {
+  if (url === "/" || url.startsWith("/oferty") || url.includes("ranking")) return "weekly";
+  if (url.startsWith("/narzedzia")) return "monthly";
+  return "monthly";
+}
+
 fs.writeFileSync(path.join(dist, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${data.domain}/sitemap.xml\n`);
+fs.writeFileSync(path.join(dist, `${indexNowKey}.txt`), indexNowKey);
 fs.writeFileSync(
   path.join(dist, "sitemap.xml"),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-    .map((url) => `  <url><loc>https://${data.domain}${url}</loc></url>`)
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniqueUrls(urls)
+    .map((url) => `  <url><loc>${absoluteUrl(url)}</loc><lastmod>${data.lastUpdated}</lastmod><changefreq>${sitemapChangefreq(url)}</changefreq><priority>${sitemapPriority(url)}</priority></url>`)
     .join("\n")}\n</urlset>\n`
 );
 
-console.log(`Built ${dist} with ${urls.length} URLs`);
+fs.writeFileSync(
+  path.join(dist, "favicon.svg"),
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#0f172a"/><circle cx="32" cy="32" r="20" fill="#00e676"/><path d="M20 38l8 8 17-30" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>`
+);
+fs.writeFileSync(
+  path.join(dist, "llms.txt"),
+  `# ${data.name}\n\n${data.description}\n\nGłówne sekcje:\n- Finanse: https://${data.domain}/finanse\n- Ubezpieczenia: https://${data.domain}/ubezpieczenia\n- Auto: https://${data.domain}/auto\n- Dom: https://${data.domain}/dom\n- Narzędzia: https://${data.domain}/narzedzia\n\nSitemap: https://${data.domain}/sitemap.xml\n`
+);
+
+console.log(`Built ${dist} with ${uniqueUrls(urls).length} URLs`);
 
