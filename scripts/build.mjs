@@ -429,9 +429,9 @@ function externalLinkAttrs(url, sponsored = false) {
 
 function draftPromoPage(page) {
   const remainingOffers = offers
-    .filter((offer) => offer.pillar === "pozostale" || offer.category === "other")
+    .filter((offer) => offer.pillar === "pozostale" || offer.category === "other" || offer.slug === "mbank-ekonto-do-uslug-premia")
     .map((offer) => ({
-      categoryName: "Pozostałe",
+      categoryName: offer.slug === "mbank-ekonto-do-uslug-premia" ? "Banki" : "Pozostałe",
       programName: offer.name,
       voucherName: offer.name,
       voucherText: offer.summary || offer.reward || "Sprawdź aktualne warunki oferty.",
@@ -456,14 +456,9 @@ function draftPromoPage(page) {
         </div>
       </section>
       <section class="section promo-offers-section">
-        <div class="section-heading">
-          <span>Oferty partnerskie</span>
-          <h2>Promocje według kategorii</h2>
-          <p>Wybierz kategorię.</p>
-        </div>
         <div class="filter-row" id="promo-filters" aria-label="Kategorie promocji">
           <button class="button secondary" data-category="all">Wszystkie</button>
-          <button class="button secondary" data-category="finanse">Finanse</button>
+          <button class="button secondary" data-category="banki">Banki</button>
           <button class="button secondary" data-category="zakupy">Zakupy</button>
           <button class="button secondary" data-category="dom">Dom i budowa</button>
           <button class="button secondary" data-category="inne">Inne</button>
@@ -477,8 +472,8 @@ function draftPromoPage(page) {
           let offers = [];
           const esc = (v) => String(v ?? "").replace(/[&<>\"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\\\"":"&quot;","'":"&#39;"}[c]));
           const manualOffers = ${remainingOffersJson};
-          const category = (o) => { const s = [o.categoryName, o.programName, o.voucherName].join(" ").toLowerCase(); if (/finan|bank|kredyt|pożycz|konto|ubezpiec/.test(s)) return "finanse"; if (/dom|budow|mebl|remont|narzęd/.test(s)) return "dom"; if (/zakup|sklep|moda|elektr|sport|zdrow|suplement|kosmet/.test(s)) return "zakupy"; return "inne"; };
-          const render = (selected = "all") => { const rows = offers.filter(o => selected === "all" || category(o) === selected); list.innerHTML = rows.length ? rows.map(o => '<article class="card"><span class="eyebrow">' + esc(o.categoryName || "Promocja") + '</span><h3>' + esc(o.voucherName || o.programName || "Oferta partnerska") + '</h3><p>' + esc(o.voucherText || "Sprawdź warunki i aktualny termin oferty.") + '</p>' + (o.voucherCode ? '<p><strong>Kod: ' + esc(o.voucherCode) + '</strong></p>' : "") + (o.voucherTrackingUrl ? '<a class="button" href="' + esc(o.voucherTrackingUrl) + '" target="_blank" rel="nofollow noopener">Sprawdź promocję</a>' : "") + '</article>').join("") : '<p class="notice">Brak aktywnych promocji w tej kategorii.</p>'; };
+          const category = (o) => { const s = [o.categoryName, o.programName, o.voucherName].join(" ").toLowerCase(); if (/bank|mbank|kredyt|pożycz|konto|ubezpiec|finan/.test(s)) return "banki"; if (/dom|budow|mebl|remont|narzęd/.test(s)) return "dom"; if (/zakup|sklep|moda|elektr|sport|zdrow|suplement|kosmet/.test(s)) return "zakupy"; return "inne"; };
+          const render = (selected = "all") => { const rows = offers.filter(o => selected === "all" || category(o) === selected); list.innerHTML = rows.length ? rows.map(o => '<article class="card"><span class="eyebrow">' + esc(o.categoryName || "Promocja") + '</span><h3>' + esc(o.voucherName || o.programName || "Oferta partnerska") + '</h3><p>' + esc(o.voucherText || "Sprawdź warunki i aktualny termin oferty.") + '</p>' + (o.voucherCode ? '<p><strong>Kod: ' + esc(o.voucherCode) + '</strong></p>' : "") + (o.voucherTrackingUrl ? '<a class="button" href="' + esc(o.voucherTrackingUrl) + '" target="_blank" rel="nofollow noopener">Sprawdź promocję</a>' : "") + '<a class="button secondary" href="/konkursy-i-promocje">Zobacz pozostałe oferty</a></article>').join("") : '<p class="notice">Brak aktywnych promocji w tej kategorii.</p>'; };
           filters.addEventListener("click", e => { const b = e.target.closest("[data-category]"); if (b) render(b.dataset.category); });
           fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = manualOffers.concat(Array.isArray(data) ? data : []); render(); }).catch(() => { offers = manualOffers; render(); });
         })();
