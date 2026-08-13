@@ -439,6 +439,13 @@ function draftPromoPage(page) {
     }));
   remainingOffers.push(
     {
+      categoryName: "Zakupy",
+      programName: "Bielenda.com - House of Beauty Brands",
+      voucherName: "Bielenda - likwidacja magazynu do -70%",
+      voucherText: "House of Beauty Brands: likwidacja magazynu i rabaty do 70%.",
+      voucherTrackingUrl: "https://webep1.com/c/12662/69be5d0be81239fbf6b84204?r=aHR0cHM6Ly9iaWVsZW5kYS5jb20vcHJvbW9jamUvb3V0bGV0LWtvc21ldHlraQ"
+    },
+    {
       categoryName: "Dom i budowa",
       programName: "Helika - produkty marki z rabatem 15%",
       voucherName: "Helika - 15% rabatu",
