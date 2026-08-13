@@ -437,6 +437,32 @@ function draftPromoPage(page) {
       voucherText: offer.summary || offer.reward || "Sprawdź aktualne warunki oferty.",
       voucherTrackingUrl: offer.affiliateUrl || ""
     }));
+  remainingOffers.push(
+    {
+      categoryName: "Dom i budowa",
+      programName: "Helika - produkty marki z rabatem 15%",
+      voucherName: "Helika - 15% rabatu",
+      voucherText: "Kupuj produkty marki Helika z rabatem 15%.",
+      voucherCode: "HEL15off",
+      voucherTrackingUrl: "https://webep1.com/c/13168/69be5d0be81239fbf6b84204?r=aHR0cHM6Ly96YWJ1ZG93YS1hZ2QucGwvc2tsZXAsMjM4MyxoZWxpa2EuaHRtbA"
+    },
+    {
+      categoryName: "Dom i budowa",
+      programName: "Miraggio - produkty marki z rabatem 10%",
+      voucherName: "Miraggio - 10% rabatu",
+      voucherText: "10% rabatu na produkty marki Miraggio.",
+      voucherCode: "MIRA10offGGIO",
+      voucherTrackingUrl: "https://webep1.com/c/13168/69be5d0be81239fbf6b84204?r=aHR0cHM6Ly96YWJ1ZG93YS1hZ2QucGwvc2tsZXAsMjQzOCxtaXJhZ2dpby5odG1s"
+    },
+    {
+      categoryName: "Dom i budowa",
+      programName: "Elica - produkty marki z rabatem 12%",
+      voucherName: "Elica - 12% rabatu",
+      voucherText: "12% rabatu na produkty marki Elica.",
+      voucherCode: "12ELI24",
+      voucherTrackingUrl: "https://webep1.com/c/13168/69be5d0be81239fbf6b84204?r=aHR0cHM6Ly96YWJ1ZG93YS1hZ2QucGwvc2tsZXAsNyxlbGljYS5odG1s"
+    }
+  );
   const remainingOffersJson = JSON.stringify(remainingOffers).replace(/</g, "\\u003c");
   return layout({
     url: page.url,
