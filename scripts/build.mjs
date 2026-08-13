@@ -475,7 +475,7 @@ function draftPromoPage(page) {
     url: page.url,
     title: page.title,
     description: page.description,
-    noindex: true,
+    noindex: false,
     crumbs: [{ label: page.h1, url: page.url }],
     body: `<main>
       <section class="hero compact promo-hero">
@@ -2076,6 +2076,7 @@ const urls = [
   ...seoLandingPages.map((landing) => landing.url),
   "/blog",
   ...blogArticleUrls(),
+  "/konkursy-i-promocje",
   "/faq",
   "/o-nas",
   "/kontakt",
