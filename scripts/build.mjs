@@ -94,7 +94,7 @@ const catalogPages = (data.sitemapSections || []).flatMap((section) =>
 const pageByUrl = new Map();
 for (const page of [...catalogPages, ...(data.pages || [])]) pageByUrl.set(page.url, page);
 const allPages = [...pageByUrl.values()].sort((a, b) => a.url.localeCompare(b.url));
-const offers = data.offers || [];
+const offers = (data.offers || []).filter((offer) => offer.slug !== "orange-orange-12659" && !/^orange\s*-/i.test(offer.name || ""));
 const blogArticles = data.blogArticles || [];
 const focusedOfferPages = allPages.filter((page) => offers.some((offer) => offer.pages?.includes(page.url)));
 const normalizeLabel = (value = "") =>
@@ -429,7 +429,7 @@ function externalLinkAttrs(url, sponsored = false) {
 
 function draftPromoPage(page) {
   const remainingOffers = offers
-    .filter((offer) => offer.pillar === "pozostale" || offer.category === "other" || offer.slug === "mbank-ekonto-do-uslug-premia")
+    .filter((offer) => (offer.pillar === "pozostale" || offer.category === "other" || offer.slug === "mbank-ekonto-do-uslug-premia") && offer.slug !== "orange-orange-12659" && !/^orange\\s*-/i.test(offer.name || ""))
     .map((offer) => ({
       categoryName: offer.slug === "mbank-ekonto-do-uslug-premia" ? "Banki" : "Pozostałe",
       programName: offer.name,
@@ -508,7 +508,7 @@ function draftPromoPage(page) {
           const category = (o) => { const s = [o.categoryName, o.programName, o.voucherName].join(" ").toLowerCase(); if (/bank|mbank|kredyt|pożycz|konto|ubezpiec|finan/.test(s)) return "banki"; if (/dom|budow|mebl|remont|narzęd/.test(s)) return "dom"; if (/zakup|sklep|moda|elektr|sport|zdrow|suplement|kosmet/.test(s)) return "zakupy"; return "inne"; };
           const render = (selected = "all") => { const rows = offers.filter(o => selected === "all" || category(o) === selected); list.innerHTML = rows.length ? rows.map(o => '<article class="card"><span class="eyebrow">' + esc(o.categoryName || "Promocja") + '</span><h3>' + esc(o.voucherName || o.programName || "Oferta partnerska") + '</h3><p>' + esc(o.voucherText || "Sprawdź warunki i aktualny termin oferty.") + '</p>' + (o.voucherCode ? '<p><strong>Kod: ' + esc(o.voucherCode) + '</strong></p>' : "") + (o.voucherTrackingUrl ? '<a class="button" href="' + esc(o.voucherTrackingUrl) + '" target="_blank" rel="nofollow noopener">Sprawdź promocję</a>' : "") + '<a class="button secondary" href="/konkursy-i-promocje">Zobacz pozostałe oferty</a></article>').join("") : '<p class="notice">Brak aktywnych promocji w tej kategorii.</p>'; };
           filters.addEventListener("click", e => { const b = e.target.closest("[data-category]"); if (b) render(b.dataset.category); });
-          fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = manualOffers.concat(Array.isArray(data) ? data : []); render(); }).catch(() => { offers = manualOffers; render(); });
+          fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = manualOffers.concat(Array.isArray(data) ? data : []).filter(o => !/^orange\\s*-/i.test([o.programName, o.voucherName].join(" "))); render(); }).catch(() => { offers = manualOffers; render(); });
         })();
       </script>
     </main>`
@@ -561,7 +561,7 @@ function offerCard(offer) {
     <div>
       <span class="badge">${esc(categoryLabels[offer.category] || offer.category)}</span>
       <h3>${esc(offer.name)}</h3>
-      <p>${esc(offer.summary)}</p>
+      <p>${esc((offer.summary || "").replaceAll("Korzyść dla klienta", "Korzyść dla Ciebie"))}</p>
       ${offer.reward ? `<p class="offer-benefit"><strong>Możesz zyskać:</strong> ${esc(offer.reward)}</p>` : ""}
     </div>
     <div class="offer-meta">${meta
