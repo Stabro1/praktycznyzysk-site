@@ -2302,6 +2302,7 @@ function contactPage() {
     url: "/kontakt",
     title: `Kontakt | ${data.name}`,
     description: "Kontakt w sprawie błędów, współpracy, ofert partnerskich i treści na PraktycznyZysk.pl.",
+    noindex: true,
     crumbs: [{ label: "Kontakt", url: "/kontakt" }],
     body: `<main>
       <section class="hero compact">
@@ -2330,6 +2331,7 @@ function legalPage(url, title, description, sections) {
     url,
     title: `${title} | ${data.name}`,
     description,
+    noindex: true,
     crumbs: [{ label: title, url }],
     body: `<main>
       <section class="hero compact">
@@ -2450,10 +2452,7 @@ const urls = [
   "/konkursy-i-promocje",
   "/metodologia-rankingow",
   "/faq",
-  "/o-nas",
-  "/kontakt",
-  "/polityka-prywatnosci",
-  "/regulamin"
+  "/o-nas"
 ];
 
 function uniqueUrls(urlList) {
