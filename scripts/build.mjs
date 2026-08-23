@@ -198,6 +198,116 @@ const seoLandingPages = [
     pageUrl: "/auto/historia-pojazdu",
     pillar: "auto",
     keywords: ["historia pojazdu", "sprawdzenie VIN", "raport VIN", "jak sprawdzić auto przed kupnem"]
+  },
+  {
+    url: "/finanse/nowe-chwilowki-dla-zadluzonych",
+    title: "Nowe chwilówki dla zadłużonych 2026 - sprawdź warunki",
+    description: "Nowe chwilówki dla zadłużonych: porównaj dostępne oferty, RRSO, całkowity koszt, wymagania i ryzyko opóźnienia w spłacie.",
+    h1: "Nowe chwilówki dla zadłużonych",
+    lead: "Sprawdź, co oznacza oferta dla osoby zadłużonej, jakie warunki mogą obowiązywać i dlaczego przed wnioskiem trzeba policzyć całkowity koszt zobowiązania.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["nowe chwilówki dla zadłużonych", "chwilówki dla zadłużonych online", "pożyczka dla zadłużonych", "chwilówki z negatywnym BIK"]
+  },
+  {
+    url: "/finanse/najczesciej-przyznawane-chwilowki",
+    title: "Najczęściej przyznawane chwilówki 2026 - ranking i warunki",
+    description: "Najczęściej przyznawane chwilówki 2026: porównaj wymagania, koszty, terminy spłaty i zasady oceny wniosku.",
+    h1: "Najczęściej przyznawane chwilówki",
+    lead: "Nie istnieje gwarancja akceptacji wniosku. Możesz jednak sprawdzić typowe wymagania, koszty i czynniki wpływające na decyzję pożyczkodawcy.",
+    pageUrl: "/finanse/ranking-chwilowek",
+    pillar: "finanse",
+    keywords: ["najczęściej przyznawane chwilówki", "chwilówki z wysoką przyznawalnością", "łatwa chwilówka", "chwilówka online"]
+  },
+  {
+    url: "/finanse/chwilowki-bez-weryfikacji",
+    title: "Chwilówki bez weryfikacji 2026 - co naprawdę sprawdzają firmy",
+    description: "Chwilówki bez weryfikacji: wyjaśniamy, jakie bazy i informacje może sprawdzać pożyczkodawca oraz jak ocenić koszt oferty.",
+    h1: "Chwilówki bez weryfikacji",
+    lead: "Hasło „bez weryfikacji” nie zawsze oznacza brak oceny zdolności lub historii. Sprawdź, co może kryć się za takim opisem oferty.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["chwilówki bez weryfikacji", "pożyczka bez sprawdzania", "chwilówki bez zaświadczeń", "pożyczka online bez formalności"]
+  },
+  {
+    url: "/finanse/extra-chwilowki-online",
+    title: "Extra chwilówki online 2026 - porównanie ofert i kosztów",
+    description: "Extra chwilówki online: porównaj kwotę, termin, RRSO, całkowity koszt i warunki promocji przed złożeniem wniosku.",
+    h1: "Extra chwilówki online",
+    lead: "Porównuj promocje i oferty online przez pryzmat całkowitej kwoty do spłaty, a nie samej szybkości decyzji lub reklamy.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["extra chwilówki online", "chwilówka online", "szybka pożyczka online", "promocje chwilówek"]
+  },
+  {
+    url: "/finanse/pozyczki-chwilowki",
+    title: "Pożyczki chwilówki 2026 - ranking, koszty i warunki",
+    description: "Pożyczki chwilówki online: sprawdź ranking, RRSO, koszty, terminy spłaty i najważniejsze ryzyka krótkoterminowego zobowiązania.",
+    h1: "Pożyczki chwilówki",
+    lead: "Zobacz, jak porównywać krótkoterminowe pożyczki i jakie informacje sprawdzić przed wysłaniem wniosku.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["pożyczki chwilówki", "chwilówki online", "ranking pożyczek", "pożyczka krótkoterminowa"]
+  },
+  {
+    url: "/finanse/chwilowki-bez-bik",
+    title: "Chwilówki bez BIK 2026 - możliwości, koszty i ryzyko",
+    description: "Chwilówki bez BIK: sprawdź, co oznacza brak weryfikacji BIK, jakie inne bazy mogą być analizowane i jak ocenić koszt pożyczki.",
+    h1: "Chwilówki bez BIK",
+    lead: "Brak sprawdzania BIK nie oznacza automatycznej decyzji pozytywnej. Przed wyborem sprawdź pozostałe wymagania, koszty i konsekwencje opóźnienia.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["chwilówki bez BIK", "pożyczka bez BIK", "chwilówka bez sprawdzania BIK", "pożyczka dla osoby z BIK"]
+  },
+  {
+    url: "/finanse/chwilowki-na-60-dni",
+    title: "Chwilówki na 60 dni 2026 - porównaj terminy i koszty",
+    description: "Chwilówki na 60 dni: porównaj termin spłaty, RRSO, całkowity koszt i warunki ofert dostępnych online.",
+    h1: "Chwilówki na 60 dni",
+    lead: "Dłuższy termin może ułatwić zaplanowanie spłaty, ale nie musi oznaczać niższego kosztu. Sprawdź wszystkie kwoty w umowie.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["chwilówki na 60 dni", "pożyczka na 60 dni", "chwilówka z długim terminem spłaty", "pożyczka online 60 dni"]
+  },
+  {
+    url: "/finanse/pozyczki-online",
+    title: "Pożyczki online 2026 - porównanie ofert i kosztów",
+    description: "Pożyczki online: porównaj kwoty, RRSO, raty, całkowity koszt i wymagania przed złożeniem wniosku.",
+    h1: "Pożyczki online",
+    lead: "Porównaj pożyczki przez internet według całkowitego kosztu, terminu spłaty i warunków, a nie tylko szybkości decyzji.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["pożyczki online", "pożyczka online", "pożyczki przez internet", "pożyczka online na konto"]
+  },
+  {
+    url: "/finanse/pozyczki-dla-zadluzonych",
+    title: "Pożyczki dla zadłużonych 2026 - możliwości i koszty",
+    description: "Pożyczki dla zadłużonych: sprawdź wymagania, możliwe formy finansowania, RRSO, całkowity koszt i ryzyko kolejnego zobowiązania.",
+    h1: "Pożyczki dla zadłużonych",
+    lead: "Osoba zadłużona powinna przed wnioskiem ocenić budżet, realną możliwość spłaty i całkowity koszt nowego zobowiązania.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["pożyczki dla zadłużonych", "pożyczki online dla zadłużonych", "chwilówki dla zadłużonych", "szybka pożyczka dla zadłużonych"]
+  },
+  {
+    url: "/finanse/szybka-pozyczka-online",
+    title: "Szybka pożyczka online 2026 - sprawdź koszty i warunki",
+    description: "Szybka pożyczka online: porównaj czas wypłaty, RRSO, całkowitą kwotę do spłaty i wymagania ofert.",
+    h1: "Szybka pożyczka online",
+    lead: "Szybkość wypłaty nie powinna przesłaniać kosztu. Sprawdź umowę, termin spłaty i konsekwencje opóźnienia przed decyzją.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["szybka pożyczka online", "szybka pożyczka", "szybkie pożyczki online", "pożyczka online szybko"]
+  },
+  {
+    url: "/finanse/pozyczka-online-bez-bik",
+    title: "Pożyczka online bez BIK 2026 - co sprawdzić przed wnioskiem",
+    description: "Pożyczka online bez BIK: wyjaśniamy, co oznacza taki opis, jakie inne informacje mogą być sprawdzane i jak ocenić koszt.",
+    h1: "Pożyczka online bez BIK",
+    lead: "„Bez BIK” nie oznacza gwarantowanej akceptacji. Sprawdź pozostałe wymagania, bazy, RRSO i całkowitą kwotę do spłaty.",
+    pageUrl: "/finanse/chwilowki",
+    pillar: "finanse",
+    keywords: ["pożyczka online bez BIK", "pożyczki bez BIK", "pożyczka bez BIK dla zadłużonych", "pożyczka bez BIK i KRD"]
   }
 ];
 
@@ -205,8 +315,8 @@ const draftPromoPages = [
   {
     url: "/konkursy-i-promocje",
     title: "Promocje kody rabatowe kupony zniżki | PraktycznyZysk.pl",
-    h1: "Promocje kody rabatowe kupony zniżki",
-    description: "Sprawdź aktualne promocje, kody rabatowe, kupony, zniżki i bonusy w najważniejszych kategoriach.",
+    h1: "Kody promocyjne i zniżki do 80%",
+    description: "Sprawdź aktualne promocje, kody promocyjne, kupony i zniżki do 80% w najważniejszych kategoriach.",
     category: "Promocje",
     note: "Wybierz interesującą Cię kategorię i znajdź ofertę dopasowaną do swoich potrzeb.",
     checklist: [
@@ -468,6 +578,41 @@ function draftPromoPage(page) {
       voucherText: "12% rabatu na produkty marki Elica.",
       voucherCode: "12ELI24",
       voucherTrackingUrl: "https://webep1.com/c/13168/69be5d0be81239fbf6b84204?r=aHR0cHM6Ly96YWJ1ZG93YS1hZ2QucGwvc2tsZXAsNyxlbGljYS5odG1s"
+    },
+    {
+      categoryName: "Zakupy",
+      programName: "AliExpress",
+      voucherName: "AliExpress — kody promocyjne i zniżki do 80%",
+      voucherText: "Sprawdź dostępne kody promocyjne, kupony i zniżki do 80% na AliExpress. Promocje, dostępność i warunki mogą się zmieniać — sprawdź je na stronie partnera.",
+      voucherTrackingUrl: "https://contrack.link/p/604213c0632f125bcc7cd564/6a492044bbb3f5bdd4035162"
+    },
+    {
+      categoryName: "Zakupy",
+      programName: "Temu",
+      voucherName: "Temu — pakiet kuponów 400 zł",
+      voucherText: "Odkryj bestsellery Temu i odbierz pakiet kuponów o wartości 400 zł. Odblokuj oszczędności podczas zakupów w dowolnym miejscu i czasie.",
+      voucherTrackingUrl: "https://temu.to/k/eng8i72qrrp"
+    },
+    {
+      categoryName: "Zdrowie i suplementy",
+      programName: "EnduNAD",
+      voucherName: "EnduNAD — zniżka 20%",
+      voucherText: "EnduNAD to suplement diety mający wspierać produkcję NAD+ i syntezę cysteiny, a tym samym energię, regenerację i codzienną witalność.",
+      voucherTrackingUrl: "https://nplink.net/r76ouf67"
+    },
+    {
+      categoryName: "Zdrowie i suplementy",
+      programName: "Shilajit Extreme",
+      voucherName: "Shilajit Extreme — zniżka 20%",
+      voucherText: "Shilajit Extreme to wieloskładnikowy suplement dla mężczyzn, którego formuła ma wspierać energię, witalność, odporność na stres i prawidłowy poziom testosteronu.",
+      voucherTrackingUrl: "https://nplink.net/95tjr5ol"
+    },
+    {
+      categoryName: "Zdrowie i suplementy",
+      programName: "Collagen Select",
+      voucherName: "Collagen Select — zniżka 20%",
+      voucherText: "Collagen Select to suplement diety dla kobiet z 9-składnikową formułą zawierającą hydrolizat kolagenu VERISOL®. Produkt ma wspierać elastyczność i zdrowy wygląd skóry, włosów oraz paznokci.",
+      voucherTrackingUrl: "https://nplink.net/m0ptne8h"
     }
   );
   const remainingOffersJson = JSON.stringify(remainingOffers).replace(/</g, "\\u003c");
@@ -506,17 +651,18 @@ function draftPromoPage(page) {
           const esc = (v) => String(v ?? "").replace(/[&<>\"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\\\"":"&quot;","'":"&#39;"}[c]));
           const manualOffers = ${remainingOffersJson};
           const category = (o) => { const s = [o.categoryName, o.programName, o.voucherName].join(" ").toLowerCase(); if (/bank|mbank|kredyt|pożycz|konto|ubezpiec|finan/.test(s)) return "banki"; if (/dom|budow|mebl|remont|narzęd/.test(s)) return "dom"; if (/zakup|sklep|moda|elektr|sport|zdrow|suplement|kosmet/.test(s)) return "zakupy"; return "inne"; };
-          const render = (selected = "all") => { const rows = offers.filter(o => selected === "all" || category(o) === selected); list.innerHTML = rows.length ? rows.map(o => '<article class="card"><span class="eyebrow">' + esc(o.categoryName || "Promocja") + '</span><h3>' + esc(o.voucherName || o.programName || "Oferta partnerska") + '</h3><p>' + esc((o.voucherText || "Sprawdź warunki i aktualny termin oferty.").replaceAll("Korzyść dla klienta", "Korzyść dla Ciebie")) + '</p>' + (o.voucherCode ? '<p><strong>Kod: ' + esc(o.voucherCode) + '</strong></p>' : "") + (o.voucherTrackingUrl ? '<a class="button" href="' + esc(o.voucherTrackingUrl) + '" target="_blank" rel="nofollow noopener">Sprawdź promocję</a>' : "") + '<a class="button secondary" href="/konkursy-i-promocje">Zobacz pozostałe oferty</a></article>').join("") : '<p class="notice">Brak aktywnych promocji w tej kategorii.</p>'; };
+          const render = (selected = "all") => { const rows = offers.filter(o => selected === "all" || category(o) === selected); list.innerHTML = rows.length ? rows.map(o => '<article class="card"><span class="eyebrow">' + esc(o.categoryName || "Promocja") + '</span><h3>' + esc(o.voucherName || o.programName || "Oferta partnerska") + '</h3><p>' + esc((o.voucherText || "Sprawdź warunki i aktualny termin oferty.").replaceAll("Korzyść dla klienta", "Korzyść dla Ciebie")) + '</p>' + (o.voucherCode ? '<p><strong>Kod: ' + esc(o.voucherCode) + '</strong></p>' : "") + (o.voucherTrackingUrl ? '<a class="button" href="' + esc(o.voucherTrackingUrl) + '" target="_blank" rel="nofollow sponsored noopener">Sprawdź promocję</a>' : "") + '<a class="button secondary" href="/konkursy-i-promocje">Zobacz pozostałe oferty</a></article>').join("") : '<p class="notice">Brak aktywnych promocji w tej kategorii.</p>'; };
           filters.addEventListener("click", e => { const b = e.target.closest("[data-category]"); if (b) render(b.dataset.category); });
-          fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = manualOffers.concat(Array.isArray(data) ? data : []).filter(o => !/^orange\\s*-/i.test([o.programName, o.voucherName].join(" "))); render(); }).catch(() => { offers = manualOffers; render(); });
+          const orderOffers = (items) => { const sorted = items.sort((a, b) => { const an = [a.programName, a.voucherName, a.categoryName].join(" "); const bn = [b.programName, b.voucherName, b.categoryName].join(" "); const supplementRank = (name) => /suplement|endunad|shilajit|collagen select/i.test(name) ? 1 : /dom i budowa|helika|miraggio|elica/i.test(name) ? 2 : 0; const as = supplementRank(an); const bs = supplementRank(bn); if (as !== bs) return as - bs; const ai = /AliExpress/i.test(an); const bi = /AliExpress/i.test(bn); const ae = /Evisa\\s*Express/i.test(an); const be = /Evisa\\s*Express/i.test(bn); if (ai !== bi) return ai ? -1 : 1; if (ae !== be) return ae ? 1 : -1; return 0; }); const evisaIndex = sorted.findIndex((item) => /Evisa\\s*Express/i.test([item.programName, item.voucherName].join(" "))); const shilajitIndex = sorted.findIndex((item) => /Shilajit\\s*Extreme/i.test([item.programName, item.voucherName].join(" "))); if (evisaIndex >= 0 && shilajitIndex >= 0) [sorted[evisaIndex], sorted[shilajitIndex]] = [sorted[shilajitIndex], sorted[evisaIndex]]; const temuIndex = sorted.findIndex((item) => /Temu/i.test([item.programName, item.voucherName].join(" "))); const aliIndex = sorted.findIndex((item) => /AliExpress/i.test([item.programName, item.voucherName].join(" "))); if (temuIndex >= 0 && aliIndex >= 0) { const [temu] = sorted.splice(temuIndex, 1); const target = sorted.findIndex((item) => /AliExpress/i.test([item.programName, item.voucherName].join(" "))); sorted.splice(target + 1, 0, temu); } return sorted; };
+          fetch("/api/webe").then(r => r.ok ? r.json() : []).then(data => { offers = orderOffers(manualOffers.concat(Array.isArray(data) ? data : []).filter(o => !/^orange\\s*-/i.test([o.programName, o.voucherName].join(" ")))); render(); }).catch(() => { offers = orderOffers(manualOffers); render(); });
         })();
       </script>
     </main>`
   });
 }
 
-function cta(label, url, secondary = false) {
-  return `<a class="button${secondary ? " secondary" : ""}" href="${esc(url)}"${externalLinkAttrs(url, true)} data-track="cta" data-track-label="${esc(label)}">${esc(label)}</a>`;
+function cta(label, url, secondary = false, trackTarget = "") {
+  return `<a class="button${secondary ? " secondary" : ""}" href="${esc(url)}"${externalLinkAttrs(url, true)} data-track="cta" data-track-label="${esc(label)}"${trackTarget ? ` data-track-target="${esc(trackTarget)}"` : ""}>${esc(label)}</a>`;
 }
 
 function card(item, extra = "") {
@@ -545,6 +691,7 @@ function offerCard(offer) {
   );
   const processNote =
     "Nie przerywaj procesu: po kliknięciu przejdź całą rejestrację od razu. Nie zamykaj karty, nie odświeżaj strony i nie przechodź do innych zakładek.";
+  const conditionItems = [...(offer.conditions || [])];
   const meta = [
     offer.reward ? { label: "Korzyść", value: offer.reward } : null,
     offer.difficulty
@@ -554,7 +701,9 @@ function offerCard(offer) {
         }
       : null,
     offer.time ? { label: "Czas", value: offer.time } : null,
-    offer.deadline ? { label: "Do kiedy", value: offer.deadline } : null,
+    offer.deadline && !/^sprawdź u partnera$/i.test(String(offer.deadline).trim())
+      ? { label: "Do kiedy", value: offer.deadline }
+      : null,
     offer.audience ? { label: "Dla kogo", value: offer.audience } : null
   ].filter(Boolean);
   return `<article class="offer-card">
@@ -569,12 +718,12 @@ function offerCard(offer) {
       .join("")}</div>
     <div class="offer-split">
       <div><strong>Najważniejsze korzyści</strong><ul>${highlights.map((item) => `<li>${esc(item)}</li>`).join("")}</ul></div>
-      <div><strong>Uwaga</strong><p>${esc(offer.warning)}</p></div>
+      <div><strong>Warunki</strong>${conditionItems.length ? `<ul>${conditionItems.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : `<p>${esc(offer.warning || "Sprawdź warunki oferty u partnera.")}</p>`}<small class="offer-conditions-note">Aktualne warunki, opłaty i regulamin możesz także sprawdzić bezpośrednio na stronie partnera.</small></div>
     </div>
     ${partnerCondition ? `<p class="partner-condition">Aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie.</p>` : ""}
     <p class="partner-condition">${esc(processNote)}</p>
     <div class="update-stamp">Aktualizacja: ${esc(data.lastUpdated)}</div>
-    ${cta(offer.affiliateUrl ? "Przejdź do oferty" : "Zobacz miejsce na link", offer.affiliateUrl || `/go/${offer.slug}`)}
+    <div class="hero-actions">${cta(offer.affiliateUrl ? "Przejdź do oferty" : "Zobacz miejsce na link", offer.affiliateUrl || `/go/${offer.slug}`, false, offer.slug)}<a class="button secondary" href="/panel-korzysci">Dodaj do Panelu korzyści</a></div>
   </article>`;
 }
 
@@ -923,7 +1072,7 @@ function homePage() {
     title: `${data.name} - ${data.tagline}`,
     description: data.description,
     body: `<main>
-      <section class="hero">
+      <section class="hero home-hero">
         <div class="hero-inner single centered">
           <div>
             <div class="eyebrow">PraktycznyZysk.pl</div>
@@ -995,7 +1144,7 @@ function pillarPage(pillar) {
     description: pillar.description,
     crumbs: [{ label: pillar.name, url: `/${pillar.slug}` }],
     body: `<main>
-      <section class="hero compact">
+      <section class="hero compact blog-hero">
         <div class="hero-inner">
           <div>
             <div class="eyebrow">${esc(pillar.label)}</div>
@@ -1339,7 +1488,7 @@ function toolPage(tool) {
       { label: tool.name, url: `/narzedzia/${tool.slug}` }
     ],
     body: `<main>
-      <section class="hero compact">
+      <section class="hero compact offer-page-hero">
         <div class="hero-inner single">
           <div>
             <div class="eyebrow">Narzędzie</div>
@@ -1397,9 +1546,14 @@ function genericPage(page) {
   const relatedTools = data.tools
     .filter((tool) => tool.next.includes(page.pillar || "") || tool.next === page.url)
     .slice(0, 3);
+  const relatedArticles = blogArticles
+    .filter((article) => article.ctaUrl === page.url || article.ctaUrl?.startsWith(`/${page.pillar || ""}`))
+    .slice(0, 2)
+    .map((article) => ({ label: article.h1 || article.title, url: article.url, note: "Poradnik powiązany z tym tematem" }));
   const genericLinks = [
     ...(pillar?.priorityLinks || []).slice(0, 3).map((link) => ({ ...link, note: "Dobry następny krok w tym temacie" })),
-    ...relatedTools.map((tool) => ({ label: tool.name, url: `/narzedzia/${tool.slug}`, note: tool.description }))
+    ...relatedTools.map((tool) => ({ label: tool.name, url: `/narzedzia/${tool.slug}`, note: tool.description })),
+    ...relatedArticles
   ].slice(0, 4);
   return layout({
     url: page.url,
@@ -1472,11 +1626,26 @@ function genericPage(page) {
 function renderArticleContent(article) {
   return (article.sections || [])
     .map((section) => {
+      const sectionId = `sekcja-${normalizeLabel(section.heading).replace(/\s+/g, "-")}`;
       const intro = section.text ? `<p>${esc(section.text)}</p>` : "";
       const list = section.items?.length ? `<ul class="tool-points">${section.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>` : "";
-      return `<h2>${esc(section.heading)}</h2>${intro}${list}`;
+      return `<h2 id="${esc(sectionId)}">${esc(section.heading)}</h2>${intro}${list}`;
     })
     .join("");
+}
+
+function articleRelated(article) {
+  const target = normalizeLabel(`${article.ctaUrl || ""} ${article.title || ""}`);
+  return blogArticles
+    .filter((item) => item.url !== article.url)
+    .map((item) => ({
+      item,
+      score: (item.ctaUrl && target.includes(normalizeLabel(item.ctaUrl)) ? 3 : 0) +
+        (normalizeLabel(item.title).split(" ").filter((word) => word.length > 4 && target.includes(word)).length)
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map(({ item }) => ({ label: item.h1 || item.title, url: item.url, note: item.description }));
 }
 
 function blogIndex() {
@@ -1504,7 +1673,7 @@ function blogIndex() {
       }
     ],
     body: `<main>
-      <section class="hero compact">
+      <section class="hero compact blog-hero">
         <div class="hero-inner single">
           <div>
             <div class="eyebrow">Blog</div>
@@ -1539,10 +1708,12 @@ function blogArticlePage(article) {
     : article.ctaUrl?.includes("chwilowki")
       ? "Przed podpisaniem umowy sprawdź RRSO, całkowitą kwotę do zapłaty, termin spłaty i koszty opóźnienia. Pożyczaj tylko wtedy, gdy masz realny plan terminowej spłaty."
     : "Warunki promocji bankowych, opłaty, stawki, terminy i definicje aktywności mogą się zmieniać. Decydujący jest zawsze aktualny regulamin konkretnej promocji oraz tabela opłat banku.";
-  const related = blogArticles
-    .filter((item) => item.url !== article.url)
-    .slice(0, 4)
-    .map((item) => ({ label: item.h1 || item.title, url: item.url, note: item.description }));
+  const related = articleRelated(article);
+  const toc = (article.sections || []).map((section) => {
+    const id = `sekcja-${normalizeLabel(section.heading).replace(/\s+/g, "-")}`;
+    return `<a href="#${esc(id)}">${esc(section.heading)}</a>`;
+  }).join("");
+  const authorNote = "Treści przygotowuje redakcja PraktycznyZysk.pl na podstawie informacji od partnerów, regulaminów ofert i własnej weryfikacji. Przy ofertach finansowych zawsze sprawdzaj aktualne warunki, koszty i regulamin bezpośrednio u dostawcy.";
   return layout({
     url: article.url,
     title: `${article.title} | ${data.name}`,
@@ -1557,8 +1728,9 @@ function blogArticlePage(article) {
         "@type": "Article",
         headline: article.h1 || article.title,
         description: article.description,
+        datePublished: article.updated || data.lastUpdated,
         dateModified: article.updated || data.lastUpdated,
-        author: { "@type": "Organization", name: data.name },
+        author: { "@type": "Organization", name: "Redakcja PraktycznyZysk.pl", url: absoluteUrl("/o-nas") },
         publisher: { "@type": "Organization", name: data.name, logo: { "@type": "ImageObject", url: absoluteUrl("/logo.jpg") } },
         mainEntityOfPage: absoluteUrl(article.url)
       }
@@ -1569,15 +1741,17 @@ function blogArticlePage(article) {
           <div class="eyebrow">${esc(categoryLabel)}</div>
           <h1>${esc(article.h1 || article.title)}</h1>
           <p class="lead">${esc(article.description)}</p>
-          <div class="update-stamp">Aktualizacja: ${esc(article.updated || data.lastUpdated)}</div>
+          <div class="article-byline"><strong>Autor: Redakcja PraktycznyZysk.pl</strong><span>Aktualizacja: ${esc(article.updated || data.lastUpdated)}</span><a href="/o-nas">O redakcji i metodologii</a></div>
           <div class="notice">${esc(riskNotice)}</div>
         </header>
         <div class="article-content">
+          ${toc ? `<nav class="article-toc" aria-label="Spis treści"><strong>Spis treści</strong>${toc}</nav>` : ""}
           ${article.intro.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
           ${renderArticleContent(article)}
           <h2>Podsumowanie</h2>
           <p>${esc(article.summary)}</p>
           <div class="hero-actions">${cta(article.ctaLabel || "Zobacz aktualne konta z premią", article.ctaUrl || "/finanse/konta-z-premia")}</div>
+          <p class="author-note">${esc(authorNote)}</p>
         </div>
       </article>
       ${nextStepBlock({ title: "Powiązane poradniki", description: "Sprawdź kolejne elementy promocji zanim złożysz wniosek.", links: related })}
@@ -1752,31 +1926,22 @@ function goPage(offer) {
       { label: "Oferty", url: "/oferty" },
       { label: offer.name, url: `/go/${offer.slug}` }
     ],
-    body: `<main>
+    body: `<main class="offer-detail-page">
       <section class="hero compact">
         <div class="hero-inner single">
           <div>
-            <div class="eyebrow">${hasDestination ? "Oferta partnera" : "Oferta w przygotowaniu"}</div>
+            <div class="eyebrow">${hasDestination ? "Oferta" : "Oferta w przygotowaniu"}</div>
             <h1>${esc(offer.name)}</h1>
             <p class="lead">${esc(offerLead)}</p>
             ${offerBenefitList(offer)}
-            <div class="hero-actions">${hasDestination ? cta("Przejdź do oferty", offer.affiliateUrl) : ""}${cta("Podobne oferty", similarOffersUrl, true)}</div>
+            <div class="hero-actions">${hasDestination ? cta("Przejdź do partnera", offer.affiliateUrl, false, offer.slug) : ""}<a class="button secondary" href="/panel-korzysci">Dodaj do Panelu korzyści</a></div>
           </div>
         </div>
       </section>
       ${offerInstructionBlock(offer)}
       ${offerPartnerRulesBlock(offer)}
-      <section class="warning-band">
-        <div>
-          <span class="badge">${hasDestination ? "Oferta" : "Oferta niedostępna"}</span>
-          <h2>${hasDestination ? "Sprawdź ofertę u partnera" : "Ta oferta nie jest teraz dostępna"}</h2>
-          <p>${hasDestination ? "Kliknięcie prowadzi do zewnętrznego partnera. Warunki i dostępność oferty mogą się zmienić, więc sprawdź je przed złożeniem wniosku." : "Ta oferta nie jest teraz dostępna. Wróć do katalogu i wybierz inną propozycję."}</p>
-          ${hasDestination ? `<div class="hero-actions">${cta("Przejdź do partnera", offer.affiliateUrl)}${cta("Zobacz podobne oferty", similarOffersUrl, true)}</div>` : ""}
-        </div>
-      </section>
       <section>
         <div class="offer-grid">${offerCard(offer)}</div>
-        <div class="section-actions">${cta("Zobacz inne podobne oferty", similarOffersUrl, true)}</div>
       </section>
     </main>`
   });
@@ -1799,9 +1964,202 @@ function toolsIndex() {
         </div>
       </section>
       <section>
-        <div class="grid">${data.tools.map((tool) => card({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })).join("")}</div>
+        <div class="grid">${[
+          ...data.tools.map((tool) => ({ ...tool, url: `/narzedzia/${tool.slug}`, cta: "Otwórz" })),
+          { name: "Metodologia rankingów", description: "Sprawdź, jak porównujemy oferty, koszty, warunki i ryzyko.", url: "/metodologia-rankingow", cta: "Zobacz metodologię" }
+        ].map((item) => card(item)).join("")}</div>
       </section>
     </main>`
+  });
+}
+
+function benefitPanelPage() {
+  const benefitClosingStep = (offer) => {
+    const text = [offer.name, offer.category, offer.pillar, offer.summary, offer.reward].join(" ").toLowerCase();
+    if (/konto|rachunek|bank|premi/.test(text)) return "Sprawdź termin wypłaty lub rozliczenia premii";
+    if (/chwil|pożycz|kredyt|konsolid/.test(text)) return "Sprawdź termin spłaty i całkowity koszt zobowiązania";
+    if (/ubezpiec|polisa|życie/.test(text)) return "Sprawdź zakres ochrony, termin płatności i potwierdzenie polisy";
+    if (/leasing|samoch|auto|vehis/.test(text)) return "Sprawdź harmonogram rat, opłaty i warunki wydania pojazdu";
+    if (/telefon|abonament|internet|play|orange/.test(text)) return "Sprawdź aktywację usługi, okres umowy i pierwsze rozliczenie";
+    if (/krypto|coinbase|kraken|bybit|okx/.test(text)) return "Sprawdź przyznanie nagrody i warunki jej odbioru";
+    return "Sprawdź termin realizacji korzyści i końcowe rozliczenie";
+  };
+  const demoPromotions = offers.map((offer) => ({
+    id: offer.slug,
+    offerUrl: `/go/${offer.slug}`,
+    affiliateUrl: offer.affiliateUrl || "",
+    name: offer.name,
+    bonus: Number((String(offer.reward || "0").match(/[0-9][0-9\s.,]*/)?.[0] || "0").replace(/\s/g, "").replace(",", ".")) || 0,
+    rewardLabel: /krypto|coinbase|kraken|bybit|okx/i.test(`${offer.name} ${offer.category} ${offer.reward}`) ? "Losowa nagroda — sprawdź warunki" : "",
+    costs: 0,
+    deadline: offer.deadline && !/^sprawdź u partnera$/i.test(String(offer.deadline).trim()) ? offer.deadline : "",
+    steps: ["Sprawdź regulamin i aktualne warunki", "Przejdź do oferty partnera", ...(offer.conditions || []).filter((condition) => !/nie przerywaj procesu|nie zamykaj karty|nie odświeżaj strony|nie przechodź do innych zakładek/i.test(String(condition))).slice(0, 3), benefitClosingStep(offer)]
+  }));
+  /* Fallback keeps the preview useful if the source data is temporarily empty. */
+  if (!demoPromotions.length) demoPromotions.push(
+    {
+      id: "konto-premia",
+      name: "Konto z premią — przykładowy plan",
+      bonus: 300,
+      costs: 0,
+      steps: ["Sprawdź regulamin i wymagania", "Otwórz konto z linku promocyjnego", "Wykonaj wymagany wpływ", "Zrealizuj wymagane płatności", "Sprawdź termin wypłaty premii"]
+    },
+    {
+      id: "lokata",
+      name: "Lokata promocyjna — przykładowy plan",
+      bonus: 180,
+      costs: 20,
+      steps: ["Sprawdź minimalną kwotę", "Załóż lokatę w terminie", "Nie wypłacaj środków przed terminem", "Sprawdź rozliczenie odsetek"]
+    }
+  );
+  const demoJson = JSON.stringify(demoPromotions).replaceAll("<", "\\u003c");
+  return layout({
+    url: "/panel-korzysci",
+    title: "Panel korzyści — PraktycznyZysk.pl",
+    description: "Zapisuj promocje, sprawdzaj kolejne kroki i kontroluj realny zysk.",
+    noindex: false,
+    crumbs: [{ label: "Panel korzyści", url: "/panel-korzysci" }],
+    body: `<main class="benefit-demo">
+      <section class="hero compact">
+        <div class="hero-inner single">
+          <div>
+            <div class="eyebrow">Twój plan ofert</div>
+            <h1 class="benefit-title">Nie tylko znajdź ofertę. Doprowadź ją do wypłaty.</h1>
+            <p class="lead">Skorzystałeś z oferty? Odhaczaj warunki, pilnuj terminów i sprawdzaj status swojej korzyści, wypłaty lub rozliczenia.</p>
+            <div class="hero-actions"><a class="button" href="#wybor-oferty">Dodaj ofertę do planu</a><a class="button secondary" href="#konto">Zapisz plan na stałe</a><a class="benefit-auth-top" id="benefit-auth-top" href="#logowanie">Zaloguj</a></div>
+          </div>
+        </div>
+      </section>
+      <section id="wybor-oferty">
+        <div class="section-heading"><div><span class="eyebrow">Po skorzystaniu z oferty</span><h2 class="benefit-subtitle">Wybierz ofertę do śledzenia</h2></div><span class="benefit-save-note">Plan zapisuje się automatycznie</span></div>
+        <div class="card benefit-picker"><label for="benefit-offer-select"><strong>Wybierz ofertę</strong></label><select id="benefit-offer-select" aria-label="Wybierz ofertę do śledzenia"></select></div>
+        <div class="card benefit-mode-picker"><strong>Na jakim jesteś etapie?</strong><div class="benefit-mode-actions"><button class="button secondary" type="button" data-benefit-mode="before">Jeszcze nie skorzystałem</button><button class="button" type="button" data-benefit-mode="after">Już skorzystałem — śledź warunki</button></div><p id="benefit-mode-note" class="benefit-save-note">Wybierz etap, aby zobaczyć właściwy następny krok.</p></div>
+        <div id="benefit-list" class="benefit-list"></div>
+      </section>
+      <section id="logowanie" class="benefit-auth card">
+        <div><span class="eyebrow">Synchronizacja planu</span><h2>Zachowaj swój Panel korzyści</h2><p id="benefit-auth-status">Zaloguj się e-mailem, aby zachować odhaczenia i korzystać z Panelu na różnych urządzeniach.</p></div>
+        <form id="benefit-auth-form" class="benefit-auth-form"><input id="benefit-auth-email" type="email" required autocomplete="email" placeholder="Twój adres e-mail" aria-label="Adres e-mail"><button class="button" type="submit">Wyślij link logowania</button><button class="button secondary" type="button" id="benefit-logout" hidden>Wyloguj</button></form>
+      </section>
+      <section id="konto" class="benefit-account card">
+        <div><span class="eyebrow">Opcjonalne konto</span><h2>Chcesz mieć plan zawsze przy sobie?</h2><p>Konto pozwoli zsynchronizować oferty między urządzeniami, zachować historię wypłaconych premii i otrzymywać przypomnienia. Z panelu możesz korzystać także bez konta.</p></div>
+        <div class="hero-actions"><button class="button" type="button" id="benefit-account-btn">Załóż darmowe konto</button><span id="benefit-account-note" class="benefit-account-note" aria-live="polite"></span></div>
+      </section>
+      <section class="benefit-value-grid">
+        <article class="card"><span class="eyebrow">Najważniejsze informacje</span><h3>Wiesz, co oferuje dana oferta</h3><p>Sprawdź korzyści, warunki, koszty i najważniejsze ograniczenia.</p></article>
+        <article class="card"><span class="eyebrow">Kolejny krok</span><h3>Zero zgadywania</h3><p>Każda oferta ma prostą checklistę i informację, na co uważać.</p></article>
+        <article class="card"><span class="eyebrow">Twoje dane</span><h3>Założenie konta jest opcjonalne</h3><p>Postęp zapisuje się na Twoim urządzeniu. Konto dodaje synchronizację i przypomnienia.</p></article>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script>
+        (() => {
+          const demo = ${demoJson};
+          const key = "pz_benefit_demo_v1";
+          const modeKey = "pz_benefit_mode_v1";
+          let mode = "after";
+          try { mode = localStorage.getItem(modeKey) || "after"; } catch (_) {}
+          let saved = {};
+          let storageKey = key;
+          const loadSaved = () => { try { saved = JSON.parse(localStorage.getItem(storageKey) || "{}"); } catch (_) { saved = {}; } };
+          loadSaved();
+          const list = document.getElementById("benefit-list");
+          const picker = document.getElementById("benefit-offer-select");
+          const modeNote = document.getElementById("benefit-mode-note");
+          const authForm = document.getElementById("benefit-auth-form");
+          const authEmail = document.getElementById("benefit-auth-email");
+          const authStatus = document.getElementById("benefit-auth-status");
+          const logoutButton = document.getElementById("benefit-logout");
+          const topAuth = document.getElementById("benefit-auth-top");
+          const accountSection = document.getElementById("konto");
+          const supabaseUrl = ${JSON.stringify(process.env.SUPABASE_URL || "")};
+          const supabaseAnonKey = ${JSON.stringify(process.env.SUPABASE_ANON_KEY || "")};
+          const supabaseClient = supabaseUrl && supabaseAnonKey && window.supabase ? window.supabase.createClient(supabaseUrl, supabaseAnonKey) : null;
+          const updateAuth = (session, eventName = "") => {
+            if (session?.user?.email) {
+              storageKey = key + "_user_" + encodeURIComponent(session.user.email.toLowerCase());
+              loadSaved();
+              accountSection.hidden = true;
+              authStatus.textContent = "Zalogowano jako: " + session.user.email + ".";
+              authEmail.value = session.user.email;
+              authForm.hidden = false;
+              authEmail.hidden = true;
+              authForm.querySelector('button[type="submit"]').hidden = true;
+              logoutButton.hidden = false;
+              topAuth.textContent = "Zalogowano";
+              topAuth.classList.add("is-authenticated");
+              if (typeof render === "function") render();
+            } else {
+              storageKey = key;
+              loadSaved();
+              accountSection.hidden = false;
+              authStatus.textContent = supabaseClient ? "Zaloguj się e-mailem, aby zachować historię wykonanych działań i mieć do niej dostęp na różnych urządzeniach." : "Logowanie będzie dostępne po konfiguracji Panelu.";
+              authForm.hidden = false;
+              authEmail.hidden = false;
+              authForm.querySelector('button[type="submit"]').hidden = false;
+              authEmail.disabled = false;
+              logoutButton.hidden = true;
+              topAuth.textContent = "Zaloguj";
+              topAuth.classList.remove("is-authenticated");
+              if (typeof render === "function") render();
+            }
+            if (eventName === "SIGNED_IN") {
+              window.history.replaceState({}, document.title, "#logowanie");
+              document.getElementById("logowanie")?.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+          };
+          if (supabaseClient) {
+            supabaseClient.auth.getSession().then(({ data }) => updateAuth(data.session));
+            supabaseClient.auth.onAuthStateChange((eventName, session) => updateAuth(session, eventName));
+            authForm.addEventListener("submit", async (event) => {
+              event.preventDefault();
+              const email = authEmail.value.trim();
+              authStatus.textContent = "Wysyłanie linku logowania…";
+              // Keep the callback URL free of a hash: Supabase uses the hash
+              // for the session tokens during the magic-link callback.
+              const { error } = await supabaseClient.auth.signInWithOtp({ email, options: { emailRedirectTo: "https://praktycznyzysk.pl/panel-korzysci" } });
+              authStatus.textContent = error ? "Nie udało się wysłać linku: " + error.message : "Link logowania został wysłany. Sprawdź skrzynkę e-mail i kliknij link (jeśli go nie widzisz, sprawdź spam).";
+            });
+            logoutButton.addEventListener("click", async () => { await supabaseClient.auth.signOut(); updateAuth(null); });
+          } else {
+            authForm.querySelector('button[type="submit"]').disabled = true;
+          }
+          const esc = (value) => String(value).replace(/[&<>]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+          demo.slice().sort((a, b) => a.name.localeCompare(b.name, "pl")).forEach((promotion) => { const option = document.createElement("option"); option.value = promotion.id; option.textContent = promotion.name; picker.appendChild(option); });
+          let render = () => {};
+          render = () => {
+            const selected = picker.value;
+            modeNote.textContent = mode === "before" ? "Najpierw zobacz kartę oferty, sprawdź warunki, a dopiero potem przejdź do partnera." : "Masz już produkt? Odhaczaj płatności, wpływy, utrzymanie konta i termin wypłaty.";
+            document.querySelectorAll("[data-benefit-mode]").forEach((button) => button.setAttribute("aria-pressed", button.dataset.benefitMode === mode ? "true" : "false"));
+            list.innerHTML = demo.filter((promotion) => !selected || promotion.id === selected).map((promotion) => {
+              const checked = saved[promotion.id] || [];
+              const done = checked.filter(Boolean).length;
+              const profit = promotion.bonus - promotion.costs;
+              const offerLink = mode === "before" ? '<div class="benefit-offer-links"><a class="button" href="' + esc(promotion.offerUrl) + '">Zobacz ofertę</a></div>' : '<div class="benefit-offer-links"><a class="button secondary" href="' + esc(promotion.offerUrl) + '">Zobacz kartę oferty</a></div>';
+              const rewardDisplay = promotion.rewardLabel || (profit + ' zł');
+              const rewardCaption = promotion.rewardLabel ? 'szacowana korzyść zależna od warunków' : 'szacowany realny zysk';
+              return '<article class="benefit-card card"><div class="benefit-card-top"><div><span class="eyebrow">Śledzenie oferty</span><h3>' + esc(promotion.name) + '</h3></div><div class="benefit-profit"><strong>' + esc(rewardDisplay) + '</strong><span>' + rewardCaption + '</span></div></div>' + offerLink + '<p class="benefit-progress-label">Termin: ' + esc(promotion.deadline || 'Brak podanego terminu') + '</p><div class="benefit-progress"><span style="width:' + Math.round(done / promotion.steps.length * 100) + '%"></span></div><p class="benefit-progress-label">' + done + ' z ' + promotion.steps.length + ' warunków wykonanych</p><ol class="benefit-steps">' + promotion.steps.map((step, index) => '<li><label><input type="checkbox" data-promotion="' + promotion.id + '" data-step="' + index + '" ' + (checked[index] ? 'checked' : '') + '> <span>' + esc(step) + '</span></label></li>').join('') + '</ol><p class="benefit-footnote">Zaznacz wykonane warunki i wróć do panelu przed upływem terminu.</p></article>';
+            }).join('');
+            list.innerHTML = list.innerHTML.replaceAll('Śledzenie promocji', 'Śledzenie oferty');
+            list.querySelectorAll('.benefit-progress-label').forEach((label) => { if (label.textContent.trim().startsWith('Termin:')) label.remove(); });
+            list.querySelectorAll('input[data-promotion]').forEach((input) => input.addEventListener('change', () => { const id = input.dataset.promotion; const index = Number(input.dataset.step); saved[id] = saved[id] || []; saved[id][index] = input.checked; localStorage.setItem(storageKey, JSON.stringify(saved)); render(); }));
+          };
+          picker.addEventListener("change", render);
+          document.querySelectorAll("[data-benefit-mode]").forEach((button) => button.addEventListener("click", () => { mode = button.dataset.benefitMode; try { localStorage.setItem(modeKey, mode); } catch (_) {} if (mode === "before") { const selectedOffer = demo.find((promotion) => promotion.id === picker.value); if (selectedOffer?.offerUrl) { window.location.href = selectedOffer.offerUrl; return; } } render(); const target = document.getElementById("benefit-list"); if (target) target.scrollIntoView({ behavior: "smooth", block: "start" }); }));
+          document.getElementById("benefit-account-btn").addEventListener("click", () => { document.getElementById("logowanie").scrollIntoView({ behavior: "smooth", block: "start" }); });
+          render();
+        })();
+      </script>
+    </main>`
+  });
+}
+
+function auditReportPage() {
+  return layout({
+    url: "/audyt-ofert",
+    title: "Audyt ofert afiliacyjnych — PraktycznyZysk.pl",
+    description: "Prywatny raport audytu ofert afiliacyjnych.",
+    noindex: true,
+    crumbs: [{ label: "Audyt ofert", url: "/audyt-ofert" }],
+    body: `<main class="content-page"><section class="hero compact"><div class="hero-inner single"><div><div class="eyebrow">Prywatny podgląd</div><h1>Audyt ofert afiliacyjnych</h1><p class="lead">Raport roboczy z przeglądu 119 ofert. Strona publiczna nie została zmieniona.</p></div></div></section><section class="content-section"><h2>Najważniejsze zmiany</h2><ul class="checklist"><li><strong>PKO / Allegro Klik:</strong> ustalić, czy to nowa wersja tej samej oferty.</li><li><strong>BNP karta:</strong> do 450 zł w e-kodach Allegro, umowa do 30.09.2026.</li><li><strong>NetCredit:</strong> link prowadzi do karty kredytowej do 20 000 zł.</li><li><strong>Provident:</strong> różne linki prowadzą do różnych produktów.</li><li><strong>Ekspres Pożyczka:</strong> link prowadzi do oferty z RRSO około 297%, nie RRSO 0%.</li><li><strong>Erste Konto Smart:</strong> aktualna kampania pokazuje do 600 zł, nie 700 zł.</li><li><strong>BNP Konto Firmowe:</strong> kampania zakończona.</li></ul></section><section class="content-section"><h2>Statusy</h2><div class="grid"><article class="card"><h3>Do aktualizacji</h3><p>Potwierdzone zmiany nazwy, kwoty lub warunków.</p></article><article class="card"><h3>Do ręcznej weryfikacji</h3><p>Puste odpowiedzi, błędy kampanii i blokady dostępu.</p></article><article class="card"><h3>Bez publikacji</h3><p>Zmiany trafią na stronę publiczną dopiero po akceptacji.</p></article></div></section></main>`
   });
 }
 
@@ -1911,6 +2269,15 @@ function faqPage() {
     title: `FAQ | ${data.name}`,
     description: "Odpowiedzi na najczęstsze pytania o serwis, oferty, linki afiliacyjne, kalkulatory i bezpieczeństwo decyzji.",
     crumbs: [{ label: "FAQ", url: "/faq" }],
+    schema: [{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: questions.map((question) => ({
+        "@type": "Question",
+        name: question.title,
+        acceptedAnswer: { "@type": "Answer", text: question.text }
+      }))
+    }],
     body: `<main>
       <section class="hero compact">
         <div class="hero-inner single">
@@ -1992,6 +2359,8 @@ if (data.privateMode) {
   writePreviewPage("/", homePage());
   for (const pillar of data.pillars) writePreviewPage(`/${pillar.slug}`, pillarPage(pillar));
   writePreviewPage("/narzedzia", toolsIndex());
+  writePreviewPage("/panel-korzysci", benefitPanelPage());
+  writePreviewPage("/audyt-ofert", auditReportPage());
   for (const tool of data.tools) writePreviewPage(`/narzedzia/${tool.slug}`, toolPage(tool));
   writePreviewPage("/oferty", offersIndex());
   for (const pillar of data.pillars) writePreviewPage(offersUrlFor(pillar.slug), offersPillarIndex(pillar));
@@ -2033,6 +2402,7 @@ if (data.privateMode) {
 writePage("/", homePage());
 for (const pillar of data.pillars) writePage(`/${pillar.slug}`, pillarPage(pillar));
 writePage("/narzedzia", toolsIndex());
+writePage("/panel-korzysci", benefitPanelPage());
 for (const tool of data.tools) writePage(`/narzedzia/${tool.slug}`, toolPage(tool));
 writePage("/oferty", offersIndex());
 for (const pillar of data.pillars) writePage(offersUrlFor(pillar.slug), offersPillarIndex(pillar));
@@ -2043,6 +2413,7 @@ for (const landing of seoLandingPages) writePage(landing.url, seoLandingPage(lan
 writePage("/blog", blogIndex());
 for (const article of blogArticles) writePage(article.url, blogArticlePage(article));
 for (const page of draftPromoPages) writePage(page.url, draftPromoPage(page));
+writePage("/metodologia-rankingow", simplePage("/metodologia-rankingow", "Metodologia rankingów i ofert", "Jak porównujemy oferty: aktualność warunków, RRSO, całkowity koszt, wymagania, termin spłaty, ryzyko opóźnienia i przejrzystość informacji. Przed decyzją zawsze sprawdź pełne warunki u partnera."));
 
 writePage("/faq", faqPage());
 writePage("/o-nas", aboutPage());
@@ -2077,6 +2448,7 @@ const urls = [
   "/blog",
   ...blogArticleUrls(),
   "/konkursy-i-promocje",
+  "/metodologia-rankingow",
   "/faq",
   "/o-nas",
   "/kontakt",
@@ -2121,4 +2493,5 @@ fs.writeFileSync(
 );
 
 console.log(`Built ${dist} with ${uniqueUrls(urls).length} URLs`);
+if (process.env.PZ_PREVIEW === "1") await import("./build-preview-v2.mjs");
 

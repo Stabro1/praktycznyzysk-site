@@ -29,6 +29,7 @@
   ],
   "disclosure": "Część przycisków prowadzi do zewnętrznych ofert. Jeśli skorzystasz z oferty przez nasz serwis, możemy otrzymać prowizję, a Ty możesz otrzymać dodatkową korzyść, np. premię, bonus albo preferencyjne warunki. Dla Ciebie cena lub warunki po stronie oferty nie będą przez to wyższe.",
   "primaryNav": [
+    { "label": "Panel korzyści", "url": "/panel-korzysci" },
     {
       "label": "Finanse",
       "url": "/finanse"
@@ -299,14 +300,18 @@
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oq1o",
       "difficulty": "Łatwy",
       "time": "5-20 min + aktywacja konta",
-      "deadline": "sprawdź u partnera",
+    "deadline": "30.09.2026 lub do wcześniejszego zakończenia promocji",
+      "verificationStatus": "partially-verified",
+      "verifiedAt": "2026-08-18",
+      "verificationSource": "Regulamin promocji Revolut przekazany do weryfikacji",
       "audience": "osoba, która chce konto z dostępem do wielu walut i płatności w aplikacji",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "otwarcie konta Revolut w jednym z dostępnych planów",
-        "zasilenie konta dowolną kwotą",
-        "wykonanie minimum trzech transakcji, np. przelewu, wypłaty lub wymiany waluty",
-        "oferta dla nowych klientów Revolut"
+        "mieszkaj na rynku objętym promocją i zobacz komunikat promocyjny Revolut",
+        "kliknij unikalny link promocji i rozpocznij rejestrację Revolut",
+        "otwórz rachunek Revolut i przejdź weryfikację KYC przed końcem okresu promocji",
+        "nie posiadaj wcześniej osobistego rachunku Revolut",
+        "zasil rachunek i wydaj minimalną kwotę wskazaną po wejściu w unikalny link — w ciągu 1 miesiąca od otwarcia rachunku",
+        "jeśli korzystasz z darmowego okresu próbnego planu, sprawdź termin anulowania przed naliczeniem opłat"
       ],
       "summary": "Revolut - konto osobiste z premią 100 zł. Sprawdź konto z dostępem do wielu walut, płatności w aplikacji i niskich kosztów przewalutowania.",
       "pros": [
@@ -318,7 +323,7 @@
         "premia wymaga aktywacji konta i wykonania transakcji",
         "warunki planów i opłaty mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualny regulamin promocji, opłaty planu, limity przewalutowania i warunki wypłaty premii u partnera.",
+      "warning": "Kwota minimalnego wydatku, wysokość nagrody i okres promocji są pokazywane po wejściu przez unikalny link. Darmowy okres próbny trzeba uruchomić w ciągu 72 godzin; po jego zakończeniu mogą pojawić się opłaty planu, a plany płatne są zawierane na 12 miesięcy. Sprawdź regulamin przed rejestracją.",
       "placementPriority": 60
     },
     {
@@ -334,12 +339,17 @@
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3114",
       "difficulty": "Łatwy",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
+      "deadline": "31.08.2026; Promocja Podróżna do 31.08.2026 lub wyczerpania puli 65 500 kont; konto oszczędnościowe 5,7% do 19.08.2026",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-18",
+      "verificationSource": "Strona docelowa kampanii mBank; regulamin do potwierdzenia",
       "audience": "osoba prywatna szukająca konta z premią",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+        "zapisz się do promocji na stronie mBanku i tego samego dnia złóż wniosek o eKonto do usług",
+        "wykonaj jednorazowy wpływ minimum 2000 zł w ciągu 7 dni od otwarcia konta",
+        "wykonaj transakcje kartą na łączną kwotę minimum 350 zł do końca pierwszego pełnego miesiąca",
+        "dla premii za aktywność spełnij dodatkowe warunki, m.in. wpływ, płatności i saldo na rachunku Moje Cele",
+        "sprawdź osobne warunki 200 zł w bonach Media Expert oraz pozostałych części promocji"
       ],
       "summary": "mBank - eKonto do usług z premią do 1000 zł i bonami Media Expert. Możesz zyskać: do 1000 zł premii + 200 zł w bonach Media Expert. Przed decyzją sprawdź aktualne warunki u partnera.",
       "pros": [
@@ -354,29 +364,34 @@
     },
     {
       "slug": "millennium-konto-360-premia-900",
-      "name": "Bank Millennium - Konto Millennium 360 z premią do 900 zł",
+      "name": "Bank Millennium - Konto Millennium 360 z premią do 700 zł",
       "category": "account",
       "pillar": "finanse",
       "pages": [
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "do 900 zł premii za spełnienie warunków promocji",
+      "reward": "do 700 zł premii za spełnienie warunków promocji",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz8",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
+      "deadline": "oferta dla nowych klientów; sprawdź dostępność u partnera",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-18",
+      "verificationSource": "Strona docelowa kampanii Bank Millennium; regulamin do potwierdzenia",
       "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "konto z kartą",
-        "wpływ 500 zł dla 18-25 albo 1000 zł dla 26+",
-        "1 transakcja mobilna kartą przez portfel",
-        "nowy klient banku"
+        "załóż Konto Millennium 360 z kartą i wyraź wymagane zgody",
+        "w ciągu 14 dni zapewnij wpływy minimum 3000 zł (1500 zł dla osób 18–25)",
+        "w ciągu 14 dni wykonaj 5 płatności w sklepach stacjonarnych portfelem mobilnym",
+        "zarejestruj numer telefonu do przelewów BLIK",
+        "przez 5 kolejnych miesięcy zapewniaj wymagany wpływ, płać kartą na łączną kwotę minimum 1000 zł miesięcznie i utrzymuj BLIK"
       ],
-      "summary": "Bank Millennium - Konto Millennium 360 z premią do 900 zł. Możesz zyskać: do 900 zł premii za spełnienie warunków promocji. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Bank Millennium - Konto Millennium 360 z premią do 700 zł. Promocja wymaga wpływów, płatności mobilnych i utrzymania aktywności przez kolejne miesiące.",
       "pros": [
-        "do 900 zł premii za spełnienie warunków promocji"
+        "do 700 zł premii za spełnienie warunków promocji"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -399,12 +414,17 @@
       "difficulty": "Łatwy",
       "time": "5-20 min + aktywne korzystanie z konta",
       "deadline": "sprawdź u partnera",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-18",
+      "verificationSource": "Strona docelowa kampanii Alior Bank; regulamin do potwierdzenia",
       "audience": "osoba prywatna szukająca konta osobistego z wysoką premią i prostym startem",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "otwarcie Konta z Bonusem w promocji",
-        "spełnienie warunków aktywności wskazanych w regulaminie",
-        "sprawdzenie aktualnych zasad premii, bonusu i obrączki płatniczej u partnera"
+        "złóż wniosek o Alior Konto z kartą i wpisz kod PREMIA2026",
+        "nie posiadaj konta osobistego w Alior Banku przez 3 lata przed wnioskiem",
+        "wykonaj jednorazowe zasilenie konta minimum 1000 zł przelewem z innego banku lub konta firmowego Alior",
+        "spełnij warunki aktywności wskazane w regulaminie, aby otrzymać bonus do 800 zł i obrączkę płatniczą",
+        "promocja obowiązuje od 13.07.2026 do 13.10.2026"
       ],
       "summary": "Alior Bank - Konto z Bonusem. Możesz zyskać nagrody o wartości nawet do 1300 zł, w tym 200 zł premii na start, bonus do 800 zł za aktywne korzystanie z konta oraz obrączkę płatniczą o wartości 500 zł.",
       "pros": [
@@ -431,16 +451,22 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "do 700 zł zwrotu w promocji i korzyści dla podróżujących",
+      "reward": "do 700 zł zwrotu w promocji Podróżnik",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3143",
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-18",
+      "verificationSource": "Strona docelowa kampanii BNP Paribas Podróżnik; regulamin do potwierdzenia",
       "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+        "otwórz Konto Otwarte na Ciebie z Kartą Otwartą na Świat i wyraź zgody marketingowe",
+        "wykonuj minimum 7 transakcji kartą miesięcznie i zapewniaj wpływy minimum 1000 zł miesięcznie",
+        "otrzymuj 50 zł za każdy z 12 miesięcy spełnienia warunków, łącznie do 600 zł",
+        "w 12. pełnym miesiącu miej minimum 100 zł na Koncie Lokacyjnym lub Koncie Pełnym Marzeń, aby otrzymać dodatkowe 100 zł",
+        "promocja trwa do 30 000 prawidłowych zgłoszeń, nie dłużej niż do 31.08.2026"
       ],
       "summary": "BNP Paribas - Konto Otwarte na Ciebie z Kartą Otwartą na Świat. Konto dla podróżujących z premią do 700 zł, lokatą promocyjną i kartą do płatności za granicą. Przed decyzją sprawdź aktualne warunki u partnera.",
       "pros": [
@@ -466,26 +492,37 @@
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "0 zł za prowadzenie VeloKonta bez warunków",
+    "reward": "0 zł za prowadzenie + do 50 zł cashbacku miesięcznie i VeloKorzyści",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opza",
       "difficulty": "Łatwy",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca konta osobistego lub premii za konto",
+    "deadline": "Max VeloKorzyści Na Start do 31.10.2026; polecenia do 30.11.2026",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa VeloBanku",
+    "audience": "osoba szukająca darmowego konta osobistego z cashbackiem i dodatkowymi benefitami",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+      "otwórz VeloKonto i aktywuj dostęp do bankowości mobilnej",
+      "wykonuj 5 transakcji miesięcznie kartą, telefonem lub BLIKIEM, aby uniknąć opłaty za kartę",
+      "dołącz do programu VeloKorzyści i zaakceptuj jego regulamin oraz wymagane zgody",
+      "w programie VeloKorzyści aktywnie korzystaj z Moich rachunków oraz usług objętych cashbackiem",
+      "dla promocji poleceń: nowy klient powinien użyć kodu i zasilać konto kwotą minimum 2 000 zł przez 3 kolejne miesiące",
+      "w promocji Max VeloKorzyści Na Start korzystaj z edycji programu obowiązującej do 31.10.2026"
       ],
-      "summary": "VeloBank - VeloKonto. Konto osobiste z 0 zł za prowadzenie bez warunków. Przed decyzją sprawdź aktualne opłaty, kartę i warunki u partnera.",
+    "summary": "VeloBank - VeloKonto. Konto z 0 zł za prowadzenie, cashbackiem do 50 zł miesięcznie i programem VeloKorzyści z pakietem medycznym oraz dodatkowymi zniżkami.",
       "pros": [
-        "0 zł za prowadzenie VeloKonta bez warunków"
+      "0 zł za prowadzenie konta",
+      "do 50 zł cashbacku miesięcznie",
+      "pakiet medyczny od 36 zł miesięcznie dla jednej osoby",
+      "20% zniżki na ubezpieczenie LINK4 OC/AC",
+      "0 zł za krajowe przelewy internetowe i mobilne"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualną tabelę opłat, koszt karty, bankomatów, przelewów i warunki promocji u partnera.",
+    "warning": "5 płatności miesięcznie kartą, telefonem lub BLIKIEM pozwala uniknąć opłaty za kartę i wybranych wypłat. Cashback i benefity zależą od poziomu oraz regulaminu VeloKorzyści. Aktualne opłaty i regulaminy sprawdź u partnera.",
       "placementPriority": 66
     },
     {
@@ -501,14 +538,21 @@
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2353",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
+      "deadline": "brak wskazanego terminu promocji",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-18",
+      "verificationSource": "Strona docelowa i regulamin Nest Banku obowiązujący od 01.04.2026",
       "audience": "osoba szukająca konta osobistego lub premii za konto",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
-      ],
-      "summary": "Nest Bank - Konto osobiste. Konto, karta i przelewy bez opłat na stałe oraz premia do 1250 zł po spełnieniu warunków. Aktywacja online może zająć nawet 15 minut. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "conditions": [
+    "promocja trwa od 1.04.2026 do 30.09.2026, chyba że bank zakończy ją wcześniej",
+    "bądź pełnoletnią osobą mieszkającą w Polsce i nie posiadaj Nest Konta od 1.01.2021",
+    "złóż wniosek online o Nest Konto i utrzymuj pełną zgodę marketingową na wszystkie kanały kontaktu",
+    "otrzymuj 2% zwrotu za płatności kartą lub BLIK, maksymalnie 50 zł miesięcznie, przez maksymalnie 24 kolejne miesiące",
+    "zapewniaj wpływ wynagrodzenia 3000 zł miesięcznie (1500 zł dla osób w wieku 18–25 lat) i wykonuj minimum 1 płatność kartą lub BLIK",
+    "w ciągu 30 dni od otwarcia konta wymień minimum 100 EUR w Nest Kantorze i posiadaj konto walutowe EUR, aby otrzymać dodatkowe 50 zł",
+    "do transakcji nie zaliczają się m.in. przelewy BLIK na telefon, wypłaty gotówki, zwroty, hazard i money transfer, np. zasilenie Revolut"
+  ],
+    "summary": "Nest Bank - Konto osobiste z premią do 1250 zł: do 1200 zł cashbacku za aktywność oraz dodatkowe 50 zł za wymianę minimum 100 EUR w Nest Kantorze. Promocja według regulaminu trwa do 30.09.2026. Szczegóły wpływów i wykluczeń transakcji sprawdź przed udziałem.",
       "pros": [
         "konto, karta i przelewy bez opłat na stałe",
         "premia do 1250 zł po spełnieniu warunków",
@@ -523,34 +567,40 @@
     },
     {
       "slug": "pko-konto-za-zero-allegro",
-      "name": "PKO BP - Konto za Zero / cashback 900-1200 zł",
+      "name": "PKO BP - Konto za Zero z Allegro Klik",
       "category": "account",
       "pillar": "finanse",
       "pages": [
         "/finanse/konta-z-premia",
         "/finanse/ranking-kont-z-premia"
       ],
-      "reward": "do 900-1200 zł cashbacku za spełnienie warunków",
+      "reward": "do 1200 zł cashbacku z Allegro Klik (maks. 100 zł miesięcznie)",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3123",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
+      "deadline": "31.01.2027 dla Allegro Smart!; cashback edycja II do 19.11.2026",
       "audience": "osoba szukająca konta osobistego lub premii za konto",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "założenie Konto za Zero",
-        "karta do rachunku",
-        "transakcje kartą na min. 120 zł w 60 dni"
+        "otwórz PKO Konto za Zero i aktywuj aplikację IKO",
+        "aktywuj Allegro Klik w IKO, połącz konto z Allegro i zaakceptuj regulaminy",
+        "opłać Allegro Smart! kwotą 1 zł w ciągu 30 dni od aktywacji, aby korzystać przez 6 miesięcy",
+        "płać Allegro Klik za zakupy towarów na Allegro",
+        "dla cashbacku za wpływy zapewniaj minimum 2000 zł wpływów miesięcznie i wykonuj zakupy Allegro Klik",
+        "możesz otrzymać 1% za połączenie, 1% za wpływy i 1% za produkt banku, łącznie maksymalnie 3% i 100 zł miesięcznie",
+        "cashback nie obejmuje usług, Allegro Lokalnie, ofert charytatywnych oraz wybranych kategorii i towarów wskazanych w regulaminie"
       ],
-      "summary": "PKO BP - Konto za Zero / cashback 900-1200 zł. Możesz zyskać: do 900-1200 zł cashbacku za spełnienie warunków. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "PKO Konto za Zero z Allegro Klik: do 1200 zł cashbacku, maksymalnie 100 zł miesięcznie, oraz Allegro Smart! przez 6 miesięcy za 1 zł. Cashback wymaga połączenia konta z Allegro, płatności Allegro Klik i — dla części wariantów — wpływów minimum 2000 zł miesięcznie.",
       "pros": [
-        "do 900-1200 zł cashbacku za spełnienie warunków"
+        "do 1200 zł cashbacku z Allegro Klik",
+        "maksymalnie 3% cashbacku i 100 zł miesięcznie",
+        "Allegro Smart! przez 6 miesięcy za 1 zł",
+        "PKO Konto za Zero z prowadzeniem za 0 zł"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera.",
+      "warning": "Przed udziałem sprawdź regulamin cashbacku edycja II, wykluczone kategorie zakupów, warunki bezpłatności karty oraz aktualne opłaty PKO.",
       "placementPriority": 84
     },
     {
@@ -568,14 +618,19 @@
       "difficulty": "Łatwy",
       "time": "20 min + aktywność firmowa",
       "deadline": "sprawdź u partnera",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-18",
+      "verificationSource": "Strona docelowa kampanii Erste Bank Polska",
       "audience": "firma lub JDG, która chce konto firmowe z premią",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "otwarcie konta firmowego w promocji",
-        "spełnienie miesięcznych warunków aktywności, np. wpływy, przelew do ZUS i płatności",
-        "sprawdzenie aktualnego regulaminu promocji u partnera",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+        "do 30.09.2026 złóż wniosek i zawrzyj umowę o Konto Firmowe Online z bankowością elektroniczną Mini Firma",
+        "w ciągu 10 dni od złożenia wniosku zarejestruj się w promocji i zaakceptuj regulamin",
+        "w każdym premiowanym miesiącu wykonaj przelew do ZUS minimum 100 zł",
+        "w każdym premiowanym miesiącu wykonaj minimum 5 płatności kartą lub BLIK, każdą na minimum 50 zł",
+        "w każdym premiowanym miesiącu zapewnij wpływ minimum 5000 zł",
+        "możesz otrzymać 1500 zł za każdy z maksymalnie 3 miesięcy, łącznie do 4500 zł"
       ],
       "summary": "Erste Bank Polska / Santander BP - Konto Firmowe Online. Możesz zyskać do 4500 zł premii po otwarciu konta firmowego i spełnieniu warunków promocji.",
       "pros": [
@@ -603,28 +658,39 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "do 3260 zł premii dla firmy po spełnieniu warunków promocji",
+    "reward": "do 4 900 zł premii + darmowy terminal przez 2 lata i wyprawka przedsiębiorcy o wartości ponad 8 000 zł",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2397",
       "difficulty": "Łatwy",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "firma poza działalnością rolniczą, która chce konto biznesowe z premią",
+    "deadline": "Kapitalna premia do 31.12.2026; Wyprawka Przedsiębiorcy do 30.06.2027",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii Credit Agricole",
+    "audience": "przedsiębiorca, który chce konto firmowe z premią i pakietem dodatkowych korzyści",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "założenie konta firmowego w promocji",
-        "skuteczna rozmowa telefoniczna z partnerem",
-        "spełnienie warunków aktywności wskazanych w regulaminie",
-        "oferta nie dotyczy działalności rolniczych"
+      "otwórz konto firmowe i utrzymuj wymagane zgody marketingowe przez minimum rok",
+      "przez rok, co miesiąc wykonaj minimum 3 płatności kartą firmową",
+      "przez rok, co miesiąc wykonaj przelew do ZUS lub Urzędu Skarbowego",
+      "w ciągu roku od otwarcia konta zaciągnij kredyt firmowy na minimum 120 000 zł",
+      "jeśli korzystasz z leasingu EFL, spłać z tego konta 3 raty miesiąc po miesiącu w ciągu 6 miesięcy",
+      "aby otrzymać darmowy terminal, podpisz umowę z Elavon w ciągu 3 miesięcy od otwarcia konta",
+      "aby otrzymać Wyprawkę Przedsiębiorcy, wybierz w Strefie Biznesu pakiet księgowy z obsługą księgowego"
       ],
-      "summary": "Credit Agricole - Konto Biznes z premią do 3260 zł. Możesz zyskać do 3260 zł premii po założeniu konta firmowego i spełnieniu warunków promocji.",
+    "summary": "Credit Agricole - Konto Biznes. Możesz zyskać do 4 900 zł premii, darmowy terminal przez 2 lata oraz Wyprawkę Przedsiębiorcy o wartości ponad 8 000 zł.",
       "pros": [
-        "do 3260 zł premii dla firmy po spełnieniu warunków promocji"
+      "1 800 zł za płatności kartą firmową",
+      "600 zł za przelewy do ZUS lub Urzędu Skarbowego",
+      "2 000 zł za kredyt firmowy min. 120 000 zł",
+      "500 zł za spełnienie warunków leasingu EFL",
+      "darmowy terminal Elavon przez 2 lata",
+      "Wyprawka Przedsiębiorcy o wartości ponad 8 000 zł"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Premia do 3260 zł zależy od spełnienia warunków promocji. Przed decyzją sprawdź regulamin, opłaty i wymagane aktywności u partnera.",
+    "warning": "Kwoty i korzyści zależą od spełnienia konkretnych warunków. Aktualne opłaty, regulaminy i szczegóły promocji sprawdź bezpośrednio u partnera.",
       "placementPriority": 90
     },
     {
@@ -637,28 +703,37 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "konto firmowe do codziennych płatności, przelewów i obsługi finansów firmy",
+    "reward": "0 zł za prowadzenie, kartę i 20 przelewów krajowych PLN/SEPA miesięcznie",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opzc",
       "difficulty": "Łatwy",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "firma lub JDG, która szuka konta do bieżącej obsługi działalności",
+    "deadline": "brak wskazanego terminu promocji",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa VeloBanku",
+    "audience": "jednoosobowa działalność gospodarcza szukająca taniego konta do codziennej obsługi firmy",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+      "prowadź jednoosobową działalność gospodarczą",
+      "złóż wniosek o VeloKonto Firma i przejdź weryfikację banku",
+      "w ramach konta otrzymujesz 20 bezpłatnych przelewów krajowych PLN/SEPA miesięcznie, w tym do ZUS",
+      "korzystaj z bankowości elektronicznej, aby wykonywać przelewy do ZUS i Urzędu Skarbowego",
+      "dla finansowania lub leasingu przejdź osobną ocenę zdolności i zaakceptuj warunki produktu"
       ],
-      "summary": "VeloBank - VeloKonto Firma. Konto firmowe do codziennych płatności, przelewów i obsługi finansów firmy. Przed decyzją sprawdź aktualne opłaty i warunki u partnera.",
+    "summary": "VeloBank - VeloKonto Firma dla JDG. 0 zł za prowadzenie, kartę, przelewy wewnętrzne i przelewy do ZUS/US w bankowości internetowej i mobilnej oraz 20 przelewów krajowych PLN/SEPA miesięcznie.",
       "pros": [
-        "konto firmowe do codziennych płatności, przelewów i obsługi finansów firmy",
-        "całkowicie zdalne zakładanie konta",
-        "0 zł za otwarcie i prowadzenie konta"
+      "0 zł za prowadzenie konta",
+      "0 zł za 20 przelewów krajowych PLN/SEPA miesięcznie",
+      "0 zł za przelewy wewnętrzne i do US w bankowości internetowej i mobilnej",
+      "0 zł za wydanie i wznowienie karty debetowej",
+      "finansowanie mikrofirm do 300 000 zł bez zabezpieczeń rzeczowych",
+      "VeloKantor i dedykowany VeloDoradca firmowy"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź opłaty za konto, kartę, przelewy oraz aktualne warunki prowadzenia rachunku u partnera.",
+    "warning": "Oferta jest przeznaczona dla jednoosobowych działalności gospodarczych. Finansowanie i leasing wymagają osobnej oceny zdolności. Aktualne opłaty, limity i regulaminy sprawdź u partnera.",
       "placementPriority": 45
     },
     {
@@ -675,24 +750,36 @@
       "affiliateUrl": "https://tmlead.pl/redirect/880819_1929",
       "difficulty": "Łatwy",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "firma lub JDG",
+    "deadline": "promocja do 31.08.2026; konto oszczędnościowe do 31.08.2026",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii Banku Pekao",
+    "audience": "nowy klient firmowy prowadzący JDG lub planujący założenie jednoosobowej działalności",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+      "załóż Konto Biznes z Żubrem w złotych wraz z kartą Mastercard i zaakceptuj regulamin promocji",
+      "odbierz 200 zł: załóż firmę z bankiem albo otwórz konto zdalnie, a następnie w ciągu 2 kolejnych miesięcy wykonaj przelew do ZUS na min. 300 zł",
+      "otrzymuj do 2 000 zł zwrotu za płatności kartą lub portfelami cyfrowymi na min. 500 zł miesięcznie",
+      "zawrzyj umowę na terminal i przyjmuj na nim płatności, aby uzyskać do 800 zł",
+      "uruchom limit kredytowy na minimum 5 000 zł, aby otrzymać 600 zł",
+      "zawrzyj pierwszą umowę leasingu i spłać ratę przelewem do Pekao Leasing, aby otrzymać 600 zł",
+      "aby konto kosztowało 0 zł, zapewnij wpływ min. 2 000 zł lub wykonaj przelew do ZUS oraz utrzymuj wymagane zgody",
+      "aby karta kosztowała 0 zł, wykonuj transakcje bezgotówkowe na min. 500 zł miesięcznie"
       ],
       "summary": "Bank Pekao SA - Konto Biznes z Żubrem. Konto firmowe z premią do 4200 zł, oprocentowaniem na Koncie Oszczędnościowym Biznes i dostępem do KSeF. Przed decyzją sprawdź aktualne warunki u partnera.",
       "pros": [
         "do 4200 zł premii za codzienną aktywność firmy",
-        "4,5% w skali roku na Koncie Oszczędnościowym Biznes",
-        "łatwy dostęp do KSeF z Księgowością z Żubrem"
+      "4,5% rocznie na Koncie Oszczędnościowym Biznes do 200 000 zł przez 92 dni",
+      "bezpłatne przelewy krajowe w aplikacji PeoPay",
+      "bezpłatne wypłaty BLIK z ponad 20 tys. bankomatów",
+      "Księgowość z Żubrem i bezpłatny test Pakietu Biznes przez 30 dni",
+      "możliwość założenia firmy i konta w jednym procesie"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź regulamin promocji, warunki aktywności, oprocentowanie, opłaty i dostępność usług u partnera.",
+    "warning": "Premia wymaga spełnienia osobnych warunków dla poszczególnych aktywności. Bez warunku wpływu lub przelewu do ZUS konto kosztuje 15 zł miesięcznie, a bez płatności kartą min. 500 zł karta kosztuje 12 zł miesięcznie. Aktualne regulaminy i opłaty sprawdź u partnera.",
       "placementPriority": 73
     },
     {
@@ -851,65 +938,86 @@
     },
     {
       "slug": "pekao-pozyczka-przekorzystna",
-      "name": "Bank Pekao SA - Pożyczka Przekorzystna",
+      "name": "Bank Pekao SA - Pożyczka gotówkowa do 250 000 zł",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "finansowanie gotówkowe - sprawdź ratę, RRSO i całkowity koszt",
+      "reward": "do 250 000 zł na dowolny cel, prowizja 0%, spłata do 10 lat, RRSO 8,07%",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2053",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca kredytu gotówkowego",
+      "deadline": "30.08.2026",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-19",
+      "verificationSource": "Przesłana strona docelowa kampanii Banku Pekao",
+      "audience": "nowy klient szukający pożyczki gotówkowej na dowolny cel",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "wniosek przez link",
-        "poprawne dane",
-        "pozytywna decyzja i wypłata środków"
+        "złóż kompletny wniosek online lub formularz kontaktowy Banku Pekao",
+        "otwórz rachunek oszczędnościowo-rozliczeniowy i aktywuj Pekao24/PeoPay, jeśli korzystasz z procesu zdalnego",
+        "zaakceptuj wymagane zgody i przejdź ocenę zdolności kredytowej",
+        "dla kwoty do 8 000 zł możesz zaakceptować umowę online; powyżej 8 000 zł podpisz ją w wybranym oddziale",
+        "wykorzystaj środki na dowolny cel"
       ],
-      "summary": "Bank Pekao SA - Pożyczka Przekorzystna. Możesz zyskać: finansowanie gotówkowe - sprawdź ratę, RRSO i całkowity koszt. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Bank Pekao SA - Pożyczka gotówkowa do 250 000 zł na dowolny cel. Prowizja 0%, spłata do 10 lat i RRSO 8,07% w przykładzie reprezentatywnym.",
       "pros": [
-        "finansowanie gotówkowe - sprawdź ratę, RRSO i całkowity koszt"
+        "do 250 000 zł na dowolny cel",
+        "prowizja 0%",
+        "spłata do 10 lat",
+        "RRSO 8,07% w przykładzie reprezentatywnym",
+        "możliwość otrzymania pieniędzy nawet w 1 dzień od podpisania umowy"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Porównaj RRSO, całkowity koszt i ratę przed złożeniem wniosku.",
+      "warning": "Oprocentowanie jest zmienne, a udzielenie pożyczki zależy od oceny zdolności kredytowej. RRSO 8,07% dotyczy przykładu reprezentatywnego. Przed decyzją porównaj ratę i całkowity koszt.",
       "placementPriority": 80
     },
     {
-      "slug": "pekao-konsolidacja",
-      "name": "Bank Pekao SA - Konsolidacja",
+  "slug": "pekao-konsolidacja",
+  "name": "Bank Pekao SA - Pożyczka konsolidacyjna do 250 000 zł",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "połączenie kilku zobowiązań w jeden kredyt konsolidacyjny",
+  "reward": "do 250 000 zł, prowizja 0%, spłata do 10 lat, RRSO 8,08%",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opy6",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba chcąca połączyć zobowiązania",
+  "deadline": "30.08.2026",
+  "verificationStatus": "verified",
+  "verifiedAt": "2026-08-19",
+  "verificationSource": "Przesłana strona docelowa kampanii Banku Pekao",
+  "audience": "osoba chcąca połączyć raty i ewentualnie uzyskać dodatkowe środki",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "oferta dla nowych klientów oraz osób posiadających wyłącznie kredyt ratalny w Banku Pekao",
+    "złóż formularz kontaktowy i przejdź ocenę zdolności kredytowej",
+    "otwórz rachunek oszczędnościowo-rozliczeniowy w Pekao S.A. oraz aktywuj Pekao24/PeoPay",
+    "zapewniaj comiesięczne wpływy na konto, minimum 2 000 zł, aby utrzymać warunki oprocentowania",
+    "wyraź komplet wymaganych zgód marketingowych na rzecz banku i spółek grupy",
+    "połącz kredyty lub pożyczki z innych banków; kredyt ratalny w Pekao nie podlega spłacie w tej ofercie"
       ],
-      "summary": "Bank Pekao SA - Konsolidacja. Możesz zyskać: połączenie kilku zobowiązań w jeden kredyt konsolidacyjny. Przed decyzją sprawdź aktualne warunki u partnera.",
+  "summary": "Bank Pekao SA - Pożyczka konsolidacyjna do 250 000 zł. Prowizja 0%, spłata do 10 lat i RRSO 8,08% w przykładzie reprezentatywnym.",
       "pros": [
-        "połączenie kilku zobowiązań w jeden kredyt konsolidacyjny"
+    "do 250 000 zł finansowania",
+    "prowizja 0%",
+    "spłata do 10 lat",
+    "RRSO 8,08% w przykładzie reprezentatywnym",
+    "możliwość otrzymania dodatkowych środków",
+    "start spłaty po 3 miesiącach"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Konsolidacja obniża ratę tylko wtedy, gdy całkowity koszt i okres są sensowne."
+  "warning": "Oprocentowanie jest zmienne. Brak comiesięcznych wpływów min. 2 000 zł może podwyższyć marżę o 2 p.p. Oferta zależy od oceny zdolności kredytowej. Przed decyzją porównaj RRSO i całkowity koszt."
     },
     {
       "slug": "erste-santander-kredyt-gotowkowy",
@@ -943,14 +1051,14 @@
     },
     {
       "slug": "erste-santander-kredyt-konsolidacyjny",
-      "name": "Erste Bank Polska / Santander BP - Kredyt konsolidacyjny",
+      "name": "Erste Bank Polska - Kredyt konsolidacyjny",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "kredyt konsolidacyjny do połączenia zobowiązań",
+      "reward": "konsolidacja do 300 000 zł z 0% prowizji",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3087",
       "difficulty": "Średni",
       "time": "5-20 min",
@@ -959,17 +1067,25 @@
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+        "spełnienie aktualnych warunków Erste Bank Polska",
+        "kwota kredytu od 1 000 do 300 000 zł",
+        "0% prowizji od kredytów konsolidowanych z innych banków",
+        "RRSO 15,51% w przykładzie reprezentatywnym",
+        "spłata nawet w 120 ratach"
       ],
-      "summary": "Erste Bank Polska / Santander BP - Kredyt konsolidacyjny. Możesz zyskać: kredyt konsolidacyjny do połączenia zobowiązań. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Erste Bank Polska - kredyt konsolidacyjny do 300 000 zł, 0% prowizji od konsolidowanych zobowiązań z innych banków, RRSO 15,51% i spłata do 120 rat.",
       "pros": [
-        "kredyt konsolidacyjny do połączenia zobowiązań"
+        "jedna rata zamiast kilku zobowiązań",
+        "do 300 000 zł",
+        "0% prowizji od konsolidowanych kredytów z innych banków",
+        "elastyczny dzień spłaty",
+        "spłata nawet w 120 ratach"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+      "warning": "RRSO 15,51% dotyczy przykładu reprezentatywnego. Decyzja, oprocentowanie, maksymalna kwota i okres zależą od oceny zdolności oraz ryzyka kredytowego. Przed decyzją sprawdź taryfę opłat, regulamin i całkowity koszt."
     },
     {
       "slug": "velobank-kredyt-gotowkowy",
@@ -980,26 +1096,37 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "kredyt gotówkowy - sprawdź dostępne warunki",
+    "reward": "do 250 000 zł, RRSO 8,1%, 0 zł prowizji i do 3 miesięcy karencji",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2650",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "VeloPolecenie do 26.09.2026; dla nowych klientów do 26.10.2026",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii VeloBanku",
+    "audience": "osoba szukająca pożyczki gotówkowej online na dowolny cel",
+    "conditions": [
+    "złóż wniosek online o pożyczkę gotówkową do 250 000 zł i przejdź ocenę zdolności kredytowej",
+    "w ciągu ostatnich 6 miesięcy nie posiadaj pożyczki gotówkowej ani kredytu konsolidacyjnego w VeloBanku",
+    "miej aktywne zgody marketingowe, w tym na kontakt SMS, e-mail i telefon",
+    "przez cały okres pożyczki posiadaj VeloKonto, zapewniaj wpływ min. 2 000 zł miesięcznie i wykonuj minimum 5 płatności kartą lub BLIKIEM",
+    "możesz skorzystać z karencji w spłacie pierwszej raty od 1 do 3 miesięcy",
+    "w promocji VeloPolecenie otwórz konto i spełnij warunki regulaminu, aby polecać kredyt"
       ],
-      "summary": "VeloBank - Kredyt Gotówkowy. Możesz zyskać: kredyt gotówkowy - sprawdź dostępne warunki. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "kredyt gotówkowy - sprawdź dostępne warunki"
+    "summary": "VeloBank - pożyczka gotówkowa do 250 000 zł online. Prowizja 0 zł, RRSO 8,1%, okres do 120 miesięcy i możliwość 1–3 miesięcy karencji w spłacie.",
+    "pros": [
+    "do 250 000 zł dla jednego pożyczkobiorcy",
+    "do 300 000 zł dla dwóch pożyczkobiorców",
+    "0 zł prowizji",
+    "RRSO 8,1% w przykładzie reprezentatywnym",
+    "do 3 miesięcy karencji",
+    "do 2 500 zł za polecenie kredytu"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "Niespełnienie warunku wpływu min. 2 000 zł i 5 płatności miesięcznie może podwyższyć oprocentowanie o 2 p.p. Oprocentowanie jest zmienne, a decyzja zależy od zdolności kredytowej. Aktualne warunki i regulamin sprawdź u partnera."
     },
     {
       "slug": "pko-pozyczka-gotowkowa",
@@ -1010,26 +1137,36 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/ranking-kredytow-gotowkowych"
       ],
-      "reward": "pożyczka gotówkowa - sprawdź ratę i koszt",
+    "reward": "12 000–300 000 zł, prowizja 0%, RRSO 14,89%, spłata do 120 miesięcy",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_680",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca kredytu lub pożyczki gotówkowej",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "brak wskazanego terminu promocji",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii PKO Banku Polskiego",
+    "audience": "osoba szukająca pożyczki gotówkowej online na dowolny cel",
+    "conditions": [
+    "złóż wniosek o pożyczkę online w serwisie iPKO lub aplikacji IKO",
+    "wnioskuj o kwotę od 12 000 zł do 300 000 zł i wybierz okres do 120 miesięcy",
+    "zaakceptuj umowę online i przejdź ocenę zdolności kredytowej",
+    "nie musisz posiadać konta w PKO Banku Polskim",
+    "wykorzystaj środki na dowolny cel"
       ],
-      "summary": "PKO BP - Pożyczka gotówkowa. Możesz zyskać: pożyczka gotówkowa - sprawdź ratę i koszt. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "pożyczka gotówkowa - sprawdź ratę i koszt"
+    "summary": "PKO BP - Pożyczka gotówkowa online. Od 12 000 zł do 300 000 zł, prowizja 0%, RRSO 14,89% i spłata do 120 miesięcy. Pieniądze mogą trafić na konto nawet w dniu akceptacji umowy.",
+    "pros": [
+    "12 000–300 000 zł",
+    "0 zł prowizji",
+    "spłata do 120 miesięcy",
+    "RRSO 14,89% w przykładzie reprezentatywnym",
+    "wniosek online w iPKO lub IKO",
+    "dowolny cel i brak wymogu konta w PKO"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "RRSO 14,89% dotyczy przykładu reprezentatywnego, a oprocentowanie jest zmienne. Udzielenie pożyczki zależy od zdolności kredytowej. Przed decyzją sprawdź aktualne koszty i warunki u partnera."
     },
     {
       "slug": "bnp-pierwsza-pozyczka",
@@ -1412,26 +1549,34 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "rachunek oszczędnościowy - sprawdź aktualne oprocentowanie",
+    "reward": "do 3,50% oprocentowania promocyjnego przy saldzie min. 5 000 zł",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2159",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "brak wskazanego terminu promocji",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa Santander Consumer Banku",
+    "audience": "osoba szukająca rachunku oszczędnościowego bez opłat za prowadzenie",
+    "conditions": [
+    "otwórz rachunek oszczędnościowy online i potwierdź tożsamość",
+    "utrzymuj średnie dzienne saldo minimum 5 000 zł przez 30 dni",
+    "oprocentowanie promocyjne do 3,50% dotyczy warunków wskazanych przez bank",
+    "prowadzenie rachunku i przelewy są bezpłatne"
       ],
-      "summary": "Santander Consumer Bank - Rachunek oszczędnościowy. Możesz zyskać: rachunek oszczędnościowy - sprawdź aktualne oprocentowanie. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "rachunek oszczędnościowy - sprawdź aktualne oprocentowanie"
+    "summary": "Santander Consumer Bank - Rachunek oszczędnościowy. Do 3,50% oprocentowania promocyjnego przy średnim dziennym saldzie minimum 5 000 zł przez 30 dni. 0 zł za prowadzenie i darmowe przelewy.",
+    "pros": [
+    "do 3,50% oprocentowania promocyjnego",
+    "0 zł za prowadzenie rachunku",
+    "darmowe przelewy",
+    "wniosek online",
+    "brak wymogu wysokiego salda poza warunkiem promocji"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "Oprocentowanie promocyjne wymaga utrzymania średniego dziennego salda min. 5 000 zł przez 30 dni. Sprawdź aktualne oprocentowanie, regulamin i szczegóły rachunku u partnera."
     },
     {
       "slug": "velobank-elastyczne-konto-oszczednosciowe",
@@ -1442,26 +1587,35 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "elastyczne konto oszczędnościowe - sprawdź oprocentowanie",
+    "reward": "6% do 50 000 zł i 4% dla nadwyżki do 400 000 zł przez 92 dni",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2655",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "wpłata nowych środków do 16.09.2026; oferta trwa 92 dni",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii VeloBanku",
+    "audience": "nowy klient szukający elastycznego konta oszczędnościowego na nowe środki",
+    "conditions": [
+    "jako nowy klient otwórz Elastyczne Konto Oszczędnościowe zdalnie",
+    "wpłać nowe środki do 16.09.2026 r.; są to środki ponad saldo produktów depozytowych z 14.06.2026 r.",
+    "wykonuj minimum 5 płatności bezgotówkowych kartą do konta osobistego lub BLIKIEM w każdym miesiącu",
+    "wyraź wymagane zgody marketingowe",
+    "utrzymuj środki przez okres oferty trwający 92 dni"
       ],
-      "summary": "VeloBank - Elastyczne Konto Oszczędnościowe. Możesz zyskać: elastyczne konto oszczędnościowe - sprawdź oprocentowanie. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "elastyczne konto oszczędnościowe - sprawdź oprocentowanie"
+    "summary": "VeloBank - Elastyczne Konto Oszczędnościowe. 6% rocznie do 50 000 zł i 4% dla nadwyżki do 400 000 zł przez 92 dni dla nowych klientów wpłacających nowe środki.",
+    "pros": [
+    "6% rocznie do 50 000 zł",
+    "4% dla nadwyżki od 50 000 zł do 400 000 zł",
+    "0 zł za otwarcie i prowadzenie",
+    "0 zł za przelewy wewnętrzne online",
+    "zdalne otwarcie konta"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "Stawki promocyjne dotyczą nowych środków i wymagają 5 płatności miesięcznie. Bez spełnienia warunku płatności stawka może spaść do 2% dla nowych klientów. Aktualny regulamin i opłaty sprawdź u partnera."
     },
     {
       "slug": "velobank-lokata-na-nowe-srodki",
@@ -1472,26 +1626,35 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "lokata na nowe środki - sprawdź aktualną stawkę",
+    "reward": "3,4% na 6 miesięcy, 3,2% na 3 miesiące lub 3% na 2 miesiące do 190 000 zł",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2656",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "promocja do 16.09.2026",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii VeloBanku",
+    "audience": "osoba szukająca lokaty terminowej na nowe środki",
+    "conditions": [
+    "wpłać nowe środki i załóż lokatę online do 16.09.2026 r.",
+    "wyraź wymagane zgody marketingowe",
+    "wybierz okres: 2 miesiące na 3%, 3 miesiące na 3,2% albo 6 miesięcy na 3,4%",
+    "lokata może wynosić od 1 000 zł online do maksymalnie 190 000 zł",
+    "nowe środki oznaczają nadwyżkę względem salda produktów depozytowych z 14.06.2026 r.; można założyć maksymalnie 3 lokaty"
       ],
-      "summary": "VeloBank - Lokata na Nowe Środki. Możesz zyskać: lokata na nowe środki - sprawdź aktualną stawkę. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "lokata na nowe środki - sprawdź aktualną stawkę"
+    "summary": "VeloBank - Lokata na Nowe Środki. Oprocentowanie 3,4% na 6 miesięcy, 3,2% na 3 miesiące lub 3% na 2 miesiące, do 190 000 zł.",
+    "pros": [
+    "3,4% w skali roku na 6 miesięcy",
+    "3,2% na 3 miesiące lub 3% na 2 miesiące",
+    "do 190 000 zł na jednej lokacie",
+    "założenie online",
+    "możliwość wyboru okresu lokowania"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "Promocyjne oprocentowanie dotyczy nowych środków i wymaga zgód marketingowych. Po okresie promocyjnym lokata odnawialna może mieć oprocentowanie z tabeli banku. Aktualny regulamin i szczegóły sprawdź u partnera."
     },
     {
       "slug": "velobank-velolokata-dla-aktywnych",
@@ -1502,26 +1665,35 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "VeloLokata dla aktywnych - sprawdź warunki oprocentowania",
+    "reward": "6% w skali roku przez 6 miesięcy do 50 000 zł",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2895",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "promocja do 16.09.2026",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii VeloBanku",
+    "audience": "nowy klient posiadający konto osobiste i szukający lokaty z wysokim stałym oprocentowaniem",
+    "conditions": [
+    "jako nowy klient posiadaj konto osobiste w VeloBanku i załóż lokatę online",
+    "wpłać minimum 1 000 zł, maksymalnie 50 000 zł; możesz mieć tylko jedną aktywną lokatę",
+    "w każdym pełnym miesiącu kalendarzowym zapewnij wpływ minimum 2 000 zł na konto osobiste",
+    "wyraź zgody marketingowe przy wniosku i utrzymaj je przez cały okres lokaty",
+    "utrzymaj lokatę przez 6 miesięcy, aby skorzystać ze stawki 6%"
       ],
-      "summary": "VeloBank - VeloLokata dla aktywnych. Możesz zyskać: VeloLokata dla aktywnych - sprawdź warunki oprocentowania. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "VeloLokata dla aktywnych - sprawdź warunki oprocentowania"
+    "summary": "VeloBank - VeloLokata dla Aktywnych. Stałe 6% w skali roku przez 6 miesięcy dla nowych klientów, przy wpływach minimum 2 000 zł miesięcznie i utrzymaniu zgód marketingowych.",
+    "pros": [
+    "6% w skali roku przez 6 miesięcy",
+    "do 50 000 zł na lokacie",
+    "stałe oprocentowanie",
+    "założenie online",
+    "minimum lokaty od 1 000 zł"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "Brak wpływu min. 2 000 zł w pełnym miesiącu lub wycofanie zgód obniży oprocentowanie za cały okres lokaty do 2% rocznie. Aktualny regulamin i szczegóły sprawdź u partnera."
     },
     {
       "slug": "santander-consumer-lokata-nowe-srodki",
@@ -1532,26 +1704,35 @@
         "/finanse/lokaty",
         "/finanse/ranking-lokat"
       ],
-      "reward": "lokata na nowe środki - sprawdź aktualne oprocentowanie",
+    "reward": "3,50% na 6 miesięcy dla nowych środków do 400 000 zł",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2447",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca lokaty albo konta oszczędnościowego",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "brak wskazanego terminu promocji",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa Santander Consumer Banku",
+    "audience": "osoba szukająca lokaty terminowej na nowe środki",
+    "conditions": [
+    "załóż lokatę online na kwotę od 1 000 zł do 400 000 zł",
+    "wpłać wyłącznie nowe środki, czyli środki powyżej salda lokat w banku z dnia 04.08.2026 r.",
+    "zaznacz wszystkie wymagane zgody na etapie wniosku",
+    "wybierz okres 6 miesięcy i sprawdź zasady lokaty odnawialnej",
+    "po spełnieniu warunków otrzymasz 3,50%; bez promocji oprocentowanie wynosi 2%"
       ],
-      "summary": "Santander Consumer Bank - Lokata na nowe środki. Możesz zyskać: lokata na nowe środki - sprawdź aktualne oprocentowanie. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "lokata na nowe środki - sprawdź aktualne oprocentowanie"
+    "summary": "Santander Consumer Bank - Lokata na nowe środki. 3,50% na 6 miesięcy dla nowych środków do 400 000 zł. Bez spełnienia warunków oprocentowanie spada do 2%.",
+    "pros": [
+    "3,50% na 6 miesięcy",
+    "kwota od 1 000 zł do 400 000 zł",
+    "lokata online",
+    "promocja dla nowych środków",
+    "możliwość lokaty odnawialnej"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "Promocyjne oprocentowanie wymaga wpłaty nowych środków i wszystkich wymaganych zgód. Bez spełnienia warunków oprocentowanie wynosi 2%. Przed założeniem sprawdź regulamin i zasady odnowienia lokaty u partnera."
     },
     {
       "slug": "bezpieczny-ubezpieczenie-samochodu",
@@ -1597,50 +1778,60 @@
         "/ubezpieczenia/porownywarka",
         "/ubezpieczenia/ranking-oc"
       ],
-      "reward": "porównanie OC/AC i możliwość przejścia do oferty u partnera",
+    "reward": "porównanie ofert OC/AC dla Twojego samochodu",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz0",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "kierowca szukający OC, AC lub porównania ubezpieczenia",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "brak wskazanego terminu",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa Rankomat Ubezpieczenia AVIVA",
+    "audience": "kierowca szukający ubezpieczenia samochodu OC lub AC",
+    "conditions": [
+    "podaj rok produkcji pojazdu, markę i model samochodu",
+    "wskaż termin rozpoczęcia ubezpieczenia",
+    "podaj numer telefonu i zaakceptuj wymagane zgody kontaktowe",
+    "po wysłaniu formularza poczekaj na kontakt doradcy z propozycją OC/AC",
+    "przed zakupem porównaj zakres ochrony, wyłączenia i składkę"
       ],
-      "summary": "Dodatkowa możliwość sprawdzenia oferty OC/AC.",
-      "pros": [
-        "ubezpieczenie OC/AC - sprawdź zakres i cenę"
+    "summary": "Rankomat Ubezpieczenia AVIVA - wypełnij krótki formularz, aby otrzymać propozycję ubezpieczenia samochodu OC/AC. Doradca skontaktuje się z Tobą po podaniu danych pojazdu.",
+    "pros": [
+    "formularz dopasowany do samochodu",
+    "możliwość sprawdzenia OC i AC",
+    "holowanie z miejsca zdarzenia do miejsca holowania",
+    "odszkodowanie w razie wypadku i kradzieży",
+    "naprawa auta w warsztacie lub wypłata gotówki",
+    "Pakiet Assistance z domowymi wizytami lekarza"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, warunki promocji i regulamin bezpośrednio u partnera."
+    "warning": "Zakres ochrony, składka, wyłączenia i dostępność dodatków zależą od wybranej polisy. Przed zakupem zapoznaj się z OWU i ofertą przedstawioną przez partnera."
     },
     {
       "slug": "bnp-karta-kredytowa-promocja",
-      "name": "BNP Paribas - Karta kredytowa w promocji",
+    "name": "BNP Paribas - Karta kredytowa z e-kodami Allegro",
       "category": "credit-card",
       "pillar": "finanse",
       "pages": [
         "/finanse/karty",
         "/finanse/ranking-kart"
       ],
-      "reward": "karta kredytowa w promocji - sprawdź bonus i opłaty",
+    "reward": "do 450 zł w e-kodach Allegro",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_2457",
       "difficulty": "Średni",
       "time": "5-20 min",
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca karty kredytowej",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+      "podpisz umowę o kartę Mastercard Standard lub Gold do 30.09.2026",
+      "korzystaj z karty aktywnie zgodnie z regulaminem promocji",
+      "odbierz do 450 zł w e-kodach Allegro"
       ],
-      "summary": "BNP Paribas - Karta kredytowa w promocji. Możesz zyskać: karta kredytowa w promocji - sprawdź bonus i opłaty. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "BNP Paribas - karta kredytowa z promocją do 450 zł w e-kodach Allegro. Umowę trzeba zawrzeć do 30.09.2026, a szczegółowe warunki aktywnego korzystania sprawdzić w regulaminie partnera.",
       "pros": [
-        "karta kredytowa w promocji - sprawdź bonus i opłaty"
+      "do 450 zł w e-kodach Allegro"
       ],
       "cons": [
         "warunki mogą się zmienić",
@@ -1657,57 +1848,36 @@
         "/finanse/karty",
         "/finanse/ranking-kart"
       ],
-      "reward": "Karta Kredytowa z Żubrem - sprawdź promocję i opłaty",
+    "reward": "2000 mil powitalnych + voucher na obrączkę płatniczą o wartości 500 zł",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz2",
       "difficulty": "Średni",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca karty kredytowej",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "promocja Obrączka w nagrodę do 30.09.2026",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii Banku Pekao",
+    "audience": "osoba szukająca karty kredytowej z milami Miles & More i benefitami podróżnymi",
+    "conditions": [
+    "złóż wniosek o Kartę Kredytową z Żubrem i wpisz kod OBRĄCZKA lub podaj kod doradcy",
+    "przystąp do programu Miles & More",
+    "wykonaj kartą transakcje bezgotówkowe o łącznej wartości minimum 1 000 zł",
+    "spełnij warunki promocji do 30.09.2026 r.; voucher otrzymasz do 15. dnia kolejnego miesiąca",
+    "wybierz pakiet karty: Standard, Złoty lub Platynowy i sprawdź jego opłaty"
       ],
-      "summary": "Bank Pekao SA - Karta Kredytowa z Żubrem. Możesz zyskać: Karta Kredytowa z Żubrem - sprawdź promocję i opłaty. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "Karta Kredytowa z Żubrem - sprawdź promocję i opłaty"
-      ],
-      "cons": [
-        "warunki mogą się zmienić",
-        "ostateczna decyzja zależy od partnera"
-      ],
-      "warning": "Sprawdź opłatę za kartę, okres bezodsetkowy i koszt zadłużenia po terminie."
-    },
-    {
-      "slug": "pekao-kredyt-hipoteczny",
-      "name": "Bank Pekao SA - Kredyt hipoteczny",
-      "category": "mortgage",
-      "pillar": "finanse",
-      "pages": [
-        "/finanse/kredyty-gotowkowe",
-        "/finanse/rankingi"
-      ],
-      "reward": "kredyt hipoteczny - sprawdź marżę, RRSO i koszt",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz4",
-      "difficulty": "Średni",
-      "time": "wniosek + analiza banku",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca kredytu hipotecznego",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
-      ],
-      "summary": "Bank Pekao SA - Kredyt hipoteczny. Możesz zyskać: kredyt hipoteczny - sprawdź marżę, RRSO i koszt. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "kredyt hipoteczny - sprawdź marżę, RRSO i koszt"
+    "summary": "Bank Pekao SA - Karta Kredytowa z Żubrem. Zyskaj 2000 mil powitalnych, zbieraj mile Miles & More i odbierz voucher na obrączkę płatniczą ze 100% zniżką po transakcjach za min. 1000 zł.",
+    "pros": [
+    "2000 mil powitalnych",
+    "obrączka płatnicza ze 100% zniżką, wartość 500 zł",
+    "mile Miles & More za płatności",
+    "raty 10 × 0% zależnie od pakietu",
+    "okres bezodsetkowy do 59 dni",
+    "RRSO 15,18% w przykładzie reprezentatywnym"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Kredyt hipoteczny to duża decyzja. Porównaj RRSO, marżę, prowizję, ubezpieczenia i całkowity koszt.",
-      "placementPriority": 80
+    "warning": "Karta ma trzy pakiety z różnymi opłatami i benefitami; opłata może wynosić 19 zł lub 39 zł miesięcznie w pakietach Złotym i Platynowym. RRSO 15,18% dotyczy przykładu reprezentatywnego. Sprawdź regulamin i taryfę u partnera."
     },
     {
       "slug": "millennium-kredyt-hipoteczny",
@@ -1749,26 +1919,37 @@
         "/finanse/kredyty-gotowkowe",
         "/finanse/rankingi"
       ],
-      "reward": "kredyt hipoteczny VeloDom - sprawdź warunki finansowania",
+    "reward": "RRSO 6,57% i 0% prowizji z kontem oraz ubezpieczeniem VeloBezpieczny",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_3042",
       "difficulty": "Średni",
       "time": "wniosek + analiza banku",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca kredytu hipotecznego",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie warunków programu"
+    "deadline": "brak wskazanego terminu promocji",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii VeloBanku",
+    "audience": "osoba planująca zakup lub budowę domu albo mieszkania",
+    "conditions": [
+    "złóż wniosek online i skorzystaj z wideorozmowy z ekspertem hipotecznym",
+    "zapewnij konto z pakietem i wpływy minimum 3 000 zł miesięcznie",
+    "wybierz ubezpieczenie VeloBezpieczny, aby skorzystać z 0% prowizji",
+    "zapewnij wkład własny; kredyt może finansować do 90% wartości nieruchomości",
+    "wybierz oprocentowanie okresowo stałe albo zmienne i okres do 35 lat",
+    "ustanów hipotekę oraz wymagane ubezpieczenie nieruchomości"
       ],
-      "summary": "VeloBank - Kredyt hipoteczny VeloDom. Możesz zyskać: kredyt hipoteczny VeloDom - sprawdź warunki finansowania. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "kredyt hipoteczny VeloDom - sprawdź warunki finansowania"
+    "summary": "VeloBank - Kredyt hipoteczny VeloDom. RRSO 6,57%, 0% prowizji z kontem i ubezpieczeniem VeloBezpieczny, finansowanie do 90% wartości nieruchomości i okres do 35 lat.",
+    "pros": [
+    "RRSO 6,57% w przykładzie reprezentatywnym",
+    "0% prowizji z kontem i ubezpieczeniem",
+    "0% prowizji za wcześniejszą spłatę lub nadpłatę",
+    "finansowanie do 90% wartości nieruchomości",
+    "proces online i wsparcie eksperta",
+    "okres kredytowania do 35 lat"
       ],
       "cons": [
         "warunki mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Sprawdź wymagany wkład własny, RRSO, marżę, prowizję, ubezpieczenia i warunki wcześniejszej spłaty."
+    "warning": "RRSO 6,57% dotyczy przykładu reprezentatywnego. Konto z pakietem wymaga wpływów min. 3 000 zł miesięcznie, a ubezpieczenie VeloBezpieczny generuje koszt. Stała stopa może później przejść na zmienną, co wpływa na ratę."
     },
     {
       "slug": "netcredit-dla-nowych-klientow-pierwsze-30-dni-bezplatnie-12583",
@@ -1809,74 +1990,81 @@
     },
     {
       "slug": "pkobp-pozyczka-konsolidacyjna-rrso-12-57-11675",
-      "name": "PKOBP - Pożyczka Konsolidacyjna RRSO: 12,57%",
+  "name": "PKO BP - Pożyczka konsolidacyjna RRSO 12,14%",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "pożyczka ze spłatą od 3 do 120 miesięcy",
+  "reward": "konsolidacja rat z RRSO 12,14% i dodatkową gotówką do 30% wartości przenoszonych kredytów",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orhk",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba porównująca koszty, korzyści i warunki oferty",
+  "deadline": "brak wskazanego terminu promocji",
+  "verificationStatus": "verified",
+  "verifiedAt": "2026-08-19",
+  "verificationSource": "Przesłana strona docelowa kampanii PKO Banku Polskiego",
+  "audience": "osoba chcąca połączyć raty z innych banków i uzyskać dodatkowe środki",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "pożyczka ze spłatą od 3 do 120 miesięcy",
-        "RRSO 12,57%"
+    "złóż wniosek online w iPKO lub aplikacji IKO i umów rozmowę z doradcą",
+    "przenieś co najmniej jedną ratę z innego banku lub instytucji kredytowej",
+    "przygotuj w oddziale umowy konsolidowanych kredytów i podpisz umowę po decyzji",
+    "wybierz okres spłaty od 2 do 120 miesięcy",
+    "możesz otrzymać dodatkową gotówkę do 30% wartości przenoszonych kredytów"
       ],
-      "summary": "PKOBP - Pożyczka Konsolidacyjna RRSO: 12,57%. Korzyść dla klienta: pożyczka ze spłatą od 3 do 120 miesięcy. Przed decyzją sprawdź aktualne warunki u partnera.",
+  "summary": "PKO BP - Pożyczka konsolidacyjna. Połącz raty z innych banków, wybierz spłatę od 2 do 120 miesięcy i uzyskaj dodatkową gotówkę do 30% wartości przenoszonych kredytów. RRSO 12,14%.",
       "pros": [
-        "pożyczka ze spłatą od 3 do 120 miesięcy",
-        "Pożyczka konsolidacyjna",
-        "możliwość otrzymania dodatkowej gotówki na ekstra wydatki",
-        "nie musisz mieć konta w PKO Banku Polskim",
-        "RRSO 12,57%"
+    "RRSO 12,14% w przykładzie reprezentatywnym",
+    "spłata od 2 do 120 miesięcy",
+    "konsolidacja nawet jednej raty z innego banku",
+    "dodatkowa gotówka do 30% wartości przenoszonych kredytów",
+    "0 zł prowizji w przykładzie reprezentatywnym"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+  "warning": "RRSO 12,14% dotyczy przykładu reprezentatywnego, a oprocentowanie jest zmienne. Konsolidacja podlega ocenie zdolności kredytowej i obejmuje zadłużenie z innych banków lub instytucji kredytowych. Sprawdź aktualne koszty u partnera.",
       "placementPriority": 60
     },
     {
       "slug": "miloan-500-3000-zl-10977",
-      "name": "MILOAN - 500-3000 zł",
+    "name": "Miloan - Pierwsza pożyczka do 3000 zł z RRSO 0%",
       "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "od 500 do 5000 zł",
+    "reward": "pierwsza pożyczka do 3000 zł na 30 dni z RRSO 0%",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orhm",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba porównująca koszty, korzyści i warunki oferty",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 311,94%"
+    "deadline": "brak wskazanego terminu promocji",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii Miloan",
+    "audience": "nowy klient potrzebujący krótkoterminowej pożyczki online",
+    "conditions": [
+    "miej ukończone 21 lat, dowód osobisty, konto bankowe, telefon i e-mail",
+    "jako nowy klient wybierz kwotę do 3 000 zł na 30 dni",
+    "zaznacz wymagane zgody marketingowe",
+    "spłać pożyczkę terminowo, najpóźniej w dniu wskazanym w umowie",
+    "stały klient może wnioskować o kwotę do 7 000 zł, ale na standardowych warunkach"
       ],
-      "summary": "MILOAN - 500-3000 zł. Korzyść dla klienta: od 500 do 5000 zł. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "od 500 do 5000 zł",
-        "Szybko i wygodnie",
-        "pierwsza pożyczka do 3000 zł",
-        "na 30 dni",
-        "RRSO 311,94%"
+    "summary": "Miloan - pierwsza pożyczka do 3000 zł na 30 dni z RRSO 0% przy wymaganych zgodach i terminowej spłacie. Pieniądze mogą trafić na konto nawet w 15 minut.",
+    "pros": [
+    "pierwsza pożyczka do 3000 zł",
+    "RRSO 0% przy terminowej spłacie",
+    "okres 30 dni",
+    "wniosek online",
+    "pieniądze nawet w 15 minut"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+    "warning": "RRSO 0% wymaga zgód marketingowych i terminowej spłaty. Przy opóźnieniu lub braku warunków obowiązują standardowe koszty — na stronie partnera pokazano RRSO 297,46%. Sprawdź umowę, koszt całkowity i termin spłaty przed wnioskiem.",
       "placementPriority": 55
     },
     {
@@ -1950,40 +2138,42 @@
     },
     {
       "slug": "oros-pierwsza-pozyczka-za-darmo-dla-kwoty-5000-zl-12573",
-      "name": "OROS - Pierwsza pożyczka za DARMO* dla kwoty 5000 zł",
+    "name": "Oros.pl - Pierwsza pożyczka do 7000 zł z RRSO 0%",
       "category": "short-loan",
       "pillar": "finanse",
       "pages": [
         "/finanse/chwilowki",
         "/finanse/kredyt-vs-chwilowka"
       ],
-      "reward": "od 500 zł do 15 000 zł",
+    "reward": "pierwsza pożyczka do 7000 zł na 30 dni z RRSO 0%",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5ori8",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba porównująca koszty, korzyści i warunki oferty",
+    "deadline": "brak wskazanego terminu promocji",
+    "verificationStatus": "verified",
+    "verifiedAt": "2026-08-19",
+    "verificationSource": "Przesłana strona docelowa kampanii Oros.pl",
+    "audience": "nowy klient potrzebujący krótkoterminowej pożyczki online",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "pierwsza pożyczka dla kwoty 5000 zł z RRSO 0%",
-        "na okres 30 dni",
-        "RRSO 312,03% przy terminowej spłacie"
+    "jako nowy klient wybierz pierwszą pożyczkę do 7 000 zł na 30 dni",
+    "złóż wniosek online i przejdź weryfikację danych",
+    "spłać pożyczkę terminowo, aby skorzystać z promocyjnego RRSO 0%",
+    "jednorazowa opłata rejestracyjna wynosi 0,01 zł",
+    "stały klient może korzystać z kolejnej pożyczki na standardowych warunkach"
       ],
-      "summary": "OROS - Pierwsza pożyczka za DARMO* dla kwoty 5000 zł. Korzyść dla klienta: od 500 zł do 15 000 zł. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Oros.pl - pierwsza pożyczka do 7000 zł na 30 dni z RRSO 0% przy terminowej spłacie. Wniosek online, szybka weryfikacja i wypłata na konto.",
       "pros": [
-        "od 500 zł do 15 000 zł",
-        "Oros",
-        "pierwsza pożyczka dla kwoty 5000 zł z RRSO 0%",
-        "na okres 30 dni",
-        "RRSO 312,03% przy terminowej spłacie"
+    "pierwsza pożyczka do 7000 zł",
+    "RRSO 0% przy terminowej spłacie",
+    "okres 30 dni",
+    "szybki wniosek online",
+    "wypłata nawet 24/7"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+    "warning": "RRSO 0% wymaga terminowej spłaty. Przy braku terminowej spłaty standardowy przykład dla 7000 zł pokazuje RRSO 297,58%, koszt 840,90 zł i łącznie 7840,90 zł do spłaty. Sprawdź umowę i termin przed wnioskiem.",
       "placementPriority": 55
     },
     {
@@ -2212,37 +2402,38 @@
     },
     {
       "slug": "raiffeisen-bank-raiffeisen-digital-bank-kredyt-gotowkowy-12867",
-      "name": "RAIFFEISEN BANK - Raiffeisen Digital Bank - kredyt gotówkowy",
+    "name": "Raiffeisen Digital Bank - pożyczka gotówkowa RDB829",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "Raiffeisen Digital Bank - kredyt gotówkowy",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oriu",
+      "reward": "RRSO 8,29% z kodem RDB829 na pożyczkę gotówkową lub konsolidacyjną",
+        "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oriu",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
+        "deadline": "maksymalnie 100 kodów promocyjnych; sprawdź dostępność u partnera",
       "audience": "osoba porównująca koszty, korzyści i warunki oferty",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
         "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 9,99%"
+        "dla nowych klientów użyj kodu promocyjnego RDB829",
+        "RRSO 8,29% z kodem; promocja obejmuje maksymalnie 100 kodów"
       ],
-      "summary": "RAIFFEISEN BANK - Raiffeisen Digital Bank - kredyt gotówkowy. Korzyść dla klienta: Raiffeisen Digital Bank - kredyt gotówkowy. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Raiffeisen Digital Bank: pożyczka gotówkowa od 5 000 do 200 000 zł, 0% prowizji i RRSO 8,29% dla nowych klientów z kodem RDB829. Ten link kieruje do wspólnej kampanii gotówkowej i konsolidacyjnej.",
       "pros": [
-        "Raiffeisen Digital Bank - kredyt gotówkowy",
-        "Pożycza gotówkowa",
-        "stałe oprocentowanie",
-        "pobierz aplikację by wypełnić wniosek",
-        "RRSO 9,99%"
+        "kwota od 5 000 do 200 000 zł",
+        "0% prowizji i brak ukrytych opłat",
+        "RRSO 8,29% z kodem RDB829 dla nowych klientów",
+        "wniosek online i decyzja dostępna 24/7",
+        "spłata nawet do 120 miesięcy"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Kod RDB829 obniża oprocentowanie o 2,48 p.p.; końcowe oprocentowanie zależy od zdolności kredytowej, a liczba kodów promocyjnych jest ograniczona do 100 klientów. Przed decyzją sprawdź regulamin, RRSO i całkowity koszt.",
       "placementPriority": 60
     },
     {
@@ -2253,66 +2444,69 @@
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "Kredyt gotówkowy online do 15 tys. zł",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oriw",
+      "reward": "Kredyt gotówkowy online z kodem TERAZ: RRSO 8,30%",
+        "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oriw",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
+        "deadline": "brak wskazanego terminu promocji",
       "audience": "osoba porównująca koszty, korzyści i warunki oferty",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
         "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 10,46%"
+        "wpisz kod TERAZ we wniosku online",
+        "dla nowych klientów: kwota 15 000–35 000 zł i maksymalnie 60 rat",
+        "co najmniej 12 miesięcy pozytywnej historii kredytowej w BIK oraz pierwszy kredyt w banku"
       ],
-      "summary": "SANTANDER CONSUMER BANK - eGotówka - Promocja. Korzyść dla klienta: Kredyt gotówkowy online do 15 tys. zł. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Santander Consumer Bank: kredyt gotówkowy online z kodem TERAZ. RRSO 8,30%, stałe oprocentowanie 8%, 0% prowizji i promocyjna rata 405,53 zł w przykładzie dla 20 000 zł na 60 miesięcy.",
       "pros": [
-        "Kredyt gotówkowy online do 15 tys. zł",
-        "szybko i wygodnie - bez wychodzenia z domu",
-        "proste i jasne zasady",
-        "pieniądze nawet w 24h",
-        "RRSO 10,46%"
+        "RRSO 8,30% z kodem TERAZ",
+        "stałe oprocentowanie 8% i 0% prowizji",
+        "promocyjna oferta dla kwot 15 000–35 000 zł",
+        "wniosek online i zdalna weryfikacja",
+        "pieniądze nawet tego samego dnia przy decyzji do godz. 13:00 w dzień roboczy"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Kod TERAZ obniża oprocentowanie z 14,50% do 8,00%. Promocja dotyczy nowych klientów z pełną zdolnością do czynności prawnych, minimum 12-miesięczną pozytywną historią w BIK i pierwszym kredytem w banku. Przed decyzją sprawdź regulamin i całkowity koszt.",
       "placementPriority": 60
     },
     {
       "slug": "raiffeisen-bank-kredyt-gotowkowy-i-konsolidacja",
-      "name": "RAIFFEISEN BANK - kredyt gotówkowy i konsolidacja",
+    "name": "Raiffeisen Digital Bank - konsolidacja RDB829",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "kredyt gotówkowy lub konsolidacja z RRSO 11,99%",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oriy",
+      "reward": "kredyt gotówkowy lub konsolidacja z RRSO 8,29%",
+        "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oriy",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
+        "deadline": "maksymalnie 100 kodów promocyjnych; sprawdź dostępność u partnera",
       "audience": "osoba porównująca koszty, korzyści i warunki oferty",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
         "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 11,99%"
+        "dla nowych klientów użyj kodu promocyjnego RDB829",
+        "RRSO 8,29% z kodem; promocja obejmuje maksymalnie 100 kodów"
       ],
-      "summary": "RAIFFEISEN BANK - kredyt gotówkowy i konsolidacja. Korzyść dla klienta: kredyt gotówkowy lub konsolidacja z RRSO 11,99%. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Raiffeisen Digital Bank: konsolidacja zobowiązań od 5 000 do 200 000 zł, 0% prowizji i RRSO 8,29% dla nowych klientów z kodem RDB829. Ten link prowadzi do tej samej wspólnej kampanii co oferta gotówkowa.",
       "pros": [
-        "kredyt gotówkowy lub konsolidacja",
-        "pożyczka gotówkowa",
-        "stałe oprocentowanie",
-        "pobierz aplikację by wypełnić wniosek",
-        "RRSO 11,99%"
+        "kwota od 5 000 do 200 000 zł",
+        "0% prowizji i brak ukrytych opłat",
+        "RRSO 8,29% z kodem RDB829 dla nowych klientów",
+        "wniosek online i decyzja dostępna 24/7",
+        "spłata nawet do 120 miesięcy"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Kod RDB829 obniża oprocentowanie o 2,48 p.p.; końcowe oprocentowanie zależy od zdolności kredytowej, a liczba kodów promocyjnych jest ograniczona do 100 klientów. Przed decyzją sprawdź regulamin, RRSO i całkowity koszt.",
       "placementPriority": 60
     },
     {
@@ -2323,34 +2517,36 @@
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "kwota do 300 000 zł",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orj2",
+      "reward": "pożyczka gotówkowa do 250 000 zł z RRSO 8,1%",
+        "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orj2",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
+        "deadline": "VeloPolecenie do 26.09.2026; dla nowych klientów do 26.10.2026",
       "audience": "osoba porównująca koszty, korzyści i warunki oferty",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
         "spełnienie aktualnych warunków promocji u partnera",
-        "kwota do 300 000 zł",
-        "okres kredytowania nawet 10 lat",
-        "prowizja 0%",
-        "RRSO 8,20%"
+        "kwota do 250 000 zł dla jednego pożyczkobiorcy lub do 300 000 zł dla dwóch",
+        "okres kredytowania od 3 do 120 miesięcy",
+        "prowizja 0 zł",
+        "RRSO 8,1%",
+        "możliwość karencji w spłacie pierwszej raty od 1 do 3 miesięcy",
+        "warunek oferty: wpływ min. 2 000 zł i 5 płatności kartą lub BLIKIEM miesięcznie"
       ],
-      "summary": "VELOBANK - Kredyt gotówkowy. Korzyść dla klienta: kwota do 300 000 zł. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "VeloBank - Pożyczka gotówkowa. Do 250 000 zł dla jednej osoby, RRSO 8,1%, prowizja 0 zł, wniosek online i możliwość karencji w spłacie od 1 do 3 miesięcy.",
       "pros": [
-        "kwota do 300 000 zł",
-        "Kredyt gotówkowy",
-        "okres kredytowania nawet 10 lat",
-        "prowizja 0%",
-        "RRSO 8,20%"
+        "do 250 000 zł dla jednego lub do 300 000 zł dla dwóch pożyczkobiorców",
+        "wniosek 100% online",
+        "0 zł prowizji",
+        "RRSO 8,1%",
+        "VeloPolecenie do 2 500 zł dla polecającego"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Oferta wymaga m.in. aktywnych zgód marketingowych, VeloKonta, wpływu min. 2 000 zł miesięcznie i 5 płatności kartą lub BLIKIEM. Niespełnienie warunku może podwyższyć oprocentowanie o 2 p.p. Promocja VeloPolecenie trwa do 26.09.2026 r., a dla nowych klientów do 26.10.2026 r. Przed decyzją sprawdź regulamin i całkowity koszt.",
       "placementPriority": 60
     },
     {
@@ -2784,7 +2980,7 @@
       "pages": [
         "/finanse/kredyty-firmowe"
       ],
-      "reward": "pożycz aż do 1 000 000 zł na dowolny cel",
+      "reward": "kredyt firmowy do 1 000 000 zł z gwarancją niższej marży",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orjw",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -2793,30 +2989,35 @@
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+        "osoba fizyczna prowadząca jednoosobową działalność gospodarczą",
+        "działalność prowadzona minimum 24 miesiące",
+        "oprocentowanie w przykładzie 6,70%",
+        "szczegółowe warunki promocji określa regulamin"
       ],
-      "summary": "NEST BANK - Krótki formularz. Korzyść dla klienta: pożycz aż do 1 000 000 zł na dowolny cel. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Nest Bank - kredyt firmowy do 1 000 000 zł na dowolny cel, z gwarancją niższej marży, oprocentowaniem 6,70% w przykładzie i elastyczną spłatą.",
       "pros": [
-        "pożycz aż do 1 000 000 zł na dowolny cel",
-        "Wygodny kredyt dla firm",
-        "decyzja online nawet w 10 minut!"
+        "do 1 000 000 zł na dowolny cel związany z działalnością",
+        "pieniądze na koncie do 24 godzin od podpisania umowy",
+        "wakacje kredytowe do 3 miesięcy",
+        "możliwość obniżenia raty lub wydłużenia kredytowania do 6 miesięcy",
+        "gwarancja PLD de minimis i niższa marża"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Oferta promocji „Gwarancja niższej marży” jest dla osoby fizycznej prowadzącej JDG; działalność musi być prowadzona minimum 24 miesiące. Przed decyzją sprawdź prowizję, całkowity koszt, zabezpieczenia i regulamin bezpośrednio u partnera.",
       "placementPriority": 60
     },
     {
       "slug": "orange-flex-orange-flex-android-13820",
-      "name": "ORANGE FLEX - Orange Flex - Android",
+      "name": "ORANGE FLEX - telefon w subskrypcji i Orange Flex Travel",
       "category": "other",
       "pillar": "pozostale",
       "pages": [
         "/pozostale"
       ],
-      "reward": "Nie na kartę, nie abonament. Subskrypcja!",
+      "reward": "elastyczna subskrypcja komórkowa lub eSIM z internetem za granicą",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orjy",
       "difficulty": "Średni",
       "time": "kilka minut",
@@ -2825,34 +3026,35 @@
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "Nie na kartę, nie abonament. Subskrypcja!",
-        "Teraz więcej GB za tyle samo",
-        "Kampania na system operacyjny Android"
+        "spełnienie aktualnych warunków oferty Orange Flex",
+        "wybór między pełnym planem komórkowym Orange Flex a Orange Flex Travel",
+        "aktywacja eSIM lub zamówienie zwykłej karty SIM",
+        "sprawdzenie aktualnych cen i pakietów w aplikacji"
       ],
-      "summary": "ORANGE FLEX - Orange Flex - Android. Korzyść dla klienta: Nie na kartę, nie abonament. Subskrypcja!. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Orange Flex: elastyczna subskrypcja komórkowa bez długoterminowej umowy oraz Orange Flex Travel z eSIM-em i pakietami internetu w ponad 100 krajach.",
       "pros": [
-        "Nie na kartę, nie abonament. Subskrypcja!",
-        "Orange Flex",
-        "Teraz więcej GB za tyle samo",
-        "Kampania na system operacyjny Android"
+        "elastyczne plany bez długoterminowej umowy",
+        "nielimitowane rozmowy, SMS-y i MMS-y w Polsce oraz roamingu UE",
+        "5G, eSIM i do 3 dodatkowych kart SIM/eSIM",
+        "pakiety roamingu i internet w ponad 100 krajach",
+        "chat w aplikacji dostępny 24/7"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Ceny, zakres pakietów, limity roamingu i dostępność usług zależą od aktualnej oferty Orange Flex. Przed aktywacją sprawdź warunki, opłaty oraz zasady subskrypcji bezpośrednio u partnera.",
       "placementPriority": 45
     },
     {
-      "slug": "orange-orange-12659",
-      "name": "ORANGE - Orange",
+      "slug": "orange-abonament-komorkowy-5g-pro-12659",
+      "name": "Orange Polska | Abonament komórkowy 5G Pro",
       "category": "other",
       "pillar": "pozostale",
       "pages": [
         "/pozostale"
       ],
-      "reward": "abonament",
+      "reward": "abonament komórkowy 5G Pro z ofertą online",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5ork0",
       "difficulty": "Średni",
       "time": "kilka minut",
@@ -2861,20 +3063,24 @@
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "abonament"
+        "zamówienie abonamentu online bez wychodzenia z domu",
+        "w wybranych planach online dostępne jest więcej GB",
+        "kolejny numer w Orange może kosztować do 50% mniej",
+        "urządzenia dostępne z abonamentem i ratami"
       ],
-      "summary": "ORANGE - Orange. Korzyść dla klienta: abonament. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Orange - Abonament komórkowy 5G Pro. Zamów nowy numer online, wybierz plan z większym pakietem GB i dobierz smartfon w ratach.",
       "pros": [
-        "abonament",
-        "Orange",
-        "z telefonem lub bez"
+        "abonament komórkowy 5G Pro",
+        "zamówienie nowego numeru online",
+        "do 50% taniej za kolejny numer",
+        "smartfony z ratami na 36 miesięcy",
+        "oferta z 5G i planami dopasowanymi do potrzeb"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Ceny abonamentu, liczba GB, dostępność urządzeń, wysokość rat i warunki rabatu na kolejny numer zależą od wybranego planu. Przed zamówieniem sprawdź pełne warunki oferty Orange.",
       "placementPriority": 45
     },
     {
@@ -2885,7 +3091,7 @@
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "prowizja 0%",
+      "reward": "pożyczka do 250 000 zł z RRSO 8,07%",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opy4",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -2897,32 +3103,34 @@
         "spełnienie aktualnych warunków promocji u partnera",
         "prowizja 0%",
         "spłata do 10 lat",
-        "RRSO 10,99%"
+        "RRSO 8,07%",
+        "oferta dla nowych klientów lub osób posiadających wyłącznie kredyt ratalny w Pekao",
+        "oferta ważna do 30.08.2026 r."
       ],
-      "summary": "BANK PEKAO - Pożyczka gotówkowa. Korzyść dla klienta: prowizja 0%. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Bank Pekao - pożyczka gotówkowa na dowolny cel do 250 000 zł, 0% prowizji, RRSO 8,07% i spłata do 10 lat.",
       "pros": [
+        "RRSO 8,07%",
         "prowizja 0%",
-        "Pożyczka gotówkowa",
-        "do 250 000 zł",
-        "spłata do 10 lat",
-        "na dowolny cel"
+        "do 250 000 zł na dowolny cel",
+        "spłata do 120 miesięcy",
+        "wniosek online i pieniądze nawet w 1 dzień"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Oferta ze zmiennym oprocentowaniem dla nowych klientów oraz klientów posiadających wyłącznie kredyt ratalny w Pekao. Dla kwot powyżej 8 000 zł podpisanie umowy odbywa się w wybranym oddziale. Oferta ważna do 30.08.2026 r.; sprawdź regulamin i całkowity koszt.",
       "placementPriority": 60
     },
     {
       "slug": "bank-pkobp-pozyczka-gotowkowa-standard-rrso-16-43-13532",
-      "name": "BANK PKOBP - Pożyczka Gotówkowa - standard RRSO 16,43%",
+      "name": "PKO Bank Polski - Pożyczka gotówkowa online",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "0% prowizji za udzielenie pożyczki",
+      "reward": "pożyczka od 12 000 do 300 000 zł z RRSO 14,89%",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5ork2",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -2931,36 +3139,37 @@
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "POŻYCZKA GOTÓWKOWA RRSO 16,43%",
+        "spełnienie aktualnych warunków oferty PKO BP",
+        "kwota od 12 000 do 300 000 zł",
         "0% prowizji za udzielenie pożyczki",
-        "spłata nawet do 96 miesięcy",
-        "RRSO 16,43%"
+        "spłata nawet do 120 miesięcy",
+        "wniosek przez iPKO lub aplikację IKO"
       ],
-      "summary": "BANK PKOBP - Pożyczka Gotówkowa - standard RRSO 16,43%. Korzyść dla klienta: 0% prowizji za udzielenie pożyczki. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "PKO Bank Polski - pożyczka gotówkowa online od 12 000 do 300 000 zł, RRSO 14,89%, 0% prowizji i spłata do 120 miesięcy.",
       "pros": [
-        "0% prowizji za udzielenie pożyczki",
-        "POŻYCZKA GOTÓWKOWA RRSO 16,43%",
-        "spłata nawet do 96 miesięcy",
-        "możesz dostać od 1 500 zł do 300 000 zł",
-        "nie musisz posiadać konta w PKO Banku Polskim"
+        "RRSO 14,89%",
+        "0% prowizji",
+        "od 12 000 do 300 000 zł",
+        "spłata do 120 miesięcy",
+        "nie musisz posiadać konta w PKO Banku Polskim",
+        "pieniądze nawet w dniu akceptacji umowy"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Oprocentowanie w ofercie jest zmienne, a udzielenie pożyczki zależy od zdolności kredytowej. Przed decyzją sprawdź formularz informacyjny, całkowity koszt i aktualne warunki bezpośrednio w PKO BP.",
       "placementPriority": 60
     },
     {
       "slug": "raiffeisen-digital-bank-raiffeisen-digital-bank-refinansowanie-cpo-133",
-      "name": "RAIFFEISEN DIGITAL BANK - Raiffeisen Digital Bank - refinansowanie CPO",
+      "name": "Raiffeisen Digital Bank - pożyczka gotówkowa lub konsolidacyjna",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "Raiffeisen Digital Bank - refinansowanie CPO",
+      "reward": "RRSO 8,29% z kodem RDB829",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5ork4",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -2970,32 +3179,34 @@
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
         "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 13,49%"
+        "dla nowych klientów użyj kodu RDB829",
+        "kwota od 5 000 do 200 000 zł",
+        "RRSO 8,29% z kodem; limit 100 kodów"
       ],
-      "summary": "RAIFFEISEN DIGITAL BANK - Raiffeisen Digital Bank - refinansowanie CPO. Korzyść dla klienta: Raiffeisen Digital Bank - refinansowanie CPO. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Raiffeisen Digital Bank: pożyczka gotówkowa lub konsolidacyjna od 5 000 do 200 000 zł, 0% prowizji, RRSO 8,29% z kodem RDB829 i spłata do 120 miesięcy.",
       "pros": [
-        "Raiffeisen Digital Bank - refinansowanie CPO",
-        "Refinansowanie kredytów",
-        "stałe oprocentowanie",
-        "pobierz aplikację by wypełnić wniosek",
-        "RRSO 13,49%"
+        "RRSO 8,29% z kodem RDB829",
+        "0% prowizji i brak ukrytych opłat",
+        "pożyczka gotówkowa lub konsolidacyjna",
+        "decyzja kredytowa 24/7",
+        "spłata nawet do 120 miesięcy"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Kod RDB829 obniża oprocentowanie o 2,48 p.p.; końcowe oprocentowanie zależy od zdolności kredytowej, a promocja ma limit 100 kodów. Przed decyzją sprawdź regulamin, RRSO i całkowity koszt.",
       "placementPriority": 60
     },
     {
       "slug": "raiffeisen-digital-bank-kredyty-konsolidacyjne-13265",
-      "name": "RAIFFEISEN DIGITAL BANK - Refinansowanie kredytów",
+      "name": "Raiffeisen Digital Bank - konsolidacja kredytów",
       "category": "credit",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "kredyty konsolidacyjne",
+      "reward": "konsolidacja z RRSO 8,29% z kodem RDB829",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5ork6",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -3005,21 +3216,23 @@
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
         "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 13,49%"
+        "dla nowych klientów użyj kodu RDB829",
+        "kwota od 5 000 do 200 000 zł",
+        "RRSO 8,29% z kodem; limit 100 kodów"
       ],
-      "summary": "RAIFFEISEN DIGITAL BANK - Refinansowanie kredytów. Korzyść dla klienta: kredyty konsolidacyjne. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "Raiffeisen Digital Bank - konsolidacja kredytów od 5 000 do 200 000 zł, 0% prowizji, RRSO 8,29% z kodem RDB829 i spłata do 120 miesięcy.",
       "pros": [
-        "kredyty konsolidacyjne",
-        "Refinansowanie kredytów",
-        "stałe oprocentowanie",
-        "pobierz aplikację by wypełnić wniosek",
-        "RRSO 13,49%"
+        "konsolidacja kredytów w jeden kredyt",
+        "RRSO 8,29% z kodem RDB829",
+        "0% prowizji i brak ukrytych opłat",
+        "decyzja kredytowa 24/7",
+        "spłata nawet do 120 miesięcy"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Kod RDB829 obniża oprocentowanie o 2,48 p.p.; końcowe oprocentowanie zależy od zdolności kredytowej, a promocja ma limit 100 kodów. Przed decyzją sprawdź regulamin, RRSO i całkowity koszt.",
       "placementPriority": 60
     },
     {
@@ -3030,7 +3243,7 @@
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "nawet do 150 000 zł",
+      "reward": "od 500 do 30 000 zł",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5ork8",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -3057,76 +3270,6 @@
       "placementPriority": 60
     },
     {
-      "slug": "santander-consumer-bank-rownoratka-12959",
-      "name": "SANTANDER CONSUMER BANK - Równoratka",
-      "category": "credit",
-      "pillar": "finanse",
-      "pages": [
-        "/finanse/kredyty-gotowkowe"
-      ],
-      "reward": "prowizja 0% dla nowych klientów",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orka",
-      "difficulty": "Średni",
-      "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba porównująca koszty, korzyści i warunki oferty",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "prowizja 0% dla nowych klientów",
-        "RRSO 10,48%"
-      ],
-      "summary": "SANTANDER CONSUMER BANK - Równoratka. Korzyść dla klienta: prowizja 0% dla nowych klientów. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "prowizja 0% dla nowych klientów",
-        "Kredyt Mistrzowski",
-        "dobry czas na realizację planów",
-        "RRSO 10,48%"
-      ],
-      "cons": [
-        "warunki i dostępność mogą się zmienić",
-        "ostateczna decyzja lub aktywacja zależy od partnera"
-      ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
-      "placementPriority": 60
-    },
-    {
-      "slug": "santander-consumer-bank-pozyczka-gotowkowa-12531",
-      "name": "SANTANDER CONSUMER BANK - Równoratka",
-      "category": "credit",
-      "pillar": "finanse",
-      "pages": [
-        "/finanse/kredyty-gotowkowe"
-      ],
-      "reward": "pożyczka gotówkowa",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orkc",
-      "difficulty": "Średni",
-      "time": "kilka minut + decyzja partnera",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba porównująca koszty, korzyści i warunki oferty",
-      "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 16,79%"
-      ],
-      "summary": "SANTANDER CONSUMER BANK - Równoratka. Korzyść dla klienta: pożyczka gotówkowa. Przed decyzją sprawdź aktualne warunki u partnera.",
-      "pros": [
-        "pożyczka gotówkowa",
-        "Równoratka",
-        "płać tyle, na ile się umówiłeś!",
-        "za 10 000 zł rata to tylko 300 zł miesięcznie",
-        "RRSO 16,79%"
-      ],
-      "cons": [
-        "warunki i dostępność mogą się zmienić",
-        "ostateczna decyzja lub aktywacja zależy od partnera"
-      ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
-      "placementPriority": 60
-    },
-    {
       "slug": "santander-consumer-bank-mistrzowski-kredyt-gotowkowy-11873",
       "name": "SANTANDER CONSUMER BANK - Mistrzowski Kredyt Gotówkowy",
       "category": "credit",
@@ -3134,42 +3277,48 @@
       "pages": [
         "/finanse/kredyty-gotowkowe"
       ],
-      "reward": "nawet do 150 000 zł",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orke",
+      "reward": "od 500 do 30 000 zł",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_3120",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
       "deadline": "sprawdź u partnera",
       "audience": "osoba porównująca koszty, korzyści i warunki oferty",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
+        "aby skorzystać z oferty, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "RRSO 28,98%"
+        "brak umowy kredytowej lub depozytowej z bankiem przez co najmniej 4 miesiące przed wnioskiem",
+        "kwota online od 500 do 9 000 zł lub telefonicznie od 1 000 do 30 000 zł",
+        "oprocentowanie stałe 7,69%",
+        "RRSO 7,97%",
+        "0 zł prowizji",
+        "pierwsza rata do 60 dni od zawarcia umowy"
       ],
-      "summary": "SANTANDER CONSUMER BANK - Mistrzowski Kredyt Gotówkowy. Korzyść dla klienta: nawet do 150 000 zł. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "SANTANDER CONSUMER BANK - Mistrzowski Kredyt Gotówkowy. Kredyt gotówkowy od 500 do 30 000 zł dla nowych klientów, z RRSO 7,97% i 0 zł prowizji.",
       "pros": [
-        "nawet do 150 000 zł",
-        "Mistrzowski Kredyt Gotówkowy",
-        "duża gotówka na Twoje potrzeby!",
-        "RRSO 28,98%"
+        "od 500 do 30 000 zł",
+        "0 zł prowizji",
+        "pierwsza rata do 60 dni",
+        "dowolny cel",
+        "RRSO 7,97%"
       ],
       "cons": [
-        "warunki i dostępność mogą się zmienić",
-        "ostateczna decyzja lub aktywacja zależy od partnera"
+        "oferta dla nowych klientów spełniających warunki banku",
+        "ostateczna decyzja zależy od zdolności kredytowej"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin, wymagania i dostępność bezpośrednio u partnera.",
       "placementPriority": 60
     },
     {
       "slug": "smartney-kredyty-firmowe-13332",
-      "name": "SMARTNEY - Pożyczka dla przedsiębiorców 100% online",
-      "category": "business-loan",
+      "name": "SMARTNEY - Pożyczka gotówkowa online",
+      "category": "credit",
       "pillar": "finanse",
       "pages": [
-        "/finanse/kredyty-firmowe"
+        "/finanse/kredyty-gotowkowe",
+        "/finanse/chwilowki"
       ],
-      "reward": "do 150 000 zł",
-      "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orkg",
+      "reward": "do 150 000 zł + nawet 1 000 zł ekstra",
+      "affiliateUrl": "https://tmlead.pl/redirect/880819_1964",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
       "deadline": "sprawdź u partnera",
@@ -3177,15 +3326,20 @@
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera",
-        "Pożyczka dla przedsiębiorców 100% online",
-        "RRSO 16,94%"
+        "spełnienie aktualnych warunków oferty u partnera",
+        "pożyczka gotówkowa online od 1 000 do 150 000 zł",
+        "dostępne okresy spłaty: 48, 69, 72, 84, 90 lub 96 rat",
+        "RRSO 18,88% w prezentowanym przykładzie",
+        "możliwość uzyskania do 1 000 zł EXTRA",
+        "proces online bez dokumentów: logowanie do banku i przelew na konto"
       ],
-      "summary": "SMARTNEY - Pożyczka dla przedsiębiorców 100% online. Korzyść dla klienta: do 150 000 zł. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "SMARTNEY - Pożyczka gotówkowa online. Kwota od 1 000 do 150 000 zł, dostępne raty 48–96 miesięcy, RRSO 18,88% w przykładzie i możliwość uzyskania do 1 000 zł EXTRA.",
       "pros": [
-        "do 150 000 zł",
-        "Pożyczka dla przedsiębiorców 100% online",
-        "RRSO 16,94%"
+        "od 1 000 do 150 000 zł",
+        "100% online, bez dokumentów",
+        "do 1 000 zł EXTRA",
+        "raty od 48 do 96 miesięcy",
+        "RRSO 18,88%"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
@@ -3237,7 +3391,7 @@
       "pages": [
         "/auto/kredyt-na-auto"
       ],
-      "reward": "kwota kredytu do 200 tys. zł",
+        "reward": "RRSO 12,2%, kredyt do 250 000 zł bez wkładu własnego",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orki",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -3247,10 +3401,14 @@
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
         "spełnienie aktualnych warunków promocji u partnera",
-        "kwota kredytu do 200 tys. zł",
-        "RRSO 15,33%"
+          "kwota kredytu do 250 000 zł",
+          "RRSO 12,2%",
+          "brak wkładu własnego",
+          "okres kredytowania do 12 lat",
+          "60 dni na dostarczenie dowodu zakupu auta i wymaganych dokumentów",
+          "zabezpieczenie kredytu cesją z polisy AC"
       ],
-      "summary": "VELOBANK - Kredyt samochodowy. Korzyść dla klienta: kwota kredytu do 200 tys. zł. Przed decyzją sprawdź aktualne warunki u partnera.",
+        "summary": "VeloBank - Kredyt samochodowy Wymarzone Auto. RRSO 12,2%, kwota do 250 000 zł, bez wkładu własnego, do 12 lat i 60 dni na wybór auta.",
       "pros": [
         "kwota kredytu do 200 tys. zł",
         "Kredyt samochodowy",
@@ -3261,7 +3419,7 @@
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+        "warning": "Po wypłacie trzeba w ciągu 60 dni dostarczyć dowód zakupu auta, dowód rejestracyjny i opłaconą polisę AC z cesją praw na bank; niespełnienie warunków może podwyższyć oprocentowanie o 2 p.p. RRSO nie uwzględnia kosztu AC.",
       "placementPriority": 60
     },
     {
@@ -3272,7 +3430,7 @@
       "pages": [
         "/finanse/kredyty-hipoteczne"
       ],
-      "reward": "kredyt do 90% wartości nieruchomości",
+      "reward": "RRSO 6,57%, 0% prowizji i kredyt do 90% wartości nieruchomości",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5orkk",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
@@ -3284,10 +3442,13 @@
         "spełnienie aktualnych warunków promocji u partnera",
         "kredyt do 90% wartości nieruchomości",
         "0% prowizji za wcześniejszą spłatę lub nadpłatę kredytu",
-        "długi okres kredytowania do 30 lat",
-        "RRSO 8,12%"
+        "długi okres kredytowania do 35 lat",
+        "RRSO 6,57% w przykładzie reprezentatywnym",
+        "0% prowizji z kontem z pakietem i ubezpieczeniem VeloBezpieczny",
+        "konto z wpływem minimum 3 000 zł miesięcznie",
+        "oprocentowanie stałe przez pierwsze 5 lat, następnie zmienne"
       ],
-      "summary": "VELOBANK - Kredyt hipoteczny. Korzyść dla klienta: kredyt do 90% wartości nieruchomości. Przed decyzją sprawdź aktualne warunki u partnera.",
+      "summary": "VeloBank - Kredyt hipoteczny VeloDom. RRSO 6,57%, 0% prowizji z kontem z pakietem i ubezpieczeniem VeloBezpieczny, kredyt do 90% wartości nieruchomości, proces online i okres do 35 lat.",
       "pros": [
         "kredyt do 90% wartości nieruchomości",
         "Kredyt hipoteczny",
@@ -3299,7 +3460,7 @@
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja lub aktywacja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, regulamin promocji, wymagania i dostępność bezpośrednio u partnera.",
+      "warning": "Przykład obejmuje konto z wpływem min. 3 000 zł miesięcznie i ubezpieczenie VeloBezpieczny. RRSO nie obejmuje kosztu operatu ani ubezpieczenia nieruchomości; przy transzach może dojść koszt inspekcji. Oprocentowanie po 5 latach może być zmienne.",
       "placementPriority": 60
     },
     {
@@ -3444,15 +3605,17 @@
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek"
       ],
-      "reward": "pierwsza darmowa pożyczka do 5000 zł na 30 dni dla nowych klientów",
+        "reward": "pierwsza pożyczka do 7000 zł na 30 dni z RRSO 0% przy terminowej spłacie",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_1869",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
       "deadline": "sprawdź u partnera",
       "audience": "nowy klient szukający szybkiej pożyczki online",
-      "summary": "Finbo - pożyczka pozabankowa. Pierwsza darmowa pożyczka do 5000 zł na 30 dni, minimum formalności i prosty proces online. Przed decyzją sprawdź aktualne warunki u partnera.",
+        "summary": "Finbo - pierwsza promocyjna pożyczka do 7000 zł na 30 dni. RRSO 0% i 0 zł kosztów przy terminowej spłacie; przy braku terminowej spłaty przykład pokazuje RRSO 297,58% i 840,90 zł do spłaty.",
       "pros": [
-        "pierwsza darmowa pożyczka do 5000 zł na 30 dni",
+          "pierwsza pożyczka do 7000 zł na 30 dni",
+          "RRSO 0% i 0 zł kosztów przy terminowej spłacie",
+          "przy braku terminowej spłaty przykład pokazuje RRSO 297,58% i 840,90 zł kosztów",
         "minimum formalności",
         "prosty sposób na dodatkowe wydatki"
       ],
@@ -3460,7 +3623,7 @@
         "oferta pierwszej darmowej pożyczki dotyczy nowych klientów i wymaga terminowej spłaty",
         "warunki i dostępność mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, termin spłaty i regulamin bezpośrednio u partnera.",
+        "warning": "Promocyjne warunki wymagają terminowej spłaty. Przy opóźnieniu oferta przechodzi na standardowe warunki; w przedstawionym przykładzie całkowita spłata wynosi 7 840,90 zł, a RRSO 297,58%.",
       "placementPriority": 64,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
@@ -3477,15 +3640,15 @@
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek"
       ],
-      "reward": "pierwsza darmowa pożyczka do 5000 zł na 30 dni",
+    "reward": "pierwsza pożyczka do 7000 zł na 30 dni: RRSO 0% przy terminowej spłacie",
       "affiliateUrl": "https://tmlead.pl/redirect/880819_1868",
       "difficulty": "Średni",
       "time": "kilka minut + decyzja partnera",
       "deadline": "sprawdź u partnera",
       "audience": "nowy klient szukający pożyczki online dostępnej całą dobę",
-      "summary": "Kuki.pl - pożyczka pozabankowa. Prosty wniosek, minimum formalności i pierwsza darmowa pożyczka do 5000 zł na 30 dni. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Kuki.pl - pierwsza pożyczka do 7000 zł na 30 dni. Przy terminowej spłacie RRSO wynosi 0% i całkowity koszt 0 zł; przy braku terminowej spłaty w przykładzie całkowita kwota do spłaty wynosi 7840,90 zł.",
       "pros": [
-        "pierwsza darmowa pożyczka do 5000 zł na 30 dni",
+      "pierwsza pożyczka do 7000 zł na 30 dni z RRSO 0% przy terminowej spłacie",
         "prosty wniosek i minimum formalności",
         "pożyczka online dostępna całą dobę"
       ],
@@ -3493,12 +3656,14 @@
         "darmowa pożyczka wymaga spełnienia warunków i terminowej spłaty",
         "warunki i dostępność mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, termin spłaty i regulamin bezpośrednio u partnera.",
+    "warning": "RRSO 0% i 0 zł kosztów obowiązuje przy terminowej spłacie. Przy braku terminowej spłaty w przykładzie: RRSO 297,58%, prowizja 757,48 zł, odsetki 83,42 zł i łącznie 7840,90 zł do spłaty.",
       "placementPriority": 64,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "pierwsza pożyczka do 7000 zł na 30 dni przy promocyjnych warunkach spłaty",
+      "terminowa spłata: RRSO 0% i całkowity koszt 0 zł",
+      "przy braku terminowej spłaty warunki standardowe: RRSO 297,58% i 7840,90 zł do spłaty w przykładzie"
       ]
     },
     {
@@ -3576,30 +3741,33 @@
         "/finanse/kredyty-firmowe",
         "/auto/leasing-czy-kredyt"
       ],
-      "reward": "weryfikacja leasingowa w wielu bankach bez wychodzenia z domu",
+    "reward": "decyzja leasingowa nawet w 15 min do 300 000 zł",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=e0c42aedde330fbf08b697741d5a8a8f",
       "difficulty": "Średni",
       "time": "formularz + kontakt partnera",
       "deadline": "sprawdź u partnera",
       "audience": "firma porównująca leasing lub finansowanie pojazdu albo sprzętu",
-      "summary": "MyLease.pl - Leasing. Weryfikacja leasingowa w wielu bankach bez wychodzenia z domu, elastyczna oferta i decyzja nawet w 15 minut do 300 tys. zł. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "MyLease.pl porównuje oferty leasingowe wielu banków. Decyzja może być wydana nawet w 15 minut, finansowanie sięga 300 000 zł, a procedura odbywa się bez wychodzenia z domu; przykładowa rata wynosi 730 zł przy aucie za 50 000 zł.",
       "pros": [
         "weryfikacja leasingowa w wielu bankach bez wychodzenia z domu",
         "elastyczna oferta dla nowych i dłużej działających firm",
-        "decyzja nawet w 15 minut do 300 tys. zł",
+      "decyzja nawet w 15 minut do 300 000 zł, zależnie od instytucji i kompletności wniosku",
         "uproszczona procedura bez konieczności okazywania dokumentów z US i ZUS według opisu partnera",
-        "możliwy dojazd do klienta"
+      "możliwy dojazd do klienta",
+      "przykładowa rata 730 zł przy aucie za 50 000 zł"
       ],
       "cons": [
         "warunki zależą od partnera i instytucji finansującej",
         "dostępność może się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualne koszty, wymagania, dokumenty i warunki leasingu bezpośrednio u partnera.",
+    "warning": "Kwota, czas decyzji i rata zależą od wybranej instytucji oraz kompletności wniosku. Przykład 730 zł zakłada 10% wpłaty własnej, 36 miesięcy i 50% wykupu. Instytucja może zażądać dodatkowych dokumentów.",
       "placementPriority": 99,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wypełnienie formularza i zgoda na kontakt partnera",
+      "finansowanie do 300 000 zł zależnie od decyzji instytucji leasingowej",
+      "dla przykładowej raty 730 zł: auto 50 000 zł, 10% wpłaty własnej, 36 miesięcy i 50% wykupu"
       ]
     },
     {
@@ -3611,62 +3779,70 @@
         "/finanse/kredyty-firmowe",
         "/auto/leasing-czy-kredyt"
       ],
-      "reward": "bezpłatne porównanie ofert leasingu z wielu instytucji finansowych",
+    "reward": "porównanie ofert leasingu ponad 30 instytucji finansowych",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=fbcb9d0433c22463d255216239b532df",
       "difficulty": "Średni",
       "time": "krótki formularz + kontakt partnera",
       "deadline": "sprawdź u partnera",
       "audience": "firma szukająca leasingu dopasowanego do potrzeb",
-      "summary": "Comperia Free - Leasing. Bezpłatne porównanie ofert z wielu instytucji finansowych, pomoc w wyborze leasingu i krótki formularz kontaktowy. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Comperia Free pomaga porównać oferty leasingowe ponad 30 instytucji. Wystarczy krótki formularz, a konsultant ma skontaktować się w ciągu 24 godzin i pomóc dopasować finansowanie.",
       "pros": [
-        "bezpłatne porównanie ofert z wielu instytucji finansowych",
-        "dopasowanie leasingu do potrzeb klienta",
-        "profesjonalna pomoc w wyborze oferty",
+      "porównanie ofert ponad 30 instytucji finansowych",
+      "kontakt konsultanta w ciągu 24 godzin według opisu partnera",
+      "dopasowanie leasingu do potrzeb klienta",
         "krótki formularz kontaktowy"
       ],
       "cons": [
         "ostateczne warunki zależą od instytucji finansującej",
         "dostępność może się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualne koszty, wymagania i warunki leasingu bezpośrednio u partnera.",
+    "warning": "Partner porównuje oferty, ale ostateczne warunki, koszty i decyzję ustala wybrana instytucja finansująca. Termin kontaktu do 24 godzin wynika z opisu partnera.",
       "placementPriority": 56,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wypełnienie formularza kontaktowego",
+      "podanie poprawnych danych i akceptacja wymaganych oświadczeń",
+      "ocena i warunki ustalone przez wybraną instytucję finansującą"
       ]
     },
     {
       "slug": "vehis-finansowanie-samochodu",
-      "name": "Vehis - atrakcyjne finansowanie samochodu",
-      "category": "car-loan",
+    "name": "VEHIS - leasing CUPRA",
+    "category": "business-loan",
       "pillar": "auto",
       "pages": [
         "/auto/kredyt-na-auto",
         "/auto/leasing-czy-kredyt"
       ],
-      "reward": "finansowanie samochodu online, decyzja kredytowa i przelanie środków nawet w 15 minut",
+    "reward": "leasing CUPRA od 1% wpłaty własnej, decyzja nawet w 15 minut",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=9972fc59edd5a642046a5fd51a9831aa&etykieta_=praktycznyzysk",
       "difficulty": "Średni",
       "time": "wniosek online + decyzja partnera",
       "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca finansowania samochodu online",
-      "summary": "Vehis - atrakcyjne finansowanie samochodu. Brak ograniczeń w maksymalnym LTV według opisu partnera, kredyt dostępny przez Internet oraz decyzja kredytowa i przelanie środków nawet w 15 minut. Warunki i dostępność sprawdź bezpośrednio u partnera.",
+    "audience": "firma lub osoba prywatna szukająca leasingu nowej albo używanej CUPRY",
+    "summary": "VEHIS oferuje leasing operacyjny CUPRA dla firm oraz leasing konsumencki dla osób prywatnych. Wpłata własna zaczyna się od 1%, umowa trwa 24–60 miesięcy, a finansowanie może dotyczyć nowych i używanych aut, także dla firm od 1. miesiąca działalności.",
       "pros": [
-        "brak ograniczeń w maksymalnym LTV według opisu partnera",
-        "kredyt dostępny przez Internet",
-        "decyzja kredytowa i przelanie środków nawet w 15 minut"
+      "wpłata własna od 1% i okres umowy 24–60 miesięcy",
+      "leasing dla firm i konsumentów oraz aut nowych i używanych",
+      "procedura online, zdalne podpisanie dokumentów i decyzja nawet w kilkanaście minut",
+      "możliwość połączenia raty z ubezpieczeniem, serwisem i oponami",
+      "finansowanie firm od 1. miesiąca działalności"
       ],
       "cons": [
         "warunki zależą od oceny partnera",
         "dostępność może się zmienić"
       ],
-      "warning": "Przed złożeniem wniosku sprawdź aktualne koszty, wymagania, dostępność i warunki finansowania bezpośrednio u partnera.",
+    "warning": "Warunki zależą od modelu, konfiguracji, oceny zdolności i wybranej formy umowy. Procedura uproszczona dla firm obejmuje limit do 800 000 zł brutto, a dla konsumentów do 250 000 zł brutto. Sprawdź także koszty ubezpieczenia, serwisu, wykupu oraz aktualną dostępność auta.",
       "placementPriority": 120,
       "conditions": [
         "aby skorzystać z oferty, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków finansowania u partnera"
+      "wybór modelu, konfiguracji i wariantu finansowania",
+      "wpłata własna od 1% oraz okres umowy 24–60 miesięcy",
+      "dla firm: leasing operacyjny, także od 1. miesiąca działalności",
+      "dla osób prywatnych: leasing konsumencki",
+      "akceptacja indywidualnej oceny i warunków VEHIS"
       ]
     },
     {
@@ -3677,63 +3853,70 @@
       "pages": [
         "/auto/kredyt-na-auto"
       ],
-      "reward": "bezpłatna pomoc w znalezieniu kredytu na zakup pojazdu",
+    "reward": "porównanie kredytów samochodowych z pomocą konsultanta",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=b6c3e29aab9958278279e4f5e84e6d8d",
       "difficulty": "Średni",
       "time": "krótki formularz + kontakt partnera",
       "deadline": "sprawdź u partnera",
       "audience": "osoba porównująca kredyt samochodowy",
-      "summary": "Comperia Free - Kredyt samochodowy. Bezpłatna pomoc w znalezieniu kredytu na zakup pojazdu, porównanie ofert w wielu instytucjach i krótki formularz kontaktowy. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Comperia Free pomaga znaleźć kredyt samochodowy z możliwie niską ratą. Wypełnij krótki formularz, a konsultant ma skontaktować się w ciągu 24 godzin i przedstawić dostępne rozwiązania.",
       "pros": [
-        "bezpłatna pomoc w znalezieniu kredytu na zakup pojazdu",
-        "rata dostosowana do możliwości klienta",
-        "porównanie ofert w wielu instytucjach finansowych",
+      "pomoc w znalezieniu kredytu z możliwie niską ratą",
+      "kontakt konsultanta w ciągu 24 godzin według opisu partnera",
+      "porównanie ofert finansowania pojazdu",
         "krótki formularz kontaktowy"
       ],
       "cons": [
         "ostateczne warunki zależą od instytucji finansującej",
         "dostępność może się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, ratę i całkowity koszt bezpośrednio u partnera.",
+    "warning": "Ostateczna rata, RRSO, koszty i decyzja zależą od wybranej instytucji oraz indywidualnej oceny klienta. Termin kontaktu do 24 godzin wynika z opisu partnera.",
       "placementPriority": 56,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wypełnienie formularza kontaktowego",
+      "podanie poprawnych danych i akceptacja wymaganych oświadczeń",
+      "indywidualna ocena zdolności i warunków przez instytucję finansującą"
       ]
     },
     {
       "slug": "pko-bank-polski-wlasny-kat-hipoteczny",
-      "name": "PKO Bank Polski - Własny Kąt Hipoteczny",
+  "name": "Bank Pekao SA - Kredyt mieszkaniowy",
       "category": "mortgage",
       "pillar": "finanse",
       "pages": [
         "/finanse/kredyty-hipoteczne"
       ],
-      "reward": "kredyt hipoteczny z długim okresem finansowania i dodatkowymi możliwościami",
-      "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=7eb74a4919be7ece695434890d8871c1",
+  "reward": "kredyt mieszkaniowy bez prowizji, RRSO 6,03%",
+  "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5opz4",
       "difficulty": "Średni",
       "time": "wniosek + decyzja banku",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba planująca kredyt hipoteczny",
-      "summary": "PKO Bank Polski - Własny Kąt Hipoteczny. Kredyt nawet na 35 lat, do 25% kredytu na dowolny cel i możliwość 0% prowizji po spełnieniu warunków. Przed decyzją sprawdź aktualne warunki u partnera.",
+  "deadline": "31.08.2026",
+  "verificationStatus": "verified",
+  "verifiedAt": "2026-08-19",
+  "verificationSource": "Przesłana strona docelowa kampanii Banku Pekao",
+  "audience": "osoba planująca zakup lub budowę nieruchomości na kredyt mieszkaniowy",
+  "summary": "Bank Pekao SA - Kredyt mieszkaniowy. Oferta z 0% prowizji i RRSO 6,03% przy zmiennym oprocentowaniu, wpływach minimum 3 000 zł miesięcznie i wymaganych ubezpieczeniach.",
       "pros": [
-        "kredyt nawet na 35 lat",
-        "brak minimalnego okresu kredytowania według opisu partnera",
-        "do 25% kredytu na dowolny cel",
-        "szeroki wybór celów kredytu",
-        "możliwość 0% prowizji po spełnieniu warunków"
+    "0% prowizji przy kredycie z ubezpieczeniem na życie",
+    "RRSO 6,03% w przykładzie reprezentatywnym",
+    "uproszczona wycena lokali mieszkalnych do 500 000 zł",
+    "wniosek i skany dokumentów online",
+    "kredyt mieszkaniowy na zakup lub budowę nieruchomości"
       ],
       "cons": [
         "warunki zależą od oceny kredytowej i oferty banku",
         "promocje i koszty mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualne RRSO, marżę, prowizję, ubezpieczenia, ratę i całkowity koszt bezpośrednio u partnera.",
+  "warning": "RRSO 6,03% dotyczy przykładu reprezentatywnego i zmiennej stopy. Wymagane są wpływy min. 3 000 zł miesięcznie, hipoteka oraz ubezpieczenie nieruchomości; wzrost WIBOR może podnieść ratę. Sprawdź koszty i warunki u partnera.",
       "placementPriority": 60,
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+    "złóż formularz kontaktowy i przejdź analizę zdolności kredytowej",
+    "zapewniaj wpływy minimum 3 000 zł miesięcznie na rachunek w Pekao",
+    "zaakceptuj wymagane ubezpieczenie na życie i ubezpieczenie nieruchomości",
+    "ustanów hipotekę oraz przelew praw z ubezpieczenia nieruchomości",
+    "sprawdź zmienne oprocentowanie oparte na WIBOR 1M i marży banku"
       ]
     },
     {
@@ -3745,29 +3928,32 @@
         "/finanse/lokaty",
         "/oferty/pozostale"
       ],
-      "reward": "IKZE z ulgą podatkową i prostym procesem przystąpienia",
+    "reward": "ulga podatkowa nawet 3617,28 zł przy wpłacie na IKZE",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=fad45a739370802793502f5038a031d2",
       "difficulty": "Średni",
       "time": "wniosek online + decyzja partnera",
       "deadline": "sprawdź u partnera",
       "audience": "osoba myśląca o dodatkowym oszczędzaniu na emeryturę",
-      "summary": "UNIQA - IKZE. Indywidualne Konto Zabezpieczenia Emerytalnego z możliwością ulgi podatkowej, prostym procesem przystąpienia i bez opłat manipulacyjnych oraz dystrybucyjnych według opisu partnera.",
+    "summary": "UNIQA TFI IKZE: brak opłat manipulacyjnych i dystrybucyjnych, prosty proces przystąpienia oraz ulga podatkowa. W 2026 r. maksymalna wpłata wynosi 11 304 zł dla klienta indywidualnego i 16 956 zł dla przedsiębiorcy.",
       "pros": [
         "możliwość dodatkowego oszczędzania na emeryturę",
         "brak opłat manipulacyjnych i dystrybucyjnych według opisu partnera",
         "prosty proces przystąpienia",
-        "ulgi podatkowe"
+      "ulgi podatkowe: do 3617,28 zł dla klienta indywidualnego i do 5425,92 zł dla przedsiębiorcy",
+      "limity wpłat 2026: 11 304 zł lub 16 956 zł dla przedsiębiorcy"
       ],
       "cons": [
         "produkt inwestycyjny może wiązać się z ryzykiem",
         "warunki i opłaty mogą się zmienić"
       ],
-      "warning": "To nie jest rekomendacja inwestycyjna. Przed decyzją sprawdź dokumenty produktu, ryzyka, opłaty, limity IKZE i warunki bezpośrednio u partnera.",
+    "warning": "Zwrot podatku zależy od wysokości wpłaty i indywidualnego rozliczenia podatkowego; podane kwoty są maksymalne. IKZE może wiązać się z ryzykiem inwestycyjnym. Przed decyzją sprawdź dokumenty, opłaty i zasady produktu.",
       "placementPriority": 50,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "otwarcie IKZE w UNIQA TFI",
+      "wpłaty w limicie 2026: 11 304 zł dla klienta indywidualnego lub 16 956 zł dla przedsiębiorcy",
+      "rozliczenie ulgi zgodnie z indywidualną sytuacją podatkową"
       ]
     },
     {
@@ -3779,29 +3965,32 @@
         "/ubezpieczenia/porownywarka",
         "/oferty/pozostale"
       ],
-      "reward": "ubezpieczenie na życie już od 40 zł miesięcznie według opisu partnera",
+    "reward": "ubezpieczenie na życie od 40 zł miesięcznie, ochrona do 10 mln zł",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=2b3d7ca1d7b6bfc01dc86231f2a30389",
       "difficulty": "Średni",
       "time": "formularz + kontakt partnera",
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca ochrony życia lub dodatkowego zabezpieczenia rodziny",
-      "summary": "Pru - Ubezpieczenie na życie. Ubezpieczenie na życie już od 40 zł miesięcznie według opisu partnera, elastyczny czas trwania i możliwość dodatkowej ochrony. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Pru oferuje ubezpieczenie na życie od 40 zł miesięcznie, z elastycznym czasem trwania i zakresem dopasowanym do potrzeb. Ochrona może obejmować do 10 mln zł oraz dodatkowe ryzyka, m.in. poważne zachorowanie i ograniczenie samodzielności.",
       "pros": [
-        "ubezpieczenie na życie już od 40 zł miesięcznie według opisu partnera",
-        "elastyczny czas trwania ubezpieczenia",
-        "zakres dostosowany do potrzeb",
-        "możliwość dodatkowej ochrony"
+      "ubezpieczenie na życie od 40 zł miesięcznie według opisu partnera",
+      "elastyczny czas trwania ubezpieczenia",
+      "zakres dostosowany do potrzeb",
+      "możliwość dodatkowej ochrony przy poważnym zachorowaniu lub ograniczeniu samodzielności",
+      "ochrona do 10 mln zł według opisu partnera"
       ],
       "cons": [
         "zakres i cena zależą od wariantu oraz oceny partnera",
         "warunki i dostępność mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź OWU, wyłączenia odpowiedzialności, składkę, zakres ochrony i warunki bezpośrednio u partnera.",
+    "warning": "Kwota 40 zł jest ceną od i zależy od wariantu oraz oceny ubezpieczyciela. Przykładowe kalkulacje dotyczą produktu Komfort Życia dla osób w wieku 30–40 lat, ochrony 300 000 zł i okresu 5 lat. Przed decyzją sprawdź OWU i wyłączenia odpowiedzialności.",
       "placementPriority": 52,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wypełnienie formularza i kontakt z doradcą",
+      "podanie danych potrzebnych do przygotowania propozycji",
+      "akceptacja indywidualnej składki, zakresu ochrony i warunków ubezpieczyciela"
       ]
     },
     {
@@ -3813,29 +4002,32 @@
         "/ubezpieczenia/porownywarka",
         "/oferty/pozostale"
       ],
-      "reward": "ochrona i oszczędzanie na lepszy start dziecka",
+    "reward": "ubezpieczenie dziecka i oszczędzanie od 125 zł miesięcznie",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=5337b2b1df3ad27dd979d4a7a02277a8",
       "difficulty": "Średni",
       "time": "formularz + kontakt partnera",
       "deadline": "sprawdź u partnera",
       "audience": "rodzic szukający ubezpieczenia lub planu zabezpieczenia dziecka",
-      "summary": "Pru - Ubezpieczenie na życie dla dziecka. Niskie miesięczne wpłaty według opisu partnera, gwarancja wypłaty określonej kwoty i opcja zwrotu składek na dożycie. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Pru START W ŻYCIE łączy ubezpieczenie dziecka z oszczędzaniem na przyszłość. Składki zaczynają się od 125 zł miesięcznie, a oferta przewiduje wypłatę określonej kwoty i opcję zwrotu wpłaconych składek na dożycie.",
       "pros": [
-        "niskie miesięczne wpłaty według opisu partnera",
+      "wpłaty od 125 zł miesięcznie według opisu partnera",
         "gwarancja wypłaty określonej kwoty",
         "opcja zwrotu wpłaconych składek na dożycie",
-        "możliwość zadbania o lepszy start dziecka"
+      "ubezpieczenie na życie przez cały czas trwania umowy",
+      "możliwość oszczędzania na dowolny cel dla dziecka"
       ],
       "cons": [
         "zakres, opłaty i wypłaty zależą od wariantu umowy",
         "warunki i dostępność mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź OWU, opłaty, wyłączenia, zasady wypłaty i warunki bezpośrednio u partnera.",
+    "warning": "Kwota 125 zł jest ceną od i zależy od wariantu umowy. Przykładowe kalkulacje zakładają wypłatę 50 000 zł: dla dziecka w wieku 1 lub 5 lat na 18. urodziny, a dla dziecka w wieku 10 lat na koniec studiów, w wieku 25 lat. Sprawdź OWU, opłaty i zasady wypłaty.",
       "placementPriority": 51,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wypełnienie formularza i kontakt z doradcą",
+      "ustalenie wysokości składki i zakresu ochrony dla dziecka",
+      "akceptacja indywidualnych warunków ubezpieczyciela"
       ]
     },
     {
@@ -3882,28 +4074,34 @@
         "/finanse/konta-firmowe-z-premia",
         "/finanse/ranking-kont-firmowych"
       ],
-      "reward": "do 2400 zł premii za otwarcie konta firmowego po spełnieniu warunków",
+    "reward": "do 3000 zł premii za wymianę i saldo w euro",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=db8a655e911e9a34df78b70cafa42a56",
       "difficulty": "Średni",
       "time": "wniosek online + aktywacja konta",
       "deadline": "sprawdź u partnera",
       "audience": "firma szukająca darmowego konta firmowego i premii",
-      "summary": "Nest Bank - Nest Konto firmowe BIZnest. Konto firmowe za darmo na stałe według opisu partnera, premia do 2400 zł i bankowość z funkcjami AI. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Nest Bank BIZnest Konto: konto firmowe, karta i internetowe przelewy Elixir za 0 zł, także do ZUS i US. Promocja „Zyskaj do 3000 zł premii za wymianę i saldo w euro” trwa do 30.11.2026 i jest dla nowych klientów biznesowych.",
       "pros": [
-        "do 2400 zł premii po spełnieniu warunków",
-        "konto firmowe za darmo na stałe według opisu partnera",
-        "bankowość z funkcjami AI do analizy finansów, przelewów i faktur"
+      "do 3000 zł premii: do 1000 zł za wymianę euro i do 2000 zł za średnie saldo w EUR",
+      "0 zł za konto, pierwszą kartę i internetowe przelewy krajowe Elixir, także do ZUS i US",
+      "konto walutowe w EUR i przelewy SEPA online za 0 zł według pliku",
+      "konto oszczędnościowe w EUR do 1,50% przez 180 dni dla spełniających warunki",
+      "lokata w EUR od 1000 do 500 000 EUR na 3–18 miesięcy"
       ],
       "cons": [
         "premia wymaga spełnienia warunków promocji",
         "warunki i dostępność mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź regulamin promocji, opłaty, wymagania aktywności i dostępność bezpośrednio u partnera.",
+    "warning": "Promocja do 3000 zł trwa od 17.04 do 30.11.2026, chyba że bank zakończy ją wcześniej, i jest dla nowych klientów biznesowych nieposiadających BIZnest Konta od 1.01.2026. Opłaty za pozostałe usługi zależą od tabeli banku; oprocentowanie i warunki kont walutowych są zmienne lub zależne od salda.",
       "placementPriority": 69,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "otwarcie BIZnest Konta przez przedsiębiorcę",
+      "dla promocji: nowy klient biznesowy bez BIZnest Konta od 1.01.2026",
+      "przystąpienie do promocji między 17.04 a 30.11.2026",
+      "spełnienie warunków premii za wymianę euro i/lub średnie saldo w EUR",
+      "dla konta oszczędnościowego EUR: otwarcie online i spełnienie warunku salda poniżej 500 EUR na 15.04.2026"
       ]
     },
     {
@@ -3915,29 +4113,31 @@
         "/finanse/kredyty-firmowe",
         "/auto/leasing-czy-kredyt"
       ],
-      "reward": "oferta leasingu w kilka minut i minimum formalności",
+    "reward": "porównanie ofert leasingu wielu banków w kilka godzin",
       "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=75595ae51b6350e005d29b1cb42f3178",
       "difficulty": "Średni",
       "time": "formularz + decyzja partnera",
       "deadline": "sprawdź u partnera",
       "audience": "firma szukająca prostego finansowania leasingowego",
-      "summary": "Nest Bank - Leasing. Oferta w kilka minut, dowolne formy finansowania, minimum formalności i wsparcie na każdym etapie. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Leasing online przez Comperia.pl dla nowych aut lub sprzętu firmowego. Jeden krótki formularz pozwala poznać oferty wielu banków jednocześnie; decyzja i finansowanie mogą być dostępne w ciągu kilku godzin.",
       "pros": [
-        "oferta w kilka minut",
-        "dowolne formy finansowania",
-        "minimum formalności i proste zasady",
-        "wsparcie na każdym etapie"
+      "porównanie ofert wielu renomowanych banków",
+      "szybka decyzja i finansowanie w ciągu kilku godzin według opisu partnera",
+      "elastyczna wysokość finansowania i liczba rat",
+      "brak opłat dla klienta za czynności pośrednika według pliku"
       ],
       "cons": [
         "ostateczne warunki zależą od partnera i przedmiotu finansowania",
         "dostępność może się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualne koszty, dokumenty, wymagania i warunki leasingu bezpośrednio u partnera.",
+    "warning": "Comperia.pl działa jako pośrednik kredytowy Nest Banku, a ostateczne warunki i decyzję ustala bank. Przed podpisaniem sprawdź koszty, wymagane dokumenty, ratę, wykup i wszystkie warunki umowy.",
       "placementPriority": 55,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wypełnienie krótkiego formularza z imieniem, nazwiskiem, e-mailem, telefonem i NIP-em",
+      "akceptacja wymaganych oświadczeń i regulaminu",
+      "indywidualna ocena i wybór oferty banku"
       ]
     },
     {
@@ -3949,30 +4149,34 @@
         "/finanse/chwilowki",
         "/finanse/ranking-chwilowek"
       ],
-      "reward": "pierwsza pożyczka od 500 zł do 5000 zł, kolejne zobowiązania nawet do 10 000 zł",
+    "reward": "pierwsza chwilówka do 5000 zł, kolejne pożyczki do 10 000 zł",
       "affiliateUrl": "https://stabro.produktyfinansowe.pl/e/lead/3213?source=lt",
       "difficulty": "Średni",
       "time": "wniosek online + decyzja partnera",
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca chwilówki online",
-      "summary": "Avinto - Chwilówka. Pierwsza pożyczka od 500 zł do 5000 zł, kolejne zobowiązania nawet do 10 000 zł, minimum formalności i proces przez internet. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Avinto oferuje chwilówkę online na 30 dni: nowi klienci mogą pożyczyć do 5000 zł, a kolejni do 10 000 zł. Wniosek i weryfikacja odbywają się online, decyzja może być w kilkanaście minut, a przelew według opisu partnera w ciągu 24 godzin.",
       "pros": [
-        "pierwsza pożyczka od 500 zł do 5000 zł",
-        "kolejne zobowiązania nawet do 10 000 zł",
-        "minimum formalności",
-        "proces przez internet",
-        "pieniądze na koncie nawet tego samego dnia według opisu partnera"
+      "pierwsza chwilówka 500–5000 zł na 30 dni",
+      "kolejna pożyczka do 10 000 zł przy terminowych spłatach",
+      "decyzja średnio w mniej niż 15 minut",
+      "weryfikacja online przez Kontomatik i wypłata do 24 godzin",
+      "wymagany tylko dowód osobisty według opisu partnera"
       ],
       "cons": [
         "warunki i dostępność mogą się zmienić",
         "ostateczna decyzja zależy od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualne opłaty, RRSO, termin spłaty i regulamin bezpośrednio u partnera.",
+    "warning": "To krótkoterminowa pożyczka na 30 dni ze spłatą jednorazową. W przykładzie 5000 zł do spłaty wynosi 5600,45 zł, a RRSO około 297,41%. Opóźnienie może powodować dodatkowe koszty; refinansowanie również wiąże się z kosztami.",
       "placementPriority": 57,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wiek 18–80 lat, polskie obywatelstwo lub stały pobyt",
+      "ważny dowód osobisty z numerem PESEL i konto bankowe na własne nazwisko",
+      "dostęp do bankowości elektronicznej i automatyczna weryfikacja dochodu",
+      "jednorazowa spłata pożyczki po 30 dniach",
+      "pozytywna decyzja i podpisanie umowy online"
       ]
     },
     {
@@ -4018,29 +4222,33 @@
         "/ubezpieczenia/porownywarka",
         "/oferty/pozostale"
       ],
-      "reward": "porównywarka ubezpieczeń turystycznych z ofertami od 2,59 zł dziennie według opisu partnera",
+    "reward": "ubezpieczenie turystyczne od 3,67 zł dziennie, suma do 40 mln zł",
       "affiliateUrl": "https://stabro.produktyfinansowe.pl/e/lead/2100?source=lt",
       "difficulty": "Średni",
       "time": "porównanie online",
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca ubezpieczenia turystycznego",
-      "summary": "Kiosk Polis - ubezpieczenia turystyczne. Porównywarka ubezpieczeń turystycznych z ofertami od 2,59 zł dziennie, kosztami leczenia i ratownictwa do 40 mln zł oraz ponad 170 ofertami według opisu partnera.",
+    "summary": "KioskPolis porównuje ubezpieczenia turystyczne kilkunastu towarzystw. Polisę można kupić w 100% online od 3,67 zł dziennie, a najwyższa dostępna suma ubezpieczenia wynosi do 40 mln zł.",
       "pros": [
-        "oferty od 2,59 zł dziennie według opisu partnera",
-        "koszty leczenia i ratownictwa do 40 mln zł",
-        "ochrona zdarzeń pod wpływem alkoholu według opisu partnera",
-        "ponad 170 ofert ubezpieczeń"
+      "ubezpieczenie od 3,67 zł dziennie według opisu partnera",
+      "najwyższa dostępna suma ubezpieczenia do 40 mln zł",
+      "zakup i płatność 100% online",
+      "porównanie ofert kilkunastu towarzystw",
+      "możliwość uwzględnienia sportów, pracy fizycznej i chorób przewlekłych"
       ],
       "cons": [
         "zakres ochrony zależy od wybranej polisy",
         "warunki i ceny mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź OWU, wyłączenia odpowiedzialności, sumy ubezpieczenia, cenę i zakres ochrony bezpośrednio u partnera.",
+    "warning": "Cena od 3,67 zł dziennie i suma do 40 mln zł zależą od kierunku, terminu, liczby osób, wieku, celu podróży i zakresu ochrony. Sprawdź OWU, karencję oraz wyłączenia, szczególnie dla sportów, pracy, chorób przewlekłych, alkoholu i zdarzeń wojennych.",
       "placementPriority": 54,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "podanie terminu i celu podróży oraz odwiedzanych krajów",
+      "podanie danych i dat urodzenia wszystkich ubezpieczanych osób",
+      "określenie chorób przewlekłych i planowanych aktywności",
+      "porównanie zakresu i zakup wybranej polisy online"
       ]
     },
     {
@@ -4052,28 +4260,35 @@
         "/pozostale",
         "/oferty/pozostale"
       ],
-      "reward": "wyprzedaż smartfonów 5G w ofercie z abonamentem według opisu partnera",
+    "reward": "abonament Play: do 6 miesięcy za 0 zł i pakiety do 400 GB",
       "affiliateUrl": "https://stabro.produktyfinansowe.pl/e/lead/724?source=lt",
       "difficulty": "Średni",
       "time": "wniosek lub zakup u partnera",
       "deadline": "sprawdź u partnera",
       "audience": "osoba porównująca abonament komórkowy lub telefon w ofercie operatora",
-      "summary": "Play - Abonament. Wyprzedaż smartfonów 5G w ofercie z abonamentem i promocje na wybrane modele według opisu partnera. Przed decyzją sprawdź aktualne warunki u partnera.",
+    "summary": "Play oferuje abonamenty komórkowe S, S+, M, L i HOMEBOX z nielimitowanymi rozmowami, SMS-ami i MMS-ami. Promocja obejmuje m.in. 3 miesiące za 0 zł w S, 6 miesięcy za 0 zł w S+ i M, pakiety 15–400 GB oraz internet bez limitu w L/HOMEBOX.",
       "pros": [
-        "wyprzedaż smartfonów 5G w ofercie z abonamentem według opisu partnera",
-        "promocje na wybrane modele",
-        "możliwość wyboru telefonu z abonamentem lub bez"
+      "3 miesiące za 0 zł w ofercie S oraz 6 miesięcy za 0 zł w S+ i M",
+      "pakiety internetu 15 GB, 70 GB i 400 GB oraz bez limitu w L/HOMEBOX",
+      "nielimitowane rozmowy, SMS-y i MMS-y",
+      "telewizja Play NOW w ofertach M, L i HOMEBOX",
+      "dodatkowa karta SIM z internetem w HOMEBOX",
+      "możliwość zakupu smartfona na raty 0%"
       ],
       "cons": [
         "ceny, dostępność modeli i warunki abonamentu mogą się zmienić",
         "ostateczne warunki zależą od partnera"
       ],
-      "warning": "Przed decyzją sprawdź aktualny cennik, regulamin promocji, okres umowy, opłaty i dostępność telefonu bezpośrednio u partnera.",
+    "warning": "Umowa trwa 24 miesiące. Po okresie promocyjnym abonament wynosi m.in. 45 zł w S, 70 zł w S+ i 80 zł w M, a po 24 miesiącach ceny mogą wzrosnąć o 5 zł co 12 miesięcy. Dochodzi opłata aktywacyjna 50 zł w S/S+/M; sprawdź roaming UE, rabaty za e-fakturę i zgody oraz raty za telefon.",
       "placementPriority": 45,
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
         "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+      "wybór oferty S, S+, M, L lub HOMEBOX",
+      "zawarcie umowy na 24 miesiące",
+      "dla rabatów: e-faktura, terminowe płatności i zgody marketingowe",
+      "sprawdzenie limitu internetu w roamingu UE i zasad uczciwego korzystania",
+      "w przypadku telefonu: osobna umowa i ewentualne raty za urządzenie"
       ]
     },
     {
@@ -4093,51 +4308,59 @@
       "deadline": "sprawdź u partnera",
       "audience": "osoba szukająca konta osobistego z premią i korzyściami podróżnymi",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+        "otwórz online Konto Przekorzystne ze złotą kartą, aktywuj Pekao24/PeoPay i wyraź wymagane zgody marketingowe",
+        "dla premii do 300 zł wykonaj co najmniej 5 transakcji bezgotówkowych kartą w każdym z 2 miesięcy kalendarzowych po miesiącu otwarcia; płatności BLIK nie są zaliczane do tej premii",
+        "dla Promocji Podróżnej płać złotą kartą lub mobilnie; zwroty wynoszą 3% za transakcje 1–20 i 6% od 21. transakcji, maksymalnie 200 zł miesięcznie przez 12 miesięcy",
+        "konto oszczędnościowe do 5,7% obejmuje nowe środki do 100 000 zł przez 92 dni i wymaga co najmniej 5 transakcji kartą lub BLIK w każdym cyklu rozliczeniowym"
       ],
-      "summary": "Bank Pekao SA - Konto Przekorzystne. Konto osobiste z premią do 300 zł za założenie konta online oraz do 2400 zł w Promocji Podróżnej.",
+      "summary": "Bank Pekao SA - Konto Przekorzystne ze złotą kartą: do 300 zł za otwarcie online, do 2400 zł zwrotów na wydatki podróżne oraz do 5,7% na Koncie Oszczędnościowym do 100 000 zł przez 3 miesiące.",
       "pros": [
-        "do 300 zł za założenie konta online",
-        "do 2400 zł w Promocji Podróżnej",
-        "konto osobiste do codziennych płatności i przelewów"
+        "do 300 zł za założenie konta online i aktywność kartą",
+        "do 2400 zł zwrotów na wydatki podróżne",
+        "0 zł za konto i złotą kartę po spełnieniu warunków; 0 zł za wypłaty kartą w bankomatach w Polsce i za granicą po stronie banku",
+        "do 5,7% na nowe środki do 100 000 zł przez 92 dni"
       ],
       "cons": [
         "premie wymagają spełnienia warunków promocji",
         "warunki i dostępność mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź regulamin promocji, opłaty za konto i kartę, warunki aktywności oraz terminy wypłaty premii u partnera.",
+      "warning": "Promocje mają krótkie terminy i limity: Promocja Podróżna trwa do 31.08.2026 lub wyczerpania puli 65 500 kont, a oferta 5,7% na koncie oszczędnościowym do 19.08.2026. Zwroty podróżne są wirtualnym licznikiem, nie środkami pieniężnymi; sprawdź wyłączenia transakcji, opłaty złotej karty i regulaminy przed decyzją.",
       "placementPriority": 94
     },
     {
-      "slug": "credit-agricole-konto-w-porzadku-1960",
-      "name": "Credit Agricole - Konto w Porządku do 1960 zł",
+      "slug": "bank-pocztowy-konto-w-porzadku-1960",
+      "name": "Bank Pocztowy - Konto w Porządku do 1960 zł",
       "category": "account",
       "pillar": "finanse",
       "reward": "nawet do 1960 zł premii i korzyści",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oqxc",
       "difficulty": "Średni",
       "time": "5-20 min + aktywność w promocji",
-      "deadline": "sprawdź u partnera",
-      "audience": "osoba szukająca konta osobistego z wysoką premią i wygodnymi płatnościami mobilnymi",
+      "deadline": "31.08.2026",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-19",
+      "verificationSource": "Przesłana strona docelowa kampanii Banku Pocztowego",
+      "audience": "osoba szukająca konta osobistego z premią za płatności kartą i programem poleceń",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+        "dla promocji Kupujesz-zyskujesz wykonuj płatności kartą i spełnij warunki zwrotu do 80 zł miesięcznie przez 12 miesięcy",
+        "dla promocji Polecenie ma znaczenie poleć konto znajomym; nagroda wynosi 100 zł za polecenie, maksymalnie 10 nagród",
+        "sprawdź warunki promocji i opłaty Banku Pocztowego przed złożeniem wniosku"
       ],
-      "summary": "Credit Agricole - Konto w Porządku. Konto osobiste z 0 zł za prowadzenie, wygodnymi płatnościami mobilnymi, BLIK i premią nawet do 1960 zł.",
+      "summary": "Bank Pocztowy - Konto w Porządku. Konto osobiste z premią do 1960 zł: do 960 zł zwrotu za płatności kartą oraz do 1000 zł za polecenia.",
       "pros": [
         "nawet do 1960 zł premii i korzyści",
         "0 zł za prowadzenie konta",
-        "wygodne płatności mobilne",
-        "transakcje BLIK w sklepach i internecie"
+        "do 960 zł zwrotu za płatności kartą — do 5%, maksymalnie 80 zł miesięcznie",
+        "do 1000 zł za polecenia znajomych",
+        "0 zł za prowadzenie konta",
+        "0 zł za przelewy w aplikacji i bankowości internetowej"
       ],
       "cons": [
         "premia wymaga spełnienia warunków promocji",
         "warunki i terminy wypłaty mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź regulamin promocji, warunki aktywności, opłaty za kartę i konto oraz terminy wypłaty premii u partnera.",
+      "warning": "To oferta Banku Pocztowego, nie Credit Agricole. Promocje Kupujesz-zyskujesz i Polecenie ma znaczenie trwają od 01.06 do 31.08.2026. Bezpłatność karty wymaga płatności na minimum 400 zł miesięcznie; sprawdź regulaminy i pozostałe opłaty przed decyzją.",
       "placementPriority": 74,
       "pages": [
         "/finanse/konta-z-premia",
@@ -4150,31 +4373,37 @@
       "name": "UniCredit - Konto osobiste 0 zł za prowadzenie",
       "category": "account",
       "pillar": "finanse",
-      "reward": "0 zł za prowadzenie konta, kartę, bankomaty i wybrane płatności",
+      "reward": "4% na koncie oszczędnościowym do 100 000 zł przez 90 dni + 0 zł za konto, kartę i wybrane płatności",
       "affiliateUrl": "https://praktycznyzysk.ebrokerpartner.pl/short/5oqvy",
       "difficulty": "Łatwy",
       "time": "5-20 min",
-      "deadline": "sprawdź u partnera",
+      "deadline": "30.09.2026 lub do limitu 5 000 klientów",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-19",
+      "verificationSource": "Przesłana strona docelowa kampanii UniCredit",
       "audience": "osoba szukająca darmowego konta w PLN i innych walutach z szerokim pakietem płatności",
       "conditions": [
         "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "poprawne dane we wniosku",
-        "spełnienie aktualnych warunków promocji u partnera"
+        "otwórz pierwsze konto osobiste w PLN oraz konto oszczędnościowe w PLN",
+        "aktywuj promocję Zysk na start w aplikacji tego samego dnia i wyraź wymagane zgody marketingowe oraz profilujące",
+        "oprocentowanie promocyjne 4% obowiązuje przez 90 dni dla oszczędności do 100 000 zł; oferta trwa do 30.09.2026 lub limitu 5 000 klientów",
+        "konto oszczędnościowe należy otworzyć tego samego dnia co konto osobiste; nie musisz zasilać go tego samego dnia"
       ],
-      "summary": "UniCredit - konto osobiste z 0 zł za prowadzenie konta, darmową kartą oraz płatnościami w Polsce i za granicą.",
+      "summary": "UniCredit - darmowe konto osobiste z kartą oraz promocją 4% na koncie oszczędnościowym do 100 000 zł przez 90 dni.",
       "pros": [
         "0 zł za prowadzenie konta w PLN i innych walutach",
         "0 zł za kartę do konta",
         "0 zł za wypłaty z bankomatów w Polsce i na świecie po stronie UniCredit",
         "0 zł za płatności BLIK w sklepach i internecie",
         "0 zł za przelewy natychmiastowe w PLN i EUR",
-        "3,0% na koncie oszczędnościowym bez limitu kwoty, do 4,2% na lokacie i kredyt gotówkowy od 8,08% RRSO"
+        "4% na koncie oszczędnościowym do 100 000 zł przez 90 dni dla nowych klientów",
+        "3% na standardowym koncie oszczędnościowym, lokaty do 3,6% i kredyt gotówkowy z RRSO 8,08%"
       ],
       "cons": [
         "oferty oszczędnościowe, lokaty i kredytu mogą mieć dodatkowe warunki",
         "warunki i dostępność mogą się zmienić"
       ],
-      "warning": "Przed decyzją sprawdź aktualną tabelę opłat, warunki wypłat z bankomatów, przelewów, BLIK, konta oszczędnościowego, lokaty i kredytu u partnera.",
+      "warning": "Promocja Zysk na start trwa do 30.09.2026 lub do osiągnięcia limitu 5 000 klientów. Wymaga otwarcia obu kont i aktywacji w aplikacji tego samego dnia; zgody marketingowe mogą być warunkiem promocji. Depozyty są objęte belgijskim systemem gwarancji do równowartości 100 000 EUR. Przed decyzją sprawdź pełną tabelę opłat i regulamin.",
       "placementPriority": 76,
       "pages": [
         "/finanse/konta-z-premia",
@@ -4226,10 +4455,12 @@
       ],
       "difficulty": "Średni",
       "time": "KYC i pierwszy depozyt/obrót",
-      "deadline": "Zależnie od promocji",
+      "deadline": "Oferta ograniczona czasowo i zależna od dostępności; pierwszy zakup zwykle w ciągu 1 roku od założenia konta",
       "conditions": [
-        "aby skorzystać z promocji, rozpocznij wniosek przyciskiem na tej stronie",
-        "Nie przerywaj procesu: po kliknięciu w link w panelu przejdź całą rejestrację od razu. Nie zamykaj karty, nie odświeżaj strony i nie przechodź do innych zakładek."
+        "załóż konto Coinbase i przejdź wymagane kontrole nowego użytkownika",
+        "w ciągu terminu wskazanego na koncie wykonaj pierwszy zakup kwalifikującej się kryptowaluty za minimum 50 USD",
+        "po zakupie postępuj zgodnie z instrukcjami na ekranie; nagroda ma być widoczna do 48 godzin",
+        "zakupy dokonane aktywami przeniesionymi do portfela mogą nie kwalifikować się do nagrody"
       ],
       "placementPriority": 96,
       "slug": "okx-regulowana-gielda-krypto-ue-bonus",
@@ -4315,16 +4546,55 @@
       "placementPriority": 93,
       "slug": "coinbase-regulowana-gielda-krypto-bonus",
       "name": "Coinbase - regulowana giełda krypto z bonusem",
-      "reward": "15 EUR w BTC albo aktualny bonus powitalny zależny od kampanii Coinbase",
+      "reward": "losowa nagroda w 4 kryptowalutach po pierwszym zakupie za minimum 50 USD; według pliku 99% nagród to 10–500 USD, a 1% to 1000–2000 USD",
       "affiliateUrl": "https://coinbase.com/join/T7NNAZP?src=android-link",
-      "audience": "osoba szukająca dużej publicznej giełdy kryptowalut z regulacją w UE",
-      "summary": "Coinbase jest spółką publiczną notowaną na NASDAQ i ma autoryzację MiCA w UE. Bonus zależy od aktualnego programu poleceń.",
+      "audience": "nowy użytkownik szukający giełdy kryptowalut i promocji po pierwszym zakupie",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-19",
+      "verificationSource": "Przesłana strona docelowa kampanii Coinbase",
+      "summary": "Coinbase: po założeniu konta i pierwszym zakupie kwalifikującej się kryptowaluty za minimum 50 USD możesz otrzymać losową nagrodę w czterech kryptowalutach.",
       "pros": [
-        "MiCA przez Luksemburg/CSSF według aktualnych materiałów Coinbase",
-        "publiczna spółka notowana na NASDAQ",
-        "prosty zakup krypto po KYC i pierwszej transakcji"
+        "nagroda widoczna na koncie do 48 godzin po spełnieniu warunków",
+        "99% użytkowników ma otrzymać nagrodę w przedziale 10–500 USD według przesłanych warunków",
+        "prosty proces: konto, KYC i pierwszy zakup kwalifikującej się kryptowaluty"
       ],
-      "warning": "Przed decyzją sprawdź aktualny regulamin promocji Coinbase, zasady wypłaty bonusu, opłaty oraz dostępność usług dla osób mieszkających w Polsce."
+      "warning": "To nie jest gwarantowane 50 zł ani stały bonus: nagroda jest losowa, zależna od Coinbase i może wynosić 10–2000 USD według przesłanych warunków. Wymagany jest pierwszy zakup kryptowaluty za minimum 50 USD; promocja może zostać zmieniona lub odwołana, a wartość nagrody podlega wahaniom rynku i może mieć skutki podatkowe. Sprawdź regulamin oraz dostępność dla Polski."
+    },
+    {
+      "slug": "pko-wlasny-kat-hipoteczny",
+      "name": "PKO BP / PKO Bank Hipoteczny - Kredyt Własny Kąt",
+      "category": "mortgage",
+      "pillar": "finanse",
+      "pages": [
+        "/finanse/kredyty-hipoteczne"
+      ],
+      "reward": "RRSO 7,31% w PKO BP lub 6,65% w PKO Banku Hipotecznym",
+      "affiliateUrl": "https://www.comperialead.pl/a/pp.php?link=7eb74a4919be7ece695434890d8871c",
+      "difficulty": "Średni",
+      "time": "formularz + kontakt doradcy",
+      "deadline": "02.09.2026",
+      "audience": "osoba planująca zakup lub budowę nieruchomości z min. 10% wkładu własnego",
+      "summary": "Kredyt hipoteczny Własny Kąt z minimum 10% wkładu własnego. Oferta obejmuje wariant PKO BP z RRSO 7,31% oraz wariant PKO Banku Hipotecznego z RRSO 6,65%; możliwe 0% prowizji przy ubezpieczeniu na życie.",
+      "pros": [
+        "minimum 10% wkładu własnego",
+        "stałe oprocentowanie niższe o 0,4 p.p. przez 5 lat w ofercie specjalnej",
+        "możliwe 0% prowizji przy skorzystaniu z ubezpieczenia na życie",
+        "wniosek rozpatrywany przez PKO BP lub PKO Bank Hipoteczny"
+      ],
+      "cons": [
+        "oferta wymaga zdolności kredytowej i zabezpieczenia hipotecznego",
+        "warunki, koszty i wybór banku zależą od indywidualnej decyzji",
+        "ubezpieczenie na życie i nieruchomości generują dodatkowe koszty"
+      ],
+      "warning": "Oferta specjalna z obniżką stałego oprocentowania obowiązuje dla określonych formularzy/propozycji do 02.09.2026. Po 5 latach może obowiązywać oprocentowanie zmienne, a zmiana WIBOR może podnieść ratę. Sprawdź koszt ubezpieczeń, wyceny nieruchomości, PCC i warunki umowy.",
+      "placementPriority": 125,
+      "conditions": [
+        "minimum 10% wkładu własnego",
+        "złożenie formularza i kontakt z doradcą",
+        "pozytywna ocena zdolności kredytowej",
+        "hipoteka i cesja praw z ubezpieczenia nieruchomości",
+        "dla 0% prowizji: skorzystanie z ubezpieczenia na życie zgodnie z warunkami banku"
+      ]
     }
   ],
   "pageContent": {
@@ -5236,7 +5506,7 @@
           },
           {
             "Nazwa giełdy, opis i licencja": "Coinbase - giełda kryptowalut notowana publicznie na NASDAQ. Licencja: MiCA w UE przez Luksemburg/CSSF według aktualnych materiałów Coinbase.",
-            "Dokładna wysokość i typ bonusu": "15 EUR w BTC albo aktualny bonus powitalny zależny od kampanii Coinbase.",
+            "Dokładna wysokość i typ bonusu": "Losowa nagroda w 4 kryptowalutach po pierwszym zakupie za min. 50 USD: według przesłanych warunków 99% nagród to 10–500 USD, a 1% to 1000–2000 USD.",
             "Czy bonus można wypłacić? (zasady wypłaty)": "Zależnie od promocji: bonus może trafić na saldo po pierwszej kwalifikowanej transakcji, ale warunki wypłaty i wymiany trzeba sprawdzić w regulaminie Coinbase.",
             "Maksymalna dźwignia": "Do 3x tam, gdzie usługa margin jest dostępna dla kwalifikujących się użytkowników.",
             "Co musisz zrobić, aby odblokować wyższą dźwignię?": "Zwykła aplikacja może nie pokazywać dźwigni. Przełącz widok na Coinbase Advanced i sprawdź dostępność Margin oraz formularz doświadczenia rynkowego.",
