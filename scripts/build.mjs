@@ -1107,6 +1107,19 @@ function homePage() {
         <div class="list-grid">${popular}</div>
       </section>
 
+      <section class="finance-priority" aria-labelledby="finance-priority-title">
+        <div class="section-head">
+          <h2 id="finance-priority-title">Finanse: konta, pożyczki i promocje</h2>
+          <p>Sprawdź najważniejsze warunki, koszty i ryzyka przed wyborem produktu finansowego.</p>
+        </div>
+        <div class="list-grid">
+          <a class="list-card" href="/finanse/konta-z-premia"><strong>Konta bankowe z premią</strong><span>Porównaj bonusy, opłaty i warunki aktywności.</span></a>
+          <a class="list-card" href="/finanse/chwilowki"><strong>Chwilówki i pożyczki krótkoterminowe</strong><span>Sprawdź RRSO, termin spłaty, koszt całkowity i ryzyko.</span></a>
+          <a class="list-card" href="/finanse/kredyty-gotowkowe"><strong>Kredyty gotówkowe</strong><span>Porównaj ratę, RRSO, prowizje i całkowitą kwotę do spłaty.</span></a>
+          <a class="list-card" href="/konkursy-i-promocje"><strong>Promocje i bonusy</strong><span>Zobacz aktualne promocje i sprawdź ich warunki przed kliknięciem.</span></a>
+        </div>
+      </section>
+
       <section>
         <div class="section-head">
           <h2>Aktualne rankingi i poradniki</h2>
